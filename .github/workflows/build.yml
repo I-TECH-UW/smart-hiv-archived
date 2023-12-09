@@ -28,15 +28,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      - name: Update the image to the latest publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with: 
+          args: curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o ./input-cache/publisher.jar --create-dirs
+
+      - name: Build with Ig-publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
         with:
-          source: ./
-          destination: ./_site
+          args: java -jar ./input-cache/publisher.jar publisher -ig .
+  
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
+        with: 
+          branch: gh-pages
+          folder: ./output
+          clean-exclude: branches
 
   # Deployment job
   deploy:
