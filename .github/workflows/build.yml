@@ -41,6 +41,7 @@ jobs:
       - name: Deploy IG
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
          branch: gh-pages
          folder: ./output
          clean-exclude: branches
