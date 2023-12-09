@@ -40,7 +40,8 @@ jobs:
 
       - name: Deploy IG
         uses: JamesIves/github-pages-deploy-action@v4
-        branch: gh-pages
-        folder: ./output
-        clean-exclude: branches
+        with:
+         branch: gh-pages
+         folder: ./output
+         clean-exclude: branches
   
