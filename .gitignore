@@ -47,3 +47,5 @@ auto-save-list
 tramp
 .\#*
 .swp
+
+bkp/*

@@ -1,6 +1,6 @@
 CodeSystem: HIV.A
-Title: "HIV.A Registration Registration CodeSystem"
-Description: "CodeSystem for HIV.A Registration Registration Data Elements"
+Title: "HIV.A  Registration CodeSystem"
+Description: "CodeSystem for HIV.A  Registration Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
 * ^name = "HIV_A"
@@ -60,12 +60,12 @@ Description: "CodeSystem for HIV.A Registration Registration Data Elements"
 * #DE53 "Alternate contact relationship" "The alternate contact's relationship to the client (e.g. partner, husband, mother, sibling, etc.)"
 
 
-CodeSystem: HIV.A
-Title: "HIV.B HTS visit Registration CodeSystem"
-Description: "CodeSystem for HIV.B HTS visit Registration Data Elements"
+CodeSystem: HIV.B
+Title: "HIV.B HTS visit  CodeSystem"
+Description: "CodeSystem for HIV.B HTS visit  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_B"
 
 * #DE1 "Reason for visit" "Reason for HIV testing services visit"
 * #DE2 "First-time HIV test" "First encounter for screening for human immunodeficiency virus"
@@ -400,12 +400,12 @@ Description: "CodeSystem for HIV.B HTS visit Registration Data Elements"
 * #DE331 "STI treatment dispensed (specify)" "STI treatment dispensed to the client"
 
 
-CodeSystem: HIV.A
-Title: "HIV.C PrEP visit Registration CodeSystem"
-Description: "CodeSystem for HIV.C PrEP visit Registration Data Elements"
+CodeSystem: HIV.C
+Title: "HIV.C PrEP visit  CodeSystem"
+Description: "CodeSystem for HIV.C PrEP visit  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_C"
 
 * #DE1 "Reason for PrEP visit" "Client's reason for the prevention visit"
 * #DE2 "First time counselling on PrEP" "The client is interested in discussing pre-exposure prophylaxis (PrEP) for the first time"
@@ -578,12 +578,12 @@ Description: "CodeSystem for HIV.C PrEP visit Registration Data Elements"
 * #DE169 "Services for responding to violence against women" "Offer or refer for services for responding to violence against women, including first-line support and psychosocial support, post-rape care and other support services including shelters, legal services and women and child protection services"
 
 
-CodeSystem: HIV.A
-Title: "HIV.D Care-Treatment Registration CodeSystem"
-Description: "CodeSystem for HIV.D Care-Treatment Registration Data Elements"
+CodeSystem: HIV.D
+Title: "HIV.D  CodeSystem"
+Description: "CodeSystem for HIV.D Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_D"
 
 * #DE1 "Reason for visit" "Whether visit was scheduled or unscheduled, clinical only, or for ARV drug pick-up"
 * #DE2 "First clinical visit" "The client's first appointment for clinical care by a provider at the facility"
@@ -632,7 +632,7 @@ Description: "CodeSystem for HIV.D Care-Treatment Registration Data Elements"
 * #DE45 "Restarting ART" "Client is restarting ART after stopping treatment for any reason"
 * #DE46 "Date of initiation on ART" "The date on which the client was first initiated on ART"
 * #DE47 "Time on ART" "Time the client has been on ART since starting or restarting it in years and months"
-* #DE48 "Date(s) ART restarted" "Date(s) client restarted ART after stopping (intentionally interrupting) for any number of reasons (see "Reason ART stopped")"
+* #DE48 "Date(s) ART restarted" "Date(s) client restarted ART after stopping (intentionally interrupting) for any number of reasons (see \"Reason ART stopped\")"
 * #DE49 "ART cohort" "Month and year client originally started ART (documented) at a health facility in the system. The cohort is a group of patients who started ART in the same month (or quarter) and year, whose status is followed over time, using the ART register."
 * #DE50 "Transfer in for HIV care" "Client is transferring in with records or known ART drugs and ART start date"
 * #DE51 "Date of transfer in" "Date client presented at facility (with transfer/referral slip) from another facility (and on ART) within the system"
@@ -1070,13 +1070,13 @@ Description: "CodeSystem for HIV.D Care-Treatment Registration Data Elements"
 * #DE483 "New antiretroviral regimen after substitution within first-line regimen" "New antiretroviral (ARV) drugs after client changed regimen within the first-line regimen"
 * #DE484 "Date of switch to second-line regimen" "Date client was changed from a first-line to second-line ARV drug regimen (switch)"
 * #DE485 "New regimen after switch to second-line regimen" "New ART regimen after switch to second-line ART regimen"
-* #DE486 "Reason for switch to second-line regimen" "Reason why client was switched from first- to second-line ARV drug regimen (see "Reason for regimen switch" for levels)"
+* #DE486 "Reason for switch to second-line regimen" "Reason why client was switched from first- to second-line ARV drug regimen (see \"Reason for regimen switch\" for levels)"
 * #DE487 "Date(s) of substitution within second-line regimen" "Date on which ARV drug regimen for client was changed within the second-line regimen (substitution)"
 * #DE488 "Reason(s) for substitution within second-line regimen" "Reason(s) why client changed drug regimen (within the second-line)"
 * #DE489 "New regimen(s) after substitution within second-line regimen" "New ARV drugs after client changed regimen within the second- line regimen"
 * #DE490 "Date of switch to third-line regimen" "Date client was changed from a second- to third-line ARV drug regimen (switch)"
 * #DE491 "New regimen after switch to third-line regimen" "New ART regimen after switch to third-line ART regimen"
-* #DE492 "Reason for switch to third-line regimen" "Reason why client was switched from second- to third-line ARV drug regimen (see "Reason for regimen switch" for levels)"
+* #DE492 "Reason for switch to third-line regimen" "Reason why client was switched from second- to third-line ARV drug regimen (see \"Reason for regimen switch\" for levels)"
 * #DE493 "Date(s) of substitution within third-line regimen" "Date on which ARV drug regimen for client was changed within the third-line (substitution)"
 * #DE494 "Reason(s) for substitution within third-line regimen" "Reason(s) why client changed drug regimen (within the third-line)"
 * #DE495 "New regimen(s) after substitution within third-line regimen" "New ARV drugs after client changed regimen within the third-line regimen"
@@ -1183,7 +1183,7 @@ Description: "CodeSystem for HIV.D Care-Treatment Registration Data Elements"
 * #DE596 "Entered in error" "Entered in error"
 * #DE597 "Intended" "The medication may be taken at some time in the future"
 * #DE598 "Stopped" "Actions implied by the statement have been permanently halted, before all of them occurred. This should not be used if the statement was entered in error."
-* #DE599 "On hold" "The client has temporarily stopped taking the medication, but is expected to continue again later. May also be called "suspended"."
+* #DE599 "On hold" "The client has temporarily stopped taking the medication, but is expected to continue again later. May also be called \"suspended\"."
 * #DE600 "Unknown" "The state of the medication use is not currently known"
 * #DE601 "Did not take" "The client did not take the medication"
 * #DE602 "Hepatitis B negative counselling conducted" "Hepatitis B negative counselling conducted"
@@ -1518,15 +1518,6 @@ Description: "CodeSystem for HIV.D Care-Treatment Registration Data Elements"
 * #DE931 "Other" "Other medication currently being taken by, or considered for, client"
 * #DE932 "Other (specify)" "Other medication currently being taken by, or considered for, client (specify)"
 * #DE933 "Medication change recommended" "A medication change is recommended for the client based upon current or considered medications"
-
-
-CodeSystem: HIV.A
-Title: "HIV.D HIV-TB Registration CodeSystem"
-Description: "CodeSystem for HIV.D HIV-TB Registration Data Elements"
-* ^experimental = false
-* ^caseSensitive = false
-* ^name = "HIV_A"
-
 * #DE934 "WHO HIV clinical stage condition or symptom" "New or recurrent clinical events used to categorize HIV disease severity based at baseline and follow up"
 * #DE935 "Pulmonary TB" "Client's symptoms include pulmonary TB"
 * #DE936 "Lymph node TB" "Client's symptoms include lymph node TB"
@@ -1634,16 +1625,16 @@ Description: "CodeSystem for HIV.D HIV-TB Registration Data Elements"
 * #DE1035 "Not started" "The client did not start the TB preventive treatment (TPT)"
 * #DE1036 "On TPT" "The client started the TB preventive treatment (TPT) and is currently taking the medication, without treatment interruptions"
 * #DE1037 "On TPT with interruptions" "The client started the TB preventive treatment (TPT) and is currently taking the medication, with treatment interruptions"
-* #DE1038 "On hold" "The health care worker has temporarily stopped the TB preventive treatment (TPT), but TPT is expected to continue again later. May also be called "suspended"."
+* #DE1038 "On hold" "The health care worker has temporarily stopped the TB preventive treatment (TPT), but TPT is expected to continue again later. May also be called \"suspended\"."
 * #DE1039 "Completed" "TB preventive treatment (TPT) was completed"
 
 
-CodeSystem: HIV.A
-Title: "HIV.E-F PMTCT Registration CodeSystem"
-Description: "CodeSystem for HIV.E-F PMTCT Registration Data Elements"
+CodeSystem: HIV.EF
+Title: "HIV.E-F PMTCT  CodeSystem"
+Description: "CodeSystem for HIV.E-F PMTCT  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_EF"
 
 * #DE1 "Pregnant woman's first name" "Pregnant woman's first or given name"
 * #DE2 "Pregnant woman's surname" "Pregnant woman's family name or last name"
@@ -1920,12 +1911,12 @@ Description: "CodeSystem for HIV.E-F PMTCT Registration Data Elements"
 * #DE273 "Superimposed on chronic hypertension" "Among women with chronic hypertension, development of new proteinuria, another maternal organ dysfunction(s), or evidence of uteroplacental dysfunction."
 
 
-CodeSystem: HIV.A
-Title: "HIV.G Diagnostics Registration CodeSystem"
-Description: "CodeSystem for HIV.G Diagnostics Registration Data Elements"
+CodeSystem: HIV.G
+Title: "HIV.G Diagnostics  CodeSystem"
+Description: "CodeSystem for HIV.G Diagnostics  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_G"
 
 * #DE1 "CD4 count" "CD4 cell count in cells/mm^3"
 * #DE2 "CD4 cell percentage" "CD4 cell percentage"
@@ -2003,18 +1994,18 @@ Description: "CodeSystem for HIV.G Diagnostics Registration Data Elements"
 * #DE74 "Syphilis diagnosis" "Client's syphilis diagnosis"
 * #DE75 "Syphilis positive" "Client is positive for syphilis"
 * #DE76 "Syphilis negative" "Client is negative for syphilis"
-* #DE77 "Other tests conducted" "If the health worker performed other tests on the woman that are not explicitly listed in the application, select "yes" here and fill in the details below."
+* #DE77 "Other tests conducted" "If the health worker performed other tests on the woman that are not explicitly listed in the application, select \"yes\" here and fill in the details below."
 * #DE78 "Other test(s) name" "Input the name of other test(s) that were done."
 * #DE79 "Other test(s) date" "Input the date of other test(s) that were done."
 * #DE80 "Other test(s) result(s)" "Input the result from the test(s)."
 
 
-CodeSystem: HIV.A
-Title: "HIV.H Follow-up Registration CodeSystem"
-Description: "CodeSystem for HIV.H Follow-up Registration Data Elements"
+CodeSystem: HIV.H
+Title: "HIV.H Follow-up  CodeSystem"
+Description: "CodeSystem for HIV.H Follow-up  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_M"
 
 * #DE1 "Reason for follow-up" "The reason why the client is being followed up"
 * #DE2 "Missed care visit" "Client did not present for a care appointment as scheduled / as expected"
@@ -2099,12 +2090,12 @@ Description: "CodeSystem for HIV.H Follow-up Registration Data Elements"
 * #DE81 "Other reason for stopping ART (specify)" "Client stopped ART for other reason (specify)"
 
 
-CodeSystem: HIV.A
-Title: "HIV.I Referral Registration CodeSystem"
-Description: "CodeSystem for HIV.I Referral Registration Data Elements"
+CodeSystem: HIV.I
+Title: "HIV.I Referral  CodeSystem"
+Description: "CodeSystem for HIV.I Referral Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_I"
 
 * #DE1 "Emergency referral" "Referral for urgent care"
 * #DE2 "Reason for referral" "Reason why the client is being referred. If diagnosed, this may include the reason for the diagnosis."
@@ -2125,12 +2116,12 @@ Description: "CodeSystem for HIV.I Referral Registration Data Elements"
 * #DE17 "Client history summary" "With interoperable systems, the provider receiving the referral should be able to access the client's health record digitally. However, in the absence of this, the referral provider should receive a summary of the client's health records that includes the client's history, medications, medications prescribed or dispensed, reported issues and concerns, and any other relevant clinical information the health care provider had already obtained."
 
 
-CodeSystem: HIV.A
-Title: "HIV.Prevention Registration CodeSystem"
-Description: "CodeSystem for HIV.Prevention Registration Data Elements"
+CodeSystem: HIV.Prevention
+Title: "HIV.Prevention  CodeSystem"
+Description: "CodeSystem for HIV.Prevention Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_Prevention"
 
 * #DE1 "At elevated risk for HIV acquisition" "Client is at elevated risk for HIV acquisition, defined according to country/programme context"
 * #DE2 "HIV prevention intervention" "HIV prevention intervention that client accessed"
@@ -2162,46 +2153,46 @@ Description: "CodeSystem for HIV.Prevention Registration Data Elements"
 * #DE28 "Number of days prescribed" "Days of medication client has been prescribed"
 
 
-CodeSystem: HIV.A
-Title: "HIV.Surveillance Registration CodeSystem"
-Description: "CodeSystem for HIV.Surveillance Registration Data Elements"
+// CodeSystem: HIV.Surveillance
+// Title: "HIV.Surveillance  CodeSystem"
+// Description: "CodeSystem for HIV.Surveillance Data Elements"
+// * ^experimental = false
+// * ^caseSensitive = false
+// * ^name = "HIV_Surveillance"
+
+// * #nan "HIV test date" "Date of the HIV test"
+// * #nan "HIV test result" "The result from HIV testing after applying the testing algorithm"
+// * #nan "Baseline CD4 count" "CD4 result from first CD4 test performed (such as at treatment initiation), also may be called CD4 at ART initiation or at ART start"
+// * #nan "Date of baseline CD4 count test" "Date and time when baseline CD4 count test was conducted"
+// * #nan "HIV clinical stage" "WHO clinical stage of client based on signs and symptoms. WHO clinical staging is a way to categorize HIV disease severity based on new or recurrent clinical events. There are 4 WHO clinical stages that range from mild symptoms (WHO clinical stage 1) to severe symptoms (WHO clinical stage 4)."
+// * #nan "ART start date" "The date on which the client started or restarted antiretroviral therapy (ART)"
+// * #nan "Currently pregnant" "Client is currently pregnant"
+// * #nan "CD4 count" "CD4 cell count in cells/mm^3"
+// * #nan "Date of CD4 sample collection" "Date sample to be used for CD4 count was collected"
+// * #nan "First viral load test result" "Result from the initial viral load test in number of copies/mL"
+// * #nan "Date of first viral load sample collection" "Date and time when the sample was collected to test the client's HIV viral load for the first time"
+// * #nan "Date of viral load sample collection" "Date and time when the sample was collected to test the client's HIV viral load"
+// * #nan "Viral load test result" "Result from the viral load test in number of copies/mL"
+// * #nan "Virally suppressed" "The client is virally suppressed for HIV, based on the client's most recent viral load test result being less than 1000 copies/mL"
+// * #nan "Visit date" "The date and time of the client's visit"
+// * #nan ">28 days since last missed appointment" "More than 28 days have passed since client's last missed appointment"
+// * #nan "Date of first AIDS diagnosis" "Date of client's first AIDS diagnosis"
+// * #nan "ANC contact date" "The date and time of the client's ANC contact (in the ANC DAK this is called 'Contact date')"
+// * #nan "Maternal HIV status at first ANC visit" "The HIV status of the infant's mother at first ANC visit"
+// * #nan "HIV-exposed infant or child" "Whether the infant or child was determined to have had HIV exposure"
+// * #nan "Test result of HIV assay 1" "The result of the first HIV assay in the testing strategy"
+// * #nan "Final diagnosis of HIV-exposed infant" "HIV-exposed infant final status at 18 months or 3 months after cessation of breastfeeding (whichever is later)."
+// * #nan "Date of death" "If deceased, the date that the client died"
+// * #nan "Cause of death" "Cause of death, if known"
+// * #nan "AIDS-related death" "Death of client was AIDS-related"
+
+
+CodeSystem: HIV.Configuration
+Title: "HIV.Configuration CodeSystem"
+Description: "CodeSystem for HIV.Configuration  Data Elements"
 * ^experimental = false
 * ^caseSensitive = false
-* ^name = "HIV_A"
-
-* #nan "HIV test date" "Date of the HIV test"
-* #nan "HIV test result" "The result from HIV testing after applying the testing algorithm"
-* #nan "Baseline CD4 count" "CD4 result from first CD4 test performed (such as at treatment initiation), also may be called CD4 at ART initiation or at ART start"
-* #nan "Date of baseline CD4 count test" "Date and time when baseline CD4 count test was conducted"
-* #nan "HIV clinical stage" "WHO clinical stage of client based on signs and symptoms. WHO clinical staging is a way to categorize HIV disease severity based on new or recurrent clinical events. There are 4 WHO clinical stages that range from mild symptoms (WHO clinical stage 1) to severe symptoms (WHO clinical stage 4)."
-* #nan "ART start date" "The date on which the client started or restarted antiretroviral therapy (ART)"
-* #nan "Currently pregnant" "Client is currently pregnant"
-* #nan "CD4 count" "CD4 cell count in cells/mm^3"
-* #nan "Date of CD4 sample collection" "Date sample to be used for CD4 count was collected"
-* #nan "First viral load test result" "Result from the initial viral load test in number of copies/mL"
-* #nan "Date of first viral load sample collection" "Date and time when the sample was collected to test the client's HIV viral load for the first time"
-* #nan "Date of viral load sample collection" "Date and time when the sample was collected to test the client's HIV viral load"
-* #nan "Viral load test result" "Result from the viral load test in number of copies/mL"
-* #nan "Virally suppressed" "The client is virally suppressed for HIV, based on the client's most recent viral load test result being less than 1000 copies/mL"
-* #nan "Visit date" "The date and time of the client's visit"
-* #nan ">28 days since last missed appointment" "More than 28 days have passed since client's last missed appointment"
-* #nan "Date of first AIDS diagnosis" "Date of client's first AIDS diagnosis"
-* #nan "ANC contact date" "The date and time of the client's ANC contact (in the ANC DAK this is called 'Contact date')"
-* #nan "Maternal HIV status at first ANC visit" "The HIV status of the infant's mother at first ANC visit"
-* #nan "HIV-exposed infant or child" "Whether the infant or child was determined to have had HIV exposure"
-* #nan "Test result of HIV assay 1" "The result of the first HIV assay in the testing strategy"
-* #nan "Final diagnosis of HIV-exposed infant" "HIV-exposed infant final status at 18 months or 3 months after cessation of breastfeeding (whichever is later)."
-* #nan "Date of death" "If deceased, the date that the client died"
-* #nan "Cause of death" "Cause of death, if known"
-* #nan "AIDS-related death" "Death of client was AIDS-related"
-
-
-CodeSystem: HIV.A
-Title: "HIV.Configuration Registration CodeSystem"
-Description: "CodeSystem for HIV.Configuration Registration Data Elements"
-* ^experimental = false
-* ^caseSensitive = false
-* ^name = "HIV_A"
+* ^name = "HIV_Configuration"
 
 * #DE1 "Population prevalence of TB" "The tuberculosis prevalence in the general population in number of cases per 100 000 persons or greater."
 * #DE2 "Population prevalence of soil-transmitted helminth infection" "The percentage of individuals in the general population infected with at least one species of soil-transmitted helminths"
