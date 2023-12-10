@@ -1,10 +1,10 @@
 This page describes the decision support logic included in the WHO
-Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>(link forthcoming).
+Digital Adaptation Kit (DAK) for HIV(link forthcoming).
 
 The decision-support logic component provides the decision logic and
 algorithms, as well as the scheduling of services, in accordance with
 WHO guidelines. The decision logic and algorithms in this implementation
-guide deconstruct the recommendations within the <mark>[insert health domain here]</mark> guidelines
+guide deconstruct the recommendations within the HIV guidelines
 and guidance into a machine readable format that clearly labels the
 inputs and outputs that would be operationalized in a digital
 decision-support system.

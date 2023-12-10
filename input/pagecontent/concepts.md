@@ -1,4 +1,4 @@
-Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the WHO Digital Adaptation Kit for <mark>[insert health domain here]</mark> (link forthcoming)
+Key concepts and abbreviations are described here. Additional terms are defined in the Glossary and List of Abbreviations in the WHO Digital Adaptation Kit for HIV (link forthcoming)
 ### Concepts 
 
 <table class="list">
@@ -44,7 +44,7 @@ Key concepts and abbreviations are described here. Additional terms are defined 
   <tr>
   <tr>
     <td><a href="https://build.fhir.org/implementationguide.html">Implementation Guide (IG)</a></td>
-    <td>A set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage. This IG is based on WHO guidance, as it is represented in the Digital Adaptation Kit for <mark>[insert health domain here]</mark>, to support the adoption of open standards for interoperability.</td>
+    <td>A set of rules about how FHIR resources are used (or should be used) to solve a particular problem, with associated documentation to support and clarify the usage. This IG is based on WHO guidance, as it is represented in the Digital Adaptation Kit for HIV, to support the adoption of open standards for interoperability.</td>
   </tr>
   <tr>
     <td>Indicator</td>
