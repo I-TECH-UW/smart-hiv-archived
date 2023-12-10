@@ -127,7 +127,7 @@ UEP.TI.ZZ , equivalent)
   * insert ElementMap(DE53, 263498003.0, equivalent)
 
 
-Instance:     HIVBHTSVisit
+Instance:     HIV.BHTSVisit
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from HIV.B HTS visit Data Dictionary to other codesystems."
 Usage:        #definition
