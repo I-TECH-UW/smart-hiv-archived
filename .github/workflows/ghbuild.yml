@@ -17,6 +17,11 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   # This workflow contains a single job called "build"
   call_build: 
