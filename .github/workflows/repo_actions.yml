@@ -12,6 +12,10 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   call-update-readme:
     uses: WorldHealthOrganization/smart-base/.github/workflows/update_readme.yml@main
