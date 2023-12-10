@@ -1,8 +1,8 @@
-This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>. This page includes links to the published DAK for <mark>[insert health domain here]</mark>, as well as a small subset of other references.
+This implementation guide is meant to facilitate operationalization of the World Health Organization (WHO) Digital Adaptation Kit (DAK) for HIV. This page includes links to the published DAK for HIV, as well as a small subset of other references.
 
-For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide and the references section in the published DAK for <mark>[insert health domain here]</mark>.
+For additional resources, see the <a href="dependencies.html">Dependencies</a> page, which includes the standards referenced in this implementation guide and the references section in the published DAK for HIV.
 
-### WHO Digital Adaptation Kit (DAK) for <mark>[insert health domain here]</mark>
+### WHO Digital Adaptation Kit (DAK) for HIV
 
 > The Digital Adaptation Kit was published on \[publication date\]:
 >
