@@ -17,10 +17,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.A)
-  * target = $ICD10
-
-* group[+]
-  * source = Canonical(HIV.A)
   * target = $LNC
   * insert ElementMap(DE1, 45392-8, equivalent)
   * insert ElementMap(DE2, 45394-4, equivalent)
@@ -3177,7 +3173,7 @@ Usage:        #definition
   * insert ElementMap(DE933, 182838006, equivalent)
 
 
-Instance:     HIVD_HIVTB
+Instance:     HIV.D.HIVTB
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from HIV.D HIV-TB Data Dictionary to other codesystems."
 Usage:        #definition
@@ -3461,7 +3457,7 @@ Usage:        #definition
   * insert ElementMap(DE1039, 182992009, equivalent)
 
 
-Instance:     HIVE-FPMTCT
+Instance:     HIV.EF.PMTCT
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from HIV.E-F PMTCT Data Dictionary to other codesystems."
 Usage:        #definition
@@ -3806,10 +3802,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.EF)
-  * target = $ICF
-
-* group[+]
-  * source = Canonical(HIV.EF)
   * target = $SCT
   * insert ElementMap(DE1, 184095009, equivalent)
   * insert ElementMap(DE2, 184096005, equivalent)
@@ -4134,10 +4126,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.G)
-  * target = $ICF
-
-* group[+]
-  * source = Canonical(HIV.G)
   * target = $SCT
   * insert ElementMap(DE1, 313660005, equivalent)
   * insert ElementMap(DE2, 313938009, equivalent)
@@ -4287,14 +4275,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.H)
-  * target = $ICHI
-
-* group[+]
-  * source = Canonical(HIV.H)
-  * target = $ICF
-
-* group[+]
-  * source = Canonical(HIV.H)
   * target = $SCT
   * insert ElementMap(DE2, 298058004, equivalent)
   * insert ElementMap(DE3, 182851001, equivalent)
@@ -4374,14 +4354,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.I)
-  * target = $ICD11
-
-* group[+]
-  * source = Canonical(HIV.I)
-  * target = $ICD10
-
-* group[+]
-  * source = Canonical(HIV.I)
   * target = $LNC
   * insert ElementMap(DE1, 96349-6, equivalent)
   * insert ElementMap(DE3, 79429-7, equivalent)
@@ -4414,10 +4386,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.I)
-  * target = $ICF
-
-* group[+]
-  * source = Canonical(HIV.I)
   * target = $SCT
   * insert ElementMap(DE1, 183866009, equivalent)
   * insert ElementMap(DE3, 32485007, equivalent)
@@ -4437,7 +4405,7 @@ Usage:        #definition
   * insert ElementMap(DE17, 721927009, equivalent)
 
 
-Instance:     HIVPrevention
+Instance:     HIV.Prevention
 InstanceOf:   ConceptMap
 Description:  "Mapping to and from HIV.Prevention Data Dictionary to other codesystems."
 Usage:        #definition
@@ -4479,14 +4447,6 @@ Usage:        #definition
 
 * group[+]
   * source = Canonical(HIV.Prevention)
-  * target = $ICHI
-
-* group[+]
-  * source = Canonical(HIV.Prevention)
-  * target = $ICF
-
-* group[+]
-  * source = Canonical(HIV.Prevention)
   * target = $SCT
   * insert ElementMap(DE1, 266974005.0, equivalent)
   * insert ElementMap(DE3, 278032008.0, equivalent)
@@ -4513,67 +4473,67 @@ Usage:        #definition
   * insert ElementMap(DE28, 307144000.0, equivalent)
 
 
-Instance:     HIVSurveillance
-InstanceOf:   ConceptMap
-Description:  "Mapping to and from HIV.Surveillance Data Dictionary to other codesystems."
-Usage:        #definition
+// Instance:     HIV.Surveillance
+// InstanceOf:   ConceptMap
+// Description:  "Mapping to and from HIV.Surveillance Data Dictionary to other codesystems."
+// Usage:        #definition
 
-* name = "HIV_Surveillance"
-* title = "ConceptMap to and from HIV.Surveillance DataElements"
-* status = #active
-* experimental = false
-* date = "2023-12-09"
+// * name = "HIV_Surveillance"
+// * title = "ConceptMap to and from HIV.Surveillance DataElements"
+// * status = #active
+// * experimental = false
+// * date = "2023-12-09"
 
-* group[+]
-  * source = Canonical(HIV.Surveillance)
-  * target = $ICD11
-  * insert ElementMap(DEnan, QA41, equivalent)
-  * insert ElementMap(DEnan, 1C62.Z , equivalent)
+// * group[+]
+//   * source = Canonical(HIV.Surveillance)
+//   * target = $ICD11
+//   * insert ElementMap(DEnan, QA41, equivalent)
+//   * insert ElementMap(DEnan, 1C62.Z , equivalent)
 
-* group[+]
-  * source = Canonical(HIV.Surveillance)
-  * target = $ICD10
-  * insert ElementMap(DEnan, Z32.1, equivalent)
+// * group[+]
+//   * source = Canonical(HIV.Surveillance)
+//   * target = $ICD10
+//   * insert ElementMap(DEnan, Z32.1, equivalent)
 
-* group[+]
-  * source = Canonical(HIV.Surveillance)
-  * target = $LNC
-  * insert ElementMap(DEnan, 67723-7, equivalent)
-  * insert ElementMap(DEnan, 80223-1, equivalent)
-  * insert ElementMap(DEnan, 80989-7, equivalent)
-  * insert ElementMap(DEnan, 63936-9, equivalent)
-  * insert ElementMap(DEnan, 82810-3, equivalent)
-  * insert ElementMap(DEnan, 33882-2, equivalent)
-  * insert ElementMap(DEnan, 23876-6, equivalent)
-  * insert ElementMap(DEnan, 33882-2, equivalent)
-  * insert ElementMap(DEnan, 33882-2, equivalent)
-  * insert ElementMap(DEnan, 76427-4, equivalent)
-  * insert ElementMap(DEnan, 63931-0, equivalent)
-  * insert ElementMap(DEnan, 67723-7, equivalent)
-  * insert ElementMap(DEnan, 81954-0, equivalent)
-  * insert ElementMap(DEnan, 79378-6, equivalent)
+// * group[+]
+//   * source = Canonical(HIV.Surveillance)
+//   * target = $LNC
+//   * insert ElementMap(DEnan, 67723-7, equivalent)
+//   * insert ElementMap(DEnan, 80223-1, equivalent)
+//   * insert ElementMap(DEnan, 80989-7, equivalent)
+//   * insert ElementMap(DEnan, 63936-9, equivalent)
+//   * insert ElementMap(DEnan, 82810-3, equivalent)
+//   * insert ElementMap(DEnan, 33882-2, equivalent)
+//   * insert ElementMap(DEnan, 23876-6, equivalent)
+//   * insert ElementMap(DEnan, 33882-2, equivalent)
+//   * insert ElementMap(DEnan, 33882-2, equivalent)
+//   * insert ElementMap(DEnan, 76427-4, equivalent)
+//   * insert ElementMap(DEnan, 63931-0, equivalent)
+//   * insert ElementMap(DEnan, 67723-7, equivalent)
+//   * insert ElementMap(DEnan, 81954-0, equivalent)
+//   * insert ElementMap(DEnan, 79378-6, equivalent)
 
-* group[+]
-  * source = Canonical(HIV.Surveillance)
-  * target = $SCT
-  * insert ElementMap(DEnan, 439272007, equivalent)
-  * insert ElementMap(DEnan, 313660005, equivalent)
-  * insert ElementMap(DEnan, 439771001, equivalent)
-  * insert ElementMap(DEnan, 413946009, equivalent)
-  * insert ElementMap(DEnan, 77386006, equivalent)
-  * insert ElementMap(DEnan, 313660005, equivalent)
-  * insert ElementMap(DEnan, 399445004, equivalent)
-  * insert ElementMap(DEnan, 1268649009, equivalent)
-  * insert ElementMap(DEnan, 399445004, equivalent)
-  * insert ElementMap(DEnan, 399445004, equivalent)
-  * insert ElementMap(DEnan, 245780008, equivalent)
-  * insert ElementMap(DEnan, 406543005, equivalent)
-  * insert ElementMap(DEnan, 432213005, equivalent)
-  * insert ElementMap(DEnan, 406543005, equivalent)
-  * insert ElementMap(DEnan, 444356002, equivalent)
-  * insert ElementMap(DEnan, 399753006, equivalent)
-  * insert ElementMap(DEnan, 184305005, equivalent)
-  * insert ElementMap(DEnan, 62479008, equivalent)
+// * group[+]
+//   * source = Canonical(HIV.Surveillance)
+//   * target = $SCT
+//   * insert ElementMap(DEnan, 439272007, equivalent)
+//   * insert ElementMap(DEnan, 313660005, equivalent)
+//   * insert ElementMap(DEnan, 439771001, equivalent)
+//   * insert ElementMap(DEnan, 413946009, equivalent)
+//   * insert ElementMap(DEnan, 77386006, equivalent)
+//   * insert ElementMap(DEnan, 313660005, equivalent)
+//   * insert ElementMap(DEnan, 399445004, equivalent)
+//   * insert ElementMap(DEnan, 1268649009, equivalent)
+//   * insert ElementMap(DEnan, 399445004, equivalent)
+//   * insert ElementMap(DEnan, 399445004, equivalent)
+//   * insert ElementMap(DEnan, 245780008, equivalent)
+//   * insert ElementMap(DEnan, 406543005, equivalent)
+//   * insert ElementMap(DEnan, 432213005, equivalent)
+//   * insert ElementMap(DEnan, 406543005, equivalent)
+//   * insert ElementMap(DEnan, 444356002, equivalent)
+//   * insert ElementMap(DEnan, 399753006, equivalent)
+//   * insert ElementMap(DEnan, 184305005, equivalent)
+//   * insert ElementMap(DEnan, 62479008, equivalent)
 
 
 Instance:     HIVConfiguration

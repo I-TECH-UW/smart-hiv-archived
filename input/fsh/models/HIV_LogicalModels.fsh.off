@@ -270,13 +270,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * partnerHivStatusReported 1..1 string "Partner HIV status (reported)" "The HIV status of the clients partner."
   * ^code[+] = HIV.B#DE33
 
-* hivPositive 1..1 string "HIV-positive" "Clients partner is HIV-positive"
+* cpHivPositive 1..1 string "HIV-positive" "Clients partner is HIV-positive"
   * ^code[+] = HIV.B#DE34
 
-* hivNegative 1..1 string "HIV-negative" "Clients partner is HIV-negative"
+* cpHivNegative 1..1 string "HIV-negative" "Clients partner is HIV-negative"
   * ^code[+] = HIV.B#DE35
 
-* unknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
+* cpUnknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
   * ^code[+] = HIV.B#DE36
 
 * partnerIsFromAKeyPopulation 1..1 string "Partner is from a key population*" "Clients partner is a member of a key population, that has an increased risk of HIV"
@@ -303,13 +303,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * hivSelfTestResult 1..1 string "HIV self-test result" "Results from the reported HIV self-test"
   * ^code[+] = HIV.B#DE44
 
-* reactive 1..1 string "Reactive" "The HIV self-test was reactive"
+* hstReactive 1..1 string "Reactive" "The HIV self-test was reactive"
   * ^code[+] = HIV.B#DE45
 
-* nonReactive 1..1 string "Non-reactive" "The HIV self-test was non-reactive"
+* hstNonReactive 1..1 string "Non-reactive" "The HIV self-test was non-reactive"
   * ^code[+] = HIV.B#DE46
 
-* invalid 1..1 string "Invalid" "The HIV self-test was invalid"
+* hstInvalid 1..1 string "Invalid" "The HIV self-test was invalid"
   * ^code[+] = HIV.B#DE47
 
 * dateOfHivSelfTest 1..1 string "Date of HIV self-test" "Date when the HIV self-test was conducted"
@@ -552,7 +552,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * vertical 1..1 string "Vertical" "Probable route of HIV transmission to an infant was during pregnancy, labour, delivery and breastfeeding (vertical transmission)"
   * ^code[+] = HIV.B#DE127
 
-* other 1..1 string "Other" "Probable route of HIV transmission was other and may include needle accidents, blood transfusion, blood products or organ/tissue donations, tattoos, piercings, circumcision, or acupuncture."
+* rtOther 1..1 string "Other" "Probable route of HIV transmission was other and may include needle accidents, blood transfusion, blood products or organ/tissue donations, tattoos, piercings, circumcision, or acupuncture."
   * ^code[+] = HIV.B#DE128
 
 * partnerHivTestConducted 1..1 string "Partner HIV test conducted" "If the client does not know the HIV status of the clients partner(s), offer to test and add results here"
@@ -1403,10 +1403,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * pepForHivPrevention 1..1 string "PEP for HIV prevention" "Client was prescribed post-exposure prophylaxis (PEP) for HIV prevention"
   * ^code[+] = HIV.C#DE77
 
-* other 1..1 string "Other" "Client was prescribed other medications"
+* medOther 1..1 string "Other" "Client was prescribed other medications"
   * ^code[+] = HIV.C#DE78
 
-* otherSpecify 1..1 string "Other (specify)" "Client was prescribed other medications (specify)"
+* medOtherSpecify 1..1 string "Other (specify)" "Client was prescribed other medications (specify)"
   * ^code[+] = HIV.C#DE79
 
 * prepProductPrescribed 1..1 string "PrEP product prescribed" "PrEP product that the client was prescribed"
@@ -1900,10 +1900,10 @@ Description:  "Logical Model for HIV.D Care-Treatment data elements."
 * hypertension 1..1 string "Hypertension" "High blood pressure"
   * ^code[+] = HIV.D#DE71
 
-* other 1..1 string "Other" "Other health conditions not included in the list"
+* condOther 1..1 string "Other" "Other health conditions not included in the list"
   * ^code[+] = HIV.D#DE72
 
-* otherSpecify 1..1 string "Other (specify)" "Other health conditions not included in the list (specify)"
+* condOtherSpecify 1..1 string "Other (specify)" "Other health conditions not included in the list (specify)"
   * ^code[+] = HIV.D#DE73
 
 * originalFirstLineArtRegimen 1..1 string "Original first-line ART regimen" "Original full, first-line ARV drug regimen patient started on at this facility"
@@ -2197,13 +2197,13 @@ Description:  "Logical Model for HIV.D Care-Treatment data elements."
 * hcvTestResult 1..1 string "HCV test result" "Hepatitis C virus test result (HCV antibody, HCV RNA or HCV core antigen)"
   * ^code[+] = HIV.D#DE170
 
-* positive 1..1 string "Positive" "HCV test result was positive"
+* hcvPositive 1..1 string "Positive" "HCV test result was positive"
   * ^code[+] = HIV.D#DE171
 
-* negative 1..1 string "Negative" "HCV test result was negative"
+* hcvNegative 1..1 string "Negative" "HCV test result was negative"
   * ^code[+] = HIV.D#DE172
 
-* indeterminate 1..1 string "Indeterminate" "HCV test result was indeterminate"
+* hcvIndeterminate 1..1 string "Indeterminate" "HCV test result was indeterminate"
   * ^code[+] = HIV.D#DE173
 
 * dateHcvTestResultReturnedToClient 1..1 string "Date HCV test result returned to client" "Date HCV test result was returned to client"
@@ -4994,7 +4994,7 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * obstetricComplications 1..1 string "Obstetric complications" "Serious or life-threatening obstetric complications during pregnancy, delivery or postpartum experienced by mother or her newborn"
   * ^code[+] = HIV.EF#DE57
 
-* liveBirth 1..1 string "Live birth" "The woman had a live birth"
+* ocLiveBirth 1..1 string "Live birth" "The woman had a live birth"
   * ^code[+] = HIV.EF#DE58
 
 * liveBirthToAnHivPositiveWoman 1..1 string "Live birth to an HIV-positive woman" "A woman living with HIV had a live birth"
@@ -5030,10 +5030,10 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * home 1..1 string "Home" "The woman delivered at home"
   * ^code[+] = HIV.EF#DE69
 
-* other 1..1 string "Other" "The woman delivered at another location that is not at home or at a health facility"
+* dOther 1..1 string "Other" "The woman delivered at another location that is not at home or at a health facility"
   * ^code[+] = HIV.EF#DE70
 
-* otherSpecify 1..1 string "Other (specify)" "The woman delivered at another location that is not at home or at a health facility (specify)"
+* dOtherSpecify 1..1 string "Other (specify)" "The woman delivered at another location that is not at home or at a health facility (specify)"
   * ^code[+] = HIV.EF#DE71
 
 * deliveryFacility 1..1 string "Delivery facility" "Facility where the infant or child was born"
@@ -5102,7 +5102,7 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * male 1..1 string "Male" "Client identifies as male"
   * ^code[+] = HIV.EF#DE93
 
-* other 1..1 string "Other" "Client identifies in a non-binary way"
+* nbOther 1..1 string "Other" "Client identifies in a non-binary way"
   * ^code[+] = HIV.EF#DE94
 
 * infantHeight 1..1 string "Infant height" "The infants height in centimetres"
@@ -5135,10 +5135,10 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * maternalHivTestResult 1..1 string "Maternal HIV test result" "Test result for mother after applying the testing strategy"
   * ^code[+] = HIV.EF#DE104
 
-* hivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
+* matHivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
   * ^code[+] = HIV.EF#DE105
 
-* hivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
+* matHivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
   * ^code[+] = HIV.EF#DE106
 
 * hivInconclusive 1..1 string "HIV-inconclusive" "Test result is HIV-inconclusive"
@@ -5246,43 +5246,43 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * maternalHivStatus 1..1 string "Maternal HIV status" "The HIV status of the infants mother"
   * ^code[+] = HIV.EF#DE141
 
-* hivPositive 1..1 string "HIV-positive" "Infants mother is HIV-positive"
+* imHivPositive 1..1 string "HIV-positive" "Infants mother is HIV-positive"
   * ^code[+] = HIV.EF#DE142
 
-* hivNegative 1..1 string "HIV-negative" "Infants mother is HIV-negative"
+* imHivNegative 1..1 string "HIV-negative" "Infants mother is HIV-negative"
   * ^code[+] = HIV.EF#DE143
 
-* unknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
+* imUnknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
   * ^code[+] = HIV.EF#DE144
 
 * maternalHivStatusAtFirstAncVisit 1..1 string "Maternal HIV status at first ANC visit" "The HIV status of the infants mother at first ANC visit"
   * ^code[+] = HIV.EF#DE145
 
-* hivPositive 1..1 string "HIV-positive" "Infants mother is HIV-positive"
+* imHivPositive2 1..1 string "HIV-positive" "Infants mother is HIV-positive"
   * ^code[+] = HIV.EF#DE146
 
-* hivNegative 1..1 string "HIV-negative" "Infants mother is HIV-negative"
+* imHivNegative2 1..1 string "HIV-negative" "Infants mother is HIV-negative"
   * ^code[+] = HIV.EF#DE147
 
-* unknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
+* imUnknown2 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
   * ^code[+] = HIV.EF#DE148
 
 * maternalSyphilisTestResult 1..1 string "Maternal syphilis test result" "Result from maternal syphilis test"
   * ^code[+] = HIV.EF#DE149
 
-* positive 1..1 string "Positive" "Test result is positive for syphilis"
+* syptPositive 1..1 string "Positive" "Test result is positive for syphilis"
   * ^code[+] = HIV.EF#DE150
 
-* negative 1..1 string "Negative" "Test result is negative for syphilis"
+* syptNegative 1..1 string "Negative" "Test result is negative for syphilis"
   * ^code[+] = HIV.EF#DE151
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* syptInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.EF#DE152
 
 * hypertension 1..1 string "Hypertension" "Whether the client has developed hypertension associated with pregnancy"
   * ^code[+] = HIV.EF#DE153
 
-* preEclampsia 1..1 string "Pre-eclampsia" "Whether the client has pre-eclampsia"
+* hasPreEclampsia 1..1 string "Pre-eclampsia" "Whether the client has pre-eclampsia"
   * ^code[+] = HIV.EF#DE154
 
 * signsOfSubstantialRiskOfHivInfection 1..1 string "Signs of substantial risk of HIV infection" "Signs the client is at a substantial risk of HIV infection"
@@ -5381,25 +5381,25 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * eidTestNumber1TestResult 1..1 string "EID test number 1 test result" "Early infant diagnosis test number 1 test result"
   * ^code[+] = HIV.EF#DE186
 
-* positive 1..1 string "Positive" "Positive HIV test result from the nucleic acid test"
+* natPositive 1..1 string "Positive" "Positive HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE187
 
-* negative 1..1 string "Negative" "Negative HIV test result from the nucleic acid test"
+* natNegative 1..1 string "Negative" "Negative HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE188
 
-* indeterminate 1..1 string "Indeterminate" "Indeterminate HIV test result from the nucleic acid test"
+* natIndeterminate 1..1 string "Indeterminate" "Indeterminate HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE189
 
 * eidTestNumber2TestResult 1..1 string "EID test number 2 test result" "Early infant diagnosis test number 2 test result"
   * ^code[+] = HIV.EF#DE190
 
-* positive 1..1 string "Positive" "Positive HIV test result from the nucleic acid test"
+* natPositive2 1..1 string "Positive" "Positive HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE191
 
-* negative 1..1 string "Negative" "Negative HIV test result from the nucleic acid test"
+* natNegative2 1..1 string "Negative" "Negative HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE192
 
-* indeterminate 1..1 string "Indeterminate" "Indeterminate HIV test result from the nucleic acid test"
+* natIndeterminate2 1..1 string "Indeterminate" "Indeterminate HIV test result from the nucleic acid test"
   * ^code[+] = HIV.EF#DE193
 
 * assayNumberInTestingStrategy 1..1 string "Assay number in testing strategy" "The number of the assay (test kit) in the HIV testing strategy"
@@ -5423,73 +5423,73 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * testResultOfHivAssay1 1..1 string "Test result of HIV assay 1" "The result of the first HIV assay in the testing strategy"
   * ^code[+] = HIV.EF#DE200
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* hivaReactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE201
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* hivaNonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE202
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* hivaInvalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE203
 
 * testResultOfHivAssay2 1..1 string "Test result of HIV assay 2" "The result of the second HIV assay in the testing strategy"
   * ^code[+] = HIV.EF#DE204
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* hivaReactive2 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE205
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* hivaNonReactive2 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE206
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* hivaInvalid2 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE207
 
 * testResultOfHivAssay3 1..1 string "Test result of HIV assay 3" "The result of the third HIV assay in the testing strategy"
   * ^code[+] = HIV.EF#DE208
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* hivaReactive3 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE209
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* hivaNonReactive3 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE210
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* hivaInvalid3 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE211
 
 * testResultOfHivAssay1Repeated 1..1 string "Test result of HIV assay 1 repeated" "The result of the repeated first HIV assay in the testing strategy"
   * ^code[+] = HIV.EF#DE212
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* hivarReactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE213
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* hivarNonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE214
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* hivarInvalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE215
 
 * testResultOfSyphilisAssay1 1..1 string "Test result of syphilis assay 1" "The result of the first syphilis assay in the testing strategy"
   * ^code[+] = HIV.EF#DE216
 
-* reactive 1..1 string "Reactive" "The result of the first syphilis assay in the testing strategy was reactive"
+* sypaReactive 1..1 string "Reactive" "The result of the first syphilis assay in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE217
 
-* nonReactive 1..1 string "Non-reactive" "The result of the first syphilis assay in the testing strategy was non-reactive"
+* sypaNonReactive 1..1 string "Non-reactive" "The result of the first syphilis assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE218
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* sypaInvalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE219
 
 * testResultOfSyphilisAssay1Repeated 1..1 string "Test result of syphilis assay 1 repeated" "The result of the first syphilis assay repeated in the testing strategy"
   * ^code[+] = HIV.EF#DE220
 
-* reactive 1..1 string "Reactive" "The result of the first syphilis assay repeated in the testing strategy was reactive"
+* sypa1Reactive 1..1 string "Reactive" "The result of the first syphilis assay repeated in the testing strategy was reactive"
   * ^code[+] = HIV.EF#DE221
 
-* nonReactive 1..1 string "Non-reactive" "The result of the first syphilis assay repeated in the testing strategy was non-reactive"
+* sypa2NonReactive 1..1 string "Non-reactive" "The result of the first syphilis assay repeated in the testing strategy was non-reactive"
   * ^code[+] = HIV.EF#DE222
 
-* invalid 1..1 string "Invalid" "The result of the first syphilis assay repeated in the testing strategy was invalid"
+* sypa2invalid 1..1 string "Invalid" "The result of the first syphilis assay repeated in the testing strategy was invalid"
   * ^code[+] = HIV.EF#DE223
 
 * hivTestDate 1..1 string "HIV test date" "Date of the HIV test"
@@ -5498,13 +5498,13 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * infantHivStatus 1..1 string "Infant HIV status" "HIV status reported after applying the HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis."
   * ^code[+] = HIV.EF#DE225
 
-* hivPositive 1..1 string "HIV-positive" "Infant is HIV-positive"
+* iHivPositive 1..1 string "HIV-positive" "Infant is HIV-positive"
   * ^code[+] = HIV.EF#DE226
 
-* hivNegative 1..1 string "HIV-negative" "Infant is HIV-negative"
+* iHivNegative 1..1 string "HIV-negative" "Infant is HIV-negative"
   * ^code[+] = HIV.EF#DE227
 
-* unknown 1..1 string "Unknown" "Infant has unknown HIV status"
+* iUnknown 1..1 string "Unknown" "Infant has unknown HIV status"
   * ^code[+] = HIV.EF#DE228
 
 * infantArtStartDate 1..1 string "Infant ART start date" "The date on which the infant was started or restarted on antiretroviral therapy (ART)"
@@ -5513,7 +5513,7 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * finalDiagnosisOfHivExposedInfant 1..1 string "Final diagnosis of HIV-exposed infant" "HIV-exposed infant final status at 18 months or 3 months after cessation of breastfeeding (whichever is later)."
   * ^code[+] = HIV.EF#DE230
 
-* hivPositive 1..1 string "HIV-positive" "The infant is HIV-positive"
+* fiHivPositive 1..1 string "HIV-positive" "The infant is HIV-positive"
   * ^code[+] = HIV.EF#DE231
 
 * hivNegativeAndNoLongerBreastfeeding 1..1 string "HIV-negative and no longer breastfeeding" "The infant is HIV-negative and the mother has quit breastfeeding"
@@ -5561,40 +5561,40 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * bloodGroupAndRhFactor 1..1 string "Blood group and Rh factor" "Mothers blood type and blood Rh factor"
   * ^code[+] = HIV.EF#DE246
 
-* a 1..1 string "A+" "Mothers blood type and blood Rh factor is A+"
+* aplus 1..1 string "A+" "Mothers blood type and blood Rh factor is A+"
   * ^code[+] = HIV.EF#DE247
 
-* a 1..1 string "A-" "Mothers blood type and blood Rh factor is A-"
+* aminus 1..1 string "A-" "Mothers blood type and blood Rh factor is A-"
   * ^code[+] = HIV.EF#DE248
 
-* b 1..1 string "B+" "Mothers blood type and blood Rh factor is B+"
+* bplus 1..1 string "B+" "Mothers blood type and blood Rh factor is B+"
   * ^code[+] = HIV.EF#DE249
 
-* b 1..1 string "B-" "Mothers blood type and blood Rh factor is B-"
+* bminus 1..1 string "B-" "Mothers blood type and blood Rh factor is B-"
   * ^code[+] = HIV.EF#DE250
 
-* o 1..1 string "O+" "Mothers blood type and blood Rh factor is O+"
+* oplus 1..1 string "O+" "Mothers blood type and blood Rh factor is O+"
   * ^code[+] = HIV.EF#DE251
 
-* o 1..1 string "O-" "Mothers blood type and blood Rh factor is O-"
+* ominus 1..1 string "O-" "Mothers blood type and blood Rh factor is O-"
   * ^code[+] = HIV.EF#DE252
 
-* ab 1..1 string "AB+" "Mothers blood type and blood Rh factor is AB+"
+* abplus 1..1 string "AB+" "Mothers blood type and blood Rh factor is AB+"
   * ^code[+] = HIV.EF#DE253
 
-* ab 1..1 string "AB-" "Mothers blood type and blood Rh factor is AB-"
+* abminus 1..1 string "AB-" "Mothers blood type and blood Rh factor is AB-"
   * ^code[+] = HIV.EF#DE254
 
 * asymptomaticBacteriuriaAsbTestResult 1..1 string "Asymptomatic bacteriuria (ASB) test result" "Result of urine culture (or urine Gram-staining if not available over dipstick tests) for diagnosing asymptomatic bacteriuria"
   * ^code[+] = HIV.EF#DE255
 
-* positive 1..1 string "Positive" "Result of test for asymptomatic bacteriuria is positive"
+* abPositive 1..1 string "Positive" "Result of test for asymptomatic bacteriuria is positive"
   * ^code[+] = HIV.EF#DE256
 
-* negative 1..1 string "Negative" "Result of test for asymptomatic bacteriuria is negative"
+* abNegative 1..1 string "Negative" "Result of test for asymptomatic bacteriuria is negative"
   * ^code[+] = HIV.EF#DE257
 
-* unknown 1..1 string "Unknown" "Result of test for asymptomatic bacteriuria is unknown"
+* abUnknown 1..1 string "Unknown" "Result of test for asymptomatic bacteriuria is unknown"
   * ^code[+] = HIV.EF#DE258
 
 * urineProteinTestResult 1..1 string "Urine protein test result" "Results of urine protein test of mother during ANC visit"
@@ -5636,7 +5636,7 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * transientGestationalHypertension 1..1 string "Transient gestational hypertension" "Hypertension arising at greater than or equal to 20 weeks' gestation in the clinic, which resolves with repeated BP readings"
   * ^code[+] = HIV.EF#DE271
 
-* preEclampsia 1..1 string "Pre-eclampsia" "Pre-eclampsia"
+* preEclampsia2 1..1 string "Pre-eclampsia" "Pre-eclampsia"
   * ^code[+] = HIV.EF#DE272
 
 * superimposedOnChronicHypertension 1..1 string "Superimposed on chronic hypertension" "Among women with chronic hypertension, development of new proteinuria, another maternal organ dysfunction(s), or evidence of uteroplacental dysfunction."
@@ -5704,13 +5704,13 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * hbsagTestResult 1..1 string "HBsAg test result" "Hepatitis B virus test result (HBsAg)"
   * ^code[+] = HIV.G#DE18
 
-* positive 1..1 string "Positive" "HBsAg test result was positive"
+* hbsagPositive 1..1 string "Positive" "HBsAg test result was positive"
   * ^code[+] = HIV.G#DE19
 
-* negative 1..1 string "Negative" "HBsAg test result was negative"
+* hbsagNegative 1..1 string "Negative" "HBsAg test result was negative"
   * ^code[+] = HIV.G#DE20
 
-* indeterminate 1..1 string "Indeterminate" "HBsAg test result was indeterminate"
+* hbsagIndeterminate 1..1 string "Indeterminate" "HBsAg test result was indeterminate"
   * ^code[+] = HIV.G#DE21
 
 * reasonHepatitisBTestNotConducted 1..1 string "Reason Hepatitis B test not conducted" "Reason why a hepatitis B test was not done"
@@ -5767,10 +5767,10 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * clientDeclinedRefusedTest 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
   * ^code[+] = HIV.G#DE39
 
-* other 1..1 string "Other" "Other reason test not performed"
+* rnpOther 1..1 string "Other" "Other reason test not performed"
   * ^code[+] = HIV.G#DE40
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
+* rnpOtherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
   * ^code[+] = HIV.G#DE41
 
 * hcvTestDate 1..1 string "HCV test date" "Date client was tested for hepatitis C virus (HCV antibody, HCV RNA or HCV core antigen)"
@@ -5836,16 +5836,16 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * reasonSyphilisTestNotDone 1..1 string "Reason syphilis test not done" "Reason why a syphilis test was not done"
   * ^code[+] = HIV.G#DE62
 
-* testDelayedToNextContactOrReferred 1..1 string "Test delayed to next contact or referred" "Test has been delayed to the next contact or client was referred to another provider/facility"
+* testDelayedToNextContactOrReferred2 1..1 string "Test delayed to next contact or referred" "Test has been delayed to the next contact or client was referred to another provider/facility"
   * ^code[+] = HIV.G#DE63
 
-* stockOutOrExpired 1..1 string "Stock-out or expired" "Test out of stock or stock present but expired"
+* stockOutOrExpired2 1..1 string "Stock-out or expired" "Test out of stock or stock present but expired"
   * ^code[+] = HIV.G#DE64
 
-* machineOrTechnicianNotAvailableOrMachineNotFunctioning 1..1 string "Machine or technician not available or machine not functioning" "Test machine or technician is unavailable, or machine is not functioning"
+* machineOrTechnicianNotAvailableOrMachineNotFunctioning2 1..1 string "Machine or technician not available or machine not functioning" "Test machine or technician is unavailable, or machine is not functioning"
   * ^code[+] = HIV.G#DE65
 
-* clientDeclinedRefusedTest 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
+* clientDeclinedRefusedTest2 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
   * ^code[+] = HIV.G#DE66
 
 * nptOther 1..1 string "Other" "Other reason test not performed"
@@ -6058,7 +6058,7 @@ Description:  "Logical Model for HIV.H Follow-up data elements."
 * forgot 1..1 string "Forgot" "Client reported not being adherent because they forgot"
   * ^code[+] = HIV.H#DE54
 
-* toxicitysideEffects 1..1 string "Toxicity/side effects" "Client reported not being adherent because of toxicity/side effects"
+* toxicitysideEffects2 1..1 string "Toxicity/side effects" "Client reported not being adherent because of toxicity/side effects"
   * ^code[+] = HIV.H#DE55
 
 * busy 1..1 string "Busy" "Client reported not being adherent because they were busy"
@@ -6106,10 +6106,10 @@ Description:  "Logical Model for HIV.H Follow-up data elements."
 * poorPalatability 1..1 string "Poor palatability" "Client reported not being adherent because of poor palatability"
   * ^code[+] = HIV.H#DE70
 
-* other 1..1 string "Other" "Client reported not being adherent because of other reason"
+* adhrOther 1..1 string "Other" "Client reported not being adherent because of other reason"
   * ^code[+] = HIV.H#DE71
 
-* otherSpecify 1..1 string "Other (specify)" "Client reported not being adherent because of other reason (specify)"
+* adhrOtherSpecify 1..1 string "Other (specify)" "Client reported not being adherent because of other reason (specify)"
   * ^code[+] = HIV.H#DE72
 
 * dateArtStopped 1..1 string "Date ART stopped" "Date on which client stopped ART"
@@ -6144,7 +6144,7 @@ Description:  "Logical Model for HIV.H Follow-up data elements."
 Logical:      HIV.I
 Title:        "HIV.I Referral Logical Model"
 Description:  "Logical Model for HIV.I Referral data elements."
-* ^name = "HIV_I Referral"
+* ^name = "HIV_I_Referral"
 * ^status = #active
 
 * emergencyReferral 1..1 string "Emergency referral" "Referral for urgent care"
@@ -6171,7 +6171,7 @@ Description:  "Logical Model for HIV.I Referral data elements."
 * referralForOtherGeneralServicesSpecify 1..1 string "Referral for other general services (specify)" "If none of the reasons above apply, specify the reason(s)"
   * ^code[+] = HIV.I#DE8
 
-* anyTreatmentGivenBeforeReferral? 1..1 string "Any treatment given before referral?" "If client was referred, was any treatment provided before referral?"
+* anyTreatmentGivenBeforeReferral 1..1 string "Any treatment given before referral?" "If client was referred, was any treatment provided before referral?"
   * ^code[+] = HIV.I#DE9
 
 * dateOfScheduledReferralAppointment 1..1 string "Date of scheduled referral appointment" "When the referral is scheduled"
@@ -6227,10 +6227,10 @@ Description:  "Logical Model for HIV.Prevention data elements."
 * vmmc 1..1 string "VMMC" "Client accessed voluntary medical male circumcision (VMMC) services"
   * ^code[+] = HIV.Prevention#DE7
 
-* other 1..1 string "Other" "Client accessed other HIV prevention services"
+* hpsOther 1..1 string "Other" "Client accessed other HIV prevention services"
   * ^code[+] = HIV.Prevention#DE8
 
-* otherSpecify 1..1 string "Other (specify)" "Client accessed other HIV prevention services (specify)"
+* hpsOtherSpecify 1..1 string "Other (specify)" "Client accessed other HIV prevention services (specify)"
   * ^code[+] = HIV.Prevention#DE9
 
 * dateAccessedHivPreventionIntervention 1..1 string "Date accessed HIV prevention intervention" "Date the client accessed HIV prevention intervention"
@@ -6239,13 +6239,13 @@ Description:  "Logical Model for HIV.Prevention data elements."
 * hivStatusOfContact 1..1 string "HIV status of contact" "The HIV status of the clients contact"
   * ^code[+] = HIV.Prevention#DE11
 
-* hivPositive 1..1 string "HIV-positive" "Clients contact is HIV-positive"
+* ccHivPositive 1..1 string "HIV-positive" "Clients contact is HIV-positive"
   * ^code[+] = HIV.Prevention#DE12
 
-* hivNegative 1..1 string "HIV-negative" "Clients contact is HIV-negative"
+* ccHivNegative 1..1 string "HIV-negative" "Clients contact is HIV-negative"
   * ^code[+] = HIV.Prevention#DE13
 
-* unknown 1..1 string "Unknown" "Client does not know contacts HIV status"
+* ccUnknown 1..1 string "Unknown" "Client does not know contacts HIV status"
   * ^code[+] = HIV.Prevention#DE14
 
 * dateInjectingEquipmentProvided 1..1 string "Date injecting equipment provided" "Date client was provided with injecting equipment"
@@ -6382,7 +6382,7 @@ Description:  "Logical Model for HIV.Configuration data elements."
 * ^status = #active
 
 * populationPrevalenceOfTb 1..1 string "Population prevalence of TB" "The tuberculosis prevalence in the general population in number of cases per 100 000 persons or greater."
-  * ^code[+] = HIV_Configuration#DE1
+  * ^code[+] = HIV.Configuration#DE1
 
 * populationPrevalenceOfSoilTransmittedHelminthInfection 1..1 string "Population prevalence of soil-transmitted helminth infection" "The percentage of individuals in the general population infected with at least one species of soil-transmitted helminths"
   * ^code[+] = HIV.Configuration#DE2
