@@ -55,37 +55,37 @@ Description:  "Logical Model for HIV.A Registration data elements."
 * age 1..1 string "Age" "Calculated age (number of years) of the client based on date of birth"
   * ^code[+] = HIV.A#DE17
 
-* gender* 1..1 string "Gender*" "Gender of the client*"
+* gender 1..1 string "Gender*" "Gender of the client*"
   * ^code[+] = HIV.A#DE18
 
-* female 1..1 string "Female" "Client identifies as female"
+* genderFemale 1..1 string "Female" "Client identifies as female"
   * ^code[+] = HIV.A#DE19
 
-* male 1..1 string "Male" "Client identifies as male"
+* genderMale 1..1 string "Male" "Client identifies as male"
   * ^code[+] = HIV.A#DE20
 
-* transgenderMale 1..1 string "Transgender male" "Client identifies as transgender male"
+* genderTransgenderMale 1..1 string "Transgender male" "Client identifies as transgender male"
   * ^code[+] = HIV.A#DE21
 
-* transgenderFemale 1..1 string "Transgender female" "Client identifies as transgender female"
+* genderTransgenderFemale 1..1 string "Transgender female" "Client identifies as transgender female"
   * ^code[+] = HIV.A#DE22
 
-* other 1..1 string "Other" "Additional category"
+* genderOther 1..1 string "Other" "Additional category"
   * ^code[+] = HIV.A#DE23
 
-* otherSpecify 1..1 string "Other (specify)" "Additional category (please specify)"
+* genderOtherSpecify 1..1 string "Other (specify)" "Additional category (please specify)"
   * ^code[+] = HIV.A#DE24
 
 * sex 1..1 string "Sex" "Sex of the client assigned at birth"
   * ^code[+] = HIV.A#DE25
 
-* female 1..1 string "Female" "Client identifies as female"
+* sexFemale 1..1 string "Female" "Client identifies as female"
   * ^code[+] = HIV.A#DE26
 
-* male 1..1 string "Male" "Client identifies as male"
+* sexMale 1..1 string "Male" "Client identifies as male"
   * ^code[+] = HIV.A#DE27
 
-* other 1..1 string "Other" "Client identifies in non-binary way or as a sexual and gender minority (or minorities)"
+* sexOther 1..1 string "Other" "Client identifies in non-binary way or as a sexual and gender minority (or minorities)"
   * ^code[+] = HIV.A#DE28
 
 * address 1..1 string "Address" "Clients home address or address which the client is consenting to disclose"
@@ -130,7 +130,7 @@ Description:  "Logical Model for HIV.A Registration data elements."
 * telephoneNumber 1..1 string "Telephone number" "Clients telephone number (a landline or a mobile phone number)"
   * ^code[+] = HIV.A#DE42
 
-* [administrativeArea] 1..1 string "[Administrative Area]" "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facilitys catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end users attributes."
+* administrativeArea 1..1 string "[Administrative Area]" "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facilitys catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end users attributes."
   * ^code[+] = HIV.A#DE43
 
 * communicationConsent 1..1 string "Communication consent" "Indication that client gave consent to be contacted"
@@ -225,10 +225,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * entryPointForCommunityLevelTesting 1..1 string "Entry point for community-level testing" "Specific point in the community where testing is happening"
   * ^code[+] = HIV.B#DE18
 
-* mobileTestingEGThroughVansOrTemporaryTestingFacilities 1..1 string "Mobile testing (e.g. through vans or temporary testing facilities)" "The client tested through mobile testing, such as through vans or temporary testing facilities"
+* mobileTesting 1..1 string "Mobile testing (e.g. through vans or temporary testing facilities)" "The client tested through mobile testing, such as through vans or temporary testing facilities"
   * ^code[+] = HIV.B#DE19
 
-* voluntaryCounsellingAndTestingCentresNotWithinAHealthFacilitySetting 1..1 string "Voluntary counselling and testing centres (not within a health facility setting)" "The client tested at a voluntary counselling and testing centre (not in a health facility setting)"
+* voluntaryCounsellingAndTestingCentres 1..1 string "Voluntary counselling and testing centres (not within a health facility setting)" "The client tested at a voluntary counselling and testing centre (not in a health facility setting)"
   * ^code[+] = HIV.B#DE20
 
 * otherCommunityBasedTesting 1..1 string "Other community-based testing" "The client tested through another type of community-based testing"
@@ -279,7 +279,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * unknown 1..1 string "Unknown" "Dont know HIV status - client does not know partners HIV status"
   * ^code[+] = HIV.B#DE36
 
-* partnerIsFromAKeyPopulation* 1..1 string "Partner is from a key population*" "Clients partner is a member of a key population, that has an increased risk of HIV"
+* partnerIsFromAKeyPopulation 1..1 string "Partner is from a key population*" "Clients partner is a member of a key population, that has an increased risk of HIV"
   * ^code[+] = HIV.B#DE37
 
 * sexWorker 1..1 string "Sex worker" "Clients partner is a sex worker"
@@ -315,34 +315,34 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * dateOfHivSelfTest 1..1 string "Date of HIV self-test" "Date when the HIV self-test was conducted"
   * ^code[+] = HIV.B#DE48
 
-* keyPopulationMember* 1..1 string "Key population member*" "Client is a member of a key population that has an increased risk of HIV"
+* keyPopulationMember 1..1 string "Key population member*" "Client is a member of a key population that has an increased risk of HIV"
   * ^code[+] = HIV.B#DE49
 
-* keyPopulationMemberType* 1..1 string "Key population member type*" "The type of key population that the client is included in"
+* keyPopulationMemberType 1..1 string "Key population member type*" "The type of key population that the client is included in"
   * ^code[+] = HIV.B#DE50
 
-* sexWorker 1..1 string "Sex worker" "Client is a sex worker"
+* kpSexWorker 1..1 string "Sex worker" "Client is a sex worker"
   * ^code[+] = HIV.B#DE51
 
-* menWhoHaveSexWithMen 1..1 string "Men who have sex with men" "Client is a man who has sex with men"
+* kpMenWhoHaveSexWithMen 1..1 string "Men who have sex with men" "Client is a man who has sex with men"
   * ^code[+] = HIV.B#DE52
 
-* transgenderPeople 1..1 string "Transgender people" "Client is transgender"
+* kpTransgenderPeople 1..1 string "Transgender people" "Client is transgender"
   * ^code[+] = HIV.B#DE53
 
-* peopleWhoInjectDrugs 1..1 string "People who inject drugs" "Client is a person who injects drugs"
+* kpTeopleWhoInjectDrugs 1..1 string "People who inject drugs" "Client is a person who injects drugs"
   * ^code[+] = HIV.B#DE54
 
-* peopleLivingInPrisonsAndOtherClosedSettings 1..1 string "People living in prisons and other closed settings" "Client lives in a prison or another closed setting"
+* kpPeopleLivingInPrisonsAndOtherClosedSettings 1..1 string "People living in prisons and other closed settings" "Client lives in a prison or another closed setting"
   * ^code[+] = HIV.B#DE55
 
-* adolescentGirl 1..1 string "Adolescent girl" "Calculated field based on age and gender, if client is 10 years or older and under 20 years old"
+* kpAdolescentGirl 1..1 string "Adolescent girl" "Calculated field based on age and gender, if client is 10 years or older and under 20 years old"
   * ^code[+] = HIV.B#DE56
 
-* youngWoman 1..1 string "Young woman" "Calculated field based on age and gender, if client is 20 years or older and under 25 years old"
+* kpYoungWoman 1..1 string "Young woman" "Calculated field based on age and gender, if client is 20 years or older and under 25 years old"
   * ^code[+] = HIV.B#DE57
 
-* orphanOrVulnerableChild 1..1 string "Orphan or vulnerable child" "Client considered an orphan or vulnerable child"
+* kpOrphanOrVulnerableChild 1..1 string "Orphan or vulnerable child" "Client considered an orphan or vulnerable child"
   * ^code[+] = HIV.B#DE58
 
 * informedOfHivTestResult 1..1 string "Informed of HIV test result" "Client has been informed of their HIV test result"
@@ -351,7 +351,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * dateHivTestResultsReturned 1..1 string "Date HIV test results returned" "Date HIV test result returned to client"
   * ^code[+] = HIV.B#DE60
 
-* hivExposureType* 1..1 string "HIV exposure type*" "Ways in which the client was exposed to HIV"
+* hivExposureType 1..1 string "HIV exposure type*" "Ways in which the client was exposed to HIV"
   * ^code[+] = HIV.B#DE61
 
 * occupational 1..1 string "Occupational" "Occupational exposure to HIV"
@@ -393,16 +393,16 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * typeOfContactElicited 1..1 string "Type of contact elicited" "Clients relationship to the contact identified for voluntary partner services or family services"
   * ^code[+] = HIV.B#DE74
 
-* biologicalChild 1..1 string "Biological child" "Contact identified for family services is the biological child of the client"
+* tceBiologicalChild 1..1 string "Biological child" "Contact identified for family services is the biological child of the client"
   * ^code[+] = HIV.B#DE75
 
-* drugInjectingPartner 1..1 string "Drug-injecting partner" "Contact identified for partner services is a drug-injecting partner of the client"
+* tceDrugInjectingPartner 1..1 string "Drug-injecting partner" "Contact identified for partner services is a drug-injecting partner of the client"
   * ^code[+] = HIV.B#DE76
 
-* sexualPartner 1..1 string "Sexual partner" "Contact identified for partner services is a sexual partner of the client"
+* tceSexualPartner 1..1 string "Sexual partner" "Contact identified for partner services is a sexual partner of the client"
   * ^code[+] = HIV.B#DE77
 
-* socialContact 1..1 string "Social contact" "Contact identified for social-network services is a social contact of the client"
+* tceSocialContact 1..1 string "Social contact" "Contact identified for social-network services is a social contact of the client"
   * ^code[+] = HIV.B#DE78
 
 * hivTestOrdered 1..1 string "HIV test ordered" "An HIV test of the client was ordered by the provider"
@@ -453,49 +453,49 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * testResultOfHivAssay1 1..1 string "Test result of HIV assay 1" "The result of the first HIV assay in the testing strategy"
   * ^code[+] = HIV.B#DE94
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* trhaReactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.B#DE95
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* trhaNonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.B#DE96
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* trhaInvalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.B#DE97
 
 * testResultOfHivAssay2 1..1 string "Test result of HIV assay 2" "The result of the second HIV assay in the testing strategy"
   * ^code[+] = HIV.B#DE98
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* trha2Reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.B#DE99
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* trha2NonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.B#DE100
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* trha2Invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.B#DE101
 
 * testResultOfHivAssay3 1..1 string "Test result of HIV assay 3" "The result of the third HIV assay in the testing strategy"
   * ^code[+] = HIV.B#DE102
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* trha3Reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.B#DE103
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* trha3NonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.B#DE104
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* trha3Invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.B#DE105
 
 * testResultOfHivAssay1Repeated 1..1 string "Test result of HIV assay 1 repeated" "The result of the repeated first HIV assay in the testing strategy"
   * ^code[+] = HIV.B#DE106
 
-* reactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
+* trha1rReactive 1..1 string "Reactive" "The result of the HIV assay in the testing strategy was reactive"
   * ^code[+] = HIV.B#DE107
 
-* nonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
+* trha1rNonReactive 1..1 string "Non-reactive" "The result of the HIV assay in the testing strategy was non-reactive"
   * ^code[+] = HIV.B#DE108
 
-* invalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
+* trha1rInvalid 1..1 string "Invalid" "The result of the HIV assay in the testing strategy was invalid"
   * ^code[+] = HIV.B#DE109
 
 * hivTestDate 1..1 string "HIV test date" "Date of the HIV test"
@@ -504,25 +504,25 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * hivTestResult 1..1 string "HIV test result" "The result from HIV testing after applying the testing algorithm"
   * ^code[+] = HIV.B#DE111
 
-* hivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
+* trHivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
   * ^code[+] = HIV.B#DE112
 
-* hivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
+* trHivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
   * ^code[+] = HIV.B#DE113
 
-* hivInconclusive 1..1 string "HIV-inconclusive" "Test result is HIV-inconclusive"
+* trHivInconclusive 1..1 string "HIV-inconclusive" "Test result is HIV-inconclusive"
   * ^code[+] = HIV.B#DE114
 
 * hivStatus 1..1 string "HIV status" "HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis."
   * ^code[+] = HIV.B#DE115
 
-* hivPositive 1..1 string "HIV-positive" "Client is HIV-positive"
+* stHivPositive 1..1 string "HIV-positive" "Client is HIV-positive"
   * ^code[+] = HIV.B#DE116
 
-* hivNegative 1..1 string "HIV-negative" "Client is HIV-negative"
+* stHivNegative 1..1 string "HIV-negative" "Client is HIV-negative"
   * ^code[+] = HIV.B#DE117
 
-* unknown 1..1 string "Unknown" "Client has unknown HIV status"
+* stUnknown 1..1 string "Unknown" "Client has unknown HIV status"
   * ^code[+] = HIV.B#DE118
 
 * datePositiveHivTestConfirmed 1..1 string "Date positive HIV test confirmed" "Date patient received positive HIV test confirmation (with written documentation)"
@@ -531,7 +531,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * siteWherePositiveHivTestConfirmed 1..1 string "Site where positive HIV test confirmed" "Name or identifier of health facility where HIV test was confirmed"
   * ^code[+] = HIV.B#DE120
 
-* probableRouteOfTransmission* 1..1 string "Probable route of transmission*" "Probable route(s) of transmission of HIV to client"
+* probableRouteOfTransmission 1..1 string "Probable route of transmission*" "Probable route(s) of transmission of HIV to client"
   * ^code[+] = HIV.B#DE121
 
 * heterosexualSex 1..1 string "Heterosexual sex" "Probable route of HIV transmission was through heterosexual sex"
@@ -567,25 +567,25 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * partnerHivTestResult 1..1 string "Partner HIV test result" "The HIV test result of the clients partner"
   * ^code[+] = HIV.B#DE132
 
-* hivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
+* ptrHivPositive 1..1 string "HIV-positive" "Test result is HIV-positive"
   * ^code[+] = HIV.B#DE133
 
-* hivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
+* ptrHivNegative 1..1 string "HIV-negative" "Test result is HIV-negative"
   * ^code[+] = HIV.B#DE134
 
-* hivInconclusive 1..1 string "HIV-inconclusive" "Test result is HIV-inconclusive"
+* ptrHivInconclusive 1..1 string "HIV-inconclusive" "Test result is HIV-inconclusive"
   * ^code[+] = HIV.B#DE135
 
 * partnerHivStatusConfirmed 1..1 string "Partner HIV status (confirmed)" "The HIV status of a sexual or drug-injecting partner of the client, based on a confirmed test result"
   * ^code[+] = HIV.B#DE136
 
-* hivPositive 1..1 string "HIV-positive" "Clients partner is HIV-positive"
+* pscHivPositive 1..1 string "HIV-positive" "Clients partner is HIV-positive"
   * ^code[+] = HIV.B#DE137
 
-* hivNegative 1..1 string "HIV-negative" "Clients partner is HIV-negative"
+* pscHivNegative 1..1 string "HIV-negative" "Clients partner is HIV-negative"
   * ^code[+] = HIV.B#DE138
 
-* unknown 1..1 string "Unknown" "Clients partner HIV status is unknown"
+* pscUnknown 1..1 string "Unknown" "Clients partner HIV status is unknown"
   * ^code[+] = HIV.B#DE139
 
 * partnerOnArt 1..1 string "Partner on ART" "Partner of the client is on ART"
@@ -618,13 +618,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * preventionServicesOfferedAndReferrals 1..1 string "Prevention services offered and referrals" "Offer or refer to prevention services"
   * ^code[+] = HIV.B#DE149
 
-* offerMaleAndFemaleCondomsAndCondomCompatibleLubricants 1..1 string "Offer male and female condoms and condom-compatible lubricants" "Offer male and female condoms and condom-compatible lubricants"
+* offerMaleAndFemaleCondoms 1..1 string "Offer male and female condoms and condom-compatible lubricants" "Offer male and female condoms and condom-compatible lubricants"
   * ^code[+] = HIV.B#DE150
 
-* offerPreExposureProphylaxisPrepForPeopleAtElevatedRiskForHivAcquisition 1..1 string "Offer pre-exposure prophylaxis (PrEP) for people at elevated risk for HIV acquisition" "Offer pre-exposure prophylaxis (PrEP) to people with substantial ongoing risk of HIV infection"
+* offerPreExposureProphylaxisPrepElev 1..1 string "Offer pre-exposure prophylaxis (PrEP) for people at elevated risk for HIV acquisition" "Offer pre-exposure prophylaxis (PrEP) to people with substantial ongoing risk of HIV infection"
   * ^code[+] = HIV.B#DE151
 
-* offerPostExposureProphylaxisPepFollowingSuspectedExposure 1..1 string "Offer post-exposure prophylaxis (PEP) following suspected exposure" "Offer or refer client for PEP following suspected exposure"
+* offerPostExposureProphylaxisPrepSus 1..1 string "Offer post-exposure prophylaxis (PEP) following suspected exposure" "Offer or refer client for PEP following suspected exposure"
   * ^code[+] = HIV.B#DE152
 
 * voluntaryMedicalMaleCircumcisionVmmc 1..1 string "Voluntary medical male circumcision (VMMC)" "Offer referral for VMMC services"
@@ -633,13 +633,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * harmReductionForPeopleWhoInjectDrugs 1..1 string "Harm reduction for people who inject drugs" "Offer or refer to harm reduction services for people who inject drugs (needle and syringe programmes, opioid substitution therapy, other drug-dependence treatment and opioid overdose prevention and management)"
   * ^code[+] = HIV.B#DE154
 
-* behaviouralInterventionsToSupportRiskReductionParticularlyForPeopleWithHivAndMembersOfKeyPopulations 1..1 string "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations" "Offer or refer to behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations"
+* behaviouralInterventionsToSupportRiskReduction 1..1 string "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations" "Offer or refer to behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations"
   * ^code[+] = HIV.B#DE155
 
 * hivTestingForPartnersAndBiologicalChildren 1..1 string "HIV testing for partners and biological children" "Offer voluntary testing for all partners and biological children of positive cases (includes partner services and index case testing), as welll as partners and social contacts of people from key populations, where appropriate"
   * ^code[+] = HIV.B#DE156
 
-* hivTestingForPartnersAndSocialContactsOfPeopleFromKeyPopulationsWhereAppropriate 1..1 string "HIV testing for partners and social contacts of people from key populations, where appropriate" "Offer voluntary testing for partners and social contacts of people from key populations, where appropriate"
+* hivTestingForPartnersAndSocialContactsKP 1..1 string "HIV testing for partners and social contacts of people from key populations, where appropriate" "Offer voluntary testing for partners and social contacts of people from key populations, where appropriate"
   * ^code[+] = HIV.B#DE157
 
 * sexualAndReproductiveHealthIntegratedServices 1..1 string "Sexual and reproductive health integrated services" "Offer or refer to sexual and reproductive health services"
@@ -669,10 +669,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * assessmentAndProvisionOfVaccinations 1..1 string "Assessment and provision of vaccinations" "Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC"
   * ^code[+] = HIV.B#DE166
 
-* hepatitisBHbvAndHepatitisCVirusHcvTestingAndTreatmentProvided 1..1 string "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment provided" "Offer or refer for HBV and/or HCV testing and treatment"
+* hepatitisTestingAndTreatmentProvided 1..1 string "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment provided" "Offer or refer for HBV and/or HCV testing and treatment"
   * ^code[+] = HIV.B#DE167
 
-* coTrimoxazoleChemoprophylaxisToPreventPneumocystisCariniiPneumoniaProvided 1..1 string "Co-trimoxazole chemoprophylaxis to prevent Pneumocystis carinii pneumonia provided" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+* coTrimoxazoleChemoprophylaxisProvided 1..1 string "Co-trimoxazole chemoprophylaxis to prevent Pneumocystis carinii pneumonia provided" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
   * ^code[+] = HIV.B#DE168
 
 * intensifiedTbCaseFindingAndLinkageToTbTreatmentProvided 1..1 string "Intensified TB case finding and linkage to TB treatment provided" "Offer or refer for intensified TB case finding and linkage to TB treatment"
@@ -681,7 +681,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb 1..1 string "Provision of isoniazid preventive therapy if person does not have TB" "Offer or refer for provision of isoniazid preventive therapy if person does not have TB"
   * ^code[+] = HIV.B#DE170
 
-* malariaPreventionSuchAsBedNetsAndProphylaxisDependingOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+* malariaPreventionDependingOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
   * ^code[+] = HIV.B#DE171
 
 * otherSupportServices 1..1 string "Other support services" "Offer or refer for other support services"
@@ -690,7 +690,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * mentalHealthServices 1..1 string "Mental health services" "Offer or refer for mental health services"
   * ^code[+] = HIV.B#DE173
 
-* psychosocialCounsellingSupportAndTreatmentAdherenceCounselling 1..1 string "Psychosocial counselling, support and treatment adherence counselling" "Offer or refer for psychosocial counselling, support and treatment adherence counselling"
+* psychosocialCounselling 1..1 string "Psychosocial counselling, support and treatment adherence counselling" "Offer or refer for psychosocial counselling, support and treatment adherence counselling"
   * ^code[+] = HIV.B#DE174
 
 * supportForDisclosureAndPartnerServices 1..1 string "Support for disclosure and partner services" "Offer or refer for support for disclosure and partner services"
@@ -726,7 +726,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * offeredVoluntaryPartnerServices 1..1 string "Offered voluntary partner services" "Whether the client was offered voluntary partner services or family services"
   * ^code[+] = HIV.B#DE185
 
-* countOfContactsOrPartnersGivenForSocialNetworkBasedPartnerServices 1..1 string "Count of contacts or partners given for social network-based/partner services" "The quantity of contacts or partners given by a client that accepts social network-based/partner services for follow-up"
+* countOfContactsOrPartnersGiven 1..1 string "Count of contacts or partners given for social network-based/partner services" "The quantity of contacts or partners given by a client that accepts social network-based/partner services for follow-up"
   * ^code[+] = HIV.B#DE186
 
 * offeredSocialNetworkBasedPartnerServices 1..1 string "Offered social network-based/partner services" "Whether the client was offered social network-based partner services"
@@ -744,10 +744,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * typeOfFollowUpAppointment 1..1 string "Type of follow-up appointment" "Type of follow-up appointment for testing services"
   * ^code[+] = HIV.B#DE191
 
-* retestingForHiv 1..1 string "Retesting for HIV" "Retesting follow-up appointment"
+* fuaRetestingForHiv 1..1 string "Retesting for HIV" "Retesting follow-up appointment"
   * ^code[+] = HIV.B#DE192
 
-* other 1..1 string "Other" "Other reason for the follow-up appointment"
+* fuaOther 1..1 string "Other" "Other reason for the follow-up appointment"
   * ^code[+] = HIV.B#DE193
 
 * otherReasonForTheFollowUpAppointmentSpecify 1..1 string "Other reason for the follow-up appointment (specify)" "Other reason for the follow-up appointment (specify)"
@@ -834,10 +834,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * woundDisruption 1..1 string "Wound disruption" "Client experienced wound disruption"
   * ^code[+] = HIV.B#DE221
 
-* other 1..1 string "Other" "Client experienced other adverse VMMC event"
+* vmmcOther 1..1 string "Other" "Client experienced other adverse VMMC event"
   * ^code[+] = HIV.B#DE222
 
-* otherSpecify 1..1 string "Other (specify)" "Client experienced other adverse VMMC event (specify)"
+* vmmcOtherSpecify 1..1 string "Other (specify)" "Client experienced other adverse VMMC event (specify)"
   * ^code[+] = HIV.B#DE223
 
 * hivRetestPriorToStartingArtConducted 1..1 string "HIV retest prior to starting ART conducted" "HIV retest prior to starting ART conducted"
@@ -867,10 +867,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * sentForTesting 1..1 string "Sent for testing" "Specimen sent for testing"
   * ^code[+] = HIV.B#DE232
 
-* other 1..1 string "Other" "Other syndrome/STI diagnosed"
+* stidOther 1..1 string "Other" "Other syndrome/STI diagnosed"
   * ^code[+] = HIV.B#DE233
 
-* otherSpecify 1..1 string "Other (specify)" "Other syndrome/STI diagnosed (specify)"
+* stidOtherSpecify 1..1 string "Other (specify)" "Other syndrome/STI diagnosed (specify)"
   * ^code[+] = HIV.B#DE234
 
 * anyStiSyndromeDiagnosed 1..1 string "Any STI syndrome diagnosed" "Was the client diagnosed with any of the five STI syndromes during this visit?"
@@ -909,10 +909,10 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * hepatitisC 1..1 string "Hepatitis C" "Client tested for Hepatitis C"
   * ^code[+] = HIV.B#DE246
 
-* other 1..1 string "Other" "Client tested for other STI"
+* stiOther 1..1 string "Other" "Client tested for other STI"
   * ^code[+] = HIV.B#DE247
 
-* otherSpecify 1..1 string "Other (specify)" "Client tested for other STI (specify)"
+* stiOtherSpecify 1..1 string "Other (specify)" "Client tested for other STI (specify)"
   * ^code[+] = HIV.B#DE248
 
 * syphilisTestDate 1..1 string "Syphilis test date" "Date of syphilis test"
@@ -921,13 +921,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * syphilisTestResult 1..1 string "Syphilis test result" "Result from syphilis test"
   * ^code[+] = HIV.B#DE250
 
-* positive 1..1 string "Positive" "Test result is positive for syphilis"
+* sypPositive 1..1 string "Positive" "Test result is positive for syphilis"
   * ^code[+] = HIV.B#DE251
 
-* negative 1..1 string "Negative" "Test result is negative for syphilis"
+* sypNegative 1..1 string "Negative" "Test result is negative for syphilis"
   * ^code[+] = HIV.B#DE252
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* sypInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.B#DE253
 
 * syphilisTreatmentStartDate 1..1 string "Syphilis treatment start date" "Date of initiation of syphilis treatment"
@@ -939,13 +939,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * gonorrhoeaTestResult 1..1 string "Gonorrhoea test result" "Result from Gonorrhoea test"
   * ^code[+] = HIV.B#DE256
 
-* positive 1..1 string "Positive" "Test result is positive for Neisseria gonorrhoeae"
+* gonPositive 1..1 string "Positive" "Test result is positive for Neisseria gonorrhoeae"
   * ^code[+] = HIV.B#DE257
 
-* negative 1..1 string "Negative" "Test result is negative for Neisseria gonorrhoeae"
+* gonNegative 1..1 string "Negative" "Test result is negative for Neisseria gonorrhoeae"
   * ^code[+] = HIV.B#DE258
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* gonInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.B#DE259
 
 * gonorrhoeaTreatmentStartDate 1..1 string "Gonorrhoea treatment start date" "Date of initiation of Gonorrhoea treatment"
@@ -969,7 +969,7 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * rectalSwab 1..1 string "Rectal swab" "Rectal swab to be collected"
   * ^code[+] = HIV.B#DE266
 
-* other 1..1 string "Other" "Other specimen type to be collected"
+* spOther 1..1 string "Other" "Other specimen type to be collected"
   * ^code[+] = HIV.B#DE267
 
 * otherTypeOfSpecimenSpecify 1..1 string "Other type of specimen (specify)" "Other specimen type to be collected (specify)"
@@ -984,13 +984,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * nonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
   * ^code[+] = HIV.B#DE271
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+* sypPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.B#DE272
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* sypNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE273
 
-* other 1..1 string "Other" "Other test used"
+* sypOther 1..1 string "Other" "Other test used"
   * ^code[+] = HIV.B#DE274
 
 * otherSyphilisTestTypeSpecify 1..1 string "Other syphilis test type (specify)" "Other test used (specify)"
@@ -999,22 +999,22 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * neisseriaGonorrhoeaeTestType 1..1 string "Neisseria gonorrhoeae test type" "Type of diagnostic test used for Neisseria gonorrhoeae"
   * ^code[+] = HIV.B#DE276
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* ngNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE277
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+* ngPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.B#DE278
 
-* culture 1..1 string "Culture" "Culture test used"
+* ngCulture 1..1 string "Culture" "Culture test used"
   * ^code[+] = HIV.B#DE279
 
-* microscopy 1..1 string "Microscopy" "Microscopy test used"
+* ngMicroscopy 1..1 string "Microscopy" "Microscopy test used"
   * ^code[+] = HIV.B#DE280
 
-* other 1..1 string "Other" "Other type of test used"
+* ngOther 1..1 string "Other" "Other type of test used"
   * ^code[+] = HIV.B#DE281
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
+* ngOtherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
   * ^code[+] = HIV.B#DE282
 
 * pocTestForNeisseriaGonorrhoeaeSpecify 1..1 string "POC Test for Neisseria gonorrhoeae (specify)" "Point-of-care (POC) test used for Neisseria gonorrhoeae (specify)"
@@ -1023,22 +1023,22 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * chlamydiaTrachomatisTestType 1..1 string "Chlamydia trachomatis test type" "Type of diagnostic test used for Chlamydia trachomatis"
   * ^code[+] = HIV.B#DE284
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* chlNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE285
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+* chlPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.B#DE286
 
-* culture 1..1 string "Culture" "Culture test used"
+* chlCulture 1..1 string "Culture" "Culture test used"
   * ^code[+] = HIV.B#DE287
 
 * elisa 1..1 string "ELISA" "ELISA test used"
   * ^code[+] = HIV.B#DE288
 
-* microscopy 1..1 string "Microscopy" "Microscopy test used"
+* chlMicroscopy 1..1 string "Microscopy" "Microscopy test used"
   * ^code[+] = HIV.B#DE289
 
-* other 1..1 string "Other" "Other type of test used"
+* chlOther 1..1 string "Other" "Other type of test used"
   * ^code[+] = HIV.B#DE290
 
 * otherTestForChlamydiaSpecify 1..1 string "Other test for Chlamydia (specify)" "Other type of test used for Chlaymdia (specify)"
@@ -1050,22 +1050,22 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * trichomonasVaginalisTestType 1..1 string "Trichomonas vaginalis test type" "Type of diagnostic test used for Trichomonas vaginalis"
   * ^code[+] = HIV.B#DE293
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* tvNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE294
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+* tvPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.B#DE295
 
-* culture 1..1 string "Culture" "Culture test used"
+* tvCulture 1..1 string "Culture" "Culture test used"
   * ^code[+] = HIV.B#DE296
 
-* microscopy 1..1 string "Microscopy" "Microscopy test used"
+* tvMicroscopy 1..1 string "Microscopy" "Microscopy test used"
   * ^code[+] = HIV.B#DE297
 
-* other 1..1 string "Other" "Other type of test used"
+* tvOther 1..1 string "Other" "Other type of test used"
   * ^code[+] = HIV.B#DE298
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
+* tvOtherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
   * ^code[+] = HIV.B#DE299
 
 * pocTestTypeForTrichomonasVaginalisTestSpecify 1..1 string "POC Test type for Trichomonas vaginalis test (specify)" "Point-of-care (POC) test used (specify)"
@@ -1074,31 +1074,31 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * herpesSimplexVirusHsvTestType 1..1 string "Herpes simplex virus (HSV) test type" "Type of diagnostic test used for herpes simplex virus (HSV)"
   * ^code[+] = HIV.B#DE301
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* hsNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE302
 
 * antibodyTest 1..1 string "Antibody test " "Antibody test used"
   * ^code[+] = HIV.B#DE303
 
-* other 1..1 string "Other" "Other type of test used"
+* hsOther 1..1 string "Other" "Other type of test used"
   * ^code[+] = HIV.B#DE304
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used for Herpes simplex virus (HSV) test (specify)"
+* hsOtherSpecify 1..1 string "Other (specify)" "Other type of test used for Herpes simplex virus (HSV) test (specify)"
   * ^code[+] = HIV.B#DE305
 
 * mycoplasmaGenitaliumTestType 1..1 string "Mycoplasma genitalium test type" "Type of diagnostic test used for Mycoplasma genitalium"
   * ^code[+] = HIV.B#DE306
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* mgNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE307
 
-* microscopy 1..1 string "Microscopy " "Microscopy test used"
+* mgMicroscopy 1..1 string "Microscopy " "Microscopy test used"
   * ^code[+] = HIV.B#DE308
 
-* other 1..1 string "Other" "Other type of test used"
+* mgOther 1..1 string "Other" "Other type of test used"
   * ^code[+] = HIV.B#DE309
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used for Mycoplasma genitalium test (specify)"
+* mgOtherSpecify 1..1 string "Other (specify)" "Other type of test used for Mycoplasma genitalium test (specify)"
   * ^code[+] = HIV.B#DE310
 
 * testTypeForOtherStiTestedForSpecify 1..1 string "Test type for other STI tested for (specify)" "Test type used for the other specified STI"
@@ -1107,13 +1107,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * stiTestResult 1..1 string "STI test result" "Result from STI test"
   * ^code[+] = HIV.B#DE312
 
-* positive 1..1 string "Positive" "Test result is positive"
+* stiPositive 1..1 string "Positive" "Test result is positive"
   * ^code[+] = HIV.B#DE313
 
-* negative 1..1 string "Negative" "Test result is negative"
+* stiNegative 1..1 string "Negative" "Test result is negative"
   * ^code[+] = HIV.B#DE314
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* stiInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.B#DE315
 
 * dateOfStiConfirmatoryTest 1..1 string "Date of STI confirmatory test" "Date of STI confirmatory test"
@@ -1122,22 +1122,22 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * confirmatorySyphilisTestType 1..1 string "Confirmatory syphilis test type" "Type of test ued for confirmatory syphilis test"
   * ^code[+] = HIV.B#DE317
 
-* treponemal 1..1 string "Treponemal" "Treponemal test used "
+* csTreponemal 1..1 string "Treponemal" "Treponemal test used "
   * ^code[+] = HIV.B#DE318
 
-* nonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
+* csNonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
   * ^code[+] = HIV.B#DE319
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+* csPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.B#DE320
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* csNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.B#DE321
 
-* other 1..1 string "Other" "Other test used"
+* csOther 1..1 string "Other" "Other test used"
   * ^code[+] = HIV.B#DE322
 
-* otherSpecify 1..1 string "Other (specify)" "Other test used for confirmatory syphilis test (specify)"
+* csOtherSpecify 1..1 string "Other (specify)" "Other test used for confirmatory syphilis test (specify)"
   * ^code[+] = HIV.B#DE323
 
 * confirmatoryTestTypeForOtherStiSpecify 1..1 string "Confirmatory test type for other STI (specify)" "Confirmatory test type for other STI"
@@ -1146,13 +1146,13 @@ Description:  "Logical Model for HIV.B HTS visit data elements."
 * confirmatoryStiTestResult 1..1 string "Confirmatory STI test result" "Result from confirmatory STI test"
   * ^code[+] = HIV.B#DE325
 
-* positive 1..1 string "Positive" "Test result is positive"
+* cstiPositive 1..1 string "Positive" "Test result is positive"
   * ^code[+] = HIV.B#DE326
 
-* negative 1..1 string "Negative" "Test result is negative"
+* cstiNegative 1..1 string "Negative" "Test result is negative"
   * ^code[+] = HIV.B#DE327
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* cstiInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.B#DE328
 
 * dateStiTreatmentPrescribed 1..1 string "Date STI treatment prescribed " "Date STI treatment was prescribed to the client"
@@ -1178,10 +1178,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * firstTimeCounsellingOnPrep 1..1 string "First time counselling on PrEP" "The client is interested in discussing pre-exposure prophylaxis (PrEP) for the first time"
   * ^code[+] = HIV.C#DE2
 
-* followUpAppointmentForPrep 1..1 string "Follow-up appointment for PrEP" "Client is at a follow-up or refill pre-exposure prophylaxis (PrEP) appointment"
+* pFollowUpAppointmentForPrep 1..1 string "Follow-up appointment for PrEP" "Client is at a follow-up or refill pre-exposure prophylaxis (PrEP) appointment"
   * ^code[+] = HIV.C#DE3
 
-* restartingPrep 1..1 string "Restarting PrEP" "Client has previously taken pre-exposure prophylaxis (PrEP) and may like to restart taking it"
+* pRestartingPrep 1..1 string "Restarting PrEP" "Client has previously taken pre-exposure prophylaxis (PrEP) and may like to restart taking it"
   * ^code[+] = HIV.C#DE4
 
 * counsellingOnPep 1..1 string "Counselling on PEP" "Counselling on post-exposure prophylaxis (PEP)"
@@ -1190,7 +1190,7 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * unscheduledVisitForSideEffects 1..1 string "Unscheduled visit for side effects" "Patient visit for management of side effects related to PrEP"
   * ^code[+] = HIV.C#DE6
 
-* 3MonthPrepVisit 1..1 string "3-month PrEP visit" "Client is visiting for the recommended 3-month pre-exposure prophylaxis (PrEP) visit"
+* ThreeMonthPrepVisit 1..1 string "3-month PrEP visit" "Client is visiting for the recommended 3-month pre-exposure prophylaxis (PrEP) visit"
   * ^code[+] = HIV.C#DE7
 
 * contactWithAndSuspectedExposureToHiv 1..1 string "Contact with and (suspected) exposure to HIV" "The client had suspected or known exposure to HIV"
@@ -1244,10 +1244,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * experienceWithPrep 1..1 string "Experience with PrEP" "The clients experience in taking PrEP"
   * ^code[+] = HIV.C#DE24
 
-* firstTimeUser 1..1 string "First-time user" "The client has never used pre-exposure prophylaxis (PrEP) before (naive)"
+* prepFirstTimeUser 1..1 string "First-time user" "The client has never used pre-exposure prophylaxis (PrEP) before (naive)"
   * ^code[+] = HIV.C#DE25
 
-* continuingUser 1..1 string "Continuing user" "The client has used PrEP before and is continuing to use PrEP"
+* prepContinuingUser 1..1 string "Continuing user" "The client has used PrEP before and is continuing to use PrEP"
   * ^code[+] = HIV.C#DE26
 
 * restartingFollowingAPeriodOfNotTakingPrep 1..1 string "Restarting following a period of not taking PrEP" "The client is restarting PrEP following a period of not taking PrEP"
@@ -1265,10 +1265,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * pepHistory 1..1 string "PEP history" "The clients history in taking post-exposure prophylaxis (PEP) for HIV prevention"
   * ^code[+] = HIV.C#DE31
 
-* firstTimeUser 1..1 string "First-time user" "The client has never used post-exposure prophylaxis (PEP) before"
+* pepFirstTimeUser 1..1 string "First-time user" "The client has never used post-exposure prophylaxis (PEP) before"
   * ^code[+] = HIV.C#DE32
 
-* repeatUser 1..1 string "Repeat user" "The client has used post-exposure prophylaxis (PEP) before"
+* pepRepeatUser 1..1 string "Repeat user" "The client has used post-exposure prophylaxis (PEP) before"
   * ^code[+] = HIV.C#DE33
 
 * datesOfPastPepUse 1..1 string "Date(s) of past PEP use" "Dates when the client previously used post-exposure prophylaxis (PEP)"
@@ -1286,7 +1286,7 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * stiInThePast6Months 1..1 string "STI in the past 6 months" "A recent history (in the last 6 months) of a sexually transmitted infection (STI ) by laboratory testing, self-report or syndromic STI treatment"
   * ^code[+] = HIV.C#DE38
 
-* aSexualPartnerInThePast6MonthsHadOneOrMoreHivRiskFactors 1..1 string "A sexual partner in the past 6 months had one or more HIV risk factors" "A recent sex partner of the client had HIV risk factors"
+* aSexualPartnerInThePast6MonthsHadHivRF 1..1 string "A sexual partner in the past 6 months had one or more HIV risk factors" "A recent sex partner of the client had HIV risk factors"
   * ^code[+] = HIV.C#DE39
 
 * prepRequestedByClient 1..1 string "PrEP requested by client" "Client is requesting PrEP, reflecting a decision-making process has already taken place and suggesting of substantial risk of HIV"
@@ -1415,16 +1415,16 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * oralPrep 1..1 string "Oral PrEP" "Client was prescribed oral PrEP"
   * ^code[+] = HIV.C#DE81
 
-* dapivirineVaginalRingDvr 1..1 string "Dapivirine vaginal ring (DVR)" "Client was prescribed dapivirine vaginal ring (DVR)"
+* presDapivirineVaginalRingDvr 1..1 string "Dapivirine vaginal ring (DVR)" "Client was prescribed dapivirine vaginal ring (DVR)"
   * ^code[+] = HIV.C#DE82
 
-* cabLa 1..1 string "CAB-LA" "Client was prescribed long-acting cabotegravir (CAB-LA)"
+* presCabLa 1..1 string "CAB-LA" "Client was prescribed long-acting cabotegravir (CAB-LA)"
   * ^code[+] = HIV.C#DE83
 
-* other 1..1 string "Other" "Client was prescribed other PrEP product"
+* presOther 1..1 string "Other" "Client was prescribed other PrEP product"
   * ^code[+] = HIV.C#DE84
 
-* otherSpecify 1..1 string "Other (specify)" "Client was prescribed other PrEP product (specify)"
+* presOtherSpecify 1..1 string "Other (specify)" "Client was prescribed other PrEP product (specify)"
   * ^code[+] = HIV.C#DE85
 
 * datePrepPrescribed 1..1 string "Date PrEP prescribed" "Date client was prescribed PrEP, including initial prescription and repeats"
@@ -1445,25 +1445,25 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * preferredPepBackboneRegimen 1..1 string "Preferred PEP backbone regimen" "Preferred backbone regimen for PEP"
   * ^code[+] = HIV.C#DE91
 
-* tdf3Tc 1..1 string "TDF + 3TC" "Preferred backbone containing tenofovir disoproxil fumarate and lamivudine"
+* prefTdf3Tc 1..1 string "TDF + 3TC" "Preferred backbone containing tenofovir disoproxil fumarate and lamivudine"
   * ^code[+] = HIV.C#DE92
 
-* tdfFtc 1..1 string "TDF + FTC" "Preferred backbone containing tenofovir disoproxil fumarate and emtricitabine"
+* prefTdfFtc 1..1 string "TDF + FTC" "Preferred backbone containing tenofovir disoproxil fumarate and emtricitabine"
   * ^code[+] = HIV.C#DE93
 
-* azt3Tc 1..1 string "AZT + 3TC" "Preferred backbone containing zidovudine and lamivudine"
+* prefAzt3Tc 1..1 string "AZT + 3TC" "Preferred backbone containing zidovudine and lamivudine"
   * ^code[+] = HIV.C#DE94
 
 * alternativePepBackboneRegimen 1..1 string "Alternative PEP backbone regimen" "Alternative backbone regimen for PEP"
   * ^code[+] = HIV.C#DE95
 
-* abc3Tc 1..1 string "ABC + 3TC" "Alternative backbone containing abacavir and lamivudine"
+* altAbc3Tc 1..1 string "ABC + 3TC" "Alternative backbone containing abacavir and lamivudine"
   * ^code[+] = HIV.C#DE96
 
-* tdf3Tc 1..1 string "TDF + 3TC" "Alternative backbone containing tenofovir disoproxil fumarate and lamivudine"
+* altTdf3Tc 1..1 string "TDF + 3TC" "Alternative backbone containing tenofovir disoproxil fumarate and lamivudine"
   * ^code[+] = HIV.C#DE97
 
-* tdfFtc 1..1 string "TDF + FTC" "Alternative backbone containing tenofovir disoproxil fumarate and emtricitabine"
+* altTdfFtc 1..1 string "TDF + FTC" "Alternative backbone containing tenofovir disoproxil fumarate and emtricitabine"
   * ^code[+] = HIV.C#DE98
 
 * preferredThirdPepDrug 1..1 string "Preferred third PEP drug" "Preferred third drug for PEP"
@@ -1499,7 +1499,7 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * female 1..1 string "Female" "Female client"
   * ^code[+] = HIV.C#DE109
 
-* estimatedCreatinineClearanceCockcroft–GaultEquation 1..1 string "Estimated creatinine clearance (Cockcroft–Gault equation)" "If the laboratory does not have the capacity to estimate creatinine clearance, the provider can use the Cockcroft–Gault equation to calculate estimated creatinine clearance based on measured serum creatinine, the client’s sex at birth, age and estimated lean body weight."
+* estimatedCreatinineClearanceCQE 1..1 string "Estimated creatinine clearance (Cockcroft–Gault equation)" "If the laboratory does not have the capacity to estimate creatinine clearance, the provider can use the Cockcroft–Gault equation to calculate estimated creatinine clearance based on measured serum creatinine, the client’s sex at birth, age and estimated lean body weight."
   * ^code[+] = HIV.C#DE110
 
 * dateOfSampleCollection 1..1 string "Date of sample collection" "Date when the specimen was collected"
@@ -1517,16 +1517,16 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * lowEstimatedCreatinineClearance 1..1 string "Low estimated creatinine clearance" "Estimated creatinine clearance of less than 60 ml/min (if known)"
   * ^code[+] = HIV.C#DE115
 
-* acuteHivInfectionSymptoms 1..1 string "Acute HIV infection symptoms" "Symptoms that could suggest an acute HIV infection"
+* sAcuteHivInfectionSymptoms 1..1 string "Acute HIV infection symptoms" "Symptoms that could suggest an acute HIV infection"
   * ^code[+] = HIV.C#DE116
 
 * probableRecentExposureToHiv 1..1 string "Probable recent exposure to HIV" "When the client is reported to have had probable recent exposure to HIV"
   * ^code[+] = HIV.C#DE117
 
-* otherAllergyOrContraindicationToAMedicineInThePrepRegimen 1..1 string "Other allergy or contraindication to a medicine in the PrEP regimen" "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen"
+* otherAllergyOrContraindicationPrepR 1..1 string "Other allergy or contraindication to a medicine in the PrEP regimen" "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen"
   * ^code[+] = HIV.C#DE118
 
-* otherAllergyOrContraindicationToAMedicineInThePrepRegimenSpecify 1..1 string "Other allergy or contraindication to a medicine in the PrEP regimen (specify)" "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen (specify)"
+* otherAllergyOrContraindicationPrepRSpecify 1..1 string "Other allergy or contraindication to a medicine in the PrEP regimen (specify)" "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen (specify)"
   * ^code[+] = HIV.C#DE119
 
 * prescribedPrepAtInitialVisit 1..1 string "Prescribed PrEP at initial visit" "Client was prescribed pre-exposure prophylaxis (PrEP) on a first visit"
@@ -1553,10 +1553,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * followUpAppointmentForPrep 1..1 string "Follow-up appointment for PrEP" "Retesting follow-up appointment"
   * ^code[+] = HIV.C#DE127
 
-* other 1..1 string "Other" "Other reason for the follow-up appointment"
+* fupOther 1..1 string "Other" "Other reason for the follow-up appointment"
   * ^code[+] = HIV.C#DE128
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason for the follow-up appointment (specify)"
+* fupOtherSpecify 1..1 string "Other (specify)" "Other reason for the follow-up appointment (specify)"
   * ^code[+] = HIV.C#DE129
 
 * linkedToEnrolmentInCareAndArtInitiation 1..1 string "Linked to enrolment in care and ART initiation" "Linkage made from HIV testing to enrolment in care following an HIV diagnosis"
@@ -1646,10 +1646,10 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * assessmentAndProvisionOfVaccinations 1..1 string "Assessment and provision of vaccinations" "Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC"
   * ^code[+] = HIV.C#DE158
 
-* hepatitisBVirusHbvAndHepatitisCVirusHcvTestingAndTreatment 1..1 string "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment" "Offer or refer for HBV testing and vaccination and HCV testing and treatment"
+* hepatitisBVirusHbvAndHepatitisCVirusHcvTT 1..1 string "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment" "Offer or refer for HBV testing and vaccination and HCV testing and treatment"
   * ^code[+] = HIV.C#DE159
 
-* coTrimoxazoleChemoprophylaxisToPreventPneumocystisCariniiPneumonia 1..1 string "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+* coTrimoxazoleChemoprophylaxis 1..1 string "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
   * ^code[+] = HIV.C#DE160
 
 * intensifiedTbCaseFindingAndLinkageToTbTreatment 1..1 string "Intensified TB case finding and linkage to TB treatment" "Offer or refer for TB case finding and linkage to TB treatment"
@@ -1658,7 +1658,7 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 * provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb 1..1 string "Provision of isoniazid preventive therapy if person does not have TB" "Offer or refer for provision of isoniazid preventive therapy if person does not have TB"
   * ^code[+] = HIV.C#DE162
 
-* malariaPreventionSuchAsBedNetsAndProphylaxisDependingOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+* malariaPreventionDependingOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
   * ^code[+] = HIV.C#DE163
 
 * otherSupportServices 1..1 string "Other support services" "Offer or refer for other support services"
@@ -1684,2807 +1684,2807 @@ Description:  "Logical Model for HIV.C PrEP visit data elements."
 Logical:      HIV.DCareTreatment
 Title:        "HIV.D Care-Treatment Logical Model"
 Description:  "Logical Model for HIV.D Care-Treatment data elements."
-* ^name = "HIV_D_Care-Treatment"
+* ^name = "HIV_D_CareTreatment"
 * ^status = #active
 
 * reasonForVisit 1..1 string "Reason for visit" "Whether visit was scheduled or unscheduled, clinical only, or for ARV drug pick-up"
-  * ^code[+] = HIV.DCareTreatment#DE1
+  * ^code[+] = HIV.D#DE1
 
 * firstClinicalVisit 1..1 string "First clinical visit" "The clients first appointment for clinical care by a provider at the facility"
-  * ^code[+] = HIV.DCareTreatment#DE2
+  * ^code[+] = HIV.D#DE2
 
 * clinicalVisit 1..1 string "Clinical visit" "Appointment for clinical care by a provider"
-  * ^code[+] = HIV.DCareTreatment#DE3
+  * ^code[+] = HIV.D#DE3
 
 * artInitiation 1..1 string "ART initiation" "Appointment for initiation of ART"
-  * ^code[+] = HIV.DCareTreatment#DE4
+  * ^code[+] = HIV.D#DE4
 
 * artDrugPickUp 1..1 string "ART drug pick up" "Appointment for an antiretroviral drug pick up"
-  * ^code[+] = HIV.DCareTreatment#DE5
+  * ^code[+] = HIV.D#DE5
 
 * issuesAndConcerns 1..1 string "Issues and concerns" "Visit to address issues and concerns"
-  * ^code[+] = HIV.DCareTreatment#DE6
+  * ^code[+] = HIV.D#DE6
 
-* postTreatmentFollowUpVisitForCervicalPrecancerLesionsOrInvasiveCervicalCancer 1..1 string "Post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer" "Appointment for a post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE7
+* postTreatmentFUVisitForCervicalCancer 1..1 string "Post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer" "Appointment for a post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer"
+  * ^code[+] = HIV.D#DE7
 
 * scheduledVisit 1..1 string "Scheduled visit" "Is this is a scheduled visit?"
-  * ^code[+] = HIV.DCareTreatment#DE8
+  * ^code[+] = HIV.D#DE8
 
 * bodyTemperature 1..1 string "Body temperature" "Temperature of the client in Celsius"
-  * ^code[+] = HIV.DCareTreatment#DE9
+  * ^code[+] = HIV.D#DE9
 
 * respiratoryRate 1..1 string "Respiratory rate" "The number of breaths per minute"
-  * ^code[+] = HIV.DCareTreatment#DE10
+  * ^code[+] = HIV.D#DE10
 
 * heartRate 1..1 string "Heart rate" "The number of heartbeats per minute"
-  * ^code[+] = HIV.DCareTreatment#DE11
+  * ^code[+] = HIV.D#DE11
 
 * bodyHeight 1..1 string "Body height" "The clients height in centimetres"
-  * ^code[+] = HIV.DCareTreatment#DE12
+  * ^code[+] = HIV.D#DE12
 
 * bodyWeight 1..1 string "Body weight" "The clients current weight in kilograms"
-  * ^code[+] = HIV.DCareTreatment#DE13
+  * ^code[+] = HIV.D#DE13
 
 * systolicBloodPressure 1..1 string "Systolic blood pressure" "Systolic blood pressure (SBP) in mmHg"
-  * ^code[+] = HIV.DCareTreatment#DE14
+  * ^code[+] = HIV.D#DE14
 
 * diastolicBloodPressure 1..1 string "Diastolic blood pressure" "Diastolic blood pressure (DBP) in mmHg"
-  * ^code[+] = HIV.DCareTreatment#DE15
+  * ^code[+] = HIV.D#DE15
 
 * bloodPressureCannotBeTaken 1..1 string "Blood pressure cannot be taken" "If the clients blood pressure cannot be taken, this should be indicated here. Otherwise, blood pressure should be measured."
-  * ^code[+] = HIV.DCareTreatment#DE16
+  * ^code[+] = HIV.D#DE16
 
 * signsOfSeriousIllness 1..1 string "Signs of serious illness" "Signs that may indicate the client has a serious illness and needs triage or an emergency referral"
-  * ^code[+] = HIV.DCareTreatment#DE17
+  * ^code[+] = HIV.D#DE17
 
 * feverOf39COrGreater 1..1 string "Fever of 39 C or greater" "Client has a fever with a measured temperature of 102.2 F/39 C or greater"
-  * ^code[+] = HIV.DCareTreatment#DE18
+  * ^code[+] = HIV.D#DE18
 
 * tachycardia 1..1 string "Tachycardia" "Heart rate above a rate per minute based on age"
-  * ^code[+] = HIV.DCareTreatment#DE19
+  * ^code[+] = HIV.D#DE19
 
 * tachypnea 1..1 string "Tachypnea" "Respiratory rate above a number of breaths per minute based on age"
-  * ^code[+] = HIV.DCareTreatment#DE20
+  * ^code[+] = HIV.D#DE20
 
 * unableToWalkUnaided 1..1 string "Unable to walk unaided" "Client is not able to walk without help"
-  * ^code[+] = HIV.DCareTreatment#DE21
+  * ^code[+] = HIV.D#DE21
 
 * lethargy 1..1 string "Lethargy" "Client is exhibiting lethargy as a sign of serious illness"
-  * ^code[+] = HIV.DCareTreatment#DE22
+  * ^code[+] = HIV.D#DE22
 
 * unconsciousness 1..1 string "Unconsciousness" "Client is currently unconscious"
-  * ^code[+] = HIV.DCareTreatment#DE23
+  * ^code[+] = HIV.D#DE23
 
 * convulsions 1..1 string "Convulsions" "Client is convulsing"
-  * ^code[+] = HIV.DCareTreatment#DE24
+  * ^code[+] = HIV.D#DE24
 
 * unableToDrink 1..1 string "Unable to drink" "Child is not able to drink"
-  * ^code[+] = HIV.DCareTreatment#DE25
+  * ^code[+] = HIV.D#DE25
 
 * unableToBreastfeed 1..1 string "Unable to breastfeed" "Infant or child is not able to breastfeed"
-  * ^code[+] = HIV.DCareTreatment#DE26
+  * ^code[+] = HIV.D#DE26
 
 * repeatedVomiting 1..1 string "Repeated vomiting" "Client is repeatedly vomiting"
-  * ^code[+] = HIV.DCareTreatment#DE27
+  * ^code[+] = HIV.D#DE27
 
 * headache 1..1 string "Headache" "Client is exhibiting a headache"
-  * ^code[+] = HIV.DCareTreatment#DE28
+  * ^code[+] = HIV.D#DE28
 
 * otherSignOfSeriousIllness 1..1 string "Other sign of serious illness" "Client is exhibiting another sign of a serious illness"
-  * ^code[+] = HIV.DCareTreatment#DE29
+  * ^code[+] = HIV.D#DE29
 
 * otherSignOfSeriousIllnessSpecify 1..1 string "Other sign of serious illness (specify)" "Client is exhibiting another sign of a serious illness (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE30
+  * ^code[+] = HIV.D#DE30
 
 * currentlyPregnant 1..1 string "Currently pregnant" "Client is currently pregnant"
-  * ^code[+] = HIV.DCareTreatment#DE31
+  * ^code[+] = HIV.D#DE31
 
 * breastfeeding 1..1 string "Breastfeeding" "Client is giving infant breast milk"
-  * ^code[+] = HIV.DCareTreatment#DE32
+  * ^code[+] = HIV.D#DE32
 
 * numberOfPregnanciesGravida 1..1 string "Number of pregnancies (gravida)" "Total number of times the woman has been pregnant (gravida)"
-  * ^code[+] = HIV.DCareTreatment#DE33
+  * ^code[+] = HIV.D#DE33
 
 * numberOfMiscarriagesAndOrAbortions 1..1 string "Number of miscarriages and/or abortions" "Total number of pregnancies lost/ended due to miscarriages and/or abortions before 22 weeks/5 months"
-  * ^code[+] = HIV.DCareTreatment#DE34
+  * ^code[+] = HIV.D#DE34
 
 * numberOfLiveBirths 1..1 string "Number of live births" "Total number of live births after 22 weeks"
-  * ^code[+] = HIV.DCareTreatment#DE35
+  * ^code[+] = HIV.D#DE35
 
 * parity 1..1 string "Parity" "Calculated parity is the total number of live and stillbirths"
-  * ^code[+] = HIV.DCareTreatment#DE36
+  * ^code[+] = HIV.D#DE36
 
 * serodiscordantPartner 1..1 string "Serodiscordant partner" "Clients HIV status is different from a current partners HIV status"
-  * ^code[+] = HIV.DCareTreatment#DE37
+  * ^code[+] = HIV.D#DE37
 
 * onArt 1..1 string "On ART" "Client is currently taking ART"
-  * ^code[+] = HIV.DCareTreatment#DE38
+  * ^code[+] = HIV.D#DE38
 
 * artStartDate 1..1 string "ART start date" "The date on which the client started or restarted ART"
-  * ^code[+] = HIV.DCareTreatment#DE39
+  * ^code[+] = HIV.D#DE39
 
 * stoppedArt 1..1 string "Stopped ART" "Client stopped taking ART"
-  * ^code[+] = HIV.DCareTreatment#DE40
+  * ^code[+] = HIV.D#DE40
 
 * dateArtStopped 1..1 string "Date ART stopped" "Date on which client stopped ART"
-  * ^code[+] = HIV.DCareTreatment#DE41
+  * ^code[+] = HIV.D#DE41
 
 * establishedOnArt 1..1 string "Established on ART" "Is the client successfully established on ART?"
-  * ^code[+] = HIV.DCareTreatment#DE42
+  * ^code[+] = HIV.D#DE42
 
 * artStartType 1..1 string "ART start type" "Whether the client is ART naive or is restarting ART"
-  * ^code[+] = HIV.DCareTreatment#DE43
+  * ^code[+] = HIV.D#DE43
 
 * firstTimeUserOfArt 1..1 string "First-time user of ART" "Client is ART naive, having never taken ART to treat HIV before"
-  * ^code[+] = HIV.DCareTreatment#DE44
+  * ^code[+] = HIV.D#DE44
 
 * restartingArt 1..1 string "Restarting ART" "Client is restarting ART after stopping treatment for any reason"
-  * ^code[+] = HIV.DCareTreatment#DE45
+  * ^code[+] = HIV.D#DE45
 
 * dateOfInitiationOnArt 1..1 string "Date of initiation on ART" "The date on which the client was first initiated on ART"
-  * ^code[+] = HIV.DCareTreatment#DE46
+  * ^code[+] = HIV.D#DE46
 
 * timeOnArt 1..1 string "Time on ART" "Time the client has been on ART since starting or restarting it in years and months"
-  * ^code[+] = HIV.DCareTreatment#DE47
+  * ^code[+] = HIV.D#DE47
 
 * datesArtRestarted 1..1 string "Date(s) ART restarted" "Date(s) client restarted ART after stopping (intentionally interrupting) for any number of reasons (see \"Reason ART stopped\")"
-  * ^code[+] = HIV.DCareTreatment#DE48
+  * ^code[+] = HIV.D#DE48
 
 * artCohort 1..1 string "ART cohort" "Month and year client originally started ART (documented) at a health facility in the system. The cohort is a group of patients who started ART in the same month (or quarter) and year, whose status is followed over time, using the ART register."
-  * ^code[+] = HIV.DCareTreatment#DE49
+  * ^code[+] = HIV.D#DE49
 
 * transferInForHivCare 1..1 string "Transfer in for HIV care" "Client is transferring in with records or known ART drugs and ART start date"
-  * ^code[+] = HIV.DCareTreatment#DE50
+  * ^code[+] = HIV.D#DE50
 
 * dateOfTransferIn 1..1 string "Date of transfer in" "Date client presented at facility (with transfer/referral slip) from another facility (and on ART) within the system"
-  * ^code[+] = HIV.DCareTreatment#DE51
+  * ^code[+] = HIV.D#DE51
 
 * facilityTransferredFrom 1..1 string "Facility transferred from" "Name of health facility client was transferred from"
-  * ^code[+] = HIV.DCareTreatment#DE52
+  * ^code[+] = HIV.D#DE52
 
 * dateEnrolledInHivCare 1..1 string "Date enrolled in HIV care" "Date client first enrols in HIV care at the facility. Begins when a person with a confirmed HIV diagnosis presents to a facility where HIV care is provided and a medical record, patient card, file or chart is opened for the first time. This could be at an HIV care/ART, MNCH or TB clinic."
-  * ^code[+] = HIV.DCareTreatment#DE53
+  * ^code[+] = HIV.D#DE53
 
 * ageAtEnrolment 1..1 string "Age at enrolment" "Clients age when the client was enrolled in ART care"
-  * ^code[+] = HIV.DCareTreatment#DE54
+  * ^code[+] = HIV.D#DE54
 
 * facilityWhereClientFirstEnrolledInHivCare 1..1 string "Facility where client first enrolled in HIV care" "Facility where the client first enrolled in HIV care"
-  * ^code[+] = HIV.DCareTreatment#DE55
+  * ^code[+] = HIV.D#DE55
 
 * antiretroviralArvDrugsReceivedPriorToEnrolment 1..1 string "Antiretroviral (ARV) drugs received prior to enrolment" "Whether or not the client received ARV drugs prior to enrolling into HIV care"
-  * ^code[+] = HIV.DCareTreatment#DE56
+  * ^code[+] = HIV.D#DE56
 
 * noPriorArvs 1..1 string "No prior ARVs" "Client received no prior ARVs"
-  * ^code[+] = HIV.DCareTreatment#DE57
+  * ^code[+] = HIV.D#DE57
 
 * receivedArvsPriorWithoutRecordsDocumentation 1..1 string "Received ARVs prior without records/documentation" "Client received ARVs prior without records/documentation"
-  * ^code[+] = HIV.DCareTreatment#DE58
+  * ^code[+] = HIV.D#DE58
 
 * receivedArvsDuringPregnancyOrBreastfeeding 1..1 string "Received ARVs during pregnancy or breastfeeding" "Client received ARVs during pregnancy or breastfeeding"
-  * ^code[+] = HIV.DCareTreatment#DE59
+  * ^code[+] = HIV.D#DE59
 
 * receivedArvsForPepOrPrep 1..1 string "Received ARVs for PEP or PrEP" "Client received ARVs for post-exposure prophylaxis (PEP) or PrEP"
-  * ^code[+] = HIV.DCareTreatment#DE60
+  * ^code[+] = HIV.D#DE60
 
 * arvProphylaxisForAnHivExposedInfant 1..1 string "ARV prophylaxis for an HIV-exposed infant" "Client received ARV prophylaxis for an HIV-exposed infant"
-  * ^code[+] = HIV.DCareTreatment#DE61
+  * ^code[+] = HIV.D#DE61
 
 * dateArvDrugsReceivedPriorToEnrolment 1..1 string "Date ARV drugs received prior to enrolment" "Date ARV drugs were started prior to enrolment into HIV care/ART"
-  * ^code[+] = HIV.DCareTreatment#DE62
+  * ^code[+] = HIV.D#DE62
 
 * locationArvDrugsReceivedPriorToEnrolment 1..1 string "Location ARV drugs received prior to enrolment" "Health facility (or other location) where ARV drugs were received prior to enrolment into HIV care/ART"
-  * ^code[+] = HIV.DCareTreatment#DE63
+  * ^code[+] = HIV.D#DE63
 
 * arvDrugRegimenReceivedPriorToEnrolment 1..1 string "ARV drug regimen received prior to enrolment" "ARV drug regimen received prior to enrolment into HIV care/ART"
-  * ^code[+] = HIV.DCareTreatment#DE64
+  * ^code[+] = HIV.D#DE64
 
 * existingChronicHealthConditions 1..1 string "Existing chronic health conditions" "Does the client have any current chronic health conditions or problems?"
-  * ^code[+] = HIV.DCareTreatment#DE65
+  * ^code[+] = HIV.D#DE65
 
 * noChronicOrPastHealthConditions 1..1 string "No chronic or past health conditions" "Client does not have chronic diseases or any past health conditions"
-  * ^code[+] = HIV.DCareTreatment#DE66
+  * ^code[+] = HIV.D#DE66
 
 * dontKnow 1..1 string "Dont know" "Client does not know whether she has any chronic diseases or past health conditions"
-  * ^code[+] = HIV.DCareTreatment#DE67
+  * ^code[+] = HIV.D#DE67
 
 * diabetesOtherOrUnspecified 1..1 string "Diabetes other or unspecified" "Client has diabetes of other or unspecified type"
-  * ^code[+] = HIV.DCareTreatment#DE68
+  * ^code[+] = HIV.D#DE68
 
 * diabetesPreExistingType1 1..1 string "Diabetes pre-existing type 1" "Client has pre-existing type 1 diabetes mellitus"
-  * ^code[+] = HIV.DCareTreatment#DE69
+  * ^code[+] = HIV.D#DE69
 
 * diabetesPreExistingType2 1..1 string "Diabetes pre-existing type 2" "Client has pre-existing type 2 diabetes mellitus"
-  * ^code[+] = HIV.DCareTreatment#DE70
+  * ^code[+] = HIV.D#DE70
 
 * hypertension 1..1 string "Hypertension" "High blood pressure"
-  * ^code[+] = HIV.DCareTreatment#DE71
+  * ^code[+] = HIV.D#DE71
 
 * other 1..1 string "Other" "Other health conditions not included in the list"
-  * ^code[+] = HIV.DCareTreatment#DE72
+  * ^code[+] = HIV.D#DE72
 
 * otherSpecify 1..1 string "Other (specify)" "Other health conditions not included in the list (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE73
+  * ^code[+] = HIV.D#DE73
 
 * originalFirstLineArtRegimen 1..1 string "Original first-line ART regimen" "Original full, first-line ARV drug regimen patient started on at this facility"
-  * ^code[+] = HIV.DCareTreatment#DE74
+  * ^code[+] = HIV.D#DE74
 
 * currentArtRegimen 1..1 string "Current ART regimen" "The current ART regimen the client is taking"
-  * ^code[+] = HIV.DCareTreatment#DE75
+  * ^code[+] = HIV.D#DE75
 
 * currentArtRegimenStartDate 1..1 string "Current ART regimen start date" "The date on which the client started taking the current ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE76
+  * ^code[+] = HIV.D#DE76
 
 * preferredFirstLineArtRegimen 1..1 string "Preferred first-line ART regimen" "The preferred first-line ART regimen for the client according to WHO (or national) guidelines"
-  * ^code[+] = HIV.DCareTreatment#DE77
+  * ^code[+] = HIV.D#DE77
 
 * alternativeFirstLineArtRegimen 1..1 string "Alternative first-line ART regimen" "The alternative first-line ART regimen for the client according to WHO (or national) guidelines"
-  * ^code[+] = HIV.DCareTreatment#DE78
+  * ^code[+] = HIV.D#DE78
 
 * firstLineArtRegimenUnderSpecialCircumstances 1..1 string "First-line ART regimen under special circumstances" "The first-line ART regimen for the client under special circumstances according to WHO (or national) guidelines"
-  * ^code[+] = HIV.DCareTreatment#DE79
+  * ^code[+] = HIV.D#DE79
 
 * preferredSecondLineArtRegimen 1..1 string "Preferred second-line ART regimen" "The preferred second-line ART regimen for the client according to WHO (or national) guidelines"
-  * ^code[+] = HIV.DCareTreatment#DE80
+  * ^code[+] = HIV.D#DE80
 
 * alternativeSecondLineArtRegimen 1..1 string "Alternative second-line ART regimen" "The alternative second-line ART regimen for the client according to WHO (or national) guidelines"
-  * ^code[+] = HIV.DCareTreatment#DE81
+  * ^code[+] = HIV.D#DE81
 
 * optimalRegimenForTransition 1..1 string "Optimal regimen for transition" "The optimal regimen for transition to DTG-based regimens for children established on ART"
-  * ^code[+] = HIV.DCareTreatment#DE82
+  * ^code[+] = HIV.D#DE82
 
 * currentArtRegimenFirstSecondOrThirdLine 1..1 string "Current ART regimen (first-, second-, or third-line)" "ART regimen for treating clients living with HIV, based on national guidance"
-  * ^code[+] = HIV.DCareTreatment#DE83
+  * ^code[+] = HIV.D#DE83
 
 * firstLineArtRegimenForAdultsAndAdolescents 1..1 string "First-line ART regimen for adults and adolescents" "First-line ART regimen for adults and adolescents living with HIV"
-  * ^code[+] = HIV.DCareTreatment#DE84
+  * ^code[+] = HIV.D#DE84
 
 * firstLineArtRegimenForChildren 1..1 string "First-line ART regimen for children" "First-line ART regimen for children living with HIV"
-  * ^code[+] = HIV.DCareTreatment#DE85
+  * ^code[+] = HIV.D#DE85
 
 * firstLineArtRegimenForNeonates 1..1 string "First-line ART regimen for neonates" "First-line ART regimen for neonates living with HIV"
-  * ^code[+] = HIV.DCareTreatment#DE86
+  * ^code[+] = HIV.D#DE86
 
 * secondLineArtRegimenForAdultsAndAdolescents 1..1 string "Second-line ART regimen for adults and adolescents" "Second-line ART regimen for adults and adolescents living with HIV"
-  * ^code[+] = HIV.DCareTreatment#DE87
+  * ^code[+] = HIV.D#DE87
 
 * secondLineArtRegimenForChildren 1..1 string "Second-line ART regimen for children" "Second-line ART regimen for children living with HIV"
-  * ^code[+] = HIV.DCareTreatment#DE88
+  * ^code[+] = HIV.D#DE88
 
 * thirdLineArtRegimen 1..1 string "Third-line ART regimen" "Third-line ART regimen for people living with HIV (Not defined by WHO. National programmes should develop policies for third-line ART)"
-  * ^code[+] = HIV.DCareTreatment#DE89
+  * ^code[+] = HIV.D#DE89
 
 * artRegimen 1..1 string "ART regimen" "List of ART regimens"
-  * ^code[+] = HIV.DCareTreatment#DE90
+  * ^code[+] = HIV.D#DE90
 
 * abc3TcAtvR 1..1 string "ABC + 3TC + ATV/r" "Regimen containing abacavir, lamivudine, and atazanavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE91
+  * ^code[+] = HIV.D#DE91
 
 * abc3TcDtg 1..1 string "ABC + 3TC + DTG" "Regimen containing abacavir, lamivudine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE92
+  * ^code[+] = HIV.D#DE92
 
 * abc3TcEfv 1..1 string "ABC + 3TC + EFV" "Regimen containing abacavir, lamivudine, and efavarinez"
-  * ^code[+] = HIV.DCareTreatment#DE93
+  * ^code[+] = HIV.D#DE93
 
 * abc3TcLpvR 1..1 string "ABC + 3TC + LPV/r" "Regimen containing abacavir, lamivudine, and lopinavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE94
+  * ^code[+] = HIV.D#DE94
 
 * abc3TcNvp 1..1 string "ABC + 3TC + NVP" "Regimen containing abacavir, lamivudine, and nevirapine"
-  * ^code[+] = HIV.DCareTreatment#DE95
+  * ^code[+] = HIV.D#DE95
 
 * abc3TcRal 1..1 string "ABC + 3TC + RAL" "Regimen containing abacavir, lamivudine, and raltegravir"
-  * ^code[+] = HIV.DCareTreatment#DE96
+  * ^code[+] = HIV.D#DE96
 
 * azt3TcAtvR 1..1 string "AZT + 3TC + ATV/r" "Regimen containing zidovudine, lamivudine, and atazanavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE97
+  * ^code[+] = HIV.D#DE97
 
 * azt3TcDrvR 1..1 string "AZT + 3TC + DRV/r" "Regimen containing zidovudine, lamivudine, and darunavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE98
+  * ^code[+] = HIV.D#DE98
 
 * azt3TcDtg 1..1 string "AZT + 3TC + DTG" "Regimen containing zidovudine, lamivudine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE99
+  * ^code[+] = HIV.D#DE99
 
 * azt3TcEfv 1..1 string "AZT + 3TC + EFV" "Regimen containing zidovudine, lamivudine, and efavirenz"
-  * ^code[+] = HIV.DCareTreatment#DE100
+  * ^code[+] = HIV.D#DE100
 
 * azt3TcEfv600Mg 1..1 string "AZT + 3TC + EFV 600 mg" "Regimen containing zidovudine, lamivudine, and efavirenz 600 mg"
-  * ^code[+] = HIV.DCareTreatment#DE101
+  * ^code[+] = HIV.D#DE101
 
 * azt3TcLpvR 1..1 string "AZT + 3TC + LPV/r" "Regimen containing zidovudine, lamivudine, and lopinavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE102
+  * ^code[+] = HIV.D#DE102
 
 * azt3TcNvp 1..1 string "AZT + 3TC + NVP" "Regimen containing zidovudine, lamivudine, and nevirapine"
-  * ^code[+] = HIV.DCareTreatment#DE103
+  * ^code[+] = HIV.D#DE103
 
 * azt3TcRal 1..1 string "AZT + 3TC + RAL" "Regimen containing zidovudine, lamivudine, and raltegravir"
-  * ^code[+] = HIV.DCareTreatment#DE104
+  * ^code[+] = HIV.D#DE104
 
 * taf3TcDtg 1..1 string "TAF + 3TC + DTG" "Regimen containing tenofovir alafenamide, lamivudine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE105
+  * ^code[+] = HIV.D#DE105
 
 * tafFtcDtg 1..1 string "TAF + FTC + DTG" "Regimen containing tenofovir alafenamide, emtricitabine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE106
+  * ^code[+] = HIV.D#DE106
 
 * tdf3TcAtvR 1..1 string "TDF + 3TC + ATV/r" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and atazanavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE107
+  * ^code[+] = HIV.D#DE107
 
 * tdf3TcDrvR 1..1 string "TDF + 3TC + DRV/r" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and darunavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE108
+  * ^code[+] = HIV.D#DE108
 
 * tdf3TcDtg 1..1 string "TDF + 3TC + DTG" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE109
+  * ^code[+] = HIV.D#DE109
 
 * tdf3TcEfv 1..1 string "TDF + 3TC + EFV" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and efavirenz"
-  * ^code[+] = HIV.DCareTreatment#DE110
+  * ^code[+] = HIV.D#DE110
 
 * tdf3TcEfv400Mg 1..1 string "TDF + 3TC + EFV 400 mg" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and efavirenz (400 mg)"
-  * ^code[+] = HIV.DCareTreatment#DE111
+  * ^code[+] = HIV.D#DE111
 
 * tdf3TcEfv600Mg 1..1 string "TDF + 3TC + EFV 600 mg" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and efavirenz (600 mg)"
-  * ^code[+] = HIV.DCareTreatment#DE112
+  * ^code[+] = HIV.D#DE112
 
 * tdf3TcLpvR 1..1 string "TDF + 3TC + LPV/r" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and lopinavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE113
+  * ^code[+] = HIV.D#DE113
 
 * tdf3TcNvp 1..1 string "TDF + 3TC + NVP" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and nevirapine"
-  * ^code[+] = HIV.DCareTreatment#DE114
+  * ^code[+] = HIV.D#DE114
 
 * tdf3TcPiR 1..1 string "TDF + 3TC + PI/r" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and a boosted protease inhibitor"
-  * ^code[+] = HIV.DCareTreatment#DE115
+  * ^code[+] = HIV.D#DE115
 
 * tdf3TcRal 1..1 string "TDF + 3TC + RAL" "Regimen containing tenofovir disoproxil fumarate, lamivudine, and raltegravir"
-  * ^code[+] = HIV.DCareTreatment#DE116
+  * ^code[+] = HIV.D#DE116
 
 * tdfFtcAtvR 1..1 string "TDF + FTC + ATV/r" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and atazanavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE117
+  * ^code[+] = HIV.D#DE117
 
 * tdfFtcDrvR 1..1 string "TDF + FTC + DRV/r" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and darunavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE118
+  * ^code[+] = HIV.D#DE118
 
 * tdfFtcDtg 1..1 string "TDF + FTC + DTG" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and dolutegravir"
-  * ^code[+] = HIV.DCareTreatment#DE119
+  * ^code[+] = HIV.D#DE119
 
 * tdfFtcEfv 1..1 string "TDF + FTC + EFV" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and efavirenz"
-  * ^code[+] = HIV.DCareTreatment#DE120
+  * ^code[+] = HIV.D#DE120
 
 * tdfFtcEfv600Mg 1..1 string "TDF + FTC + EFV 600 mg" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and efavirenz (600 mg)"
-  * ^code[+] = HIV.DCareTreatment#DE121
+  * ^code[+] = HIV.D#DE121
 
 * tdfFtcLpvR 1..1 string "TDF + FTC + LPV/r" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and lopinavir/ritonavir"
-  * ^code[+] = HIV.DCareTreatment#DE122
+  * ^code[+] = HIV.D#DE122
 
 * tdfFtcNvp 1..1 string "TDF + FTC + NVP" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and nevirapine"
-  * ^code[+] = HIV.DCareTreatment#DE123
+  * ^code[+] = HIV.D#DE123
 
 * tdfFtcPiR 1..1 string "TDF + FTC + PI/r" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and a boosted protease inhibitor"
-  * ^code[+] = HIV.DCareTreatment#DE124
+  * ^code[+] = HIV.D#DE124
 
 * tdfFtcRal 1..1 string "TDF + FTC + RAL" "Regimen containing tenofovir disoproxil fumarate, emtricitabine, and raltegravir"
-  * ^code[+] = HIV.DCareTreatment#DE125
+  * ^code[+] = HIV.D#DE125
 
-* other 1..1 string "Other" "Other regimen based upon WHO recommendations"
-  * ^code[+] = HIV.DCareTreatment#DE126
+* artOther 1..1 string "Other" "Other regimen based upon WHO recommendations"
+  * ^code[+] = HIV.D#DE126
 
-* otherSpecify 1..1 string "Other (specify)" "Other regimen based upon WHO recommendations (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE127
+* artOtherSpecify 1..1 string "Other (specify)" "Other regimen based upon WHO recommendations (specify)"
+  * ^code[+] = HIV.D#DE127
 
 * artRegimenComposition 1..1 string "ART regimen composition" "Drug composition of clients current ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE128
+  * ^code[+] = HIV.D#DE128
 
 * abc 1..1 string "ABC" "Treated with abacavir (ABC)"
-  * ^code[+] = HIV.DCareTreatment#DE129
+  * ^code[+] = HIV.D#DE129
 
 * ftc 1..1 string "FTC" "Treated with emtricitabine (FTC)"
-  * ^code[+] = HIV.DCareTreatment#DE130
+  * ^code[+] = HIV.D#DE130
 
-* 3tc 1..1 string "3TC" "Treated with lamivudine (3TC)"
-  * ^code[+] = HIV.DCareTreatment#DE131
+* threeTc 1..1 string "3TC" "Treated with lamivudine (3TC)"
+  * ^code[+] = HIV.D#DE131
 
 * azt 1..1 string "AZT" "Treated with zidovudine (AZT)"
-  * ^code[+] = HIV.DCareTreatment#DE132
+  * ^code[+] = HIV.D#DE132
 
 * ddi 1..1 string "DDI" "Treated with didanosine (DDI)"
-  * ^code[+] = HIV.DCareTreatment#DE133
+  * ^code[+] = HIV.D#DE133
 
 * d4t 1..1 string "D4T" "Treated with stavudine (D4T)"
-  * ^code[+] = HIV.DCareTreatment#DE134
+  * ^code[+] = HIV.D#DE134
 
 * tdf 1..1 string "TDF" "Treated with tenofovir (TDF)"
-  * ^code[+] = HIV.DCareTreatment#DE135
+  * ^code[+] = HIV.D#DE135
 
 * efv 1..1 string "EFV" "Treated with efavirenz (EFV)"
-  * ^code[+] = HIV.DCareTreatment#DE136
+  * ^code[+] = HIV.D#DE136
 
 * etv 1..1 string "ETV" "Treated with etravirine (ETV)"
-  * ^code[+] = HIV.DCareTreatment#DE137
+  * ^code[+] = HIV.D#DE137
 
 * nvp 1..1 string "NVP" "Treated with nevirapine (NVP)"
-  * ^code[+] = HIV.DCareTreatment#DE138
+  * ^code[+] = HIV.D#DE138
 
 * ril 1..1 string "RIL" "Treated with rilpivirine (RIL)"
-  * ^code[+] = HIV.DCareTreatment#DE139
+  * ^code[+] = HIV.D#DE139
 
 * atvr 1..1 string "ATV/r" "Treated with atazanavir/ritonavir (ATV/r)"
-  * ^code[+] = HIV.DCareTreatment#DE140
+  * ^code[+] = HIV.D#DE140
 
 * lpvr 1..1 string "LPV/r" "Treated with lopinavir/ritonavir (LPV/r)"
-  * ^code[+] = HIV.DCareTreatment#DE141
+  * ^code[+] = HIV.D#DE141
 
 * drvr 1..1 string "DRV/r" "Treated with darunavir/ritonavir (DRV/r)"
-  * ^code[+] = HIV.DCareTreatment#DE142
+  * ^code[+] = HIV.D#DE142
 
 * rtv 1..1 string "RTV" "Treated with ritonavir (RTV)"
-  * ^code[+] = HIV.DCareTreatment#DE143
+  * ^code[+] = HIV.D#DE143
 
 * dtg 1..1 string "DTG" "Treated with dolutegravir (DTG)"
-  * ^code[+] = HIV.DCareTreatment#DE144
+  * ^code[+] = HIV.D#DE144
 
 * ral 1..1 string "RAL" "Treated with raltegravir (RAL)"
-  * ^code[+] = HIV.DCareTreatment#DE145
+  * ^code[+] = HIV.D#DE145
 
 * artRegimenDrugClass 1..1 string "ART regimen drug class" "Drug class of current ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE146
+  * ^code[+] = HIV.D#DE146
 
 * nrti 1..1 string "NRTI" "Treated with nucleoside reverse transcriptase inhibitors (NRTIs)"
-  * ^code[+] = HIV.DCareTreatment#DE147
+  * ^code[+] = HIV.D#DE147
 
 * ntrti 1..1 string "NtRTI" "Treated with nucleotide reverse-transcriptase inhibitors (NtRTIs)"
-  * ^code[+] = HIV.DCareTreatment#DE148
+  * ^code[+] = HIV.D#DE148
 
 * nnrti 1..1 string "NNRTI" "Treated with non-nucleoside reverse transcriptase inhibitors (NNRTIs)"
-  * ^code[+] = HIV.DCareTreatment#DE149
+  * ^code[+] = HIV.D#DE149
 
 * pi 1..1 string "PI" "Treated with protease inhibitors (PIs)"
-  * ^code[+] = HIV.DCareTreatment#DE150
+  * ^code[+] = HIV.D#DE150
 
 * insti 1..1 string "INSTI" "Treated with integrase strand transfer inhibitors (INSTIs)"
-  * ^code[+] = HIV.DCareTreatment#DE151
+  * ^code[+] = HIV.D#DE151
 
 * preventionServicesOfferedAndReferrals 1..1 string "Prevention services offered and referrals" "Offer or refer for prevention services"
-  * ^code[+] = HIV.DCareTreatment#DE152
+  * ^code[+] = HIV.D#DE152
 
 * offerMaleAndFemaleCondomsAndCondomCompatibleLubricants 1..1 string "Offer male and female condoms and condom-compatible lubricants" "Offer male and female condoms and condom-compatible lubricants"
-  * ^code[+] = HIV.DCareTreatment#DE153
+  * ^code[+] = HIV.D#DE153
 
 * harmReductionForPeopleWhoInjectDrugs 1..1 string "Harm reduction for people who inject drugs" "Offer or refer people who inject drugs to harm reduction services (needle and syringe programmes, opioid substitution therapy, other drug-dependence treatment and opioid overdose prevention and management)"
-  * ^code[+] = HIV.DCareTreatment#DE154
+  * ^code[+] = HIV.D#DE154
 
 * behaviouralInterventionsToSupportRiskReduction 1..1 string "Behavioural interventions to support risk reduction" "Offer or refer to services for behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations"
-  * ^code[+] = HIV.DCareTreatment#DE155
+  * ^code[+] = HIV.D#DE155
 
 * sexualAndReproductiveHealthIntegratedServices 1..1 string "Sexual and reproductive health integrated services" "Offer or refer to sexual and reproductive health services"
-  * ^code[+] = HIV.DCareTreatment#DE156
+  * ^code[+] = HIV.D#DE156
 
 * contraceptionAndFamilyPlanning 1..1 string "Contraception and family planning" "Offer contraception and family planning services"
-  * ^code[+] = HIV.DCareTreatment#DE157
+  * ^code[+] = HIV.D#DE157
 
 * checkPregnancyStatus 1..1 string "Check pregnancy status" "Check womans pregnancy status"
-  * ^code[+] = HIV.DCareTreatment#DE158
+  * ^code[+] = HIV.D#DE158
 
 * preventionOfMotherToChildTransmission 1..1 string "Prevention of mother-to-child transmission" "Offer prevention of mother-to-child transmission services (counselling)"
-  * ^code[+] = HIV.DCareTreatment#DE159
+  * ^code[+] = HIV.D#DE159
 
 * stiTestingAndTreatment 1..1 string "STI testing and treatment" "Offer STI testing and treatment services"
-  * ^code[+] = HIV.DCareTreatment#DE160
+  * ^code[+] = HIV.D#DE160
 
 * hbsagTestDate 1..1 string "HBsAg test date" "Date client was tested for hepatitis B virus (HBV)"
-  * ^code[+] = HIV.DCareTreatment#DE161
+  * ^code[+] = HIV.D#DE161
 
 * hbsagTestResult 1..1 string "HBsAg test result" "Hepatitis B virus test result (HBsAg)"
-  * ^code[+] = HIV.DCareTreatment#DE162
+  * ^code[+] = HIV.D#DE162
 
-* positive 1..1 string "Positive" "HBsAg test result was positive"
-  * ^code[+] = HIV.DCareTreatment#DE163
+* hbsagPositive 1..1 string "Positive" "HBsAg test result was positive"
+  * ^code[+] = HIV.D#DE163
 
-* negative 1..1 string "Negative" "HBsAg test result was negative"
-  * ^code[+] = HIV.DCareTreatment#DE164
+* hbsagNegative 1..1 string "Negative" "HBsAg test result was negative"
+  * ^code[+] = HIV.D#DE164
 
-* indeterminate 1..1 string "Indeterminate" "HBsAg test result was indeterminate"
-  * ^code[+] = HIV.DCareTreatment#DE165
+* hbsagIndeterminate 1..1 string "Indeterminate" "HBsAg test result was indeterminate"
+  * ^code[+] = HIV.D#DE165
 
 * dateHbvTestResultReturnedToClient 1..1 string "Date HBV test result returned to client" "Date HBV test result (HBsAG) was returned to client"
-  * ^code[+] = HIV.DCareTreatment#DE166
+  * ^code[+] = HIV.D#DE166
 
 * hbvTreatmentTdfStartDate 1..1 string "HBV treatment (TDF) start date" "Date when client started treatment (TDF) for hepatitis B virus (HBV)"
-  * ^code[+] = HIV.DCareTreatment#DE167
+  * ^code[+] = HIV.D#DE167
 
 * hbvTreatmentRegimenPrescribed 1..1 string "HBV treatment regimen prescribed" "Hepatitis B virus treatment regimen prescribed"
-  * ^code[+] = HIV.DCareTreatment#DE168
+  * ^code[+] = HIV.D#DE168
 
 * hcvTestDate 1..1 string "HCV test date" "Date client was tested for hepatitis C virus (HCV antibody, HCV RNA or HCV core antigen)"
-  * ^code[+] = HIV.DCareTreatment#DE169
+  * ^code[+] = HIV.D#DE169
 
 * hcvTestResult 1..1 string "HCV test result" "Hepatitis C virus test result (HCV antibody, HCV RNA or HCV core antigen)"
-  * ^code[+] = HIV.DCareTreatment#DE170
+  * ^code[+] = HIV.D#DE170
 
 * positive 1..1 string "Positive" "HCV test result was positive"
-  * ^code[+] = HIV.DCareTreatment#DE171
+  * ^code[+] = HIV.D#DE171
 
 * negative 1..1 string "Negative" "HCV test result was negative"
-  * ^code[+] = HIV.DCareTreatment#DE172
+  * ^code[+] = HIV.D#DE172
 
 * indeterminate 1..1 string "Indeterminate" "HCV test result was indeterminate"
-  * ^code[+] = HIV.DCareTreatment#DE173
+  * ^code[+] = HIV.D#DE173
 
 * dateHcvTestResultReturnedToClient 1..1 string "Date HCV test result returned to client" "Date HCV test result was returned to client"
-  * ^code[+] = HIV.DCareTreatment#DE174
+  * ^code[+] = HIV.D#DE174
 
 * hcvTreatmentStartDate 1..1 string "HCV treatment start date" "Date when client started treatment for hepatitis C virus (HCV)"
-  * ^code[+] = HIV.DCareTreatment#DE175
+  * ^code[+] = HIV.D#DE175
 
 * hcvTreatmentCompletionDate 1..1 string "HCV treatment completion date" "Date when client completed treatment for hepatitis C virus (HCV)"
-  * ^code[+] = HIV.DCareTreatment#DE176
+  * ^code[+] = HIV.D#DE176
 
 * hcvTreatmentRegimenPrescribed 1..1 string "HCV treatment regimen prescribed" "Hepatitis C virus treatment regimen prescribed"
-  * ^code[+] = HIV.DCareTreatment#DE177
+  * ^code[+] = HIV.D#DE177
 
 * hcvViralLoadTestDate 1..1 string "HCV viral load test date" "Hepatitis C viral load test date"
-  * ^code[+] = HIV.DCareTreatment#DE178
+  * ^code[+] = HIV.D#DE178
 
 * hcvViralLoadTestResult 1..1 string "HCV viral load test result" "Hepatitis C viral load test result (qualitative)"
-  * ^code[+] = HIV.DCareTreatment#DE179
+  * ^code[+] = HIV.D#DE179
 
 * detected 1..1 string "Detected" "HCV was detected"
-  * ^code[+] = HIV.DCareTreatment#DE180
+  * ^code[+] = HIV.D#DE180
 
 * notDetected 1..1 string "Not detected" "HCV was not detected"
-  * ^code[+] = HIV.DCareTreatment#DE181
+  * ^code[+] = HIV.D#DE181
 
 * hcvMedicineType 1..1 string "HCV medicine type" "Type of medicine client is prescribed"
-  * ^code[+] = HIV.DCareTreatment#DE182
+  * ^code[+] = HIV.D#DE182
 
 * interferon 1..1 string "Interferon" "Client is prescribed interferon"
-  * ^code[+] = HIV.DCareTreatment#DE183
+  * ^code[+] = HIV.D#DE183
 
 * directActingAntivirals 1..1 string "Direct acting antivirals" "Client is prescribed direct acting antivirals"
-  * ^code[+] = HIV.DCareTreatment#DE184
+  * ^code[+] = HIV.D#DE184
 
 * currentlyOnTdfBasedArt 1..1 string "Currently on TDF-based ART" "Client is currently on TDF-based ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE185
+  * ^code[+] = HIV.D#DE185
 
 * hivClinicalStage 1..1 string "HIV clinical stage" "WHO clinical stage of client based on signs and symptoms. WHO clinical staging is a way to categorize HIV disease severity based on new or recurrent clinical events. There are 4 WHO clinical stages that range from mild symptoms (WHO clinical stage 1) to severe symptoms (WHO clinical stage 4)."
-  * ^code[+] = HIV.DCareTreatment#DE186
+  * ^code[+] = HIV.D#DE186
 
 * whoHivClinicalStage1 1..1 string "WHO HIV clinical stage 1" "Client is currently assessed to be at a clinical stage 1, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE187
+  * ^code[+] = HIV.D#DE187
 
 * whoHivClinicalStage2 1..1 string "WHO HIV clinical stage 2" "Client is currently assessed to be at a clinical stage 2, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE188
+  * ^code[+] = HIV.D#DE188
 
 * whoHivClinicalStage3 1..1 string "WHO HIV clinical stage 3" "Client is currently assessed to be at a clinical stage 3, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE189
+  * ^code[+] = HIV.D#DE189
 
 * whoHivClinicalStage4 1..1 string "WHO HIV clinical stage 4" "Client is currently assessed to be at a clinical stage 4, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE190
+  * ^code[+] = HIV.D#DE190
 
 * numberOfMissedDoses 1..1 string "Number of missed doses" "Number of doses of antiretroviral therapy (ART) the client missed since the last visit, used for monitoring adherence"
-  * ^code[+] = HIV.DCareTreatment#DE191
+  * ^code[+] = HIV.D#DE191
 
 * receivedViralLoadTestResult 1..1 string "Received viral load test result" "Client received results from viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE192
+  * ^code[+] = HIV.D#DE192
 
 * dateViralLoadTestResultsReceivedByClient 1..1 string "Date viral load test results received by client" "The date on which the client received results from viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE193
+  * ^code[+] = HIV.D#DE193
 
 * dateOfViralLoadSampleCollection 1..1 string "Date of viral load sample collection" "Date and time when the sample was collected to test the clients HIV viral load"
-  * ^code[+] = HIV.DCareTreatment#DE194
+  * ^code[+] = HIV.D#DE194
 
 * dateOfScheduledReviewOfViralLoadTestResults 1..1 string "Date of scheduled review of viral load test results" "Expected date when clients viral load test results will be returned and reviewed"
-  * ^code[+] = HIV.DCareTreatment#DE195
+  * ^code[+] = HIV.D#DE195
 
 * dateOfArtInterruption 1..1 string "Date of ART interruption" "Date of clients ART interruption (ART stop or missed drug pick-up)"
-  * ^code[+] = HIV.DCareTreatment#DE196
+  * ^code[+] = HIV.D#DE196
 
 * reasonsForAdherenceProblem 1..1 string "Reason(s) for adherence problem" "Reason why client was not adherent"
-  * ^code[+] = HIV.DCareTreatment#DE197
+  * ^code[+] = HIV.D#DE197
 
 * forgot 1..1 string "Forgot" "Client reported not being adherent because they forgot"
-  * ^code[+] = HIV.DCareTreatment#DE198
+  * ^code[+] = HIV.D#DE198
 
-* toxicitysideEffects 1..1 string "Toxicity/side effects" "Client reported not being adherent because of toxicity/side effects"
-  * ^code[+] = HIV.DCareTreatment#DE199
+* adhToxicitysideEffects 1..1 string "Toxicity/side effects" "Client reported not being adherent because of toxicity/side effects"
+  * ^code[+] = HIV.D#DE199
 
 * busy 1..1 string "Busy" "Client reported not being adherent because they were busy"
-  * ^code[+] = HIV.DCareTreatment#DE200
+  * ^code[+] = HIV.D#DE200
 
 * changeOfRoutine 1..1 string "Change of routine" "Client reported not being adherent because of a change of routine"
-  * ^code[+] = HIV.DCareTreatment#DE201
+  * ^code[+] = HIV.D#DE201
 
 * travelCost 1..1 string "Travel cost" "Client reported not being adherent because of travel cost"
-  * ^code[+] = HIV.DCareTreatment#DE202
+  * ^code[+] = HIV.D#DE202
 
 * distanceToClinic 1..1 string "Distance to clinic" "Client reported not being adherent because of distance to clinic"
-  * ^code[+] = HIV.DCareTreatment#DE203
+  * ^code[+] = HIV.D#DE203
 
 * clientLostRanOutOfPills 1..1 string "Client lost/ran out of pills" "Client reported not being adherent because client lost/ran out of pills"
-  * ^code[+] = HIV.DCareTreatment#DE204
+  * ^code[+] = HIV.D#DE204
 
 * stockOut 1..1 string "Stock-out" "Client reported not being adherent because of a stock-out"
-  * ^code[+] = HIV.DCareTreatment#DE205
+  * ^code[+] = HIV.D#DE205
 
 * tooIll 1..1 string "Too ill" "Client reported not being adherent because of being too ill"
-  * ^code[+] = HIV.DCareTreatment#DE206
+  * ^code[+] = HIV.D#DE206
 
 * pillBurden 1..1 string "Pill burden" "Client reported not being adherent because of the pill burden"
-  * ^code[+] = HIV.DCareTreatment#DE207
+  * ^code[+] = HIV.D#DE207
 
 * feltWell 1..1 string "Felt well" "Client reported not being adherent because they felt well"
-  * ^code[+] = HIV.DCareTreatment#DE208
+  * ^code[+] = HIV.D#DE208
 
 * depression 1..1 string "Depression" "Client reported not being adherent because of depression"
-  * ^code[+] = HIV.DCareTreatment#DE209
+  * ^code[+] = HIV.D#DE209
 
 * alcoholUse 1..1 string "Alcohol use" "Client reported not being adherent because of alcohol use"
-  * ^code[+] = HIV.DCareTreatment#DE210
+  * ^code[+] = HIV.D#DE210
 
 * substanceUse 1..1 string "Substance use" "Client reported not being adherent because of substance use (i.e. drugs)"
-  * ^code[+] = HIV.DCareTreatment#DE211
+  * ^code[+] = HIV.D#DE211
 
 * stigmadisclosureConcerns 1..1 string "Stigma/disclosure concerns" "Client reported not being adherent because of stigma/disclosure concerns"
-  * ^code[+] = HIV.DCareTreatment#DE212
+  * ^code[+] = HIV.D#DE212
 
 * lackOfFood 1..1 string "Lack of food" "Client reported not being adherent because of a lack of food"
-  * ^code[+] = HIV.DCareTreatment#DE213
+  * ^code[+] = HIV.D#DE213
 
 * poorPalatability 1..1 string "Poor palatability" "Client reported not being adherent because of poor palatability"
-  * ^code[+] = HIV.DCareTreatment#DE214
+  * ^code[+] = HIV.D#DE214
 
 * otherReasonForNonadherence 1..1 string "Other reason for nonadherence" "Client reported not being adherent because of other reason for nonadherence"
-  * ^code[+] = HIV.DCareTreatment#DE215
+  * ^code[+] = HIV.D#DE215
 
 * otherReasonForNonadherenceSpecify 1..1 string "Other reason for nonadherence (specify)" "Client reported not being adherent because of other reason for nonadherence (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE216
+  * ^code[+] = HIV.D#DE216
 
 * reasonArtStopped 1..1 string "Reason ART stopped" "Reason client intentionally stopped ART"
-  * ^code[+] = HIV.DCareTreatment#DE217
+  * ^code[+] = HIV.D#DE217
 
 * toxicitysideEffects 1..1 string "Toxicity/side effects" "Client stopped ART because of toxicity/side effects"
-  * ^code[+] = HIV.DCareTreatment#DE218
+  * ^code[+] = HIV.D#DE218
 
 * severeIllnessHospitalization 1..1 string "Severe illness, hospitalization" "Client stopped ART because of severe illness, hospitalization"
-  * ^code[+] = HIV.DCareTreatment#DE219
+  * ^code[+] = HIV.D#DE219
 
 * drugsOutOfStock 1..1 string "Drugs out of stock" "Client stopped ART because drugs were out of stock"
-  * ^code[+] = HIV.DCareTreatment#DE220
+  * ^code[+] = HIV.D#DE220
 
 * clientLacksFinances 1..1 string "Client lacks finances" "Client stopped ART because of lack of finances"
-  * ^code[+] = HIV.DCareTreatment#DE221
+  * ^code[+] = HIV.D#DE221
 
 * excludedHivInfectionInInfant 1..1 string "Excluded HIV infection in infant" "Client stopped ART because HIV infection in infant was excluded"
-  * ^code[+] = HIV.DCareTreatment#DE222
+  * ^code[+] = HIV.D#DE222
 
 * otherReasonForStoppingArt 1..1 string "Other reason for stopping ART" "Client stopped ART because of other reason"
-  * ^code[+] = HIV.DCareTreatment#DE223
+  * ^code[+] = HIV.D#DE223
 
 * otherReasonForStoppingArtSpecify 1..1 string "Other reason for stopping ART (specify)" "Client stopped ART because of other reason (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE224
+  * ^code[+] = HIV.D#DE224
 
 * treatmentFailure 1..1 string "Treatment failure" "ART treatment failure"
-  * ^code[+] = HIV.DCareTreatment#DE225
+  * ^code[+] = HIV.D#DE225
 
 * clinicalFailure 1..1 string "Clinical failure" "New or recurrent clinical event indicating severe immunodeficiency in adults or advanced or severe immunodeficiency in children"
-  * ^code[+] = HIV.DCareTreatment#DE226
+  * ^code[+] = HIV.D#DE226
 
 * immunologicalFailure 1..1 string "Immunological failure" "CD4 count at or below 250 cells/mm3 following clinical failure"
-  * ^code[+] = HIV.DCareTreatment#DE227
+  * ^code[+] = HIV.D#DE227
 
 * virologicalFailure 1..1 string "Virological failure" "The inability to achieve or maintain viral suppression below a certain threshold indicated by viral load above 1000 copies/mL based on two consecutive viral load measurements in 3 months, with adherence support following the first viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE228
+  * ^code[+] = HIV.D#DE228
 
 * generalCareActivitiesRecommended 1..1 string "General care activities recommended" "General care activities to be performed during the care visit"
-  * ^code[+] = HIV.DCareTreatment#DE229
+  * ^code[+] = HIV.D#DE229
 
 * determineWhoClinicalStage 1..1 string "Determine WHO clinical stage" "Determine WHO clinical stage based on past and current HIV-related conditions"
-  * ^code[+] = HIV.DCareTreatment#DE230
+  * ^code[+] = HIV.D#DE230
 
 * determineIfAdvancedDisease 1..1 string "Determine if advanced disease" "Determine if client is in an advanced stage of HIV, as a special package of services may be provided"
-  * ^code[+] = HIV.DCareTreatment#DE231
+  * ^code[+] = HIV.D#DE231
 
 * prepareForArt 1..1 string "Prepare for ART" "Prepare client new to ART"
-  * ^code[+] = HIV.DCareTreatment#DE232
+  * ^code[+] = HIV.D#DE232
 
 * prepareAssessAndSupportAdherence 1..1 string "Prepare, assess and support adherence" "Prepare, assess and support adherence"
-  * ^code[+] = HIV.DCareTreatment#DE233
+  * ^code[+] = HIV.D#DE233
 
 * manageCurrentMedications 1..1 string "Manage current medications" "Manage current medications being taken by the client"
-  * ^code[+] = HIV.DCareTreatment#DE234
+  * ^code[+] = HIV.D#DE234
 
-* checkPregnancyStatus 1..1 string "Check pregnancy status" "Check womans pregnancy status"
-  * ^code[+] = HIV.DCareTreatment#DE235
+* artCheckPregnancyStatus 1..1 string "Check pregnancy status" "Check womans pregnancy status"
+  * ^code[+] = HIV.D#DE235
 
 * provideFamilyPlanningAndContraception 1..1 string "Provide family planning and contraception" "Provide family planning and contraception counselling"
-  * ^code[+] = HIV.DCareTreatment#DE236
+  * ^code[+] = HIV.D#DE236
 
 * supportDisclosureAndPartnerNotification 1..1 string "Support disclosure and partner notification" "Support disclosure and partner notification"
-  * ^code[+] = HIV.DCareTreatment#DE237
+  * ^code[+] = HIV.D#DE237
 
 * counselOnRiskReductionAndPrevention 1..1 string "Counsel on risk reduction and prevention" "Counsel on risk reduction and combination HIV prevention approaches"
-  * ^code[+] = HIV.DCareTreatment#DE238
+  * ^code[+] = HIV.D#DE238
 
 * assessPreventAndManageNoncommunicableDiseases 1..1 string "Assess, prevent and manage noncommunicable diseases" "Assess, prevent and manage noncommunicable diseases"
-  * ^code[+] = HIV.DCareTreatment#DE239
+  * ^code[+] = HIV.D#DE239
 
 * screenForAndManageMentalHealthProblems 1..1 string "Screen for and manage mental health problems" "Screen for and manage mental health problems"
-  * ^code[+] = HIV.DCareTreatment#DE240
+  * ^code[+] = HIV.D#DE240
 
 * screenForAndManageAndSubstanceUseIssues 1..1 string "Screen for and manage and substance use issues" "Screen for and manage and substance use issues"
-  * ^code[+] = HIV.DCareTreatment#DE241
+  * ^code[+] = HIV.D#DE241
 
 * providePsychosocialCounsellingAndSupport 1..1 string "Provide psychosocial counselling and support" "Provide psychosocial counselling and support"
-  * ^code[+] = HIV.DCareTreatment#DE242
+  * ^code[+] = HIV.D#DE242
 
 * managePainAndSymptoms 1..1 string "Manage pain and symptoms" "Manage pain and symptoms client is experiencing"
-  * ^code[+] = HIV.DCareTreatment#DE243
+  * ^code[+] = HIV.D#DE243
 
 * conductANutritionalAssessmentAndCounselOnNutrition 1..1 string "Conduct a nutritional assessment and counsel on nutrition" "Conduct a nutritional assessment and counsel on nutrition"
-  * ^code[+] = HIV.DCareTreatment#DE244
+  * ^code[+] = HIV.D#DE244
 
 * conductAGrowthAndDevelopmentAssessment 1..1 string "Conduct a growth and development assessment" "Conduct a growth and development assessment"
-  * ^code[+] = HIV.DCareTreatment#DE245
+  * ^code[+] = HIV.D#DE245
 
 * provideSupportOnInfantAndChildFeeding 1..1 string "Provide support on infant and child feeding" "Provide support on infant and child feeding to mother or care giver"
-  * ^code[+] = HIV.DCareTreatment#DE246
+  * ^code[+] = HIV.D#DE246
 
 * preventingAndTreatingCoinfections 1..1 string "Preventing and treating coinfections" "Coinfection prevention and treatment activities performed during the care visit"
-  * ^code[+] = HIV.DCareTreatment#DE247
+  * ^code[+] = HIV.D#DE247
 
 * provideCoTrimoxazolePreventiveTherapyCpt 1..1 string "Provide co-trimoxazole preventive therapy (CPT)" "Provide co-trimoxazole prophylaxis for clients new to ART or identified as taking it"
-  * ^code[+] = HIV.DCareTreatment#DE248
+  * ^code[+] = HIV.D#DE248
 
-* intensifiedTbCaseFindingAndLinkageToTbTreatment 1..1 string "Intensified TB case finding and linkage to TB treatment" "Offer or refer for intensified TB case finding and linkage to TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE249
+* intensifiedTbCaseFindingAndLinkageToTbTreatment2 1..1 string "Intensified TB case finding and linkage to TB treatment" "Offer or refer for intensified TB case finding and linkage to TB treatment"
+  * ^code[+] = HIV.D#DE249
 
 * provideIsoniazidPreventiveTherapy 1..1 string "Provide isoniazid preventive therapy" "Provide isoniazid preventive therapy"
-  * ^code[+] = HIV.DCareTreatment#DE250
+  * ^code[+] = HIV.D#DE250
 
 * screenForCryptococcalInfectionAndFungalProphylaxis 1..1 string "Screen for cryptococcal infection and fungal prophylaxis" "Screen for cryptococcal infection and fungal prophylaxis"
-  * ^code[+] = HIV.DCareTreatment#DE251
+  * ^code[+] = HIV.D#DE251
 
 * screenForHepatitisB 1..1 string "Screen for hepatitis B" "Screen for hepatitis B virus"
-  * ^code[+] = HIV.DCareTreatment#DE252
+  * ^code[+] = HIV.D#DE252
 
 * screenForHepatitisC 1..1 string "Screen for hepatitis C" "Screen for hepatitis C virus"
-  * ^code[+] = HIV.DCareTreatment#DE253
+  * ^code[+] = HIV.D#DE253
 
 * preventMalaria 1..1 string "Prevent malaria" "Prevent malaria including with insecticide-treated bed-nets and prophylaxis"
-  * ^code[+] = HIV.DCareTreatment#DE254
+  * ^code[+] = HIV.D#DE254
 
 * screenForStis 1..1 string "Screen for STIs" "Screen for STIs"
-  * ^code[+] = HIV.DCareTreatment#DE255
+  * ^code[+] = HIV.D#DE255
 
 * preventAndScreenForCervicalCancer 1..1 string "Prevent and screen for cervical cancer" "Prevent and screen for cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE256
+  * ^code[+] = HIV.D#DE256
 
 * analCancerScreeningForMenWhoHaveSexWithMen 1..1 string "Anal cancer screening (for men who have sex with men)" "Offer anal cancer screening (for men who have sex with men)"
-  * ^code[+] = HIV.DCareTreatment#DE257
+  * ^code[+] = HIV.D#DE257
 
 * assessmentAndProvisionOfVaccinations 1..1 string "Assessment and provision of vaccinations" "Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC"
-  * ^code[+] = HIV.DCareTreatment#DE258
+  * ^code[+] = HIV.D#DE258
 
 * riskFactorsComorbiditiesAndCoinfectionsSignsAndSymptoms 1..1 string "Risk factors, comorbidities and coinfections signs and symptoms" "Signs and symptoms of opportunistic infections or other comorbidities experienced by client"
-  * ^code[+] = HIV.DCareTreatment#DE259
+  * ^code[+] = HIV.D#DE259
 
 * oralCandidiasis 1..1 string "Oral candidiasis" "Clients comorbidities or coinfections or symptoms of these include oral candidiasis (after the first 6-8 weeks of life)"
-  * ^code[+] = HIV.DCareTreatment#DE260
+  * ^code[+] = HIV.D#DE260
 
 * vaginalCandidiasis 1..1 string "Vaginal candidiasis" "Clients comorbidities or coinfections or symptoms of these include vaginal candidiasis"
-  * ^code[+] = HIV.DCareTreatment#DE261
+  * ^code[+] = HIV.D#DE261
 
 * cough 1..1 string "Cough" "Clients comorbidities or coinfections or symptoms of these include cough"
-  * ^code[+] = HIV.DCareTreatment#DE262
+  * ^code[+] = HIV.D#DE262
 
 * prolongedFever 1..1 string "Prolonged fever" "Clients comorbidities or coinfections or symptoms of these include prolonged fever"
-  * ^code[+] = HIV.DCareTreatment#DE263
+  * ^code[+] = HIV.D#DE263
 
 * nightSweats 1..1 string "Night sweats" "Clients comorbidities or coinfections or symptoms of these include night sweats"
-  * ^code[+] = HIV.DCareTreatment#DE264
+  * ^code[+] = HIV.D#DE264
 
 * weightLoss 1..1 string "Weight loss" "Clients comorbidities or coinfections or symptoms of these include weight loss"
-  * ^code[+] = HIV.DCareTreatment#DE265
+  * ^code[+] = HIV.D#DE265
 
 * difficultyBreathing 1..1 string "Difficulty breathing" "Clients comorbidities or coinfections or symptoms of these include difficulty breathing"
-  * ^code[+] = HIV.DCareTreatment#DE266
+  * ^code[+] = HIV.D#DE266
 
 * pneumonia 1..1 string "Pneumonia" "Clients comorbidities or coinfections or symptoms of these include pneumonia"
-  * ^code[+] = HIV.DCareTreatment#DE267
+  * ^code[+] = HIV.D#DE267
 
 * urethralDischarge 1..1 string "Urethral discharge" "Clients comorbidities or coinfections or symptoms of these include urethral discharge"
-  * ^code[+] = HIV.DCareTreatment#DE268
+  * ^code[+] = HIV.D#DE268
 
 * syphilis 1..1 string "Syphilis" "Clients comorbidities or coinfections or symptoms of these include syphilis"
-  * ^code[+] = HIV.DCareTreatment#DE269
+  * ^code[+] = HIV.D#DE269
 
 * pelvicInflammatoryDisease 1..1 string "Pelvic inflammatory disease" "Clients comorbidities or coinfections or symptoms of these include pelvic inflammatory disease"
-  * ^code[+] = HIV.DCareTreatment#DE270
+  * ^code[+] = HIV.D#DE270
 
 * ulcersSkin 1..1 string "Ulcers - skin" "Clients comorbidities or coinfections or symptoms of these include ulcers - skin"
-  * ^code[+] = HIV.DCareTreatment#DE271
+  * ^code[+] = HIV.D#DE271
 
 * ulcersMouthOrOther 1..1 string "Ulcers - mouth or other" "Clients comorbidities or coinfections or symptoms of these include ulcers - mouth or other"
-  * ^code[+] = HIV.DCareTreatment#DE272
+  * ^code[+] = HIV.D#DE272
 
 * ulcersMaleGenital 1..1 string "Ulcers - male genital" "Clients comorbidities or coinfections or symptoms of these include ulcers - male genital"
-  * ^code[+] = HIV.DCareTreatment#DE273
+  * ^code[+] = HIV.D#DE273
 
 * vaginalDischarge 1..1 string "Vaginal discharge" "Clients comorbidities or coinfections or symptoms of these include vaginal discharge"
-  * ^code[+] = HIV.DCareTreatment#DE274
+  * ^code[+] = HIV.D#DE274
 
 * malaria 1..1 string "Malaria" "Clients comorbidities or coinfections or symptoms of these include malaria"
-  * ^code[+] = HIV.DCareTreatment#DE275
+  * ^code[+] = HIV.D#DE275
 
 * chronicObstructivePulmonaryDisease 1..1 string "Chronic obstructive pulmonary disease" "Clients comorbidities or coinfections or symptoms of these include chronic obstructive pulmonary disease"
-  * ^code[+] = HIV.DCareTreatment#DE276
+  * ^code[+] = HIV.D#DE276
 
-* hypertension 1..1 string "Hypertension" "Clients comorbidities or coinfections or symptoms of these include hypertension"
-  * ^code[+] = HIV.DCareTreatment#DE277
+* coHypertension 1..1 string "Hypertension" "Clients comorbidities or coinfections or symptoms of these include hypertension"
+  * ^code[+] = HIV.D#DE277
 
-* diabetes 1..1 string "Diabetes" "Clients comorbidities or coinfections or symptoms of these include diabetes"
-  * ^code[+] = HIV.DCareTreatment#DE278
+* coDiabetes 1..1 string "Diabetes" "Clients comorbidities or coinfections or symptoms of these include diabetes"
+  * ^code[+] = HIV.D#DE278
 
 * gestationalDiabetes 1..1 string "Gestational diabetes" "Clients comorbidities or coinfections or symptoms of these include gestational diabetes"
-  * ^code[+] = HIV.DCareTreatment#DE279
+  * ^code[+] = HIV.D#DE279
 
 * mentalHealthDisorders 1..1 string "Mental health disorders" "Clients comorbidities or coinfections or symptoms of these include mental health disorders (including depression, dementia, encephalitis, seizures)"
-  * ^code[+] = HIV.DCareTreatment#DE280
+  * ^code[+] = HIV.D#DE280
 
 * diarrhoeaOrAbdominalPain 1..1 string "Diarrhoea or abdominal pain" "Clients comorbidities or coinfections or symptoms of these include diarrhoea or abdominal pain"
-  * ^code[+] = HIV.DCareTreatment#DE281
+  * ^code[+] = HIV.D#DE281
 
 * presumptiveTb 1..1 string "Presumptive TB" "Clients comorbidities or coinfections or symptoms of these include presumptive TB"
-  * ^code[+] = HIV.DCareTreatment#DE282
+  * ^code[+] = HIV.D#DE282
 
 * severeOrComplicatedMalnutrition 1..1 string "Severe or complicated malnutrition" "Clients comorbidities or coinfections or symptoms of these include severe or complicated malnutrition"
-  * ^code[+] = HIV.DCareTreatment#DE283
+  * ^code[+] = HIV.D#DE283
 
 * poorGrowthOrDevelopment 1..1 string "Poor growth or development" "Clients comorbidities or coinfections or symptoms of these include poor growth or development"
-  * ^code[+] = HIV.DCareTreatment#DE284
+  * ^code[+] = HIV.D#DE284
 
 * oedema 1..1 string "Oedema" "Clients comorbidities or coinfections or symptoms of these include oedema"
-  * ^code[+] = HIV.DCareTreatment#DE285
+  * ^code[+] = HIV.D#DE285
 
 * previouslyTreatedForTb 1..1 string "Previously treated for TB" "Client has previously been treated for tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE286
+  * ^code[+] = HIV.D#DE286
 
-* other 1..1 string "Other" "Other comorbidities or coinfection signs or symptoms"
-  * ^code[+] = HIV.DCareTreatment#DE287
+* coOther 1..1 string "Other" "Other comorbidities or coinfection signs or symptoms"
+  * ^code[+] = HIV.D#DE287
 
-* otherSpecify 1..1 string "Other (specify)" "Other comorbidities or coinfection signs or symptoms (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE288
+* coOtherSpecify 1..1 string "Other (specify)" "Other comorbidities or coinfection signs or symptoms (specify)"
+  * ^code[+] = HIV.D#DE288
 
 * whoHivClinicalStageConditionOrSymptom 1..1 string "WHO HIV clinical stage condition or symptom" "New or recurrent clinical events used to categorize HIV disease severity based at baseline and follow up"
-  * ^code[+] = HIV.DCareTreatment#DE289
+  * ^code[+] = HIV.D#DE289
 
 * asymptomatic 1..1 string "Asymptomatic" "No HIV-related symptoms reported and no clinical signs on examination"
-  * ^code[+] = HIV.DCareTreatment#DE290
+  * ^code[+] = HIV.D#DE290
 
 * persistentGeneralizedLymphadenopathy 1..1 string "Persistent generalized lymphadenopathy" "Persistent enlarged lymph nodes >1 cm at two or more non-contiguous sites (excluding inguinal) without known cause"
-  * ^code[+] = HIV.DCareTreatment#DE291
+  * ^code[+] = HIV.D#DE291
 
 * moderateUnexplainedWeightLoss 1..1 string "Moderate unexplained weight loss" "Moderate unexplained weight loss (<10% of presumed or measured body weight)"
-  * ^code[+] = HIV.DCareTreatment#DE292
+  * ^code[+] = HIV.D#DE292
 
 * recurrentRespiratoryTractInfections 1..1 string "Recurrent respiratory tract infections" "Clients symptoms include recurrent respiratory tract infections including sinusitis, tonsillitis, otitis media or pharyngitis"
-  * ^code[+] = HIV.DCareTreatment#DE293
+  * ^code[+] = HIV.D#DE293
 
 * unexplainedPersistentHepatosplenomegaly 1..1 string "Unexplained persistent hepatosplenomegaly" "Clients symptoms include unexplained persistent hepatosplenomegaly"
-  * ^code[+] = HIV.DCareTreatment#DE294
+  * ^code[+] = HIV.D#DE294
 
 * herpesZoster 1..1 string "Herpes zoster" "Clients symptoms include herpes zoster"
-  * ^code[+] = HIV.DCareTreatment#DE295
+  * ^code[+] = HIV.D#DE295
 
 * angularCheilitis 1..1 string "Angular cheilitis" "Clients symptoms include angular cheilitis"
-  * ^code[+] = HIV.DCareTreatment#DE296
+  * ^code[+] = HIV.D#DE296
 
 * linearGingivalErythema 1..1 string "Linear gingival erythema" "Clients symptoms include linear gingival erythema"
-  * ^code[+] = HIV.DCareTreatment#DE297
+  * ^code[+] = HIV.D#DE297
 
 * recurrentOralUlceration 1..1 string "Recurrent oral ulceration" "Clients symptoms include recurrent oral ulceration"
-  * ^code[+] = HIV.DCareTreatment#DE298
+  * ^code[+] = HIV.D#DE298
 
 * papularPruriticEruption 1..1 string "Papular pruritic eruption" "Clients symptoms include papular pruritic eruption"
-  * ^code[+] = HIV.DCareTreatment#DE299
+  * ^code[+] = HIV.D#DE299
 
 * fungalNailInfections 1..1 string "Fungal nail infections" "Clients symptoms include fungal nail infections"
-  * ^code[+] = HIV.DCareTreatment#DE300
+  * ^code[+] = HIV.D#DE300
 
 * seborrhoeicDermatitis 1..1 string "Seborrhoeic dermatitis" "Clients symptoms include seborrhoeic dermatitis"
-  * ^code[+] = HIV.DCareTreatment#DE301
+  * ^code[+] = HIV.D#DE301
 
 * extensiveWartVirusInfection 1..1 string "Extensive wart virus infection" "Clients symptoms include extensive wart virus infection"
-  * ^code[+] = HIV.DCareTreatment#DE302
+  * ^code[+] = HIV.D#DE302
 
 * extensiveMolluscumContagiosum 1..1 string "Extensive molluscum contagiosum" "Clients symptoms include extensive molluscum contagiosum"
-  * ^code[+] = HIV.DCareTreatment#DE303
+  * ^code[+] = HIV.D#DE303
 
 * unexplainedPersistentParotidEnlargement 1..1 string "Unexplained persistent parotid enlargement" "Clients symptoms include unexplained persistent parotid enlargement"
-  * ^code[+] = HIV.DCareTreatment#DE304
+  * ^code[+] = HIV.D#DE304
 
 * unexplainedSevereWeightLossInAdults 1..1 string "Unexplained severe weight loss in adults" "Unexplained severe weight loss (>10% of presumed or measured body weight)"
-  * ^code[+] = HIV.DCareTreatment#DE305
+  * ^code[+] = HIV.D#DE305
 
-* unexplainedModerateMalnutritionNotAdequatelyRespondingToStandardTherapy 1..1 string "Unexplained moderate malnutrition not adequately responding to standard therapy" "Defined as weight-for-height < - 2 z-score or mid-upper arm circumference 115 mm to <125 mm. For children younger than five years of age: stunting is defined as severe acute malnutrition - either weight for height < -3 z-score or mid-upper arm circumference <115 mm or the presence of oedema."
-  * ^code[+] = HIV.DCareTreatment#DE306
+* unexplainedModerateMalnutritionNotAdequatelyResponding 1..1 string "Unexplained moderate malnutrition not adequately responding to standard therapy" "Defined as weight-for-height < - 2 z-score or mid-upper arm circumference 115 mm to <125 mm. For children younger than five years of age: stunting is defined as severe acute malnutrition - either weight for height < -3 z-score or mid-upper arm circumference <115 mm or the presence of oedema."
+  * ^code[+] = HIV.D#DE306
 
 * unexplainedChronicDiarrhoeaForLongerThan1Month 1..1 string "Unexplained chronic diarrhoea for longer than 1 month" "Clients symptoms include unexplained chronic diarrhoea for longer than 1 month"
-  * ^code[+] = HIV.DCareTreatment#DE307
+  * ^code[+] = HIV.D#DE307
 
 * unexplainedPersistentDiarrhoea14DaysOrMore 1..1 string "Unexplained persistent diarrhoea (14 days or more)" "Clients symptoms include unexplained persistent diarrhoea (14 days or more)"
-  * ^code[+] = HIV.DCareTreatment#DE308
+  * ^code[+] = HIV.D#DE308
 
-* unexplainedPersistentFeverAbove375CIntermittentOrConstantForLongerThanOne1Month 1..1 string "Unexplained persistent fever (above 37.5 C, intermittent or constant, for longer than one 1 month)" "Clients symptoms include unexplained persistent fever (above 37.5 C, intermittent or constant, for longer than one 1 month)"
-  * ^code[+] = HIV.DCareTreatment#DE309
+* unexplainedPersistentFeverAbove375LongerThanOne1Month 1..1 string "Unexplained persistent fever (above 37.5 C, intermittent or constant, for longer than one 1 month)" "Clients symptoms include unexplained persistent fever (above 37.5 C, intermittent or constant, for longer than one 1 month)"
+  * ^code[+] = HIV.D#DE309
 
 * persistentOralCandidiasis 1..1 string "Persistent oral candidiasis" "Clients symptoms include persistent oral candidiasis"
-  * ^code[+] = HIV.DCareTreatment#DE310
+  * ^code[+] = HIV.D#DE310
 
 * oralHairyLeukoplakia 1..1 string "Oral hairy leukoplakia" "Client has fine white small linear or corrugated lesions on lateral borders of the tongue that do not scrape off"
-  * ^code[+] = HIV.DCareTreatment#DE311
+  * ^code[+] = HIV.D#DE311
 
 * pulmonaryTb 1..1 string "Pulmonary TB" "Clients symptoms include pulmonary TB"
-  * ^code[+] = HIV.DCareTreatment#DE312
+  * ^code[+] = HIV.D#DE312
 
 * lymphNodeTb 1..1 string "Lymph node TB" "Clients symptoms include lymph node TB"
-  * ^code[+] = HIV.DCareTreatment#DE313
+  * ^code[+] = HIV.D#DE313
 
-* severeBacterialInfectionsSuchAsPneumoniaEmpyemaPyomyositisBoneOrJointInfectionMeningitisBacteraemia 1..1 string "Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)" "Clients symptoms include severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)"
-  * ^code[+] = HIV.DCareTreatment#DE314
+* severeBacterialInfections 1..1 string "Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)" "Clients symptoms include severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)"
+  * ^code[+] = HIV.D#DE314
 
 * severeRecurrentBacterialPneumonia 1..1 string "Severe recurrent bacterial pneumonia" "Clients symptoms include severe recurrent bacterial pneumonia"
-  * ^code[+] = HIV.DCareTreatment#DE315
+  * ^code[+] = HIV.D#DE315
 
 * acuteNecrotizingUlcerativeStomatitis 1..1 string "Acute necrotizing ulcerative stomatitis" "Clients symptoms include acute necrotizing ulcerative stomatitis"
-  * ^code[+] = HIV.DCareTreatment#DE316
+  * ^code[+] = HIV.D#DE316
 
 * acuteNecrotizingUlcerativeGingivitis 1..1 string "Acute necrotizing ulcerative gingivitis" "Clients symptoms include acute necrotizing ulcerative gingivitis"
-  * ^code[+] = HIV.DCareTreatment#DE317
+  * ^code[+] = HIV.D#DE317
 
 * acuteNecrotizingUlcerativePeriodontitis 1..1 string "Acute necrotizing ulcerative periodontitis" "Clients symptoms include acute necrotizing ulcerative periodontitis"
-  * ^code[+] = HIV.DCareTreatment#DE318
+  * ^code[+] = HIV.D#DE318
 
-* unexplainedAnaemia<8GDl 1..1 string "Unexplained anaemia (<8 g/dL)" "Clients symptoms include unexplained anaemia (<8 g/dL)"
-  * ^code[+] = HIV.DCareTreatment#DE319
+* unexplainedAnaemialt8GDl 1..1 string "Unexplained anaemia (<8 g/dL)" "Clients symptoms include unexplained anaemia (<8 g/dL)"
+  * ^code[+] = HIV.D#DE319
 
-* neutropaenia<05X10^9L 1..1 string "Neutropaenia (<0.5 x 10^9/L)" "Clients symptoms include neutropaenia (<0.5 x 10^9/L)"
-  * ^code[+] = HIV.DCareTreatment#DE320
+* neutropaenialt05X109L 1..1 string "Neutropaenia (<0.5 x 10^9/L)" "Clients symptoms include neutropaenia (<0.5 x 10^9/L)"
+  * ^code[+] = HIV.D#DE320
 
-* chronicThrombocytopaenia<50X10^9L 1..1 string "Chronic thrombocytopaenia (<50 x 10^9/L)" "Clients symptoms include chronic thrombocytopaenia (<50 x 10^9/L)"
-  * ^code[+] = HIV.DCareTreatment#DE321
+* chronicThrombocytopaenialt50X109L 1..1 string "Chronic thrombocytopaenia (<50 x 10^9/L)" "Clients symptoms include chronic thrombocytopaenia (<50 x 10^9/L)"
+  * ^code[+] = HIV.D#DE321
 
 * symptomaticLymphoidInterstitialPneumonitis 1..1 string "Symptomatic lymphoid interstitial pneumonitis" "Clients symptoms include symptomatic lymphoid interstitial pneumonitis"
-  * ^code[+] = HIV.DCareTreatment#DE322
+  * ^code[+] = HIV.D#DE322
 
 * chronicHivAssociatedLungDiseaseIncludingBronchiectasis 1..1 string "Chronic HIV-associated lung disease, including bronchiectasis" "Clients symptoms include chronic HIV-associated lung disease, including bronchiectasis"
-  * ^code[+] = HIV.DCareTreatment#DE323
+  * ^code[+] = HIV.D#DE323
 
 * hivWastingSyndrome 1..1 string "HIV wasting syndrome" "Unexplained involuntary weight loss (>10% baseline body weight), with obvious wasting or body mass index <18.5; PLUS EITHER unexplained chronic reported for longer than one month; OR reports of fever or night sweats for more than one month without other cause and lack of response to antibiotics or antimalarial agents; malaria must be excluded in malarious areas."
-  * ^code[+] = HIV.DCareTreatment#DE324
+  * ^code[+] = HIV.D#DE324
 
 * unexplainedSevereWastingNotRespondingToStandardTherapy 1..1 string "Unexplained severe wasting not responding to standard therapy" "Client has unexplained severe wasting not responding to standard therapy . For under 5 years old, defined as weight-for-height < -3 z-score"
-  * ^code[+] = HIV.DCareTreatment#DE325
+  * ^code[+] = HIV.D#DE325
 
 * unexplainedStuntingNotRespondingToStandardTherapy 1..1 string "Unexplained stunting not responding to standard therapy" "Client has unexplained stunting not responding to standard therapy . For under 5 years old, defined as length-for- age/height-for-age < -2 z-score"
-  * ^code[+] = HIV.DCareTreatment#DE326
+  * ^code[+] = HIV.D#DE326
 
 * unexplainedSevereMalnutritionNotRespondingToStandardTherapy 1..1 string "Unexplained severe malnutrition not responding to standard therapy" "Client has unexplained severe malnutrition not responding to standard therapy . For under 5 years old, weight for height < -3 z-score or mid-upper arm circumference <115 mm or the presence of oedema"
-  * ^code[+] = HIV.DCareTreatment#DE327
+  * ^code[+] = HIV.D#DE327
 
 * pneumocystisJiroveciiPneumonia 1..1 string "Pneumocystis (jirovecii) pneumonia" "Clients symptoms include pneumocystis (jirovecii) pneumonia"
-  * ^code[+] = HIV.DCareTreatment#DE328
+  * ^code[+] = HIV.D#DE328
 
 * recurrentSevereBacterialPneumonia 1..1 string "Recurrent severe bacterial pneumonia" "Clients symptoms include recurrent severe bacterial pneumonia"
-  * ^code[+] = HIV.DCareTreatment#DE329
+  * ^code[+] = HIV.D#DE329
 
-* recurrentSevereBacterialInfectionsSuchAsEmpyemaPyomyositisBoneOrJointInfectionMeningitisButExcludingPneumonia 1..1 string "Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)" "Clients symptoms include recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)"
-  * ^code[+] = HIV.DCareTreatment#DE330
+* recurrentSevereBacterialInfections 1..1 string "Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)" "Clients symptoms include recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)"
+  * ^code[+] = HIV.D#DE330
 
 * empyema 1..1 string "Empyema" "Clients symptoms include recurrent empyema"
-  * ^code[+] = HIV.DCareTreatment#DE331
+  * ^code[+] = HIV.D#DE331
 
 * pyomyositis 1..1 string "Pyomyositis" "Clients symptoms include recurrent pyomyositis"
-  * ^code[+] = HIV.DCareTreatment#DE332
+  * ^code[+] = HIV.D#DE332
 
 * boneOrJointInfection 1..1 string "Bone or joint infection" "Clients symptoms include recurrent bone or joint infections"
-  * ^code[+] = HIV.DCareTreatment#DE333
+  * ^code[+] = HIV.D#DE333
 
 * meningitis 1..1 string "Meningitis" "Clients symptoms include recurrent meningitis"
-  * ^code[+] = HIV.DCareTreatment#DE334
+  * ^code[+] = HIV.D#DE334
 
-* chronicHerpesSimplexInfectionOrolabialOrCutaneousOfMoreThan1MonthDurationOrVisceralAtAnySite 1..1 string "Chronic herpes simplex infection (orolabial or cutaneous of more than 1 month duration or visceral at any site)" "Clients symptoms include chronic herpes simplex infection (orolabial or cutaneous of more than 1 month duration or visceral at any site)"
-  * ^code[+] = HIV.DCareTreatment#DE335
+* chronicHerpesSimplexInfection 1..1 string "Chronic herpes simplex infection (orolabial or cutaneous of more than 1 month duration or visceral at any site)" "Clients symptoms include chronic herpes simplex infection (orolabial or cutaneous of more than 1 month duration or visceral at any site)"
+  * ^code[+] = HIV.D#DE335
 
-* chronicHerpesSimplexInfectionOrolabialGenitalOrAnorectalOfMoreThan1MonthInDurationOrVisceralAtAnySite 1..1 string "Chronic herpes simplex infection (orolabial, genital or anorectal of more than 1 month in duration or visceral at any site)" "Clients symptoms include chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)"
-  * ^code[+] = HIV.DCareTreatment#DE336
+* chronicHerpesSimplexInfectionGen 1..1 string "Chronic herpes simplex infection (orolabial, genital or anorectal of more than 1 month in duration or visceral at any site)" "Clients symptoms include chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)"
+  * ^code[+] = HIV.D#DE336
 
-* oesophagealCandidiasisOrCandidiasisOfTracheaBronchiOrLungs 1..1 string "Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)" "Clients symptoms include oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)"
-  * ^code[+] = HIV.DCareTreatment#DE337
+* oesophagealCandidiasisOrOfTracheaBronchiOrLungs 1..1 string "Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)" "Clients symptoms include oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)"
+  * ^code[+] = HIV.D#DE337
 
 * extrapulmonaryTb 1..1 string "Extrapulmonary TB" "Clients symptoms include extrapulmonary tuberculosis"
-  * ^code[+] = HIV.DCareTreatment#DE338
+  * ^code[+] = HIV.D#DE338
 
 * kaposiSarcoma 1..1 string "Kaposi sarcoma" "Clients symptoms include Kaposi sarcoma"
-  * ^code[+] = HIV.DCareTreatment#DE339
+  * ^code[+] = HIV.D#DE339
 
 * cytomegalovirusInfectionRetinitisOrInfectionOfOtherOrgans 1..1 string "Cytomegalovirus infection (retinitis or infection of other organs)" "Clients symptoms include cytomegalovirus infection (retinitis or infection of other organs)"
-  * ^code[+] = HIV.DCareTreatment#DE340
+  * ^code[+] = HIV.D#DE340
 
 * centralNervousSystemToxoplasmosis 1..1 string "Central nervous system toxoplasmosis" "Clients symptoms include central nervous system toxoplasmosis"
-  * ^code[+] = HIV.DCareTreatment#DE341
+  * ^code[+] = HIV.D#DE341
 
 * hivEncephalopathy 1..1 string "HIV encephalopathy" "Clients symptoms include HIV encephalopathy"
-  * ^code[+] = HIV.DCareTreatment#DE342
+  * ^code[+] = HIV.D#DE342
 
 * extrapulmonaryCryptococcosisIncludingMeningitis 1..1 string "Extrapulmonary cryptococcosis, including meningitis" "Clients symptoms include extrapulmonary cryptococcosis, including meningitis"
-  * ^code[+] = HIV.DCareTreatment#DE343
+  * ^code[+] = HIV.D#DE343
 
 * disseminatedNontuberculousMycobacterialInfection 1..1 string "Disseminated nontuberculous mycobacterial infection" "Clients symptoms include disseminated nontuberculous mycobacterial infection"
-  * ^code[+] = HIV.DCareTreatment#DE344
+  * ^code[+] = HIV.D#DE344
 
 * progressiveMultifocalLeukoencephalopathy 1..1 string "Progressive multifocal leukoencephalopathy" "Clients symptoms include progressive multifocal leukoencephalopathy"
-  * ^code[+] = HIV.DCareTreatment#DE345
+  * ^code[+] = HIV.D#DE345
 
 * chronicCryptosporidiosis 1..1 string "Chronic cryptosporidiosis" "Clients symptoms include chronic cryptosporidiosis"
-  * ^code[+] = HIV.DCareTreatment#DE346
+  * ^code[+] = HIV.D#DE346
 
 * chronicCryptosporidiosisWithDiarrhoea 1..1 string "Chronic cryptosporidiosis (with diarrhoea)" "Clients symptoms include chronic cryptosporidiosis (with diarrhoea)"
-  * ^code[+] = HIV.DCareTreatment#DE347
+  * ^code[+] = HIV.D#DE347
 
 * chronicIsosporiasis 1..1 string "Chronic isosporiasis" "Clients symptoms include chronic isosporiasis"
-  * ^code[+] = HIV.DCareTreatment#DE348
+  * ^code[+] = HIV.D#DE348
 
-* disseminatedMycosisExtrapulmonaryHistoplasmosisCoccidioidomycosis 1..1 string "Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)" "Clients symptoms include disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)"
-  * ^code[+] = HIV.DCareTreatment#DE349
+* disseminatedMycosisExtpulmHistoplasmosisCoccidioidomycosis 1..1 string "Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)" "Clients symptoms include disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)"
+  * ^code[+] = HIV.D#DE349
 
-* disseminatedEndemicMycosisExtrapulmonaryHistoplasmosisCoccidioidomycosisPenicilliosis 1..1 string "Disseminated endemic mycosis (extrapulmonary histoplasmosis, coccidioidomycosis, penicilliosis)" "Clients symptoms include disseminated endemic mycosis (extrapulmonary histoplasmosis, coccidioidomycosis, penicilliosis)"
-  * ^code[+] = HIV.DCareTreatment#DE350
+* disseminatedEndemicMycosisExtrapulmonaryHistoplasmosisCocciPen 1..1 string "Disseminated endemic mycosis (extrapulmonary histoplasmosis, coccidioidomycosis, penicilliosis)" "Clients symptoms include disseminated endemic mycosis (extrapulmonary histoplasmosis, coccidioidomycosis, penicilliosis)"
+  * ^code[+] = HIV.D#DE350
 
 * cerebralLymphoma 1..1 string "Cerebral lymphoma" "Clients symptoms include cerebral lymphoma"
-  * ^code[+] = HIV.DCareTreatment#DE351
+  * ^code[+] = HIV.D#DE351
 
 * bCellNonHodgkinLymphoma 1..1 string "B-cell non-Hodgkin lymphoma" "Clients symptoms include b-cell non-Hodgkin lymphoma"
-  * ^code[+] = HIV.DCareTreatment#DE352
+  * ^code[+] = HIV.D#DE352
 
 * hivAssociatedNephropathyOrCardiomyopathy 1..1 string "HIV-associated nephropathy or cardiomyopathy" "Clients symptoms include HIV- associated nephropathy or cardiomyopathy"
-  * ^code[+] = HIV.DCareTreatment#DE353
+  * ^code[+] = HIV.D#DE353
 
 * recurrentSepticaemiaIncludingNontyphoidalSalmonella 1..1 string "Recurrent septicaemia (including nontyphoidal Salmonella)" "Clients symptoms include recurrent bacteraemia (septicaemia) (including nontyphoidal salmonella)"
-  * ^code[+] = HIV.DCareTreatment#DE354
+  * ^code[+] = HIV.D#DE354
 
 * invasiveCervicalCarcinoma 1..1 string "Invasive cervical carcinoma" "Clients symptoms include invasive cervical carcinoma"
-  * ^code[+] = HIV.DCareTreatment#DE355
+  * ^code[+] = HIV.D#DE355
 
 * atypicalDisseminatedLeishmaniasis 1..1 string "Atypical disseminated leishmaniasis" "Clients symptoms include atypical disseminated leishmaniasis"
-  * ^code[+] = HIV.DCareTreatment#DE356
+  * ^code[+] = HIV.D#DE356
 
 * neutropenia 1..1 string "Neutropenia" "Clients symptoms include neutropenia, an abnormally low count of a type of white blood cell (neutrophils)"
-  * ^code[+] = HIV.DCareTreatment#DE357
+  * ^code[+] = HIV.D#DE357
 
 * clinicalStageAtStartOfArt 1..1 string "Clinical stage at start of ART" "WHO clinical stage of client based on signs and symptoms at start of ART"
-  * ^code[+] = HIV.DCareTreatment#DE358
+  * ^code[+] = HIV.D#DE358
 
 * whoClinicalStage1 1..1 string "WHO clinical stage 1" "Client is assessed to be at a clinical stage of 1 at the time of starting ART, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE359
+  * ^code[+] = HIV.D#DE359
 
 * whoClinicalStage2 1..1 string "WHO clinical stage 2" "Client is assessed to be at a clinical stage of 2 at the time of starting ART, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE360
+  * ^code[+] = HIV.D#DE360
 
 * whoClinicalStage3 1..1 string "WHO clinical stage 3" "Client is assessed to be at a clinical stage of 3 at the time of starting ART, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE361
+  * ^code[+] = HIV.D#DE361
 
 * whoClinicalStage4 1..1 string "WHO clinical stage 4" "Client is assessed to be at a clinical stage of 4 at the time of starting ART, based on clinical assessment and diagnostics"
-  * ^code[+] = HIV.DCareTreatment#DE362
+  * ^code[+] = HIV.D#DE362
 
 * dateOfClinicalStatusChange 1..1 string "Date of clinical status change" "Date on which the clients WHO HIV clinical stage changed, including the date when the clients stage is first determined"
-  * ^code[+] = HIV.DCareTreatment#DE363
+  * ^code[+] = HIV.D#DE363
 
 * cd4Count 1..1 string "CD4 count" "CD4 cell count in cells/mm^3"
-  * ^code[+] = HIV.DCareTreatment#DE364
+  * ^code[+] = HIV.D#DE364
 
 * cd4CellPercentage 1..1 string "CD4 cell percentage" "CD4 cell percentage"
-  * ^code[+] = HIV.DCareTreatment#DE365
+  * ^code[+] = HIV.D#DE365
 
 * dateOfCd4CountTest 1..1 string "Date of CD4 count test" "Date and time when CD4 count test was conducted"
-  * ^code[+] = HIV.DCareTreatment#DE366
+  * ^code[+] = HIV.D#DE366
 
 * baselineCd4Count 1..1 string "Baseline CD4 count" "CD4 result from first CD4 test performed (such as at treatment initiation), also may be called CD4 at ART initiation or at ART start"
-  * ^code[+] = HIV.DCareTreatment#DE367
+  * ^code[+] = HIV.D#DE367
 
 * dateOfBaselineCd4CountTest 1..1 string "Date of baseline CD4 count test" "Date and time when baseline CD4 count test was conducted"
-  * ^code[+] = HIV.DCareTreatment#DE368
+  * ^code[+] = HIV.D#DE368
 
 * lateArtInitiation 1..1 string "Late ART initiation" "Client had late ART initiation. That is, the clients first CD4 count from baseline CD4 test performed (such as at treatment initiation) was a count of <200 cells/mm3"
-  * ^code[+] = HIV.DCareTreatment#DE369
+  * ^code[+] = HIV.D#DE369
 
 * reasonsForDelayedArtInitiation 1..1 string "Reasons for delayed ART initiation" "Reason why ART was not initiated at diagnosis or within 7 days of diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE370
+  * ^code[+] = HIV.D#DE370
 
 * patientSelfReportedAsNotReadyWilling 1..1 string "Patient self-reported as not ready/willing" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client self-reported as not ready/willing"
-  * ^code[+] = HIV.DCareTreatment#DE371
+  * ^code[+] = HIV.D#DE371
 
 * notCompletedEducationSupportAndPreparationForArt 1..1 string "Not completed education, support and preparation for ART" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client had not completed education, support and preparation for ART"
-  * ^code[+] = HIV.DCareTreatment#DE372
+  * ^code[+] = HIV.D#DE372
 
 * fearOfDisclosure 1..1 string "Fear of disclosure" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of clients fear of disclosure"
-  * ^code[+] = HIV.DCareTreatment#DE373
+  * ^code[+] = HIV.D#DE373
 
 * patientLacksFinances 1..1 string "Patient lacks finances" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client lacks finances"
-  * ^code[+] = HIV.DCareTreatment#DE374
+  * ^code[+] = HIV.D#DE374
 
 * initiatedOnTbTreatment 1..1 string "Initiated on TB treatment" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client initiated on TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE375
+  * ^code[+] = HIV.D#DE375
 
 * patientInitiatedOnTreatmentForTbMeningitis 1..1 string "Patient initiated on treatment for TB meningitis" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client initiated on treatment for TB meningitis"
-  * ^code[+] = HIV.DCareTreatment#DE376
+  * ^code[+] = HIV.D#DE376
 
 * patientDiagnosedWithCryptococcalMeningitis 1..1 string "Patient diagnosed with cryptococcal meningitis" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with cryptococcal meningitis"
-  * ^code[+] = HIV.DCareTreatment#DE377
+  * ^code[+] = HIV.D#DE377
 
 * patientDiagnosedWithHistoplasmosis 1..1 string "Patient diagnosed with histoplasmosis" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client diagnosed with histoplasmosis"
-  * ^code[+] = HIV.DCareTreatment#DE378
+  * ^code[+] = HIV.D#DE378
 
 * patientCriticallySeverelyIll 1..1 string "Patient critically/severely ill" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because client critically/severely ill"
-  * ^code[+] = HIV.DCareTreatment#DE379
+  * ^code[+] = HIV.D#DE379
 
-* other 1..1 string "Other" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason"
-  * ^code[+] = HIV.DCareTreatment#DE380
+* artiniOther 1..1 string "Other" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason"
+  * ^code[+] = HIV.D#DE380
 
-* otherSpecify 1..1 string "Other (specify)" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE381
+* artiniOtherSpecify 1..1 string "Other (specify)" "Client did not initiate ART at diagnosis or within 7 days of diagnosis because of other reason (specify)"
+  * ^code[+] = HIV.D#DE381
 
 * artInitiatedWithin7DaysOfDiagnosis 1..1 string "ART initiated within 7 days of diagnosis" "Client initiated ART within 7 days of diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE382
+  * ^code[+] = HIV.D#DE382
 
 * timeToStartArt 1..1 string "Time to start ART" "Time from HIV diagnosis to when client started ART"
-  * ^code[+] = HIV.DCareTreatment#DE383
+  * ^code[+] = HIV.D#DE383
 
 * within7DaysOfHivDiagnosis 1..1 string "Within 7 days of HIV diagnosis" "Client started ART within 7 days"
-  * ^code[+] = HIV.DCareTreatment#DE384
+  * ^code[+] = HIV.D#DE384
 
 * within30DaysOfHivDiagnosis 1..1 string "Within 30 days of HIV diagnosis" "Client started ART within 30 days of ART initiation (but over 7 days)"
-  * ^code[+] = HIV.DCareTreatment#DE385
+  * ^code[+] = HIV.D#DE385
 
 * within90DaysOfHivDiagnosis 1..1 string "Within 90 days of HIV diagnosis" "Client started ART within 90 days of ART initiation (but over 30 days)"
-  * ^code[+] = HIV.DCareTreatment#DE386
+  * ^code[+] = HIV.D#DE386
 
 * viralLoadTestResult 1..1 string "Viral load test result" "Result from the viral load test in number of copies/mL"
-  * ^code[+] = HIV.DCareTreatment#DE387
+  * ^code[+] = HIV.D#DE387
 
 * virallySuppressed 1..1 string "Virally suppressed" "The client is virally suppressed for HIV, based on the clients most recent viral load test result being less than 1000 copies/mL"
-  * ^code[+] = HIV.DCareTreatment#DE388
+  * ^code[+] = HIV.D#DE388
 
 * dateViralLoadTestResultsReceived 1..1 string "Date viral load test results received" "Date the viral load test result was received from the lab or completed in the facility"
-  * ^code[+] = HIV.DCareTreatment#DE389
+  * ^code[+] = HIV.D#DE389
 
 * viralLoadSuppressionDate 1..1 string "Viral load suppression date" "Date on which the client tested as becoming virally suppressed, as indicated by a viral load test result under 1000 copies/mL"
-  * ^code[+] = HIV.DCareTreatment#DE390
+  * ^code[+] = HIV.D#DE390
 
 * reasonForHivViralLoadTest 1..1 string "Reason for HIV viral load test" "Whether the viral load is being tested for routine monitoring on a set schedule or for targeted monitoring for suspected treatment failure"
-  * ^code[+] = HIV.DCareTreatment#DE391
+  * ^code[+] = HIV.D#DE391
 
 * routineViralLoadTest 1..1 string "Routine viral load test" "Routine refers to viral load tests obtained at standard intervals following ART initiation to monitor viral load response to ART"
-  * ^code[+] = HIV.DCareTreatment#DE392
+  * ^code[+] = HIV.D#DE392
 
 * targetedViralLoadMonitoring 1..1 string "Targeted viral load monitoring" "Targeted refers to viral load tests obtained based on a specific clinical indication (such as concern about disease progression or failure to respond to ART)"
-  * ^code[+] = HIV.DCareTreatment#DE393
+  * ^code[+] = HIV.D#DE393
 
 * initialViralLoadTest 1..1 string "Initial viral load test" "The first viral load test of the client"
-  * ^code[+] = HIV.DCareTreatment#DE394
+  * ^code[+] = HIV.D#DE394
 
 * followUpViralLoadTestAfterReceivingEnhancedAdherenceCounselling 1..1 string "Follow-up viral load test after receiving enhanced adherence counselling" "A follow-up viral load test within 3-6 months after enhanced adherence counselling after client received a high viral load test result"
-  * ^code[+] = HIV.DCareTreatment#DE395
+  * ^code[+] = HIV.D#DE395
 
 * hepatitisBTestRequired 1..1 string "Hepatitis B test required" "Hepatitis B test is required"
-  * ^code[+] = HIV.DCareTreatment#DE396
+  * ^code[+] = HIV.D#DE396
 
 * hepatitisCTestRecommended 1..1 string "Hepatitis C test recommended" "Hepatitis C test is recommended or should be considered"
-  * ^code[+] = HIV.DCareTreatment#DE397
+  * ^code[+] = HIV.D#DE397
 
 * syphilisTestRequired 1..1 string "Syphilis test required" "Syphilis test is required"
-  * ^code[+] = HIV.DCareTreatment#DE398
+  * ^code[+] = HIV.D#DE398
 
 * monitoringExaminations 1..1 string "Monitoring examinations" "Name of examinations, test and results for any relevant investigations carried out for client"
-  * ^code[+] = HIV.DCareTreatment#DE399
+  * ^code[+] = HIV.D#DE399
 
 * haemoglobinHb 1..1 string "Haemoglobin (Hb)" "Provider ordered a Haemoglobin (Hb) test, number in g/dL test"
-  * ^code[+] = HIV.DCareTreatment#DE400
+  * ^code[+] = HIV.D#DE400
 
 * pregnancyTest 1..1 string "Pregnancy test" "Provider ordered a pregnancy test for client"
-  * ^code[+] = HIV.DCareTreatment#DE401
+  * ^code[+] = HIV.D#DE401
 
 * syphilisTest 1..1 string "Syphilis test" "Provider ordered a syphilis test"
-  * ^code[+] = HIV.DCareTreatment#DE402
+  * ^code[+] = HIV.D#DE402
 
 * chestXRayCxr 1..1 string "Chest X-ray (CXR)" "Provider ordered a chest X-ray (CXR)"
-  * ^code[+] = HIV.DCareTreatment#DE403
+  * ^code[+] = HIV.D#DE403
 
 * sputumOrCultureForTb 1..1 string "Sputum or culture for TB" "Provider ordered sputum or culture for TB"
-  * ^code[+] = HIV.DCareTreatment#DE404
+  * ^code[+] = HIV.D#DE404
 
 * hbsagTestHbv 1..1 string "HBsAg test (HBV)" "Provider ordered an HBsAg test (HBV) test"
-  * ^code[+] = HIV.DCareTreatment#DE405
+  * ^code[+] = HIV.D#DE405
 
 * hivViralLoadTestOrdered 1..1 string "HIV viral load test ordered" "Provider ordered an HIV viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE406
+  * ^code[+] = HIV.D#DE406
 
 * hivViralLoadTestScheduled 1..1 string "HIV viral load test scheduled" "Scheduled an HIV viral load test with client"
-  * ^code[+] = HIV.DCareTreatment#DE407
+  * ^code[+] = HIV.D#DE407
 
 * cd4CountOrdered 1..1 string "CD4 count ordered" "Provider ordered a CD4 cell count"
-  * ^code[+] = HIV.DCareTreatment#DE408
+  * ^code[+] = HIV.D#DE408
 
 * cd4CountTestScheduled 1..1 string "CD4 count test scheduled" "Scheduled a CD4 test with client"
-  * ^code[+] = HIV.DCareTreatment#DE409
+  * ^code[+] = HIV.D#DE409
 
 * cryptococcalAntigenTest 1..1 string "Cryptococcal antigen test" "Provider ordered a cryptococcal antigen test"
-  * ^code[+] = HIV.DCareTreatment#DE410
+  * ^code[+] = HIV.D#DE410
 
 * histoplasmosisAntigenTest 1..1 string "Histoplasmosis antigen test" "Provider ordered a histoplasmosis antigen test"
-  * ^code[+] = HIV.DCareTreatment#DE411
+  * ^code[+] = HIV.D#DE411
 
 * cervicalCancerScreeningScheduled 1..1 string "Cervical cancer screening scheduled" "Scheduled cervical cancer screening with client"
-  * ^code[+] = HIV.DCareTreatment#DE412
+  * ^code[+] = HIV.D#DE412
 
 * dateOfScheduledMonitoringExamination 1..1 string "Date of scheduled monitoring examination" "Date of scheduled monitoring examination"
-  * ^code[+] = HIV.DCareTreatment#DE413
+  * ^code[+] = HIV.D#DE413
 
 * hepatitisCTestOrdered 1..1 string "Hepatitis C test ordered" "Hepatitis C test has been ordered"
-  * ^code[+] = HIV.DCareTreatment#DE414
+  * ^code[+] = HIV.D#DE414
 
 * syphilisTestOrdered 1..1 string "Syphilis test ordered" "Syphilis test has been ordered"
-  * ^code[+] = HIV.DCareTreatment#DE415
+  * ^code[+] = HIV.D#DE415
 
 * receivedViralLoadTestResults 1..1 string "Received viral load test results" "Client received results from viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE416
+  * ^code[+] = HIV.D#DE416
 
-* dateViralLoadTestResultsReceivedByClient 1..1 string "Date viral load test results received by client" "The date on which the client received results from a viral load test"
-  * ^code[+] = HIV.DCareTreatment#DE417
+* dateViralLoadTestResultsReceivedByClient2 1..1 string "Date viral load test results received by client" "The date on which the client received results from a viral load test"
+  * ^code[+] = HIV.D#DE417
 
 * reasonForArvDrugRegimenSubstitution 1..1 string "Reason for ARV drug regimen substitution" "Reason why a substitution was made to the antiretroviral (ARV) drug regimen"
-  * ^code[+] = HIV.DCareTreatment#DE418
+  * ^code[+] = HIV.D#DE418
 
-* toxicitysideEffects 1..1 string "Toxicity/side effects" "A substitution was made to the regimen because of toxicity/side effects"
-  * ^code[+] = HIV.DCareTreatment#DE419
+* subToxicitysideEffects 1..1 string "Toxicity/side effects" "A substitution was made to the regimen because of toxicity/side effects"
+  * ^code[+] = HIV.D#DE419
 
 * drugDrugInteraction 1..1 string "Drug-drug interaction" "A substitution was made to the regimen because of a drug-drug interaction"
-  * ^code[+] = HIV.DCareTreatment#DE420
+  * ^code[+] = HIV.D#DE420
 
 * pregnancy 1..1 string "Pregnancy" "A substitution was made to the regimen because of pregnancy"
-  * ^code[+] = HIV.DCareTreatment#DE421
+  * ^code[+] = HIV.D#DE421
 
 * newTb 1..1 string "New TB" "A substitution was made to the regimen because of new tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE422
+  * ^code[+] = HIV.D#DE422
 
 * newDrugAvailable 1..1 string "New drug available" "A substitution was made to the regimen because a new drug was available"
-  * ^code[+] = HIV.DCareTreatment#DE423
+  * ^code[+] = HIV.D#DE423
 
 * drugOutOfStock 1..1 string "Drug out of stock" "A substitution was made to the regimen because drug was out of stock"
-  * ^code[+] = HIV.DCareTreatment#DE424
+  * ^code[+] = HIV.D#DE424
 
 * otherReasonForRegimenSubstitution 1..1 string "Other reason for regimen substitution" "A substitution was made for another reason"
-  * ^code[+] = HIV.DCareTreatment#DE425
+  * ^code[+] = HIV.D#DE425
 
 * otherReasonForRegimenSubstitutionSpecify 1..1 string "Other reason for regimen substitution (specify)" "A substitution was made for another reason (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE426
+  * ^code[+] = HIV.D#DE426
 
 * switchToSecondLineArtRegimenRecommended 1..1 string "Switch to second-line ART regimen recommended" "A switch to second-line ART regimen is recommended"
-  * ^code[+] = HIV.DCareTreatment#DE427
+  * ^code[+] = HIV.D#DE427
 
 * switchToThirdLineArtRegimenRecommended 1..1 string "Switch to third-line ART regimen recommended" "A switch to third-line ART regimen is recommended"
-  * ^code[+] = HIV.DCareTreatment#DE428
+  * ^code[+] = HIV.D#DE428
 
 * regimenSwitchMade 1..1 string "Regimen switch made" "Provider has made a regimen switch"
-  * ^code[+] = HIV.DCareTreatment#DE429
+  * ^code[+] = HIV.D#DE429
 
 * reasonForRegimenSwitch 1..1 string "Reason for regimen switch" "Reason why a switch to a second- or third-line regimen was made"
-  * ^code[+] = HIV.DCareTreatment#DE430
+  * ^code[+] = HIV.D#DE430
 
 * clinicalTreatmentFailure 1..1 string "Clinical treatment failure" "A switch was made to the regimen because of clinical treatment failure"
-  * ^code[+] = HIV.DCareTreatment#DE431
+  * ^code[+] = HIV.D#DE431
 
-* immunologicalFailure 1..1 string "Immunological failure" "A switch was made to the regimen because of immunological failure"
-  * ^code[+] = HIV.DCareTreatment#DE432
+* swImmunologicalFailure 1..1 string "Immunological failure" "A switch was made to the regimen because of immunological failure"
+  * ^code[+] = HIV.D#DE432
 
-* virologicalFailure 1..1 string "Virological failure" "A switch was made to the regimen because of virological failure"
-  * ^code[+] = HIV.DCareTreatment#DE433
+* swVirologicalFailure 1..1 string "Virological failure" "A switch was made to the regimen because of virological failure"
+  * ^code[+] = HIV.D#DE433
 
-* other 1..1 string "Other" "A switch was made to the regimen for another reason"
-  * ^code[+] = HIV.DCareTreatment#DE434
+* swOther 1..1 string "Other" "A switch was made to the regimen for another reason"
+  * ^code[+] = HIV.D#DE434
 
-* otherSpecify 1..1 string "Other (specify)" "A switch was made to the regimen for another reason (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE435
+* swOtherSpecify 1..1 string "Other (specify)" "A switch was made to the regimen for another reason (specify)"
+  * ^code[+] = HIV.D#DE435
 
 * regimenSubstitutionRecommended 1..1 string "Regimen substitution recommended" "A drug substitution is recommended"
-  * ^code[+] = HIV.DCareTreatment#DE436
+  * ^code[+] = HIV.D#DE436
 
 * doseAdjustmentRecommended 1..1 string "Dose adjustment recommended" "A dosage change is recommended"
-  * ^code[+] = HIV.DCareTreatment#DE437
+  * ^code[+] = HIV.D#DE437
 
 * regimenSubstitutionMade 1..1 string "Regimen substitution made" "Provider has made a regimen substitution"
-  * ^code[+] = HIV.DCareTreatment#DE438
+  * ^code[+] = HIV.D#DE438
 
 * coTrimoxazoleProphylaxisStartDate 1..1 string "Co-trimoxazole prophylaxis start date" "Date co-trimoxazole prophylaxis prescribed to client"
-  * ^code[+] = HIV.DCareTreatment#DE439
+  * ^code[+] = HIV.D#DE439
 
 * coTrimoxazoleProphylaxisCompletionDate 1..1 string "Co-trimoxazole prophylaxis completion date" "Completion date of co-trimoxazole prophylaxis prescribed to client"
-  * ^code[+] = HIV.DCareTreatment#DE440
+  * ^code[+] = HIV.D#DE440
 
 * coTrimoxazoleProphylaxisDosage 1..1 string "Co-trimoxazole prophylaxis dosage" "Dose of co-trimoxazole prophylaxis prescribed to client"
-  * ^code[+] = HIV.DCareTreatment#DE441
+  * ^code[+] = HIV.D#DE441
 
 * coTrimoxazoleProphylaxisNumberOfDaysPrescribed 1..1 string "Co-trimoxazole prophylaxis number of days prescribed" "Number of days of co-trimoxazole prophylaxis prescribed to client"
-  * ^code[+] = HIV.DCareTreatment#DE442
+  * ^code[+] = HIV.D#DE442
 
 * suspicionOfTreatmentFailureOrInterruption 1..1 string "Suspicion of treatment failure or interruption" "Client has been on ART, but has stopped taking it or a treatment failure is suspected"
-  * ^code[+] = HIV.DCareTreatment#DE443
+  * ^code[+] = HIV.D#DE443
 
 * artRegimenPrescribed 1..1 string "ART regimen prescribed" "INCLUDE VALUE SETS OF REGIMENS"
-  * ^code[+] = HIV.DCareTreatment#DE444
+  * ^code[+] = HIV.D#DE444
 
 * antiretroviralToxicity 1..1 string "Antiretroviral toxicity" "Client is experiencing antiretroviral drug (ARV) toxicity"
-  * ^code[+] = HIV.DCareTreatment#DE445
+  * ^code[+] = HIV.D#DE445
 
 * coinfectionStatusAtArtStart 1..1 string "Coinfection status at ART start" "Clients status of coinfections at the time when ART was initiated"
-  * ^code[+] = HIV.DCareTreatment#DE446
+  * ^code[+] = HIV.D#DE446
 
 * hepatitisB 1..1 string "Hepatitis B" "Client was hepatitis B positive at the start of ART"
-  * ^code[+] = HIV.DCareTreatment#DE447
+  * ^code[+] = HIV.D#DE447
 
 * hepatitisC 1..1 string "Hepatitis C" "Client was hepatitis C positive at the start of ART"
-  * ^code[+] = HIV.DCareTreatment#DE448
+  * ^code[+] = HIV.D#DE448
 
 * pregnantAndBreastfeedingStatusAtArtStart 1..1 string "Pregnant and breastfeeding status at ART start" "ART status of women to prevent mother-to-child transmission"
-  * ^code[+] = HIV.DCareTreatment#DE449
+  * ^code[+] = HIV.D#DE449
 
 * pregnantAtArtStart 1..1 string "Pregnant at ART start" "Client was pregnant when ART was initiated"
-  * ^code[+] = HIV.DCareTreatment#DE450
+  * ^code[+] = HIV.D#DE450
 
 * postpartumAtArtStart 1..1 string "Postpartum at ART start" "Client was postpartum when ART was initiated"
-  * ^code[+] = HIV.DCareTreatment#DE451
+  * ^code[+] = HIV.D#DE451
 
 * artStartAtLabourAndDelivery 1..1 string "ART start at labour and delivery" "Client initiated ART at labour and delivery"
-  * ^code[+] = HIV.DCareTreatment#DE452
+  * ^code[+] = HIV.D#DE452
 
 * breastfeedingAtArtStart 1..1 string "Breastfeeding at ART start" "Client was breastfeeding when ART was initiated"
-  * ^code[+] = HIV.DCareTreatment#DE453
+  * ^code[+] = HIV.D#DE453
 
 * deliveryDateOfInfant 1..1 string "Delivery date of infant" "Date of delivery/birth of infant if breastfeeding at ART start"
-  * ^code[+] = HIV.DCareTreatment#DE454
+  * ^code[+] = HIV.D#DE454
 
 * serodiscordantPartnerAtArtStart 1..1 string "Serodiscordant partner at ART start" "Client living with HIV was in an ongoing sexual relationship with an HIV-negative partner when ART was started"
-  * ^code[+] = HIV.DCareTreatment#DE455
+  * ^code[+] = HIV.D#DE455
 
 * regimenStartDate 1..1 string "Regimen start date" "The date on which the client started taking the current ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE456
+  * ^code[+] = HIV.D#DE456
 
 * medicationsPrescribed 1..1 string "Medications prescribed" "Name or regimen code of all other medications prescribed during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE457
+  * ^code[+] = HIV.D#DE457
 
 * dateMedicationsPrescribed 1..1 string "Date medications prescribed" "Date the medications were prescribed"
-  * ^code[+] = HIV.DCareTreatment#DE458
+  * ^code[+] = HIV.D#DE458
 
 * doseOfMedicationsPrescribed 1..1 string "Dose of medications prescribed" "Number of doses (quantity taken at a single point in time) of drugs prescribed/dispensed"
-  * ^code[+] = HIV.DCareTreatment#DE459
+  * ^code[+] = HIV.D#DE459
 
 * numberOfDaysMedicationsPrescribed 1..1 string "Number of days medications prescribed" "Number of days supply of each medication or regimen prescribed during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE460
+  * ^code[+] = HIV.D#DE460
 
 * medicationsDispensed 1..1 string "Medications dispensed" "Any other medications that were dispensed to client, including preventive treatment"
-  * ^code[+] = HIV.DCareTreatment#DE461
+  * ^code[+] = HIV.D#DE461
 
 * numberOfDaysOfMedicationsDispensed 1..1 string "Number of days of medications dispensed" "Number of days supply of each medication or regimen dispensed during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE462
+  * ^code[+] = HIV.D#DE462
 
 * dosage 1..1 string "Dosage" "Prescribed dosage of the medication"
-  * ^code[+] = HIV.DCareTreatment#DE463
+  * ^code[+] = HIV.D#DE463
 
 * frequency 1..1 string "Frequency" "Prescribed frequency for taking the medication"
-  * ^code[+] = HIV.DCareTreatment#DE464
+  * ^code[+] = HIV.D#DE464
 
 * adherenceCounsellingProvided 1..1 string "Adherence counselling provided" "Counselling was carried out during visit"
-  * ^code[+] = HIV.DCareTreatment#DE465
+  * ^code[+] = HIV.D#DE465
 
 * typeOfTreatmentLimitingToxicity 1..1 string "Type of treatment-limiting toxicity" "Type of treatment-limiting toxicity experienced by client. Treatment-limiting toxicity is defined as a serious adverse drug reaction that results in drug discontinuation or substitution. In addition, any reaction that leads to treatment interruption or requires changing the drug or regimen because of an adverse drug reaction is also considered a serious adverse drug reaction."
-  * ^code[+] = HIV.DCareTreatment#DE466
+  * ^code[+] = HIV.D#DE466
 
 * gastrointestinal 1..1 string "Gastrointestinal" "Treatment-limiting toxicity due to GI issues (nausea, diarrhoea, abdominal pain, vomiting)"
-  * ^code[+] = HIV.DCareTreatment#DE467
+  * ^code[+] = HIV.D#DE467
 
 * skinIssues 1..1 string "Skin issues" "Treatment-limiting toxicity due to skin issues (rash, hypersensitivity reaction)"
-  * ^code[+] = HIV.DCareTreatment#DE468
+  * ^code[+] = HIV.D#DE468
 
 * peripheralNeuropathy 1..1 string "Peripheral neuropathy" "Treatment-limiting toxicity due to peripheral neuropathy (burning/numbness/ tingling)"
-  * ^code[+] = HIV.DCareTreatment#DE469
+  * ^code[+] = HIV.D#DE469
 
 * centralNervousSystemSymptoms 1..1 string "Central nervous system symptoms" "Treatment-limiting toxicity due to central nervous system symptoms (dizzy, anxiety, nightmare, depression, seizures)"
-  * ^code[+] = HIV.DCareTreatment#DE470
+  * ^code[+] = HIV.D#DE470
 
 * weightGain 1..1 string "Weight gain" "Treatment-limiting toxicity due to weight gain"
-  * ^code[+] = HIV.DCareTreatment#DE471
+  * ^code[+] = HIV.D#DE471
 
 * hepaticDysfunction 1..1 string "Hepatic dysfunction" "Treatment-limiting toxicity due to hepatic dysfunction (jaundice)"
-  * ^code[+] = HIV.DCareTreatment#DE472
+  * ^code[+] = HIV.D#DE472
 
 * haematologicalDisorders 1..1 string "Haematological disorders" "Treatment-limiting toxicity due to haematological (anaemia, neutropenia) disorders"
-  * ^code[+] = HIV.DCareTreatment#DE473
+  * ^code[+] = HIV.D#DE473
 
 * fatigue 1..1 string "Fatigue" "Treatment-limiting toxicity due to fatigue"
-  * ^code[+] = HIV.DCareTreatment#DE474
+  * ^code[+] = HIV.D#DE474
 
-* headache 1..1 string "Headache" "Treatment-limiting toxicity due to headache"
-  * ^code[+] = HIV.DCareTreatment#DE475
+* tltHeadache 1..1 string "Headache" "Treatment-limiting toxicity due to headache"
+  * ^code[+] = HIV.D#DE475
 
 * boneDysfunction 1..1 string "Bone dysfunction" "Treatment-limiting toxicity due to bone dysfunction (fractures, osteopenia)"
-  * ^code[+] = HIV.DCareTreatment#DE476
+  * ^code[+] = HIV.D#DE476
 
 * metabolicSymptoms 1..1 string "Metabolic symptoms" "Treatment-limiting toxicity due to metabolic symptoms (body fat changes, hyperglycaemia, dyslipidaemia)"
-  * ^code[+] = HIV.DCareTreatment#DE477
+  * ^code[+] = HIV.D#DE477
 
 * kidneyDysfunction 1..1 string "Kidney dysfunction" "Treatment-limiting toxicity due to kidney dysfunction (nephrolithiasis, renal insufficiency)"
-  * ^code[+] = HIV.DCareTreatment#DE478
+  * ^code[+] = HIV.D#DE478
 
 * unexpectedAdverseDrugReaction 1..1 string "Unexpected adverse drug reaction" "Client experienced an unexpected adverse drug reaction"
-  * ^code[+] = HIV.DCareTreatment#DE479
+  * ^code[+] = HIV.D#DE479
 
 * unexpectedAdverseDrugReactionSpecify 1..1 string "Unexpected adverse drug reaction (specify)" "Specify the type of unexpected adverse drug reaction the client experienced"
-  * ^code[+] = HIV.DCareTreatment#DE480
+  * ^code[+] = HIV.D#DE480
 
 * datesOfSubstitutionWithinFirstLineRegimen 1..1 string "Date(s) of substitution within first-line regimen" "Date on which ARV drug regimen (one or more drugs) for client was changed within the first-line regimen (substitution)"
-  * ^code[+] = HIV.DCareTreatment#DE481
+  * ^code[+] = HIV.D#DE481
 
 * reasonsForSubstitutionWithinFirstLineRegimen 1..1 string "Reason(s) for substitution within first-line regimen" "Reason(s) why one ore more drugs in clients first-line ARV drug regimen was changed (substituted)"
-  * ^code[+] = HIV.DCareTreatment#DE482
+  * ^code[+] = HIV.D#DE482
 
 * newAntiretroviralRegimenAfterSubstitutionWithinFirstLineRegimen 1..1 string "New antiretroviral regimen after substitution within first-line regimen" "New antiretroviral (ARV) drugs after client changed regimen within the first-line regimen"
-  * ^code[+] = HIV.DCareTreatment#DE483
+  * ^code[+] = HIV.D#DE483
 
 * dateOfSwitchToSecondLineRegimen 1..1 string "Date of switch to second-line regimen" "Date client was changed from a first-line to second-line ARV drug regimen (switch)"
-  * ^code[+] = HIV.DCareTreatment#DE484
+  * ^code[+] = HIV.D#DE484
 
 * newRegimenAfterSwitchToSecondLineRegimen 1..1 string "New regimen after switch to second-line regimen" "New ART regimen after switch to second-line ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE485
+  * ^code[+] = HIV.D#DE485
 
 * reasonForSwitchToSecondLineRegimen 1..1 string "Reason for switch to second-line regimen" "Reason why client was switched from first- to second-line ARV drug regimen (see \"Reason for regimen switch\" for levels)"
-  * ^code[+] = HIV.DCareTreatment#DE486
+  * ^code[+] = HIV.D#DE486
 
 * datesOfSubstitutionWithinSecondLineRegimen 1..1 string "Date(s) of substitution within second-line regimen" "Date on which ARV drug regimen for client was changed within the second-line regimen (substitution)"
-  * ^code[+] = HIV.DCareTreatment#DE487
+  * ^code[+] = HIV.D#DE487
 
 * reasonsForSubstitutionWithinSecondLineRegimen 1..1 string "Reason(s) for substitution within second-line regimen" "Reason(s) why client changed drug regimen (within the second-line)"
-  * ^code[+] = HIV.DCareTreatment#DE488
+  * ^code[+] = HIV.D#DE488
 
 * newRegimenSAfterSubstitutionWithinSecondLineRegimen 1..1 string "New regimen(s) after substitution within second-line regimen" "New ARV drugs after client changed regimen within the second- line regimen"
-  * ^code[+] = HIV.DCareTreatment#DE489
+  * ^code[+] = HIV.D#DE489
 
 * dateOfSwitchToThirdLineRegimen 1..1 string "Date of switch to third-line regimen" "Date client was changed from a second- to third-line ARV drug regimen (switch)"
-  * ^code[+] = HIV.DCareTreatment#DE490
+  * ^code[+] = HIV.D#DE490
 
 * newRegimenAfterSwitchToThirdLineRegimen 1..1 string "New regimen after switch to third-line regimen" "New ART regimen after switch to third-line ART regimen"
-  * ^code[+] = HIV.DCareTreatment#DE491
+  * ^code[+] = HIV.D#DE491
 
 * reasonForSwitchToThirdLineRegimen 1..1 string "Reason for switch to third-line regimen" "Reason why client was switched from second- to third-line ARV drug regimen (see \"Reason for regimen switch\" for levels)"
-  * ^code[+] = HIV.DCareTreatment#DE492
+  * ^code[+] = HIV.D#DE492
 
 * datesOfSubstitutionWithinThirdLineRegimen 1..1 string "Date(s) of substitution within third-line regimen" "Date on which ARV drug regimen for client was changed within the third-line (substitution)"
-  * ^code[+] = HIV.DCareTreatment#DE493
+  * ^code[+] = HIV.D#DE493
 
 * reasonsForSubstitutionWithinThirdLineRegimen 1..1 string "Reason(s) for substitution within third-line regimen" "Reason(s) why client changed drug regimen (within the third-line)"
-  * ^code[+] = HIV.DCareTreatment#DE494
+  * ^code[+] = HIV.D#DE494
 
 * newRegimenSAfterSubstitutionWithinThirdLineRegimen 1..1 string "New regimen(s) after substitution within third-line regimen" "New ARV drugs after client changed regimen within the third-line regimen"
-  * ^code[+] = HIV.DCareTreatment#DE495
+  * ^code[+] = HIV.D#DE495
 
 * enhancedAdherenceCounsellingProvided 1..1 string "Enhanced adherence counselling provided" "Enhanced adherence counselling was provided to the client during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE496
+  * ^code[+] = HIV.D#DE496
 
 * firstEnhancedAdherenceCounsellingSessionCompleted 1..1 string "First enhanced adherence counselling session completed" "A first enhanced adherence counselling was provided to the client during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE497
+  * ^code[+] = HIV.D#DE497
 
 * dateOfFirstEnhancedAdherenceCounsellingSessionCompleted 1..1 string "Date of first enhanced adherence counselling session completed" "The date on which the first enhanced adherence counselling was provided to the client"
-  * ^code[+] = HIV.DCareTreatment#DE498
+  * ^code[+] = HIV.D#DE498
 
 * secondEnhancedAdherenceCounsellingSessionCompleted 1..1 string "Second enhanced adherence counselling session completed" "A second enhanced adherence counselling was provided to the client during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE499
+  * ^code[+] = HIV.D#DE499
 
 * dateOfSecondEnhancedAdherenceCounsellingSessionCompleted 1..1 string "Date of second enhanced adherence counselling session completed" "The date on which the second enhanced adherence counselling was provided to the client"
-  * ^code[+] = HIV.DCareTreatment#DE500
+  * ^code[+] = HIV.D#DE500
 
 * thirdEnhancedAdherenceCounsellingSessionCompleted 1..1 string "Third enhanced adherence counselling session completed" "A third enhanced adherence counselling was provided to the client during the visit"
-  * ^code[+] = HIV.DCareTreatment#DE501
+  * ^code[+] = HIV.D#DE501
 
 * dateOfThirdEnhancedAdherenceCounsellingSessionCompleted 1..1 string "Date of third enhanced adherence counselling session completed" "The date on which the third enhanced adherence counselling was provided to the client"
-  * ^code[+] = HIV.DCareTreatment#DE502
+  * ^code[+] = HIV.D#DE502
 
 * nameOfTreatmentSupporter 1..1 string "Name of treatment supporter" "Full name of person providing support to client for adherence, care, treatment and other needs (e.g. ARV pick-up if ill)"
-  * ^code[+] = HIV.DCareTreatment#DE503
+  * ^code[+] = HIV.D#DE503
 
 * addressOfTreatmentSupporter 1..1 string "Address of treatment supporter" "Full address or description of home of treatment supporter"
-  * ^code[+] = HIV.DCareTreatment#DE504
+  * ^code[+] = HIV.D#DE504
 
 * telephoneNumberOfTreatmentSupporter 1..1 string "Telephone number of treatment supporter" "Telephone number if available, or else telephone number of neighbour/friend"
-  * ^code[+] = HIV.DCareTreatment#DE505
+  * ^code[+] = HIV.D#DE505
 
 * homeBasedCareProvider 1..1 string "Home-based care provider" "Name of individual or organization that provides home-based care to client"
-  * ^code[+] = HIV.DCareTreatment#DE506
+  * ^code[+] = HIV.D#DE506
 
 * counsellingProvidedOnDiagnoses 1..1 string "Counselling provided on diagnoses" "Counselling provided on diagnoses"
-  * ^code[+] = HIV.DCareTreatment#DE507
+  * ^code[+] = HIV.D#DE507
 
 * hepatitisBPositiveCounsellingConducted 1..1 string "Hepatitis B positive counselling conducted" "Whether counselling was provided to a client who has been diagnosed with hepatitis B"
-  * ^code[+] = HIV.DCareTreatment#DE508
+  * ^code[+] = HIV.D#DE508
 
 * hepatitisCPositiveCounsellingConducted 1..1 string "Hepatitis C positive counselling conducted" "Whether counselling was provided to a client who has been diagnosed with hepatitis C"
-  * ^code[+] = HIV.DCareTreatment#DE509
+  * ^code[+] = HIV.D#DE509
 
 * syphilisCounsellingAndTreatment 1..1 string "Syphilis counselling and treatment" "Whether counselling and treatment was provided to a client who has been diagnosed with syphilis"
-  * ^code[+] = HIV.DCareTreatment#DE510
+  * ^code[+] = HIV.D#DE510
 
 * syphilisCounsellingTreatmentAndFurtherTesting 1..1 string "Syphilis counselling, treatment and further testing" "Whether counselling and treatment was provided to a client who has been diagnosed with syphilis. Additional testing (RPR test) recommended."
-  * ^code[+] = HIV.DCareTreatment#DE511
+  * ^code[+] = HIV.D#DE511
 
 * acceptedPartnerServices 1..1 string "Accepted partner services" "Client accepted offer for partner services"
-  * ^code[+] = HIV.DCareTreatment#DE512
+  * ^code[+] = HIV.D#DE512
 
 * hivTestingForPartnersAndBiologicalChildren 1..1 string "HIV testing for partners and biological children" "Offer voluntary testing for all partners and biological children of positive cases (includes partner services and index case testing), as well as partners and social contacts of people from key populations, where appropriate"
-  * ^code[+] = HIV.DCareTreatment#DE513
+  * ^code[+] = HIV.D#DE513
 
 * hivStatusOfFamilyMember 1..1 string "HIV status of family member" "HIV status of each family member at time of patients enrolment, including partner (for mothers)"
-  * ^code[+] = HIV.DCareTreatment#DE514
+  * ^code[+] = HIV.D#DE514
 
 * uniqueIdOfFamilyMember 1..1 string "Unique ID of family member" "Unique ID number of each family member if enrolled in HIV care according to national guidelines (see unique ID number)"
-  * ^code[+] = HIV.DCareTreatment#DE515
+  * ^code[+] = HIV.D#DE515
 
 * dateOfDeathOfFamilyMember 1..1 string "Date of death of family member" "Date of death for each family member as appropriate"
-  * ^code[+] = HIV.DCareTreatment#DE516
+  * ^code[+] = HIV.D#DE516
 
 * offeredVoluntaryPartnerServices 1..1 string "Offered voluntary partner services" "Whether the client was offered voluntary partner services or family services"
-  * ^code[+] = HIV.DCareTreatment#DE517
+  * ^code[+] = HIV.D#DE517
 
 * providedSupportForDisclosureAndPartnerServices 1..1 string "Provided support for disclosure and partner services" "Offer or refer for support for disclosure and partner services"
-  * ^code[+] = HIV.DCareTreatment#DE518
+  * ^code[+] = HIV.D#DE518
 
 * otherSupportServices 1..1 string "Other support services" "Offer or refer for other support services"
-  * ^code[+] = HIV.DCareTreatment#DE519
+  * ^code[+] = HIV.D#DE519
 
 * mentalHealthServices 1..1 string "Mental health services" "Offer or refer for mental health services"
-  * ^code[+] = HIV.DCareTreatment#DE520
+  * ^code[+] = HIV.D#DE520
 
 * psychosocialCounsellingSupportAndTreatmentAdherenceCounselling 1..1 string "Psychosocial counselling, support and treatment adherence counselling" "Offer or refer for psychosocial counselling, support and treatment adherence counselling"
-  * ^code[+] = HIV.DCareTreatment#DE521
+  * ^code[+] = HIV.D#DE521
 
 * legalAndSocialServices 1..1 string "Legal and social services" "Offer or refer for legal and social services"
-  * ^code[+] = HIV.DCareTreatment#DE522
+  * ^code[+] = HIV.D#DE522
 
 * servicesForRespondingToViolenceAgainstWomen 1..1 string "Services for responding to violence against women" "Offer or refer for services for responding to violence against women, including first-line support and psychosocial support, post-rape care and other support services including shelters, legal services and women and child protection services"
-  * ^code[+] = HIV.DCareTreatment#DE523
+  * ^code[+] = HIV.D#DE523
 
 * datetimeOfFollowUpAppointment 1..1 string "Date/time of follow-up appointment" "Date the client is to return for monitoring, re-supply or any other reason"
-  * ^code[+] = HIV.DCareTreatment#DE524
+  * ^code[+] = HIV.D#DE524
 
 * typeOfFollowUpAppointment 1..1 string "Type of follow-up appointment" "Whether the visit will be clinical only, ARV drug pick-up or other. Client may have multiple follow-ups scheduled."
-  * ^code[+] = HIV.DCareTreatment#DE525
+  * ^code[+] = HIV.D#DE525
 
-* clinicalVisit 1..1 string "Clinical visit" "Appointment for clinical care by a provider"
-  * ^code[+] = HIV.DCareTreatment#DE526
+* fuaClinicalVisit 1..1 string "Clinical visit" "Appointment for clinical care by a provider"
+  * ^code[+] = HIV.D#DE526
 
 * antiretroviralDrugPickUp 1..1 string "Antiretroviral drug pick up" "Appointment for a drug pick up"
-  * ^code[+] = HIV.DCareTreatment#DE527
+  * ^code[+] = HIV.D#DE527
 
-* postTreatmentFollowUpVisitForCervicalPrecancerLesionsOrInvasiveCervicalCancer 1..1 string "Post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer" "Appointment for a post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE528
+* postTreatmentFollowUpVisitForCervicalCancer 1..1 string "Post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer" "Appointment for a post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer"
+  * ^code[+] = HIV.D#DE528
 
-* other 1..1 string "Other" "Other reason for the follow-up appointment"
-  * ^code[+] = HIV.DCareTreatment#DE529
+* fuOther 1..1 string "Other" "Other reason for the follow-up appointment"
+  * ^code[+] = HIV.D#DE529
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason for the follow-up appointment (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE530
+* fuOtherSpecify 1..1 string "Other (specify)" "Other reason for the follow-up appointment (specify)"
+  * ^code[+] = HIV.D#DE530
 
 * followUpTestRecommendedDate 1..1 string "Follow-up test recommended date" "A test or screening recommended for the clients care plan at a future date"
-  * ^code[+] = HIV.DCareTreatment#DE531
+  * ^code[+] = HIV.D#DE531
 
 * reasonBloodPressureReadingNotDone 1..1 string "Reason blood pressure reading not done" "Reason why test was not performed"
-  * ^code[+] = HIV.DCareTreatment#DE532
+  * ^code[+] = HIV.D#DE532
 
 * bpCuffSphygmomanometerNotAvailable 1..1 string "BP cuff (sphygmomanometer) not available" "Blood pressure cuff is not available"
-  * ^code[+] = HIV.DCareTreatment#DE533
+  * ^code[+] = HIV.D#DE533
 
 * bpCuffSphygmomanometerIsBroken 1..1 string "BP cuff (sphygmomanometer) is broken" "Blood pressure cuff is broken"
-  * ^code[+] = HIV.DCareTreatment#DE534
+  * ^code[+] = HIV.D#DE534
 
-* other 1..1 string "Other" "Other reason blood pressure can not be taken"
-  * ^code[+] = HIV.DCareTreatment#DE535
+* bpOther 1..1 string "Other" "Other reason blood pressure can not be taken"
+  * ^code[+] = HIV.D#DE535
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason blood pressure can not be taken (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE536
+* bpOtherSpecify 1..1 string "Other (specify)" "Other reason blood pressure can not be taken (specify)"
+  * ^code[+] = HIV.D#DE536
 
 * currentMedications 1..1 string "Current medications" "List of all of the medications the client is currently taking"
-  * ^code[+] = HIV.DCareTreatment#DE537
+  * ^code[+] = HIV.D#DE537
 
 * noMedications 1..1 string "No medications" "The client is currently not on any medications"
-  * ^code[+] = HIV.DCareTreatment#DE538
+  * ^code[+] = HIV.D#DE538
 
 * dontKnowOfAnyCurrentMedications 1..1 string "Dont know of any current medications" "The client does not know if she is on any medications"
-  * ^code[+] = HIV.DCareTreatment#DE539
+  * ^code[+] = HIV.D#DE539
 
 * analgesic 1..1 string "Analgesic" "Analgesic medication (painkiller)"
-  * ^code[+] = HIV.DCareTreatment#DE540
+  * ^code[+] = HIV.D#DE540
 
 * antacids 1..1 string "Antacids" "Antacids"
-  * ^code[+] = HIV.DCareTreatment#DE541
+  * ^code[+] = HIV.D#DE541
 
 * antibioticsBroadSpectrum 1..1 string "Antibiotics (broad-spectrum)" "Client is currently taking broad-spectrum antibiotics"
-  * ^code[+] = HIV.DCareTreatment#DE542
+  * ^code[+] = HIV.D#DE542
 
 * anticonvulsive 1..1 string "Anticonvulsive" "Anticonvulsive medication"
-  * ^code[+] = HIV.DCareTreatment#DE543
+  * ^code[+] = HIV.D#DE543
 
 * antidiabetic 1..1 string "Antidiabetic" "Antidiabetic medication"
-  * ^code[+] = HIV.DCareTreatment#DE544
+  * ^code[+] = HIV.D#DE544
 
 * antifungals 1..1 string "Antifungals" "Client is currently taking antifungals"
-  * ^code[+] = HIV.DCareTreatment#DE545
+  * ^code[+] = HIV.D#DE545
 
 * antihelmintic 1..1 string "Antihelmintic" "Antihelmintic or antiparasitic medication"
-  * ^code[+] = HIV.DCareTreatment#DE546
+  * ^code[+] = HIV.D#DE546
 
 * antihypertensive 1..1 string "Antihypertensive" "Antihypertensive medication"
-  * ^code[+] = HIV.DCareTreatment#DE547
+  * ^code[+] = HIV.D#DE547
 
 * antimalarials 1..1 string "Antimalarials" "Antimalarial medication"
-  * ^code[+] = HIV.DCareTreatment#DE548
+  * ^code[+] = HIV.D#DE548
 
 * antiretroviralsArvs 1..1 string "Antiretrovirals (ARVs)" "Antiretrovirals (ARVs)"
-  * ^code[+] = HIV.DCareTreatment#DE549
+  * ^code[+] = HIV.D#DE549
 
 * antiparasitics 1..1 string "Antiparasitics" "Client is currently taking antiparasitics"
-  * ^code[+] = HIV.DCareTreatment#DE550
+  * ^code[+] = HIV.D#DE550
 
 * antivirals 1..1 string "Antivirals" "Antiviral medication"
-  * ^code[+] = HIV.DCareTreatment#DE551
+  * ^code[+] = HIV.D#DE551
 
 * buprenorphine 1..1 string "Buprenorphine" "Opioid substitution to treat opioid dependence"
-  * ^code[+] = HIV.DCareTreatment#DE552
+  * ^code[+] = HIV.D#DE552
 
 * coTrimoxazolePreventiveTherapyCpt 1..1 string "Co-trimoxazole preventive therapy (CPT)" "Combination of two antimicrobial drugs (sulfamethoxazole and trimethoprim) that covers a variety of bacterial, fungal and protozoan infections"
-  * ^code[+] = HIV.DCareTreatment#DE553
+  * ^code[+] = HIV.D#DE553
 
 * hormonalFamilyPlanningMethod 1..1 string "Hormonal family planning method" "Hormonal family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE554
+  * ^code[+] = HIV.D#DE554
 
 * methadone 1..1 string "Methadone" "Opioid substitution to treat opioid dependence"
-  * ^code[+] = HIV.DCareTreatment#DE555
+  * ^code[+] = HIV.D#DE555
 
 * prepToPreventHiv 1..1 string "PrEP to prevent HIV" "Pre-exposure prophylaxis (PrEP) medication for preventing the acquisition of HIV"
-  * ^code[+] = HIV.DCareTreatment#DE556
+  * ^code[+] = HIV.D#DE556
 
 * otherAntibiotics 1..1 string "Other antibiotics" "Other antibiotics not listed above"
-  * ^code[+] = HIV.DCareTreatment#DE557
+  * ^code[+] = HIV.D#DE557
 
 * otherMedications 1..1 string "Other medications" "Other medications or supplements that are not listed above"
-  * ^code[+] = HIV.DCareTreatment#DE558
+  * ^code[+] = HIV.D#DE558
 
 * otherMedicationsSpecify 1..1 string "Other medications (specify)" "Other medications or supplements that are not listed above (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE559
+  * ^code[+] = HIV.D#DE559
 
 * allergies 1..1 string "Allergies" "Does the client have any allergies?"
-  * ^code[+] = HIV.DCareTreatment#DE560
+  * ^code[+] = HIV.D#DE560
 
 * noKnownAllergies 1..1 string "No known allergies" "Client does not have any known allergies"
-  * ^code[+] = HIV.DCareTreatment#DE561
+  * ^code[+] = HIV.D#DE561
 
 * dontKnowOfAnyAllergies 1..1 string "Dont know of any allergies" "Client does not know whether or not she has allergies"
-  * ^code[+] = HIV.DCareTreatment#DE562
+  * ^code[+] = HIV.D#DE562
 
 * albendazole 1..1 string "Albendazole" "Allergy to albendazole"
-  * ^code[+] = HIV.DCareTreatment#DE563
+  * ^code[+] = HIV.D#DE563
 
 * malariaMedicationSulfadoxinePyrimethamine 1..1 string "Malaria medication (sulfadoxine-pyrimethamine)" "Allergy to malaria medication (sulfadoxine-pyrimethamine)"
-  * ^code[+] = HIV.DCareTreatment#DE564
+  * ^code[+] = HIV.D#DE564
 
 * penicillin 1..1 string "Penicillin" "Allergy to penicillin"
-  * ^code[+] = HIV.DCareTreatment#DE565
+  * ^code[+] = HIV.D#DE565
 
 * tenofovirDisoproxilFumarateTdf 1..1 string "Tenofovir disoproxil fumarate (TDF)" "Allergy to pre-exposure prophylaxis (PrEP) tenofovir disoproxil fumarate (TDF)"
-  * ^code[+] = HIV.DCareTreatment#DE566
+  * ^code[+] = HIV.D#DE566
 
 * otherAllergies 1..1 string "Other allergies" "Client has other allergies not listed here"
-  * ^code[+] = HIV.DCareTreatment#DE567
+  * ^code[+] = HIV.D#DE567
 
 * otherAllergiesSpecify 1..1 string "Other allergies (specify)" "Client has other allergies not listed here (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE568
+  * ^code[+] = HIV.D#DE568
 
 * familyPlanningMethodUsed 1..1 string "Family planning method used" "Method the client reports currently using at intake"
-  * ^code[+] = HIV.DCareTreatment#DE569
+  * ^code[+] = HIV.D#DE569
 
 * copperBearingIntrauterineDeviceCuIud 1..1 string "Copper-bearing intrauterine device (Cu-IUD)" "A copper-bearing intrauterine device is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE570
+  * ^code[+] = HIV.D#DE570
 
 * levonorgestrelIntrauterineDeviceLngIud 1..1 string "Levonorgestrel intrauterine device (LNG-IUD)" "A levonorgestrel intrauterine device (hormone-releasing intrauterine contraceptive device) is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE571
+  * ^code[+] = HIV.D#DE571
 
 * etonogestrelEtgOneRodImplant 1..1 string "Etonogestrel (ETG) one-rod implant" "An etonogestrel one-rod implant is being used"
-  * ^code[+] = HIV.DCareTreatment#DE572
+  * ^code[+] = HIV.D#DE572
 
 * levonorgestrelLngTwoRodImplant 1..1 string "Levonorgestrel (LNG) two-rod implant" "A levonorgestrel two-rod implant is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE573
+  * ^code[+] = HIV.D#DE573
 
 * dmpaIm 1..1 string "DMPA-IM" "Injectable depot medroxyprogesterone acetate (DMPA), administered intramuscularly, is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE574
+  * ^code[+] = HIV.D#DE574
 
 * dmpaSc 1..1 string "DMPA-SC" "Injectable depot medroxyprogesterone acetate (DMPA), administered subcutaneously is being used"
-  * ^code[+] = HIV.DCareTreatment#DE575
+  * ^code[+] = HIV.D#DE575
 
 * netEnNorethisteroneEnanthate 1..1 string "NET-EN norethisterone enanthate" "Injectable norethisterone enanthate (NET-EN) is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE576
+  * ^code[+] = HIV.D#DE576
 
 * progestogenOnlyPillsPop 1..1 string "Progestogen-only pills (POP)" "Progestogen-only pills (POP) are being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE577
+  * ^code[+] = HIV.D#DE577
 
 * combinedOralContraceptivesCocs 1..1 string "Combined oral contraceptives (COCs)" "Combined oral contraceptives (COCs) pills are being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE578
+  * ^code[+] = HIV.D#DE578
 
 * combinedContraceptivePatch 1..1 string "Combined contraceptive patch" "Transdermal combined contraceptive patch is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE579
+  * ^code[+] = HIV.D#DE579
 
 * combinedContraceptiveVaginalRingCvr 1..1 string "Combined contraceptive vaginal ring (CVR)" "Combined contraceptive vaginal ring (CVR) is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE580
+  * ^code[+] = HIV.D#DE580
 
 * progesteroneReleasingVaginalRingPvr 1..1 string "Progesterone-releasing vaginal ring (PVR)" "Progesterone-releasing vaginal ring (PVR) is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE581
+  * ^code[+] = HIV.D#DE581
 
 * lactationalAmenorrheaMethodLam 1..1 string "Lactational amenorrhea method (LAM)" "Lactational amenorrhea method (LAM) is being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE582
+  * ^code[+] = HIV.D#DE582
 
 * emergencyContraceptivePillsEcps 1..1 string "Emergency contraceptive pills (ECPs)" "Client uses emergency contraceptive pills (ECPs)"
-  * ^code[+] = HIV.DCareTreatment#DE583
+  * ^code[+] = HIV.D#DE583
 
 * fertilityAwarenessBasedMethodsFab 1..1 string "Fertility awareness-based methods (FAB)" "Client uses fertility awareness-based methods (FAB)"
-  * ^code[+] = HIV.DCareTreatment#DE584
+  * ^code[+] = HIV.D#DE584
 
 * maleCondoms 1..1 string "Male condoms" "Male condoms are being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE585
+  * ^code[+] = HIV.D#DE585
 
 * femaleCondoms 1..1 string "Female condoms" "Female condoms are being used as a family planning method"
-  * ^code[+] = HIV.DCareTreatment#DE586
+  * ^code[+] = HIV.D#DE586
 
 * withdrawal 1..1 string "Withdrawal" "Client uses withdrawal method"
-  * ^code[+] = HIV.DCareTreatment#DE587
+  * ^code[+] = HIV.D#DE587
 
 * femaleRelyingOnMaleMethod 1..1 string "Female relying on male method" "The female client is relying on her male partner for contraceptive methods (e.g. male condoms, male sterilization, withdrawal)"
-  * ^code[+] = HIV.DCareTreatment#DE588
+  * ^code[+] = HIV.D#DE588
 
 * maleRelyingOnFemaleMethod 1..1 string "Male relying on female method" "The male client is relying on his female partner for contraceptive methods"
-  * ^code[+] = HIV.DCareTreatment#DE589
+  * ^code[+] = HIV.D#DE589
 
 * maleSterilization 1..1 string "Male sterilization" "Male surgical sterilization (a vasectomy) is the family planning method used"
-  * ^code[+] = HIV.DCareTreatment#DE590
+  * ^code[+] = HIV.D#DE590
 
 * femaleSterilization 1..1 string "Female sterilization" "Female surgical sterilization procedure is the family planning method used"
-  * ^code[+] = HIV.DCareTreatment#DE591
+  * ^code[+] = HIV.D#DE591
 
 * noMethod 1..1 string "No method" "Client is not using any family planning methods"
-  * ^code[+] = HIV.DCareTreatment#DE592
+  * ^code[+] = HIV.D#DE592
 
 * medicationStatus 1..1 string "Medication status" "Current state of the clients taking of the medication"
-  * ^code[+] = HIV.DCareTreatment#DE593
+  * ^code[+] = HIV.D#DE593
 
 * currentlyTaking 1..1 string "Currently taking" "The medication is still being taken (active)"
-  * ^code[+] = HIV.DCareTreatment#DE594
+  * ^code[+] = HIV.D#DE594
 
 * completed 1..1 string "Completed" "The medication is no longer being taken"
-  * ^code[+] = HIV.DCareTreatment#DE595
+  * ^code[+] = HIV.D#DE595
 
 * enteredInError 1..1 string "Entered in error" "Entered in error"
-  * ^code[+] = HIV.DCareTreatment#DE596
+  * ^code[+] = HIV.D#DE596
 
 * intended 1..1 string "Intended" "The medication may be taken at some time in the future"
-  * ^code[+] = HIV.DCareTreatment#DE597
+  * ^code[+] = HIV.D#DE597
 
 * stopped 1..1 string "Stopped" "Actions implied by the statement have been permanently halted, before all of them occurred. This should not be used if the statement was entered in error."
-  * ^code[+] = HIV.DCareTreatment#DE598
+  * ^code[+] = HIV.D#DE598
 
-* onHold 1..1 string "On hold" "The client has temporarily stopped taking the medication, but is expected to continue again later. May also be called "suspended"."
-  * ^code[+] = HIV.DCareTreatment#DE599
+* onHold 1..1 string "On hold" "The client has temporarily stopped taking the medication, but is expected to continue again later. May also be called \"suspended\"."
+  * ^code[+] = HIV.D#DE599
 
 * unknown 1..1 string "Unknown" "The state of the medication use is not currently known"
-  * ^code[+] = HIV.DCareTreatment#DE600
+  * ^code[+] = HIV.D#DE600
 
 * didNotTake 1..1 string "Did not take" "The client did not take the medication"
-  * ^code[+] = HIV.DCareTreatment#DE601
+  * ^code[+] = HIV.D#DE601
 
 * hepatitisBNegativeCounsellingConducted 1..1 string "Hepatitis B negative counselling conducted" "Hepatitis B negative counselling conducted"
-  * ^code[+] = HIV.DCareTreatment#DE602
+  * ^code[+] = HIV.D#DE602
 
 * vaccineBrand 1..1 string "Vaccine brand" "The brand or trade name used to refer to the vaccine received"
-  * ^code[+] = HIV.DCareTreatment#DE603
+  * ^code[+] = HIV.D#DE603
 
 * vaccineType 1..1 string "Vaccine type" "Type of vaccine received (such as IPV, OPV)"
-  * ^code[+] = HIV.DCareTreatment#DE604
+  * ^code[+] = HIV.D#DE604
 
 * dateAndTimeOfVaccination 1..1 string "Date and time of vaccination" "Represents the visit/encounter date, which is the date and time when the vaccine was administered to the client"
-  * ^code[+] = HIV.DCareTreatment#DE605
+  * ^code[+] = HIV.D#DE605
 
 * vaccinationLocation 1..1 string "Vaccination location" "The service delivery location where the vaccine adminstration occurred"
-  * ^code[+] = HIV.DCareTreatment#DE606
+  * ^code[+] = HIV.D#DE606
 
 * doseNumber 1..1 string "Dose number" "Vaccine dose number within series"
-  * ^code[+] = HIV.DCareTreatment#DE607
+  * ^code[+] = HIV.D#DE607
 
 * doseQuantity 1..1 string "Dose quantity" "The quantity of vaccine product that was administered"
-  * ^code[+] = HIV.DCareTreatment#DE608
+  * ^code[+] = HIV.D#DE608
 
 * totalDosesInSeries 1..1 string "Total doses in series" "The recommended number of vaccine doses for immunity according to national protocol"
-  * ^code[+] = HIV.DCareTreatment#DE609
+  * ^code[+] = HIV.D#DE609
 
 * diseaseTargeted 1..1 string "Disease targeted" "Vaccine preventable disease being targeted by vaccine administered"
-  * ^code[+] = HIV.DCareTreatment#DE610
+  * ^code[+] = HIV.D#DE610
 
 * hepatitisA 1..1 string "Hepatitis A" "The client is receiving vaccination to prevent against hepatitis A"
-  * ^code[+] = HIV.DCareTreatment#DE611
+  * ^code[+] = HIV.D#DE611
 
-* hepatitisB 1..1 string "Hepatitis B" "The client is receiving vaccination to prevent against hepatitis B"
-  * ^code[+] = HIV.DCareTreatment#DE612
+* vacHepatitisB 1..1 string "Hepatitis B" "The client is receiving vaccination to prevent against hepatitis B"
+  * ^code[+] = HIV.D#DE612
 
 * tetanus 1..1 string "Tetanus" "The client is receiving vaccination to prevent against tetanus"
-  * ^code[+] = HIV.DCareTreatment#DE613
+  * ^code[+] = HIV.D#DE613
 
 * covid19 1..1 string "COVID-19" "The client is receiving vaccination to prevent against COVID-19 due to SARS-CoV-2"
-  * ^code[+] = HIV.DCareTreatment#DE614
+  * ^code[+] = HIV.D#DE614
 
 * influenzaDueToInfluenzaBVirus 1..1 string "Influenza due to influenza B virus" "The client is receiving vaccination to prevent against influenza due to influenza B virus"
-  * ^code[+] = HIV.DCareTreatment#DE615
+  * ^code[+] = HIV.D#DE615
 
 * tuberculosis 1..1 string "Tuberculosis" "The client is receiving vaccination to prevent against tuberculosis (e.g. BCG vaccine)"
-  * ^code[+] = HIV.DCareTreatment#DE616
+  * ^code[+] = HIV.D#DE616
 
 * acutePoliomyelitis 1..1 string "Acute poliomyelitis" "The client is receiving vaccination to prevent against acute poliomyelitis (polio)"
-  * ^code[+] = HIV.DCareTreatment#DE617
+  * ^code[+] = HIV.D#DE617
 
 * measles 1..1 string "Measles" "The client is receiving vaccination to prevent against measles"
-  * ^code[+] = HIV.DCareTreatment#DE618
+  * ^code[+] = HIV.D#DE618
 
 * diptheria 1..1 string "Diptheria" "The client is receiving vaccination to prevent against diptheria"
-  * ^code[+] = HIV.DCareTreatment#DE619
+  * ^code[+] = HIV.D#DE619
 
 * rabies 1..1 string "Rabies" "The client is receiving vaccination to prevent against rabies"
-  * ^code[+] = HIV.DCareTreatment#DE620
+  * ^code[+] = HIV.D#DE620
 
 * cholera 1..1 string "Cholera" "The client is receiving vaccination to prevent against cholera"
-  * ^code[+] = HIV.DCareTreatment#DE621
+  * ^code[+] = HIV.D#DE621
 
 * mumps 1..1 string "Mumps" "The client is receiving vaccination to prevent against mumps"
-  * ^code[+] = HIV.DCareTreatment#DE622
+  * ^code[+] = HIV.D#DE622
 
 * hpvInfection 1..1 string "HPV infection" "The client is receiving vaccination to prevent against human papilloma virus (HPV) infection"
-  * ^code[+] = HIV.DCareTreatment#DE623
+  * ^code[+] = HIV.D#DE623
 
 * haemophilusInfluenzaeTypeB 1..1 string "Haemophilus influenzae type B" "The client is receiving vaccination to prevent against Haemophilus influenzae type B (Hib)"
-  * ^code[+] = HIV.DCareTreatment#DE624
+  * ^code[+] = HIV.D#DE624
 
 * varicella 1..1 string "Varicella" "The client is receiving vaccination to prevent against varicella"
-  * ^code[+] = HIV.DCareTreatment#DE625
+  * ^code[+] = HIV.D#DE625
 
 * dengue 1..1 string "Dengue" "The client is receiving vaccination to prevent against dengue"
-  * ^code[+] = HIV.DCareTreatment#DE626
+  * ^code[+] = HIV.D#DE626
 
 * yellowFever 1..1 string "Yellow fever" "The client is receiving vaccination to prevent against yellow fever"
-  * ^code[+] = HIV.DCareTreatment#DE627
+  * ^code[+] = HIV.D#DE627
 
 * japaneseEncephalitis 1..1 string "Japanese Encephalitis" "The client is receiving vaccination to prevent against Japanese encephalitis"
-  * ^code[+] = HIV.DCareTreatment#DE628
+  * ^code[+] = HIV.D#DE628
 
 * rubella 1..1 string "Rubella" "The client is receiving vaccination to prevent against rubella"
-  * ^code[+] = HIV.DCareTreatment#DE629
+  * ^code[+] = HIV.D#DE629
 
 * pertussis 1..1 string "Pertussis" "The client is receiving vaccination to prevent against pertussis"
-  * ^code[+] = HIV.DCareTreatment#DE630
+  * ^code[+] = HIV.D#DE630
 
 * enteritisDueToRotavirus 1..1 string "Enteritis due to rotavirus" "The client is receiving vaccination to prevent against enteritis due to rotavirus"
-  * ^code[+] = HIV.DCareTreatment#DE631
+  * ^code[+] = HIV.D#DE631
 
 * pneumococcalDisease 1..1 string "Pneumococcal disease" "The client is receiving vaccination to prevent against pneumococcal disease"
-  * ^code[+] = HIV.DCareTreatment#DE632
+  * ^code[+] = HIV.D#DE632
 
 * meningococcalDisease 1..1 string "Meningococcal disease" "The client is receiving vaccination to prevent against meningococcal disease"
-  * ^code[+] = HIV.DCareTreatment#DE633
+  * ^code[+] = HIV.D#DE633
 
 * tickBorneEncephalitis 1..1 string "Tick-borne encephalitis" "The client is receiving vaccination to prevent against tick-borne encephalitis"
-  * ^code[+] = HIV.DCareTreatment#DE634
+  * ^code[+] = HIV.D#DE634
 
 * typhoid 1..1 string "Typhoid" "The client is receiving vaccination to prevent against typhoid"
-  * ^code[+] = HIV.DCareTreatment#DE635
+  * ^code[+] = HIV.D#DE635
 
 * reasonImmunizationWasNotProvided 1..1 string "Reason immunization was not provided" "Reason the vaccine dose was not given"
-  * ^code[+] = HIV.DCareTreatment#DE636
+  * ^code[+] = HIV.D#DE636
 
-* stockOut 1..1 string "Stock-out" "Stock-out of vaccine"
-  * ^code[+] = HIV.DCareTreatment#DE637
+* inpStockOut 1..1 string "Stock-out" "Stock-out of vaccine"
+  * ^code[+] = HIV.D#DE637
 
 * clientIsIll 1..1 string "Client is ill" "Client is ill"
-  * ^code[+] = HIV.DCareTreatment#DE638
+  * ^code[+] = HIV.D#DE638
 
 * clientRefused 1..1 string "Client refused" "Client refused vaccine"
-  * ^code[+] = HIV.DCareTreatment#DE639
+  * ^code[+] = HIV.D#DE639
 
 * allergyToVaccine 1..1 string "Allergy to vaccine" "Client has an allergy to the vaccine"
-  * ^code[+] = HIV.DCareTreatment#DE640
+  * ^code[+] = HIV.D#DE640
 
 * otherReasonImmunizationNotProvided 1..1 string "Other reason immunization not provided" "Other reason why the immunization was not provided"
-  * ^code[+] = HIV.DCareTreatment#DE641
+  * ^code[+] = HIV.D#DE641
 
 * otherReasonImmunizationNotProvidedSpecify 1..1 string "Other reason immunization not provided (specify)" "Other reason why the immunization was not provided (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE642
+  * ^code[+] = HIV.D#DE642
 
 * malariaProphylaxis 1..1 string "Malaria prophylaxis" "Whether malaria prophylaxis was given"
-  * ^code[+] = HIV.DCareTreatment#DE643
+  * ^code[+] = HIV.D#DE643
 
 * iptpSpDoseNumberProvided 1..1 string "IPTp-SP dose number provided" "IPTp-SP dose number that was provided"
-  * ^code[+] = HIV.DCareTreatment#DE644
+  * ^code[+] = HIV.D#DE644
 
 * dateIptpSpDoseProvided 1..1 string "Date IPTp-SP dose provided" "Date on which the IPTp-SP dose was provided"
-  * ^code[+] = HIV.DCareTreatment#DE645
+  * ^code[+] = HIV.D#DE645
 
 * reasonMalariaProphylaxisNotProvided 1..1 string "Reason malaria prophylaxis not provided" "Reason why the treatment was not given"
-  * ^code[+] = HIV.DCareTreatment#DE646
+  * ^code[+] = HIV.D#DE646
 
 * clientWasReferred 1..1 string "Client was referred" "Client was referred to another provider/facility"
-  * ^code[+] = HIV.DCareTreatment#DE647
+  * ^code[+] = HIV.D#DE647
 
-* stockOut 1..1 string "Stock out" "There was a stock out of malaria prophylaxis"
-  * ^code[+] = HIV.DCareTreatment#DE648
+* malStockOut 1..1 string "Stock out" "There was a stock out of malaria prophylaxis"
+  * ^code[+] = HIV.D#DE648
 
 * expired 1..1 string "Expired" "Malaria prophylaxis in stock was expired"
-  * ^code[+] = HIV.DCareTreatment#DE649
+  * ^code[+] = HIV.D#DE649
 
 * otherReasonNotProvided 1..1 string "Other reason not provided" "Other reason why the prophylaxis was not provided"
-  * ^code[+] = HIV.DCareTreatment#DE650
+  * ^code[+] = HIV.D#DE650
 
 * otherReasonNotProvidedSpecify 1..1 string "Other reason not provided (specify)" "Other reason why the prophylaxis was not provided"
-  * ^code[+] = HIV.DCareTreatment#DE651
+  * ^code[+] = HIV.D#DE651
 
-* >28DaysSinceLastMissedAppointment 1..1 string ">28 days since last missed appointment" "More than 28 days have passed since clients last missed appointment"
-  * ^code[+] = HIV.DCareTreatment#DE652
+* lt28DaysSinceLastMissedAppointment 1..1 string ">28 days since last missed appointment" "More than 28 days have passed since clients last missed appointment"
+  * ^code[+] = HIV.D#DE652
 
 * aidsRelatedDeath 1..1 string "AIDS-related death" "Death of client was AIDS-related"
-  * ^code[+] = HIV.DCareTreatment#DE653
+  * ^code[+] = HIV.D#DE653
 
 * dateOfFirstAidsDiagnosis 1..1 string "Date of first AIDS diagnosis" "Date of clients first AIDS diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE654
+  * ^code[+] = HIV.D#DE654
 
 * ageAtFinalHpvVaccinationDoseReceived 1..1 string "Age at final HPV vaccination dose received" "Clients age at date received final HPV vaccination dose"
-  * ^code[+] = HIV.DCareTreatment#DE655
+  * ^code[+] = HIV.D#DE655
 
 * dateOfCervicalCancerScreeningTest 1..1 string "Date of cervical cancer screening test" "Date of cervical cancer screening test"
-  * ^code[+] = HIV.DCareTreatment#DE656
+  * ^code[+] = HIV.D#DE656
 
 * lifetimeScreeningTestNumber 1..1 string "Lifetime screening test number" "Clients lifetime number of screenings for cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE657
+  * ^code[+] = HIV.D#DE657
 
 * cervicalCancerPrimaryScreeningTestType 1..1 string "Cervical cancer primary screening test type" "Type of cervical cancer screening test used in primary screening"
-  * ^code[+] = HIV.DCareTreatment#DE658
+  * ^code[+] = HIV.D#DE658
 
 * hpvDna 1..1 string "HPV-DNA" "Screened for cervical cancer using HPV-DNA test"
-  * ^code[+] = HIV.DCareTreatment#DE659
+  * ^code[+] = HIV.D#DE659
 
 * via 1..1 string "VIA" "Screened for cervical cancer using visual inspection with acetic acid (VIA)"
-  * ^code[+] = HIV.DCareTreatment#DE660
+  * ^code[+] = HIV.D#DE660
 
 * cervicalCytology 1..1 string "Cervical cytology" "Screened for cervical cancer using cervical cytology"
-  * ^code[+] = HIV.DCareTreatment#DE661
+  * ^code[+] = HIV.D#DE661
 
-* other 1..1 string "Other" "Screened for cervical cancer using other method"
-  * ^code[+] = HIV.DCareTreatment#DE662
+* ccsOther 1..1 string "Other" "Screened for cervical cancer using other method"
+  * ^code[+] = HIV.D#DE662
 
-* otherSpecify 1..1 string "Other (specify)" "Screened for cervical cancer using other method (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE663
+* ccsOtherSpecify 1..1 string "Other (specify)" "Screened for cervical cancer using other method (specify)"
+  * ^code[+] = HIV.D#DE663
 
 * hpvDnaCervicalCancerScreeningTestResult 1..1 string "HPV-DNA cervical cancer screening test result" "HPV-DNA cervical cancer screening test result"
-  * ^code[+] = HIV.DCareTreatment#DE664
+  * ^code[+] = HIV.D#DE664
 
-* negative 1..1 string "Negative" "HPV-DNA screening test was negative"
-  * ^code[+] = HIV.DCareTreatment#DE665
+* hpvdnaNegative 1..1 string "Negative" "HPV-DNA screening test was negative"
+  * ^code[+] = HIV.D#DE665
 
-* positive 1..1 string "Positive" "HPV-DNA screening test was positive"
-  * ^code[+] = HIV.DCareTreatment#DE666
+* hpvdnaPositive 1..1 string "Positive" "HPV-DNA screening test was positive"
+  * ^code[+] = HIV.D#DE666
 
-* invalid 1..1 string "Invalid" "HPV-DNA screening test was invalid"
-  * ^code[+] = HIV.DCareTreatment#DE667
+* hpvdnaInvalid 1..1 string "Invalid" "HPV-DNA screening test was invalid"
+  * ^code[+] = HIV.D#DE667
 
 * viaCervicalCancerScreeningTestResult 1..1 string "VIA cervical cancer screening test result" "Screening test result for VIA"
-  * ^code[+] = HIV.DCareTreatment#DE668
+  * ^code[+] = HIV.D#DE668
 
-* negative 1..1 string "Negative" "Screening result is negative"
-  * ^code[+] = HIV.DCareTreatment#DE669
+* viaNegative 1..1 string "Negative" "Screening result is negative"
+  * ^code[+] = HIV.D#DE669
 
-* positive 1..1 string "Positive" "Screening result is positive"
-  * ^code[+] = HIV.DCareTreatment#DE670
+* viaPositive 1..1 string "Positive" "Screening result is positive"
+  * ^code[+] = HIV.D#DE670
 
 * suspectedCancer 1..1 string "Suspected cancer" "Screening result is suspected cancer"
-  * ^code[+] = HIV.DCareTreatment#DE671
+  * ^code[+] = HIV.D#DE671
 
-* invalid 1..1 string "Invalid" "Screening result is invalid"
-  * ^code[+] = HIV.DCareTreatment#DE672
+* viaInvalid 1..1 string "Invalid" "Screening result is invalid"
+  * ^code[+] = HIV.D#DE672
 
 * cervicalCytologyScreeningTestResult 1..1 string "Cervical cytology screening test result" "Screening result for cervical cytology"
-  * ^code[+] = HIV.DCareTreatment#DE673
+  * ^code[+] = HIV.D#DE673
 
 * nilm 1..1 string "NILM" "Negative for Intraepithelial Lesion Malignancy (NILM)"
-  * ^code[+] = HIV.DCareTreatment#DE674
+  * ^code[+] = HIV.D#DE674
 
 * ascus 1..1 string "ASCUS" "Atypical squamous cells of undetermined significance (ASCUS)"
-  * ^code[+] = HIV.DCareTreatment#DE675
+  * ^code[+] = HIV.D#DE675
 
 * lsil 1..1 string "LSIL" "Low grade squamous intraepithelial lesion (LSIL)"
-  * ^code[+] = HIV.DCareTreatment#DE676
+  * ^code[+] = HIV.D#DE676
 
 * hsil 1..1 string "HSIL" "High grade squamous intraepithelial lesion (HSIL)"
-  * ^code[+] = HIV.DCareTreatment#DE677
+  * ^code[+] = HIV.D#DE677
 
 * cancer 1..1 string "Cancer" "Result was positive for cancer"
-  * ^code[+] = HIV.DCareTreatment#DE678
+  * ^code[+] = HIV.D#DE678
 
 * invalidinadequate 1..1 string "Invalid/inadequate" "Screening result was invalid or inadequate"
-  * ^code[+] = HIV.DCareTreatment#DE679
+  * ^code[+] = HIV.D#DE679
 
 * cervicalCancerTriageTestDate 1..1 string "Cervical cancer triage test date" "Date of triage test for cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE680
+  * ^code[+] = HIV.D#DE680
 
 * cervicalCancerTriageTestType 1..1 string "Cervical cancer triage test type" "Type of triage test for cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE681
+  * ^code[+] = HIV.D#DE681
 
-* via 1..1 string "VIA" "Triage test for cervical cancer using visual inspection with acetic acid (VIA)"
-  * ^code[+] = HIV.DCareTreatment#DE682
+* ttccVia 1..1 string "VIA" "Triage test for cervical cancer using visual inspection with acetic acid (VIA)"
+  * ^code[+] = HIV.D#DE682
 
 * colposcopy 1..1 string "Colposcopy" "Triage test for cervical cancer using colposcopy"
-  * ^code[+] = HIV.DCareTreatment#DE683
+  * ^code[+] = HIV.D#DE683
 
-* cervicalCytology 1..1 string "Cervical cytology" "Triage test for cervical cancer using cervical cytology"
-  * ^code[+] = HIV.DCareTreatment#DE684
+* ttccCervicalCytology 1..1 string "Cervical cytology" "Triage test for cervical cancer using cervical cytology"
+  * ^code[+] = HIV.D#DE684
 
 * hpv1618 1..1 string "HPV16/18" "Triage test for cervical cancer using test for HPV16/18"
-  * ^code[+] = HIV.DCareTreatment#DE685
+  * ^code[+] = HIV.D#DE685
 
-* other 1..1 string "Other" "Triage test for cervical cancer using another test"
-  * ^code[+] = HIV.DCareTreatment#DE686
+* tccOther 1..1 string "Other" "Triage test for cervical cancer using another test"
+  * ^code[+] = HIV.D#DE686
 
-* otherSpecify 1..1 string "Other (specify)" "Triage test for cervical cancer using another test (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE687
+* tccOtherSpecify 1..1 string "Other (specify)" "Triage test for cervical cancer using another test (specify)"
+  * ^code[+] = HIV.D#DE687
 
 * hpv1618TestResult 1..1 string "HPV16/18 test result" "Test result from HPV16/18 test"
-  * ^code[+] = HIV.DCareTreatment#DE688
+  * ^code[+] = HIV.D#DE688
 
-* positive 1..1 string "Positive" "Test is positive for HPV16/18"
-  * ^code[+] = HIV.DCareTreatment#DE689
+* hpv16Positive 1..1 string "Positive" "Test is positive for HPV16/18"
+  * ^code[+] = HIV.D#DE689
 
-* negative 1..1 string "Negative" "Test is negative for HPV16/18"
-  * ^code[+] = HIV.DCareTreatment#DE690
+* hpv16Negative 1..1 string "Negative" "Test is negative for HPV16/18"
+  * ^code[+] = HIV.D#DE690
 
 * cervicalCancerColposcopyResult 1..1 string "Cervical cancer colposcopy result" "Result of cervical cancer colposcopy"
-  * ^code[+] = HIV.DCareTreatment#DE691
+  * ^code[+] = HIV.D#DE691
 
 * normalColposcopicFindings 1..1 string "Normal colposcopic findings" "Colposcopy has normal colposcopic findings"
-  * ^code[+] = HIV.DCareTreatment#DE692
+  * ^code[+] = HIV.D#DE692
 
 * abnormalColposcopicFindings 1..1 string "Abnormal colposcopic findings" "Colposcopy has abnormal colposcopic findings"
-  * ^code[+] = HIV.DCareTreatment#DE693
+  * ^code[+] = HIV.D#DE693
 
 * suspiciousForInvasiveCervicalCancer 1..1 string "Suspicious for invasive cervical cancer" "Colposcopy is suspicious for invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE694
+  * ^code[+] = HIV.D#DE694
 
 * miscellaneousFindings 1..1 string "Miscellaneous findings" "Colposcopy has miscellaneous findings"
-  * ^code[+] = HIV.DCareTreatment#DE695
+  * ^code[+] = HIV.D#DE695
 
 * inadequate 1..1 string "Inadequate" "Colposcopy exam is inadequate"
-  * ^code[+] = HIV.DCareTreatment#DE696
+  * ^code[+] = HIV.D#DE696
 
 * cervicalCancerHistopathologyResult 1..1 string "Cervical cancer histopathology result" "Result of cervical cancer histopathology"
-  * ^code[+] = HIV.DCareTreatment#DE697
+  * ^code[+] = HIV.D#DE697
 
 * normal 1..1 string "Normal" "Result of cervical cancer histopathology was normal"
-  * ^code[+] = HIV.DCareTreatment#DE698
+  * ^code[+] = HIV.D#DE698
 
 * lsilInclusiveOfLsilCin1 1..1 string "LSIL (inclusive of LSIL-CIN1)" "Result of cervical cancer histopathology was low-grade squamous intraepithelial lesion (LSIL)"
-  * ^code[+] = HIV.DCareTreatment#DE699
+  * ^code[+] = HIV.D#DE699
 
 * hsilInclusiveOfHsilCin2OrHsilCin3 1..1 string "HSIL (inclusive of HSIL-CIN2 or HSIL-CIN3)" "Result of cervical cancer histopathology was high-grade squamous intraepithelial lesion (HSIL)"
-  * ^code[+] = HIV.DCareTreatment#DE700
+  * ^code[+] = HIV.D#DE700
 
 * invasiveCervicalCancer 1..1 string "Invasive cervical cancer" "Result of cervical cancer histopathology is invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE701
+  * ^code[+] = HIV.D#DE701
 
 * dateOfAdditionalCervicalCancerTriageTest 1..1 string "Date of additional cervical cancer triage test" "Date of tertiary cervical cancer screening test"
-  * ^code[+] = HIV.DCareTreatment#DE702
+  * ^code[+] = HIV.D#DE702
 
 * additionalCervicalCancerTriageTestTypeSpecify 1..1 string "Additional cervical cancer triage test type (specify)" "Additional cervical cancer triage test type (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE703
+  * ^code[+] = HIV.D#DE703
 
 * additionalCervicalCancerTriageTestResultSpecify 1..1 string "Additional cervical cancer triage test result (specify)" "Additional cervical cancer triage test result (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE704
+  * ^code[+] = HIV.D#DE704
 
-* dateOfDiagnosisOfCervicalPrecancerLesionsOrInvasiveCervicalCancer 1..1 string "Date of diagnosis of cervical precancer lesions or invasive cervical cancer" "Date of diagnosis of cervical precancer lesions or invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE705
+* dateOfDiagnosisOfCervicalCancer 1..1 string "Date of diagnosis of cervical precancer lesions or invasive cervical cancer" "Date of diagnosis of cervical precancer lesions or invasive cervical cancer"
+  * ^code[+] = HIV.D#DE705
 
 * cervicalCancerScreeningOutcome 1..1 string "Cervical cancer screening outcome" "Clients screening outcome for cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE706
+  * ^code[+] = HIV.D#DE706
 
 * positiveForCervicalPrecancerLesions 1..1 string "Positive for cervical precancer lesions" "Screening outcome for cervical precancer lesions is positive"
-  * ^code[+] = HIV.DCareTreatment#DE707
+  * ^code[+] = HIV.D#DE707
 
 * negativeForCervicalPrecancerLesions 1..1 string "Negative for cervical precancer lesions" "Screening outcome for cervical precancer lesions is negative"
-  * ^code[+] = HIV.DCareTreatment#DE708
+  * ^code[+] = HIV.D#DE708
 
 * cervicalCancerDiagnosis 1..1 string "Cervical cancer diagnosis" "Type of cervical cancer diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE709
+  * ^code[+] = HIV.D#DE709
 
 * cervicalPrecancerLesions 1..1 string "Cervical precancer lesions" "Client is diagnosed with cervical precancer lesions"
-  * ^code[+] = HIV.DCareTreatment#DE710
+  * ^code[+] = HIV.D#DE710
 
-* invasiveCervicalCancer 1..1 string "Invasive cervical cancer" "Client is diagnosed with invasive cervical cancer disease"
-  * ^code[+] = HIV.DCareTreatment#DE711
+* dInvasiveCervicalCancer 1..1 string "Invasive cervical cancer" "Client is diagnosed with invasive cervical cancer disease"
+  * ^code[+] = HIV.D#DE711
 
 * cervicalCancerStageAtDiagnosis 1..1 string "Cervical cancer stage at diagnosis" "Cervical cancer stage at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE712
+  * ^code[+] = HIV.D#DE712
 
 * stage0 1..1 string "Stage 0" "Stage 0 cervical cancer at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE713
+  * ^code[+] = HIV.D#DE713
 
 * stageI 1..1 string "Stage I" "Stage I cervical cancer at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE714
+  * ^code[+] = HIV.D#DE714
 
 * stageIi 1..1 string "Stage II" "Stage II cervical cancer at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE715
+  * ^code[+] = HIV.D#DE715
 
 * stageIii 1..1 string "Stage III" "Stage III cervical cancer at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE716
+  * ^code[+] = HIV.D#DE716
 
 * stageIv 1..1 string "Stage IV" "Stage IV cervical cancer at diagnosis of cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE717
+  * ^code[+] = HIV.D#DE717
 
 * dateOfTreatmentForCervicalPrecancerLesions 1..1 string "Date of treatment for cervical precancer lesions" "Date of treatment for cervical precancer lesions"
-  * ^code[+] = HIV.DCareTreatment#DE718
+  * ^code[+] = HIV.D#DE718
 
 * treatmentMethodForCervicalPrecancerLesions 1..1 string "Treatment method for cervical precancer lesions" "Treatment method for cervical precancer lesions"
-  * ^code[+] = HIV.DCareTreatment#DE719
+  * ^code[+] = HIV.D#DE719
 
 * cryotherapy 1..1 string "Cryotherapy" "Treatment for cervical precancer lesions is cryotherapy"
-  * ^code[+] = HIV.DCareTreatment#DE720
+  * ^code[+] = HIV.D#DE720
 
 * thermalAblation 1..1 string "Thermal ablation" "Treatment for cervical precancer lesions is Thermal ablation"
-  * ^code[+] = HIV.DCareTreatment#DE721
+  * ^code[+] = HIV.D#DE721
 
 * laserAblation 1..1 string "Laser ablation" "Treatment for cervical precancer lesions is Laser ablation"
-  * ^code[+] = HIV.DCareTreatment#DE722
+  * ^code[+] = HIV.D#DE722
 
 * ckc 1..1 string "CKC" "Treatment for cervical precancer lesions is Cold knife conization (CKC)"
-  * ^code[+] = HIV.DCareTreatment#DE723
+  * ^code[+] = HIV.D#DE723
 
 * laserConeBiopsy 1..1 string "Laser cone biopsy" "Treatment for cervical precancer lesions is Laser cone biopsy"
-  * ^code[+] = HIV.DCareTreatment#DE724
+  * ^code[+] = HIV.D#DE724
 
 * lletzleep 1..1 string "LLETZ/LEEP" "Treatment for cervical precancer lesions is large loop excision of the transformation zone (LLETZ)/loop electrosurgical excision procedure (LEEP)"
-  * ^code[+] = HIV.DCareTreatment#DE725
+  * ^code[+] = HIV.D#DE725
 
-* other 1..1 string "Other" "Treatment for cervical precancer lesions is not listed"
-  * ^code[+] = HIV.DCareTreatment#DE726
+* pclOther 1..1 string "Other" "Treatment for cervical precancer lesions is not listed"
+  * ^code[+] = HIV.D#DE726
 
-* otherSpecify 1..1 string "Other (specify)" "Treatment for cervical precancer lesions is not listed (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE727
+* pclOtherSpecify 1..1 string "Other (specify)" "Treatment for cervical precancer lesions is not listed (specify)"
+  * ^code[+] = HIV.D#DE727
 
 * dateOfFollowUpForTreatmentForCervicalPrecancerLesions 1..1 string "Date of follow-up for treatment for cervical precancer lesions" "Date of follow-up for treatment for cervical precancer lesions"
-  * ^code[+] = HIV.DCareTreatment#DE728
+  * ^code[+] = HIV.D#DE728
 
 * dateOfStartOfInvasiveCancerTreatment 1..1 string "Date of start of invasive cancer treatment" "Date of start of invasive cancer treatment"
-  * ^code[+] = HIV.DCareTreatment#DE729
+  * ^code[+] = HIV.D#DE729
 
 * invasiveCervicalCancerTreatmentEpisode 1..1 string "Invasive cervical cancer treatment episode" "Clients lifetime number of treatments for invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE730
+  * ^code[+] = HIV.D#DE730
 
 * invasiveCervicalCancerTreatmentMethod 1..1 string "Invasive cervical cancer treatment method" "Invasive cervical cancer treatment method"
-  * ^code[+] = HIV.DCareTreatment#DE731
+  * ^code[+] = HIV.D#DE731
 
 * conization 1..1 string "Conization" "Invasive cervical cancer treatment method is a conization"
-  * ^code[+] = HIV.DCareTreatment#DE732
+  * ^code[+] = HIV.D#DE732
 
 * trachelectomy 1..1 string "Trachelectomy" "Invasive cervical cancer treatment method is a trachelectomy"
-  * ^code[+] = HIV.DCareTreatment#DE733
+  * ^code[+] = HIV.D#DE733
 
 * hysterectomy 1..1 string "Hysterectomy" "Invasive cervical cancer treatment method is a hysterectomy"
-  * ^code[+] = HIV.DCareTreatment#DE734
+  * ^code[+] = HIV.D#DE734
 
 * managementOfInvasiveCervicalCancer 1..1 string "Management of invasive cervical cancer" "Invasive cervical cancer treatment method is management of invasive cervical cancer"
-  * ^code[+] = HIV.DCareTreatment#DE735
+  * ^code[+] = HIV.D#DE735
 
 * radiotherapy 1..1 string "Radiotherapy" "Invasive cervical cancer treatment method is a radiotherapy"
-  * ^code[+] = HIV.DCareTreatment#DE736
+  * ^code[+] = HIV.D#DE736
 
 * chemotherapy 1..1 string "Chemotherapy" "Invasive cervical cancer treatment method is a chemotherapy"
-  * ^code[+] = HIV.DCareTreatment#DE737
+  * ^code[+] = HIV.D#DE737
 
 * chemoradiation 1..1 string "Chemoradiation" "Invasive cervical cancer treatment method is a chemoradiation"
-  * ^code[+] = HIV.DCareTreatment#DE738
+  * ^code[+] = HIV.D#DE738
 
-* other 1..1 string "Other" "Invasive cervical cancer treatment method is a not in list"
-  * ^code[+] = HIV.DCareTreatment#DE739
+* chrOther 1..1 string "Other" "Invasive cervical cancer treatment method is a not in list"
+  * ^code[+] = HIV.D#DE739
 
-* otherSpecify 1..1 string "Other (specify)" "Invasive cervical cancer treatment method is a not in list (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE740
+* chrOtherSpecify 1..1 string "Other (specify)" "Invasive cervical cancer treatment method is a not in list (specify)"
+  * ^code[+] = HIV.D#DE740
 
 * treatmentOutcome 1..1 string "Treatment outcome" "Treatment outcome from cervical pre-cancerous lesion treatment or invasive cancer treatment (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE741
+  * ^code[+] = HIV.D#DE741
 
 * secondaryotherCancersDiagnosed 1..1 string "Secondary/other cancers diagnosed" "Secondary and other cancers that client is diagnosed with (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE742
+  * ^code[+] = HIV.D#DE742
 
 * cancersAtOtherSitesHpvAndNonHpvRelated 1..1 string "Cancers at other sites (HPV- and non-HPV related)" "Cancers at other sites that client has (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE743
+  * ^code[+] = HIV.D#DE743
 
 * dateOfDeath 1..1 string "Date of death" "If deceased, the date that the client died"
-  * ^code[+] = HIV.DCareTreatment#DE744
+  * ^code[+] = HIV.D#DE744
 
 * cervicalCancerScreeningIntervalAmongstWlhiv 1..1 string "Cervical cancer screening interval amongst WLHIV" "Country-specific interval between cancer screenings amongst women living with HIV (typically 3 or 5 years)"
-  * ^code[+] = HIV.DCareTreatment#DE745
+  * ^code[+] = HIV.D#DE745
 
 * entryPointForFacilityLevelTesting 1..1 string "Entry point for facility-level testing" "Specific point where testing is happening at a facility"
-  * ^code[+] = HIV.DCareTreatment#DE746
+  * ^code[+] = HIV.D#DE746
 
 * providerInitiatedTestedInAClinicOrEmergencyFacility 1..1 string "Provider-initiated tested in a clinic or emergency facility" "The client tested though provider-initiated HIV testing & counselling, which could be at an emergency facility"
-  * ^code[+] = HIV.DCareTreatment#DE747
+  * ^code[+] = HIV.D#DE747
 
 * antenatalCareClinic 1..1 string "Antenatal care clinic" "The client tested at an antenatal care clinic, including labour and delivery"
-  * ^code[+] = HIV.DCareTreatment#DE748
+  * ^code[+] = HIV.D#DE748
 
 * voluntaryCounsellingAndTestingWithinAHealthFacilitySetting 1..1 string "Voluntary counselling and testing (within a health facility setting)" "The client tested through voluntary counselling and testing (within a health facility setting)"
-  * ^code[+] = HIV.DCareTreatment#DE749
+  * ^code[+] = HIV.D#DE749
 
 * familyPlanningClinic 1..1 string "Family planning clinic" "The client tested at a family planning clinic"
-  * ^code[+] = HIV.DCareTreatment#DE750
+  * ^code[+] = HIV.D#DE750
 
 * otherFacilityLevelTesting 1..1 string "Other facility-level testing" "The client tested at another type of facility"
-  * ^code[+] = HIV.DCareTreatment#DE751
+  * ^code[+] = HIV.D#DE751
 
 * tuberculosisTbClinic 1..1 string "Tuberculosis (TB) clinic" "The client tested at a TB clinic"
-  * ^code[+] = HIV.DCareTreatment#DE752
+  * ^code[+] = HIV.D#DE752
 
 * offerOtherClinicalServices 1..1 string "Offer other clinical services" "Other clinical services offered or referrals given to the client"
-  * ^code[+] = HIV.DCareTreatment#DE753
+  * ^code[+] = HIV.D#DE753
 
-* assessmentAndProvisionOfVaccinations 1..1 string "Assessment and provision of vaccinations" "Assessment and provision of vaccinations, such as for people from Key population member type, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC"
-  * ^code[+] = HIV.DCareTreatment#DE754
+* assessmentAndProvisionOfVaccinations2 1..1 string "Assessment and provision of vaccinations" "Assessment and provision of vaccinations, such as for people from Key population member type, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC"
+  * ^code[+] = HIV.D#DE754
 
 * hepatitisBHbvAndHepatitisCVirusHcvTestingAndTreatment 1..1 string "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment" "Offer or refer for HBV and/or HCV testing and treatment"
-  * ^code[+] = HIV.DCareTreatment#DE755
+  * ^code[+] = HIV.D#DE755
 
-* coTrimoxazoleChemoprophylaxisToPreventPneumocystisCariniiPneumonia 1..1 string "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
-  * ^code[+] = HIV.DCareTreatment#DE756
+* coTrimoxazoleChemoproToPreventPCPneumonia 1..1 string "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+  * ^code[+] = HIV.D#DE756
 
-* intensifiedTbCaseFindingAndLinkageToTbTreatment 1..1 string "Intensified TB case finding and linkage to TB treatment" "Offer or refer for intensified TB case finding and linkage to TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE757
+* intensifiedTbCaseFindingAndLinkageToTbTreatment3 1..1 string "Intensified TB case finding and linkage to TB treatment" "Offer or refer for intensified TB case finding and linkage to TB treatment"
+  * ^code[+] = HIV.D#DE757
 
 * provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb 1..1 string "Provision of isoniazid preventive therapy if person does not have TB" "Offer or refer for provision of isoniazid preventive therapy if person does not have TB"
-  * ^code[+] = HIV.DCareTreatment#DE758
+  * ^code[+] = HIV.D#DE758
 
-* malariaPreventionSuchAsBedNetsAndProphylaxisDependingOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
-  * ^code[+] = HIV.DCareTreatment#DE759
+* malariaPreventionDepOnEpidemiology 1..1 string "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+  * ^code[+] = HIV.D#DE759
 
 * eligibleForDsdArt 1..1 string "Eligible for DSD ART" "Client is eligible for differentiated service delivery (DSD) for ART"
-  * ^code[+] = HIV.DCareTreatment#DE760
+  * ^code[+] = HIV.D#DE760
 
 * dateDsdArtEligibilityAssessed 1..1 string "Date DSD ART eligibility assessed" "Date client was assessed for eligibility for differentiated service delivery (DSD) for ART"
-  * ^code[+] = HIV.DCareTreatment#DE761
+  * ^code[+] = HIV.D#DE761
 
 * currentlyEnrolledInDsdArtModel 1..1 string "Currently enrolled in DSD ART model" "Client currently enrolled in differentiated service delivery (DSD) ART model"
-  * ^code[+] = HIV.DCareTreatment#DE762
+  * ^code[+] = HIV.D#DE762
 
 * dsdArtStartDate 1..1 string "DSD ART start date" "Date client started on differentiated service delivery (DSD) for ART"
-  * ^code[+] = HIV.DCareTreatment#DE763
+  * ^code[+] = HIV.D#DE763
 
 * dsdArtModelS 1..1 string "DSD ART model(s)" "Type of DSD ART model client is enrolled in (country-specific)"
-  * ^code[+] = HIV.DCareTreatment#DE764
+  * ^code[+] = HIV.D#DE764
 
 * fastTrackArtRefill 1..1 string "Fast track ART refill" "Client is enrolled in fast track ART refill (DSD ART model)"
-  * ^code[+] = HIV.DCareTreatment#DE765
+  * ^code[+] = HIV.D#DE765
 
 * facilityAdherenceClub 1..1 string "Facility adherence club" "Client is enrolled in facility adherence club (DSD ART model)"
-  * ^code[+] = HIV.DCareTreatment#DE766
+  * ^code[+] = HIV.D#DE766
 
 * communityArtDistributionPoint 1..1 string "Community ART distribution point" "Client is enrolled in community ART distribution point (DSD ART model)"
-  * ^code[+] = HIV.DCareTreatment#DE767
+  * ^code[+] = HIV.D#DE767
 
 * chwpeerEducatorCommunityArtGroup 1..1 string "CHW/peer educator community ART group" "Client is enrolled in community health worker/peer educator community ART group (DSD ART model)"
-  * ^code[+] = HIV.DCareTreatment#DE768
+  * ^code[+] = HIV.D#DE768
 
 * patientclientCommunityArtGroup 1..1 string "Patient/client community ART group" "Client is enrolled in patient/client community ART group (DSD ART model)"
-  * ^code[+] = HIV.DCareTreatment#DE769
+  * ^code[+] = HIV.D#DE769
 
 * otherDsdArtModel 1..1 string "Other DSD ART model" "Client is enrolled in another DSD ART model"
-  * ^code[+] = HIV.DCareTreatment#DE770
+  * ^code[+] = HIV.D#DE770
 
 * otherDsdArtModelSpecify 1..1 string "Other DSD ART model (specify)" "Client is enrolled in another DSD ART model (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE771
+  * ^code[+] = HIV.D#DE771
 
 * partnerTestingOffered 1..1 string "Partner testing offered" "Whether client was offered partner testing"
-  * ^code[+] = HIV.DCareTreatment#DE772
+  * ^code[+] = HIV.D#DE772
 
 * partnerTestingAccepted 1..1 string "Partner testing accepted" "Whether partner testing was accepted"
-  * ^code[+] = HIV.DCareTreatment#DE773
+  * ^code[+] = HIV.D#DE773
 
 * datePartnerContactedForIndexTesting 1..1 string "Date partner contacted for index testing" "Date on which clients partner was contacted for index testing"
-  * ^code[+] = HIV.DCareTreatment#DE774
+  * ^code[+] = HIV.D#DE774
 
 * datePartnerTestedForHiv 1..1 string "Date partner tested for HIV" "Date on which clients partner was tested for HIV"
-  * ^code[+] = HIV.DCareTreatment#DE775
+  * ^code[+] = HIV.D#DE775
 
 * dateOfNextScheduledFollowUpAppointment 1..1 string "Date of next scheduled follow-up appointment" "Date of clients next scheduled follow-up appointment"
-  * ^code[+] = HIV.DCareTreatment#DE776
+  * ^code[+] = HIV.D#DE776
 
 * typeOfNextFollowUpAppointment 1..1 string "Type of next follow-up appointment" "Type of clients next follow-up appointment (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE777
+  * ^code[+] = HIV.D#DE777
 
 * syndromestiDiagnosed 1..1 string "Syndrome/STI diagnosed" "Syndrome or STI for which client is diagnosed"
-  * ^code[+] = HIV.DCareTreatment#DE778
+  * ^code[+] = HIV.D#DE778
 
 * urethralDischargeSyndrome 1..1 string "Urethral discharge syndrome" "Client diagnosed with urethral discharge syndrome"
-  * ^code[+] = HIV.DCareTreatment#DE779
+  * ^code[+] = HIV.D#DE779
 
 * vaginalDischargeSyndrome 1..1 string "Vaginal discharge syndrome" "Client diagnosed with vaginal discharge syndrome"
-  * ^code[+] = HIV.DCareTreatment#DE780
+  * ^code[+] = HIV.D#DE780
 
 * lowerAbdominalPain 1..1 string "Lower Abdominal pain " "Client diagnosed with lower abdominal pain"
-  * ^code[+] = HIV.DCareTreatment#DE781
+  * ^code[+] = HIV.D#DE781
 
 * genitalUlcerDiseaseSyndrome 1..1 string "Genital ulcer disease syndrome" "Client diagnosed with genital ulcer disease syndrome"
-  * ^code[+] = HIV.DCareTreatment#DE782
+  * ^code[+] = HIV.D#DE782
 
 * anorectalDischarge 1..1 string "Anorectal discharge" "Client diagnosed with anorectal discharge"
-  * ^code[+] = HIV.DCareTreatment#DE783
+  * ^code[+] = HIV.D#DE783
 
 * sentForTesting 1..1 string "Sent for testing" "Specimen sent for testing"
-  * ^code[+] = HIV.DCareTreatment#DE784
+  * ^code[+] = HIV.D#DE784
 
-* other 1..1 string "Other" "Other syndrome/STI diagnosed"
-  * ^code[+] = HIV.DCareTreatment#DE785
+* stisOther 1..1 string "Other" "Other syndrome/STI diagnosed"
+  * ^code[+] = HIV.D#DE785
 
-* otherSpecify 1..1 string "Other (specify)" "Other syndrome/STI diagnosed (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE786
+* stisOtherSpecify 1..1 string "Other (specify)" "Other syndrome/STI diagnosed (specify)"
+  * ^code[+] = HIV.D#DE786
 
 * anyStiSyndromeDiagnosed 1..1 string "Any STI syndrome diagnosed" "Was the client diagnosed with any of the five STI syndromes during this visit?"
-  * ^code[+] = HIV.DCareTreatment#DE787
+  * ^code[+] = HIV.D#DE787
 
 * dateOfStiTest 1..1 string "Date of STI test" "Date on which the STI test was conducted"
-  * ^code[+] = HIV.DCareTreatment#DE788
+  * ^code[+] = HIV.D#DE788
 
 * stiTestedFor 1..1 string "STI tested for" "STI for which the client was tested"
-  * ^code[+] = HIV.DCareTreatment#DE789
+  * ^code[+] = HIV.D#DE789
 
 * neisseriaGonorrhoeae 1..1 string "Neisseria gonorrhoeae" "Client tested for Neisseria gonorrhoeae"
-  * ^code[+] = HIV.DCareTreatment#DE790
+  * ^code[+] = HIV.D#DE790
 
 * chlamydiaTrachomatis 1..1 string "Chlamydia trachomatis" "Client tested for Chlamydia trachomatis"
-  * ^code[+] = HIV.DCareTreatment#DE791
+  * ^code[+] = HIV.D#DE791
 
 * trichomonasVaginalis 1..1 string "Trichomonas vaginalis" "Client tested for Trichomonas vaginalis"
-  * ^code[+] = HIV.DCareTreatment#DE792
+  * ^code[+] = HIV.D#DE792
 
 * syphilisTreponemaPallidum 1..1 string "Syphilis (Treponema pallidum)" "Client tested for Syphilis (treponema pallidum)"
-  * ^code[+] = HIV.DCareTreatment#DE793
+  * ^code[+] = HIV.D#DE793
 
 * herpesSimplexVirusHsv1Hsv2 1..1 string "Herpes simplex virus (HSV1, HSV2)" "Client tested for herpes simplex virus (HSV1, HSV2)"
-  * ^code[+] = HIV.DCareTreatment#DE794
+  * ^code[+] = HIV.D#DE794
 
 * mycoplasmaGenitalium 1..1 string "Mycoplasma genitalium" "Client tested for Mycoplasma genitalium"
-  * ^code[+] = HIV.DCareTreatment#DE795
+  * ^code[+] = HIV.D#DE795
 
 * mpox 1..1 string "Mpox" "Client tested for Mpox"
-  * ^code[+] = HIV.DCareTreatment#DE796
+  * ^code[+] = HIV.D#DE796
 
-* hepatitisB 1..1 string "Hepatitis B" "Client tested for Hepatitis B"
-  * ^code[+] = HIV.DCareTreatment#DE797
+* stitHepatitisB 1..1 string "Hepatitis B" "Client tested for Hepatitis B"
+  * ^code[+] = HIV.D#DE797
 
-* hepatitisC 1..1 string "Hepatitis C" "Client tested for Hepatitis C"
-  * ^code[+] = HIV.DCareTreatment#DE798
+* stitHepatitisC 1..1 string "Hepatitis C" "Client tested for Hepatitis C"
+  * ^code[+] = HIV.D#DE798
 
-* other 1..1 string "Other" "Client tested for other STI"
-  * ^code[+] = HIV.DCareTreatment#DE799
+* stitOther 1..1 string "Other" "Client tested for other STI"
+  * ^code[+] = HIV.D#DE799
 
-* otherSpecify 1..1 string "Other (specify)" "Client tested for other STI (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE800
+* stitOtherSpecify 1..1 string "Other (specify)" "Client tested for other STI (specify)"
+  * ^code[+] = HIV.D#DE800
 
 * syphilisTestDate 1..1 string "Syphilis test date" "Date of syphilis test"
-  * ^code[+] = HIV.DCareTreatment#DE801
+  * ^code[+] = HIV.D#DE801
 
 * syphilisTestResult 1..1 string "Syphilis test result" "Result from syphilis test"
-  * ^code[+] = HIV.DCareTreatment#DE802
+  * ^code[+] = HIV.D#DE802
 
-* positive 1..1 string "Positive" "Test result is positive for syphilis"
-  * ^code[+] = HIV.DCareTreatment#DE803
+* sypPositive 1..1 string "Positive" "Test result is positive for syphilis"
+  * ^code[+] = HIV.D#DE803
 
-* negative 1..1 string "Negative" "Test result is negative for syphilis"
-  * ^code[+] = HIV.DCareTreatment#DE804
+* sypNegative 1..1 string "Negative" "Test result is negative for syphilis"
+  * ^code[+] = HIV.D#DE804
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
-  * ^code[+] = HIV.DCareTreatment#DE805
+* sypInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+  * ^code[+] = HIV.D#DE805
 
 * syphilisTreatmentStartDate 1..1 string "Syphilis treatment start date" "Date of initiation of syphilis treatment"
-  * ^code[+] = HIV.DCareTreatment#DE806
+  * ^code[+] = HIV.D#DE806
 
 * gonorrhoeaTestDate 1..1 string "Gonorrhoea test date" "Date of Gonorrhoea test"
-  * ^code[+] = HIV.DCareTreatment#DE807
+  * ^code[+] = HIV.D#DE807
 
 * gonorrhoeaTestResult 1..1 string "Gonorrhoea test result" "Result from Gonorrhoea test"
-  * ^code[+] = HIV.DCareTreatment#DE808
+  * ^code[+] = HIV.D#DE808
 
-* positive 1..1 string "Positive" "Test result is positive for Neisseria gonorrhoeae"
-  * ^code[+] = HIV.DCareTreatment#DE809
+* gntPositive 1..1 string "Positive" "Test result is positive for Neisseria gonorrhoeae"
+  * ^code[+] = HIV.D#DE809
 
-* negative 1..1 string "Negative" "Test result is negative for Neisseria gonorrhoeae"
-  * ^code[+] = HIV.DCareTreatment#DE810
+* gntNegative 1..1 string "Negative" "Test result is negative for Neisseria gonorrhoeae"
+  * ^code[+] = HIV.D#DE810
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
-  * ^code[+] = HIV.DCareTreatment#DE811
+* gntInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+  * ^code[+] = HIV.D#DE811
 
 * gonorrhoeaTreatmentStartDate 1..1 string "Gonorrhoea treatment start date" "Date of initiation of Gonorrhoea treatment"
-  * ^code[+] = HIV.DCareTreatment#DE812
+  * ^code[+] = HIV.D#DE812
 
 * typeOfSpecimen 1..1 string "Type of specimen" "Type of specimen to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE813
+  * ^code[+] = HIV.D#DE813
 
 * blood 1..1 string "Blood" "Blood specimen to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE814
+  * ^code[+] = HIV.D#DE814
 
 * urine 1..1 string "Urine" "Urine specimen to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE815
+  * ^code[+] = HIV.D#DE815
 
 * cervicalOrVaginalSwab 1..1 string "Cervical or vaginal swab" "Cervical or vaginal swab to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE816
+  * ^code[+] = HIV.D#DE816
 
 * urethralOrPenileSwab 1..1 string "Urethral or penile swab" "Urethral or penile swab to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE817
+  * ^code[+] = HIV.D#DE817
 
 * rectalSwab 1..1 string "Rectal swab" "Rectal swab to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE818
+  * ^code[+] = HIV.D#DE818
 
-* other 1..1 string "Other" "Other specimen type to be collected"
-  * ^code[+] = HIV.DCareTreatment#DE819
+* speOther 1..1 string "Other" "Other specimen type to be collected"
+  * ^code[+] = HIV.D#DE819
 
-* otherTypeOfSpecimenSpecify 1..1 string "Other type of specimen (specify)" "Other specimen type to be collected (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE820
+* speOtherTypeOfSpecimenSpecify 1..1 string "Other type of specimen (specify)" "Other specimen type to be collected (specify)"
+  * ^code[+] = HIV.D#DE820
 
 * syphilisTestType 1..1 string "Syphilis test type" "Type of diagnostic test used for syphilis (Treponema pallidum)"
-  * ^code[+] = HIV.DCareTreatment#DE821
+  * ^code[+] = HIV.D#DE821
 
 * treponemal 1..1 string "Treponemal" "Treponemal test used "
-  * ^code[+] = HIV.DCareTreatment#DE822
+  * ^code[+] = HIV.D#DE822
 
 * nonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
-  * ^code[+] = HIV.DCareTreatment#DE823
+  * ^code[+] = HIV.D#DE823
 
 * pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
-  * ^code[+] = HIV.DCareTreatment#DE824
+  * ^code[+] = HIV.D#DE824
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE825
+* syptNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE825
 
-* other 1..1 string "Other" "Other test used"
-  * ^code[+] = HIV.DCareTreatment#DE826
+* tstOther 1..1 string "Other" "Other test used"
+  * ^code[+] = HIV.D#DE826
 
 * otherSyphilisTestTypeSpecify 1..1 string "Other syphilis test type (specify)" "Other test used (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE827
+  * ^code[+] = HIV.D#DE827
 
 * neisseriaGonorrhoeaeTestType 1..1 string "Neisseria gonorrhoeae test type" "Type of diagnostic test used for Neisseria gonorrhoeae"
-  * ^code[+] = HIV.DCareTreatment#DE828
+  * ^code[+] = HIV.D#DE828
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE829
+* ngtNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE829
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
-  * ^code[+] = HIV.DCareTreatment#DE830
+* ngtPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+  * ^code[+] = HIV.D#DE830
 
-* culture 1..1 string "Culture" "Culture test used"
-  * ^code[+] = HIV.DCareTreatment#DE831
+* ngtCulture 1..1 string "Culture" "Culture test used"
+  * ^code[+] = HIV.D#DE831
 
 * microscopy 1..1 string "Microscopy" "Microscopy test used"
-  * ^code[+] = HIV.DCareTreatment#DE832
+  * ^code[+] = HIV.D#DE832
 
-* other 1..1 string "Other" "Other type of test used"
-  * ^code[+] = HIV.DCareTreatment#DE833
+* testOther 1..1 string "Other" "Other type of test used"
+  * ^code[+] = HIV.D#DE833
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE834
+* testOtherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
+  * ^code[+] = HIV.D#DE834
 
 * pocTestForNeisseriaGonorrhoeaeSpecify 1..1 string "POC Test for Neisseria gonorrhoeae (specify)" "Point-of-care (POC) test used for Neisseria gonorrhoeae (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE835
+  * ^code[+] = HIV.D#DE835
 
 * chlamydiaTrachomatisTestType 1..1 string "Chlamydia trachomatis test type" "Type of diagnostic test used for Chlamydia trachomatis"
-  * ^code[+] = HIV.DCareTreatment#DE836
+  * ^code[+] = HIV.D#DE836
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE837
+* cttNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE837
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
-  * ^code[+] = HIV.DCareTreatment#DE838
+* cttPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+  * ^code[+] = HIV.D#DE838
 
-* culture 1..1 string "Culture" "Culture test used"
-  * ^code[+] = HIV.DCareTreatment#DE839
+* cttCulture 1..1 string "Culture" "Culture test used"
+  * ^code[+] = HIV.D#DE839
 
 * elisa 1..1 string "ELISA" "ELISA test used"
-  * ^code[+] = HIV.DCareTreatment#DE840
+  * ^code[+] = HIV.D#DE840
 
-* microscopy 1..1 string "Microscopy" "Microscopy test used"
-  * ^code[+] = HIV.DCareTreatment#DE841
+* cttMicroscopy 1..1 string "Microscopy" "Microscopy test used"
+  * ^code[+] = HIV.D#DE841
 
-* other 1..1 string "Other" "Other type of test used"
-  * ^code[+] = HIV.DCareTreatment#DE842
+* cttOther 1..1 string "Other" "Other type of test used"
+  * ^code[+] = HIV.D#DE842
 
-* otherTestForChlamydiaSpecify 1..1 string "Other test for Chlamydia (specify)" "Other type of test used for Chlaymdia (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE843
+* cttOtherTestForChlamydiaSpecify 1..1 string "Other test for Chlamydia (specify)" "Other type of test used for Chlaymdia (specify)"
+  * ^code[+] = HIV.D#DE843
 
 * pocTestTypeForChlamydiaTestSpecify 1..1 string "POC Test type for Chlamydia test (specify)" "Point-of-care (POC) test used for Chlamydia (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE844
+  * ^code[+] = HIV.D#DE844
 
 * trichomonasVaginalisTestType 1..1 string "Trichomonas vaginalis test type" "Type of diagnostic test used for Trichomonas vaginalis"
-  * ^code[+] = HIV.DCareTreatment#DE845
+  * ^code[+] = HIV.D#DE845
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE846
+* tvtNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE846
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
-  * ^code[+] = HIV.DCareTreatment#DE847
+* tvtPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+  * ^code[+] = HIV.D#DE847
 
-* culture 1..1 string "Culture" "Culture test used"
-  * ^code[+] = HIV.DCareTreatment#DE848
+* tvtCulture 1..1 string "Culture" "Culture test used"
+  * ^code[+] = HIV.D#DE848
 
-* microscopy 1..1 string "Microscopy" "Microscopy test used"
-  * ^code[+] = HIV.DCareTreatment#DE849
+* tvtMicroscopy 1..1 string "Microscopy" "Microscopy test used"
+  * ^code[+] = HIV.D#DE849
 
-* other 1..1 string "Other" "Other type of test used"
-  * ^code[+] = HIV.DCareTreatment#DE850
+* tvtOther 1..1 string "Other" "Other type of test used"
+  * ^code[+] = HIV.D#DE850
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE851
+* tvtOtherSpecify 1..1 string "Other (specify)" "Other type of test used (specify)"
+  * ^code[+] = HIV.D#DE851
 
 * pocTestTypeForTrichomonasVaginalisTestSpecify 1..1 string "POC Test type for Trichomonas vaginalis test (specify)" "Point-of-care (POC) test used (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE852
+  * ^code[+] = HIV.D#DE852
 
 * herpesSimplexVirusHsvTestType 1..1 string "Herpes simplex virus (HSV) test type" "Type of diagnostic test used for Herpes simplex virus (HSV)"
-  * ^code[+] = HIV.DCareTreatment#DE853
+  * ^code[+] = HIV.D#DE853
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE854
+* hsvtNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE854
 
 * antibodyTest 1..1 string "Antibody test " "Antibody test used"
-  * ^code[+] = HIV.DCareTreatment#DE855
+  * ^code[+] = HIV.D#DE855
 
-* other 1..1 string "Other" "Other type of test used"
-  * ^code[+] = HIV.DCareTreatment#DE856
+* hsvtOther 1..1 string "Other" "Other type of test used"
+  * ^code[+] = HIV.D#DE856
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used for Herpes simplex virus (HSV) test (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE857
+* hsvtOtherSpecify 1..1 string "Other (specify)" "Other type of test used for Herpes simplex virus (HSV) test (specify)"
+  * ^code[+] = HIV.D#DE857
 
 * mycoplasmaGenitaliumTestType 1..1 string "Mycoplasma genitalium test type" "Type of diagnostic test used for Mycoplasma genitalium"
-  * ^code[+] = HIV.DCareTreatment#DE858
+  * ^code[+] = HIV.D#DE858
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE859
+* mgtNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE859
 
-* microscopy 1..1 string "Microscopy " "Microscopy test used"
-  * ^code[+] = HIV.DCareTreatment#DE860
+* mgtMicroscopy 1..1 string "Microscopy " "Microscopy test used"
+  * ^code[+] = HIV.D#DE860
 
-* other 1..1 string "Other" "Other type of test used"
-  * ^code[+] = HIV.DCareTreatment#DE861
+* mgtOther 1..1 string "Other" "Other type of test used"
+  * ^code[+] = HIV.D#DE861
 
-* otherSpecify 1..1 string "Other (specify)" "Other type of test used for Mycoplasma genitalium test (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE862
+* mgtOtherSpecify 1..1 string "Other (specify)" "Other type of test used for Mycoplasma genitalium test (specify)"
+  * ^code[+] = HIV.D#DE862
 
 * testTypeForOtherStiTestedForSpecify 1..1 string "Test type for other STI tested for (specify)" "Test type used for the other specified STI"
-  * ^code[+] = HIV.DCareTreatment#DE863
+  * ^code[+] = HIV.D#DE863
 
 * stiTestResult 1..1 string "STI test result" "Result from STI test"
-  * ^code[+] = HIV.DCareTreatment#DE864
+  * ^code[+] = HIV.D#DE864
 
-* positive 1..1 string "Positive" "Test result is positive"
-  * ^code[+] = HIV.DCareTreatment#DE865
+* ostiPositive 1..1 string "Positive" "Test result is positive"
+  * ^code[+] = HIV.D#DE865
 
-* negative 1..1 string "Negative" "Test result is negative"
-  * ^code[+] = HIV.DCareTreatment#DE866
+* ostiNegative 1..1 string "Negative" "Test result is negative"
+  * ^code[+] = HIV.D#DE866
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
-  * ^code[+] = HIV.DCareTreatment#DE867
+* ostiInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+  * ^code[+] = HIV.D#DE867
 
 * dateOfStiConfirmatoryTest 1..1 string "Date of STI confirmatory test" "Date of STI confirmatory test"
-  * ^code[+] = HIV.DCareTreatment#DE868
+  * ^code[+] = HIV.D#DE868
 
 * confirmatorySyphilisTestType 1..1 string "Confirmatory syphilis test type" "Type of test ued for confirmatory syphilis test"
-  * ^code[+] = HIV.DCareTreatment#DE869
+  * ^code[+] = HIV.D#DE869
 
-* treponemal 1..1 string "Treponemal" "Treponemal test used "
-  * ^code[+] = HIV.DCareTreatment#DE870
+* csTreponemal 1..1 string "Treponemal" "Treponemal test used "
+  * ^code[+] = HIV.D#DE870
 
-* nonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
-  * ^code[+] = HIV.DCareTreatment#DE871
+* csNonTreponemal 1..1 string "Non-treponemal" "Non-treponemal test used"
+  * ^code[+] = HIV.D#DE871
 
-* pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
-  * ^code[+] = HIV.DCareTreatment#DE872
+* csPocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
+  * ^code[+] = HIV.D#DE872
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
-  * ^code[+] = HIV.DCareTreatment#DE873
+* csNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+  * ^code[+] = HIV.D#DE873
 
-* other 1..1 string "Other" "Other test used"
-  * ^code[+] = HIV.DCareTreatment#DE874
+* csOther5 1..1 string "Other" "Other test used"
+  * ^code[+] = HIV.D#DE874
 
-* otherSpecify 1..1 string "Other (specify)" "Other test used for confirmatory syphilis test (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE875
+* csOtherSpecify5 1..1 string "Other (specify)" "Other test used for confirmatory syphilis test (specify)"
+  * ^code[+] = HIV.D#DE875
 
 * confirmatoryTestTypeForOtherStiSpecify 1..1 string "Confirmatory test type for other STI (specify)" "Confirmatory test type for other STI"
-  * ^code[+] = HIV.DCareTreatment#DE876
+  * ^code[+] = HIV.D#DE876
 
 * confirmatoryStiTestResult 1..1 string "Confirmatory STI test result" "Result from confirmatory STI test"
-  * ^code[+] = HIV.DCareTreatment#DE877
+  * ^code[+] = HIV.D#DE877
 
-* positive 1..1 string "Positive" "Test result is positive"
-  * ^code[+] = HIV.DCareTreatment#DE878
+* stiPositive 1..1 string "Positive" "Test result is positive"
+  * ^code[+] = HIV.D#DE878
 
-* negative 1..1 string "Negative" "Test result is negative"
-  * ^code[+] = HIV.DCareTreatment#DE879
+* stiNegative 1..1 string "Negative" "Test result is negative"
+  * ^code[+] = HIV.D#DE879
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
-  * ^code[+] = HIV.DCareTreatment#DE880
+* stiInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+  * ^code[+] = HIV.D#DE880
 
 * dateStiTreatmentPrescribed 1..1 string "Date STI treatment prescribed " "Date STI treatment was prescribed to the client"
-  * ^code[+] = HIV.DCareTreatment#DE881
+  * ^code[+] = HIV.D#DE881
 
 * dateStiTreatmentDispensed 1..1 string "Date STI treatment dispensed" "Date STI treatment dispensed to the client"
-  * ^code[+] = HIV.DCareTreatment#DE882
+  * ^code[+] = HIV.D#DE882
 
 * stiTreatmentDispensedSpecify 1..1 string "STI treatment dispensed (specify)" "STI treatment dispensed to the client"
-  * ^code[+] = HIV.DCareTreatment#DE883
+  * ^code[+] = HIV.D#DE883
 
 * midUpperArmCircumferenceMuac 1..1 string "Mid-upper arm circumference (MUAC)" "Clients mid-upper arm circumference (MUAC)"
-  * ^code[+] = HIV.DCareTreatment#DE884
+  * ^code[+] = HIV.D#DE884
 
 * dateOfStartOfFluconazoleProphylaxis 1..1 string "Date of start of fluconazole prophylaxis" "Date of clients start of fluconazole prophylaxis"
-  * ^code[+] = HIV.DCareTreatment#DE885
+  * ^code[+] = HIV.D#DE885
 
 * fluconazoleProphylaxis 1..1 string "Fluconazole prophylaxis" "Client provided with fluconazole prophylaxis"
-  * ^code[+] = HIV.DCareTreatment#DE886
+  * ^code[+] = HIV.D#DE886
 
 * dateStartedCryptococcalMeningitisTreatmentInductionRegimen 1..1 string "Date started cryptococcal meningitis treatment induction regimen" "Date client started cryptococcal meningitis treatment induction regimen"
-  * ^code[+] = HIV.DCareTreatment#DE887
+  * ^code[+] = HIV.D#DE887
 
 * dateCompletedCryptococcalMeningitisTreatmentInductionRegimen 1..1 string "Date completed cryptococcal meningitis treatment induction regimen" "Date client completed cryptococcal meningitis treatment induction regimen"
-  * ^code[+] = HIV.DCareTreatment#DE888
+  * ^code[+] = HIV.D#DE888
 
 * dateStartedCryptococcalMeningitisTreatmentMaintenanceRegimen 1..1 string "Date started cryptococcal meningitis treatment maintenance regimen" "Date client started cryptococcal meningitis treatment maintenance regimen"
-  * ^code[+] = HIV.DCareTreatment#DE889
+  * ^code[+] = HIV.D#DE889
 
 * dateCompletedCryptococcalMeningitisTreatmentMaintenanceRegimen 1..1 string "Date completed cryptococcal meningitis treatment maintenance regimen" "Date client completed cryptococcal meningitis treatment maintenance regimen"
-  * ^code[+] = HIV.DCareTreatment#DE890
+  * ^code[+] = HIV.D#DE890
 
 * dateStartedCryptococcalMeningitisTreatmentConsolidationRegimen 1..1 string "Date started cryptococcal meningitis treatment consolidation regimen" "Date client started cryptococcal meningitis treatment consolidation regimen"
-  * ^code[+] = HIV.DCareTreatment#DE891
+  * ^code[+] = HIV.D#DE891
 
 * dateCompletedCryptococcalMeningitisTreatmentConsolidationRegimen 1..1 string "Date completed cryptococcal meningitis treatment consolidation regimen" "Date client completed cryptococcal meningitis treatment consolidation regimen"
-  * ^code[+] = HIV.DCareTreatment#DE892
+  * ^code[+] = HIV.D#DE892
 
 * stagingOfLiverDisease 1..1 string "Staging of liver disease" "Staging of liver disease in client"
-  * ^code[+] = HIV.DCareTreatment#DE893
+  * ^code[+] = HIV.D#DE893
 
 * f04FibrosisStaging 1..1 string "F0-4, fibrosis staging" "Fibrosis staging of liver disease"
-  * ^code[+] = HIV.DCareTreatment#DE894
+  * ^code[+] = HIV.D#DE894
 
 * f4OrCirrhosisPresenceOfCirrhosis 1..1 string "F4 or cirrhosis, presence of cirrhosis" "Presence of cirrhosis"
-  * ^code[+] = HIV.DCareTreatment#DE895
+  * ^code[+] = HIV.D#DE895
 
 * advancedHivDisease 1..1 string "Advanced HIV disease" "Client has Advanced HIV disease (AHD)"
-  * ^code[+] = HIV.DCareTreatment#DE896
+  * ^code[+] = HIV.D#DE896
 
 * whoFunctionalStatus 1..1 string "WHO functional status" "Functional status of people with advanced HIV disease"
-  * ^code[+] = HIV.DCareTreatment#DE897
+  * ^code[+] = HIV.D#DE897
 
 * workingAbleToPerformUsualWorkInsideAndOutsideTheHome 1..1 string "Working, able to perform usual work inside and outside the home" "Client is able to perform usual work inside and outside the home (working)"
-  * ^code[+] = HIV.DCareTreatment#DE898
+  * ^code[+] = HIV.D#DE898
 
 * ambulatoryAbleToPerformActivityOfDailyLivingAdlNotAbleToWork 1..1 string "Ambulatory, able to perform activity of daily living (ADL), not able to work" "Client is able to perform activity of daily living (ADL), not able to work (ambulatory)"
-  * ^code[+] = HIV.DCareTreatment#DE899
+  * ^code[+] = HIV.D#DE899
 
 * bedriddenNotAbleToPerformAdl 1..1 string "Bedridden not able to perform ADL" "Client is dedridden not able to perform ADL"
-  * ^code[+] = HIV.DCareTreatment#DE900
+  * ^code[+] = HIV.D#DE900
 
 * tailoredAdherenceCounsellingForAdvancedHivDisease 1..1 string "Tailored adherence counselling for advanced HIV disease" "Client provided with tailored adherence counselling for advanced HIV disease"
-  * ^code[+] = HIV.DCareTreatment#DE901
+  * ^code[+] = HIV.D#DE901
 
 * datesOfTracingInterventions 1..1 string "Date(s) of tracing interventions" "Date tracing interventions to support reengagement into HIV care conducted"
-  * ^code[+] = HIV.DCareTreatment#DE902
+  * ^code[+] = HIV.D#DE902
 
 * medicationdrug 1..1 string "Medication/drug" "Current or considered medication/drug, for the purpose of determining drug interactions"
-  * ^code[+] = HIV.DCareTreatment#DE903
+  * ^code[+] = HIV.D#DE903
 
 * rifampicin 1..1 string "Rifampicin" "Rifampicin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE904
+  * ^code[+] = HIV.D#DE904
 
 * halofantrine 1..1 string "Halofantrine" "Halofantrine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE905
+  * ^code[+] = HIV.D#DE905
 
 * lovastatin 1..1 string "Lovastatin" "Lovastatin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE906
+  * ^code[+] = HIV.D#DE906
 
 * simvastatin 1..1 string "Simvastatin" "Simvastatin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE907
+  * ^code[+] = HIV.D#DE907
 
 * hormonalContraception 1..1 string "Hormonal contraception" "Hormonal contraception currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE908
+  * ^code[+] = HIV.D#DE908
 
 * metformin 1..1 string "Metformin" "Metformin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE909
+  * ^code[+] = HIV.D#DE909
 
 * astemizole 1..1 string "Astemizole" "Astemizole currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE910
+  * ^code[+] = HIV.D#DE910
 
 * terfenadine 1..1 string "Terfenadine" "Terfenadine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE911
+  * ^code[+] = HIV.D#DE911
 
-* tdf 1..1 string "TDF" "TDF currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE912
+* tdf2 1..1 string "TDF" "TDF currently being taken by, or considered for, client"
+  * ^code[+] = HIV.D#DE912
 
 * simeprevir 1..1 string "Simeprevir" "Simeprevir currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE913
+  * ^code[+] = HIV.D#DE913
 
 * ombitasvirParitaprevirRitonavirDasabuvir 1..1 string "Ombitasvir + paritaprevir/ritonavir + dasabuvir" "Ombitasvir + paritaprevir/ritonavir + dasabuvir currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE914
+  * ^code[+] = HIV.D#DE914
 
-* methadone 1..1 string "Methadone" "Methadone currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE915
+* methadone2 1..1 string "Methadone" "Methadone currently being taken by, or considered for, client"
+  * ^code[+] = HIV.D#DE915
 
-* buprenorphine 1..1 string "Buprenorphine" "Buprenorphine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE916
+* buprenorphine2 1..1 string "Buprenorphine" "Buprenorphine currently being taken by, or considered for, client"
+  * ^code[+] = HIV.D#DE916
 
 * dofetilide 1..1 string "Dofetilide" "Dofetilide currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE917
+  * ^code[+] = HIV.D#DE917
 
 * carbamazepine 1..1 string "Carbamazepine" "Carbamazepine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE918
+  * ^code[+] = HIV.D#DE918
 
 * phenobarbital 1..1 string "Phenobarbital" "Phenobarbital currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE919
+  * ^code[+] = HIV.D#DE919
 
 * phenytoin 1..1 string "Phenytoin" "Phenytoin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE920
+  * ^code[+] = HIV.D#DE920
 
 * polyvalentCationProductsContainingMgAlFeCaAndZn 1..1 string "Polyvalent cation products containing Mg, Al, Fe, Ca and Zn" "Polyvalent cation products containing Mg, Al, Fe, Ca and Zn currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE921
+  * ^code[+] = HIV.D#DE921
 
 * amodiaquine 1..1 string "Amodiaquine" "Amodiaquine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE922
+  * ^code[+] = HIV.D#DE922
 
 * cisapride 1..1 string "Cisapride" "Cisapride currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE923
+  * ^code[+] = HIV.D#DE923
 
 * ergotamine 1..1 string "Ergotamine" "Ergotamine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE924
+  * ^code[+] = HIV.D#DE924
 
 * dihydroergotamine 1..1 string "Dihydroergotamine" "Dihydroergotamine currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE925
+  * ^code[+] = HIV.D#DE925
 
 * midazolam 1..1 string "Midazolam" "Midazolam currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE926
+  * ^code[+] = HIV.D#DE926
 
 * triazolam 1..1 string "Triazolam" "Triazolam currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE927
+  * ^code[+] = HIV.D#DE927
 
 * estrogenBasedHormonalContraception 1..1 string "Estrogen-based hormonal contraception" "Estrogen-based hormonal contraception currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE928
+  * ^code[+] = HIV.D#DE928
 
 * ribavirin 1..1 string "Ribavirin" "Ribavirin currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE929
+  * ^code[+] = HIV.D#DE929
 
 * peginterferonAlfa2A 1..1 string "Peginterferon alfa-2a" "Peginterferon alfa-2a currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE930
+  * ^code[+] = HIV.D#DE930
 
-* other 1..1 string "Other" "Other medication currently being taken by, or considered for, client"
-  * ^code[+] = HIV.DCareTreatment#DE931
+* curmedOther 1..1 string "Other" "Other medication currently being taken by, or considered for, client"
+  * ^code[+] = HIV.D#DE931
 
-* otherSpecify 1..1 string "Other (specify)" "Other medication currently being taken by, or considered for, client (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE932
+* currmedOtherSpecify 1..1 string "Other (specify)" "Other medication currently being taken by, or considered for, client (specify)"
+  * ^code[+] = HIV.D#DE932
 
 * medicationChangeRecommended 1..1 string "Medication change recommended" "A medication change is recommended for the client based upon current or considered medications"
-  * ^code[+] = HIV.DCareTreatment#DE933
+  * ^code[+] = HIV.D#DE933
 
 
 
@@ -4495,329 +4495,329 @@ Description:  "Logical Model for HIV.D HIV-TB data elements."
 * ^status = #active
 
 * whoHivClinicalStageConditionOrSymptom 1..1 string "WHO HIV clinical stage condition or symptom" "New or recurrent clinical events used to categorize HIV disease severity based at baseline and follow up"
-  * ^code[+] = HIV.DCareTreatment#DE934
+  * ^code[+] = HIV.D#DE934
 
 * pulmonaryTb 1..1 string "Pulmonary TB" "Clients symptoms include pulmonary TB"
-  * ^code[+] = HIV.DCareTreatment#DE935
+  * ^code[+] = HIV.D#DE935
 
 * lymphNodeTb 1..1 string "Lymph node TB" "Clients symptoms include lymph node TB"
-  * ^code[+] = HIV.DCareTreatment#DE936
+  * ^code[+] = HIV.D#DE936
 
 * extrapulmonaryTb 1..1 string "Extrapulmonary TB" "Clients symptoms include extrapulmonary tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE937
+  * ^code[+] = HIV.D#DE937
 
 * tbDisease 1..1 string "TB disease" "Whether the client has tuberculosis (TB) disease. Sometimes known as active TB"
-  * ^code[+] = HIV.DCareTreatment#DE938
+  * ^code[+] = HIV.D#DE938
 
 * tbDiagnosisResult 1..1 string "TB diagnosis result" "Final result of the TB investigation (bacteriological and/or clinical)"
-  * ^code[+] = HIV.DCareTreatment#DE939
+  * ^code[+] = HIV.D#DE939
 
 * diagnosedTb 1..1 string "Diagnosed TB" "Client is diagnosed with TB disease"
-  * ^code[+] = HIV.DCareTreatment#DE940
+  * ^code[+] = HIV.D#DE940
 
 * tbExcluded 1..1 string "TB excluded" "Client is not diagnosed with TB"
-  * ^code[+] = HIV.DCareTreatment#DE941
+  * ^code[+] = HIV.D#DE941
 
 * methodOfTbDiagnosis 1..1 string "Method of TB diagnosis" "Method used to set the TB diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE942
+  * ^code[+] = HIV.D#DE942
 
 * bacteriologicallyConfirmed 1..1 string "Bacteriologically confirmed" "A person from whom a biological specimen is positive by smear microscopy, culture or a WHO-recommended rapid diagnostic"
-  * ^code[+] = HIV.DCareTreatment#DE943
+  * ^code[+] = HIV.D#DE943
 
 * clinicallyDiagnosed 1..1 string "Clinically diagnosed" "A person who does not fulfil the criteria for bacteriological confirmation but has been diagnosed with TB disease by a medical practitioner who has decided to give the person a full course of TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE944
+  * ^code[+] = HIV.D#DE944
 
 * presumptiveTb 1..1 string "Presumptive TB" "Client has signs or symptoms of tuberculosis (TB) without laboratory confirmation"
-  * ^code[+] = HIV.DCareTreatment#DE945
+  * ^code[+] = HIV.D#DE945
 
 * presumptiveTbRegistrationDate 1..1 string "Presumptive TB registration date" "Date client is registered as having signs or symptoms of tuberculosis (TB) without laboratory confirmation"
-  * ^code[+] = HIV.DCareTreatment#DE946
+  * ^code[+] = HIV.D#DE946
 
 * tbTreatmentHistory 1..1 string "TB treatment history" "History of previous TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE947
+  * ^code[+] = HIV.D#DE947
 
 * new 1..1 string "New" "A person with TB disease who has never been treated for TB before or has only previously ever taken TB drugs for less than 1 month"
-  * ^code[+] = HIV.DCareTreatment#DE948
+  * ^code[+] = HIV.D#DE948
 
 * recurrent 1..1 string "Recurrent" "A person with TB disease who was previously treated for TB, was declared cured or treatment completed at the end of their most recent course of TB treatment and is now diagnosed with a new episode of TB."
-  * ^code[+] = HIV.DCareTreatment#DE949
+  * ^code[+] = HIV.D#DE949
 
 * reRegistered 1..1 string "Re-registered" "A person with TB disease who had been notified previously as a TB case, but was not declared cured or treatment completed, and is now being registered for a new course of TB treatment. "
-  * ^code[+] = HIV.DCareTreatment#DE950
+  * ^code[+] = HIV.D#DE950
 
 * unknown 1..1 string "Unknown" "A person with TB disease who has undocumented history of TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE951
+  * ^code[+] = HIV.D#DE951
 
 * dateOfTbDiagnosis 1..1 string "Date of TB diagnosis" "The date when the diagnosis was established"
-  * ^code[+] = HIV.DCareTreatment#DE952
+  * ^code[+] = HIV.D#DE952
 
 * currentlyOnTbPreventiveTreatmentTpt 1..1 string "Currently on TB preventive treatment (TPT)" "Client is currently taking TPT"
-  * ^code[+] = HIV.DCareTreatment#DE953
+  * ^code[+] = HIV.D#DE953
 
 * tbPreventiveTreatmentTptStartDate 1..1 string "TB preventive treatment (TPT) start date" "The date on which the client began taking TPT"
-  * ^code[+] = HIV.DCareTreatment#DE954
+  * ^code[+] = HIV.D#DE954
 
 * tbPreventiveTreatmentTptCompletionDate 1..1 string "TB preventive treatment (TPT) completion date" "The date on which the client completed TPT"
-  * ^code[+] = HIV.DCareTreatment#DE955
+  * ^code[+] = HIV.D#DE955
 
 * tbScreeningAlgorithm 1..1 string "TB screening algorithm" "Screening algorithm selected for screening activities"
-  * ^code[+] = HIV.DCareTreatment#DE956
+  * ^code[+] = HIV.D#DE956
 
 * screeningWithCough 1..1 string "Screening with cough" "Client screened for TB based on cough symptom"
-  * ^code[+] = HIV.DCareTreatment#DE957
+  * ^code[+] = HIV.D#DE957
 
 * screeningWithAnyTbSymptom 1..1 string "Screening with any TB symptom" "Client screened for TB based on any TB symptom"
-  * ^code[+] = HIV.DCareTreatment#DE958
+  * ^code[+] = HIV.D#DE958
 
 * w4ssSingleScreeningAlgorithm 1..1 string "W4SS single screening algorithm" "Client screened for TB based on the WHO-recommended four-symptom screen"
-  * ^code[+] = HIV.DCareTreatment#DE959
+  * ^code[+] = HIV.D#DE959
 
 * crpSingleScreeningAlgorithm 1..1 string "CRP single screening algorithm" "Client screened for TB based on C-reactive protein (CRP) testing"
-  * ^code[+] = HIV.DCareTreatment#DE960
+  * ^code[+] = HIV.D#DE960
 
 * cxrSingleScreeningAlgorithm 1..1 string "CXR single screening algorithm" "Client screened for TB with a chest radiography (CXR)"
-  * ^code[+] = HIV.DCareTreatment#DE961
+  * ^code[+] = HIV.D#DE961
 
 * parallelScreeningAlgorithmWithW4SsAndCrp 1..1 string "Parallel screening algorithm with W4SS and CRP" "Client screened for TB using parallel screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing"
-  * ^code[+] = HIV.DCareTreatment#DE962
+  * ^code[+] = HIV.D#DE962
 
 * sequentialPositiveScreeningAlgorithmWithW4SsAndCrp 1..1 string "Sequential positive screening algorithm with W4SS and CRP" "Client screened for TB using sequential positive screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing."
-  * ^code[+] = HIV.DCareTreatment#DE963
+  * ^code[+] = HIV.D#DE963
 
 * sequentialNegativeScreeningAlgorithmWithW4SsAndCrp 1..1 string "Sequential negative screening algorithm with W4SS and CRP" "Client screened for TB using sequential negative screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing"
-  * ^code[+] = HIV.DCareTreatment#DE964
+  * ^code[+] = HIV.D#DE964
 
 * parallelScreeningAlgorithmWithW4SsAndCxr 1..1 string "Parallel screening algorithm with W4SS and CXR" "Client screened for TB using the parallel screening algorithm with W4SS and CXR"
-  * ^code[+] = HIV.DCareTreatment#DE965
+  * ^code[+] = HIV.D#DE965
 
 * sequentialPositiveScreeningAlgorithmWithW4SsAndCxr 1..1 string "Sequential positive screening algorithm with W4SS and CXR" "Client screened for TB using sequential positive screening with WHO-recommended four-symptom screen and chest radiography"
-  * ^code[+] = HIV.DCareTreatment#DE966
+  * ^code[+] = HIV.D#DE966
 
 * sequentialNegativeScreeningAlgorithmWithW4SsAndCxr 1..1 string "Sequential negative screening algorithm with W4SS and CXR" "Client screened for TB using sequential negative screening with WHO-recommended four-symptom screen and chest radiography"
-  * ^code[+] = HIV.DCareTreatment#DE967
+  * ^code[+] = HIV.D#DE967
 
 * screeningWithMwrd 1..1 string "Screening with mWRD" "Client screened for TB with a molecular WHO-recommended rapid diagnostic test (mWRD), such as an Xpert MTB/RIF test to detect Mycobacterium tuberculosis (MTB)"
-  * ^code[+] = HIV.DCareTreatment#DE968
+  * ^code[+] = HIV.D#DE968
 
 * clinicalAssessment 1..1 string "Clinical assessment" "Client screened for with a clinical evaluation for tuberculosis (TB) based on national guidelines. Clinical assessment may be used as an eligibility evaluation for testing with LF-LAM or for empiric TB treatment."
-  * ^code[+] = HIV.DCareTreatment#DE969
+  * ^code[+] = HIV.D#DE969
 
 * otherTbScreeningAlgorithm 1..1 string "Other TB screening algorithm" "Client screened for tuberculosis (TB) with a different screening method not listed"
-  * ^code[+] = HIV.DCareTreatment#DE970
+  * ^code[+] = HIV.D#DE970
 
 * otherTbScreeningAlgorithmSpecify 1..1 string "Other TB screening algorithm (specify)" "Client screened for tuberculosis (TB) with a different screening method not listed (specify)"
-  * ^code[+] = HIV.DCareTreatment#DE971
+  * ^code[+] = HIV.D#DE971
 
 * tbScreeningConducted 1..1 string "TB screening conducted" "A screening for tuberculosis (TB) was performed"
-  * ^code[+] = HIV.DCareTreatment#DE972
+  * ^code[+] = HIV.D#DE972
 
 * symptomsOfTb 1..1 string "Symptoms of TB" "Symptoms that may indicate TB disease in clients living with HIV, based on a clinical algorithm"
-  * ^code[+] = HIV.DCareTreatment#DE973
+  * ^code[+] = HIV.D#DE973
 
 * currentCough 1..1 string "Current cough" "Client has a cough regardless of duration"
-  * ^code[+] = HIV.DCareTreatment#DE974
+  * ^code[+] = HIV.D#DE974
 
-* prolongedCough>=2W 1..1 string "Prolonged cough (>=2w)" "Client has a prolonged cough of 2 weeks or more"
-  * ^code[+] = HIV.DCareTreatment#DE975
+* prolongedCoughGte2W 1..1 string "Prolonged cough (>=2w)" "Client has a prolonged cough of 2 weeks or more"
+  * ^code[+] = HIV.D#DE975
 
-* feverOf39°COrGreater 1..1 string "Fever of 39 °C or greater" "Client has a fever with a measured temperature of 102.2 °F/39 °C or greater"
-  * ^code[+] = HIV.DCareTreatment#DE976
+* feverOf39COrGreater 1..1 string "Fever of 39 °C or greater" "Client has a fever with a measured temperature of 102.2 °F/39 °C or greater"
+  * ^code[+] = HIV.D#DE976
 
 * weightLossReported 1..1 string "Weight loss (reported)" "Unexplained weight loss"
-  * ^code[+] = HIV.DCareTreatment#DE977
+  * ^code[+] = HIV.D#DE977
 
 * nightSweats 1..1 string "Night sweats" "Client reports experiencing night sweats"
-  * ^code[+] = HIV.DCareTreatment#DE978
+  * ^code[+] = HIV.D#DE978
 
 * poorWeightGain 1..1 string "Poor weight gain" "Client reports poor weight gain of child or infant or growth curve flattening or weight for age <-2 Z-scores."
-  * ^code[+] = HIV.DCareTreatment#DE979
+  * ^code[+] = HIV.D#DE979
 
 * reducedPlayfulness 1..1 string "Reduced playfulness" "Client reports reduced playfulness of child"
-  * ^code[+] = HIV.DCareTreatment#DE980
+  * ^code[+] = HIV.D#DE980
 
 * chestPain 1..1 string "Chest pain" "Client reports chest pain"
-  * ^code[+] = HIV.DCareTreatment#DE981
+  * ^code[+] = HIV.D#DE981
 
 * haemoptysis 1..1 string "Haemoptysis" "Client reports experiencing haemoptysis"
-  * ^code[+] = HIV.DCareTreatment#DE982
+  * ^code[+] = HIV.D#DE982
 
 * lethargy 1..1 string "Lethargy" "Client reports lethargy"
-  * ^code[+] = HIV.DCareTreatment#DE983
+  * ^code[+] = HIV.D#DE983
 
 * none 1..1 string "None" "No symptoms of TB identified"
-  * ^code[+] = HIV.DCareTreatment#DE984
+  * ^code[+] = HIV.D#DE984
 
 * historyOfContactWithAPersonWithTb 1..1 string "History of contact with a person with TB" "Client had a history of a contact with a person with TB"
-  * ^code[+] = HIV.DCareTreatment#DE985
+  * ^code[+] = HIV.D#DE985
 
 * tbScreeningResult 1..1 string "TB screening result" "Record the result of the tuberculosis (TB) screening"
-  * ^code[+] = HIV.DCareTreatment#DE986
+  * ^code[+] = HIV.D#DE986
 
 * screenPositiveForTb 1..1 string "Screen positive for TB" "Screening result was positive for tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE987
+  * ^code[+] = HIV.D#DE987
 
 * screenNegativeForTb 1..1 string "Screen negative for TB" "Screening result was negative for tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE988
+  * ^code[+] = HIV.D#DE988
 
 * inconclusive 1..1 string "Inconclusive" "Screening result was inconclusive for tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE989
+  * ^code[+] = HIV.D#DE989
 
 * tbScreeningDate 1..1 string "TB screening date" "Date the TB screening was conducted"
-  * ^code[+] = HIV.DCareTreatment#DE990
+  * ^code[+] = HIV.D#DE990
 
 * tbScreeningResultDate 1..1 string "TB screening result date" "The date when the result of TB screening is available"
-  * ^code[+] = HIV.DCareTreatment#DE991
+  * ^code[+] = HIV.D#DE991
 
 * tbDiagnosticTestCategory 1..1 string "TB diagnostic test category" "The type of diagnostic test performed to detect tuberculosis (TB) disease"
-  * ^code[+] = HIV.DCareTreatment#DE992
+  * ^code[+] = HIV.D#DE992
 
 * lfLam 1..1 string "LF-LAM" "Client tested for tuberculosis with a lateral flow urine lipoarabinomannan assay"
-  * ^code[+] = HIV.DCareTreatment#DE993
+  * ^code[+] = HIV.D#DE993
 
 * mwrdTestForTb 1..1 string "mWRD test for TB" "Client tested with a WHO-recommended molecular diagnostic test to detect Mycobacterium tuberculosis (MTB)"
-  * ^code[+] = HIV.DCareTreatment#DE994
+  * ^code[+] = HIV.D#DE994
 
 * microscopySputumAcidFastBacilliAfb 1..1 string "Microscopy - Sputum acid-fast bacilli (AFB)" "Client tested for tuberculosis with a sputum acid-fast bacilli (AFB)"
-  * ^code[+] = HIV.DCareTreatment#DE995
+  * ^code[+] = HIV.D#DE995
 
 * tbCulture 1..1 string "TB Culture" "Client tested for tuberculosis (TB) with a culture"
-  * ^code[+] = HIV.DCareTreatment#DE996
+  * ^code[+] = HIV.D#DE996
 
 * tbDiagnosticTestDate 1..1 string "TB diagnostic test date" "The date when TB diagnostic test was performed"
-  * ^code[+] = HIV.DCareTreatment#DE997
+  * ^code[+] = HIV.D#DE997
 
 * testSampleCollectionDate 1..1 string "Test sample collection date" "The date when the test sample was collected from the client"
-  * ^code[+] = HIV.DCareTreatment#DE998
+  * ^code[+] = HIV.D#DE998
 
 * tbDiagnosticTestResultDate 1..1 string "TB diagnostic test result date" "The date when the result of the TB diagnostic test is available"
-  * ^code[+] = HIV.DCareTreatment#DE999
+  * ^code[+] = HIV.D#DE999
 
 * tbTreatmentStarted 1..1 string "TB treatment started" "Indicates if TB treatment was started"
-  * ^code[+] = HIV.DCareTreatment#DE1000
+  * ^code[+] = HIV.D#DE1000
 
 * tbTreatmentStartDate 1..1 string "TB treatment start date" "The date on which the client start or restarted tuberculosis (TB) treatment"
-  * ^code[+] = HIV.DCareTreatment#DE1001
+  * ^code[+] = HIV.D#DE1001
 
 * tbTreatmentOutcome 1..1 string "TB treatment outcome" "Indicates patients TB treatment outcome"
-  * ^code[+] = HIV.DCareTreatment#DE1002
+  * ^code[+] = HIV.D#DE1002
 
 * treatmentFailed 1..1 string "Treatment failed" "The treatment regimen terminated or permanently changed to a new regimen or treatment strategy. Reasons for the change include:
 - no clinical response or no bacteriological response, or both (see note;
 - adverse drug reaction; or
 - evidence of additional drug-resistance to medicines in the regimen."
-  * ^code[+] = HIV.DCareTreatment#DE1003
+  * ^code[+] = HIV.D#DE1003
 
 * cured 1..1 string "Cured" "Client with pulmonary TB with bacteriologically confirmed TB at the beginning of treatment who completed treatment as recommended by the national policy, with evidence of bacteriological response and no evidence of failure."
-  * ^code[+] = HIV.DCareTreatment#DE1004
+  * ^code[+] = HIV.D#DE1004
 
 * treatmentCompleted 1..1 string "Treatment completed" "Patient completed treatment as recommended by the national policy but the outcome does not meet the definition for cure or treatment failure"
-  * ^code[+] = HIV.DCareTreatment#DE1005
+  * ^code[+] = HIV.D#DE1005
 
 * died 1..1 string "Died" "Client died before starting treatment or during the course of treatment"
-  * ^code[+] = HIV.DCareTreatment#DE1006
+  * ^code[+] = HIV.D#DE1006
 
 * lostToFollowUp 1..1 string "Lost to follow-up" "Client was lost to follow-up"
-  * ^code[+] = HIV.DCareTreatment#DE1007
+  * ^code[+] = HIV.D#DE1007
 
 * notEvaluated 1..1 string "Not evaluated" "No treatment outcome was assigned. This includes cases transferred out' to another treatment unit and whose treatment outcome is unknown; however, it excludes those lost to follow-up."
-  * ^code[+] = HIV.DCareTreatment#DE1008
+  * ^code[+] = HIV.D#DE1008
 
 * tbTreatmentCompletionDate 1..1 string "TB treatment completion date" "Date client completes TB treatment"
-  * ^code[+] = HIV.DCareTreatment#DE1009
+  * ^code[+] = HIV.D#DE1009
 
 * tbTreatmentRegimenComposition 1..1 string "TB treatment regimen composition" "TB drugs currently being taken by the client"
-  * ^code[+] = HIV.DCareTreatment#DE1010
+  * ^code[+] = HIV.D#DE1010
 
 * isoniazid 1..1 string "Isoniazid" "Client is currently taking isoniazid"
-  * ^code[+] = HIV.DCareTreatment#DE1011
+  * ^code[+] = HIV.D#DE1011
 
 * rifampicin 1..1 string "Rifampicin" "Client is currently taking rifampicin"
-  * ^code[+] = HIV.DCareTreatment#DE1012
+  * ^code[+] = HIV.D#DE1012
 
 * rifabutin 1..1 string "Rifabutin" "Client is currently taking rifabutin"
-  * ^code[+] = HIV.DCareTreatment#DE1013
+  * ^code[+] = HIV.D#DE1013
 
 * ethambutol 1..1 string "Ethambutol" "Client is currently taking ethambutol"
-  * ^code[+] = HIV.DCareTreatment#DE1014
+  * ^code[+] = HIV.D#DE1014
 
 * levofloxacin 1..1 string "Levofloxacin" "Client is currently taking levofloxacin"
-  * ^code[+] = HIV.DCareTreatment#DE1015
+  * ^code[+] = HIV.D#DE1015
 
 * pyrazinamide 1..1 string "Pyrazinamide" "Client is currently taking pyrazinamide, a first-line anti-tuberculosis drug"
-  * ^code[+] = HIV.DCareTreatment#DE1016
+  * ^code[+] = HIV.D#DE1016
 
 * eligibleForTbPreventiveTreatment 1..1 string "Eligible for TB preventive treatment" "Client is eligible for tuberculosis preventive treatment (TPT)"
-  * ^code[+] = HIV.DCareTreatment#DE1017
+  * ^code[+] = HIV.D#DE1017
 
 * dateWhenEligibilityForTbPreventiveTreatmentTptWasDetermined 1..1 string "Date when eligibility for TB preventive treatment (TPT) was determined" "Date when a determination of the clients eligibility for TPT was made"
-  * ^code[+] = HIV.DCareTreatment#DE1018
+  * ^code[+] = HIV.D#DE1018
 
 * tbStatusAtArtStart 1..1 string "TB status at ART start" "Clients tuberculosis (TB) status when antiretroviral therapy (ART) is started"
-  * ^code[+] = HIV.DCareTreatment#DE1019
+  * ^code[+] = HIV.D#DE1019
 
 * symptomaticForTb 1..1 string "Symptomatic for TB" "Signs or symptoms of tuberculosis (TB) without laboratory confirmation"
-  * ^code[+] = HIV.DCareTreatment#DE1020
+  * ^code[+] = HIV.D#DE1020
 
-* diagnosedTb 1..1 string "Diagnosed TB" "Laboratory confirmed tuberculosis (TB) diagnosis"
-  * ^code[+] = HIV.DCareTreatment#DE1021
+* lcDiagnosedTb 1..1 string "Diagnosed TB" "Laboratory confirmed tuberculosis (TB) diagnosis"
+  * ^code[+] = HIV.D#DE1021
 
-* none 1..1 string "None" "Client has no signs or symptoms of tuberculosis (TB) and is not diagnosed with tuberculosis (TB)"
-  * ^code[+] = HIV.DCareTreatment#DE1022
+* lcNone 1..1 string "None" "Client has no signs or symptoms of tuberculosis (TB) and is not diagnosed with tuberculosis (TB)"
+  * ^code[+] = HIV.D#DE1022
 
 * tbPreventionServicesAccepted 1..1 string "TB prevention services accepted" "Indicates if the client accepts to be evaluated for TB infection and to take the treatment in case he/she is eligible"
-  * ^code[+] = HIV.DCareTreatment#DE1023
+  * ^code[+] = HIV.D#DE1023
 
 * tbMeningitis 1..1 string "TB meningitis" "Type of extrapulmonary TB identified for the client is TB meningitis"
-  * ^code[+] = HIV.DCareTreatment#DE1024
+  * ^code[+] = HIV.D#DE1024
 
 * cReactiveProteinTestDate 1..1 string "C reactive protein test date" "The date on which the client has a test for C reactive protein"
-  * ^code[+] = HIV.DCareTreatment#DE1025
+  * ^code[+] = HIV.D#DE1025
 
 * cReactiveProteinTestResult 1..1 string "C reactive protein test result" "Test result of the clients C reactive protein test result in mg/L"
-  * ^code[+] = HIV.DCareTreatment#DE1026
+  * ^code[+] = HIV.D#DE1026
 
 * cReactiveProteinTestResultDate 1..1 string "C reactive protein test result date" "The date when the clients test result for C reactive protein is available"
-  * ^code[+] = HIV.DCareTreatment#DE1027
+  * ^code[+] = HIV.D#DE1027
 
 * tptRegimenType 1..1 string "TPT regimen type" "Type of TPT regimen the client is currently on"
-  * ^code[+] = HIV.DCareTreatment#DE1028
+  * ^code[+] = HIV.D#DE1028
 
-* 3hp 1..1 string "3HP" "The clients current TPT regimen is 3HP"
-  * ^code[+] = HIV.DCareTreatment#DE1029
+* threeHp 1..1 string "3HP" "The clients current TPT regimen is 3HP"
+  * ^code[+] = HIV.D#DE1029
 
-* 1hp 1..1 string "1HP" "The clients current TPT regimen is 1HP"
-  * ^code[+] = HIV.DCareTreatment#DE1030
+* oneHp 1..1 string "1HP" "The clients current TPT regimen is 1HP"
+  * ^code[+] = HIV.D#DE1030
 
-* 6h 1..1 string "6H" "The clients current TPT regimen is 6H"
-  * ^code[+] = HIV.DCareTreatment#DE1031
+* sixH 1..1 string "6H" "The clients current TPT regimen is 6H"
+  * ^code[+] = HIV.D#DE1031
 
 * sixMonthsOfLevofloxacinDaily 1..1 string "Six months of levofloxacin daily" "The clients current TPT regimen is six months of levofloxacin daily"
-  * ^code[+] = HIV.DCareTreatment#DE1032
+  * ^code[+] = HIV.D#DE1032
 
 * otherTbPreventiveTreatmentTptRegimen 1..1 string "Other TB preventive treatment (TPT) regimen" "The clients current TPT regimen is another regimen than those listed above"
-  * ^code[+] = HIV.DCareTreatment#DE1033
+  * ^code[+] = HIV.D#DE1033
 
 * tbPreventiveTreatmentTptStatus 1..1 string "TB preventive treatment (TPT) status" "Indicates the current status of TB preventive treatment (TPT)"
-  * ^code[+] = HIV.DCareTreatment#DE1034
+  * ^code[+] = HIV.D#DE1034
 
 * notStarted 1..1 string "Not started" "The client did not start the TB preventive treatment (TPT)"
-  * ^code[+] = HIV.DCareTreatment#DE1035
+  * ^code[+] = HIV.D#DE1035
 
 * onTpt 1..1 string "On TPT" "The client started the TB preventive treatment (TPT) and is currently taking the medication, without treatment interruptions"
-  * ^code[+] = HIV.DCareTreatment#DE1036
+  * ^code[+] = HIV.D#DE1036
 
 * onTptWithInterruptions 1..1 string "On TPT with interruptions" "The client started the TB preventive treatment (TPT) and is currently taking the medication, with treatment interruptions"
-  * ^code[+] = HIV.DCareTreatment#DE1037
+  * ^code[+] = HIV.D#DE1037
 
 * onHold 1..1 string "On hold" "The health care worker has temporarily stopped the TB preventive treatment (TPT), but TPT is expected to continue again later. May also be called \"suspended\"."
-  * ^code[+] = HIV.DCareTreatment#DE1038
+  * ^code[+] = HIV.D#DE1038
 
 * completed 1..1 string "Completed" "TB preventive treatment (TPT) was completed"
-  * ^code[+] = HIV.DCareTreatment#DE1039
+  * ^code[+] = HIV.D#DE1039
 
 
 
-Logical:      HIV_EF
+Logical:      HIV.EF
 Title:        "HIV.E-F PMTCT Logical Model"
 Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * ^name = "HIV_EF_PMTCT"
@@ -5012,10 +5012,10 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * notPreterm 1..1 string "Not preterm" "The birth was not preterm"
   * ^code[+] = HIV.EF#DE63
 
-* preterm<37WeeksGestation 1..1 string "Preterm (<37 weeks gestation)" "Gestational age at birth was <37 weeks"
+* pretermLt37WeeksGestation 1..1 string "Preterm (<37 weeks gestation)" "Gestational age at birth was <37 weeks"
   * ^code[+] = HIV.EF#DE64
 
-* veryPreterm<32WeeksGestation 1..1 string "Very preterm (<32 weeks gestation)" "Gestational age at birth was <32 weeks"
+* veryPretermLt32WeeksGestation 1..1 string "Very preterm (<32 weeks gestation)" "Gestational age at birth was <32 weeks"
   * ^code[+] = HIV.EF#DE65
 
 * maternalArtStartDate 1..1 string "Maternal ART start date" "The date on which the infant was started or restarted on ART"
@@ -5159,10 +5159,10 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * hivExposedInfantOrChild 1..1 string "HIV-exposed infant or child" "Whether the infant or child was determined to have had HIV exposure"
   * ^code[+] = HIV.EF#DE112
 
-* keyPopulationMember* 1..1 string "Key population member*" "Mother is a member of a key population which has an increased risk of HIV"
+* keyPopulationMember 1..1 string "Key population member*" "Mother is a member of a key population which has an increased risk of HIV"
   * ^code[+] = HIV.EF#DE113
 
-* keyPopulationMemberType* 1..1 string "Key population member type*" "The type of key population that the infants mother is included in"
+* keyPopulationMemberType 1..1 string "Key population member type*" "The type of key population that the infants mother is included in"
   * ^code[+] = HIV.EF#DE114
 
 * sexWorker 1..1 string "Sex worker" "Infants mother is a sex worker"
@@ -5342,10 +5342,10 @@ Description:  "Logical Model for HIV.E-F PMTCT data elements."
 * maternalAndChildHealthServiceVisit 1..1 string "Maternal and child health service visit" "Maternal and child health service visit attended by an HIV-exposed infant"
   * ^code[+] = HIV.EF#DE173
 
-* 12MonthVisit 1..1 string "12-month visit" "HIV-exposed infant attending MCH services for a 12-month visit"
+* twelveMonthVisit 1..1 string "12-month visit" "HIV-exposed infant attending MCH services for a 12-month visit"
   * ^code[+] = HIV.EF#DE174
 
-* 24MonthVisit 1..1 string "24-month visit" "HIV-exposed infants attending MCH services for a 24-month visit"
+* twentyFourMonthVisit 1..1 string "24-month visit" "HIV-exposed infants attending MCH services for a 24-month visit"
   * ^code[+] = HIV.EF#DE175
 
 * firstVisitAfterTheEndOfBreastfeeding 1..1 string "First visit after the end of breastfeeding" "HIV-exposed infant attending MCH services for a first visit after the end of breastfeeding"
@@ -5716,22 +5716,22 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * reasonHepatitisBTestNotConducted 1..1 string "Reason Hepatitis B test not conducted" "Reason why a hepatitis B test was not done"
   * ^code[+] = HIV.G#DE22
 
-* testDelayedToNextContactOrReferred 1..1 string "Test delayed to next contact or referred" "Test has been delayed to the next contact or client was referred to another provider/facility"
+* hbTestDelayedToNextContactOrReferred 1..1 string "Test delayed to next contact or referred" "Test has been delayed to the next contact or client was referred to another provider/facility"
   * ^code[+] = HIV.G#DE23
 
-* stockOutOrExpired 1..1 string "Stock-out or expired" "Test out of stock or stock present but expired"
+* hbStockOutOrExpired 1..1 string "Stock-out or expired" "Test out of stock or stock present but expired"
   * ^code[+] = HIV.G#DE24
 
-* machineOrTechnicianNotAvailableOrMachineNotFunctioning 1..1 string "Machine or technician not available or machine not functioning" "Test machine or technician is unavailable, or machine is not functioning"
+* hbMachineOrTechnicianNAOrNotFunctioning 1..1 string "Machine or technician not available or machine not functioning" "Test machine or technician is unavailable, or machine is not functioning"
   * ^code[+] = HIV.G#DE25
 
-* clientDeclinedRefusedTest 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
+* hbClientDeclinedRefusedTest 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
   * ^code[+] = HIV.G#DE26
 
-* other 1..1 string "Other" "Other reason test not performed"
+* hbOther 1..1 string "Other" "Other reason test not performed"
   * ^code[+] = HIV.G#DE27
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
+* hbOtherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
   * ^code[+] = HIV.G#DE28
 
 * hepatitisBDiagnosis 1..1 string "Hepatitis B diagnosis" "Clients hepatitis B diagnosis"
@@ -5779,13 +5779,13 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * hcvTestResult 1..1 string "HCV test result" "Hepatitis C virus test result (HCV antibody, HCV RNA or HCV core antigen)"
   * ^code[+] = HIV.G#DE43
 
-* positive 1..1 string "Positive" "HCV test result was positive"
+* hcvPositive 1..1 string "Positive" "HCV test result was positive"
   * ^code[+] = HIV.G#DE44
 
-* negative 1..1 string "Negative" "HCV test result was negative"
+* hvcNegative 1..1 string "Negative" "HCV test result was negative"
   * ^code[+] = HIV.G#DE45
 
-* indeterminate 1..1 string "Indeterminate" "HCV test result was indeterminate"
+* hvcIndeterminate 1..1 string "Indeterminate" "HCV test result was indeterminate"
   * ^code[+] = HIV.G#DE46
 
 * hcvViralLoadTestDate 1..1 string "HCV viral load test date" "Hepatitis C viral load test date"
@@ -5824,10 +5824,10 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * pocTest 1..1 string "POC Test" "Point-of-care (POC) test used"
   * ^code[+] = HIV.G#DE58
 
-* naat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
+* sypttNaat 1..1 string "NAAT" "Nucleic Acid Amplification Test (NAAT) used"
   * ^code[+] = HIV.G#DE59
 
-* other 1..1 string "Other" "Other test used"
+* sypttOther 1..1 string "Other" "Other test used"
   * ^code[+] = HIV.G#DE60
 
 * otherSyphilisTestTypeSpecify 1..1 string "Other syphilis test type (specify)" "Other test used (specify)"
@@ -5848,10 +5848,10 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * clientDeclinedRefusedTest 1..1 string "Client declined / refused test" "Client declined or refused test being undertaken"
   * ^code[+] = HIV.G#DE66
 
-* other 1..1 string "Other" "Other reason test not performed"
+* nptOther 1..1 string "Other" "Other reason test not performed"
   * ^code[+] = HIV.G#DE67
 
-* otherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
+* nptOtherSpecify 1..1 string "Other (specify)" "Other reason test not performed (specify)"
   * ^code[+] = HIV.G#DE68
 
 * syphilisTestDate 1..1 string "Syphilis test date" "Date of syphilis test"
@@ -5860,13 +5860,13 @@ Description:  "Logical Model for HIV.G Diagnostics data elements."
 * syphilisTestResult 1..1 string "Syphilis test result" "Result from syphilis test"
   * ^code[+] = HIV.G#DE70
 
-* positive 1..1 string "Positive" "Test result is positive for syphilis"
+* syptPositive 1..1 string "Positive" "Test result is positive for syphilis"
   * ^code[+] = HIV.G#DE71
 
-* negative 1..1 string "Negative" "Test result is negative for syphilis"
+* syptNegative 1..1 string "Negative" "Test result is negative for syphilis"
   * ^code[+] = HIV.G#DE72
 
-* inconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
+* syptInconclusive 1..1 string "Inconclusive" "Test result is inconclusive"
   * ^code[+] = HIV.G#DE73
 
 * syphilisDiagnosis 1..1 string "Syphilis diagnosis" "Clients syphilis diagnosis"
@@ -5897,247 +5897,247 @@ Description:  "Logical Model for HIV.H Follow-up data elements."
 * ^status = #active
 
 * reasonForFollowUp 1..1 string "Reason for follow-up" "The reason why the client is being followed up"
-  * ^code[+] = HIV.A#DE1
+  * ^code[+] = HIV.H#DE1
 
 * missedCareVisit 1..1 string "Missed care visit" "Client did not present for a care appointment as scheduled / as expected"
-  * ^code[+] = HIV.A#DE2
+  * ^code[+] = HIV.H#DE2
 
 * missedMedicationPickup 1..1 string "Missed medication pickup" "Client did not pick up medication as scheduled from pharmacy or other drug distribution point"
-  * ^code[+] = HIV.A#DE3
+  * ^code[+] = HIV.H#DE3
 
 * didNotInitiateArt 1..1 string "Did not initiate ART" "Client did not initiate ART at the same time as diagnosis (e.g., because they required additional counselling) and required follow-up for ART initiation"
-  * ^code[+] = HIV.A#DE4
+  * ^code[+] = HIV.H#DE4
 
 * incompleteVisit 1..1 string "Incomplete visit" "Client presented for care, but left before services were completed, e.g., due to long wait times or not staying to have labs taken"
-  * ^code[+] = HIV.A#DE5
+  * ^code[+] = HIV.H#DE5
 
 * inconclusiveHivStatus 1..1 string "Inconclusive HIV status" "Client has not returned for a follow-up test after an inconclusive test result"
-  * ^code[+] = HIV.A#DE6
+  * ^code[+] = HIV.H#DE6
 
 * testResultsReceived 1..1 string "Test results received" "Client needs to be informed of test results (e.g., viral load)"
-  * ^code[+] = HIV.A#DE7
+  * ^code[+] = HIV.H#DE7
 
 * otherFollowUpReason 1..1 string "Other follow-up reason" "Client was followed up for another reason"
-  * ^code[+] = HIV.A#DE8
+  * ^code[+] = HIV.H#DE8
 
 * otherFollowUpReasonSpecify 1..1 string "Other follow-up reason (specify)" "Client was followed up for another reason (specify)"
-  * ^code[+] = HIV.A#DE9
+  * ^code[+] = HIV.H#DE9
 
 * clientContactAttempted 1..1 string "Client contact attempted" "An attempt to locate the client was made"
-  * ^code[+] = HIV.A#DE10
+  * ^code[+] = HIV.H#DE10
 
 * dateOfContactAttempt 1..1 string "Date of contact attempt" "Date of attempt to contact client"
-  * ^code[+] = HIV.A#DE11
+  * ^code[+] = HIV.H#DE11
 
 * contactAttemptedBy 1..1 string "Contact attempted by" "Who attempted to reach out to the client"
-  * ^code[+] = HIV.A#DE12
+  * ^code[+] = HIV.H#DE12
 
 * contactMethod 1..1 string "Contact method" "Method used to try to reach out to the client"
-  * ^code[+] = HIV.A#DE13
+  * ^code[+] = HIV.H#DE13
 
 * homeVisit 1..1 string "Home visit" "Contacted client at home"
-  * ^code[+] = HIV.A#DE14
+  * ^code[+] = HIV.H#DE14
 
 * textMessage 1..1 string "Text message" "Contacted client by short message service (SMS) text"
-  * ^code[+] = HIV.A#DE15
+  * ^code[+] = HIV.H#DE15
 
 * phone 1..1 string "Phone" "Contacted client by phone call"
-  * ^code[+] = HIV.A#DE16
+  * ^code[+] = HIV.H#DE16
 
 * sourceOfInformation 1..1 string "Source of information" "Source of information about the client"
-  * ^code[+] = HIV.A#DE17
+  * ^code[+] = HIV.H#DE17
 
 * client 1..1 string "Client" "The client was the source of information"
-  * ^code[+] = HIV.A#DE18
+  * ^code[+] = HIV.H#DE18
 
 * informedByTreatmentProvider 1..1 string "Informed by treatment provider" "Source of information was a treatment provider of the client"
-  * ^code[+] = HIV.A#DE19
+  * ^code[+] = HIV.H#DE19
 
 * informedByFamilyOrPartner 1..1 string "Informed by family or partner" "Source of information was a family member of partner"
-  * ^code[+] = HIV.A#DE20
+  * ^code[+] = HIV.H#DE20
 
 * otherSourceOfInformation 1..1 string "Other source of information" "Information about the clients status was provided by someone else"
-  * ^code[+] = HIV.A#DE21
+  * ^code[+] = HIV.H#DE21
 
 * otherSourceOfInformationSpecify 1..1 string "Other source of information (specify)" "Information about the clients status was provided by someone else (specify)"
-  * ^code[+] = HIV.A#DE22
+  * ^code[+] = HIV.H#DE22
 
 * outcomeFromOutreachAttempt 1..1 string "Outcome from outreach attempt" "Detailed outcome from the attempt to locate the client"
-  * ^code[+] = HIV.A#DE23
+  * ^code[+] = HIV.H#DE23
 
 * returningToClinic 1..1 string "Returning to clinic" "Client was located and agreed to return to clinic"
-  * ^code[+] = HIV.A#DE24
+  * ^code[+] = HIV.H#DE24
 
 * selfTransferredOut 1..1 string "Self-transferred out" "Client transferred to another facility for care (client-initiated transfer, not provider-initiated transfer)"
-  * ^code[+] = HIV.A#DE25
+  * ^code[+] = HIV.H#DE25
 
 * hospitalized 1..1 string "Hospitalized" "Client was hospitalized"
-  * ^code[+] = HIV.A#DE26
+  * ^code[+] = HIV.H#DE26
 
 * refusedToReturn 1..1 string "Refused to return" "Client was found but declined to return to treatment"
-  * ^code[+] = HIV.A#DE27
+  * ^code[+] = HIV.H#DE27
 
 * notLocated 1..1 string "Not located " "Attempt was made to locate client, but client was not found"
-  * ^code[+] = HIV.A#DE28
+  * ^code[+] = HIV.H#DE28
 
 * diedReported 1..1 string "Died (reported)" "The client was reported as having died"
-  * ^code[+] = HIV.A#DE29
+  * ^code[+] = HIV.H#DE29
 
 * movedFromCatchmentArea 1..1 string "Moved from catchment area" "The client moved from the catchment area (may be reported from the community level)"
-  * ^code[+] = HIV.A#DE30
+  * ^code[+] = HIV.H#DE30
 
 * dateClientMovedFromCatchmentArea 1..1 string "Date client moved from catchment area" "The date on which the client moved from the catchment area, if known"
-  * ^code[+] = HIV.A#DE31
+  * ^code[+] = HIV.H#DE31
 
 * newCatchmentArea 1..1 string "New catchment area" "New catchment area where the client resides"
-  * ^code[+] = HIV.A#DE32
+  * ^code[+] = HIV.H#DE32
 
 * partnerOrContactOfIndexCase 1..1 string "Partner or contact of index case" "The client was identified by an index case as a partner or contact"
-  * ^code[+] = HIV.A#DE33
+  * ^code[+] = HIV.H#DE33
 
 * hivStatusOfPartnerOrContact 1..1 string "HIV status of partner or contact" "HIV status of the partner or contact given by the index case"
-  * ^code[+] = HIV.A#DE34
+  * ^code[+] = HIV.H#DE34
 
 * alreadyKnewPositive 1..1 string "Already knew positive" "The partner or contact of the index case already knew they are HIV-positive"
-  * ^code[+] = HIV.A#DE35
+  * ^code[+] = HIV.H#DE35
 
 * newlyDiagnosed 1..1 string "Newly diagnosed" "The partner or contact of the index case is newly diagnosed as HIV-positive"
-  * ^code[+] = HIV.A#DE36
+  * ^code[+] = HIV.H#DE36
 
 * negative 1..1 string "Negative" "The partner or contact of the index case is newly diagnosed is HIV-negative"
-  * ^code[+] = HIV.A#DE37
+  * ^code[+] = HIV.H#DE37
 
 * dateOfDeath 1..1 string "Date of death " "If deceased, the date that the client died"
-  * ^code[+] = HIV.A#DE38
+  * ^code[+] = HIV.H#DE38
 
 * causeOfDeath 1..1 string "Cause of death" "Cause of death, if known"
-  * ^code[+] = HIV.A#DE39
+  * ^code[+] = HIV.H#DE39
 
 * placeOfDeath 1..1 string "Place of death" "Where the client died, if known"
-  * ^code[+] = HIV.A#DE40
+  * ^code[+] = HIV.H#DE40
 
 * hivTreatmentOutcome 1..1 string "HIV treatment outcome" "The outcome for the client which is used for reporting retention/attrition."
-  * ^code[+] = HIV.A#DE41
+  * ^code[+] = HIV.H#DE41
 
 * lostToFollowUp 1..1 string "Lost to follow-up" "Twenty-eight days or more since last missed appointment "
-  * ^code[+] = HIV.A#DE42
+  * ^code[+] = HIV.H#DE42
 
 * transferredOut 1..1 string "Transferred out" "The client transferred to another facility"
-  * ^code[+] = HIV.A#DE43
+  * ^code[+] = HIV.H#DE43
 
 * deathDocumented 1..1 string "Death (documented)" "People living with HIV previously on ART who are confirmed to have died from any cause"
-  * ^code[+] = HIV.A#DE44
+  * ^code[+] = HIV.H#DE44
 
 * refusedStoppedTreatment 1..1 string "Refused (stopped) treatment" "Client was contacted and confirmed to have stopped ART (reasons may include stigma and discrimination, faith healing, etc.)"
-  * ^code[+] = HIV.A#DE45
+  * ^code[+] = HIV.H#DE45
 
 * datePatientLostToFollowUp 1..1 string "Date patient lost to follow-up" "Date patient was lost to follow-up (LTFU)"
-  * ^code[+] = HIV.A#DE46
+  * ^code[+] = HIV.H#DE46
 
 * onArt 1..1 string "On ART" "Client is currently taking ART "
-  * ^code[+] = HIV.A#DE47
+  * ^code[+] = HIV.H#DE47
 
 * dateHivTreatmentOutcomeChanged 1..1 string "Date HIV treatment outcome changed" "The date on which the clients outcome (lost to follow-up, transferred out, death (documented), or refused (stopped) treatment) changed"
-  * ^code[+] = HIV.A#DE48
+  * ^code[+] = HIV.H#DE48
 
 * transferConfirmed 1..1 string "Transfer confirmed" "Select if transfer to another facility is confirmed"
-  * ^code[+] = HIV.A#DE49
+  * ^code[+] = HIV.H#DE49
 
 * transferToFacility 1..1 string "Transfer to facility" "Name of health facility client was transferred to"
-  * ^code[+] = HIV.A#DE50
+  * ^code[+] = HIV.H#DE50
 
 * dateOfTransferOut 1..1 string "Date of transfer out" "The date the client transferred out of the facility to be provided with care at another facility"
-  * ^code[+] = HIV.A#DE51
+  * ^code[+] = HIV.H#DE51
 
 * adherenceAssessment 1..1 string "Adherence assessment" "Whether client is adherent or not to ART regimen per national guidelines (immunological or virological monitoring)"
-  * ^code[+] = HIV.A#DE52
+  * ^code[+] = HIV.H#DE52
 
 * reasonsForAdherenceProblem 1..1 string "Reason(s) for adherence problem" "Reason why client is not adherent"
-  * ^code[+] = HIV.A#DE53
+  * ^code[+] = HIV.H#DE53
 
 * forgot 1..1 string "Forgot" "Client reported not being adherent because they forgot"
-  * ^code[+] = HIV.A#DE54
+  * ^code[+] = HIV.H#DE54
 
 * toxicitysideEffects 1..1 string "Toxicity/side effects" "Client reported not being adherent because of toxicity/side effects"
-  * ^code[+] = HIV.A#DE55
+  * ^code[+] = HIV.H#DE55
 
 * busy 1..1 string "Busy" "Client reported not being adherent because they were busy"
-  * ^code[+] = HIV.A#DE56
+  * ^code[+] = HIV.H#DE56
 
 * changeOfRoutine 1..1 string "Change of routine" "Client reported not being adherent because of a change of routine"
-  * ^code[+] = HIV.A#DE57
+  * ^code[+] = HIV.H#DE57
 
 * travelCost 1..1 string "Travel cost" "Client reported not being adherent because of travel cost"
-  * ^code[+] = HIV.A#DE58
+  * ^code[+] = HIV.H#DE58
 
 * distanceToClinic 1..1 string "Distance to clinic" "Client reported not being adherent because of distance to clinic "
-  * ^code[+] = HIV.A#DE59
+  * ^code[+] = HIV.H#DE59
 
 * clientLostRanOutOfPills 1..1 string "Client lost/ran out of pills" "Client reported not being adherent because of client lost/ran out of pills"
-  * ^code[+] = HIV.A#DE60
+  * ^code[+] = HIV.H#DE60
 
 * stockOut 1..1 string "Stock-out" "Client reported not being adherent because of a stock-out"
-  * ^code[+] = HIV.A#DE61
+  * ^code[+] = HIV.H#DE61
 
 * tooIll 1..1 string "Too ill" "Client reported not being adherent because of being too ill"
-  * ^code[+] = HIV.A#DE62
+  * ^code[+] = HIV.H#DE62
 
 * pillBurden 1..1 string "Pill burden" "Client reported not being adherent because of the pill burden"
-  * ^code[+] = HIV.A#DE63
+  * ^code[+] = HIV.H#DE63
 
 * feltWell 1..1 string "Felt well" "Client reported not being adherent because they felt well"
-  * ^code[+] = HIV.A#DE64
+  * ^code[+] = HIV.H#DE64
 
 * depression 1..1 string "Depression" "Client reported not being adherent because of depression"
-  * ^code[+] = HIV.A#DE65
+  * ^code[+] = HIV.H#DE65
 
 * alcoholUse 1..1 string "Alcohol use" "Client reported not being adherent because of alcohol use"
-  * ^code[+] = HIV.A#DE66
+  * ^code[+] = HIV.H#DE66
 
 * substanceUse 1..1 string "Substance use" "Client reported not being adherent because of substance use (i.e., drugs)"
-  * ^code[+] = HIV.A#DE67
+  * ^code[+] = HIV.H#DE67
 
 * stigmadisclosureConcerns 1..1 string "Stigma/disclosure concerns" "Client reported not being adherent because of stigma/disclosure concerns"
-  * ^code[+] = HIV.A#DE68
+  * ^code[+] = HIV.H#DE68
 
 * lackOfFood 1..1 string "Lack of food" "Client reported not being adherent because of a lack of food"
-  * ^code[+] = HIV.A#DE69
+  * ^code[+] = HIV.H#DE69
 
 * poorPalatability 1..1 string "Poor palatability" "Client reported not being adherent because of poor palatability"
-  * ^code[+] = HIV.A#DE70
+  * ^code[+] = HIV.H#DE70
 
 * other 1..1 string "Other" "Client reported not being adherent because of other reason"
-  * ^code[+] = HIV.A#DE71
+  * ^code[+] = HIV.H#DE71
 
 * otherSpecify 1..1 string "Other (specify)" "Client reported not being adherent because of other reason (specify)"
-  * ^code[+] = HIV.A#DE72
+  * ^code[+] = HIV.H#DE72
 
 * dateArtStopped 1..1 string "Date ART stopped" "Date on which client stopped ART"
-  * ^code[+] = HIV.A#DE73
+  * ^code[+] = HIV.H#DE73
 
 * reasonArtStopped 1..1 string "Reason ART stopped" "Reason why client intentionally stopped ART"
-  * ^code[+] = HIV.A#DE74
+  * ^code[+] = HIV.H#DE74
 
 * toxicitysideEffects 1..1 string "Toxicity/side effects" "Client stopped ART because of toxicity/side effects"
-  * ^code[+] = HIV.A#DE75
+  * ^code[+] = HIV.H#DE75
 
 * severeIllnessHospitalization 1..1 string "Severe illness, hospitalization" "Client stopped ART because of severe illness, hospitalization"
-  * ^code[+] = HIV.A#DE76
+  * ^code[+] = HIV.H#DE76
 
 * drugsOutOfStock 1..1 string "Drugs out of stock " "Client stopped ART because of drugs being out of stock "
-  * ^code[+] = HIV.A#DE77
+  * ^code[+] = HIV.H#DE77
 
 * clientLacksFinances 1..1 string "Client lacks finances " "Client stopped ART because client lacked finances "
-  * ^code[+] = HIV.A#DE78
+  * ^code[+] = HIV.H#DE78
 
 * excludedHivInfectionInInfant 1..1 string "Excluded HIV infection in infant" "Client stopped ART because the infant was determined to not have HIV"
-  * ^code[+] = HIV.A#DE79
+  * ^code[+] = HIV.H#DE79
 
 * otherReasonForStoppingArt 1..1 string "Other reason for stopping ART" "Client stopped ART for other reason"
-  * ^code[+] = HIV.A#DE80
+  * ^code[+] = HIV.H#DE80
 
 * otherReasonForStoppingArtSpecify 1..1 string "Other reason for stopping ART (specify)" "Client stopped ART for other reason (specify)"
-  * ^code[+] = HIV.A#DE81
+  * ^code[+] = HIV.H#DE81
 
 
 
@@ -6148,55 +6148,55 @@ Description:  "Logical Model for HIV.I Referral data elements."
 * ^status = #active
 
 * emergencyReferral 1..1 string "Emergency referral" "Referral for urgent care"
-  * ^code[+] = HIV.H#DE1
+  * ^code[+] = HIV.I#DE1
 
 * reasonForReferral 1..1 string "Reason for referral" "Reason why the client is being referred. If diagnosed, this may include the reason for the diagnosis."
-  * ^code[+] = HIV.H#DE2
+  * ^code[+] = HIV.I#DE2
 
 * hospital 1..1 string "Hospital" "Clients clinical status warrants hospitalization"
-  * ^code[+] = HIV.H#DE3
+  * ^code[+] = HIV.I#DE3
 
 * referralForScreeningIncludingDiagnosticsAndLabTesting 1..1 string "Referral for screening including diagnostics and lab testing" "The client is referred because they need a lab test done and/or diagnostics done, but those services are unavailable at the current health facility or providers. This includes referral for TB screening (is symptomatic of TB, has had close contact with confirmed TB case, etc.) and other comorbidities or coinfections. "
-  * ^code[+] = HIV.H#DE4
+  * ^code[+] = HIV.I#DE4
 
 * tbReferral 1..1 string "TB referral" "Referral for TB care"
-  * ^code[+] = HIV.H#DE5
+  * ^code[+] = HIV.I#DE5
 
 * antenatalCareReferral 1..1 string "Antenatal care referral" "Client was referred because the client is pregnant"
-  * ^code[+] = HIV.H#DE6
+  * ^code[+] = HIV.I#DE6
 
 * referralForOtherGeneralServices 1..1 string "Referral for other general services" "If none of the reasons above apply, this should be selected"
-  * ^code[+] = HIV.H#DE7
+  * ^code[+] = HIV.I#DE7
 
 * referralForOtherGeneralServicesSpecify 1..1 string "Referral for other general services (specify)" "If none of the reasons above apply, specify the reason(s)"
-  * ^code[+] = HIV.H#DE8
+  * ^code[+] = HIV.I#DE8
 
 * anyTreatmentGivenBeforeReferral? 1..1 string "Any treatment given before referral?" "If client was referred, was any treatment provided before referral?"
-  * ^code[+] = HIV.H#DE9
+  * ^code[+] = HIV.I#DE9
 
 * dateOfScheduledReferralAppointment 1..1 string "Date of scheduled referral appointment" "When the referral is scheduled"
-  * ^code[+] = HIV.H#DE10
+  * ^code[+] = HIV.I#DE10
 
 * locationOfScheduledReferralAppointment 1..1 string "Location of scheduled referral appointment" "Where the client is being referred to"
-  * ^code[+] = HIV.H#DE11
+  * ^code[+] = HIV.I#DE11
 
 * dateReferralWasMade 1..1 string "Date referral was made" "The date the referral was made"
-  * ^code[+] = HIV.H#DE12
+  * ^code[+] = HIV.I#DE12
 
 * providerWhoMadeReferral 1..1 string "Provider who made referral" "The name of the provider who made the referral"
-  * ^code[+] = HIV.H#DE13
+  * ^code[+] = HIV.I#DE13
 
 * providersFacility 1..1 string "Providers facility" "Facility client is being referred from"
-  * ^code[+] = HIV.H#DE14
+  * ^code[+] = HIV.I#DE14
 
 * providersTelephoneNumber 1..1 string "Providers telephone number" "The contact details of the provider making the referral"
-  * ^code[+] = HIV.H#DE15
+  * ^code[+] = HIV.I#DE15
 
 * referralNotes 1..1 string "Referral notes" "Any additional relevant details of clinical significance for the referral facility to provide quality care"
-  * ^code[+] = HIV.H#DE16
+  * ^code[+] = HIV.I#DE16
 
 * clientHistorySummary 1..1 string "Client history summary" "With interoperable systems, the provider receiving the referral should be able to access the clients health record digitally. However, in the absence of this, the referral provider should receive a summary of the clients health records that includes the clients history, medications, medications prescribed or dispensed, reported issues and concerns, and any other relevant clinical information the health care provider had already obtained."
-  * ^code[+] = HIV.H#DE17
+  * ^code[+] = HIV.I#DE17
 
 
 

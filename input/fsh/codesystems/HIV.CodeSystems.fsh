@@ -2000,7 +2000,7 @@ Description: "CodeSystem for HIV.G Diagnostics  Data Elements"
 * #DE80 "Other test(s) result(s)" "Input the result from the test(s)."
 
 
-CodeSystem: HIV.M
+CodeSystem: HIV.H
 Title: "HIV.H Follow-up  CodeSystem"
 Description: "CodeSystem for HIV.H Follow-up  Data Elements"
 * ^experimental = false

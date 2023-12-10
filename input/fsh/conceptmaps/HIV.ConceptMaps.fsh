@@ -75,9 +75,9 @@ UEP.TI.ZZ , equivalent)
 * group[+]
   * source = Canonical(HIV.A)
   * target = $ICF
-  * insert ElementMap(DE47, d3600.9 Using telecommunication devices, equivalent)
-  * insert ElementMap(DE48, d3600.9 Using telecommunication devices, equivalent)
-  * insert ElementMap(DE49, d325.9 , equivalent)
+  * insert ElementMap(DE47, d3600.9, equivalent)
+  * insert ElementMap(DE48, d3600.9, equivalent)
+  * insert ElementMap(DE49, d325.9, equivalent)
 
 * group[+]
   * source = Canonical(HIV.A)
@@ -3223,8 +3223,6 @@ Usage:        #definition
   * insert ElementMap(DE981, MD30.Z , equivalent)
   * insert ElementMap(DE982, MD22 , equivalent)
   * insert ElementMap(DE983, MG22 , equivalent)
-  * insert ElementMap(DE984, Nor classifiable in ICD-11, equivalent)
-  * insert ElementMap(DE985, Nor classifiable in ICD-11, equivalent)
   * insert ElementMap(DE987, 1B1Z , equivalent)
   * insert ElementMap(DE988, QA02.0 , equivalent)
   * insert ElementMap(DE993, QA08.1 , equivalent)
@@ -3792,7 +3790,7 @@ Usage:        #definition
   * target = $ICHI
   * insert ElementMap(DE53, NME.JF.AC , equivalent)
   * insert ElementMap(DE54, NME.JF.AC , equivalent)
-  * insert ElementMap(DE55, Foundation URI : http://id.who.int/icd/entity/1388661383, equivalent)
+  * insert ElementMap(DE55, http://id.who.int/icd/entity/1388661383, equivalent)
   * insert ElementMap(DE101, DIA.AH.XA , equivalent)
   * insert ElementMap(DE102, PZB.VC.ZZ, equivalent)
   * insert ElementMap(DE119, VEF.PP.ZZ , equivalent)
@@ -4046,19 +4044,19 @@ Usage:        #definition
   * insert ElementMap(DE38, QB14, equivalent)
   * insert ElementMap(DE39, QC12, equivalent)
   * insert ElementMap(DE44, 1E51.1, equivalent)
-  * insert ElementMap(DE45, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE45, QA02.Y, equivalent)
   * insert ElementMap(DE49, 1E51.1, equivalent)
-  * insert ElementMap(DE50, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE50, QA02.Y, equivalent)
   * insert ElementMap(DE52, 1E51.1, equivalent)
-  * insert ElementMap(DE53, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE53, QA02.Y, equivalent)
   * insert ElementMap(DE63, QC1Y, equivalent)
   * insert ElementMap(DE64, QB14, equivalent)
   * insert ElementMap(DE65, QB14, equivalent)
   * insert ElementMap(DE66, QC12, equivalent)
   * insert ElementMap(DE71, 1A6Z, equivalent)
-  * insert ElementMap(DE72, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE72, QA02.Y, equivalent)
   * insert ElementMap(DE75, 1A6Z, equivalent)
-  * insert ElementMap(DE76, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE76, QA02.Y, equivalent)
 
 * group[+]
   * source = Canonical(HIV.G)
@@ -4440,6 +4438,7 @@ Usage:        #definition
 
 
 Instance:     HIVPrevention
+InstanceOf:   ConceptMap
 Description:  "Mapping to and from HIV.Prevention Data Dictionary to other codesystems."
 Usage:        #definition
 
@@ -4454,7 +4453,7 @@ Usage:        #definition
   * target = $ICD11
   * insert ElementMap(DE1, QC90.6 , equivalent)
   * insert ElementMap(DE12, QC90.6 , equivalent)
-  * insert ElementMap(DE13, QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out, equivalent)
+  * insert ElementMap(DE13, QA02.Y, equivalent)
 
 * group[+]
   * source = Canonical(HIV.Prevention)
