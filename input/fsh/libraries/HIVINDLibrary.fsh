@@ -17,5 +17,5 @@ Description: "Library: HIV.IND.27 Example"
 * type[0].coding[0].display = "HIV Library"
 * content
   * contentType = #text/cql
-  * url = "../../cql/HIVIND27.cql"
+  * url = "./input/cql/HIVIND27.cql"
      
