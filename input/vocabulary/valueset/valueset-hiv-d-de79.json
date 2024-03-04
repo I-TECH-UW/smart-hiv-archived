@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de79",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de79",
+  "name": "NucleotidereversetranscriptaseinhibitorsNtRTIsCodes",
+  "title": "Nucleotide reverse-transcriptase inhibitors (NtRTIs) Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Nucleotide reverse-transcriptase inhibitors (NtRTIs) element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE79",
+        "display": "TDF"
+      } ]
+    } ]
+  }
+}

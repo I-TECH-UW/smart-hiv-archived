@@ -1,0 +1,15 @@
+{
+  "resourceType": "Library",
+  "id": "HIVDT11",
+  "url": "http://fhir.org/guides/who/anc-cds/Library/HIVDT11",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.11."
+  } ],
+  "name": "HIVDT11",
+  "title": "HIV.DT.11. Check for known drug interactions",
+  "description": "HIV status = HIV positive",
+  "content": [ {
+    "id": "ig-loader-HIVDT11.cql"
+  } ]
+}

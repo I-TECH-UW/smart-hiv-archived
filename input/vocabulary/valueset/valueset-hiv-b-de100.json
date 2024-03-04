@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de100",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de100",
+  "name": "TestresultofHIVassay3Codes",
+  "title": "Test result of HIV assay 3 Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Test result of HIV assay 3 element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE100",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.B.DE101",
+        "display": "Non-reactive"
+      }, {
+        "code": "HIV.E.DE126",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.E.DE127",
+        "display": "Non-reactive"
+      } ]
+    } ]
+  }
+}

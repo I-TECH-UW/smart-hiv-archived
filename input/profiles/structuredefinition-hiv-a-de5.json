@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-a-de5",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-a-de5",
+  "name": "Referredby",
+  "title": "Referred by",
+  "status": "draft",
+  "experimental": false,
+  "description": "How the client was referred",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Referred by",
+      "definition": "How the client was referred",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.A.DE5",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.A.DE5"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Referred by",
+      "definition": "How the client was referred",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Referred by Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de6"
+      },
+      "mapping": [ {
+        "map": "HIV.A.DE5"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de811",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de811",
+  "name": "InfantTBstatusCodes",
+  "title": "Infant TB status Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Infant TB status element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE811",
+        "display": "Presumptive TB"
+      }, {
+        "code": "HIV.D.DE813",
+        "display": "Diagnosed TB"
+      }, {
+        "code": "HIV.D.DE815",
+        "display": "None"
+      } ]
+    } ]
+  }
+}

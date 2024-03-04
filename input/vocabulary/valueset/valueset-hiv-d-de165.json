@@ -1,0 +1,131 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de165",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de165",
+  "name": "ReasonsforadherenceproblemCodes",
+  "title": "Reason(s) for adherence problem Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason(s) for adherence problem element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE165",
+        "display": "Forgot"
+      }, {
+        "code": "HIV.D.DE166",
+        "display": "Asleep"
+      }, {
+        "code": "HIV.D.DE167",
+        "display": "Busy"
+      }, {
+        "code": "HIV.D.DE168",
+        "display": "Change of routine"
+      }, {
+        "code": "HIV.D.DE169",
+        "display": "Travel cost"
+      }, {
+        "code": "HIV.D.DE170",
+        "display": "Distance to clinic"
+      }, {
+        "code": "HIV.D.DE171",
+        "display": "Client lost/ran out of pills"
+      }, {
+        "code": "HIV.D.DE172",
+        "display": "Stock-out"
+      }, {
+        "code": "HIV.D.DE173",
+        "display": "Toxicity/side effects"
+      }, {
+        "code": "HIV.D.DE174",
+        "display": "Too ill"
+      }, {
+        "code": "HIV.D.DE175",
+        "display": "Pill burden"
+      }, {
+        "code": "HIV.D.DE176",
+        "display": "Felt well"
+      }, {
+        "code": "HIV.D.DE177",
+        "display": "Depression"
+      }, {
+        "code": "HIV.D.DE178",
+        "display": "Alcohol use"
+      }, {
+        "code": "HIV.D.DE179",
+        "display": "Substance use"
+      }, {
+        "code": "HIV.D.DE180",
+        "display": "Stigma/disclosure concerns"
+      }, {
+        "code": "HIV.D.DE181",
+        "display": "Lack of food"
+      }, {
+        "code": "HIV.D.DE182",
+        "display": "Poor palatability"
+      }, {
+        "code": "HIV.D.DE183",
+        "display": "Other reason for nonadherence (specify)"
+      }, {
+        "code": "HIV.H.DE51",
+        "display": "Forgot"
+      }, {
+        "code": "HIV.H.DE52",
+        "display": "Asleep"
+      }, {
+        "code": "HIV.H.DE53",
+        "display": "Busy"
+      }, {
+        "code": "HIV.H.DE54",
+        "display": "Change of routine"
+      }, {
+        "code": "HIV.H.DE55",
+        "display": "Travel cost"
+      }, {
+        "code": "HIV.H.DE56",
+        "display": "Distance to clinic"
+      }, {
+        "code": "HIV.H.DE57",
+        "display": "Client lost/ran out of pills"
+      }, {
+        "code": "HIV.H.DE58",
+        "display": "Stock-out"
+      }, {
+        "code": "HIV.H.DE59",
+        "display": "Toxicity/side effects"
+      }, {
+        "code": "HIV.H.DE60",
+        "display": "Too ill"
+      }, {
+        "code": "HIV.H.DE61",
+        "display": "Pill burden"
+      }, {
+        "code": "HIV.H.DE62",
+        "display": "Felt well"
+      }, {
+        "code": "HIV.H.DE63",
+        "display": "Depression"
+      }, {
+        "code": "HIV.H.DE64",
+        "display": "Alcohol use"
+      }, {
+        "code": "HIV.H.DE65",
+        "display": "Substance use"
+      }, {
+        "code": "HIV.H.DE66",
+        "display": "Stigma/disclosure concerns"
+      }, {
+        "code": "HIV.H.DE67",
+        "display": "Lack of food"
+      }, {
+        "code": "HIV.H.DE68",
+        "display": "Poor palatability"
+      }, {
+        "code": "HIV.H.DE69",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}

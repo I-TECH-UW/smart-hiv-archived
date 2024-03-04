@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de94",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de94",
+  "name": "TestresultofHIVassay1Codes",
+  "title": "Test result of HIV assay 1 Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Test result of HIV assay 1 element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE94",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.B.DE95",
+        "display": "Non-reactive"
+      }, {
+        "code": "HIV.E.DE120",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.E.DE121",
+        "display": "Non-reactive"
+      } ]
+    } ]
+  }
+}

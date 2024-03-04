@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de185",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de185",
+  "name": "ReasonARTstoppedCodes",
+  "title": "Reason ART stopped Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason ART stopped element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE185",
+        "display": "Severe illness, hospitalization"
+      }, {
+        "code": "HIV.D.DE186",
+        "display": "Toxicity/side effects"
+      }, {
+        "code": "HIV.D.DE187",
+        "display": "Drugs out of stock"
+      }, {
+        "code": "HIV.D.DE188",
+        "display": "Client lacks finances"
+      }, {
+        "code": "HIV.D.DE189",
+        "display": "Treatment-limiting toxicity"
+      }, {
+        "code": "HIV.D.DE190",
+        "display": "Other reason for stopping ART (specify)"
+      }, {
+        "code": "HIV.H.DE72",
+        "display": "Severe illness, hospitalization"
+      }, {
+        "code": "HIV.H.DE73",
+        "display": "Drugs out of stock"
+      }, {
+        "code": "HIV.H.DE74",
+        "display": "Client lacks finances"
+      }, {
+        "code": "HIV.H.DE75",
+        "display": "Excluded HIV infection in infant"
+      }, {
+        "code": "HIV.H.DE76",
+        "display": "Treatment-limiting toxicity"
+      }, {
+        "code": "HIV.H.DE77",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-d-de437",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de437",
+  "name": "Telephonenumberoftreatmentsupporter",
+  "title": "Telephone number of treatment supporter",
+  "status": "draft",
+  "experimental": false,
+  "description": "Telephone number if available, or else telephone number of neighbour/friend",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Patient",
+      "path": "Patient",
+      "mustSupport": false
+    }, {
+      "id": "Patient.contact",
+      "path": "Patient.contact"
+    }, {
+      "id": "Patient.contact.telecom",
+      "path": "Patient.contact.telecom",
+      "short": "Telephone number of treatment supporter",
+      "definition": "Telephone number if available, or else telephone number of neighbour/friend",
+      "comment": "Data collection tool: HIV client card?Use of data element: client tracking and care?Remarks:",
+      "min": 0,
+      "max": "1",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE437"
+      } ]
+    } ]
+  }
+}

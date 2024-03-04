@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-h-de22",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de22",
+  "name": "OutcomefromoutreachattemptCodes",
+  "title": "Outcome from outreach attempt Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Outcome from outreach attempt element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.H.DE22",
+        "display": "Returning to clinic"
+      }, {
+        "code": "HIV.H.DE23",
+        "display": "Self-transferred out"
+      }, {
+        "code": "HIV.H.DE24",
+        "display": "Hospitalized"
+      }, {
+        "code": "HIV.H.DE25",
+        "display": "Refused to return"
+      }, {
+        "code": "HIV.H.DE26",
+        "display": "Not located"
+      }, {
+        "code": "HIV.H.DE27",
+        "display": "Died (reported)"
+      } ]
+    } ]
+  }
+}

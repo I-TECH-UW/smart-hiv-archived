@@ -1,0 +1,7 @@
+{
+  "resourceType": "Location",
+  "id": "hiv-b-de65-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-b-de65" ]
+  }
+}

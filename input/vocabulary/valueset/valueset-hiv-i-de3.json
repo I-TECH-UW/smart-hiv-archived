@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-i-de3",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-i-de3",
+  "name": "ReasonforreferralCodes",
+  "title": "Reason for referral Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason for referral element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.I.DE3",
+        "display": "Hospital"
+      }, {
+        "code": "HIV.I.DE4",
+        "display": "Referral for screening including diagnostics and lab testing"
+      }, {
+        "code": "HIV.I.DE5",
+        "display": "TB referral"
+      }, {
+        "code": "HIV.I.DE6",
+        "display": "Antenatal care referral"
+      }, {
+        "code": "HIV.I.DE7",
+        "display": "Referral for other general services (specify)"
+      } ]
+    } ]
+  }
+}

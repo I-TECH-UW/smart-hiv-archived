@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de737",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de737",
+  "name": "SymptomsofTBCodes",
+  "title": "Symptoms of TB Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Symptoms of TB element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE737",
+        "display": "Current cough"
+      }, {
+        "code": "HIV.D.DE738",
+        "display": "Fever of 39 °C or greater"
+      }, {
+        "code": "HIV.D.DE739",
+        "display": "Weight loss (reported)"
+      }, {
+        "code": "HIV.D.DE740",
+        "display": "Calculated weight loss"
+      }, {
+        "code": "HIV.D.DE741",
+        "display": "Night sweats"
+      }, {
+        "code": "HIV.D.DE742",
+        "display": "Poor weight gain"
+      }, {
+        "code": "HIV.D.DE743",
+        "display": "Reduced playfulness"
+      }, {
+        "code": "HIV.D.DE744",
+        "display": "Other possible TB symptom (specify)"
+      } ]
+    } ]
+  }
+}
