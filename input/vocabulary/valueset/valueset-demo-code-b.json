@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "demo-code-b",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/demo-code-b",
+  "name": "HIVburdenofthesettingCodes",
+  "title": "HIV burden of the setting Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV burden of the setting element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "Demo code B",
+        "display": "High HIV burden setting"
+      }, {
+        "code": "Demo code C",
+        "display": "Low HIV burden setting"
+      } ]
+    } ]
+  }
+}

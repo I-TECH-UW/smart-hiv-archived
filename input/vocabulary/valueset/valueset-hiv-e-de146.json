@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de146",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de146",
+  "name": "HIVexposedinfantreasonforunknownfinalstatusCodes",
+  "title": "HIV-exposed infant reason for unknown final status Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV-exposed infant reason for unknown final status element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE146",
+        "display": "Lost to follow-up"
+      }, {
+        "code": "HIV.E.DE147",
+        "display": "Transferred out"
+      }, {
+        "code": "HIV.E.DE148",
+        "display": "Death (documented)"
+      }, {
+        "code": "HIV.E.DE149",
+        "display": "Refused (stopped) treatment"
+      } ]
+    } ]
+  }
+}

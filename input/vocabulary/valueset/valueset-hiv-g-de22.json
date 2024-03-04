@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-g-de22",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de22",
+  "name": "ReasonHepatitisBtestnotconductedCodes",
+  "title": "Reason Hepatitis B test not conducted Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason Hepatitis B test not conducted element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.G.DE22",
+        "display": "Test delayed to next contact or referred"
+      }, {
+        "code": "HIV.G.DE23",
+        "display": "Stock-out or expired"
+      }, {
+        "code": "HIV.G.DE24",
+        "display": "Machine or technician not available or machine not functioning"
+      }, {
+        "code": "HIV.G.DE25",
+        "display": "Client declined / refused test"
+      }, {
+        "code": "HIV.G.DE26",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}

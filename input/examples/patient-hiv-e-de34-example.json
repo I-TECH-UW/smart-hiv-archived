@@ -1,0 +1,11 @@
+{
+  "resourceType": "Patient",
+  "id": "hiv-e-de34-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de34" ]
+  },
+  "gender": "?",
+  "generalPractitioner": [ {
+    "reference": "PractitionerRole/null-practitionerrole-example"
+  } ]
+}

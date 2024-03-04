@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-self-test-kit-distribution-approach-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-kit-distribution-approach-codes",
+  "name": "HIVselftestkitdistributionapproachCodes",
+  "title": "HIV self-test kit distribution approach Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV self-test kit distribution approach element",
+  "immutable": true
+}

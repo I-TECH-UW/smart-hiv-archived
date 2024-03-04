@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de357",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de357",
+  "name": "HepatitisCdiagnosisCodes",
+  "title": "Hepatitis C diagnosis Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Hepatitis C diagnosis element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE357",
+        "display": "Hepatitis C positive"
+      }, {
+        "code": "HIV.D.DE358",
+        "display": "Hepatitis C negative"
+      }, {
+        "code": "HIV.G.DE55",
+        "display": "Hepatitis C positive"
+      }, {
+        "code": "HIV.G.DE56",
+        "display": "Hepatitis C negative"
+      } ]
+    } ]
+  }
+}

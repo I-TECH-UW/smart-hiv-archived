@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de178",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de178",
+  "name": "TypeoffollowupappointmentCodes",
+  "title": "Type of follow-up appointment Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Type of follow-up appointment element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE178",
+        "display": "Retesting for HIV"
+      }, {
+        "code": "HIV.B.DE179",
+        "display": "Other (specify)"
+      }, {
+        "code": "HIV.C.DE113",
+        "display": "Retesting for HIV"
+      }, {
+        "code": "HIV.C.DE114",
+        "display": "Scheduled follow-up appointment for PrEP"
+      }, {
+        "code": "HIV.C.DE115",
+        "display": "Other (specify)"
+      }, {
+        "code": "HIV.D.DE458",
+        "display": "Clinical visit"
+      }, {
+        "code": "HIV.D.DE459",
+        "display": "Antiretroviral drug pick up"
+      }, {
+        "code": "HIV.D.DE460",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,671 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ICHI",
+  "url": "http://fhir.org/guides/itech-uw/ConceptMap/ICHI",
+  "name": "ICHI",
+  "title": "ICHI",
+  "status": "draft",
+  "experimental": false,
+  "description": "Concept mapping from content extended codes to ICHI",
+  "group": [ {
+    "source": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target": "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi",
+    "element": [ {
+      "code": "HIV.C.DE118",
+      "display": "Male and female condoms and condom-compatible lubricants offered",
+      "target": [ {
+        "code": "VEF.RD.ZZ",
+        "display": "Provision of products to support improved sexual behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE119",
+      "display": "Voluntary medical male circumcision (VMMC) referral",
+      "target": [ {
+        "code": "NGM.JJ.AA",
+        "display": "Code title:?Partial excision of penis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE120",
+      "display": "Harm reduction for people who inject drugs",
+      "target": [ {
+        "code": "VAC.PP.ZZ",
+        "display": "Code title:?Counselling about illicit drug use behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE121",
+      "display": "Behavioural interventions to support risk reduction",
+      "target": [ {
+        "code": "VE1.PP.ZZ",
+        "display": "Code title:?Counselling about lifestyle behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE132",
+      "display": "Contraception and family planning",
+      "target": [ {
+        "code": "VEF.PP.ZZ",
+        "display": "Counselling about sexual behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE133",
+      "display": "Check pregnancy status",
+      "target": [ {
+        "code": "PZX.AH.XB",
+        "display": "Specimen collection, urine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE134",
+      "display": "Prevent mother-to-child transmission",
+      "target": [ {
+        "code": "VE1.PP.ZZ",
+        "display": "Code title:?Counselling about lifestyle behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE135",
+      "display": "Cervical cancer screening and treatment",
+      "target": [ {
+        "code": "NMF.AH.AC",
+        "display": "Code title:?Cervical papanicolaou smear",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE136",
+      "display": "Anal cancer screening (for men who have sex with men)",
+      "target": [ {
+        "code": "KBX.AE.AD",
+        "display": "Code title:?Anoscopy",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE137",
+      "display": "STI testing and treatment",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE140",
+      "display": "Assessment and provision of vaccinations",
+      "target": [ {
+        "code": "DTB.DB.AE",
+        "display": "Code title:?Percutaneous administration of immunological agent, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE141",
+      "display": "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment",
+      "target": [ {
+        "code": "DTB.DB.AE",
+        "display": "Code title:?Percutaneous administration of immunological agent, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE142",
+      "display": "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+      "target": [ {
+        "code": "DTB.DB.AC",
+        "display": "Code title:?Oral administration of immunological",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE143",
+      "display": "Intensified TB case finding and linkage to TB treatment",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE144",
+      "display": "Provision of isoniazid preventive therapy if person does not have TB",
+      "target": [ {
+        "code": "DTB.DB.AC",
+        "display": "Code title:?Oral administration of immunological",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE145",
+      "display": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+      "target": [ {
+        "code": "DTB.DB.AC",
+        "display": "Code title:?Oral administration of immunological",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE147",
+      "display": "Mental health services",
+      "target": [ {
+        "code": "AS1.PP.ZZ",
+        "display": "Code title:?Counselling for mental functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE148",
+      "display": "Psychosocial counselling, support and treatment adherence counselling",
+      "target": [ {
+        "code": "ATF.PP.ZZ",
+        "display": "Code title:?Counselling for global psychosocial functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE149",
+      "display": "Support for disclosure and partner services",
+      "target": [ {
+        "code": "PZB.PP.ZZ",
+        "display": "Code title:?Counselling, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE150",
+      "display": "Legal and social services",
+      "target": [ {
+        "code": "PZB.PP.ZZ",
+        "display": "Code title:?Counselling, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE151",
+      "display": "Services for responding to violence against women",
+      "target": [ {
+        "code": "VBB.PP.ZZ",
+        "display": "Code title:?Counselling about family and partner violence behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE113",
+      "display": "Retesting for HIV",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE114",
+      "display": "Scheduled follow-up appointment for PrEP",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE2",
+      "display": "First time counselling on PrEP",
+      "target": [ {
+        "code": "VAD.PP.ZZ",
+        "display": "Code title:?Counselling about pharmaceutical use behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE3",
+      "display": "Follow-up appointment for PrEP",
+      "target": [ {
+        "code": "PZX.TI.ZZ",
+        "display": "Code title:?Pharmacotherapy prescription",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE4",
+      "display": "Restarting PrEP",
+      "target": [ {
+        "code": "VAD.PP.ZZ",
+        "display": "Code title:?Counselling about pharmaceutical use behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE5",
+      "display": "Counselling on PEP",
+      "target": [ {
+        "code": "VAD.PP.ZZ",
+        "display": "Code title:?Counselling about pharmaceutical use behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE7",
+      "display": "3-month PrEP visit",
+      "target": [ {
+        "code": "PZX.TI.ZZ",
+        "display": "Code title:?Pharmacotherapy prescription",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE10",
+      "display": "Currently on PrEP",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE12",
+      "display": "Daily oral PrEP",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE13",
+      "display": "Event-driven PrEP (ED-PrEP)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE17",
+      "display": "TDF-FTC",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE18",
+      "display": "TDF",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE19",
+      "display": "TDF + 3TC",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE52",
+      "display": "On ART less than 6 months",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE54",
+      "display": "Partner is not virally suppressed",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE59",
+      "display": "Serum creatinine test",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE60",
+      "display": "Hepatitis B surface antigen",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE61",
+      "display": "Hepatitis C antibody",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE62",
+      "display": "Rapid plasma reagin",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE63",
+      "display": "Other screening for STIs",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE64",
+      "display": "Pregnancy testing",
+      "target": [ {
+        "code": "PZX.AH.XB",
+        "display": "Code title:?Specimen collection, urine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE65",
+      "display": "Review vaccination history",
+      "target": [ {
+        "code": "VDA.AA.ZZ",
+        "display": "Code title:?Assessment of immunisation behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE67",
+      "display": "Serum creatinine test result",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE69",
+      "display": "Tenofovir disoproxil and lamivudine (TDF + 3TC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE70",
+      "display": "Tenofovir disoproxil and emtricitabine (TDF + FTC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE72",
+      "display": "Dolutegravir (DTG)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE73",
+      "display": "Raltegravir (RAL)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE74",
+      "display": "Darunavir/ritonavir (DRV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE75",
+      "display": "Atazanavir/ritonavir (ATV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE76",
+      "display": "Lopinavir/ritonavir (LPV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE78",
+      "display": "Zidovudine and lamivudine (AZT + 3TC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE79",
+      "display": "Abacavir and lamivudine (ABC + 3TC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE80",
+      "display": "Tenofovir disoproxil and lamivudine (TDF + 3TC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE81",
+      "display": "Tenofovir disoproxil and emtricitabine (TDF + FTC)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE83",
+      "display": "Dolutegravir (DTG)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE84",
+      "display": "Atazanavir/ritonavir (ATV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE85",
+      "display": "Lopinavir/ritonavir (LPV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE86",
+      "display": "Darunavir/ritonavir (DRV/r)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE87",
+      "display": "Ritonavir (RTV)",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE100",
+      "display": "Probable recent exposure to HIV",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE110",
+      "display": "Adherence counselling provided",
+      "target": [ {
+        "code": "VAD.PP.ZZ",
+        "display": "Code title:?Counselling about pharmaceutical use behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE122",
+      "display": "Condoms distributed",
+      "target": [ {
+        "code": "VEF.RD.ZZ",
+        "display": "Provision of products to support improved sexual behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE42",
+      "display": "Mother HIV test conducted",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE43",
+      "display": "Mother HIV test ordered",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE49",
+      "display": "Infant or child exposure to HIV",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE51",
+      "display": "HIV-exposed infant or child",
+      "target": [ {
+        "code": "PZB.VC.ZZ",
+        "display": "Code title:?Infectious disease contact tracing",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE59",
+      "display": "Postpartum family planning counselling conducted",
+      "target": [ {
+        "code": "NT1.PP.ZZ",
+        "display": "Counselling for genitourinary and reproductive functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE61",
+      "display": "ARV adherence counselling",
+      "target": [ {
+        "code": "VEH.PP.ZZ",
+        "display": "Counselling about breastfeeding behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE62",
+      "display": "Infant-feeding counselling provided",
+      "target": [ {
+        "code": "VEJ.PP.ZZ",
+        "display": "Code title:?Counselling about parenting behaviours",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE64",
+      "display": "Malaria prevention counselling conducted",
+      "target": [ {
+        "code": "DTB.PP.ZZ",
+        "display": "Counselling for functions of the immunological system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE93",
+      "display": "Rapid diagnostic test for HIV",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE94",
+      "display": "Enzyme immunoassay for HIV",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE95",
+      "display": "Nucleic acid test for HIV",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE96",
+      "display": "Dual HIV/syphilis rapid diagnostic test",
+      "target": [ {
+        "code": "PZX.AH.XA",
+        "display": "Code title:?Specimen collection, blood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE44",
+      "display": "Currently on ART",
+      "target": [ {
+        "code": "PZX.DB.AC",
+        "display": "Code title:?Administering pharmacotherapy, per orifice",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE1",
+      "display": "Emergency referral",
+      "target": [ {
+        "code": "UEP.TI.ZZ",
+        "display": "Referral to health provider",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE3",
+      "display": "Hospital",
+      "target": [ {
+        "code": "UEP.TI.ZZ",
+        "display": "Referral to health provider",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE4",
+      "display": "Referral for screening including diagnostics and lab testing",
+      "target": [ {
+        "code": "PZX.AH.ZZ",
+        "display": "Specimen collection, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE5",
+      "display": "TB referral",
+      "target": [ {
+        "code": "UEP.TI.ZZ",
+        "display": "Referral to health provider",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE6",
+      "display": "Antenatal care referral",
+      "target": [ {
+        "code": "UEP.TI.ZZ",
+        "display": "Referral to health provider",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.I.DE7",
+      "display": "Referral for other general services (specify)",
+      "target": [ {
+        "code": "UEP.TI.ZZ",
+        "display": "Referral to health provider",
+        "equivalence": "equivalent"
+      } ]
+    } ]
+  } ]
+}

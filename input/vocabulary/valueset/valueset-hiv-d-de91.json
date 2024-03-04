@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de91",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de91",
+  "name": "IntegrasestrandtransferinhibitorsINSTIsCodes",
+  "title": "Integrase strand transfer inhibitors (INSTIs) Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Integrase strand transfer inhibitors (INSTIs) element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE91",
+        "display": "DTG"
+      }, {
+        "code": "HIV.D.DE92",
+        "display": "RAL"
+      } ]
+    } ]
+  }
+}

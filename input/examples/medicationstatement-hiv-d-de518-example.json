@@ -1,0 +1,8 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "hiv-d-de518-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de518" ]
+  },
+  "status": "?"
+}

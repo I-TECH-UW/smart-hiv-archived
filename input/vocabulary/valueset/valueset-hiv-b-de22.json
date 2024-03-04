@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de22",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de22",
+  "name": "EntrypointforfacilityleveltestingCodes",
+  "title": "Entry point for facility-level testing Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Entry point for facility-level testing element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE22",
+        "display": "Provider-initiated tested in a clinic or emergency facility"
+      }, {
+        "code": "HIV.B.DE23",
+        "display": "Antenatal care clinic"
+      }, {
+        "code": "HIV.B.DE24",
+        "display": "Voluntary counselling and testing (within a health facility setting)"
+      }, {
+        "code": "HIV.B.DE25",
+        "display": "Family planning clinic"
+      }, {
+        "code": "HIV.B.DE26",
+        "display": "Other facility-level testing"
+      }, {
+        "code": "HIV.B.DE27",
+        "display": "Tuberculosis (TB) clinic"
+      } ]
+    } ]
+  }
+}

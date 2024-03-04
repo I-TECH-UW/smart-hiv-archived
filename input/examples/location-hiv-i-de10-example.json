@@ -1,0 +1,7 @@
+{
+  "resourceType": "Location",
+  "id": "hiv-i-de10-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-i-de10" ]
+  }
+}

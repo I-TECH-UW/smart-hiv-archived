@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de127",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de127",
+  "name": "PartnerHIVstatusconfirmedCodes",
+  "title": "Partner HIV status (confirmed) Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Partner HIV status (confirmed) element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE127",
+        "display": "HIV positive"
+      }, {
+        "code": "HIV.B.DE128",
+        "display": "HIV negative"
+      }, {
+        "code": "HIV.B.DE129",
+        "display": "Inconclusive"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de98",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de98",
+  "name": "MaternalandchildhealthservicevisitCodes",
+  "title": "Maternal and child health service visit Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Maternal and child health service visit element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE98",
+        "display": "12-month visit"
+      }, {
+        "code": "HIV.E.DE99",
+        "display": "24-month visit"
+      }, {
+        "code": "HIV.E.DE100",
+        "display": "First visit after the end of breastfeeding"
+      } ]
+    } ]
+  }
+}

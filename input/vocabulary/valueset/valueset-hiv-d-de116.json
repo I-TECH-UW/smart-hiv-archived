@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de116",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de116",
+  "name": "SecondlineARTregimenforadultsandadolescentsCodes",
+  "title": "Second-line ART regimen for adults and adolescents Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Second-line ART regimen for adults and adolescents element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE116",
+        "display": "AZT + 3TC + DTG"
+      }, {
+        "code": "HIV.D.DE117",
+        "display": "AZT + 3TC + ATV/r"
+      }, {
+        "code": "HIV.D.DE118",
+        "display": "AZT + 3TC + LPV/r"
+      }, {
+        "code": "HIV.D.DE119",
+        "display": "TDF + 3TC + DTG"
+      }, {
+        "code": "HIV.D.DE120",
+        "display": "TDF + FTC + DTG"
+      }, {
+        "code": "HIV.D.DE121",
+        "display": "AZT + 3TC + DRV/r"
+      }, {
+        "code": "HIV.D.DE122",
+        "display": "AZT + 3TC + ATV/r"
+      }, {
+        "code": "HIV.D.DE123",
+        "display": "AZT + 3TC + LPV/r"
+      }, {
+        "code": "HIV.D.DE124",
+        "display": "TDF + 3TC + ATV/r"
+      }, {
+        "code": "HIV.D.DE125",
+        "display": "TDF + FTC + ATV/r"
+      }, {
+        "code": "HIV.D.DE126",
+        "display": "TDF + 3TC + LPV/r"
+      }, {
+        "code": "HIV.D.DE127",
+        "display": "TDF + 3TC + DRV/r"
+      }, {
+        "code": "HIV.D.DE128",
+        "display": "TDF + FTC + LPV/r"
+      }, {
+        "code": "HIV.D.DE129",
+        "display": "TDF + FTC + DRV/r"
+      } ]
+    } ]
+  }
+}

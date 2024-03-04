@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de115",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de115",
+  "name": "HIVprobablerouteoftransmission*Codes",
+  "title": "HIV probable route of transmission* Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV probable route of transmission* element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE115",
+        "display": "Sexual transmission"
+      }, {
+        "code": "HIV.B.DE116",
+        "display": "Transmission through sharing of needles and syringes"
+      }, {
+        "code": "HIV.B.DE117",
+        "display": "Mother-to-child transmission"
+      }, {
+        "code": "HIV.B.DE118",
+        "display": "Transmission through blood transfusion"
+      } ]
+    } ]
+  }
+}

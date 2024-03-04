@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de123",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de123",
+  "name": "PartnerHIVtestresultCodes",
+  "title": "Partner HIV test result Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Partner HIV test result element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE123",
+        "display": "HIV-positive"
+      }, {
+        "code": "HIV.B.DE124",
+        "display": "HIV Negative"
+      }, {
+        "code": "HIV.B.DE125",
+        "display": "Inconclusive"
+      } ]
+    } ]
+  }
+}

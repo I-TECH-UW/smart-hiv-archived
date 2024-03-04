@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de12",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de12",
+  "name": "PrEPdosingtypeCodes",
+  "title": "PrEP dosing type Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the PrEP dosing type element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE12",
+        "display": "Daily oral PrEP"
+      }, {
+        "code": "HIV.C.DE13",
+        "display": "Event-driven PrEP (ED-PrEP)"
+      } ]
+    } ]
+  }
+}

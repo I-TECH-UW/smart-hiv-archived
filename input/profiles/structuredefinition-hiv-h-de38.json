@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-h-de38",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-h-de38",
+  "name": "Placeofdeath",
+  "title": "Place of death",
+  "status": "draft",
+  "experimental": false,
+  "description": "Where the client died, if known",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Place of death",
+      "definition": "Where the client died, if known",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.H.DE38",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.H.DE38"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Place of death",
+      "definition": "Where the client died, if known",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.H.DE38"
+      } ]
+    } ]
+  }
+}

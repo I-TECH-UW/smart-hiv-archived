@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de781",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de781",
+  "name": "TBtreatmentregimenCodes",
+  "title": "TB treatment regimen Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the TB treatment regimen element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE781",
+        "display": "Isoniazid (H)"
+      }, {
+        "code": "HIV.D.DE783",
+        "display": "Ethambutol (E)"
+      }, {
+        "code": "HIV.D.DE785",
+        "display": "Levofloxacin (Lfx)"
+      }, {
+        "code": "HIV.D.DE787",
+        "display": "Pyrazinamide (Z)"
+      }, {
+        "code": "HIV.D.DE789",
+        "display": "Rifampicin (R)"
+      }, {
+        "code": "HIV.D.DE791",
+        "display": "Rifabutin"
+      } ]
+    } ]
+  }
+}

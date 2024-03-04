@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-g-de44",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de44",
+  "name": "ReasonHepatitisCtestnotdoneCodes",
+  "title": "Reason Hepatitis C test not done Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason Hepatitis C test not done element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.G.DE44",
+        "display": "Test delayed to next contact or referred"
+      }, {
+        "code": "HIV.G.DE45",
+        "display": "Stock-out or expired"
+      }, {
+        "code": "HIV.G.DE46",
+        "display": "Machine or technician not available or machine not functioning"
+      }, {
+        "code": "HIV.G.DE47",
+        "display": "Client declined / refused test"
+      }, {
+        "code": "HIV.G.DE48",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}
