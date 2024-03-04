@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-g-de29",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de29",
+  "name": "HepatitisBtestresultCodes",
+  "title": "Hepatitis B test result Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Hepatitis B test result element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.G.DE29",
+        "display": "Hepatitis B positive"
+      }, {
+        "code": "HIV.G.DE30",
+        "display": "Hepatitis B negative"
+      } ]
+    } ]
+  }
+}

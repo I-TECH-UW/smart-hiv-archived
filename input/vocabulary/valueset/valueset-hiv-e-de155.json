@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de155",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de155",
+  "name": "RouteofadministrationCodes",
+  "title": "Route of administration Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Route of administration element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE155",
+        "display": "Intramuscular"
+      } ]
+    } ]
+  }
+}

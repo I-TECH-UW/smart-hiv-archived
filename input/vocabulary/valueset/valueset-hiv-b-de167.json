@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de167",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de167",
+  "name": "IntimatepartnerviolenceenquiryresultsCodes",
+  "title": "Intimate partner violence enquiry results Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Intimate partner violence enquiry results element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE167",
+        "display": "Client received treatment and/or counselling as needed"
+      }, {
+        "code": "HIV.B.DE168",
+        "display": "Client was referred"
+      }, {
+        "code": "HIV.B.DE169",
+        "display": "No action necessary"
+      }, {
+        "code": "HIV.B.DE170",
+        "display": "Other IPV result (specify)"
+      } ]
+    } ]
+  }
+}

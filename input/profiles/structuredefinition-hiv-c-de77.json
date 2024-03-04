@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-c-de77",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-c-de77",
+  "name": "BackboneregimenforPEPforchildren",
+  "title": "Backbone regimen for PEP for children",
+  "status": "draft",
+  "experimental": false,
+  "description": "Backbone regimen for post-exposure prophylaxis (PEP) for children. A backbone regimen is a combination of two nucleos(t)ide reverse-transcriptase inhibitor antiretroviral (ARV) activity against HIV when combined with a third ARV drug.",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Backbone regimen for PEP for children",
+      "definition": "Backbone regimen for post-exposure prophylaxis (PEP) for children. A backbone regimen is a combination of two nucleos(t)ide reverse-transcriptase inhibitor antiretroviral (ARV) activity against HIV when combined with a third ARV drug.",
+      "comment": "HIV.DT.05 PEP and PrEP Regimen",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.C.DE77",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.C.DE77"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Backbone regimen for PEP for children",
+      "definition": "Backbone regimen for post-exposure prophylaxis (PEP) for children. A backbone regimen is a combination of two nucleos(t)ide reverse-transcriptase inhibitor antiretroviral (ARV) activity against HIV when combined with a third ARV drug.",
+      "comment": "HIV.DT.05 PEP and PrEP Regimen",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Backbone regimen for PEP for children Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de78"
+      },
+      "mapping": [ {
+        "map": "HIV.C.DE77"
+      } ]
+    } ]
+  }
+}

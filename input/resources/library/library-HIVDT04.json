@@ -1,0 +1,15 @@
+{
+  "resourceType": "Library",
+  "id": "HIVDT04",
+  "url": "http://fhir.org/guides/who/anc-cds/Library/HIVDT04",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.04"
+  } ],
+  "name": "HIVDT04",
+  "title": "HIV.DT.04 PrEP Eligibility check",
+  "description": "HIV status ≠ HIV Positive",
+  "content": [ {
+    "id": "ig-loader-HIVDT04.cql"
+  } ]
+}

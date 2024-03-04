@@ -1,0 +1,50 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "CIEL",
+  "url": "http://fhir.org/guides/itech-uw/ConceptMap/CIEL",
+  "name": "CIEL",
+  "title": "CIEL",
+  "status": "draft",
+  "experimental": false,
+  "description": "Concept mapping from content extended codes to CIEL",
+  "group": [ {
+    "source": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target": "http://hl7.org/fhir/sid/ciel",
+    "element": [ {
+      "code": "HIV.B.DE28",
+      "display": "Currently pregnant",
+      "target": [ {
+        "code": "7",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE131",
+      "display": "HIV positive counselling conducted",
+      "target": [ {
+        "code": "DTB.PP.ZZ",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE132",
+      "display": "Hepatitis B positive counselling conducted",
+      "target": [ {
+        "code": "DTB.PP.ZZ",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE133",
+      "display": "Hepatitis C positive counselling conducted",
+      "target": [ {
+        "code": "DTB.PP.ZZ",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE134",
+      "display": "Syphilis counselling, treatment and further testing",
+      "target": [ {
+        "code": "DTB.PP.ZZ",
+        "equivalence": "equivalent"
+      } ]
+    } ]
+  } ]
+}

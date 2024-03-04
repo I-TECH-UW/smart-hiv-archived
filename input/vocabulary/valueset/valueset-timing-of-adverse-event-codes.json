@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "timing-of-adverse-event-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/timing-of-adverse-event-codes",
+  "name": "TimingofadverseeventCodes",
+  "title": "Timing of adverse event Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Timing of adverse event element",
+  "immutable": true
+}

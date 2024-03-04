@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de157",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de157",
+  "name": "HIVclinicalstageCodes",
+  "title": "HIV clinical stage Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV clinical stage element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE157",
+        "display": "WHO HIV clinical stage 1"
+      }, {
+        "code": "HIV.D.DE158",
+        "display": "WHO HIV clinical stage 2"
+      }, {
+        "code": "HIV.D.DE159",
+        "display": "WHO HIV clinical stage 3"
+      }, {
+        "code": "HIV.D.DE160",
+        "display": "WHO HIV clinical stage 4"
+      } ]
+    } ]
+  }
+}

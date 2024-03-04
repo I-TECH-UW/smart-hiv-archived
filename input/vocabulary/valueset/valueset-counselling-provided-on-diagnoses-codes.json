@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "counselling-provided-on-diagnoses-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/counselling-provided-on-diagnoses-codes",
+  "name": "CounsellingprovidedondiagnosesCodes",
+  "title": "Counselling provided on diagnoses Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Counselling provided on diagnoses element",
+  "immutable": true
+}

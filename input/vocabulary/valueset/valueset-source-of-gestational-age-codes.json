@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "source-of-gestational-age-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/source-of-gestational-age-codes",
+  "name": "SourceofgestationalageCodes",
+  "title": "Source of gestational age Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Source of gestational age element",
+  "immutable": true
+}

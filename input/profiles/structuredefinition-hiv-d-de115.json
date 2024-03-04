@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-d-de115",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de115",
+  "name": "SecondlineARTregimenforadultsandadolescents",
+  "title": "Second-line ART regimen for adults and adolescents",
+  "status": "draft",
+  "experimental": false,
+  "description": "Second-line ART regimen for adults and adolescents living with HIV",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Second-line ART regimen for adults and adolescents",
+      "definition": "Second-line ART regimen for adults and adolescents living with HIV",
+      "comment": "HIV.DT.10 ART Regimen",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.D.DE115",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE115"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Second-line ART regimen for adults and adolescents",
+      "definition": "Second-line ART regimen for adults and adolescents living with HIV",
+      "comment": "HIV.DT.10 ART Regimen",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Second-line ART regimen for adults and adolescents Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de116"
+      },
+      "mapping": [ {
+        "map": "HIV.D.DE115"
+      } ]
+    } ]
+  }
+}

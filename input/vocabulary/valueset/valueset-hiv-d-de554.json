@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de554",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de554",
+  "name": "ReasonTTvaccinationnotprovidedCodes",
+  "title": "Reason TT vaccination not provided Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason TT vaccination not provided element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE554",
+        "display": "Stock-out"
+      }, {
+        "code": "HIV.D.DE555",
+        "display": "Client is ill"
+      }, {
+        "code": "HIV.D.DE556",
+        "display": "Client refused"
+      }, {
+        "code": "HIV.D.DE557",
+        "display": "Allergy to vaccine"
+      }, {
+        "code": "HIV.D.DE558",
+        "display": "Other reason immunization not provided (specify)"
+      } ]
+    } ]
+  }
+}

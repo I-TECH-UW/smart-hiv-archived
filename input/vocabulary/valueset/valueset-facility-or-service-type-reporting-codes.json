@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "facility-or-service-type-reporting-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/facility-or-service-type-reporting-codes",
+  "name": "FacilityorservicetypereportingCodes",
+  "title": "Facility or service type reporting Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Facility or service type reporting element",
+  "immutable": true
+}

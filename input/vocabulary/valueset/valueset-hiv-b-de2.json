@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de2",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de2",
+  "name": "ReasonforHIVtestingservicesvisitCodes",
+  "title": "Reason for HIV testing services visit Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason for HIV testing services visit element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE2",
+        "display": "First-time HIV test"
+      }, {
+        "code": "HIV.B.DE3",
+        "display": "Retesting for HIV"
+      } ]
+    } ]
+  }
+}
