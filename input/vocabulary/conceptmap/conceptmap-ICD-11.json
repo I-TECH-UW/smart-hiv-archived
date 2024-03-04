@@ -1,0 +1,5486 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ICD-11",
+  "url": "http://fhir.org/guides/itech-uw/ConceptMap/ICD-11",
+  "name": "ICD-11",
+  "title": "ICD-11",
+  "status": "draft",
+  "experimental": false,
+  "description": "Concept mapping from content extended codes to ICD-11",
+  "group": [ {
+    "source": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target": "http://hl7.org/fhir/sid/icd-11",
+    "element": [ {
+      "code": "HIV.A.DE21",
+      "display": "Transgender male",
+      "target": [ {
+        "code": "HA60",
+        "display": "Gender incongruence of adolescence or adulthood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.A.DE22",
+      "display": "Transgender female",
+      "target": [ {
+        "code": "HA60",
+        "display": "Gender incongruence of adolescence or adulthood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.A.DE30",
+      "display": "[Administrative Area]",
+      "target": [ {
+        "code": "not classifiable",
+        "display": "use of bucket or list generated from other fields",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE12",
+      "display": "Contact with and (suspected) exposure to HIV",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE28",
+      "display": "Currently pregnant",
+      "target": [ {
+        "code": "QA41",
+        "display": "Code title:?Pregnant state",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE29",
+      "display": "Gestational age",
+      "target": [ {
+        "code": "XT3X",
+        "display": "Map to set of ICD-11 codes for age for  Duration of pregnancy",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE31",
+      "display": "Breastfeeding",
+      "target": [ {
+        "code": "QA48.1",
+        "display": "Code title:?Care or examination of lactating mother",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE33",
+      "display": "HIV positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE34",
+      "display": "HIV negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE36",
+      "display": "Partner is from a key population*",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE39",
+      "display": "Transgender people",
+      "target": [ {
+        "code": "HA60",
+        "display": "Code title:?Gender incongruence of adolescence or adulthood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE40",
+      "display": "Person who injects drugs",
+      "target": [ {
+        "code": "QE11.8",
+        "display": "Hazardous use of other specified psychoactive substances",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE41",
+      "display": "People living in prisons and other closed setting",
+      "target": [ {
+        "code": "XE30E",
+        "display": "Code title:?Prison",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE44",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE51",
+      "display": "Transgender people",
+      "target": [ {
+        "code": "HA60",
+        "display": "Code title:?Gender incongruence of adolescence or adulthood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE52",
+      "display": "People who inject drugs",
+      "target": [ {
+        "code": "QE11.8",
+        "display": "Hazardous use of other specified psychoactive substances",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE53",
+      "display": "People living in prisons and other closed settings",
+      "target": [ {
+        "code": "XE30E",
+        "display": "Code title:?Prison",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE54",
+      "display": "Adolescent girl",
+      "target": [ {
+        "code": "XT9X",
+        "display": "Code title:?Late Adolescence ??As per meeting: selected one of the three adolescent codes for mapping purposes",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE55",
+      "display": "Young woman",
+      "target": [ {
+        "code": "XT15",
+        "display": "Young Adult",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE68",
+      "display": "HIV-1",
+      "target": [ {
+        "code": "XN8LD",
+        "display": "Code title:?Human immunodeficiency virus type 1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE69",
+      "display": "HIV-2",
+      "target": [ {
+        "code": "XN71W",
+        "display": "Code title:?Human immunodeficiency virus type 2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE79",
+      "display": "HIV test conducted",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE94",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE95",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE120",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE121",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE97",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE98",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE123",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE124",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE100",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE101",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE126",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE127",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE103",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE104",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE129",
+      "display": "Reactive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE130",
+      "display": "Non-reactive",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE107",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE108",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE109",
+      "display": "HIV-inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE111",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE112",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE113",
+      "display": "HIV-inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE132",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE133",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE134",
+      "display": "HIV-inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE119",
+      "display": "Partner HIV test conducted",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE123",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE124",
+      "display": "HIV Negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE125",
+      "display": "Inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE127",
+      "display": "HIV positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE128",
+      "display": "HIV negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE129",
+      "display": "Inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE131",
+      "display": "HIV positive counselling conducted",
+      "target": [ {
+        "code": "QA14",
+        "display": "Code title:?Contact with health services for human immunodeficiency virus counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE132",
+      "display": "Hepatitis B positive counselling conducted",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE133",
+      "display": "Hepatitis C positive counselling conducted",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE134",
+      "display": "Syphilis counselling, treatment and further testing",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE137",
+      "display": "Offer male and female condoms and condom-compatible lubricants",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE138",
+      "display": "Offer pre-exposure prophylaxis (PrEP) for people at substantial ongoing risk of HIV infection",
+      "target": [ {
+        "code": "QC0Y",
+        "display": "Code title:?Other specified contact with health services related to immunizations or certain other prophylactic measures",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE139",
+      "display": "Offer post-exposure prophylaxis (PEP) following suspected exposure",
+      "target": [ {
+        "code": "QB9Y",
+        "display": "Code title:?Other specified contact with health services for nonsurgical interventions not involving devices",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE140",
+      "display": "Voluntary medical male circumcision (VMMC)",
+      "target": [ {
+        "code": "QB82",
+        "display": "Code title:?Contact with health services for routine or ritual circumcision",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE141",
+      "display": "Harm reduction for people who inject drugs",
+      "target": [ {
+        "code": "QA12",
+        "display": "Code title:?Contact with health services for drug use counselling or surveillance",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE142",
+      "display": "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations",
+      "target": [ {
+        "code": "QA15.1",
+        "display": "?Counselling related to sexual behaviour and orientation or sexual relationships of the person",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE118",
+      "display": "Male and female condoms and condom-compatible lubricants offered",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE119",
+      "display": "Voluntary medical male circumcision (VMMC) referral",
+      "target": [ {
+        "code": "QB82",
+        "display": "Code title:?Contact with health services for routine or ritual circumcision",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE120",
+      "display": "Harm reduction for people who inject drugs",
+      "target": [ {
+        "code": "QA12",
+        "display": "Code title:?Contact with health services for drug use counselling or surveillance",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE121",
+      "display": "Behavioural interventions to support risk reduction",
+      "target": [ {
+        "code": "QA15.1",
+        "display": "?Counselling related to sexual behaviour and orientation or sexual relationships of the person",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE147",
+      "display": "Offer male and female condoms and condom-compatible lubricants",
+      "target": [ {
+        "code": "QA21.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE148",
+      "display": "Harm reduction for people who inject drugs",
+      "target": [ {
+        "code": "QA12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE149",
+      "display": "Behavioural interventions to support risk reduction",
+      "target": [ {
+        "code": "QA15.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE144",
+      "display": "Contraception and family planning",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE145",
+      "display": "Check pregnancy status",
+      "target": [ {
+        "code": "QA40",
+        "display": "Code title:?Pregnancy examination or test",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE146",
+      "display": "Prevention of mother-to-child transmission",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Code title:?Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE147",
+      "display": "Cervical cancer screening and treatment",
+      "target": [ {
+        "code": "QA09.4",
+        "display": "Code title:?Special screening examination for neoplasm of cervix",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE148",
+      "display": "Anal cancer screening (for men who have sex with men)",
+      "target": [ {
+        "code": "QA09.1",
+        "display": "Code title:?Special screening examination for neoplasm of intestinal tract",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE149",
+      "display": "Sexually transmitted infection (STI) testing and treatment",
+      "target": [ {
+        "code": "QA08.3",
+        "display": "Code title:?Special screening examination for infections with a predominantly sexual mode of transmission",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE132",
+      "display": "Contraception and family planning",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE133",
+      "display": "Check pregnancy status",
+      "target": [ {
+        "code": "QA40",
+        "display": "Code title:?Pregnancy examination or test",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE134",
+      "display": "Prevent mother-to-child transmission",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Code title:?Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE135",
+      "display": "Cervical cancer screening and treatment",
+      "target": [ {
+        "code": "QA09.4",
+        "display": "Code title:?Special screening examination for neoplasm of cervix",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE136",
+      "display": "Anal cancer screening (for men who have sex with men)",
+      "target": [ {
+        "code": "QA09.1",
+        "display": "Code title:?Special screening examination for neoplasm of intestinal tract",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE137",
+      "display": "STI testing and treatment",
+      "target": [ {
+        "code": "QA08.3",
+        "display": "Code title:?Special screening examination for infections with a predominantly sexual mode of transmission",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE151",
+      "display": "Contraception and family planning",
+      "target": [ {
+        "code": "QA21.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE152",
+      "display": "Check pregnancy status",
+      "target": [ {
+        "code": "QA40",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE153",
+      "display": "Prevention of mother-to-child transmission",
+      "target": [ {
+        "code": "QA1Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE154",
+      "display": "STI testing and treatment",
+      "target": [ {
+        "code": "QA08.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE150",
+      "display": "HIV testing for partners and biological children",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE151",
+      "display": "HIV testing for partners and social contacts of people from key populations, where appropriate",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE153",
+      "display": "Assessment and provision of vaccinations",
+      "target": [ {
+        "code": "XM5L44",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE154",
+      "display": "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment",
+      "target": [ {
+        "code": "XM6LL6",
+        "display": "Code title:?Hepatitis vaccines",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE155",
+      "display": "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+      "target": [ {
+        "code": "XM22Y8",
+        "display": "Trimethoprim with sulfamethoxazole",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE156",
+      "display": "Intensified TB case finding and linkage to TB treatment",
+      "target": [ {
+        "code": "XM8142",
+        "display": "Code title:?BCG vaccine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE157",
+      "display": "Provision of isoniazid preventive therapy if person does not have TB",
+      "target": [ {
+        "code": "XM5FH2",
+        "display": "Code title:?Isoniazid",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE158",
+      "display": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+      "target": [ {
+        "code": "XM5WN6",
+        "display": "?Antimalarial prophylactic",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE140",
+      "display": "Assessment and provision of vaccinations",
+      "target": [ {
+        "code": "XM5L44",
+        "display": "Code title:?Tetanus vaccines",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE141",
+      "display": "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment",
+      "target": [ {
+        "code": "XM6LL6",
+        "display": "Code title:?Hepatitis vaccines",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE142",
+      "display": "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+      "target": [ {
+        "code": "XM22Y8",
+        "display": "Trimethoprim with sulfamethoxazole",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE143",
+      "display": "Intensified TB case finding and linkage to TB treatment",
+      "target": [ {
+        "code": "XM8142",
+        "display": "Code title:?BCG vaccine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE144",
+      "display": "Provision of isoniazid preventive therapy if person does not have TB",
+      "target": [ {
+        "code": "XM5FH2",
+        "display": "Code title:?Isoniazid",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE145",
+      "display": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+      "target": [ {
+        "code": "XM5WN6",
+        "display": "?Antimalarial prophylactic",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE160",
+      "display": "Mental health services",
+      "target": [ {
+        "code": "QA16",
+        "display": "Code title:?Individual psychological or behavioural counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE161",
+      "display": "Psychosocial counselling, support and treatment adherence counselling",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Code title:?Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE162",
+      "display": "Support for disclosure and partner services",
+      "target": [ {
+        "code": "QA17",
+        "display": "Code title:?Marital or couples counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE163",
+      "display": "Legal and social services",
+      "target": [ {
+        "code": "QE4Z",
+        "display": "Code title:?Problems associated with the justice system, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE164",
+      "display": "Services for responding to violence against women",
+      "target": [ {
+        "code": "QE51.1",
+        "display": "Code title:?History of spouse or partner violence",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE147",
+      "display": "Mental health services",
+      "target": [ {
+        "code": "QA16",
+        "display": "Code title:?Individual psychological or behavioural counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE148",
+      "display": "Psychosocial counselling, support and treatment adherence counselling",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Code title:?Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE149",
+      "display": "Support for disclosure and partner services",
+      "target": [ {
+        "code": "QA17",
+        "display": "Code title:?Marital or couples counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE150",
+      "display": "Legal and social services",
+      "target": [ {
+        "code": "QE4Z",
+        "display": "Code title:?Problems associated with the justice system, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE151",
+      "display": "Services for responding to violence against women",
+      "target": [ {
+        "code": "QE51.1",
+        "display": "Code title:?History of spouse or partner violence",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE452",
+      "display": "Mental health services",
+      "target": [ {
+        "code": "QA16",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE453",
+      "display": "Psychosocial counselling, support and treatment adherence counselling",
+      "target": [ {
+        "code": "QA1Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE454",
+      "display": "Legal and social services",
+      "target": [ {
+        "code": "QE4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE455",
+      "display": "Services for responding to violence against women",
+      "target": [ {
+        "code": "QE51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE165",
+      "display": "Clinical enquiry for intimate partner violence (IPV) done",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE168",
+      "display": "Client was referred",
+      "target": [ {
+        "code": "QC1Z",
+        "display": "Intervention not carried out, unspecified reason",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE169",
+      "display": "No action necessary",
+      "target": [ {
+        "code": "QC1Z",
+        "display": "Intervention not carried out, unspecified reason",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE113",
+      "display": "Retesting for HIV",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Code title:?Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE114",
+      "display": "Scheduled follow-up appointment for PrEP",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Code title:?Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE2",
+      "display": "First time counselling on PrEP",
+      "target": [ {
+        "code": "QA14",
+        "display": "?Contact with health services for human immunodeficiency virus counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE3",
+      "display": "Follow-up appointment for PrEP",
+      "target": [ {
+        "code": "QA07.Y",
+        "display": "Code title:?Other specified follow-up examination after treatment for conditions other than malignant neoplasms",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE4",
+      "display": "Restarting PrEP",
+      "target": [ {
+        "code": "QA14",
+        "display": "?Contact with health services for human immunodeficiency virus counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE5",
+      "display": "Counselling on PEP",
+      "target": [ {
+        "code": "QA14",
+        "display": "?Contact with health services for human immunodeficiency virus counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE6",
+      "display": "Unscheduled visit for side effects",
+      "target": [ {
+        "code": "NE60",
+        "display": "Code title:?Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE7",
+      "display": "3-month PrEP visit",
+      "target": [ {
+        "code": "QA07.Y",
+        "display": "Code title:?Other specified follow-up examination after treatment for conditions other than malignant neoplasms",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE10",
+      "display": "Currently on PrEP",
+      "target": [ {
+        "code": "XM3U67",
+        "display": "Code title:?Antivirals for treatment of human immunodeficiency virus infections, combinations",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE17",
+      "display": "TDF-FTC",
+      "target": [ {
+        "code": "XM75H2",
+        "display": "Code title:?Tenofovir disoproxil and Emtricitabine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE18",
+      "display": "TDF",
+      "target": [ {
+        "code": "XM67N3",
+        "display": "Code title:? Tenofovir disoproxil",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE19",
+      "display": "TDF + 3TC",
+      "target": [ {
+        "code": "XM50Z0",
+        "display": "Code title:?Lamivudine and Tenofovir disoproxil",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE23",
+      "display": "Repeat user",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE25",
+      "display": "Stopped PrEP",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "True False",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE26",
+      "display": "Date PrEP stopped",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Date",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE29",
+      "display": "Repeat PEP user",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE31",
+      "display": "Signs of substantial risk of HIV infection",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE32",
+      "display": "No condom use during sex with more than one partner in the past 6 months",
+      "target": [ {
+        "code": "QA21.6Y",
+        "display": "Other specified surveillance of contraceptive device",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE33",
+      "display": "Sexually transmitted infection (STI) in the past 6 months",
+      "target": [ {
+        "code": "QC42",
+        "display": "Personal history of infectious or parasitic diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE34",
+      "display": "A sexual partner in the past 6 months had one or more HIV risk factors",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE35",
+      "display": "PrEP requested by client",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE84",
+      "display": "No condom use during sex with more than one partner in the past 6 months",
+      "target": [ {
+        "code": "QA21.6Y",
+        "display": "Other specified surveillance of contraceptive device",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE85",
+      "display": "STI in the past 6 months",
+      "target": [ {
+        "code": "QC42",
+        "display": "Personal history of infectious or parasitic diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE86",
+      "display": "A sexual partner in the past 6 months had one or more HIV risk factors",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE42",
+      "display": "Fever",
+      "target": [ {
+        "code": "MG26",
+        "display": "Fever of other or unknown origin",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE43",
+      "display": "Sore throat",
+      "target": [ {
+        "code": "MD36.0",
+        "display": "Code title:?Pain in throat",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE44",
+      "display": "Aches",
+      "target": [ {
+        "code": "FB56.2",
+        "display": "Code title:?Myalgia?",
+        "equivalence": "relatedto"
+      } ]
+    }, {
+      "code": "HIV.C.DE45",
+      "display": "Pains",
+      "target": [ {
+        "code": "MG3Z",
+        "display": "?Pain, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE46",
+      "display": "Swollen glands",
+      "target": [ {
+        "code": "MA01.Z",
+        "display": "Code title:?Enlarged lymph nodes, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE47",
+      "display": "Mouth sores",
+      "target": [ {
+        "code": "DA01.15",
+        "display": "Code title:?Mouth ulcers",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE48",
+      "display": "Headaches",
+      "target": [ {
+        "code": "MG31.1",
+        "display": "Acute headache, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE49",
+      "display": "Rash",
+      "target": [ {
+        "code": "ME66.6Z",
+        "display": "Code title:?Rash, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE51",
+      "display": "Not on ART",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE52",
+      "display": "On ART less than 6 months",
+      "target": [ {
+        "code": "XM63K0",
+        "display": "?Anti-infective antiviral",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE53",
+      "display": "Partner has suspected low adherence to ART",
+      "target": [ {
+        "code": "QC49",
+        "display": "?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE54",
+      "display": "Partner is not virally suppressed",
+      "target": [ {
+        "code": "XN487",
+        "display": "? Human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE59",
+      "display": "Serum creatinine test",
+      "target": [ {
+        "code": "QA0A.Y",
+        "display": "Code title:? Special screening for diseases and disorders not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE60",
+      "display": "Hepatitis B surface antigen",
+      "target": [ {
+        "code": "QA08.Y",
+        "display": "Code title:?Special screening examination for other specified infectious diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE61",
+      "display": "Hepatitis C antibody",
+      "target": [ {
+        "code": "QA08.Y",
+        "display": "Code title:?Special screening examination for other specified infectious diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE62",
+      "display": "Rapid plasma reagin",
+      "target": [ {
+        "code": "QA08.3",
+        "display": "Code title:?Special screening examination for infections with a predominantly sexual mode of transmission",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE63",
+      "display": "Other screening for STIs",
+      "target": [ {
+        "code": "QA08.3",
+        "display": "Code title:?Special screening examination for infections with a predominantly sexual mode of transmission",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE64",
+      "display": "Pregnancy testing",
+      "target": [ {
+        "code": "QA40",
+        "display": "Code title:?Pregnancy examination or test",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE65",
+      "display": "Review vaccination history",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE67",
+      "display": "Serum creatinine test result",
+      "target": [ {
+        "code": "QA0A.Y",
+        "display": "Code title:? Special screening for diseases and disorders not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE69",
+      "display": "Tenofovir disoproxil and lamivudine (TDF + 3TC)",
+      "target": [ {
+        "code": "XM50Z0",
+        "display": "Code title:?Lamivudine and Tenofovir disoproxil",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE70",
+      "display": "Tenofovir disoproxil and emtricitabine (TDF + FTC)",
+      "target": [ {
+        "code": "XM75H2",
+        "display": "Code title:?Tenofovir disoproxil and Emtricitabine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE72",
+      "display": "Dolutegravir (DTG)",
+      "target": [ {
+        "code": "XM9NL2",
+        "display": "Code title:?Lamivudine, Tenofovir disoproxil and Efavirenz",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE73",
+      "display": "Raltegravir (RAL)",
+      "target": [ {
+        "code": "XM82D3",
+        "display": "Code title:?Raltegravir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE74",
+      "display": "Darunavir/ritonavir (DRV/r)",
+      "target": [ {
+        "code": "XM8ZN1",
+        "display": "Code title:?Darunavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE75",
+      "display": "Atazanavir/ritonavir (ATV/r)",
+      "target": [ {
+        "code": "XM4TF3",
+        "display": "Code title:?Atazanavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE76",
+      "display": "Lopinavir/ritonavir (LPV/r)",
+      "target": [ {
+        "code": "XM3EH7",
+        "display": "Code title:?Lopinavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE78",
+      "display": "Zidovudine and lamivudine (AZT + 3TC)",
+      "target": [ {
+        "code": "XM41D4",
+        "display": "Code title:?Lamivudine and Abacavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE79",
+      "display": "Abacavir and lamivudine (ABC + 3TC)",
+      "target": [ {
+        "code": "XM5UM7",
+        "display": "Zidovudine and Lamivudine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE80",
+      "display": "Tenofovir disoproxil and lamivudine (TDF + 3TC)",
+      "target": [ {
+        "code": "XM50Z0",
+        "display": "Code title:?Lamivudine and Tenofovir disoproxil",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE81",
+      "display": "Tenofovir disoproxil and emtricitabine (TDF + FTC)",
+      "target": [ {
+        "code": "XM75H2",
+        "display": "?Tenofovir disoproxil and Emtricitabine",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE83",
+      "display": "Dolutegravir (DTG)",
+      "target": [ {
+        "code": "XM9NL2",
+        "display": "Code title:?Dolutegravir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE84",
+      "display": "Atazanavir/ritonavir (ATV/r)",
+      "target": [ {
+        "code": "XM4TF3",
+        "display": "Code title:?Atazanavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE85",
+      "display": "Lopinavir/ritonavir (LPV/r)",
+      "target": [ {
+        "code": "XM3EH7",
+        "display": "Code title:?Lopinavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE86",
+      "display": "Darunavir/ritonavir (DRV/r)",
+      "target": [ {
+        "code": "XM8ZN1",
+        "display": "Code title:?Darunavir and Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE87",
+      "display": "Ritonavir (RTV)",
+      "target": [ {
+        "code": "XM56L1",
+        "display": "?Ritonavir",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE95",
+      "display": "Tenofovir disoproxil fumarate (TDF) allergy or contraindication",
+      "target": [ {
+        "code": "XM63K0",
+        "display": "Anti-infective antiviral",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE97",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE100",
+      "display": "Probable recent exposure to HIV",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE102",
+      "display": "Treatment-limiting toxicity",
+      "target": [ {
+        "code": "NE60",
+        "display": "Code title:?Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE103",
+      "display": "Pregnancy",
+      "target": [ {
+        "code": "QA41",
+        "display": "Code title:?Pregnant state",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE105",
+      "display": "Drug out of stock",
+      "target": [ {
+        "code": "QB15",
+        "display": "Code title:?Medical services not available in current medical facility",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE110",
+      "display": "Adherence counselling provided",
+      "target": [ {
+        "code": "QA12",
+        "display": "Code title:?Contact with health services for drug use counselling or surveillance",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.C.DE122",
+      "display": "Condoms distributed",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE2",
+      "display": "First clinical visit",
+      "target": [ {
+        "code": "1C62.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE3",
+      "display": "Clinical visit",
+      "target": [ {
+        "code": "1C62.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE4",
+      "display": "Antiretroviral drug pick up",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE5",
+      "display": "Issues and concerns",
+      "target": [ {
+        "code": "QA14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE14",
+      "display": "Blood pressure cannot be taken",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE16",
+      "display": "Fever of 39 °C or greater",
+      "target": [ {
+        "code": "MG26",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE17",
+      "display": "Tachycardia",
+      "target": [ {
+        "code": "MC81.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE18",
+      "display": "Tachypnea",
+      "target": [ {
+        "code": "MD11.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE19",
+      "display": "Unable to walk unaided",
+      "target": [ {
+        "code": "MB44.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE20",
+      "display": "Lethargy",
+      "target": [ {
+        "code": "MB22.7",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE21",
+      "display": "Unconsciousness",
+      "target": [ {
+        "code": "MB20.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE22",
+      "display": "Convulsions",
+      "target": [ {
+        "code": "8A68.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE23",
+      "display": "Unable to drink",
+      "target": [ {
+        "code": "MG43.3Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE24",
+      "display": "Unable to breastfeed",
+      "target": [ {
+        "code": "KD32.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE25",
+      "display": "Repeated vomiting",
+      "target": [ {
+        "code": "MD90.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE26",
+      "display": "Headache",
+      "target": [ {
+        "code": "MG31.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE34",
+      "display": "Serodiscordant partner",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE35",
+      "display": "On ART",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE37",
+      "display": "Stopped ART",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE38",
+      "display": "Date ART stopped",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE47",
+      "display": "Date of transfer in",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE48",
+      "display": "Facility transferred from",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE64",
+      "display": "Diabetes other or unspecified",
+      "target": [ {
+        "code": "5A14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE65",
+      "display": "Diabetes Pre-existing type 1",
+      "target": [ {
+        "code": "5A10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE66",
+      "display": "Diabetes Pre-existing type 2",
+      "target": [ {
+        "code": "5A11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE67",
+      "display": "Hypertension",
+      "target": [ {
+        "code": "BA00.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE72",
+      "display": "ABC",
+      "target": [ {
+        "code": "XM35P4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE73",
+      "display": "FTC",
+      "target": [ {
+        "code": "XM2L06",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE74",
+      "display": "3TC",
+      "target": [ {
+        "code": "XM5471",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE75",
+      "display": "AZT",
+      "target": [ {
+        "code": "XM9C07",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE76",
+      "display": "DDI",
+      "target": [ {
+        "code": "XM8Z78",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE77",
+      "display": "D4T",
+      "target": [ {
+        "code": "XM7RM1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE79",
+      "display": "TDF",
+      "target": [ {
+        "code": "XM67N3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE81",
+      "display": "EFV",
+      "target": [ {
+        "code": "XM1DX2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE82",
+      "display": "ETV",
+      "target": [ {
+        "code": "XM7N44",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE83",
+      "display": "NVP",
+      "target": [ {
+        "code": "XM10T5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE84",
+      "display": "RIL",
+      "target": [ {
+        "code": "XM1KD4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE86",
+      "display": "ATV/r",
+      "target": [ {
+        "code": "XM4TF3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE87",
+      "display": "LPV/r",
+      "target": [ {
+        "code": "XM3EH7",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE88",
+      "display": "DRV/r",
+      "target": [ {
+        "code": "XM8ZN1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE89",
+      "display": "RTV",
+      "target": [ {
+        "code": "XM56L1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE91",
+      "display": "DTG",
+      "target": [ {
+        "code": "XM6K45",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE92",
+      "display": "RAL",
+      "target": [ {
+        "code": "XM82D3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE101",
+      "display": "TDF + 3TC + DTG",
+      "target": [ {
+        "code": "XM8QY9",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE102",
+      "display": "TDF + FTC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE103",
+      "display": "TDF + 3TC + FTC",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE104",
+      "display": "TDF + 3TC + EFV 400 mg",
+      "target": [ {
+        "code": "XM9NL2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE107",
+      "display": "ABC + 3TC + DTG",
+      "target": [ {
+        "code": "XM2UU9",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE108",
+      "display": "ABC + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE109",
+      "display": "ABC + 3TC + RAL",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE110",
+      "display": "TAF + 3TC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE111",
+      "display": "TAF + FTC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE113",
+      "display": "AZT + 3TC + RAL",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE114",
+      "display": "ABC + 3TC + RAL",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE116",
+      "display": "AZT + 3TC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE117",
+      "display": "AZT + 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE118",
+      "display": "AZT + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE119",
+      "display": "TDF + 3TC + DTG",
+      "target": [ {
+        "code": "XM8QY9",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE120",
+      "display": "TDF + FTC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE121",
+      "display": "AZT + 3TC + DRV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE122",
+      "display": "AZT + 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE123",
+      "display": "AZT + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE124",
+      "display": "TDF + 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE125",
+      "display": "TDF + FTC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE126",
+      "display": "TDF + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE127",
+      "display": "TDF + 3TC + DRV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE128",
+      "display": "TDF + FTC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE129",
+      "display": "TDF + FTC + DRV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE131",
+      "display": "AZT+ 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE132",
+      "display": "AZT+ 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE133",
+      "display": "AZT + 3TC + DTG",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE134",
+      "display": "ABC + 3TC + DTG",
+      "target": [ {
+        "code": "XM2UU9",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE135",
+      "display": "AZT + 3TC + DRV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE136",
+      "display": "AZT + 3TC + RAL",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE137",
+      "display": "ABC + 3TC + RAL",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE138",
+      "display": "AZT + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE139",
+      "display": "ABC + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE140",
+      "display": "AZT + 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE141",
+      "display": "ABC + 3TC + LPV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE142",
+      "display": "ABC + 3TC + ATV/r",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE143",
+      "display": "Other (specify)",
+      "target": [ {
+        "code": "XM3U67",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE157",
+      "display": "WHO HIV clinical stage 1",
+      "target": [ {
+        "code": "1C62.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE158",
+      "display": "WHO HIV clinical stage 2",
+      "target": [ {
+        "code": "1C62.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE159",
+      "display": "WHO HIV clinical stage 3",
+      "target": [ {
+        "code": "1C62.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE160",
+      "display": "WHO HIV clinical stage 4",
+      "target": [ {
+        "code": "1C62.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE162",
+      "display": "Received viral load test result",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE163",
+      "display": "Date viral load test results received by client",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE172",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB15",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE173",
+      "display": "Toxicity/side effects",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE174",
+      "display": "Too ill",
+      "target": [ {
+        "code": "MG48",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE177",
+      "display": "Depression",
+      "target": [ {
+        "code": "6A7Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE178",
+      "display": "Alcohol use",
+      "target": [ {
+        "code": "QE10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE179",
+      "display": "Substance use",
+      "target": [ {
+        "code": "QE11.8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE181",
+      "display": "Lack of food",
+      "target": [ {
+        "code": "QD61",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE58",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB15",
+        "display": "Code title:?Medical services not available in current medical facility",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE59",
+      "display": "Toxicity/side effects",
+      "target": [ {
+        "code": "NE60",
+        "display": "Code title:?Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE60",
+      "display": "Too ill",
+      "target": [ {
+        "code": "MG48",
+        "display": "Unknown and unspecified causes of morbidity",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE63",
+      "display": "Depression",
+      "target": [ {
+        "code": "6A7Z",
+        "display": "Depressive disorders, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE64",
+      "display": "Alcohol use",
+      "target": [ {
+        "code": "QE10",
+        "display": "Hazardous alcohol use??Used the same category that 'smoker' goes to in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE65",
+      "display": "Substance use",
+      "target": [ {
+        "code": "QE11.8",
+        "display": "Hazardous use of other specified psychoactive substances",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE67",
+      "display": "Lack of food",
+      "target": [ {
+        "code": "QD61",
+        "display": "?Inadequate food",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE185",
+      "display": "Severe illness, hospitalization",
+      "target": [ {
+        "code": "XE28K",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE186",
+      "display": "Toxicity/side effects",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE187",
+      "display": "Drugs out of stock",
+      "target": [ {
+        "code": "QB15",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE188",
+      "display": "Client lacks finances",
+      "target": [ {
+        "code": "QD51",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE189",
+      "display": "Treatment-limiting toxicity",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE190",
+      "display": "Other reason for stopping ART (specify)",
+      "target": [ {
+        "code": "not classifiable",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE72",
+      "display": "Severe illness, hospitalization",
+      "target": [ {
+        "code": "XE28K",
+        "display": "Hospital",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE73",
+      "display": "Drugs out of stock",
+      "target": [ {
+        "code": "NE60",
+        "display": "Code title:?Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE74",
+      "display": "Client lacks finances",
+      "target": [ {
+        "code": "QB15",
+        "display": "Code title:?Medical services not available in current medical facility",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE75",
+      "display": "Excluded HIV infection in infant",
+      "target": [ {
+        "code": "QD51",
+        "display": "Code title:?Low income",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE76",
+      "display": "Treatment-limiting toxicity",
+      "target": [ {
+        "code": "NE60",
+        "display": "Code title:?Harmful effects of drugs, medicaments or biological substances, not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE192",
+      "display": "Clinical treatment failure",
+      "target": [ {
+        "code": "4B4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE193",
+      "display": "Immunological failure",
+      "target": [ {
+        "code": "4A20.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE194",
+      "display": "Virological failure",
+      "target": [ {
+        "code": "1C62.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE198",
+      "display": "Prepare for ART",
+      "target": [ {
+        "code": "QA14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE199",
+      "display": "Prepare, assess and support adherence",
+      "target": [ {
+        "code": "QA16",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE200",
+      "display": "Manage current medications",
+      "target": [ {
+        "code": "QA12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE201",
+      "display": "Check pregnancy status",
+      "target": [ {
+        "code": "QA40",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE202",
+      "display": "Provide family planning and contraception",
+      "target": [ {
+        "code": "QA21.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE203",
+      "display": "Support disclosure and partner notification",
+      "target": [ {
+        "code": "QA17",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE204",
+      "display": "Counsel on risk reduction and prevention",
+      "target": [ {
+        "code": "QA15.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE205",
+      "display": "Assess, prevent and manage noncommunicable diseases",
+      "target": [ {
+        "code": "QA1Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE206",
+      "display": "Screen for and manage mental health problems",
+      "target": [ {
+        "code": "6E8Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE207",
+      "display": "Screen for and manage and substance use issues",
+      "target": [ {
+        "code": "6C4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE208",
+      "display": "Provide psychosocial counselling and support",
+      "target": [ {
+        "code": "QE0Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE209",
+      "display": "Manage pain and symptoms",
+      "target": [ {
+        "code": "MG31.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE210",
+      "display": "Conduct a nutritional assessment and counsel on nutrition",
+      "target": [ {
+        "code": "QA10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE211",
+      "display": "Conduct a growth and development assessment",
+      "target": [ {
+        "code": "MG44.1Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE212",
+      "display": "Provide support on infant and child feeding",
+      "target": [ {
+        "code": "MG43.31",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE214",
+      "display": "Provide co-trimoxazole preventive therapy (CPT)",
+      "target": [ {
+        "code": "XM22Y8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE215",
+      "display": "Intensified TB case finding and linkage to TB treatment",
+      "target": [ {
+        "code": "XM8142",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE216",
+      "display": "Provide isoniazid preventive therapy",
+      "target": [ {
+        "code": "XM5FH2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE217",
+      "display": "Screen for cryptococcal infection and fungal prophylaxis",
+      "target": [ {
+        "code": "1F27.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE218",
+      "display": "Screen for hepatitis B",
+      "target": [ {
+        "code": "1E51.00",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE219",
+      "display": "Screen for hepatitis C",
+      "target": [ {
+        "code": "1E51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE220",
+      "display": "Prevent malaria",
+      "target": [ {
+        "code": "1F4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE221",
+      "display": "Screen for STIs",
+      "target": [ {
+        "code": "QA08.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE222",
+      "display": "Prevent and screen for cervical cancer",
+      "target": [ {
+        "code": "QA09.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE223",
+      "display": "Anal cancer screening (for men who have sex with men)",
+      "target": [ {
+        "code": "QA09.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE224",
+      "display": "Assessment and provision of vaccinations",
+      "target": [ {
+        "code": "XM5L44",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE226",
+      "display": "Oral candidiasis",
+      "target": [ {
+        "code": "1F23.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE227",
+      "display": "Vaginal candidiasis",
+      "target": [ {
+        "code": "1F23.10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE228",
+      "display": "Cough",
+      "target": [ {
+        "code": "MD12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE229",
+      "display": "Prolonged fever",
+      "target": [ {
+        "code": "MG26",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE230",
+      "display": "Night sweats",
+      "target": [ {
+        "code": "EE00.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE232",
+      "display": "Difficulty breathing",
+      "target": [ {
+        "code": "MD11.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE233",
+      "display": "Pneumonia",
+      "target": [ {
+        "code": "CA40.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE234",
+      "display": "Urethral discharge",
+      "target": [ {
+        "code": "MF58",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE235",
+      "display": "Syphilis",
+      "target": [ {
+        "code": "1A6Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE236",
+      "display": "Pelvic inflammatory disease",
+      "target": [ {
+        "code": "GA05.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE237",
+      "display": "Ulcers - skin",
+      "target": [ {
+        "code": "ME60.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE238",
+      "display": "Ulcers - mouth or other",
+      "target": [ {
+        "code": "DA01.15",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE239",
+      "display": "Ulcers - male genital",
+      "target": [ {
+        "code": "GA80.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE240",
+      "display": "Vaginal discharge",
+      "target": [ {
+        "code": "MF3A",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE241",
+      "display": "Malaria",
+      "target": [ {
+        "code": "1F4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE242",
+      "display": "Chronic obstructive pulmonary disease",
+      "target": [ {
+        "code": "CA22.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE243",
+      "display": "Hypertension",
+      "target": [ {
+        "code": "BA00.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE244",
+      "display": "Diabetes",
+      "target": [ {
+        "code": "5A14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE245",
+      "display": "Gestational diabetes",
+      "target": [ {
+        "code": "JA63.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE246",
+      "display": "Mental health disorders",
+      "target": [ {
+        "code": "6E8Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE247",
+      "display": "Diarrhoea or abdominal  pain",
+      "target": [ {
+        "code": "ME05.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE248",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "MD3Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE249",
+      "display": "Severe or complicated malnutrition",
+      "target": [ {
+        "code": "5B7Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE250",
+      "display": "Poor growth or development",
+      "target": [ {
+        "code": "5B53",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE254",
+      "display": "Persistent generalized lymphadenopathy",
+      "target": [ {
+        "code": "MA01.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE255",
+      "display": "Moderate unexplained weight loss",
+      "target": [ {
+        "code": "MG43.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE256",
+      "display": "Recurrent respiratory tract infections",
+      "target": [ {
+        "code": "CA45",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE257",
+      "display": "Unexplained persistent hepatosplenomegaly",
+      "target": [ {
+        "code": "ME10.02",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE258",
+      "display": "Herpes zoster",
+      "target": [ {
+        "code": "1E91.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE259",
+      "display": "Angular cheilitis",
+      "target": [ {
+        "code": "DA00.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE260",
+      "display": "Linear gingival erythema",
+      "target": [ {
+        "code": "DA0C.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE261",
+      "display": "Recurrent oral ulceration",
+      "target": [ {
+        "code": "DA01.15",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE262",
+      "display": "Papular pruritic eruption",
+      "target": [ {
+        "code": "EC90.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE263",
+      "display": "Fungal nail infections",
+      "target": [ {
+        "code": "EE12.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE264",
+      "display": "Seborrhoeic dermatitis",
+      "target": [ {
+        "code": "EA81.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE265",
+      "display": "Extensive wart virus infection",
+      "target": [ {
+        "code": "1E8Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE266",
+      "display": "Extensive molluscum contagiosum",
+      "target": [ {
+        "code": "1E76",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE267",
+      "display": "Unexplained persistent parotid enlargement",
+      "target": [ {
+        "code": "DA04.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE268",
+      "display": "Unexplained severe weight loss in adults",
+      "target": [ {
+        "code": "MG43.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE269",
+      "display": "Unexplained moderate malnutrition not adequately responding to standard therapy",
+      "target": [ {
+        "code": "5B7Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE270",
+      "display": "Unexplained chronic diarrhoea for longer than 1 month",
+      "target": [ {
+        "code": "ME05.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE271",
+      "display": "Unexplained persistent diarrhoea (14 days or more)",
+      "target": [ {
+        "code": "ME05.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE272",
+      "display": "Unexplained persistent fever (above 37.5 °C, intermittent or constant, for longer than one 1 month)",
+      "target": [ {
+        "code": "MG26",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE273",
+      "display": "Persistent oral candidiasis",
+      "target": [ {
+        "code": "1F23.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE274",
+      "display": "Oral hairy leukoplakia",
+      "target": [ {
+        "code": "DA01.01",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE275",
+      "display": "Pulmonary TB",
+      "target": [ {
+        "code": "1B10.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE276",
+      "display": "Lymph node TB",
+      "target": [ {
+        "code": "1B12.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE277",
+      "display": "Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)",
+      "target": [ {
+        "code": "1C41",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE278",
+      "display": "Severe recurrent bacterial pneumonia",
+      "target": [ {
+        "code": "CA40.0Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE279",
+      "display": "Acute necrotizing ulcerative stomatitis",
+      "target": [ {
+        "code": "1C1H.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE280",
+      "display": "Acute necrotizing ulcerative  gingivitis",
+      "target": [ {
+        "code": "1C1H.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE281",
+      "display": "Acute necrotizing ulcerative periodontitis",
+      "target": [ {
+        "code": "DA0C.30",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE282",
+      "display": "Unexplained anaemia (<8 g/dl)",
+      "target": [ {
+        "code": "3A9Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE283",
+      "display": "Neutropaenia (<0.5 × 109/l)",
+      "target": [ {
+        "code": "4B00.01",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE284",
+      "display": "Chronic thrombocytopaenia (<50 × 109/l)",
+      "target": [ {
+        "code": "3B64.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE285",
+      "display": "Symptomatic lymphoid interstitial pneumonitis",
+      "target": [ {
+        "code": "CB03.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE286",
+      "display": "Chronic HIV-associated lung disease, including bronchiectasis",
+      "target": [ {
+        "code": "CA24",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE287",
+      "display": "HIV wasting syndrome",
+      "target": [ {
+        "code": "MG20.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE288",
+      "display": "Unexplained severe wasting not responding to standard therapy",
+      "target": [ {
+        "code": "XS25",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE289",
+      "display": "Unexplained stunting not responding to standard therapy",
+      "target": [ {
+        "code": "5B53",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE290",
+      "display": "Unexplained severe malnutrition not responding to standard therapy",
+      "target": [ {
+        "code": "5B7Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE291",
+      "display": "Pneumocystis (jirovecii) pneumonia",
+      "target": [ {
+        "code": "CA40.20",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE292",
+      "display": "Recurrent severe bacterial pneumonia",
+      "target": [ {
+        "code": "CA40.0Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE293",
+      "display": "Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)",
+      "target": [ {
+        "code": "1C41",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE294",
+      "display": "Empyema",
+      "target": [ {
+        "code": "CA44",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE295",
+      "display": "Pyomyositis",
+      "target": [ {
+        "code": "FB30",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE296",
+      "display": "Bone or joint infection",
+      "target": [ {
+        "code": "FA10.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE297",
+      "display": "Meningitis",
+      "target": [ {
+        "code": "1D01.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE298",
+      "display": "Chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)",
+      "target": [ {
+        "code": "1F00.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE299",
+      "display": "Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)",
+      "target": [ {
+        "code": "1F23.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE300",
+      "display": "Extrapulmonary TB",
+      "target": [ {
+        "code": "1B12.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE301",
+      "display": "Kaposi sarcoma",
+      "target": [ {
+        "code": "XH36A5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE302",
+      "display": "Cytomegalovirus infection (retinitis or infection of other organs)",
+      "target": [ {
+        "code": "XN3SQ",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE303",
+      "display": "Central nervous system toxoplasmosis",
+      "target": [ {
+        "code": "1F57.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE304",
+      "display": "HIV encephalopathy",
+      "target": [ {
+        "code": "8E47",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE305",
+      "display": "Extrapulmonary cryptococcosis, including meningitis",
+      "target": [ {
+        "code": "1F27.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE306",
+      "display": "Disseminated nontuberculous mycobacterial infection",
+      "target": [ {
+        "code": "1B21.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE307",
+      "display": "Progressive multifocal leukoencephalopathy",
+      "target": [ {
+        "code": "8A45.02",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE308",
+      "display": "Chronic cryptosporidiosis",
+      "target": [ {
+        "code": "1A32",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE309",
+      "display": "Chronic cryptosporidiosis (with diarrhoea)",
+      "target": [ {
+        "code": "ME05.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE310",
+      "display": "Chronic isosporiasis",
+      "target": [ {
+        "code": "1A33.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE311",
+      "display": "Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)",
+      "target": [ {
+        "code": "1F25.10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE312",
+      "display": "Cerebral lymphoma",
+      "target": [ {
+        "code": "2B33.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE313",
+      "display": "B-cell non-Hodgkin lymphoma",
+      "target": [ {
+        "code": "2A86.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE314",
+      "display": "HIV- associated nephropathy or cardiomyopathy",
+      "target": [ {
+        "code": "GC0Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE315",
+      "display": "Recurrent bacteraemia (including nontyphoidal salmonella)",
+      "target": [ {
+        "code": "MA15.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE316",
+      "display": "Invasive cervical carcinoma",
+      "target": [ {
+        "code": "2C77.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE317",
+      "display": "Atypical disseminated leishmaniasis",
+      "target": [ {
+        "code": "1F54.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE318",
+      "display": "Neutropenia",
+      "target": [ {
+        "code": "4B00.01",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE320",
+      "display": "WHO clinical stage 1",
+      "target": [ {
+        "code": "1C62.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE321",
+      "display": "WHO clinical stage 2",
+      "target": [ {
+        "code": "1C62.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE322",
+      "display": "WHO clinical stage 3",
+      "target": [ {
+        "code": "1C62.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE323",
+      "display": "WHO clinical stage 4",
+      "target": [ {
+        "code": "1C62.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE324",
+      "display": "Date of clinical status change",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE325",
+      "display": "CD4 count",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE326",
+      "display": "CD4 cell percentage",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE327",
+      "display": "Baseline CD4 count",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE328",
+      "display": "Late ART initiation",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE330",
+      "display": "Date viral load test results received",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE333",
+      "display": "Routine viral load test",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE334",
+      "display": "Targeted viral load monitoring",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE341",
+      "display": "Haemoglobin (Hb): number in g/dL",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE342",
+      "display": "Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE343",
+      "display": "Chest X-ray (CXR): Free text",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE344",
+      "display": "Sputum or culture (general TB): see “TB status” Xpert: see “TB status”",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE345",
+      "display": "HBsAg test (HBV)",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE346",
+      "display": "HIV viral load test ordered",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE347",
+      "display": "CD4 count ordered",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE350",
+      "display": "Received viral load test results",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE353",
+      "display": "Hepatitis C positive",
+      "target": [ {
+        "code": "1E51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE354",
+      "display": "Hepatitis C negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE51",
+      "display": "Hepatitis C positive",
+      "target": [ {
+        "code": "1E51.1",
+        "display": "Chronic hepatitis C",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE52",
+      "display": "Hepatitis C negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE355",
+      "display": "Hepatitis C viral load test",
+      "target": [ {
+        "code": "1E51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE357",
+      "display": "Hepatitis C positive",
+      "target": [ {
+        "code": "1E51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE358",
+      "display": "Hepatitis C negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE55",
+      "display": "Hepatitis C positive",
+      "target": [ {
+        "code": "1E51.1",
+        "display": "Chronic hepatitis C",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE56",
+      "display": "Hepatitis C negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE360",
+      "display": "Syphilis positive",
+      "target": [ {
+        "code": "1A6Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE361",
+      "display": "Syphilis negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE73",
+      "display": "Syphilis positive",
+      "target": [ {
+        "code": "1A6Z",
+        "display": "Syphilis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE74",
+      "display": "Syphilis negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE363",
+      "display": "Toxicity/side effects",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE364",
+      "display": "Pregnancy",
+      "target": [ {
+        "code": "QA41",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE365",
+      "display": "New TB",
+      "target": [ {
+        "code": "1B1Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE367",
+      "display": "Drug out of stock",
+      "target": [ {
+        "code": "QB15",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE368",
+      "display": "Treatment-limiting toxicity",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE370",
+      "display": "Regimen switch",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE372",
+      "display": "Immunological failure",
+      "target": [ {
+        "code": "4A20.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE373",
+      "display": "Virological failure",
+      "target": [ {
+        "code": "1C62.Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE374",
+      "display": "Treatment-limiting toxicity",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE375",
+      "display": "Regimen substitution recommended",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE376",
+      "display": "Dose adjustment recommended",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE377",
+      "display": "Regimen substitution made",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE382",
+      "display": "Suspicion of treatment failure or interruption",
+      "target": [ {
+        "code": "Parent URI for residual code 4B4Z?http://id.who.int/icd/entity/1954798891",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE384",
+      "display": "Antiretroviral toxicity",
+      "target": [ {
+        "code": "NE60",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE386",
+      "display": "Hepatitis B",
+      "target": [ {
+        "code": "1E51.0Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE387",
+      "display": "Hepatitis C",
+      "target": [ {
+        "code": "1E51.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE389",
+      "display": "Pregnant at ART start",
+      "target": [ {
+        "code": "QA41",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE390",
+      "display": "Postpartum at ART start",
+      "target": [ {
+        "code": "XT4Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE392",
+      "display": "Breastfeeding at ART start",
+      "target": [ {
+        "code": "QA48.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE394",
+      "display": "Serodiscordant partner at ART start",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE396",
+      "display": "Medications prescribed",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE397",
+      "display": "Date medications prescribed",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE398",
+      "display": "Dose of medications prescribed",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE399",
+      "display": "Number of days of medications prescribed",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE400",
+      "display": "Medications dispensed",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE401",
+      "display": "Dosage",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE402",
+      "display": "Frequency",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE405",
+      "display": "Gastrointestinal",
+      "target": [ {
+        "code": "DB33.43",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE406",
+      "display": "Skin issues",
+      "target": [ {
+        "code": "EK00.B",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE407",
+      "display": "Peripheral neuropathy",
+      "target": [ {
+        "code": "8C02.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE408",
+      "display": "Central nervous system symptoms",
+      "target": [ {
+        "code": "4A85.0Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE409",
+      "display": "Hepatic dysfunction",
+      "target": [ {
+        "code": "4A85.00",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE410",
+      "display": "Haematological disorders",
+      "target": [ {
+        "code": "3A9Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE411",
+      "display": "Fatigue",
+      "target": [ {
+        "code": "MG22",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE412",
+      "display": "Headache",
+      "target": [ {
+        "code": "8A84.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE413",
+      "display": "Bone dysfunction",
+      "target": [ {
+        "code": "FB83.04",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE414",
+      "display": "Metabolic symptoms",
+      "target": [ {
+        "code": "5D0Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE415",
+      "display": "Kidney dysfunction",
+      "target": [ {
+        "code": "4A85.01",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE416",
+      "display": "Date(s) of substitution within first-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE418",
+      "display": "New antiretroviral regimen after substitution within first-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE419",
+      "display": "Date of switch to second-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE421",
+      "display": "Date(s) of substitution within second-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE423",
+      "display": "New regimen(s) after substitution within second-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE424",
+      "display": "Date of switch to third-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE426",
+      "display": "Date(s) of substitution within third-line regimen",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE442",
+      "display": "Syphilis counselling and treatment",
+      "target": [ {
+        "code": "QA1Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE450",
+      "display": "Provided support for disclosure and partner services",
+      "target": [ {
+        "code": "QA17",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE461",
+      "display": "BP cuff (sphygmomanometer) not available",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE462",
+      "display": "BP cuff (sphygmomanometer) is broken",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE467",
+      "display": "Analgesic",
+      "target": [ {
+        "code": "XM4S22",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE468",
+      "display": "Antacids",
+      "target": [ {
+        "code": "XM37S3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE469",
+      "display": "Antibiotics (broad-spectrum)",
+      "target": [ {
+        "code": "XM7SQ4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE470",
+      "display": "Anticonvulsive",
+      "target": [ {
+        "code": "XM80V1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE471",
+      "display": "Antidiabetic",
+      "target": [ {
+        "code": "XM8S35",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE472",
+      "display": "Antifungals",
+      "target": [ {
+        "code": "XM7S10",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE473",
+      "display": "Antihelmintic",
+      "target": [ {
+        "code": "XM4EC0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE474",
+      "display": "Antihypertensive",
+      "target": [ {
+        "code": "XM2PT6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE475",
+      "display": "Antimalarials",
+      "target": [ {
+        "code": "XM1914",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE476",
+      "display": "Antiretrovirals (ARVs)",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE477",
+      "display": "Antiparasitics",
+      "target": [ {
+        "code": "XM1Z32",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE478",
+      "display": "Antivirals",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE480",
+      "display": "Co-trimoxazole preventive therapy (CPT)",
+      "target": [ {
+        "code": "QC05.Y Other specified prophylactic measures",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE481",
+      "display": "Family planning method",
+      "target": [ {
+        "code": "XM9N33",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE483",
+      "display": "PrEP to prevent HIV",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE484",
+      "display": "Other antibiotics",
+      "target": [ {
+        "code": "XM7SQ4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE489",
+      "display": "Albendazole",
+      "target": [ {
+        "code": "XM79J1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE490",
+      "display": "Malaria medication (sulfadoxine-pyrimethamine)",
+      "target": [ {
+        "code": "XM90Z4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE491",
+      "display": "Penicillin",
+      "target": [ {
+        "code": "XM7Q57",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE492",
+      "display": "Tenofovir disoproxil fumarate (TDF)",
+      "target": [ {
+        "code": "XM63K0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE495",
+      "display": "Copper-bearing intrauterine device (Cu-IUD)",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE496",
+      "display": "Levonorgestrel intrauterine device (LNG-IUD)",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE497",
+      "display": "Etonogestrel (ETG) one-rod implant",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE498",
+      "display": "Levonorgestrel (LNG) two-rod implant",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE499",
+      "display": "DMPA-IM",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE500",
+      "display": "DMPA-SC",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE501",
+      "display": "NET-EN norethisterone enanthate",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE502",
+      "display": "Progestogen-only pills (POP)",
+      "target": [ {
+        "code": "XM9HA7",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE503",
+      "display": "Combined oral contraceptives (COCs)",
+      "target": [ {
+        "code": "XM9N33",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE504",
+      "display": "Combined contraceptive patch",
+      "target": [ {
+        "code": "XM9N33",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE505",
+      "display": "Combined contraceptive vaginal ring (CVR)",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE506",
+      "display": "Progesterone-releasing vaginal ring (PVR)",
+      "target": [ {
+        "code": "QA21.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE507",
+      "display": "Lactational amenorrhea method (LAM)",
+      "target": [ {
+        "code": "GA20.02",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE508",
+      "display": "Emergency contraceptive pills (ECPs)",
+      "target": [ {
+        "code": "QA21.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE509",
+      "display": "Fertility awareness-based methods (FAB)",
+      "target": [ {
+        "code": "QA21.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE510",
+      "display": "Male condoms",
+      "target": [ {
+        "code": "QA21.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE511",
+      "display": "Female condoms",
+      "target": [ {
+        "code": "QA21.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE512",
+      "display": "Withdrawal",
+      "target": [ {
+        "code": "QA21.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE513",
+      "display": "Female relying on male method",
+      "target": [ {
+        "code": "QF24",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE514",
+      "display": "Male relying on female method",
+      "target": [ {
+        "code": "QF24",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE515",
+      "display": "Male sterilization",
+      "target": [ {
+        "code": "QA21.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE516",
+      "display": "Female sterilization",
+      "target": [ {
+        "code": "QA21.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE519",
+      "display": "Currently taking",
+      "target": [ {
+        "code": "QB9Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE520",
+      "display": "Completed",
+      "target": [ {
+        "code": "QC48.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE526",
+      "display": "Did not take",
+      "target": [ {
+        "code": "QC49",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE528",
+      "display": "Hepatitis B negative counselling conducted",
+      "target": [ {
+        "code": "QA1Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE529",
+      "display": "Hepatitis B-1 immunization provided",
+      "target": [ {
+        "code": "QC01.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE531",
+      "display": "Hepatitis B-2 immunization provided",
+      "target": [ {
+        "code": "QC01.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE533",
+      "display": "Hepatitis B-3 immunization provided",
+      "target": [ {
+        "code": "QC01.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE535",
+      "display": "No doses of hepatitis B",
+      "target": [ {
+        "code": "QC1Z",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE537",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE538",
+      "display": "Client is ill",
+      "target": [ {
+        "code": "MG48",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE539",
+      "display": "Client refused",
+      "target": [ {
+        "code": "QC12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE540",
+      "display": "Allergy to vaccine",
+      "target": [ {
+        "code": "XM9V38",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE543",
+      "display": "Tetanus toxoid 1 (TT1) immunization provided",
+      "target": [ {
+        "code": "QC00.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE545",
+      "display": "Tetanus toxoid 2 (TT2) immunization provided",
+      "target": [ {
+        "code": "QC00.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE547",
+      "display": "Tetanus toxoid 3 (TT3) immunization provided",
+      "target": [ {
+        "code": "QC00.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE549",
+      "display": "Tetanus toxoid 4 (TT4) immunization provided",
+      "target": [ {
+        "code": "QC00.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE551",
+      "display": "Tetanus toxoid 5 (TT5) immunization provided",
+      "target": [ {
+        "code": "QC00.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE554",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE555",
+      "display": "Client is ill",
+      "target": [ {
+        "code": "MG48",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE556",
+      "display": "Client refused",
+      "target": [ {
+        "code": "QC12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE557",
+      "display": "Allergy to vaccine",
+      "target": [ {
+        "code": "XM29H5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE560",
+      "display": "Flu immunization provided",
+      "target": [ {
+        "code": "QC01.8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE563",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE564",
+      "display": "Client is ill",
+      "target": [ {
+        "code": "MG48",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE565",
+      "display": "Client refused",
+      "target": [ {
+        "code": "QC12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE566",
+      "display": "Allergy to vaccine",
+      "target": [ {
+        "code": "XM1LR5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE569",
+      "display": "SARS-CoV-2 first dose of vaccine provided",
+      "target": [ {
+        "code": "XM68M6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE576",
+      "display": "Stock-out",
+      "target": [ {
+        "code": "QB14",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE577",
+      "display": "Client is ill",
+      "target": [ {
+        "code": "MG48",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE578",
+      "display": "Client refused",
+      "target": [ {
+        "code": "QC12",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE582",
+      "display": "BCG1 delivered",
+      "target": [ {
+        "code": "QC00.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE585",
+      "display": "OPV0 delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE587",
+      "display": "OPV1 delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE589",
+      "display": "OPV2 delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE591",
+      "display": "OPV3 delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE593",
+      "display": "OPV4 delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE596",
+      "display": "IPV delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE598",
+      "display": "IPV booster delivered",
+      "target": [ {
+        "code": "QC01.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE601",
+      "display": "DTP1 provided",
+      "target": [ {
+        "code": "QC03.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE603",
+      "display": "DTP2 provided",
+      "target": [ {
+        "code": "QC03.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE605",
+      "display": "DTP3 provided",
+      "target": [ {
+        "code": "QC03.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE608",
+      "display": "Penta 1 delivered",
+      "target": [ {
+        "code": "QC03.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE610",
+      "display": "Penta 2 delivered",
+      "target": [ {
+        "code": "QC03.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE612",
+      "display": "Penta 3 delivered",
+      "target": [ {
+        "code": "QC03.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE615",
+      "display": "Hib 1 delivered",
+      "target": [ {
+        "code": "QC01.8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE617",
+      "display": "Hib 2 delivered",
+      "target": [ {
+        "code": "QC01.8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE619",
+      "display": "Hib 3 delivered",
+      "target": [ {
+        "code": "QC01.8",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE622",
+      "display": "PCV 1 delivered",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE624",
+      "display": "PCV 2 delivered",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE626",
+      "display": "PCV 3 delivered",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE629",
+      "display": "Rota 1 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE631",
+      "display": "Rota 2 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE633",
+      "display": "Rota 3 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE636",
+      "display": "MCV 1 provided",
+      "target": [ {
+        "code": "QC01.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE638",
+      "display": "MCV 2 provided",
+      "target": [ {
+        "code": "QC01.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE640",
+      "display": "MCV 3 provided",
+      "target": [ {
+        "code": "QC01.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE643",
+      "display": "RCV vaccination provided",
+      "target": [ {
+        "code": "QC01.5",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE646",
+      "display": "MMR 1 provided",
+      "target": [ {
+        "code": "QC03.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE648",
+      "display": "MMR 2 provided",
+      "target": [ {
+        "code": "QC03.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE650",
+      "display": "MMR 3 provided",
+      "target": [ {
+        "code": "QC03.4",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE653",
+      "display": "JapEnceph vaccination provided",
+      "target": [ {
+        "code": "QC01.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE656",
+      "display": "Yellow fever vaccination provided",
+      "target": [ {
+        "code": "QC01.3",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE659",
+      "display": "Tick-borne encephalitis vaccination provided",
+      "target": [ {
+        "code": "QC01.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE662",
+      "display": "TCV 1 provided",
+      "target": [ {
+        "code": "QC00.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE664",
+      "display": "TCV 2 provided",
+      "target": [ {
+        "code": "QC00.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE666",
+      "display": "TCV 3 provided",
+      "target": [ {
+        "code": "QC00.1",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE669",
+      "display": "Cholera 1 provided",
+      "target": [ {
+        "code": "QC00.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE671",
+      "display": "Cholera 2 provided",
+      "target": [ {
+        "code": "QC00.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE673",
+      "display": "Cholera 3 provided",
+      "target": [ {
+        "code": "QC00.0",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE676",
+      "display": "MenA vaccination provided",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE678",
+      "display": "MenC vaccination provided",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE680",
+      "display": "Men4 vaccination provided",
+      "target": [ {
+        "code": "QC00.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE683",
+      "display": "HepA 1 provided",
+      "target": [ {
+        "code": "QC01.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE685",
+      "display": "HepA 2 provided",
+      "target": [ {
+        "code": "QC01.6",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE688",
+      "display": "HPV 1 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE690",
+      "display": "HPV 2 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE692",
+      "display": "HPV 3 provided",
+      "target": [ {
+        "code": "QC01.Y",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE695",
+      "display": "Rabies 1 provided",
+      "target": [ {
+        "code": "QC01.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE697",
+      "display": "Rabies 2 provided",
+      "target": [ {
+        "code": "QC01.2",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE700",
+      "display": "IPTp-SP dose 1 provided",
+      "target": [ {
+        "code": "QC05.Y Other specified prophylactic measures",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE702",
+      "display": "IPTp-SP dose 2 provided",
+      "target": [ {
+        "code": "QC05.Y Other specified prophylactic measures",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE704",
+      "display": "IPTp-SP dose 3 provided",
+      "target": [ {
+        "code": "QC05.Y Other specified prophylactic measures",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "QB14",
+      "display": "Stock out",
+      "target": [ {
+        "code": "http://id.who.int/icd/entity/1419758407",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "not classifiable",
+      "display": "Other reason not prescribed (specify)",
+      "target": [ {
+        "code": "free text field?data bucket to be utilised to collect entries",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE711",
+      "display": "Active tuberculosis (TB)",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE713",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "MD3Y",
+        "display": "?Other specified symptoms or signs involving the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE714",
+      "display": "Diagnosed TB",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE715",
+      "display": "None",
+      "target": [ {
+        "code": "QA02.0",
+        "display": "Observation for suspected tuberculosis, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE715",
+      "display": "TB history",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE722",
+      "display": "Currently on TB preventive treatment (TPT)",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE727",
+      "display": "Previously treated for TB",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE728",
+      "display": "Household contact with bacteriologically confirmed pulmonary TB",
+      "target": [ {
+        "code": "QC90.1",
+        "display": "Code title:?Contact with or exposure to tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE730",
+      "display": "Symptomatic TB screening",
+      "target": [ {
+        "code": "MD3Y",
+        "display": "Code title:?Other specified symptoms or signs involving the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE731",
+      "display": "Molecular test for TB",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE732",
+      "display": "Clinical assessment for TB",
+      "target": [ {
+        "code": "QA08.3",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE733",
+      "display": "Chest radiography for TB",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE734",
+      "display": "Other diagnostic testing for TB (specify)",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE735",
+      "display": "TB screening conducted",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE737",
+      "display": "Current cough",
+      "target": [ {
+        "code": "MD12",
+        "display": "Cough",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE738",
+      "display": "Fever of 39 °C or greater",
+      "target": [ {
+        "code": "MG26",
+        "display": "Fever of other or unknown origin",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE741",
+      "display": "Night sweats",
+      "target": [ {
+        "code": "EE00.Z",
+        "display": "Code title:?Hyperhidrosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE742",
+      "display": "Poor weight gain",
+      "target": [ {
+        "code": "MG20.Z",
+        "display": "Code title:?Cachexia, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE746",
+      "display": "History of contact with a person with TB",
+      "target": [ {
+        "code": "Nor classifiable in ICD-11",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE751",
+      "display": "Screen positive for TB",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE752",
+      "display": "Screen negative for TB",
+      "target": [ {
+        "code": "QA02.0",
+        "display": "Observation for suspected tuberculosis, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE753",
+      "display": "Incomplete (only symptoms)",
+      "target": [ {
+        "code": "MD3Y",
+        "display": "Code title:?Other specified symptoms or signs involving the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE759",
+      "display": "Molecular WHO-recommended diagnostic test for TB",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE761",
+      "display": "LF-LAM",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE763",
+      "display": "Microscopy - Sputum acid-fast bacilli (AFB) examination (alone)",
+      "target": [ {
+        "code": "QA08.1",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE765",
+      "display": "Sputum culture",
+      "target": [ {
+        "code": "QA08.2",
+        "display": "Code title:?Special screening examination for respiratory tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE767",
+      "display": "On TB treatment",
+      "target": [ {
+        "code": "QC48.Y",
+        "display": "Code title:?Other specified personal history of medical treatment",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE781",
+      "display": "Isoniazid (H)",
+      "target": [ {
+        "code": "XM5FH2",
+        "display": "Code title:?Isoniazid",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE783",
+      "display": "Ethambutol (E)",
+      "target": [ {
+        "code": "XM4N96",
+        "display": "Ethambutol",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE785",
+      "display": "Levofloxacin (Lfx)",
+      "target": [ {
+        "code": "XM7KX7",
+        "display": "Levofloxacin",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE787",
+      "display": "Pyrazinamide (Z)",
+      "target": [ {
+        "code": "XM4611",
+        "display": "Pyrazinamide",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE789",
+      "display": "Rifampicin (R)",
+      "target": [ {
+        "code": "XM0R30",
+        "display": "Rifampicin",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE791",
+      "display": "Rifabutin",
+      "target": [ {
+        "code": "XM5QH8",
+        "display": "Code title:?Rifabutin",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE799",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "MD3Y",
+        "display": "?Other specified symptoms or signs involving the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE801",
+      "display": "Diagnosed TB",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE803",
+      "display": "None",
+      "target": [ {
+        "code": "QA02.0",
+        "display": "Observation for suspected tuberculosis, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE807",
+      "display": "TB-exposed infant",
+      "target": [ {
+        "code": "QC90.1",
+        "display": "Code title:?Contact with or exposure to tuberculosis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE811",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "MD3Y",
+        "display": "?Other specified symptoms or signs involving the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE813",
+      "display": "Diagnosed TB",
+      "target": [ {
+        "code": "1B1Z",
+        "display": "Tuberculosis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE815",
+      "display": "None",
+      "target": [ {
+        "code": "QA02.0",
+        "display": "Observation for suspected tuberculosis, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE817",
+      "display": "TB meningitis",
+      "target": [ {
+        "code": "1B11.0",
+        "display": "Tuberculous meningitis",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE821",
+      "display": "C reactive protein test result",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Number Value",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE7",
+      "display": "Live birth",
+      "target": [ {
+        "code": "QA46.0",
+        "display": "Single live birth??Default applied",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE11",
+      "display": "Health facility",
+      "target": [ {
+        "code": "QA47.0Z Singleton, born in hospital, unspecified",
+        "display": "QA47.0Z Singleton, born in hospital, unspecified??Default chosen for this item",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE12",
+      "display": "Home",
+      "target": [ {
+        "code": "QA47.1",
+        "display": "Singleton, born outside hospital??Default chosen for this item",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE13",
+      "display": "Other (specify)",
+      "target": [ {
+        "code": "QA47.1",
+        "display": "Singleton, born outside hospital??Default chosen for this item",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE14",
+      "display": "Delivery facility",
+      "target": [ {
+        "code": "QA47.0Z Singleton, born in hospital, unspecified",
+        "display": "QA47.0Z Singleton, born in hospital, unspecified??Default chosen for this item",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE15",
+      "display": "Preterm birth",
+      "target": [ {
+        "code": "JB00.1",
+        "display": "Preterm spontaneous labour with preterm delivery",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE41",
+      "display": "Low birth weight",
+      "target": [ {
+        "code": "KA21.2Z",
+        "display": "Default code applied for weight 2500-3999gms??Low birth weight of newborn, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE42",
+      "display": "Mother HIV test conducted",
+      "target": [ {
+        "code": "QA08.4",
+        "display": "Special screening examination for human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE46",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE47",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE48",
+      "display": "HIV-inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE49",
+      "display": "Infant or child exposure to HIV",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE51",
+      "display": "HIV-exposed infant or child",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE54",
+      "display": "Mother is from a key population",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE56",
+      "display": "People who injects drugs",
+      "target": [ {
+        "code": "QE11.8",
+        "display": "Hazardous use of other specified psychoactive substances",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE57",
+      "display": "Transgender people",
+      "target": [ {
+        "code": "HA60",
+        "display": "Code title:?Gender incongruence of adolescence or adulthood",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE58",
+      "display": "People living in prisons and other closed setting",
+      "target": [ {
+        "code": "XE30E",
+        "display": "Code title:?Prison",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE59",
+      "display": "Postpartum family planning counselling conducted",
+      "target": [ {
+        "code": "QA21.1",
+        "display": "Contact with health services for general counselling or advice on contraception",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE61",
+      "display": "ARV adherence counselling",
+      "target": [ {
+        "code": "QA48.1",
+        "display": "Care or examination of lactating mother",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE62",
+      "display": "Infant-feeding counselling provided",
+      "target": [ {
+        "code": "MG43.31",
+        "display": "Code title:?Feeding problem of child",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE64",
+      "display": "Malaria prevention counselling conducted",
+      "target": [ {
+        "code": "QA1Y",
+        "display": "Contact with health services for other specified counselling",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE77",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE78",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE81",
+      "display": "Syphilis positive",
+      "target": [ {
+        "code": "1A6Z",
+        "display": "Syphilis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE82",
+      "display": "Syphilis negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE110",
+      "display": "Positive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE111",
+      "display": "Negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE112",
+      "display": "Indeterminate",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE137",
+      "display": "HIV-positive",
+      "target": [ {
+        "code": "1C62.Z",
+        "display": "Human immunodeficiency virus disease without mention of associated disease or condition, clinical stage unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE138",
+      "display": "HIV-negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE139",
+      "display": "HIV-inconclusive",
+      "target": [ {
+        "code": "MA14.0",
+        "display": "Code title:?Laboratory evidence of human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE142",
+      "display": "HIV positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE143",
+      "display": "HIV negative and no longer breastfeeding",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE148",
+      "display": "Death (documented)",
+      "target": [ {
+        "code": "MH13",
+        "display": "Code title:?Unattended death",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE149",
+      "display": "Refused (stopped) treatment",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE5",
+      "display": "Date of CD4 sample collection",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Date",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE6",
+      "display": "Viral load test conducted",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Date",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE9",
+      "display": "Date viral load sample sent",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Date",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE10",
+      "display": "First viral load test result",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Number Value",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE11",
+      "display": "Viral load test result",
+      "target": [ {
+        "code": "Not classified in ICD-11",
+        "display": "Number Value",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE16",
+      "display": "Hepatitis B test conducted",
+      "target": [ {
+        "code": "QA08.5",
+        "display": "Special screening examination for other viral diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE22",
+      "display": "Test delayed to next contact or referred",
+      "target": [ {
+        "code": "QC1Y",
+        "display": "?Intervention not carried out for other reasons",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE23",
+      "display": "Stock-out or expired",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE24",
+      "display": "Machine or technician not available or machine not functioning",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE25",
+      "display": "Client declined / refused test",
+      "target": [ {
+        "code": "QC12",
+        "display": "Code title:?Procedure not carried out because of client's decision for reasons other than belief or group pressure",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE29",
+      "display": "Hepatitis B positive",
+      "target": [ {
+        "code": "1E51.0Z",
+        "display": "Chronic hepatitis B, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE30",
+      "display": "Hepatitis B negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE32",
+      "display": "Hepatitis B positive",
+      "target": [ {
+        "code": "1E51.0Z",
+        "display": "Chronic hepatitis B, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE33",
+      "display": "Hepatitis B negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE34",
+      "display": "Hepatitis C screening date",
+      "target": [ {
+        "code": "QA08.5",
+        "display": "Special screening examination for other viral diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE36",
+      "display": "Hepatitis C test conducted",
+      "target": [ {
+        "code": "QA08.5",
+        "display": "Special screening examination for other viral diseases",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE44",
+      "display": "Test delayed to next contact or referred",
+      "target": [ {
+        "code": "QC1Y",
+        "display": "?Intervention not carried out for other reasons",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE45",
+      "display": "Stock-out or expired",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE46",
+      "display": "Machine or technician not available or machine not functioning",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE47",
+      "display": "Client declined / refused test",
+      "target": [ {
+        "code": "QC12",
+        "display": "Code title:?Procedure not carried out because of client's decision for reasons other than belief or group pressure",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE63",
+      "display": "Test delayed to next contact or referred",
+      "target": [ {
+        "code": "QC1Y",
+        "display": "?Intervention not carried out for other reasons",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE64",
+      "display": "Stock-out or expired",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE65",
+      "display": "Machine or technician not available or machine not functioning",
+      "target": [ {
+        "code": "QB14",
+        "display": "Unavailability or inaccessibility of health care facilities",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE66",
+      "display": "Client declined / refused test",
+      "target": [ {
+        "code": "QC12",
+        "display": "Code title:?Procedure not carried out because of client's decision for reasons other than belief or group pressure",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE70",
+      "display": "Syphilis positive",
+      "target": [ {
+        "code": "1A6Z",
+        "display": "Syphilis, unspecified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE71",
+      "display": "Syphilis negative",
+      "target": [ {
+        "code": "QA02.Y Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "display": "Medical observation or evaluation for other suspected diseases or conditions, ruled out",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.G.DE75",
+      "display": "Other tests conducted",
+      "target": [ {
+        "code": "QA0A.Y Special screening for diseases and disorders not elsewhere classified",
+        "display": "QA0A.Y Special screening for diseases and disorders not elsewhere classified",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE2",
+      "display": "Missed care visit",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE3",
+      "display": "Missed medication pickup",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE4",
+      "display": "Did not initiate ART",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE6",
+      "display": "Inconclusive HIV status",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE25",
+      "display": "Refused to return",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE33",
+      "display": "Already knew positive",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE34",
+      "display": "Newly diagnosed",
+      "target": [ {
+        "code": "QC90.6",
+        "display": "Contact with or exposure to human immunodeficiency virus",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE42",
+      "display": "Death (documented)",
+      "target": [ {
+        "code": "MH13",
+        "display": "Code title:?Unattended death",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE43",
+      "display": "Refused (stopped) treatment",
+      "target": [ {
+        "code": "QC49",
+        "display": "Code title:?Personal history of noncompliance with medical treatment or regimen",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.H.DE44",
+      "display": "Currently on ART",
+      "target": [ {
+        "code": "XM63K0",
+        "display": "Anti-infective antiviral",
+        "equivalence": "equivalent"
+      } ]
+    } ]
+  } ]
+}

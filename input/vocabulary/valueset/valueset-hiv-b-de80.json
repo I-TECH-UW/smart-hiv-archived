@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de80",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de80",
+  "name": "HIVtestconductedCodes",
+  "title": "HIV test conducted Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV test conducted element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE80",
+        "display": "HIV test type"
+      }, {
+        "code": "HIV.B.DE81",
+        "display": "Rapid diagnostic test for HIV"
+      }, {
+        "code": "HIV.B.DE82",
+        "display": "Enzyme immunoassay for HIV"
+      }, {
+        "code": "HIV.B.DE83",
+        "display": "Nucleic acid test for HIV"
+      }, {
+        "code": "HIV.B.DE84",
+        "display": "Dual HIV/syphilis rapid diagnostic test"
+      }, {
+        "code": "HIV.B.DE85",
+        "display": "HIV self-test"
+      } ]
+    } ]
+  }
+}

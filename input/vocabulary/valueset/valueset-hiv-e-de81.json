@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de81",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de81",
+  "name": "MaternalsyphilistestresultCodes",
+  "title": "Maternal syphilis test result Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Maternal syphilis test result element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE81",
+        "display": "Syphilis positive"
+      }, {
+        "code": "HIV.E.DE82",
+        "display": "Syphilis negative"
+      } ]
+    } ]
+  }
+}

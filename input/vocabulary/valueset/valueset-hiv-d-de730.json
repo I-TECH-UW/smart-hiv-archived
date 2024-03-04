@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de730",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de730",
+  "name": "TBscreeningmethodCodes",
+  "title": "TB screening method Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the TB screening method element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE730",
+        "display": "Symptomatic TB screening"
+      }, {
+        "code": "HIV.D.DE731",
+        "display": "Molecular test for TB"
+      }, {
+        "code": "HIV.D.DE732",
+        "display": "Clinical assessment for TB"
+      }, {
+        "code": "HIV.D.DE733",
+        "display": "Chest radiography for TB"
+      }, {
+        "code": "HIV.D.DE734",
+        "display": "Other diagnostic testing for TB (specify)"
+      } ]
+    } ]
+  }
+}

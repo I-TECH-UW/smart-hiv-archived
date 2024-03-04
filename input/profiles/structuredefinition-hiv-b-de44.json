@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-b-de44",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-b-de44",
+  "name": "Reactive",
+  "title": "Reactive",
+  "status": "draft",
+  "experimental": false,
+  "description": "The HIV self-test was reactive",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Reactive",
+      "definition": "The HIV self-test was reactive",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.B.DE44",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.B.DE44"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Reactive",
+      "definition": "The HIV self-test was reactive",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.B.DE44"
+      } ]
+    } ]
+  }
+}

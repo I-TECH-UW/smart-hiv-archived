@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de196",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de196",
+  "name": "GeneralcareactivitiesrecommendedCodes",
+  "title": "General care activities recommended Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the General care activities recommended element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE196",
+        "display": "Determine WHO clinical stage"
+      }, {
+        "code": "HIV.D.DE197",
+        "display": "Determine if advanced disease"
+      }, {
+        "code": "HIV.D.DE198",
+        "display": "Prepare for ART"
+      }, {
+        "code": "HIV.D.DE199",
+        "display": "Prepare, assess and support adherence"
+      }, {
+        "code": "HIV.D.DE200",
+        "display": "Manage current medications"
+      }, {
+        "code": "HIV.D.DE201",
+        "display": "Check pregnancy status"
+      }, {
+        "code": "HIV.D.DE202",
+        "display": "Provide family planning and contraception"
+      }, {
+        "code": "HIV.D.DE203",
+        "display": "Support disclosure and partner notification"
+      }, {
+        "code": "HIV.D.DE204",
+        "display": "Counsel on risk reduction and prevention"
+      }, {
+        "code": "HIV.D.DE205",
+        "display": "Assess, prevent and manage noncommunicable diseases"
+      }, {
+        "code": "HIV.D.DE206",
+        "display": "Screen for and manage mental health problems"
+      }, {
+        "code": "HIV.D.DE207",
+        "display": "Screen for and manage and substance use issues"
+      }, {
+        "code": "HIV.D.DE208",
+        "display": "Provide psychosocial counselling and support"
+      }, {
+        "code": "HIV.D.DE209",
+        "display": "Manage pain and symptoms"
+      }, {
+        "code": "HIV.D.DE210",
+        "display": "Conduct a nutritional assessment and counsel on nutrition"
+      }, {
+        "code": "HIV.D.DE211",
+        "display": "Conduct a growth and development assessment"
+      }, {
+        "code": "HIV.D.DE212",
+        "display": "Provide support on infant and child feeding"
+      } ]
+    } ]
+  }
+}

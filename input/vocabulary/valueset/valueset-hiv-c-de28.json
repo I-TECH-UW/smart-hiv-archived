@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de28",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de28",
+  "name": "PEPhistoryCodes",
+  "title": "PEP history Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the PEP history element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE28",
+        "display": "First-time PEP user"
+      }, {
+        "code": "HIV.C.DE29",
+        "display": "Repeat PEP user"
+      } ]
+    } ]
+  }
+}

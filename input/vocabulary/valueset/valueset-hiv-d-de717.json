@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de717",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de717",
+  "name": "TBhistoryCodes",
+  "title": "TB history Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the TB history element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE717",
+        "display": "New episode of TB"
+      }, {
+        "code": "HIV.D.DE718",
+        "display": "Relapse TB case"
+      }, {
+        "code": "HIV.D.DE719",
+        "display": "Unknown"
+      } ]
+    } ]
+  }
+}

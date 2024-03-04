@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de107",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de107",
+  "name": "FirstlineARTregimenforchildrenCodes",
+  "title": "First-line ART regimen for children Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the First-line ART regimen for children element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE107",
+        "display": "ABC + 3TC + DTG"
+      }, {
+        "code": "HIV.D.DE108",
+        "display": "ABC + 3TC + LPV/r"
+      }, {
+        "code": "HIV.D.DE109",
+        "display": "ABC + 3TC + RAL"
+      }, {
+        "code": "HIV.D.DE110",
+        "display": "TAF + 3TC + DTG"
+      }, {
+        "code": "HIV.D.DE111",
+        "display": "TAF + FTC + DTG"
+      } ]
+    } ]
+  }
+}

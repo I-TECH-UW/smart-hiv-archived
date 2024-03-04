@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de113",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de113",
+  "name": "FirstlineARTregimenforneonatesCodes",
+  "title": "First-line ART regimen for neonates Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the First-line ART regimen for neonates element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE113",
+        "display": "AZT + 3TC + RAL"
+      }, {
+        "code": "HIV.D.DE114",
+        "display": "ABC + 3TC + RAL"
+      } ]
+    } ]
+  }
+}

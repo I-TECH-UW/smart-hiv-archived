@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-e-de54",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de54",
+  "name": "Motherisfromakeypopulation",
+  "title": "Mother is from a key population",
+  "status": "draft",
+  "experimental": false,
+  "description": "Infant's mother is a member of a key population which has an increased risk of HIV",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Mother is from a key population",
+      "definition": "Infant's mother is a member of a key population which has an increased risk of HIV",
+      "comment": "HIV.DL.XX Retest recommendation",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.E.DE54",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.E.DE54"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Mother is from a key population",
+      "definition": "Infant's mother is a member of a key population which has an increased risk of HIV",
+      "comment": "HIV.DL.XX Retest recommendation",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Mother is from a key population Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de55"
+      },
+      "mapping": [ {
+        "map": "HIV.E.DE54"
+      } ]
+    } ]
+  }
+}

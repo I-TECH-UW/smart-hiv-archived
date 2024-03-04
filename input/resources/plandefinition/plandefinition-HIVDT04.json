@@ -1,0 +1,76 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "HIVDT04",
+  "url": "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT04",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.04"
+  } ],
+  "name": "HIVDT04",
+  "title": "HIV.DT.04 PrEP Eligibility check",
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code": "eca-rule"
+    } ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2024-03-04T15:49:21+03:00",
+  "description": "HIV status ≠ HIV Positive",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes",
+        "code": "HIV.C8.Check",
+        "display": "eligibility for PrEP\n "
+      } ]
+    }
+  } ],
+  "library": [ "http://fhir.org/guides/who/anc-cds/Library/HIVDT04" ],
+  "action": [ {
+    "title": "HIV.DT.04 PrEP Eligibility check",
+    "trigger": [ {
+      "type": "named-event",
+      "name": "HIV.C8.Check eligibility for PrEP\n "
+    } ],
+    "action": [ {
+      "id": "1",
+      "title": "Counsel client on PrEP.Based on answers given, client is eligible for PrEP. ",
+      "description": "Counsel client on PrEP.Based on answers given, client is eligible for PrEP. ",
+      "documentation": [ {
+        "type": "citation"
+      } ],
+      "condition": [ {
+        "kind": "applicability",
+        "expression": {
+          "description": "Requesting pre-exposure prophylaxis (PrEP) = TRUE",
+          "language": "text/cql-identifier",
+          "expression": "Should Counsel client on PrEP.Based on answers given, client is eligible for PrEP. "
+        }
+      } ]
+    }, {
+      "id": "2",
+      "title": "Counsel client on PrEP.Based on answers given, client is eligible for PrEP. ",
+      "description": "Counsel client on PrEP.Based on answers given, client is eligible for PrEP.  2",
+      "textEquivalent": "PrEP can protect the HIV-negative partner in a serodiscordant relationship when the HIV-positive partner is either not on antiretroviral therapy (ART) or has not yet achieved viral suppression. ",
+      "documentation": [ {
+        "type": "citation",
+        "label": "Implementation Tool for Pre-exposure Prophylaxis of HIV Infection. Module 1: Clinical (2017).\nUse criteria in Pocket Card. Indications for PrEP (by history over the past 6 months) and Contraindications. (with provider discretion)\n\nAlso see Implementation Tool for Pre-exposure Prophylaxis of HIV Infection. Module 10. Testing Providers. Table 1 Summary Tool for Starting or monitoring PrEP and Technical Brief: Preventing HIV During Pregnancy and Breastfeeding in the Context of PrEP (2017).\n\nConsolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 3: Prevention\n\n Differentiated and simplified pre-exposure prophylaxis for HIV prevention: Update to WHO implementation guidance. July 2022.  World Health Organization, Geneva, Switzerland.  "
+      } ],
+      "condition": [ {
+        "kind": "applicability",
+        "expression": {
+          "description": "(( \nHIV status of partner or contact = HIV positive)\n  AND ( \nSex partner's HIV treatment status = Partner is not virally suppressed)\n  AND ( \nEstimated creatinine clearance > 60 mL/min)\n  AND ( \nAcute HIV infection symptoms = FALSE)\n  AND ( \nProbable recent exposure to HIV = FALSE)\n  AND (Contraindications to PrEP usage ≠ Tenofovir disoproxil fumarate (TDF) allergy or contraindication)\n  AND ( \nContraindications to PrEP usage = ≠ Other allergy or contraindication to a medicine in the PrEP regimen (specify)))\n  OR (( Key population member* = TRUE)\n  AND (Requesting pre-exposure prophylaxis (PrEP) = TRUE))",
+          "language": "text/cql-identifier",
+          "expression": "Should Counsel client on PrEP.Based on answers given, client is eligible for PrEP.  2"
+        }
+      } ]
+    } ]
+  } ]
+}

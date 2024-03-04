@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de37",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de37",
+  "name": "PregnancyintentionCodes",
+  "title": "Pregnancy intention Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Pregnancy intention element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE37",
+        "display": "Yes, I want to become pregnant"
+      }, {
+        "code": "HIV.C.DE38",
+        "display": "I'm OK either way"
+      }, {
+        "code": "HIV.C.DE39",
+        "display": "No, I don't want to become pregnant"
+      }, {
+        "code": "HIV.C.DE40",
+        "display": "Unsure"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de59",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de59",
+  "name": "HIVexposuretypes*Codes",
+  "title": "HIV exposure types* Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV exposure types* element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE59",
+        "display": "Sex with male"
+      }, {
+        "code": "HIV.B.DE60",
+        "display": "Sex with female"
+      }, {
+        "code": "HIV.B.DE61",
+        "display": "Injected drugs"
+      }, {
+        "code": "HIV.B.DE62",
+        "display": "Mother-to-child transmission"
+      }, {
+        "code": "HIV.B.DE63",
+        "display": "Received blood or blood product transfusion or transplant"
+      } ]
+    } ]
+  }
+}

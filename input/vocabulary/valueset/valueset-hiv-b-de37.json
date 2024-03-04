@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de37",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de37",
+  "name": "Partnerisfromakeypopulation*Codes",
+  "title": "Partner is from a key population* Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Partner is from a key population* element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE37",
+        "display": "Sex worker"
+      }, {
+        "code": "HIV.B.DE38",
+        "display": "Men who have sex with men"
+      }, {
+        "code": "HIV.B.DE39",
+        "display": "Transgender people"
+      }, {
+        "code": "HIV.B.DE40",
+        "display": "Person who injects drugs"
+      }, {
+        "code": "HIV.B.DE41",
+        "display": "People living in prisons and other closed setting"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "HIVDT10",
+  "url": "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT10",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.10"
+  } ],
+  "name": "HIVDT10",
+  "title": "HIV.DT.10 Determine ART Regimen",
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code": "eca-rule"
+    } ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2024-03-04T15:49:21+03:00",
+  "description": "HIV status = HIV Positive",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes",
+        "code": "HIV.D21.",
+        "display": "Determine regimen and treatment options"
+      } ]
+    }
+  } ],
+  "library": [ "http://fhir.org/guides/who/anc-cds/Library/HIVDT10" ],
+  "action": [ {
+    "title": "HIV.DT.10 Determine ART Regimen",
+    "trigger": [ {
+      "type": "named-event",
+      "name": "HIV.D21. Determine regimen and treatment options"
+    } ]
+  } ]
+}

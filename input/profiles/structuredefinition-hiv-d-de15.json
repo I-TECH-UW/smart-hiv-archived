@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-d-de15",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de15",
+  "name": "Signsofseriousillness",
+  "title": "Signs of serious illness",
+  "status": "draft",
+  "experimental": false,
+  "description": "Signs that may indicate the client has a serious illness and needs triage or an emergency referral",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Signs of serious illness",
+      "definition": "Signs that may indicate the client has a serious illness and needs triage or an emergency referral",
+      "comment": "HIV.DT.01. Check for serious illness",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.D.DE15",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE15"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Signs of serious illness",
+      "definition": "Signs that may indicate the client has a serious illness and needs triage or an emergency referral",
+      "comment": "HIV.DT.01. Check for serious illness",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Signs of serious illness Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de16"
+      },
+      "mapping": [ {
+        "map": "HIV.D.DE15"
+      } ]
+    } ]
+  }
+}

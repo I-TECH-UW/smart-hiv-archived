@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "empty-id",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/empty-id",
+  "name": "Otherspecify",
+  "title": "Other (specify)",
+  "status": "draft",
+  "experimental": false,
+  "description": "Other regimen based upon WHO recommendations",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Other (specify)",
+      "definition": "Other regimen based upon WHO recommendations",
+      "min": 1,
+      "max": "1",
+      "fixedCodeableConcept": {
+        "coding": [ {
+          "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+          "code": "Empty ID",
+          "display": "Source of gestational age"
+        } ]
+      },
+      "patternCode": "Empty ID",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "Empty ID"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Other (specify)",
+      "definition": "Other regimen based upon WHO recommendations",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Timing of adverse event Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/timing-of-adverse-event-codes"
+      },
+      "mapping": [ {
+        "map": "Empty ID"
+      } ]
+    }, {
+      "id": "Patient.name",
+      "path": "Patient.name"
+    }, {
+      "id": "Patient.name.given",
+      "path": "Patient.name.given",
+      "short": "Pregnant woman's first name",
+      "definition": "Pregnant woman's first or given name",
+      "min": 0,
+      "max": "1",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "Empty ID"
+      } ]
+    }, {
+      "id": "Patient.name.family",
+      "path": "Patient.name.family",
+      "short": "Pregnant woman's surname",
+      "definition": "Pregnant woman's family name or last name",
+      "min": 0,
+      "max": "1",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "Empty ID"
+      } ]
+    }, {
+      "id": "Patient.identifier",
+      "path": "Patient.identifier",
+      "short": "Pregnant woman's unique ID",
+      "definition": "Unique identifier generated for new clients or a universal ID, if used in the country",
+      "min": 0,
+      "max": "1",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "Empty ID"
+      } ]
+    } ]
+  }
+}

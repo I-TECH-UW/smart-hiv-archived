@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de576",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de576",
+  "name": "ReasonSARSCoV2vaccinenotprovidedCodes",
+  "title": "Reason SARS-CoV-2  vaccine not provided Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason SARS-CoV-2  vaccine not provided element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE576",
+        "display": "Stock-out"
+      }, {
+        "code": "HIV.D.DE577",
+        "display": "Client is ill"
+      }, {
+        "code": "HIV.D.DE578",
+        "display": "Client refused"
+      }, {
+        "code": "HIV.D.DE579",
+        "display": "Allergy to vaccine"
+      }, {
+        "code": "HIV.D.DE580",
+        "display": "Other reason vaccination not provided (specify)"
+      } ]
+    } ]
+  }
+}

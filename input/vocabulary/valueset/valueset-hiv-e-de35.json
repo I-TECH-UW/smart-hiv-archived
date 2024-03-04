@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de35",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de35",
+  "name": "GenderofinfantCodes",
+  "title": "Gender of infant Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Gender of infant element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE35",
+        "display": "Female"
+      }, {
+        "code": "male",
+        "display": "Male"
+      }, {
+        "code": "other",
+        "display": "Other"
+      } ]
+    } ]
+  }
+}

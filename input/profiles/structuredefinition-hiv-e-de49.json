@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-e-de49",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de49",
+  "name": "InfantorchildexposuretoHIV",
+  "title": "Infant or child exposure to HIV",
+  "status": "draft",
+  "experimental": false,
+  "description": "Whether the infant or child was determined to have had HIV exposure through mother",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Infant or child exposure to HIV",
+      "definition": "Whether the infant or child was determined to have had HIV exposure through mother",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.E.DE49",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.E.DE49"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Infant or child exposure to HIV",
+      "definition": "Whether the infant or child was determined to have had HIV exposure through mother",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Infant or child exposure to HIV Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de50"
+      },
+      "mapping": [ {
+        "map": "HIV.E.DE49"
+      } ]
+    } ]
+  }
+}

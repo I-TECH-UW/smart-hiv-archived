@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de15",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de15",
+  "name": "OtherPrEPdosingtypespecifyCodes",
+  "title": "Other PrEP dosing type (specify) Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Other PrEP dosing type (specify) element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE15",
+        "display": "Used event-driven PrEP for at risk exposures over the past 3 months"
+      } ]
+    } ]
+  }
+}

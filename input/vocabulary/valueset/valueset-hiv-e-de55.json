@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de55",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de55",
+  "name": "MotherisfromakeypopulationCodes",
+  "title": "Mother is from a key population Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Mother is from a key population element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE55",
+        "display": "Sex worker"
+      }, {
+        "code": "HIV.E.DE56",
+        "display": "People who injects drugs"
+      }, {
+        "code": "HIV.E.DE57",
+        "display": "Transgender people"
+      }, {
+        "code": "HIV.E.DE58",
+        "display": "People living in prisons and other closed setting"
+      } ]
+    } ]
+  }
+}

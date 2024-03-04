@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de90",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de90",
+  "name": "SexfactorforestimatingcreatinineclearanceCodes",
+  "title": "Sex factor for estimating creatinine clearance Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Sex factor for estimating creatinine clearance element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE90",
+        "display": "Male"
+      }, {
+        "code": "HIV.C.DE91",
+        "display": "Female"
+      } ]
+    } ]
+  }
+}

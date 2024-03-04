@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "type-of-case-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/type-of-case-codes",
+  "name": "TypeofcaseCodes",
+  "title": "Type of case Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Type of case element",
+  "immutable": true
+}
