@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de707",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de707",
+  "name": "ReasonmalariaprophylaxisnotprovidedCodes",
+  "title": "Reason malaria prophylaxis not provided Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason malaria prophylaxis not provided element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://snomed.info/sct",
+      "concept": [ {
+        "code": "3457005"
+      } ]
+    }, {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "QB14",
+        "display": "Stock out"
+      }, {
+        "code": "not classifiable",
+        "display": "Other reason not prescribed (specify)"
+      } ]
+    } ]
+  }
+}

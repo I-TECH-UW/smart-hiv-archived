@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-b-de103",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de103",
+  "name": "TestresultofHIVassay1repeatedCodes",
+  "title": "Test result of HIV assay 1 repeated Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Test result of HIV assay 1 repeated element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.B.DE103",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.B.DE104",
+        "display": "Non-reactive"
+      }, {
+        "code": "HIV.E.DE129",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.E.DE130",
+        "display": "Non-reactive"
+      } ]
+    } ]
+  }
+}

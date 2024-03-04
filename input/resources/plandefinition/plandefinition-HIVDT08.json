@@ -1,0 +1,42 @@
+{
+  "resourceType": "PlanDefinition",
+  "id": "HIVDT08",
+  "url": "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT08",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.08"
+  } ],
+  "name": "HIVDT08",
+  "title": "HIV.DT.08  Determine recommended screenings and tests",
+  "type": {
+    "coding": [ {
+      "system": "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code": "eca-rule"
+    } ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2024-03-04T15:49:21+03:00",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes",
+        "code": "HIV.D12.Determine",
+        "display": "recommended screenings and tests"
+      } ]
+    }
+  } ],
+  "library": [ "http://fhir.org/guides/who/anc-cds/Library/HIVDT08" ],
+  "action": [ {
+    "title": "HIV.DT.08  Determine recommended screenings and tests",
+    "trigger": [ {
+      "type": "named-event",
+      "name": "HIV.D12.Determine recommended screenings and tests"
+    } ]
+  } ]
+}

@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-b-de87",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-b-de87",
+  "name": "Assaynumberintestingstrategy",
+  "title": "Assay number in testing strategy",
+  "status": "draft",
+  "experimental": false,
+  "description": "The number of the assay (test kit) in the HIV testing strategy",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Assay number in testing strategy",
+      "definition": "The number of the assay (test kit) in the HIV testing strategy",
+      "comment": "Assay 1 (A1), Assay 2 (A2) and Assay 3 (A3) should be three different HIV assays (products) that share minimal common false reactivity.",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.B.DE87",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.B.DE87"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Assay number in testing strategy",
+      "definition": "The number of the assay (test kit) in the HIV testing strategy",
+      "comment": "Assay 1 (A1), Assay 2 (A2) and Assay 3 (A3) should be three different HIV assays (products) that share minimal common false reactivity.",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.B.DE87"
+      } ]
+    } ]
+  }
+}

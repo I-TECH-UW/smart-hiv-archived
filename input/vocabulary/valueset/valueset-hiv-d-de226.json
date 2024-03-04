@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de226",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de226",
+  "name": "ComorbiditiesandcoinfectionssignsandsymptomsCodes",
+  "title": "Comorbidities and coinfections signs and symptoms Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Comorbidities and coinfections signs and symptoms element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE226",
+        "display": "Oral candidiasis"
+      }, {
+        "code": "HIV.D.DE227",
+        "display": "Vaginal candidiasis"
+      }, {
+        "code": "HIV.D.DE228",
+        "display": "Cough"
+      }, {
+        "code": "HIV.D.DE229",
+        "display": "Prolonged fever"
+      }, {
+        "code": "HIV.D.DE230",
+        "display": "Night sweats"
+      }, {
+        "code": "HIV.D.DE231",
+        "display": "Weight loss"
+      }, {
+        "code": "HIV.D.DE232",
+        "display": "Difficulty breathing"
+      }, {
+        "code": "HIV.D.DE233",
+        "display": "Pneumonia"
+      }, {
+        "code": "HIV.D.DE234",
+        "display": "Urethral discharge"
+      }, {
+        "code": "HIV.D.DE235",
+        "display": "Syphilis"
+      }, {
+        "code": "HIV.D.DE236",
+        "display": "Pelvic inflammatory disease"
+      }, {
+        "code": "HIV.D.DE237",
+        "display": "Ulcers - skin"
+      }, {
+        "code": "HIV.D.DE238",
+        "display": "Ulcers - mouth or other"
+      }, {
+        "code": "HIV.D.DE239",
+        "display": "Ulcers - male genital"
+      }, {
+        "code": "HIV.D.DE240",
+        "display": "Vaginal discharge"
+      }, {
+        "code": "HIV.D.DE241",
+        "display": "Malaria"
+      }, {
+        "code": "HIV.D.DE242",
+        "display": "Chronic obstructive pulmonary disease"
+      }, {
+        "code": "HIV.D.DE243",
+        "display": "Hypertension"
+      }, {
+        "code": "HIV.D.DE244",
+        "display": "Diabetes"
+      }, {
+        "code": "HIV.D.DE245",
+        "display": "Gestational diabetes"
+      }, {
+        "code": "HIV.D.DE246",
+        "display": "Mental health disorders"
+      }, {
+        "code": "HIV.D.DE247",
+        "display": "Diarrhoea or abdominal  pain"
+      }, {
+        "code": "HIV.D.DE248",
+        "display": "Presumptive TB"
+      }, {
+        "code": "HIV.D.DE249",
+        "display": "Severe or complicated malnutrition"
+      }, {
+        "code": "HIV.D.DE250",
+        "display": "Poor growth or development"
+      }, {
+        "code": "HIV.D.DE251",
+        "display": "Other (specify)"
+      } ]
+    } ]
+  }
+}

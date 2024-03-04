@@ -1,0 +1,626 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ICF",
+  "url": "http://fhir.org/guides/itech-uw/ConceptMap/ICF",
+  "name": "ICF",
+  "title": "ICF",
+  "status": "draft",
+  "experimental": false,
+  "description": "Concept mapping from content extended codes to ICF",
+  "group": [ {
+    "source": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target": "http://hl7.org/fhir/sid/icf-nl",
+    "element": [ {
+      "code": "HIV.A.DE28",
+      "display": "Address",
+      "target": [ {
+        "code": "Client address (observable entity)",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE5",
+      "display": "Partner or contact of an index case",
+      "target": [ {
+        "code": "d770",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.B.DE6",
+      "display": "Partner or contact of an HIV testing client (non-index case)",
+      "target": [ {
+        "code": "d770",
+        "display": "Intimate relationships",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE12",
+      "display": "Systolic blood pressure",
+      "target": [ {
+        "code": "b4209",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE13",
+      "display": "Diastolic blood pressure",
+      "target": [ {
+        "code": "b4209",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE16",
+      "display": "Fever of 39 °C or greater",
+      "target": [ {
+        "code": "b2709",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE17",
+      "display": "Tachycardia",
+      "target": [ {
+        "code": "b410",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE18",
+      "display": "Tachypnea",
+      "target": [ {
+        "code": "b4401",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE19",
+      "display": "Unable to walk unaided",
+      "target": [ {
+        "code": "d469",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE20",
+      "display": "Lethargy",
+      "target": [ {
+        "code": "b4552",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE23",
+      "display": "Unable to drink",
+      "target": [ {
+        "code": "d550",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE25",
+      "display": "Repeated vomiting",
+      "target": [ {
+        "code": "b5106",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE67",
+      "display": "Hypertension",
+      "target": [ {
+        "code": "b4200",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE208",
+      "display": "Provide psychosocial counselling and support",
+      "target": [ {
+        "code": "b122",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE209",
+      "display": "Manage pain and symptoms",
+      "target": [ {
+        "code": "b2800",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE210",
+      "display": "Conduct a nutritional assessment and counsel on nutrition",
+      "target": [ {
+        "code": "d5701",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE212",
+      "display": "Provide support on infant and child feeding",
+      "target": [ {
+        "code": "d550",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE228",
+      "display": "Cough",
+      "target": [ {
+        "code": "b450",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE231",
+      "display": "Weight loss",
+      "target": [ {
+        "code": "b530",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE232",
+      "display": "Difficulty breathing",
+      "target": [ {
+        "code": "b460",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE240",
+      "display": "Vaginal discharge",
+      "target": [ {
+        "code": "s63033",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE243",
+      "display": "Hypertension",
+      "target": [ {
+        "code": "b4200",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE248",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "b460",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE282",
+      "display": "Unexplained anaemia (<8 g/dl)",
+      "target": [ {
+        "code": "b430",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE287",
+      "display": "HIV wasting syndrome",
+      "target": [ {
+        "code": "b530",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE288",
+      "display": "Unexplained severe wasting not responding to standard therapy",
+      "target": [ {
+        "code": "b530",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE364",
+      "display": "Pregnancy",
+      "target": [ {
+        "code": "b6601",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE410",
+      "display": "Haematological disorders",
+      "target": [ {
+        "code": "b430",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE411",
+      "display": "Fatigue",
+      "target": [ {
+        "code": "b4552",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE569",
+      "display": "SARS-CoV-2 first dose of vaccine provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE582",
+      "display": "BCG1 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE585",
+      "display": "OPV0 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE587",
+      "display": "OPV1 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE589",
+      "display": "OPV2 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE591",
+      "display": "OPV3 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE593",
+      "display": "OPV4 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE596",
+      "display": "IPV delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE598",
+      "display": "IPV booster delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE601",
+      "display": "DTP1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE603",
+      "display": "DTP2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE605",
+      "display": "DTP3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE608",
+      "display": "Penta 1 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE610",
+      "display": "Penta 2 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE612",
+      "display": "Penta 3 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE615",
+      "display": "Hib 1 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE617",
+      "display": "Hib 2 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE619",
+      "display": "Hib 3 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE622",
+      "display": "PCV 1 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE624",
+      "display": "PCV 2 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE626",
+      "display": "PCV 3 delivered",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE629",
+      "display": "Rota 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE631",
+      "display": "Rota 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE633",
+      "display": "Rota 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE636",
+      "display": "MCV 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE638",
+      "display": "MCV 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE640",
+      "display": "MCV 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE643",
+      "display": "RCV vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE646",
+      "display": "MMR 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE648",
+      "display": "MMR 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE650",
+      "display": "MMR 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE653",
+      "display": "JapEnceph vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE656",
+      "display": "Yellow fever vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE659",
+      "display": "Tick-borne encephalitis vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE662",
+      "display": "TCV 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE664",
+      "display": "TCV 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE666",
+      "display": "TCV 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE669",
+      "display": "Cholera 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE671",
+      "display": "Cholera 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE673",
+      "display": "Cholera 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE676",
+      "display": "MenA vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE678",
+      "display": "MenC vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE680",
+      "display": "Men4 vaccination provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE683",
+      "display": "HepA 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE685",
+      "display": "HepA 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE688",
+      "display": "HPV 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE690",
+      "display": "HPV 2 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE692",
+      "display": "HPV 3 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE695",
+      "display": "Rabies 1 provided",
+      "target": [ {
+        "code": "Not classificable in ICF",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE713",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "b460",
+        "display": "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE737",
+      "display": "Current cough",
+      "target": [ {
+        "code": "b450",
+        "display": "Additional functions of the respiratory system",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE739",
+      "display": "Weight loss (reported)",
+      "target": [ {
+        "code": "b530",
+        "display": "Weight maintenance functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE740",
+      "display": "Calculated weight loss",
+      "target": [ {
+        "code": "b530",
+        "display": "Weight maintenance functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE742",
+      "display": "Poor weight gain",
+      "target": [ {
+        "code": "b530",
+        "display": "Weight maintenance functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE799",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "b460",
+        "display": "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.D.DE811",
+      "display": "Presumptive TB",
+      "target": [ {
+        "code": "b460",
+        "display": "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence": "equivalent"
+      } ]
+    }, {
+      "code": "HIV.E.DE62",
+      "display": "Infant-feeding counselling provided",
+      "target": [ {
+        "code": "d550",
+        "display": "Eating",
+        "equivalence": "equivalent"
+      } ]
+    } ]
+  } ]
+}

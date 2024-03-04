@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-h-de33",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de33",
+  "name": "HIVstatusofpartnerorcontactCodes",
+  "title": "HIV status of partner or contact Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV status of partner or contact element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.H.DE33",
+        "display": "Already knew positive"
+      }, {
+        "code": "HIV.H.DE34",
+        "display": "Newly diagnosed"
+      }, {
+        "code": "HIV.H.DE35",
+        "display": "Negative"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-c-de89",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-c-de89",
+  "name": "Sexfactorforestimatingcreatinineclearance",
+  "title": "Sex factor for estimating creatinine clearance",
+  "status": "draft",
+  "experimental": false,
+  "description": "Value used for gender for calculating creatinine clearance if required. For transgender populations, the sex at birth is used in the Cockcroft-Gault equation if the person is not using hormone therapy; among transgender populations using hormone therapy for more than three months, the current gender can be used.",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Sex factor for estimating creatinine clearance",
+      "definition": "Value used for gender for calculating creatinine clearance if required. For transgender populations, the sex at birth is used in the Cockcroft-Gault equation if the person is not using hormone therapy; among transgender populations using hormone therapy for more than three months, the current gender can be used.",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.C.DE89",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.C.DE89"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Sex factor for estimating creatinine clearance",
+      "definition": "Value used for gender for calculating creatinine clearance if required. For transgender populations, the sex at birth is used in the Cockcroft-Gault equation if the person is not using hormone therapy; among transgender populations using hormone therapy for more than three months, the current gender can be used.",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "binding": {
+        "extension": [ {
+          "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+          "valueString": "Sex factor for estimating creatinine clearance Codes"
+        } ],
+        "strength": "required",
+        "valueSet": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de90"
+      },
+      "mapping": [ {
+        "map": "HIV.C.DE89"
+      } ]
+    } ]
+  }
+}

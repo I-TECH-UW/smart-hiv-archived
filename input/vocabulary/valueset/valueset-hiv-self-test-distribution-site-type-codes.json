@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-self-test-distribution-site-type-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-distribution-site-type-codes",
+  "name": "HIVselftestdistributionsitetypeCodes",
+  "title": "HIV self-test distribution site type Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV self-test distribution site type element",
+  "immutable": true
+}

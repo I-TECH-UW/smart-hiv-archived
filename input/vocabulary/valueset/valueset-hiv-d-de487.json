@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de487",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de487",
+  "name": "AllergiesCodes",
+  "title": "Allergies Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Allergies element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE487",
+        "display": "No known allergies"
+      }, {
+        "code": "HIV.D.DE488",
+        "display": "Don't know of any allergies"
+      }, {
+        "code": "HIV.D.DE489",
+        "display": "Albendazole"
+      }, {
+        "code": "HIV.D.DE490",
+        "display": "Malaria medication (sulfadoxine-pyrimethamine)"
+      }, {
+        "code": "HIV.D.DE491",
+        "display": "Penicillin"
+      }, {
+        "code": "HIV.D.DE492",
+        "display": "Tenofovir disoproxil fumarate (TDF)"
+      }, {
+        "code": "HIV.D.DE493",
+        "display": "Other allergies (specify)"
+      } ]
+    } ]
+  }
+}

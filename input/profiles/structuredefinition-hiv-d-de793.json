@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-d-de793",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de793",
+  "name": "EligibleforTBpreventivetreatment",
+  "title": "Eligible for TB preventive treatment",
+  "status": "draft",
+  "experimental": false,
+  "description": "Client is eligible for tuberculosis preventive treatment (TPT)",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Eligible for TB preventive treatment",
+      "definition": "Client is eligible for tuberculosis preventive treatment (TPT)",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.D.DE793",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE793"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Eligible for TB preventive treatment",
+      "definition": "Client is eligible for tuberculosis preventive treatment (TPT)",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE793"
+      } ]
+    } ]
+  }
+}

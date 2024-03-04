@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medications-dispensed-codes",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/medications-dispensed-codes",
+  "name": "MedicationsdispensedCodes",
+  "title": "Medications dispensed Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Medications dispensed element",
+  "immutable": true
+}

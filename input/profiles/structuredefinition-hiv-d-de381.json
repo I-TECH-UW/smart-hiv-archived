@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-d-de381",
+  "url": "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de381",
+  "name": "Cotrimoxazoleprophylaxisnumberofdaysprescribed",
+  "title": "Co-trimoxazole prophylaxis number of days prescribed",
+  "status": "draft",
+  "experimental": false,
+  "description": "Number of days of co-trimoxazole prophylaxis prescribed to client",
+  "useContext": [ {
+    "code": {
+      "system": "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code": "task",
+      "display": "Workflow Task"
+    },
+    "valueCodeableConcept": {
+      "coding": [ {
+        "system": "http://fhir.org/guides/nachc/hiv-cds/CodeSystem/activity-codes",
+        "code": "HIV",
+        "display": "A.Registration"
+      } ]
+    }
+  } ],
+  "fhirVersion": "4.0.1",
+  "mapping": [ {
+    "uri": "https://www.who.int/publications/i/item/9789240020306",
+    "name": "Digital Adaptation Kit for Antenatal Care"
+  } ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "short": "Co-trimoxazole prophylaxis number of days prescribed",
+      "definition": "Number of days of co-trimoxazole prophylaxis prescribed to client",
+      "min": 1,
+      "max": "1",
+      "patternCode": "HIV.D.DE381",
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE381"
+      } ]
+    }, {
+      "id": "Observation.value[x]",
+      "path": "Observation.value[x]",
+      "short": "Co-trimoxazole prophylaxis number of days prescribed",
+      "definition": "Number of days of co-trimoxazole prophylaxis prescribed to client",
+      "min": 0,
+      "max": "1",
+      "type": [ {
+        "code": "string"
+      } ],
+      "mustSupport": true,
+      "mapping": [ {
+        "map": "HIV.D.DE381"
+      } ]
+    } ]
+  }
+}

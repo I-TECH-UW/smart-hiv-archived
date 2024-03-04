@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de78",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de78",
+  "name": "BackboneregimenforPEPforchildrenCodes",
+  "title": "Backbone regimen for PEP for children Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Backbone regimen for PEP for children element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE78",
+        "display": "Zidovudine and lamivudine (AZT + 3TC)"
+      }, {
+        "code": "HIV.C.DE79",
+        "display": "Abacavir and lamivudine (ABC + 3TC)"
+      }, {
+        "code": "HIV.C.DE80",
+        "display": "Tenofovir disoproxil and lamivudine (TDF + 3TC)"
+      }, {
+        "code": "HIV.C.DE81",
+        "display": "Tenofovir disoproxil and emtricitabine (TDF + FTC)"
+      }, {
+        "code": "HIV.C.DE82",
+        "display": "Third drug for HIV PEP for children"
+      }, {
+        "code": "HIV.C.DE83",
+        "display": "Dolutegravir (DTG)"
+      }, {
+        "code": "HIV.C.DE84",
+        "display": "Atazanavir/ritonavir (ATV/r)"
+      }, {
+        "code": "HIV.C.DE85",
+        "display": "Lopinavir/ritonavir (LPV/r)"
+      }, {
+        "code": "HIV.C.DE86",
+        "display": "Darunavir/ritonavir (DRV/r)"
+      }, {
+        "code": "HIV.C.DE87",
+        "display": "Ritonavir (RTV)"
+      } ]
+    } ]
+  }
+}

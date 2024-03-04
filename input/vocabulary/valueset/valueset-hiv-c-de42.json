@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de42",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de42",
+  "name": "AcuteHIVinfectionsymptomsCodes",
+  "title": "Acute HIV infection symptoms Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Acute HIV infection symptoms element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE42",
+        "display": "Fever"
+      }, {
+        "code": "HIV.C.DE43",
+        "display": "Sore throat"
+      }, {
+        "code": "HIV.C.DE44",
+        "display": "Aches"
+      }, {
+        "code": "HIV.C.DE45",
+        "display": "Pains"
+      }, {
+        "code": "HIV.C.DE46",
+        "display": "Swollen glands"
+      }, {
+        "code": "HIV.C.DE47",
+        "display": "Mouth sores"
+      }, {
+        "code": "HIV.C.DE48",
+        "display": "Headaches"
+      }, {
+        "code": "HIV.C.DE49",
+        "display": "Rash"
+      } ]
+    } ]
+  }
+}

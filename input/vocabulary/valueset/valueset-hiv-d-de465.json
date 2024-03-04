@@ -1,0 +1,80 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de465",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de465",
+  "name": "CurrentmedicationsCodes",
+  "title": "Current medications Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Current medications element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE465",
+        "display": "No medications"
+      }, {
+        "code": "HIV.D.DE466",
+        "display": "Don't know of any current medications"
+      }, {
+        "code": "HIV.D.DE467",
+        "display": "Analgesic"
+      }, {
+        "code": "HIV.D.DE468",
+        "display": "Antacids"
+      }, {
+        "code": "HIV.D.DE469",
+        "display": "Antibiotics (broad-spectrum)"
+      }, {
+        "code": "HIV.D.DE470",
+        "display": "Anticonvulsive"
+      }, {
+        "code": "HIV.D.DE471",
+        "display": "Antidiabetic"
+      }, {
+        "code": "HIV.D.DE472",
+        "display": "Antifungals"
+      }, {
+        "code": "HIV.D.DE473",
+        "display": "Antihelmintic"
+      }, {
+        "code": "HIV.D.DE474",
+        "display": "Antihypertensive"
+      }, {
+        "code": "HIV.D.DE475",
+        "display": "Antimalarials"
+      }, {
+        "code": "HIV.D.DE476",
+        "display": "Antiretrovirals (ARVs)"
+      }, {
+        "code": "HIV.D.DE477",
+        "display": "Antiparasitics"
+      }, {
+        "code": "HIV.D.DE478",
+        "display": "Antivirals"
+      }, {
+        "code": "HIV.D.DE479",
+        "display": "Buprenorphine"
+      }, {
+        "code": "HIV.D.DE480",
+        "display": "Co-trimoxazole preventive therapy (CPT)"
+      }, {
+        "code": "HIV.D.DE481",
+        "display": "Family planning method"
+      }, {
+        "code": "HIV.D.DE482",
+        "display": "Methadone"
+      }, {
+        "code": "HIV.D.DE483",
+        "display": "PrEP to prevent HIV"
+      }, {
+        "code": "HIV.D.DE484",
+        "display": "Other antibiotics"
+      }, {
+        "code": "HIV.D.DE485",
+        "display": "Other medications (specify)"
+      } ]
+    } ]
+  }
+}

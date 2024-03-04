@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de72",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de72",
+  "name": "ThirddrugforPEPinadultsandadolescentsCodes",
+  "title": "Third-drug for PEP in adults and adolescents Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Third-drug for PEP in adults and adolescents element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE72",
+        "display": "Dolutegravir (DTG)"
+      }, {
+        "code": "HIV.C.DE73",
+        "display": "Raltegravir (RAL)"
+      }, {
+        "code": "HIV.C.DE74",
+        "display": "Darunavir/ritonavir (DRV/r)"
+      }, {
+        "code": "HIV.C.DE75",
+        "display": "Atazanavir/ritonavir (ATV/r)"
+      }, {
+        "code": "HIV.C.DE76",
+        "display": "Lopinavir/ritonavir (LPV/r)"
+      } ]
+    } ]
+  }
+}

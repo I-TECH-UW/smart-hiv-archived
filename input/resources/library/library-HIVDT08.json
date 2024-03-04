@@ -1,0 +1,14 @@
+{
+  "resourceType": "Library",
+  "id": "HIVDT08",
+  "url": "http://fhir.org/guides/who/anc-cds/Library/HIVDT08",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.DT.08"
+  } ],
+  "name": "HIVDT08",
+  "title": "HIV.DT.08  Determine recommended screenings and tests",
+  "content": [ {
+    "id": "ig-loader-HIVDT08.cql"
+  } ]
+}
