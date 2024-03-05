@@ -3,7 +3,7 @@ HIV : Validation Results
 
 err = 1, warn = 4272, info = 4186
 IG Publisher Version: 1.6.0
-Generated Tue Mar 05 17:47:47 UTC 2024. FHIR version 4.3.0 for who.fhir.hiv#0.1.0 (canonical = http://worldhealthorganization.github.io/smart-hiv)
+Generated Tue Mar 05 17:49:30 UTC 2024. FHIR version 4.3.0 for who.fhir.hiv#0.1.0 (canonical = http://worldhealthorganization.github.io/smart-hiv)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-HIV.A : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-HIV.B : 0 / 6 / 1
