@@ -5,7 +5,7 @@
 ![QA errors](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmozzy11.github.io%2Fsmart-hiv%2Fqa.json&query=%24.errs&logoColor=red&label=QA%20errors&color=yellow)
 ![QA warnings](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmozzy11.github.io%2Fsmart-hiv%2Fqa.json&query=%24.warnings&logoColor=orange&label=QA%20warnings&color=yellow)
 ![QA hints](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmozzy11.github.io%2Fsmart-hiv%2Fqa.json&query=%24.hints&logoColor=yellow&label=QA%20hints&color=yellow)
-<!--/badges--> 
+<!--/badges-->  
 
 # WHO SMART GUIDELINES - HIV Implementation Guide
 
