@@ -1,0 +1,79 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "HIVDT03",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"HIVDT03\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;HIVDT03&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT03</code></p><p><b>identifier</b>: HIV.DT.03\u00a0(use:\u00a0OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT03</p><p><b>title</b>: HIV.DT.03 Determine retest recommendation</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href=\"https://www.who.int\">https://www.who.int</a></p><p><b>description</b>: HIV test result = HIV negative</p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>recommended services <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-codes#HIV.B9.Determine)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-HIVDT03.html\">HIV.DT.03 Determine retest recommendation</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.03 Determine retest recommendation</p><h3>Triggers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>named-event</td><td>HIV.B9.Determine recommended services</td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Recommend or schedule a follow-up test on the Visit date + 1 year</p><p><b>description</b>: Recommend or schedule a follow-up test on the Visit date + 1 year</p><p><b>textEquivalent</b>: WHO guidance recommends annual retesting for people who have ongoing HIV-related risks in all settings. These include people with a known HIV-positive partner who is not virally suppressed on ART.</p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT03",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "HIV.DT.03"
+  }],
+  "version" : "0.3.0",
+  "name" : "HIVDT03",
+  "title" : "HIV.DT.03 Determine retest recommendation",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "eca-rule"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-03-04T15:49:21+03:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "HIV test result = HIV negative",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "task",
+      "display" : "Workflow Task"
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes",
+        "code" : "HIV.B9.Determine",
+        "display" : "recommended services"
+      }]
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "library" : ["http://fhir.org/guides/who/anc-cds/Library/HIVDT03"],
+  "action" : [{
+    "title" : "HIV.DT.03 Determine retest recommendation",
+    "trigger" : [{
+      "type" : "named-event",
+      "name" : "HIV.B9.Determine recommended services"
+    }],
+    "action" : [{
+      "id" : "1",
+      "title" : "Recommend or schedule a follow-up test on the Visit date + 1 year",
+      "description" : "Recommend or schedule a follow-up test on the Visit date + 1 year",
+      "textEquivalent" : "WHO guidance recommends annual retesting for people who have ongoing HIV-related risks in all settings. These include people with a known HIV-positive partner who is not virally suppressed on ART.",
+      "documentation" : [{
+        "type" : "citation",
+        "label" : "Consolidated Guidelines on HIV Testing Services. 2019. \n4.3.5 Special messages on retesting \nRetesting among people who are HIV-negative\n7.2.5 Testing pregnant and breastfeeding women"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "( \nHIV status = HIV negative)\n  AND ( \nPartner HIV status (reported) = HIV positive)\n  AND ( \nSex partner's HIV treatment status = Partner is not virally suppressed)",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Recommend or schedule a follow-up test on the Visit date + 1 year"
+        }
+      }]
+    }]
+  }]
+}

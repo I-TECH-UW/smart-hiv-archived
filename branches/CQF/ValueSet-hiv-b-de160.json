@@ -1,0 +1,91 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-b-de160",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE160\">HIV.B.DE160</a></td><td>Mental health services</td><td>Other support services - Mental health services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE161\">HIV.B.DE161</a></td><td>Psychosocial counselling, support and treatment adherence counselling</td><td>Other support services - Psychosocial counselling, support and treatment adherence counselling</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE162\">HIV.B.DE162</a></td><td>Support for disclosure and partner services</td><td>Other support services - Support for disclosure and partner services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE163\">HIV.B.DE163</a></td><td>Legal and social services</td><td>Other support services - Legal and social services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE164\">HIV.B.DE164</a></td><td>Services for responding to violence against women</td><td>Other support services - Services for responding to violence against women</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE147\">HIV.C.DE147</a></td><td>Mental health services</td><td>Other support services - Mental health services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE148\">HIV.C.DE148</a></td><td>Psychosocial counselling, support and treatment adherence counselling</td><td>Other support services - Psychosocial counselling, support and treatment adherence counselling</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE149\">HIV.C.DE149</a></td><td>Support for disclosure and partner services</td><td>Other support services - Support for disclosure and partner services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE150\">HIV.C.DE150</a></td><td>Legal and social services</td><td>Other support services - Legal and social services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE151\">HIV.C.DE151</a></td><td>Services for responding to violence against women</td><td>Other support services - Services for responding to violence against women</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE452\">HIV.D.DE452</a></td><td>Mental health services</td><td>Other support services - Mental health services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE453\">HIV.D.DE453</a></td><td>Psychosocial counselling, support and treatment adherence counselling</td><td>Other support services - Psychosocial counselling, support and treatment adherence counselling</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE454\">HIV.D.DE454</a></td><td>Legal and social services</td><td>Other support services - Legal and social services</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE455\">HIV.D.DE455</a></td><td>Services for responding to violence against women</td><td>Other support services - Services for responding to violence against women</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de160",
+  "version" : "0.3.0",
+  "name" : "OthersupportservicesCodes",
+  "title" : "Other support services Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Other support services element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.B.DE160",
+        "display" : "Mental health services"
+      },
+      {
+        "code" : "HIV.B.DE161",
+        "display" : "Psychosocial counselling, support and treatment adherence counselling"
+      },
+      {
+        "code" : "HIV.B.DE162",
+        "display" : "Support for disclosure and partner services"
+      },
+      {
+        "code" : "HIV.B.DE163",
+        "display" : "Legal and social services"
+      },
+      {
+        "code" : "HIV.B.DE164",
+        "display" : "Services for responding to violence against women"
+      },
+      {
+        "code" : "HIV.C.DE147",
+        "display" : "Mental health services"
+      },
+      {
+        "code" : "HIV.C.DE148",
+        "display" : "Psychosocial counselling, support and treatment adherence counselling"
+      },
+      {
+        "code" : "HIV.C.DE149",
+        "display" : "Support for disclosure and partner services"
+      },
+      {
+        "code" : "HIV.C.DE150",
+        "display" : "Legal and social services"
+      },
+      {
+        "code" : "HIV.C.DE151",
+        "display" : "Services for responding to violence against women"
+      },
+      {
+        "code" : "HIV.D.DE452",
+        "display" : "Mental health services"
+      },
+      {
+        "code" : "HIV.D.DE453",
+        "display" : "Psychosocial counselling, support and treatment adherence counselling"
+      },
+      {
+        "code" : "HIV.D.DE454",
+        "display" : "Legal and social services"
+      },
+      {
+        "code" : "HIV.D.DE455",
+        "display" : "Services for responding to violence against women"
+      }]
+    }]
+  }
+}

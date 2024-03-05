@@ -1,0 +1,127 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de495",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE495\">HIV.D.DE495</a></td><td>Copper-bearing intrauterine device (Cu-IUD)</td><td>Family planning method used - Copper-bearing intrauterine device (Cu-IUD)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE496\">HIV.D.DE496</a></td><td>Levonorgestrel intrauterine device (LNG-IUD)</td><td>Family planning method used - Levonorgestrel intrauterine device (LNG-IUD)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE497\">HIV.D.DE497</a></td><td>Etonogestrel (ETG) one-rod implant</td><td>Family planning method used - Etonogestrel (ETG) one-rod implant</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE498\">HIV.D.DE498</a></td><td>Levonorgestrel (LNG) two-rod implant</td><td>Family planning method used - Levonorgestrel (LNG) two-rod implant</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE499\">HIV.D.DE499</a></td><td>DMPA-IM</td><td>Family planning method used - DMPA-IM</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE500\">HIV.D.DE500</a></td><td>DMPA-SC</td><td>Family planning method used - DMPA-SC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE501\">HIV.D.DE501</a></td><td>NET-EN norethisterone enanthate</td><td>Family planning method used - NET-EN norethisterone enanthate</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE502\">HIV.D.DE502</a></td><td>Progestogen-only pills (POP)</td><td>Family planning method used - Progestogen-only pills (POP)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE503\">HIV.D.DE503</a></td><td>Combined oral contraceptives (COCs)</td><td>Family planning method used - Combined oral contraceptives (COCs)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE504\">HIV.D.DE504</a></td><td>Combined contraceptive patch</td><td>Family planning method used - Combined contraceptive patch</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE505\">HIV.D.DE505</a></td><td>Combined contraceptive vaginal ring (CVR)</td><td>Family planning method used - Combined contraceptive vaginal ring (CVR)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE506\">HIV.D.DE506</a></td><td>Progesterone-releasing vaginal ring (PVR)</td><td>Family planning method used - Progesterone-releasing vaginal ring (PVR)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE507\">HIV.D.DE507</a></td><td>Lactational amenorrhea method (LAM)</td><td>Family planning method used - Lactational amenorrhea method (LAM)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE508\">HIV.D.DE508</a></td><td>Emergency contraceptive pills (ECPs)</td><td>Family planning method used - Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE509\">HIV.D.DE509</a></td><td>Fertility awareness-based methods (FAB)</td><td>Family planning method used - Fertility awareness-based methods (FAB)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE510\">HIV.D.DE510</a></td><td>Male condoms</td><td>Family planning method used - Male condoms</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE511\">HIV.D.DE511</a></td><td>Female condoms</td><td>Family planning method used - Female condoms</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE512\">HIV.D.DE512</a></td><td>Withdrawal</td><td>Family planning method used - Withdrawal</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE513\">HIV.D.DE513</a></td><td>Female relying on male method</td><td>Family planning method used - Female relying on male method</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE514\">HIV.D.DE514</a></td><td>Male relying on female method</td><td>Family planning method used - Male relying on female method</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE515\">HIV.D.DE515</a></td><td>Male sterilization</td><td>Family planning method used - Male sterilization</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE516\">HIV.D.DE516</a></td><td>Female sterilization</td><td>Family planning method used - Female sterilization</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE517\">HIV.D.DE517</a></td><td>No method</td><td>Family planning method used - No method</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de495",
+  "version" : "0.3.0",
+  "name" : "FamilyplanningmethodusedCodes",
+  "title" : "Family planning method used Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Family planning method used element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE495",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "HIV.D.DE496",
+        "display" : "Levonorgestrel intrauterine device (LNG-IUD)"
+      },
+      {
+        "code" : "HIV.D.DE497",
+        "display" : "Etonogestrel (ETG) one-rod implant"
+      },
+      {
+        "code" : "HIV.D.DE498",
+        "display" : "Levonorgestrel (LNG) two-rod implant"
+      },
+      {
+        "code" : "HIV.D.DE499",
+        "display" : "DMPA-IM"
+      },
+      {
+        "code" : "HIV.D.DE500",
+        "display" : "DMPA-SC"
+      },
+      {
+        "code" : "HIV.D.DE501",
+        "display" : "NET-EN norethisterone enanthate"
+      },
+      {
+        "code" : "HIV.D.DE502",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "HIV.D.DE503",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "HIV.D.DE504",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "HIV.D.DE505",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      },
+      {
+        "code" : "HIV.D.DE506",
+        "display" : "Progesterone-releasing vaginal ring (PVR)"
+      },
+      {
+        "code" : "HIV.D.DE507",
+        "display" : "Lactational amenorrhea method (LAM)"
+      },
+      {
+        "code" : "HIV.D.DE508",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "HIV.D.DE509",
+        "display" : "Fertility awareness-based methods (FAB)"
+      },
+      {
+        "code" : "HIV.D.DE510",
+        "display" : "Male condoms"
+      },
+      {
+        "code" : "HIV.D.DE511",
+        "display" : "Female condoms"
+      },
+      {
+        "code" : "HIV.D.DE512",
+        "display" : "Withdrawal"
+      },
+      {
+        "code" : "HIV.D.DE513",
+        "display" : "Female relying on male method"
+      },
+      {
+        "code" : "HIV.D.DE514",
+        "display" : "Male relying on female method"
+      },
+      {
+        "code" : "HIV.D.DE515",
+        "display" : "Male sterilization"
+      },
+      {
+        "code" : "HIV.D.DE516",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "HIV.D.DE517",
+        "display" : "No method"
+      }]
+    }]
+  }
+}

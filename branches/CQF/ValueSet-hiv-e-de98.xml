@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-e-de98"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE98">HIV.E.DE98</a></td><td>12-month visit</td><td>Maternal and child health service visit - 12-month visit</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE99">HIV.E.DE99</a></td><td>24-month visit</td><td>Maternal and child health service visit - 24-month visit</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE100">HIV.E.DE100</a></td><td>First visit after the end of breastfeeding</td><td>Maternal and child health service visit - First visit after the end of breastfeeding</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de98"/>
+  <version value="0.3.0"/>
+  <name value="MaternalandchildhealthservicevisitCodes"/>
+  <title value="Maternal and child health service visit Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T14:51:57+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Maternal and child health service visit element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.E.DE98"/>
+        <display value="12-month visit"/>
+      </concept>
+      <concept>
+        <code value="HIV.E.DE99"/>
+        <display value="24-month visit"/>
+      </concept>
+      <concept>
+        <code value="HIV.E.DE100"/>
+        <display value="First visit after the end of breastfeeding"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

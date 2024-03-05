@@ -1,0 +1,1027 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ConceptMap/ICHI> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ICHI"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2024-03-05 14:51:57+0000 by World Health Organization (WHO)  (<a href=\"https://www.who.int\">https://www.who.int</a>). </p><div><p>Concept mapping from content extended codes to ICHI</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-concept-codes.html\">itech-uw Concept Codes</a> to <code>https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>HIV.C.DE118 (Male and female condoms and condom-compatible lubricants offered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VEF.RD.ZZ (Provision of products to support improved sexual behaviours)</td></tr><tr><td>HIV.C.DE119 (Voluntary medical male circumcision (VMMC) referral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NGM.JJ.AA (Code title:?Partial excision of penis)</td></tr><tr><td>HIV.C.DE120 (Harm reduction for people who inject drugs)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VAC.PP.ZZ (Code title:?Counselling about illicit drug use behaviours)</td></tr><tr><td>HIV.C.DE121 (Behavioural interventions to support risk reduction)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VE1.PP.ZZ (Code title:?Counselling about lifestyle behaviours)</td></tr><tr><td>HIV.C.DE132 (Contraception and family planning)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VEF.PP.ZZ (Counselling about sexual behaviours)</td></tr><tr><td>HIV.C.DE133 (Check pregnancy status)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XB (Specimen collection, urine)</td></tr><tr><td>HIV.C.DE134 (Prevent mother-to-child transmission)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VE1.PP.ZZ (Code title:?Counselling about lifestyle behaviours)</td></tr><tr><td>HIV.C.DE135 (Cervical cancer screening and treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NMF.AH.AC (Code title:?Cervical papanicolaou smear)</td></tr><tr><td>HIV.C.DE136 (Anal cancer screening (for men who have sex with men))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>KBX.AE.AD (Code title:?Anoscopy)</td></tr><tr><td>HIV.C.DE137 (STI testing and treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.C.DE140 (Assessment and provision of vaccinations)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.DB.AE (Code title:?Percutaneous administration of immunological agent, not elsewhere classified)</td></tr><tr><td>HIV.C.DE141 (Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.DB.AE (Code title:?Percutaneous administration of immunological agent, not elsewhere classified)</td></tr><tr><td>HIV.C.DE142 (Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.DB.AC (Code title:?Oral administration of immunological)</td></tr><tr><td>HIV.C.DE143 (Intensified TB case finding and linkage to TB treatment)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.C.DE144 (Provision of isoniazid preventive therapy if person does not have TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.DB.AC (Code title:?Oral administration of immunological)</td></tr><tr><td>HIV.C.DE145 (Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.DB.AC (Code title:?Oral administration of immunological)</td></tr><tr><td>HIV.C.DE147 (Mental health services)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>AS1.PP.ZZ (Code title:?Counselling for mental functions)</td></tr><tr><td>HIV.C.DE148 (Psychosocial counselling, support and treatment adherence counselling)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>ATF.PP.ZZ (Code title:?Counselling for global psychosocial functions)</td></tr><tr><td>HIV.C.DE149 (Support for disclosure and partner services)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.PP.ZZ (Code title:?Counselling, not elsewhere classified)</td></tr><tr><td>HIV.C.DE150 (Legal and social services)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.PP.ZZ (Code title:?Counselling, not elsewhere classified)</td></tr><tr><td>HIV.C.DE151 (Services for responding to violence against women)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VBB.PP.ZZ (Code title:?Counselling about family and partner violence behaviours)</td></tr><tr><td>HIV.C.DE113 (Retesting for HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE114 (Scheduled follow-up appointment for PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE2 (First time counselling on PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)</td></tr><tr><td>HIV.C.DE3 (Follow-up appointment for PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.TI.ZZ (Code title:?Pharmacotherapy prescription)</td></tr><tr><td>HIV.C.DE4 (Restarting PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)</td></tr><tr><td>HIV.C.DE5 (Counselling on PEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)</td></tr><tr><td>HIV.C.DE7 (3-month PrEP visit)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.TI.ZZ (Code title:?Pharmacotherapy prescription)</td></tr><tr><td>HIV.C.DE10 (Currently on PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE12 (Daily oral PrEP)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE13 (Event-driven PrEP (ED-PrEP))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE17 (TDF-FTC)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE18 (TDF)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE19 (TDF + 3TC)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE52 (On ART less than 6 months)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE54 (Partner is not virally suppressed)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.C.DE59 (Serum creatinine test)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE60 (Hepatitis B surface antigen)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE61 (Hepatitis C antibody)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE62 (Rapid plasma reagin)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE63 (Other screening for STIs)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE64 (Pregnancy testing)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XB (Code title:?Specimen collection, urine)</td></tr><tr><td>HIV.C.DE65 (Review vaccination history)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VDA.AA.ZZ (Code title:?Assessment of immunisation behaviours)</td></tr><tr><td>HIV.C.DE67 (Serum creatinine test result)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.C.DE69 (Tenofovir disoproxil and lamivudine (TDF + 3TC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE70 (Tenofovir disoproxil and emtricitabine (TDF + FTC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE72 (Dolutegravir (DTG))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE73 (Raltegravir (RAL))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE74 (Darunavir/ritonavir (DRV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE75 (Atazanavir/ritonavir (ATV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE76 (Lopinavir/ritonavir (LPV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE78 (Zidovudine and lamivudine (AZT + 3TC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE79 (Abacavir and lamivudine (ABC + 3TC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE80 (Tenofovir disoproxil and lamivudine (TDF + 3TC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE81 (Tenofovir disoproxil and emtricitabine (TDF + FTC))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE83 (Dolutegravir (DTG))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE84 (Atazanavir/ritonavir (ATV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE85 (Lopinavir/ritonavir (LPV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE86 (Darunavir/ritonavir (DRV/r))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE87 (Ritonavir (RTV))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.C.DE100 (Probable recent exposure to HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.C.DE110 (Adherence counselling provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)</td></tr><tr><td>HIV.C.DE122 (Condoms distributed)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VEF.RD.ZZ (Provision of products to support improved sexual behaviours)</td></tr><tr><td>HIV.E.DE42 (Mother HIV test conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Specimen collection, blood)</td></tr><tr><td>HIV.E.DE43 (Mother HIV test ordered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.E.DE49 (Infant or child exposure to HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.E.DE51 (HIV-exposed infant or child)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZB.VC.ZZ (Code title:?Infectious disease contact tracing)</td></tr><tr><td>HIV.E.DE59 (Postpartum family planning counselling conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NT1.PP.ZZ (Counselling for genitourinary and reproductive functions)</td></tr><tr><td>HIV.E.DE61 (ARV adherence counselling)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VEH.PP.ZZ (Counselling about breastfeeding behaviours)</td></tr><tr><td>HIV.E.DE62 (Infant-feeding counselling provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>VEJ.PP.ZZ (Code title:?Counselling about parenting behaviours)</td></tr><tr><td>HIV.E.DE64 (Malaria prevention counselling conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.PP.ZZ (Counselling for functions of the immunological system)</td></tr><tr><td>HIV.E.DE93 (Rapid diagnostic test for HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.E.DE94 (Enzyme immunoassay for HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.E.DE95 (Nucleic acid test for HIV)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.E.DE96 (Dual HIV/syphilis rapid diagnostic test)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.XA (Code title:?Specimen collection, blood)</td></tr><tr><td>HIV.H.DE44 (Currently on ART)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)</td></tr><tr><td>HIV.I.DE1 (Emergency referral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>UEP.TI.ZZ (Referral to health provider)</td></tr><tr><td>HIV.I.DE3 (Hospital)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>UEP.TI.ZZ (Referral to health provider)</td></tr><tr><td>HIV.I.DE4 (Referral for screening including diagnostics and lab testing)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PZX.AH.ZZ (Specimen collection, not elsewhere classified)</td></tr><tr><td>HIV.I.DE5 (TB referral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>UEP.TI.ZZ (Referral to health provider)</td></tr><tr><td>HIV.I.DE6 (Antenatal care referral)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>UEP.TI.ZZ (Referral to health provider)</td></tr><tr><td>HIV.I.DE7 (Referral for other general services (specify))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>UEP.TI.ZZ (Referral to health provider)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ConceptMap/ICHI"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ICHI"] ; # 
+  fhir:title [ fhir:v "ICHI"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T14:51:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Concept mapping from content extended codes to ICHI"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "HIV.C.DE118" ] ;
+       fhir:display [ fhir:v "Male and female condoms and condom-compatible lubricants offered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VEF.RD.ZZ" ] ;
+         fhir:display [ fhir:v "Provision of products to support improved sexual behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE119" ] ;
+       fhir:display [ fhir:v "Voluntary medical male circumcision (VMMC) referral" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "NGM.JJ.AA" ] ;
+         fhir:display [ fhir:v "Code title:?Partial excision of penis" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE120" ] ;
+       fhir:display [ fhir:v "Harm reduction for people who inject drugs" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VAC.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about illicit drug use behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE121" ] ;
+       fhir:display [ fhir:v "Behavioural interventions to support risk reduction" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VE1.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about lifestyle behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE132" ] ;
+       fhir:display [ fhir:v "Contraception and family planning" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VEF.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Counselling about sexual behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE133" ] ;
+       fhir:display [ fhir:v "Check pregnancy status" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XB" ] ;
+         fhir:display [ fhir:v "Specimen collection, urine" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE134" ] ;
+       fhir:display [ fhir:v "Prevent mother-to-child transmission" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VE1.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about lifestyle behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE135" ] ;
+       fhir:display [ fhir:v "Cervical cancer screening and treatment" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "NMF.AH.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Cervical papanicolaou smear" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE136" ] ;
+       fhir:display [ fhir:v "Anal cancer screening (for men who have sex with men)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "KBX.AE.AD" ] ;
+         fhir:display [ fhir:v "Code title:?Anoscopy" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE137" ] ;
+       fhir:display [ fhir:v "STI testing and treatment" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE140" ] ;
+       fhir:display [ fhir:v "Assessment and provision of vaccinations" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.DB.AE" ] ;
+         fhir:display [ fhir:v "Code title:?Percutaneous administration of immunological agent, not elsewhere classified" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE141" ] ;
+       fhir:display [ fhir:v "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.DB.AE" ] ;
+         fhir:display [ fhir:v "Code title:?Percutaneous administration of immunological agent, not elsewhere classified" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE142" ] ;
+       fhir:display [ fhir:v "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Oral administration of immunological" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE143" ] ;
+       fhir:display [ fhir:v "Intensified TB case finding and linkage to TB treatment" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE144" ] ;
+       fhir:display [ fhir:v "Provision of isoniazid preventive therapy if person does not have TB" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Oral administration of immunological" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE145" ] ;
+       fhir:display [ fhir:v "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Oral administration of immunological" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE147" ] ;
+       fhir:display [ fhir:v "Mental health services" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "AS1.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling for mental functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE148" ] ;
+       fhir:display [ fhir:v "Psychosocial counselling, support and treatment adherence counselling" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "ATF.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling for global psychosocial functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE149" ] ;
+       fhir:display [ fhir:v "Support for disclosure and partner services" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling, not elsewhere classified" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE150" ] ;
+       fhir:display [ fhir:v "Legal and social services" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling, not elsewhere classified" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE151" ] ;
+       fhir:display [ fhir:v "Services for responding to violence against women" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VBB.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about family and partner violence behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE113" ] ;
+       fhir:display [ fhir:v "Retesting for HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE114" ] ;
+       fhir:display [ fhir:v "Scheduled follow-up appointment for PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE2" ] ;
+       fhir:display [ fhir:v "First time counselling on PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VAD.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE3" ] ;
+       fhir:display [ fhir:v "Follow-up appointment for PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Pharmacotherapy prescription" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE4" ] ;
+       fhir:display [ fhir:v "Restarting PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VAD.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE5" ] ;
+       fhir:display [ fhir:v "Counselling on PEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VAD.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE7" ] ;
+       fhir:display [ fhir:v "3-month PrEP visit" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Pharmacotherapy prescription" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE10" ] ;
+       fhir:display [ fhir:v "Currently on PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE12" ] ;
+       fhir:display [ fhir:v "Daily oral PrEP" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE13" ] ;
+       fhir:display [ fhir:v "Event-driven PrEP (ED-PrEP)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE17" ] ;
+       fhir:display [ fhir:v "TDF-FTC" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE18" ] ;
+       fhir:display [ fhir:v "TDF" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE19" ] ;
+       fhir:display [ fhir:v "TDF + 3TC" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE52" ] ;
+       fhir:display [ fhir:v "On ART less than 6 months" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE54" ] ;
+       fhir:display [ fhir:v "Partner is not virally suppressed" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE59" ] ;
+       fhir:display [ fhir:v "Serum creatinine test" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE60" ] ;
+       fhir:display [ fhir:v "Hepatitis B surface antigen" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE61" ] ;
+       fhir:display [ fhir:v "Hepatitis C antibody" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE62" ] ;
+       fhir:display [ fhir:v "Rapid plasma reagin" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE63" ] ;
+       fhir:display [ fhir:v "Other screening for STIs" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE64" ] ;
+       fhir:display [ fhir:v "Pregnancy testing" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XB" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, urine" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE65" ] ;
+       fhir:display [ fhir:v "Review vaccination history" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VDA.AA.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Assessment of immunisation behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE67" ] ;
+       fhir:display [ fhir:v "Serum creatinine test result" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE69" ] ;
+       fhir:display [ fhir:v "Tenofovir disoproxil and lamivudine (TDF + 3TC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE70" ] ;
+       fhir:display [ fhir:v "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE72" ] ;
+       fhir:display [ fhir:v "Dolutegravir (DTG)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE73" ] ;
+       fhir:display [ fhir:v "Raltegravir (RAL)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE74" ] ;
+       fhir:display [ fhir:v "Darunavir/ritonavir (DRV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE75" ] ;
+       fhir:display [ fhir:v "Atazanavir/ritonavir (ATV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE76" ] ;
+       fhir:display [ fhir:v "Lopinavir/ritonavir (LPV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE78" ] ;
+       fhir:display [ fhir:v "Zidovudine and lamivudine (AZT + 3TC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE79" ] ;
+       fhir:display [ fhir:v "Abacavir and lamivudine (ABC + 3TC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE80" ] ;
+       fhir:display [ fhir:v "Tenofovir disoproxil and lamivudine (TDF + 3TC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE81" ] ;
+       fhir:display [ fhir:v "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE83" ] ;
+       fhir:display [ fhir:v "Dolutegravir (DTG)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE84" ] ;
+       fhir:display [ fhir:v "Atazanavir/ritonavir (ATV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE85" ] ;
+       fhir:display [ fhir:v "Lopinavir/ritonavir (LPV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE86" ] ;
+       fhir:display [ fhir:v "Darunavir/ritonavir (DRV/r)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE87" ] ;
+       fhir:display [ fhir:v "Ritonavir (RTV)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE100" ] ;
+       fhir:display [ fhir:v "Probable recent exposure to HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE110" ] ;
+       fhir:display [ fhir:v "Adherence counselling provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VAD.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.C.DE122" ] ;
+       fhir:display [ fhir:v "Condoms distributed" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VEF.RD.ZZ" ] ;
+         fhir:display [ fhir:v "Provision of products to support improved sexual behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE42" ] ;
+       fhir:display [ fhir:v "Mother HIV test conducted" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE43" ] ;
+       fhir:display [ fhir:v "Mother HIV test ordered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE49" ] ;
+       fhir:display [ fhir:v "Infant or child exposure to HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE51" ] ;
+       fhir:display [ fhir:v "HIV-exposed infant or child" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZB.VC.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Infectious disease contact tracing" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE59" ] ;
+       fhir:display [ fhir:v "Postpartum family planning counselling conducted" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "NT1.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Counselling for genitourinary and reproductive functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE61" ] ;
+       fhir:display [ fhir:v "ARV adherence counselling" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VEH.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Counselling about breastfeeding behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE62" ] ;
+       fhir:display [ fhir:v "Infant-feeding counselling provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "VEJ.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Code title:?Counselling about parenting behaviours" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE64" ] ;
+       fhir:display [ fhir:v "Malaria prevention counselling conducted" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "DTB.PP.ZZ" ] ;
+         fhir:display [ fhir:v "Counselling for functions of the immunological system" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE93" ] ;
+       fhir:display [ fhir:v "Rapid diagnostic test for HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE94" ] ;
+       fhir:display [ fhir:v "Enzyme immunoassay for HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE95" ] ;
+       fhir:display [ fhir:v "Nucleic acid test for HIV" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE96" ] ;
+       fhir:display [ fhir:v "Dual HIV/syphilis rapid diagnostic test" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.XA" ] ;
+         fhir:display [ fhir:v "Code title:?Specimen collection, blood" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.H.DE44" ] ;
+       fhir:display [ fhir:v "Currently on ART" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.DB.AC" ] ;
+         fhir:display [ fhir:v "Code title:?Administering pharmacotherapy, per orifice" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE1" ] ;
+       fhir:display [ fhir:v "Emergency referral" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UEP.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Referral to health provider" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE3" ] ;
+       fhir:display [ fhir:v "Hospital" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UEP.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Referral to health provider" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE4" ] ;
+       fhir:display [ fhir:v "Referral for screening including diagnostics and lab testing" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "PZX.AH.ZZ" ] ;
+         fhir:display [ fhir:v "Specimen collection, not elsewhere classified" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE5" ] ;
+       fhir:display [ fhir:v "TB referral" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UEP.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Referral to health provider" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE6" ] ;
+       fhir:display [ fhir:v "Antenatal care referral" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UEP.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Referral to health provider" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.I.DE7" ] ;
+       fhir:display [ fhir:v "Referral for other general services (specify)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "UEP.TI.ZZ" ] ;
+         fhir:display [ fhir:v "Referral to health provider" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

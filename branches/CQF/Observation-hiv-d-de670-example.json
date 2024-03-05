@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Observation",
+  "id" : "hiv-d-de670-example",
+  "meta" : {
+    "profile" : ["http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de670"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"hiv-d-de670-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;hiv-d-de670-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <code>http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de670</code></p></div><p><b>status</b>: final</p><p><b>code</b>: Could not resolve binding valueset null <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (example-codes#example)</span></p><p><b>subject</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/Patient/null-patient-example\">Patient/null-patient-example</a></p><p><b>encounter</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/Encounter/null-encounter-example\">Encounter/null-encounter-example</a></p><p><b>performer</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/PractitionerRole/null-practitionerrole-example\">PractitionerRole/null-practitionerrole-example</a></p><p><b>value</b>: Asdf</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://example.org/fhir/CodeSystem/example-codes",
+      "code" : "example",
+      "display" : "Could not resolve binding valueset null"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/null-patient-example"
+  },
+  "encounter" : {
+    "reference" : "Encounter/null-encounter-example"
+  },
+  "performer" : [{
+    "reference" : "PractitionerRole/null-practitionerrole-example"
+  }],
+  "valueString" : "Asdf"
+}

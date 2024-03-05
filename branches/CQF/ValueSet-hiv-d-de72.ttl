@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de72> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de72"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE72\">HIV.D.DE72</a></td><td>ABC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - ABC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE73\">HIV.D.DE73</a></td><td>FTC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - FTC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE74\">HIV.D.DE74</a></td><td>3TC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - 3TC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE75\">HIV.D.DE75</a></td><td>AZT</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - AZT</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE76\">HIV.D.DE76</a></td><td>DDI</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - DDI</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE77\">HIV.D.DE77</a></td><td>D4T</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - D4T</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de72"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "NucleosidereversetranscriptaseinhibitorsNRTIsCodes"] ; # 
+  fhir:title [ fhir:v "Nucleoside reverse transcriptase inhibitors (NRTIs) Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T14:51:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Nucleoside reverse transcriptase inhibitors (NRTIs) element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE72" ] ;
+         fhir:display [ fhir:v "ABC" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE73" ] ;
+         fhir:display [ fhir:v "FTC" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE74" ] ;
+         fhir:display [ fhir:v "3TC" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE75" ] ;
+         fhir:display [ fhir:v "AZT" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE76" ] ;
+         fhir:display [ fhir:v "DDI" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE77" ] ;
+         fhir:display [ fhir:v "D4T" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

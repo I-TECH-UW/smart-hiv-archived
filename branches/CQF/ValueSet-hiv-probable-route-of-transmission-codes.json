@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-probable-route-of-transmission-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-probable-route-of-transmission-codes",
+  "version" : "0.3.0",
+  "name" : "HIVprobablerouteoftransmissionCodes",
+  "title" : "HIV probable route of transmission Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the HIV probable route of transmission element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true
+}

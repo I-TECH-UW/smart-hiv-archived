@@ -1,0 +1,93 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CIEL",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2024-03-05 14:51:57+0000 by World Health Organization (WHO)  (<a href=\"https://www.who.int\">https://www.who.int</a>). </p><div><p>Concept mapping from content extended codes to CIEL</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-concept-codes.html\">itech-uw Concept Codes</a> to <code>http://hl7.org/fhir/sid/ciel</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>HIV.B.DE28 (Currently pregnant)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>7</td></tr><tr><td>HIV.B.DE131 (HIV positive counselling conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.PP.ZZ</td></tr><tr><td>HIV.B.DE132 (Hepatitis B positive counselling conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.PP.ZZ</td></tr><tr><td>HIV.B.DE133 (Hepatitis C positive counselling conducted)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.PP.ZZ</td></tr><tr><td>HIV.B.DE134 (Syphilis counselling, treatment and further testing)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DTB.PP.ZZ</td></tr></table></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ConceptMap/CIEL",
+  "version" : "0.3.0",
+  "name" : "CIEL",
+  "title" : "CIEL",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Concept mapping from content extended codes to CIEL",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "group" : [{
+    "source" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target" : "http://hl7.org/fhir/sid/ciel",
+    "element" : [{
+      "code" : "HIV.B.DE28",
+      "display" : "Currently pregnant",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "7",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE131",
+      "display" : "HIV positive counselling conducted",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "DTB.PP.ZZ",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE132",
+      "display" : "Hepatitis B positive counselling conducted",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "DTB.PP.ZZ",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE133",
+      "display" : "Hepatitis C positive counselling conducted",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "DTB.PP.ZZ",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE134",
+      "display" : "Syphilis counselling, treatment and further testing",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "DTB.PP.ZZ",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

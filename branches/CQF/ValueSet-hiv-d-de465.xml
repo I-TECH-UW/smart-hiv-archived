@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-d-de465"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE465">HIV.D.DE465</a></td><td>No medications</td><td>Current medications - No medications</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE466">HIV.D.DE466</a></td><td>Don't know of any current medications</td><td>Current medications - Don't know of any current medications</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE467">HIV.D.DE467</a></td><td>Analgesic</td><td>Current medications - Analgesic</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE468">HIV.D.DE468</a></td><td>Antacids</td><td>Current medications - Antacids</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE469">HIV.D.DE469</a></td><td>Antibiotics (broad-spectrum)</td><td>Current medications - Antibiotics (broad-spectrum)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE470">HIV.D.DE470</a></td><td>Anticonvulsive</td><td>Current medications - Anticonvulsive</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE471">HIV.D.DE471</a></td><td>Antidiabetic</td><td>Current medications - Antidiabetic</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE472">HIV.D.DE472</a></td><td>Antifungals</td><td>Current medications - Antifungals</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE473">HIV.D.DE473</a></td><td>Antihelmintic</td><td>Current medications - Antihelmintic</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE474">HIV.D.DE474</a></td><td>Antihypertensive</td><td>Current medications - Antihypertensive</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE475">HIV.D.DE475</a></td><td>Antimalarials</td><td>Current medications - Antimalarials</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE476">HIV.D.DE476</a></td><td>Antiretrovirals (ARVs)</td><td>Current medications - Antiretrovirals (ARVs)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE477">HIV.D.DE477</a></td><td>Antiparasitics</td><td>Current medications - Antiparasitics</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE478">HIV.D.DE478</a></td><td>Antivirals</td><td>Current medications - Antivirals</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE479">HIV.D.DE479</a></td><td>Buprenorphine</td><td>Current medications - Buprenorphine</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE480">HIV.D.DE480</a></td><td>Co-trimoxazole preventive therapy (CPT)</td><td>Current medications - Co-trimoxazole preventive therapy (CPT)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE481">HIV.D.DE481</a></td><td>Family planning method</td><td>Current medications - Family planning method</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE482">HIV.D.DE482</a></td><td>Methadone</td><td>Current medications - Methadone</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE483">HIV.D.DE483</a></td><td>PrEP to prevent HIV</td><td>Current medications - PrEP to prevent HIV</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE484">HIV.D.DE484</a></td><td>Other antibiotics</td><td>Current medications - Other antibiotics</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE485">HIV.D.DE485</a></td><td>Other medications (specify)</td><td>Current medications - Other medications (specify)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de465"/>
+  <version value="0.3.0"/>
+  <name value="CurrentmedicationsCodes"/>
+  <title value="Current medications Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T14:51:57+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Current medications element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.D.DE465"/>
+        <display value="No medications"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE466"/>
+        <display value="Don't know of any current medications"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE467"/>
+        <display value="Analgesic"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE468"/>
+        <display value="Antacids"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE469"/>
+        <display value="Antibiotics (broad-spectrum)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE470"/>
+        <display value="Anticonvulsive"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE471"/>
+        <display value="Antidiabetic"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE472"/>
+        <display value="Antifungals"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE473"/>
+        <display value="Antihelmintic"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE474"/>
+        <display value="Antihypertensive"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE475"/>
+        <display value="Antimalarials"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE476"/>
+        <display value="Antiretrovirals (ARVs)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE477"/>
+        <display value="Antiparasitics"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE478"/>
+        <display value="Antivirals"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE479"/>
+        <display value="Buprenorphine"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE480"/>
+        <display value="Co-trimoxazole preventive therapy (CPT)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE481"/>
+        <display value="Family planning method"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE482"/>
+        <display value="Methadone"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE483"/>
+        <display value="PrEP to prevent HIV"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE484"/>
+        <display value="Other antibiotics"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE485"/>
+        <display value="Other medications (specify)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

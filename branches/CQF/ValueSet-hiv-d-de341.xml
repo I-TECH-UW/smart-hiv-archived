@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-d-de341"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE341">HIV.D.DE341</a></td><td>Haemoglobin (Hb): number in g/dL</td><td>Investigations ordered - Haemoglobin (Hb): number in g/dL</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE342">HIV.D.DE342</a></td><td>Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result</td><td>Investigations ordered - Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE343">HIV.D.DE343</a></td><td>Chest X-ray (CXR): Free text</td><td>Investigations ordered - Chest X-ray (CXR): Free text</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE344">HIV.D.DE344</a></td><td>Sputum or culture (general TB): see “TB status” Xpert: see “TB status”</td><td>Investigations ordered - Sputum or culture (general TB): see “TB status” Xpert: see “TB status”</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE345">HIV.D.DE345</a></td><td>HBsAg test (HBV)</td><td>Investigations ordered - HBsAg test (HBV)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE346">HIV.D.DE346</a></td><td>HIV viral load test ordered</td><td>Investigations ordered - HIV viral load test ordered</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE347">HIV.D.DE347</a></td><td>CD4 count ordered</td><td>Investigations ordered - CD4 count ordered</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de341"/>
+  <version value="0.3.0"/>
+  <name value="InvestigationsorderedCodes"/>
+  <title value="Investigations ordered Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T14:51:57+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Investigations ordered element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.D.DE341"/>
+        <display value="Haemoglobin (Hb): number in g/dL"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE342"/>
+        <display value="Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE343"/>
+        <display value="Chest X-ray (CXR): Free text"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE344"/>
+        <display value="Sputum or culture (general TB): see “TB status” Xpert: see “TB status”"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE345"/>
+        <display value="HBsAg test (HBV)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE346"/>
+        <display value="HIV viral load test ordered"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE347"/>
+        <display value="CD4 count ordered"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

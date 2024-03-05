@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>ICHI - TTL Representation - SMART WHO HIV Implmementation Guide v0.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+    <link rel="stylesheet" href="assets/css/fa-all.css" type="text/css"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/who.css"/>
+    <link rel="stylesheet" href="assets/css/lforms.min.css"/>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.187"}
+    h3,h4,h5,h6{--heading-prefix:"2.187"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">    <!-- container -->
+            <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+              <!-- status-bar -->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <ul class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+    <!-- <li><a href="documentation.html">Documentation</a></li> -->
+    <!-- <li><a href="guidance.html">Guidance</a></li> -->
+  <li><a href="artifacts.html">Artifact Index</a></li>
+    <!-- <li><a href="downloads.html">Downloads</a></li> -->
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="http://cql.hl7.org/index.html" target="_blank">CQL Spec</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/uv/cpg" target="_blank">FHIR Clinical Guidelines</a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+              </div>    <!-- /.nav-collapse -->
+
+              <div data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;" class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch">
+                  <!-- This div will be pushed to the right -->
+                <div style="margin-left: auto; background-color: #00477d; color: white;" class="language-selector">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" name="language-selector" id="language-selector">
+                    <option disabled="null" selected="null">Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                  <!-- Search Content -->
+              </div>
+            </div>    <!-- /.container -->
+          </nav>    <!-- /.navbar -->
+          <!-- /HEADER CONTENT -->
+        </div>    <!-- /container -->
+      </div>    <!-- /segment-navbar -->
+      
+
+      <div style=" justify-content: space-between; align-items: left;" class="container">
+
+          <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a no-external="true" id="who-logo" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a no-external="true" id="fhir-logo" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART WHO HIV Implmementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - CI Build
+
+
+
+  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>ICHI</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">SMART WHO HIV Implmementation Guide, published by World Health Organization (WHO) . This guide is not an authorized publication; it is the continuous build for version 0.3.0 built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href="https://github.com/I-TECH-UW/smart-hiv">https://github.com/I-TECH-UW/smart-hiv</a> and changes regularly. See the <a href="http://fhir.org/guides/who/anc-cds/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ConceptMap-ICHI.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ConceptMap-ICHI.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ConceptMap-ICHI.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: ICHI - TTL Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-03-05
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ConceptMap-ICHI.ttl" no-download="true">Raw ttl</a> | <a download="null" href="ConceptMap-ICHI.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:ConceptMap ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ICHI"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "extensions" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;p&gt;DRAFT. Published on 2024-03-05 14:51:57+0000 by World Health Organization (WHO)  (&lt;a href=\"https://www.who.int\"&gt;https://www.who.int&lt;/a&gt;). &lt;/p&gt;&lt;div&gt;&lt;p&gt;Concept mapping from content extended codes to ICHI&lt;/p&gt;\n&lt;/div&gt;&lt;br/&gt;&lt;p&gt;&lt;b&gt;Group 1&lt;/b&gt;Mapping from &lt;a href=\"CodeSystem-concept-codes.html\"&gt;itech-uw Concept Codes&lt;/a&gt; to &lt;code&gt;https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi&lt;/code&gt;&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Source Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Relationship&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Target Code&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE118 (Male and female condoms and condom-compatible lubricants offered)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VEF.RD.ZZ (Provision of products to support improved sexual behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE119 (Voluntary medical male circumcision (VMMC) referral)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NGM.JJ.AA (Code title:?Partial excision of penis)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE120 (Harm reduction for people who inject drugs)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAC.PP.ZZ (Code title:?Counselling about illicit drug use behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE121 (Behavioural interventions to support risk reduction)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VE1.PP.ZZ (Code title:?Counselling about lifestyle behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE132 (Contraception and family planning)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VEF.PP.ZZ (Counselling about sexual behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE133 (Check pregnancy status)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XB (Specimen collection, urine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE134 (Prevent mother-to-child transmission)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VE1.PP.ZZ (Code title:?Counselling about lifestyle behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE135 (Cervical cancer screening and treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NMF.AH.AC (Code title:?Cervical papanicolaou smear)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE136 (Anal cancer screening (for men who have sex with men))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;KBX.AE.AD (Code title:?Anoscopy)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE137 (STI testing and treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE140 (Assessment and provision of vaccinations)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.DB.AE (Code title:?Percutaneous administration of immunological agent, not elsewhere classified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE141 (Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.DB.AE (Code title:?Percutaneous administration of immunological agent, not elsewhere classified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE142 (Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.DB.AC (Code title:?Oral administration of immunological)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE143 (Intensified TB case finding and linkage to TB treatment)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE144 (Provision of isoniazid preventive therapy if person does not have TB)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.DB.AC (Code title:?Oral administration of immunological)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE145 (Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.DB.AC (Code title:?Oral administration of immunological)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE147 (Mental health services)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;AS1.PP.ZZ (Code title:?Counselling for mental functions)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE148 (Psychosocial counselling, support and treatment adherence counselling)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;ATF.PP.ZZ (Code title:?Counselling for global psychosocial functions)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE149 (Support for disclosure and partner services)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.PP.ZZ (Code title:?Counselling, not elsewhere classified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE150 (Legal and social services)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.PP.ZZ (Code title:?Counselling, not elsewhere classified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE151 (Services for responding to violence against women)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VBB.PP.ZZ (Code title:?Counselling about family and partner violence behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE113 (Retesting for HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE114 (Scheduled follow-up appointment for PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE2 (First time counselling on PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE3 (Follow-up appointment for PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.TI.ZZ (Code title:?Pharmacotherapy prescription)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE4 (Restarting PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE5 (Counselling on PEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE7 (3-month PrEP visit)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.TI.ZZ (Code title:?Pharmacotherapy prescription)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE10 (Currently on PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE12 (Daily oral PrEP)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE13 (Event-driven PrEP (ED-PrEP))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE17 (TDF-FTC)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE18 (TDF)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE19 (TDF + 3TC)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE52 (On ART less than 6 months)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE54 (Partner is not virally suppressed)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE59 (Serum creatinine test)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE60 (Hepatitis B surface antigen)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE61 (Hepatitis C antibody)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE62 (Rapid plasma reagin)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE63 (Other screening for STIs)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE64 (Pregnancy testing)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XB (Code title:?Specimen collection, urine)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE65 (Review vaccination history)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VDA.AA.ZZ (Code title:?Assessment of immunisation behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE67 (Serum creatinine test result)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE69 (Tenofovir disoproxil and lamivudine (TDF + 3TC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE70 (Tenofovir disoproxil and emtricitabine (TDF + FTC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE72 (Dolutegravir (DTG))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE73 (Raltegravir (RAL))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE74 (Darunavir/ritonavir (DRV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE75 (Atazanavir/ritonavir (ATV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE76 (Lopinavir/ritonavir (LPV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE78 (Zidovudine and lamivudine (AZT + 3TC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE79 (Abacavir and lamivudine (ABC + 3TC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE80 (Tenofovir disoproxil and lamivudine (TDF + 3TC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE81 (Tenofovir disoproxil and emtricitabine (TDF + FTC))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE83 (Dolutegravir (DTG))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE84 (Atazanavir/ritonavir (ATV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE85 (Lopinavir/ritonavir (LPV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE86 (Darunavir/ritonavir (DRV/r))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE87 (Ritonavir (RTV))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE100 (Probable recent exposure to HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE110 (Adherence counselling provided)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VAD.PP.ZZ (Code title:?Counselling about pharmaceutical use behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.C.DE122 (Condoms distributed)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VEF.RD.ZZ (Provision of products to support improved sexual behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE42 (Mother HIV test conducted)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE43 (Mother HIV test ordered)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE49 (Infant or child exposure to HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE51 (HIV-exposed infant or child)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZB.VC.ZZ (Code title:?Infectious disease contact tracing)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE59 (Postpartum family planning counselling conducted)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;NT1.PP.ZZ (Counselling for genitourinary and reproductive functions)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE61 (ARV adherence counselling)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VEH.PP.ZZ (Counselling about breastfeeding behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE62 (Infant-feeding counselling provided)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;VEJ.PP.ZZ (Code title:?Counselling about parenting behaviours)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE64 (Malaria prevention counselling conducted)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;DTB.PP.ZZ (Counselling for functions of the immunological system)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE93 (Rapid diagnostic test for HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE94 (Enzyme immunoassay for HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE95 (Nucleic acid test for HIV)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.E.DE96 (Dual HIV/syphilis rapid diagnostic test)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.XA (Code title:?Specimen collection, blood)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.H.DE44 (Currently on ART)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.DB.AC (Code title:?Administering pharmacotherapy, per orifice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE1 (Emergency referral)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UEP.TI.ZZ (Referral to health provider)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE3 (Hospital)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UEP.TI.ZZ (Referral to health provider)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE4 (Referral for screening including diagnostics and lab testing)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;PZX.AH.ZZ (Specimen collection, not elsewhere classified)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE5 (TB referral)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UEP.TI.ZZ (Referral to health provider)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE6 (Antenatal care referral)&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UEP.TI.ZZ (Referral to health provider)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;HIV.I.DE7 (Referral for other general services (specify))&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\"&gt;is equivalent to&lt;/a&gt;&lt;/td&gt;&lt;td&gt;UEP.TI.ZZ (Referral to health provider)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://fhir.org/guides/itech-uw/ConceptMap/ICHI"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "0.3.0"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ICHI"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ICHI"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "draft"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2024-03-05T14:51:57+00:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "World Health Organization (WHO) "] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:contact</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "url" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "https://www.who.int" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "Concept mapping from content extended codes to ICHI"] ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "001" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group">fhir:group</a> ( [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.source">fhir:source</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.target">fhir:target</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "https://mitel.dimi.uniud.it/ichi/#http://id.who.int/ichi"^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element">fhir:element</a> [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE118" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Male and female condoms and condom-compatible lubricants offered" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VEF.RD.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Provision of products to support improved sexual behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE119" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Voluntary medical male circumcision (VMMC) referral" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NGM.JJ.AA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Partial excision of penis" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE120" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Harm reduction for people who inject drugs" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VAC.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about illicit drug use behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE121" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Behavioural interventions to support risk reduction" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VE1.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about lifestyle behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE132" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Contraception and family planning" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VEF.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Counselling about sexual behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE133" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Check pregnancy status" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XB" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Specimen collection, urine" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE134" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Prevent mother-to-child transmission" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VE1.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about lifestyle behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE135" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Cervical cancer screening and treatment" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NMF.AH.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Cervical papanicolaou smear" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE136" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Anal cancer screening (for men who have sex with men)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "KBX.AE.AD" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Anoscopy" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE137" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "STI testing and treatment" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE140" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Assessment and provision of vaccinations" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.DB.AE" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Percutaneous administration of immunological agent, not elsewhere classified" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE141" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.DB.AE" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Percutaneous administration of immunological agent, not elsewhere classified" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE142" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Oral administration of immunological" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE143" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Intensified TB case finding and linkage to TB treatment" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE144" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Provision of isoniazid preventive therapy if person does not have TB" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Oral administration of immunological" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE145" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Oral administration of immunological" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE147" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Mental health services" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "AS1.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling for mental functions" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE148" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Psychosocial counselling, support and treatment adherence counselling" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "ATF.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling for global psychosocial functions" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE149" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Support for disclosure and partner services" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling, not elsewhere classified" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE150" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Legal and social services" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling, not elsewhere classified" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE151" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Services for responding to violence against women" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VBB.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about family and partner violence behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE113" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Retesting for HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE114" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Scheduled follow-up appointment for PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE2" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "First time counselling on PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VAD.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE3" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Follow-up appointment for PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Pharmacotherapy prescription" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE4" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Restarting PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VAD.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE5" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Counselling on PEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VAD.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE7" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "3-month PrEP visit" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Pharmacotherapy prescription" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE10" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Currently on PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE12" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Daily oral PrEP" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE13" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Event-driven PrEP (ED-PrEP)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE17" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "TDF-FTC" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE18" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "TDF" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE19" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "TDF + 3TC" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE52" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "On ART less than 6 months" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE54" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Partner is not virally suppressed" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE59" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Serum creatinine test" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE60" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Hepatitis B surface antigen" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE61" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Hepatitis C antibody" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE62" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Rapid plasma reagin" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE63" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Other screening for STIs" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE64" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Pregnancy testing" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XB" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, urine" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE65" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Review vaccination history" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VDA.AA.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Assessment of immunisation behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE67" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Serum creatinine test result" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE69" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Tenofovir disoproxil and lamivudine (TDF + 3TC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE70" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE72" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Dolutegravir (DTG)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE73" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Raltegravir (RAL)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE74" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Darunavir/ritonavir (DRV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE75" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Atazanavir/ritonavir (ATV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE76" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Lopinavir/ritonavir (LPV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE78" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Zidovudine and lamivudine (AZT + 3TC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE79" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Abacavir and lamivudine (ABC + 3TC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE80" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Tenofovir disoproxil and lamivudine (TDF + 3TC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE81" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE83" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Dolutegravir (DTG)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE84" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Atazanavir/ritonavir (ATV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE85" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Lopinavir/ritonavir (LPV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE86" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Darunavir/ritonavir (DRV/r)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE87" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Ritonavir (RTV)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE100" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Probable recent exposure to HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE110" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Adherence counselling provided" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VAD.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about pharmaceutical use behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.C.DE122" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Condoms distributed" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VEF.RD.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Provision of products to support improved sexual behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE42" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Mother HIV test conducted" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE43" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Mother HIV test ordered" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE49" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Infant or child exposure to HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE51" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "HIV-exposed infant or child" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZB.VC.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Infectious disease contact tracing" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE59" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Postpartum family planning counselling conducted" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "NT1.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Counselling for genitourinary and reproductive functions" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE61" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ARV adherence counselling" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VEH.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Counselling about breastfeeding behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE62" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Infant-feeding counselling provided" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "VEJ.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Counselling about parenting behaviours" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE64" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Malaria prevention counselling conducted" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "DTB.PP.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Counselling for functions of the immunological system" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE93" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Rapid diagnostic test for HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE94" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Enzyme immunoassay for HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE95" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Nucleic acid test for HIV" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.E.DE96" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Dual HIV/syphilis rapid diagnostic test" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.XA" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Specimen collection, blood" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.H.DE44" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Currently on ART" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.DB.AC" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Code title:?Administering pharmacotherapy, per orifice" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE1" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Emergency referral" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "UEP.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral to health provider" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE3" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Hospital" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "UEP.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral to health provider" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE4" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral for screening including diagnostics and lab testing" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "PZX.AH.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Specimen collection, not elsewhere classified" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE5" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "TB referral" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "UEP.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral to health provider" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE6" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Antenatal care referral" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "UEP.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral to health provider" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] [
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "HIV.I.DE7" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral for other general services (specify)" ] ;
+      ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target">fhir:_target</a> [
+        ( <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.modifierExtension">fhir:modifierExtension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "UEP.TI.ZZ" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Referral to health provider" ] ;
+<a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.group.element.target.equivalence">fhir:equivalence</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "equivalent" ]       ] )     ] )
+  ] ) . # 
+
+</pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO) </a>.  Package who.fhir.anc-cds#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 5, 2024 14:51+0000">2024-03-05</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"><a name="l4459">​</a>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" href="http://fhir.org/guides/who/anc-cds/history.html" target="_blank">Version History</a> | <a rel="license" style="color: #81BEF7" href="license.html">License</a>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

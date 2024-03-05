@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="HIVDT04"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="HIVDT04"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;HIVDT04&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT04</code></p><p><b>identifier</b>: HIV.DT.04 (use: OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT04</p><p><b>title</b>: HIV.DT.04 PrEP Eligibility check</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href="https://www.who.int">https://www.who.int</a></p><p><b>description</b>: HIV status ≠ HIV Positive</p><h3>UseContexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>eligibility for PrEP
+  <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (activity-codes#HIV.C8.Check)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (m49.htm#001)</span></p><p><b>library</b>: <a href="Library-HIVDT04.html">HIV.DT.04 PrEP Eligibility check</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.04 PrEP Eligibility check</p><h3>Triggers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>named-event</td><td>HIV.C8.Check eligibility for PrEP
+ </td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Counsel client on PrEP.Based on answers given, client is eligible for PrEP. </p><p><b>description</b>: Counsel client on PrEP.Based on answers given, client is eligible for PrEP. </p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2</blockquote><p><b>title</b>: Counsel client on PrEP.Based on answers given, client is eligible for PrEP. </p><p><b>description</b>: Counsel client on PrEP.Based on answers given, client is eligible for PrEP.  2</p><p><b>textEquivalent</b>: PrEP can protect the HIV-negative partner in a serodiscordant relationship when the HIV-positive partner is either not on antiretroviral therapy (ART) or has not yet achieved viral suppression. </p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT04"/>
+  <identifier>
+    <use value="official"/>
+    <value value="HIV.DT.04"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="HIVDT04"/>
+  <title value="HIV.DT.04 PrEP Eligibility check"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-03-04T15:49:21+03:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="HIV status ≠ HIV Positive"/>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes"/>
+        <code value="HIV.C8.Check"/>
+        <display value="eligibility for PrEP&#xA; "/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://fhir.org/guides/who/anc-cds/Library/HIVDT04"/>
+  <action>
+    <title value="HIV.DT.04 PrEP Eligibility check"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="HIV.C8.Check eligibility for PrEP&#xA; "/>
+    </trigger>
+    <action id="1">
+      <title value="Counsel client on PrEP.Based on answers given, client is eligible for PrEP. "/>
+      <description value="Counsel client on PrEP.Based on answers given, client is eligible for PrEP. "/>
+      <documentation>
+        <type value="citation"/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="Requesting pre-exposure prophylaxis (PrEP) = TRUE"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Counsel client on PrEP.Based on answers given, client is eligible for PrEP. "/>
+        </expression>
+      </condition>
+    </action>
+    <action id="2">
+      <title value="Counsel client on PrEP.Based on answers given, client is eligible for PrEP. "/>
+      <description value="Counsel client on PrEP.Based on answers given, client is eligible for PrEP.  2"/>
+      <textEquivalent value="PrEP can protect the HIV-negative partner in a serodiscordant relationship when the HIV-positive partner is either not on antiretroviral therapy (ART) or has not yet achieved viral suppression. "/>
+      <documentation>
+        <type value="citation"/>
+        <label value="Implementation Tool for Pre-exposure Prophylaxis of HIV Infection. Module 1: Clinical (2017).&#xA;Use criteria in Pocket Card. Indications for PrEP (by history over the past 6 months) and Contraindications. (with provider discretion)&#xA;&#xA;Also see Implementation Tool for Pre-exposure Prophylaxis of HIV Infection. Module 10. Testing Providers. Table 1 Summary Tool for Starting or monitoring PrEP and Technical Brief: Preventing HIV During Pregnancy and Breastfeeding in the Context of PrEP (2017).&#xA;&#xA;Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 3: Prevention&#xA;&#xA; Differentiated and simplified pre-exposure prophylaxis for HIV prevention: Update to WHO implementation guidance. July 2022.  World Health Organization, Geneva, Switzerland.  "/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="(( &#xA;HIV status of partner or contact = HIV positive)&#xA;  AND ( &#xA;Sex partner's HIV treatment status = Partner is not virally suppressed)&#xA;  AND ( &#xA;Estimated creatinine clearance &gt; 60 mL/min)&#xA;  AND ( &#xA;Acute HIV infection symptoms = FALSE)&#xA;  AND ( &#xA;Probable recent exposure to HIV = FALSE)&#xA;  AND (Contraindications to PrEP usage ≠ Tenofovir disoproxil fumarate (TDF) allergy or contraindication)&#xA;  AND ( &#xA;Contraindications to PrEP usage = ≠ Other allergy or contraindication to a medicine in the PrEP regimen (specify)))&#xA;  OR (( Key population member* = TRUE)&#xA;  AND (Requesting pre-exposure prophylaxis (PrEP) = TRUE))"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Counsel client on PrEP.Based on answers given, client is eligible for PrEP.  2"/>
+        </expression>
+      </condition>
+    </action>
+  </action>
+</PlanDefinition>

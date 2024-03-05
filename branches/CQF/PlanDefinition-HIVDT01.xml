@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="HIVDT01"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PlanDefinition</b><a name="HIVDT01"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PlanDefinition &quot;HIVDT01&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01</code></p><p><b>identifier</b>: HIV.DT.01 (use: OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT01</p><p><b>title</b>: HIV.DT.01 Check for signs of serious illness</p><p><b>type</b>: ECA Rule <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href="https://www.who.int">https://www.who.int</a></p><h3>UseContexts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>Check for signs of serious illness OR HIV.D3. Check for signs of serious illness <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (activity-codes#HIV.B2.)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (m49.htm#001)</span></p><p><b>library</b>: <a href="Library-HIVDT01.html">HIV.DT.01 Check for signs of serious illness</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.01 Check for signs of serious illness</p><h3>Triggers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style="display: none">*</td><td>named-event</td><td>HIV.B2. Check for signs of serious illness OR HIV.D3. Check for signs of serious illness</td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Immediately take action or refer for care if a client is having this issue.</p><p><b>description</b>: Immediately take action or refer for care if a client is having this issue.</p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01"/>
+  <identifier>
+    <use value="official"/>
+    <value value="HIV.DT.01"/>
+  </identifier>
+  <version value="0.3.0"/>
+  <name value="HIVDT01"/>
+  <title value="HIV.DT.01 Check for signs of serious illness"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-03-04T15:49:21+03:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <useContext>
+    <code>
+      <system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+      <code value="task"/>
+      <display value="Workflow Task"/>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes"/>
+        <code value="HIV.B2."/>
+        <display value="Check for signs of serious illness OR HIV.D3. Check for signs of serious illness"/>
+      </coding>
+    </valueCodeableConcept>
+  </useContext>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <library value="http://fhir.org/guides/who/anc-cds/Library/HIVDT01"/>
+  <action>
+    <title value="HIV.DT.01 Check for signs of serious illness"/>
+    <trigger>
+      <type value="named-event"/>
+      <name value="HIV.B2. Check for signs of serious illness OR HIV.D3. Check for signs of serious illness"/>
+    </trigger>
+    <action id="1">
+      <title value="Immediately take action or refer for care if a client is having this issue."/>
+      <description value="Immediately take action or refer for care if a client is having this issue."/>
+      <documentation>
+        <type value="citation"/>
+        <label value="Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.  "/>
+      </documentation>
+      <condition>
+        <kind value="applicability"/>
+        <expression>
+          <description value="( &#xA;Age = ≥ 10 years)&#xA;  AND ( &#xA;Tachycardia  = TRUE)"/>
+          <language value="text/cql-identifier"/>
+          <expression value="Should Immediately take action or refer for care if a client is having this issue."/>
+        </expression>
+      </condition>
+    </action>
+  </action>
+</PlanDefinition>

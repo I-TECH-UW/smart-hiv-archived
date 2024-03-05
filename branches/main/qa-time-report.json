@@ -1,0 +1,1886 @@
+{
+  "date" : "Tue, 05 Mar, 2024 17:22:00 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-who.fhir.hiv.json",
+      "size" : 15437,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 19
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 111,
+          "length" : 62
+        },
+        {
+          "activity" : "validate",
+          "start" : 222,
+          "length" : 454
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 124
+        },
+        {
+          "activity" : "generate2",
+          "start" : 252,
+          "length" : 111
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.A.json",
+      "size" : 8417,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 7
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 19
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 72
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 253,
+          "length" : 2238
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.B.json",
+      "size" : 52823,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 25
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 182
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 301
+        },
+        {
+          "activity" : "generate2",
+          "start" : 255,
+          "length" : 265
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 8
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.C.json",
+      "size" : 29926,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 78
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 255,
+          "length" : 146
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.Configuration.json",
+      "size" : 5157,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 255,
+          "length" : 74
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.D.json",
+      "size" : 176035,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 11
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 48
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 426
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 300
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 223,
+          "length" : 988
+        },
+        {
+          "activity" : "generate2",
+          "start" : 255,
+          "length" : 439
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 24
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.EF.json",
+      "size" : 45437,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 6
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 17
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 42
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 224,
+          "length" : 249
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 192
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.G.json",
+      "size" : 12271,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 225,
+          "length" : 72
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.H.json",
+      "size" : 13239,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 225,
+          "length" : 78
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 73
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.I.json",
+      "size" : 3717,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 9
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 4
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 225,
+          "length" : 31
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 55
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-HIV.Prevention.json",
+      "size" : 5112,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 225,
+          "length" : 37
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 56
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIV.BHTSVisit.json",
+      "size" : 96521,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 9
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 64
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 16
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 112,
+          "length" : 10874
+        },
+        {
+          "activity" : "validate",
+          "start" : 211,
+          "length" : 670
+        },
+        {
+          "activity" : "generate1",
+          "start" : 225,
+          "length" : 708
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 306
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIV.D.HIVTB.json",
+      "size" : 47218,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 26
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 123,
+          "length" : 5603
+        },
+        {
+          "activity" : "validate",
+          "start" : 212,
+          "length" : 186
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 226,
+          "length" : 314
+        },
+        {
+          "activity" : "generate2",
+          "start" : 256,
+          "length" : 136
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIV.EF.PMTCT.json",
+      "size" : 97239,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 31
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 129,
+          "length" : 11143
+        },
+        {
+          "activity" : "validate",
+          "start" : 212,
+          "length" : 257
+        },
+        {
+          "activity" : "generate1",
+          "start" : 226,
+          "length" : 626
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 203
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 11
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIV.Prevention.json",
+      "size" : 8607,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 140,
+          "length" : 660
+        },
+        {
+          "activity" : "validate",
+          "start" : 212,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 227,
+          "length" : 66
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 51
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVARegistration.json",
+      "size" : 19211,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 16
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 13
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 140,
+          "length" : 2272
+        },
+        {
+          "activity" : "validate",
+          "start" : 212,
+          "length" : 46
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 227,
+          "length" : 129
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 70
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVCPrEP.json",
+      "size" : 87304,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 30
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 27
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 143,
+          "length" : 10646
+        },
+        {
+          "activity" : "validate",
+          "start" : 212,
+          "length" : 236
+        },
+        {
+          "activity" : "generate1",
+          "start" : 227,
+          "length" : 569
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 181
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 10
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVConfiguration.json",
+      "size" : 989,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 153,
+          "length" : 59
+        },
+        {
+          "activity" : "validate",
+          "start" : 213,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 227,
+          "length" : 18
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 25
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVDCareTreatment.json",
+      "size" : 363997,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 24
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 100
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 156
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 44
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 153,
+          "length" : 50483
+        },
+        {
+          "activity" : "validate",
+          "start" : 213,
+          "length" : 1436
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 227,
+          "length" : 2344
+        },
+        {
+          "activity" : "generate2",
+          "start" : 257,
+          "length" : 515
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 271,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 44
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVGDiagnostics.json",
+      "size" : 27798,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 17
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 204,
+          "length" : 2157
+        },
+        {
+          "activity" : "validate",
+          "start" : 214,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 189
+        },
+        {
+          "activity" : "generate2",
+          "start" : 258,
+          "length" : 59
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVHFollowUp.json",
+      "size" : 24826,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 9
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 206,
+          "length" : 2488
+        },
+        {
+          "activity" : "validate",
+          "start" : 214,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 258,
+          "length" : 53
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ConceptMap-HIVIReferral.json",
+      "size" : 8300,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 5
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 111,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 209,
+          "length" : 935
+        },
+        {
+          "activity" : "validate",
+          "start" : 214,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 65
+        },
+        {
+          "activity" : "generate2",
+          "start" : 258,
+          "length" : 31
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Library-f185bb76-c298-4671-9be3-ccc94c0a9868.json",
+      "size" : 4145,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 209,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 222,
+          "length" : 307
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 29
+        },
+        {
+          "activity" : "generate2",
+          "start" : 258,
+          "length" : 15
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVA.json",
+      "size" : 27541,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 20
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 110,
+          "length" : 28
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 209,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 214,
+          "length" : 227
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 331
+        },
+        {
+          "activity" : "generate2",
+          "start" : 258,
+          "length" : 800
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVB.json",
+      "size" : 174567,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 13
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 71
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 110,
+          "length" : 123
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 196
+        },
+        {
+          "activity" : "validate",
+          "start" : 214,
+          "length" : 1671
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 230,
+          "length" : 1956
+        },
+        {
+          "activity" : "generate2",
+          "start" : 259,
+          "length" : 1501
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 33
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVC.json",
+      "size" : 92890,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 41
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 110,
+          "length" : 83
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 112
+        },
+        {
+          "activity" : "validate",
+          "start" : 216,
+          "length" : 508
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 232,
+          "length" : 1026
+        },
+        {
+          "activity" : "generate2",
+          "start" : 260,
+          "length" : 563
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 291,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 28
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVConfiguration.json",
+      "size" : 14921,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 109,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 110,
+          "length" : 49
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 217,
+          "length" : 59
+        },
+        {
+          "activity" : "generate1",
+          "start" : 233,
+          "length" : 174
+        },
+        {
+          "activity" : "generate2",
+          "start" : 261,
+          "length" : 142
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 4
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVD.json",
+      "size" : 501588,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 69
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 159
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 110,
+          "length" : 453
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 423
+        },
+        {
+          "activity" : "validate",
+          "start" : 217,
+          "length" : 3706
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 223,
+          "length" : 2
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 234,
+          "length" : 5630
+        },
+        {
+          "activity" : "generate2",
+          "start" : 261,
+          "length" : 3584
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 271,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 293,
+          "length" : 144
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVDTB.json",
+      "size" : 58768,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 27
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 73
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 52
+        },
+        {
+          "activity" : "validate",
+          "start" : 220,
+          "length" : 240
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 239,
+          "length" : 654
+        },
+        {
+          "activity" : "generate2",
+          "start" : 264,
+          "length" : 315
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 17
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVEF.json",
+      "size" : 146341,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 47
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 131
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 152
+        },
+        {
+          "activity" : "validate",
+          "start" : 221,
+          "length" : 676
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 240,
+          "length" : 1619
+        },
+        {
+          "activity" : "generate2",
+          "start" : 265,
+          "length" : 1019
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 30
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 329,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVG.json",
+      "size" : 42009,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 7
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 59
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 210,
+          "length" : 41
+        },
+        {
+          "activity" : "validate",
+          "start" : 221,
+          "length" : 145
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 242,
+          "length" : 480
+        },
+        {
+          "activity" : "generate2",
+          "start" : 266,
+          "length" : 289
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVH.json",
+      "size" : 42847,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 11
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 55
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 211,
+          "length" : 34
+        },
+        {
+          "activity" : "validate",
+          "start" : 221,
+          "length" : 145
+        },
+        {
+          "activity" : "generate1",
+          "start" : 242,
+          "length" : 485
+        },
+        {
+          "activity" : "generate2",
+          "start" : 266,
+          "length" : 232
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVI.json",
+      "size" : 10585,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 46
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 211,
+          "length" : 14
+        },
+        {
+          "activity" : "validate",
+          "start" : 222,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 243,
+          "length" : 131
+        },
+        {
+          "activity" : "generate2",
+          "start" : 266,
+          "length" : 103
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 329,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVIND27-library.json",
+      "size" : 1132,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 64
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 211,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 222,
+          "length" : 151
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 223,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 243,
+          "length" : 158
+        },
+        {
+          "activity" : "generate2",
+          "start" : 266,
+          "length" : 329
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-HIVPrevention.json",
+      "size" : 16606,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 109,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 110,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 111,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 211,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 222,
+          "length" : 72
+        },
+        {
+          "activity" : "generate1",
+          "start" : 243,
+          "length" : 198
+        },
+        {
+          "activity" : "generate2",
+          "start" : 267,
+          "length" : 206
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 294,
+          "length" : 5
+        }
+      ]
+    }
+  ]
+}

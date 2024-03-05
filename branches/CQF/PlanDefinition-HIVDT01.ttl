@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVDT01"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"HIVDT01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;HIVDT01&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01</code></p><p><b>identifier</b>: HIV.DT.01 (use: OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT01</p><p><b>title</b>: HIV.DT.01 Check for signs of serious illness</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href=\"https://www.who.int\">https://www.who.int</a></p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>Check for signs of serious illness OR HIV.D3. Check for signs of serious illness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-codes#HIV.B2.)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-HIVDT01.html\">HIV.DT.01 Check for signs of serious illness</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.01 Check for signs of serious illness</p><h3>Triggers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>named-event</td><td>HIV.B2. Check for signs of serious illness OR HIV.D3. Check for signs of serious illness</td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Immediately take action or refer for care if a client is having this issue.</p><p><b>description</b>: Immediately take action or refer for care if a client is having this issue.</p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "HIV.DT.01" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "HIVDT01"] ; # 
+  fhir:title [ fhir:v "HIV.DT.01 Check for signs of serious illness"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-04T15:49:21+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "task" ] ;
+       fhir:display [ fhir:v "Workflow Task" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HIV.B2." ] ;
+         fhir:display [ fhir:v "Check for signs of serious illness OR HIV.D3. Check for signs of serious illness" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "http://fhir.org/guides/who/anc-cds/Library/HIVDT01"^^xsd:anyURI ;
+     fhir:link <http://fhir.org/guides/who/anc-cds/Library/HIVDT01>
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "HIV.DT.01 Check for signs of serious illness" ] ;
+     fhir:trigger ( [
+       fhir:type [ fhir:v "named-event" ] ;
+       fhir:name [ fhir:v "HIV.B2. Check for signs of serious illness OR HIV.D3. Check for signs of serious illness" ]
+     ] ) ;
+     fhir:action ( [
+       fhir:id [ fhir:v "1" ] ;
+       fhir:title [ fhir:v "Immediately take action or refer for care if a client is having this issue." ] ;
+       fhir:description [ fhir:v "Immediately take action or refer for care if a client is having this issue." ] ;
+       fhir:documentation ( [
+         fhir:type [ fhir:v "citation" ] ;
+         fhir:label [ fhir:v "Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.  " ]
+       ] ) ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:description [ fhir:v "( \nAge = ≥ 10 years)\n  AND ( \nTachycardia  = TRUE)" ] ;
+           fhir:language [ fhir:v "text/cql-identifier" ] ;
+           fhir:expression [ fhir:v "Should Immediately take action or refer for care if a client is having this issue." ]
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

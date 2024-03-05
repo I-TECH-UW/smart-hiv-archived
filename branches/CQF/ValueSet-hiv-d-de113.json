@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de113",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE113\">HIV.D.DE113</a></td><td>AZT + 3TC + RAL</td><td>First-line ART regimen for neonates - AZT + 3TC + RAL</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE114\">HIV.D.DE114</a></td><td>ABC + 3TC + RAL</td><td>First-line ART regimen for neonates - ABC + 3TC + RAL</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de113",
+  "version" : "0.3.0",
+  "name" : "FirstlineARTregimenforneonatesCodes",
+  "title" : "First-line ART regimen for neonates Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the First-line ART regimen for neonates element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE113",
+        "display" : "AZT + 3TC + RAL"
+      },
+      {
+        "code" : "HIV.D.DE114",
+        "display" : "ABC + 3TC + RAL"
+      }]
+    }]
+  }
+}

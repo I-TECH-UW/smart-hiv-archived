@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-c-de42> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-c-de42"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE42\">HIV.C.DE42</a></td><td>Fever</td><td>Acute HIV infection symptoms - Fever</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE43\">HIV.C.DE43</a></td><td>Sore throat</td><td>Acute HIV infection symptoms - Sore throat</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE44\">HIV.C.DE44</a></td><td>Aches</td><td>Acute HIV infection symptoms - Aches</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE45\">HIV.C.DE45</a></td><td>Pains</td><td>Acute HIV infection symptoms - Pains</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE46\">HIV.C.DE46</a></td><td>Swollen glands</td><td>Acute HIV infection symptoms - Swollen glands</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE47\">HIV.C.DE47</a></td><td>Mouth sores</td><td>Acute HIV infection symptoms - Mouth sores</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE48\">HIV.C.DE48</a></td><td>Headaches</td><td>Acute HIV infection symptoms - Headaches</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE49\">HIV.C.DE49</a></td><td>Rash</td><td>Acute HIV infection symptoms - Rash</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de42"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "AcuteHIVinfectionsymptomsCodes"] ; # 
+  fhir:title [ fhir:v "Acute HIV infection symptoms Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T14:51:57+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Acute HIV infection symptoms element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.C.DE42" ] ;
+         fhir:display [ fhir:v "Fever" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE43" ] ;
+         fhir:display [ fhir:v "Sore throat" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE44" ] ;
+         fhir:display [ fhir:v "Aches" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE45" ] ;
+         fhir:display [ fhir:v "Pains" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE46" ] ;
+         fhir:display [ fhir:v "Swollen glands" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE47" ] ;
+         fhir:display [ fhir:v "Mouth sores" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE48" ] ;
+         fhir:display [ fhir:v "Headaches" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE49" ] ;
+         fhir:display [ fhir:v "Rash" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

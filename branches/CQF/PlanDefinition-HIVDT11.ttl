@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT11> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HIVDT11"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"HIVDT11\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;HIVDT11&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT11</code></p><p><b>identifier</b>: HIV.DT.11. (use: OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT11</p><p><b>title</b>: HIV.DT.11. Check for known drug interactions</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href=\"https://www.who.int\">https://www.who.int</a></p><p><b>description</b>: HIV status = HIV positive</p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>Determine regimen and treatment options <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-codes#HIV.D21.)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-HIVDT11.html\">HIV.DT.11. Check for known drug interactions</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.11. Check for known drug interactions</p><h3>Triggers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>named-event</td><td>HIV.D21. Determine regimen and treatment options</td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Substitute rifampicin with rifabutin</p><p><b>description</b>: Substitute rifampicin with rifabutin</p><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT11"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "HIV.DT.11." ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "HIVDT11"] ; # 
+  fhir:title [ fhir:v "HIV.DT.11. Check for known drug interactions"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-04T15:49:21+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HIV status = HIV positive"] ; # 
+  fhir:useContext ( [
+     fhir:code [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/usage-context-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "task" ] ;
+       fhir:display [ fhir:v "Workflow Task" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "HIV.D21." ] ;
+         fhir:display [ fhir:v "Determine regimen and treatment options" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:library ( [
+     fhir:v "http://fhir.org/guides/who/anc-cds/Library/HIVDT11"^^xsd:anyURI ;
+     fhir:link <http://fhir.org/guides/who/anc-cds/Library/HIVDT11>
+  ] ) ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "HIV.DT.11. Check for known drug interactions" ] ;
+     fhir:trigger ( [
+       fhir:type [ fhir:v "named-event" ] ;
+       fhir:name [ fhir:v "HIV.D21. Determine regimen and treatment options" ]
+     ] ) ;
+     fhir:action ( [
+       fhir:id [ fhir:v "1" ] ;
+       fhir:title [ fhir:v "Substitute rifampicin with rifabutin" ] ;
+       fhir:description [ fhir:v "Substitute rifampicin with rifabutin" ] ;
+       fhir:condition ( [
+         fhir:kind [ fhir:v "applicability" ] ;
+         fhir:expression [
+           fhir:description [ fhir:v "( \nAntiretroviral Medication = Atazanavir + ritonavir (ATV/r))\n  AND ( \nMedication = Rifampicin )\n  AND ( \nAge ≥ 10 years)" ] ;
+           fhir:language [ fhir:v "text/cql-identifier" ] ;
+           fhir:expression [ fhir:v "Should Substitute rifampicin with rifabutin" ]
+         ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

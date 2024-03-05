@@ -1,0 +1,1074 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ICF",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2024-03-05 14:51:57+0000 by World Health Organization (WHO)  (<a href=\"https://www.who.int\">https://www.who.int</a>). </p><div><p>Concept mapping from content extended codes to ICF</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-concept-codes.html\">itech-uw Concept Codes</a> to <a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-ICFDut.html\">International Classification of Functioning, Disability and Health, Dutch Translation</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>HIV.A.DE28 (Address)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Client address (observable entity)</td></tr><tr><td>HIV.B.DE5 (Partner or contact of an index case)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d770</td></tr><tr><td>HIV.B.DE6 (Partner or contact of an HIV testing client (non-index case))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d770 (Intimate relationships)</td></tr><tr><td>HIV.D.DE12 (Systolic blood pressure)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4209</td></tr><tr><td>HIV.D.DE13 (Diastolic blood pressure)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4209</td></tr><tr><td>HIV.D.DE16 (Fever of 39 °C or greater)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b2709</td></tr><tr><td>HIV.D.DE17 (Tachycardia)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b410</td></tr><tr><td>HIV.D.DE18 (Tachypnea)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4401</td></tr><tr><td>HIV.D.DE19 (Unable to walk unaided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d469</td></tr><tr><td>HIV.D.DE20 (Lethargy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4552</td></tr><tr><td>HIV.D.DE23 (Unable to drink)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550</td></tr><tr><td>HIV.D.DE25 (Repeated vomiting)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b5106</td></tr><tr><td>HIV.D.DE67 (Hypertension)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4200</td></tr><tr><td>HIV.D.DE208 (Provide psychosocial counselling and support)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b122</td></tr><tr><td>HIV.D.DE209 (Manage pain and symptoms)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b2800</td></tr><tr><td>HIV.D.DE210 (Conduct a nutritional assessment and counsel on nutrition)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d5701</td></tr><tr><td>HIV.D.DE212 (Provide support on infant and child feeding)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550</td></tr><tr><td>HIV.D.DE228 (Cough)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b450</td></tr><tr><td>HIV.D.DE231 (Weight loss)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE232 (Difficulty breathing)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460</td></tr><tr><td>HIV.D.DE240 (Vaginal discharge)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>s63033</td></tr><tr><td>HIV.D.DE243 (Hypertension)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4200</td></tr><tr><td>HIV.D.DE248 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460</td></tr><tr><td>HIV.D.DE282 (Unexplained anaemia (&lt;8 g/dl))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b430</td></tr><tr><td>HIV.D.DE287 (HIV wasting syndrome)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE288 (Unexplained severe wasting not responding to standard therapy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE364 (Pregnancy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b6601</td></tr><tr><td>HIV.D.DE410 (Haematological disorders)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b430</td></tr><tr><td>HIV.D.DE411 (Fatigue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4552</td></tr><tr><td>HIV.D.DE569 (SARS-CoV-2 first dose of vaccine provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE582 (BCG1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE585 (OPV0 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE587 (OPV1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE589 (OPV2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE591 (OPV3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE593 (OPV4 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE596 (IPV delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE598 (IPV booster delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE601 (DTP1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE603 (DTP2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE605 (DTP3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE608 (Penta 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE610 (Penta 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE612 (Penta 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE615 (Hib 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE617 (Hib 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE619 (Hib 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE622 (PCV 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE624 (PCV 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE626 (PCV 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE629 (Rota 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE631 (Rota 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE633 (Rota 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE636 (MCV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE638 (MCV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE640 (MCV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE643 (RCV vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE646 (MMR 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE648 (MMR 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE650 (MMR 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE653 (JapEnceph vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE656 (Yellow fever vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE659 (Tick-borne encephalitis vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE662 (TCV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE664 (TCV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE666 (TCV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE669 (Cholera 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE671 (Cholera 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE673 (Cholera 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE676 (MenA vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE678 (MenC vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE680 (Men4 vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE683 (HepA 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE685 (HepA 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE688 (HPV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE690 (HPV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE692 (HPV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE695 (Rabies 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE713 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.D.DE737 (Current cough)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b450 (Additional functions of the respiratory system)</td></tr><tr><td>HIV.D.DE739 (Weight loss (reported))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE740 (Calculated weight loss)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE742 (Poor weight gain)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE799 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.D.DE811 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.E.DE62 (Infant-feeding counselling provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550 (Eating)</td></tr></table></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ConceptMap/ICF",
+  "version" : "0.3.0",
+  "name" : "ICF",
+  "title" : "ICF",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T14:51:57+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Concept mapping from content extended codes to ICF",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "group" : [{
+    "source" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "target" : "http://hl7.org/fhir/sid/icf-nl",
+    "element" : [{
+      "code" : "HIV.A.DE28",
+      "display" : "Address",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Client address (observable entity)",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE5",
+      "display" : "Partner or contact of an index case",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d770",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.B.DE6",
+      "display" : "Partner or contact of an HIV testing client (non-index case)",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d770",
+        "display" : "Intimate relationships",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE12",
+      "display" : "Systolic blood pressure",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4209",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE13",
+      "display" : "Diastolic blood pressure",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4209",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE16",
+      "display" : "Fever of 39 °C or greater",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b2709",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE17",
+      "display" : "Tachycardia",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b410",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE18",
+      "display" : "Tachypnea",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4401",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE19",
+      "display" : "Unable to walk unaided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d469",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE20",
+      "display" : "Lethargy",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4552",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE23",
+      "display" : "Unable to drink",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d550",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE25",
+      "display" : "Repeated vomiting",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b5106",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE67",
+      "display" : "Hypertension",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4200",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE208",
+      "display" : "Provide psychosocial counselling and support",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b122",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE209",
+      "display" : "Manage pain and symptoms",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b2800",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE210",
+      "display" : "Conduct a nutritional assessment and counsel on nutrition",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d5701",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE212",
+      "display" : "Provide support on infant and child feeding",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d550",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE228",
+      "display" : "Cough",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b450",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE231",
+      "display" : "Weight loss",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE232",
+      "display" : "Difficulty breathing",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b460",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE240",
+      "display" : "Vaginal discharge",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "s63033",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE243",
+      "display" : "Hypertension",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4200",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE248",
+      "display" : "Presumptive TB",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b460",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE282",
+      "display" : "Unexplained anaemia (<8 g/dl)",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b430",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE287",
+      "display" : "HIV wasting syndrome",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE288",
+      "display" : "Unexplained severe wasting not responding to standard therapy",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE364",
+      "display" : "Pregnancy",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b6601",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE410",
+      "display" : "Haematological disorders",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b430",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE411",
+      "display" : "Fatigue",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b4552",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE569",
+      "display" : "SARS-CoV-2 first dose of vaccine provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE582",
+      "display" : "BCG1 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE585",
+      "display" : "OPV0 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE587",
+      "display" : "OPV1 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE589",
+      "display" : "OPV2 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE591",
+      "display" : "OPV3 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE593",
+      "display" : "OPV4 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE596",
+      "display" : "IPV delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE598",
+      "display" : "IPV booster delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE601",
+      "display" : "DTP1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE603",
+      "display" : "DTP2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE605",
+      "display" : "DTP3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE608",
+      "display" : "Penta 1 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE610",
+      "display" : "Penta 2 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE612",
+      "display" : "Penta 3 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE615",
+      "display" : "Hib 1 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE617",
+      "display" : "Hib 2 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE619",
+      "display" : "Hib 3 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE622",
+      "display" : "PCV 1 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE624",
+      "display" : "PCV 2 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE626",
+      "display" : "PCV 3 delivered",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE629",
+      "display" : "Rota 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE631",
+      "display" : "Rota 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE633",
+      "display" : "Rota 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE636",
+      "display" : "MCV 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE638",
+      "display" : "MCV 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE640",
+      "display" : "MCV 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE643",
+      "display" : "RCV vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE646",
+      "display" : "MMR 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE648",
+      "display" : "MMR 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE650",
+      "display" : "MMR 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE653",
+      "display" : "JapEnceph vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE656",
+      "display" : "Yellow fever vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE659",
+      "display" : "Tick-borne encephalitis vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE662",
+      "display" : "TCV 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE664",
+      "display" : "TCV 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE666",
+      "display" : "TCV 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE669",
+      "display" : "Cholera 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE671",
+      "display" : "Cholera 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE673",
+      "display" : "Cholera 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE676",
+      "display" : "MenA vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE678",
+      "display" : "MenC vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE680",
+      "display" : "Men4 vaccination provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE683",
+      "display" : "HepA 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE685",
+      "display" : "HepA 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE688",
+      "display" : "HPV 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE690",
+      "display" : "HPV 2 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE692",
+      "display" : "HPV 3 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE695",
+      "display" : "Rabies 1 provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "Not classificable in ICF",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE713",
+      "display" : "Presumptive TB",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b460",
+        "display" : "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE737",
+      "display" : "Current cough",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b450",
+        "display" : "Additional functions of the respiratory system",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE739",
+      "display" : "Weight loss (reported)",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "display" : "Weight maintenance functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE740",
+      "display" : "Calculated weight loss",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "display" : "Weight maintenance functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE742",
+      "display" : "Poor weight gain",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b530",
+        "display" : "Weight maintenance functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE799",
+      "display" : "Presumptive TB",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b460",
+        "display" : "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.D.DE811",
+      "display" : "Presumptive TB",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "b460",
+        "display" : "Sensations associated with cardiovascular and respiratory functions",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "HIV.E.DE62",
+      "display" : "Infant-feeding counselling provided",
+      "target" : [{
+        "modifierExtension" : [{
+          "url" : "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence",
+          "valueCode" : "equivalent"
+        }],
+        "code" : "d550",
+        "display" : "Eating",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}
