@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-b-de153",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE153\">HIV.B.DE153</a></td><td>Assessment and provision of vaccinations</td><td>Offer other clinical services - Assessment and provision of vaccinations</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE154\">HIV.B.DE154</a></td><td>Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment</td><td>Offer other clinical services - Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE155\">HIV.B.DE155</a></td><td>Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia</td><td>Offer other clinical services - Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE156\">HIV.B.DE156</a></td><td>Intensified TB case finding and linkage to TB treatment</td><td>Offer other clinical services - Intensified TB case finding and linkage to TB treatment</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE157\">HIV.B.DE157</a></td><td>Provision of isoniazid preventive therapy if person does not have TB</td><td>Offer other clinical services - Provision of isoniazid preventive therapy if person does not have TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE158\">HIV.B.DE158</a></td><td>Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology</td><td>Offer other clinical services - Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE140\">HIV.C.DE140</a></td><td>Assessment and provision of vaccinations</td><td>Offer other clinical services - Assessment and provision of vaccinations</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE141\">HIV.C.DE141</a></td><td>Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment</td><td>Offer other clinical services - Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE142\">HIV.C.DE142</a></td><td>Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia</td><td>Offer other clinical services - Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE143\">HIV.C.DE143</a></td><td>Intensified TB case finding and linkage to TB treatment</td><td>Offer other clinical services - Intensified TB case finding and linkage to TB treatment</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE144\">HIV.C.DE144</a></td><td>Provision of isoniazid preventive therapy if person does not have TB</td><td>Offer other clinical services - Provision of isoniazid preventive therapy if person does not have TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE145\">HIV.C.DE145</a></td><td>Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology</td><td>Offer other clinical services - Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de153",
+  "version" : "0.3.0",
+  "name" : "OfferotherclinicalservicesCodes",
+  "title" : "Offer other clinical services Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Offer other clinical services element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.B.DE153",
+        "display" : "Assessment and provision of vaccinations"
+      },
+      {
+        "code" : "HIV.B.DE154",
+        "display" : "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment"
+      },
+      {
+        "code" : "HIV.B.DE155",
+        "display" : "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+      },
+      {
+        "code" : "HIV.B.DE156",
+        "display" : "Intensified TB case finding and linkage to TB treatment"
+      },
+      {
+        "code" : "HIV.B.DE157",
+        "display" : "Provision of isoniazid preventive therapy if person does not have TB"
+      },
+      {
+        "code" : "HIV.B.DE158",
+        "display" : "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+      },
+      {
+        "code" : "HIV.C.DE140",
+        "display" : "Assessment and provision of vaccinations"
+      },
+      {
+        "code" : "HIV.C.DE141",
+        "display" : "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment"
+      },
+      {
+        "code" : "HIV.C.DE142",
+        "display" : "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia"
+      },
+      {
+        "code" : "HIV.C.DE143",
+        "display" : "Intensified TB case finding and linkage to TB treatment"
+      },
+      {
+        "code" : "HIV.C.DE144",
+        "display" : "Provision of isoniazid preventive therapy if person does not have TB"
+      },
+      {
+        "code" : "HIV.C.DE145",
+        "display" : "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology"
+      }]
+    }]
+  }
+}

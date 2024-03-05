@@ -1,0 +1,11 @@
+{
+  "resourceType" : "Location",
+  "id" : "hiv-i-de10-example",
+  "meta" : {
+    "profile" : ["http://fhir.org/guides/itech-uw/StructureDefinition/hiv-i-de10"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"hiv-i-de10-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;hiv-i-de10-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <code>http://fhir.org/guides/itech-uw/StructureDefinition/hiv-i-de10</code></p></div></div>"
+  }
+}

@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-c-de78> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-c-de78"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE78\">HIV.C.DE78</a></td><td>Zidovudine and lamivudine (AZT + 3TC)</td><td>Backbone regimen for PEP for children - Zidovudine and lamivudine (AZT + 3TC)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE79\">HIV.C.DE79</a></td><td>Abacavir and lamivudine (ABC + 3TC)</td><td>Backbone regimen for PEP for children - Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE80\">HIV.C.DE80</a></td><td>Tenofovir disoproxil and lamivudine (TDF + 3TC)</td><td>Backbone regimen for PEP for children - Tenofovir disoproxil and lamivudine (TDF + 3TC)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE81\">HIV.C.DE81</a></td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td><td>Backbone regimen for PEP for children - Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE82\">HIV.C.DE82</a></td><td>Third drug for HIV PEP for children</td><td>Backbone regimen for PEP for children - Third drug for HIV PEP for children</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE83\">HIV.C.DE83</a></td><td>Dolutegravir (DTG)</td><td>Backbone regimen for PEP for children - Dolutegravir (DTG)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE84\">HIV.C.DE84</a></td><td>Atazanavir/ritonavir (ATV/r)</td><td>Backbone regimen for PEP for children - Atazanavir/ritonavir (ATV/r)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE85\">HIV.C.DE85</a></td><td>Lopinavir/ritonavir (LPV/r)</td><td>Backbone regimen for PEP for children - Lopinavir/ritonavir (LPV/r)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE86\">HIV.C.DE86</a></td><td>Darunavir/ritonavir (DRV/r)</td><td>Backbone regimen for PEP for children - Darunavir/ritonavir (DRV/r)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46C.46DE87\">HIV.C.DE87</a></td><td>Ritonavir (RTV)</td><td>Backbone regimen for PEP for children - Ritonavir (RTV)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de78"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "BackboneregimenforPEPforchildrenCodes"] ; # 
+  fhir:title [ fhir:v "Backbone regimen for PEP for children Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Backbone regimen for PEP for children element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.C.DE78" ] ;
+         fhir:display [ fhir:v "Zidovudine and lamivudine (AZT + 3TC)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE79" ] ;
+         fhir:display [ fhir:v "Abacavir and lamivudine (ABC + 3TC)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE80" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil and lamivudine (TDF + 3TC)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE81" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil and emtricitabine (TDF + FTC)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE82" ] ;
+         fhir:display [ fhir:v "Third drug for HIV PEP for children" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE83" ] ;
+         fhir:display [ fhir:v "Dolutegravir (DTG)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE84" ] ;
+         fhir:display [ fhir:v "Atazanavir/ritonavir (ATV/r)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE85" ] ;
+         fhir:display [ fhir:v "Lopinavir/ritonavir (LPV/r)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE86" ] ;
+         fhir:display [ fhir:v "Darunavir/ritonavir (DRV/r)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.C.DE87" ] ;
+         fhir:display [ fhir:v "Ritonavir (RTV)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

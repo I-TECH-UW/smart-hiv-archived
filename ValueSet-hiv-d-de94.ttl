@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de94> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de94"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE94\">HIV.D.DE94</a></td><td>First-line ART regimen for adults and adolescents</td><td>Current ART regimen (first-, second-, or third-line) - First-line ART regimen for adults and adolescents</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE95\">HIV.D.DE95</a></td><td>First-line ART regimen for children</td><td>Current ART regimen (first-, second-, or third-line) - First-line ART regimen for children</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE96\">HIV.D.DE96</a></td><td>First-line ART regimen for neonates</td><td>Current ART regimen (first-, second-, or third-line) - First-line ART regimen for neonates</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE97\">HIV.D.DE97</a></td><td>Second-line ART regimen for adults and adolescents</td><td>Current ART regimen (first-, second-, or third-line) - Second-line ART regimen for adults and adolescents</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE98\">HIV.D.DE98</a></td><td>Second-line ART regimen for children</td><td>Current ART regimen (first-, second-, or third-line) - Second-line ART regimen for children</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE99\">HIV.D.DE99</a></td><td>Third-line ART regimen</td><td>Current ART regimen (first-, second-, or third-line) - Third-line ART regimen</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de94"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "CurrentARTregimenfirstsecondorthirdlineCodes"] ; # 
+  fhir:title [ fhir:v "Current ART regimen (first-, second-, or third-line) Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Current ART regimen (first-, second-, or third-line) element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE94" ] ;
+         fhir:display [ fhir:v "First-line ART regimen for adults and adolescents" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE95" ] ;
+         fhir:display [ fhir:v "First-line ART regimen for children" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE96" ] ;
+         fhir:display [ fhir:v "First-line ART regimen for neonates" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE97" ] ;
+         fhir:display [ fhir:v "Second-line ART regimen for adults and adolescents" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE98" ] ;
+         fhir:display [ fhir:v "Second-line ART regimen for children" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE99" ] ;
+         fhir:display [ fhir:v "Third-line ART regimen" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

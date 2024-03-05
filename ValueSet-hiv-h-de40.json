@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-h-de40",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46H.46DE40\">HIV.H.DE40</a></td><td>Lost to follow-up</td><td>HIV treatment outcome - Lost to follow-up</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46H.46DE41\">HIV.H.DE41</a></td><td>Transferred out</td><td>HIV treatment outcome - Transferred out</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46H.46DE42\">HIV.H.DE42</a></td><td>Death (documented)</td><td>HIV treatment outcome - Death (documented)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46H.46DE43\">HIV.H.DE43</a></td><td>Refused (stopped) treatment</td><td>HIV treatment outcome - Refused (stopped) treatment</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46H.46DE44\">HIV.H.DE44</a></td><td>Currently on ART</td><td>HIV treatment outcome - Currently on ART</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de40",
+  "version" : "0.3.0",
+  "name" : "HIVtreatmentoutcomeCodes",
+  "title" : "HIV treatment outcome Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the HIV treatment outcome element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.H.DE40",
+        "display" : "Lost to follow-up"
+      },
+      {
+        "code" : "HIV.H.DE41",
+        "display" : "Transferred out"
+      },
+      {
+        "code" : "HIV.H.DE42",
+        "display" : "Death (documented)"
+      },
+      {
+        "code" : "HIV.H.DE43",
+        "display" : "Refused (stopped) treatment"
+      },
+      {
+        "code" : "HIV.H.DE44",
+        "display" : "Currently on ART"
+      }]
+    }]
+  }
+}

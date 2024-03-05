@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-b-de97",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE97\">HIV.B.DE97</a></td><td>Reactive</td><td>Test result of HIV assay 2 - Reactive</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE98\">HIV.B.DE98</a></td><td>Non-reactive</td><td>Test result of HIV assay 2 - Non-reactive</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE123\">HIV.E.DE123</a></td><td>Reactive</td><td>Test result of HIV assay 2 - Reactive</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE124\">HIV.E.DE124</a></td><td>Non-reactive</td><td>Test result of HIV assay 2 - Non-reactive</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de97",
+  "version" : "0.3.0",
+  "name" : "TestresultofHIVassay2Codes",
+  "title" : "Test result of HIV assay 2 Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Test result of HIV assay 2 element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.B.DE97",
+        "display" : "Reactive"
+      },
+      {
+        "code" : "HIV.B.DE98",
+        "display" : "Non-reactive"
+      },
+      {
+        "code" : "HIV.E.DE123",
+        "display" : "Reactive"
+      },
+      {
+        "code" : "HIV.E.DE124",
+        "display" : "Non-reactive"
+      }]
+    }]
+  }
+}

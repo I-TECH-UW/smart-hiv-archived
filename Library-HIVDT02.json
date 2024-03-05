@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Library",
+  "id" : "HIVDT02",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Contents</h2></div>"
+  },
+  "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT02",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "HIV.DT.02"
+  }],
+  "version" : "0.3.0",
+  "name" : "HIVDT02",
+  "title" : "HIV.DT.02 Test [infant] for HIV using testing algorithm; Managing indeterminate test results: standard operating procedure",
+  "status" : "draft",
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "HIV status ≠ HIV positive AND Age of Infant <  18 months",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }]
+}

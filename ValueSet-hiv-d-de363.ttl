@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de363> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de363"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE363\">HIV.D.DE363</a></td><td>Toxicity/side effects</td><td>Reason for ARV drug regimen substitution - Toxicity/side effects</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE364\">HIV.D.DE364</a></td><td>Pregnancy</td><td>Reason for ARV drug regimen substitution - Pregnancy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE365\">HIV.D.DE365</a></td><td>New TB</td><td>Reason for ARV drug regimen substitution - New TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE366\">HIV.D.DE366</a></td><td>New drug available</td><td>Reason for ARV drug regimen substitution - New drug available</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE367\">HIV.D.DE367</a></td><td>Drug out of stock</td><td>Reason for ARV drug regimen substitution - Drug out of stock</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE368\">HIV.D.DE368</a></td><td>Treatment-limiting toxicity</td><td>Reason for ARV drug regimen substitution - Treatment-limiting toxicity</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE369\">HIV.D.DE369</a></td><td>Other reason for regimen substitution (specify)</td><td>Reason for ARV drug regimen substitution - Other reason for regimen substitution (specify)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de363"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ReasonforARVdrugregimensubstitutionCodes"] ; # 
+  fhir:title [ fhir:v "Reason for ARV drug regimen substitution Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Reason for ARV drug regimen substitution element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE363" ] ;
+         fhir:display [ fhir:v "Toxicity/side effects" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE364" ] ;
+         fhir:display [ fhir:v "Pregnancy" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE365" ] ;
+         fhir:display [ fhir:v "New TB" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE366" ] ;
+         fhir:display [ fhir:v "New drug available" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE367" ] ;
+         fhir:display [ fhir:v "Drug out of stock" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE368" ] ;
+         fhir:display [ fhir:v "Treatment-limiting toxicity" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE369" ] ;
+         fhir:display [ fhir:v "Other reason for regimen substitution (specify)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/Patient/hiv-e-de30-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-e-de30-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de30"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de30>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Anonymous Patient</b> (no stated gender), DoB: 2024-03-04</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"http://fhir.org/packages/us.nlm.vsac/PractitionerRole/null-practitionerrole-example\">PractitionerRole/null-practitionerrole-example</a></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:birthDate [ fhir:v "2024-03-04"^^xsd:date] ; # 
+  fhir:generalPractitioner ( [
+     fhir:link <http://fhir.org/guides/who/anc-cds/PractitionerRole/null-practitionerrole-example> ;
+     fhir:reference [ fhir:v "PractitionerRole/null-practitionerrole-example" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

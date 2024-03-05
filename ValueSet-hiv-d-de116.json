@@ -1,0 +1,91 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de116",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE116\">HIV.D.DE116</a></td><td>AZT + 3TC + DTG</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + DTG</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE117\">HIV.D.DE117</a></td><td>AZT + 3TC + ATV/r</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + ATV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE118\">HIV.D.DE118</a></td><td>AZT + 3TC + LPV/r</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + LPV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE119\">HIV.D.DE119</a></td><td>TDF + 3TC + DTG</td><td>Second-line ART regimen for adults and adolescents - TDF + 3TC + DTG</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE120\">HIV.D.DE120</a></td><td>TDF + FTC + DTG</td><td>Second-line ART regimen for adults and adolescents - TDF + FTC + DTG</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE121\">HIV.D.DE121</a></td><td>AZT + 3TC + DRV/r</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + DRV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE122\">HIV.D.DE122</a></td><td>AZT + 3TC + ATV/r</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + ATV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE123\">HIV.D.DE123</a></td><td>AZT + 3TC + LPV/r</td><td>Second-line ART regimen for adults and adolescents - AZT + 3TC + LPV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE124\">HIV.D.DE124</a></td><td>TDF + 3TC + ATV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + 3TC + ATV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE125\">HIV.D.DE125</a></td><td>TDF + FTC + ATV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + FTC + ATV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE126\">HIV.D.DE126</a></td><td>TDF + 3TC + LPV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + 3TC + LPV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE127\">HIV.D.DE127</a></td><td>TDF + 3TC + DRV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + 3TC + DRV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE128\">HIV.D.DE128</a></td><td>TDF + FTC + LPV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + FTC + LPV/r</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE129\">HIV.D.DE129</a></td><td>TDF + FTC + DRV/r</td><td>Second-line ART regimen for adults and adolescents - TDF + FTC + DRV/r</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de116",
+  "version" : "0.3.0",
+  "name" : "SecondlineARTregimenforadultsandadolescentsCodes",
+  "title" : "Second-line ART regimen for adults and adolescents Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Second-line ART regimen for adults and adolescents element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE116",
+        "display" : "AZT + 3TC + DTG"
+      },
+      {
+        "code" : "HIV.D.DE117",
+        "display" : "AZT + 3TC + ATV/r"
+      },
+      {
+        "code" : "HIV.D.DE118",
+        "display" : "AZT + 3TC + LPV/r"
+      },
+      {
+        "code" : "HIV.D.DE119",
+        "display" : "TDF + 3TC + DTG"
+      },
+      {
+        "code" : "HIV.D.DE120",
+        "display" : "TDF + FTC + DTG"
+      },
+      {
+        "code" : "HIV.D.DE121",
+        "display" : "AZT + 3TC + DRV/r"
+      },
+      {
+        "code" : "HIV.D.DE122",
+        "display" : "AZT + 3TC + ATV/r"
+      },
+      {
+        "code" : "HIV.D.DE123",
+        "display" : "AZT + 3TC + LPV/r"
+      },
+      {
+        "code" : "HIV.D.DE124",
+        "display" : "TDF + 3TC + ATV/r"
+      },
+      {
+        "code" : "HIV.D.DE125",
+        "display" : "TDF + FTC + ATV/r"
+      },
+      {
+        "code" : "HIV.D.DE126",
+        "display" : "TDF + 3TC + LPV/r"
+      },
+      {
+        "code" : "HIV.D.DE127",
+        "display" : "TDF + 3TC + DRV/r"
+      },
+      {
+        "code" : "HIV.D.DE128",
+        "display" : "TDF + FTC + LPV/r"
+      },
+      {
+        "code" : "HIV.D.DE129",
+        "display" : "TDF + FTC + DRV/r"
+      }]
+    }]
+  }
+}

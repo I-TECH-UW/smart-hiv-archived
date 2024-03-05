@@ -1,0 +1,147 @@
+{
+  "resourceType" : "PlanDefinition",
+  "id" : "HIVDT07",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PlanDefinition</b><a name=\"HIVDT07\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PlanDefinition &quot;HIVDT07&quot; </p></div><p><b>url</b>: <code>http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT07</code></p><p><b>identifier</b>: HIV.DT.07.\u00a0(use:\u00a0OFFICIAL)</p><p><b>version</b>: 0.3.0</p><p><b>name</b>: HIVDT07</p><p><b>title</b>: HIV.DT.07. Check for treatment failure</p><p><b>type</b>: ECA Rule <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-plan-definition-type.html\">PlanDefinitionType</a>#eca-rule)</span></p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-03-04 15:49:21+0300</p><p><b>publisher</b>: World Health Organization (WHO) </p><p><b>contact</b>: <a href=\"https://www.who.int\">https://www.who.int</a></p><p><b>description</b>: &quot;HIV diagnosis = &quot;HIV positive&quot;\n</p><h3>UseContexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Workflow Task (Details: http://terminology.hl7.org/CodeSystem/usage-context-type code task = 'Workflow Task', stated as 'Workflow Task')</td><td>Check for signs of treatment failure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (activity-codes#HIV.D17.)</span></td></tr></table><p><b>jurisdiction</b>: Global (Whole world) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (m49.htm#001)</span></p><p><b>library</b>: <a href=\"Library-HIVDT07.html\">HIV.DT.07. Check for treatment failure</a></p><blockquote><p><b>action</b></p><p><b>title</b>: HIV.DT.07. Check for treatment failure</p><h3>Triggers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Name</b></td></tr><tr><td style=\"display: none\">*</td><td>named-event</td><td>HIV.D17. Check for signs of treatment failure</td></tr></table><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>1</blockquote><p><b>title</b>: Evaluate for virological failure.</p><p><b>description</b>: Evaluate for virological failure.</p><p><b>textEquivalent</b>: Viral load above 1000 copies/mL based on two consecutive viral load measurements three months apart, with adherence support following the first viral load test.  An individual must be taking ART for six months before it can be determined that a regimen has failed\nAn individual must be taking ART for six months before it can be determined that a regimen has failed Individuals with viral load &gt; 50 to &lt; 1000 copies, maintain ARV regimen, enhance adherence counselling and repeat viral load testing after three months. Consider switch after second viral load &gt; 50 to &lt; 1000 copies/mL if people are on NNRTI-based ART.</p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>2</blockquote><p><b>title</b>: Evaluate for immunological failure</p><p><b>description</b>: Evaluate for immunological failure</p><p><b>textEquivalent</b>: Without concomitant or recent infection to cause a transient decline in the CD4 cell count\nCurrent WHO clinical and immunological criteria have low sensitivity and positive predictive value for identifying individuals with virological failure. There is currently no proposed alternative definition of treatment failure and no validated alternative definition of immunological failure</p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>3</blockquote><p><b>title</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment.</p><p><b>description</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment.</p><p><b>textEquivalent</b>: New or recurrent clinical event indicating severe immunodeficiency (WHO clinical stage 4 condition) after six months of effective treatment\n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART. For adults, certain WHO clinical stage 3 conditions (pulmonary TB and severe bacterial infections) may also indicate treatment failure.  </p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>4</blockquote><p><b>title</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment.</p><p><b>description</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment. 2</p><p><b>textEquivalent</b>: New or recurrent clinical event indicating advanced or severe immunodeficiency (WHO clinical stage 3 and 4 clinical condition except for TB) after six months of effective treatment.  \n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART.  </p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>id</b></p>5</blockquote><p><b>title</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment and a clinical stage 3 condition other than TB.</p><p><b>description</b>: Evaluate for clinical failure, including checking for 6 months of effective treatment and a clinical stage 3 condition other than TB.</p><p><b>textEquivalent</b>: New or recurrent clinical event indicating advanced or severe immunodeficiency (WHO clinical stage 3 and 4 clinical condition except for TB) after six months of effective treatment.  \n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART.  </p><blockquote><p><b>documentation</b></p></blockquote><blockquote><p><b>condition</b></p></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT07",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "HIV.DT.07."
+  }],
+  "version" : "0.3.0",
+  "name" : "HIVDT07",
+  "title" : "HIV.DT.07. Check for treatment failure",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "code" : "eca-rule"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-03-04T15:49:21+03:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "\"HIV diagnosis = \"HIV positive\"\n",
+  "useContext" : [{
+    "code" : {
+      "system" : "http://terminology.hl7.org/CodeSystem/usage-context-type",
+      "code" : "task",
+      "display" : "Workflow Task"
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://fhir.org/guides/who/anc-cds/CodeSystem/activity-codes",
+        "code" : "HIV.D17.",
+        "display" : "Check for signs of treatment failure"
+      }]
+    }
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "library" : ["http://fhir.org/guides/who/anc-cds/Library/HIVDT07"],
+  "action" : [{
+    "title" : "HIV.DT.07. Check for treatment failure",
+    "trigger" : [{
+      "type" : "named-event",
+      "name" : "HIV.D17. Check for signs of treatment failure"
+    }],
+    "action" : [{
+      "id" : "1",
+      "title" : "Evaluate for virological failure.",
+      "description" : "Evaluate for virological failure.",
+      "textEquivalent" : "Viral load above 1000 copies/mL based on two consecutive viral load measurements three months apart, with adherence support following the first viral load test.  An individual must be taking ART for six months before it can be determined that a regimen has failed\nAn individual must be taking ART for six months before it can be determined that a regimen has failed Individuals with viral load > 50 to < 1000 copies, maintain ARV regimen, enhance adherence counselling and repeat viral load testing after three months. Consider switch after second viral load > 50 to < 1000 copies/mL if people are on NNRTI-based ART.",
+      "documentation" : [{
+        "type" : "citation",
+        "label" : "Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) \nTable 4.11: WHO definitions of clinical, immunological and virological failure for the decision to switch ART regimens\n\nNote (from table 4.11, above): Current WHO clinical and immunological criteria have low sensitivity and positive predictive value for identifying individuals with virological failure. There is currently no proposed alternative definition of treatment failure and no validated alternative definition of immunological failure. Previous guidelines defined immunological failure based on a fall from baseline, which is no longer applicable in the context of CD4-independent treatment initiation. The option of CD4 cell count at 250 cells/mm3 following clinical failure is based on an analysis of data from Uganda and Zimbabwe.\n\nFor WHO Clinical Stage conditions: \nConsolidated guidelines on the use of antiretroviral drugs for treating and preventing HIV infection. 2nd ed. (2016). \nAnnex 10. WHO clinical staging of HIV disease in adults, adolescents and children."
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "( \nAge ≥ 10 years)\n  AND (Visit date ≥ ART start date + 6 months)\n  AND ( \nViral load test result = > 1000 copies/ml)\n  AND ( \nViral load test date  = \"Viral load test date\" a − \"Viral load test date\" b ≤  3 months)",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Evaluate for virological failure."
+        }
+      }]
+    },
+    {
+      "id" : "2",
+      "title" : "Evaluate for immunological failure",
+      "description" : "Evaluate for immunological failure",
+      "textEquivalent" : "Without concomitant or recent infection to cause a transient decline in the CD4 cell count\nCurrent WHO clinical and immunological criteria have low sensitivity and positive predictive value for identifying individuals with virological failure. There is currently no proposed alternative definition of treatment failure and no validated alternative definition of immunological failure",
+      "documentation" : [{
+        "type" : "citation"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "(((( \nAge ≥ 10 years)\n  AND ( \nCD4 count ≤ 250 cells/mm3)\n  AND ( \nTreatment failure  = Clinical failure))\n  OR (( \nAge ≥ 10 years)\n  AND ( \nCD4 count ≤ 100 cells/mm3)))\n  OR (( \nAge ≥ 5 years and < 10 years)\n  AND ( \nCD4 count  < 100 cells/mm3)))\n  OR (( \nAge < 5 years)\n  AND ( \nCD4 count < 200 cells/mm3))",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Evaluate for immunological failure"
+        }
+      }]
+    },
+    {
+      "id" : "3",
+      "title" : "Evaluate for clinical failure, including checking for 6 months of effective treatment.",
+      "description" : "Evaluate for clinical failure, including checking for 6 months of effective treatment.",
+      "textEquivalent" : "New or recurrent clinical event indicating severe immunodeficiency (WHO clinical stage 4 condition) after six months of effective treatment\n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART. For adults, certain WHO clinical stage 3 conditions (pulmonary TB and severe bacterial infections) may also indicate treatment failure.  ",
+      "documentation" : [{
+        "type" : "citation"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "((( \nAge ≥ 10 years)\n  AND ( \nClinical event type = WHO clinical stage 4 condition))\n  OR (( \nAge ≥ 10 years)\n  AND (Visit date ≥ ART start date + 6 months)\n  AND ( \nClinical event type = \"WHO clinical stage 3 condition\")\n  AND ( \nWHO clinical stage symptoms = Pulmonary TB)))\n  OR (( \nAge ≥ 10 years)\n  AND (Visit date ≥ ART start date + 6 months)\n  AND ( \nClinical event type = \"WHO clinical stage 3 condition\")\n  AND ( \nWHO clinical stage symptoms = Severe bacterial infections))",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Evaluate for clinical failure, including checking for 6 months of effective treatment."
+        }
+      }]
+    },
+    {
+      "id" : "4",
+      "title" : "Evaluate for clinical failure, including checking for 6 months of effective treatment.",
+      "description" : "Evaluate for clinical failure, including checking for 6 months of effective treatment. 2",
+      "textEquivalent" : "New or recurrent clinical event indicating advanced or severe immunodeficiency (WHO clinical stage 3 and 4 clinical condition except for TB) after six months of effective treatment.  \n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART.  ",
+      "documentation" : [{
+        "type" : "citation"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "( \nAge < 10 years)\n  AND (Visit date ≥ ART start date + 6 months)\n  AND ( \nClinical event type = \"WHO clinical stage 4 condition\")",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Evaluate for clinical failure, including checking for 6 months of effective treatment. 2"
+        }
+      }]
+    },
+    {
+      "id" : "5",
+      "title" : "Evaluate for clinical failure, including checking for 6 months of effective treatment and a clinical stage 3 condition other than TB.",
+      "description" : "Evaluate for clinical failure, including checking for 6 months of effective treatment and a clinical stage 3 condition other than TB.",
+      "textEquivalent" : "New or recurrent clinical event indicating advanced or severe immunodeficiency (WHO clinical stage 3 and 4 clinical condition except for TB) after six months of effective treatment.  \n\nThe condition must be differentiated from immune reconstitution inflammatory syndrome occurring after initiating ART.  ",
+      "documentation" : [{
+        "type" : "citation"
+      }],
+      "condition" : [{
+        "kind" : "applicability",
+        "expression" : {
+          "description" : "( \nAge < 10 years)\n  AND (Visit date ≥ ART start date + 6 months)\n  AND ( \nClinical event type = \"WHO clinical stage 3 condition\")",
+          "language" : "text/cql-identifier",
+          "expression" : "Should Evaluate for clinical failure, including checking for 6 months of effective treatment and a clinical stage 3 condition other than TB."
+        }
+      }]
+    }]
+  }]
+}

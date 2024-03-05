@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de487> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de487"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE487\">HIV.D.DE487</a></td><td>No known allergies</td><td>Allergies - No known allergies</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE488\">HIV.D.DE488</a></td><td>Don't know of any allergies</td><td>Allergies - Don't know of any allergies</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE489\">HIV.D.DE489</a></td><td>Albendazole</td><td>Allergies - Albendazole</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE490\">HIV.D.DE490</a></td><td>Malaria medication (sulfadoxine-pyrimethamine)</td><td>Allergies - Malaria medication (sulfadoxine-pyrimethamine)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE491\">HIV.D.DE491</a></td><td>Penicillin</td><td>Allergies - Penicillin</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE492\">HIV.D.DE492</a></td><td>Tenofovir disoproxil fumarate (TDF)</td><td>Allergies - Tenofovir disoproxil fumarate (TDF)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE493\">HIV.D.DE493</a></td><td>Other allergies (specify)</td><td>Allergies - Other allergies (specify)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de487"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "AllergiesCodes"] ; # 
+  fhir:title [ fhir:v "Allergies Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Allergies element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE487" ] ;
+         fhir:display [ fhir:v "No known allergies" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE488" ] ;
+         fhir:display [ fhir:v "Don't know of any allergies" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE489" ] ;
+         fhir:display [ fhir:v "Albendazole" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE490" ] ;
+         fhir:display [ fhir:v "Malaria medication (sulfadoxine-pyrimethamine)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE491" ] ;
+         fhir:display [ fhir:v "Penicillin" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE492" ] ;
+         fhir:display [ fhir:v "Tenofovir disoproxil fumarate (TDF)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE493" ] ;
+         fhir:display [ fhir:v "Other allergies (specify)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

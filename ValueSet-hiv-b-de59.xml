@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-b-de59"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE59">HIV.B.DE59</a></td><td>Sex with male</td><td>HIV exposure types* - Sex with male</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE60">HIV.B.DE60</a></td><td>Sex with female</td><td>HIV exposure types* - Sex with female</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE61">HIV.B.DE61</a></td><td>Injected drugs</td><td>HIV exposure types* - Injected drugs</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE62">HIV.B.DE62</a></td><td>Mother-to-child transmission</td><td>HIV exposure types* - Mother-to-child transmission</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE63">HIV.B.DE63</a></td><td>Received blood or blood product transfusion or transplant</td><td>HIV exposure types* - Received blood or blood product transfusion or transplant</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de59"/>
+  <version value="0.3.0"/>
+  <name value="HIVexposuretypes*Codes"/>
+  <title value="HIV exposure types* Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T18:24:53+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the HIV exposure types* element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.B.DE59"/>
+        <display value="Sex with male"/>
+      </concept>
+      <concept>
+        <code value="HIV.B.DE60"/>
+        <display value="Sex with female"/>
+      </concept>
+      <concept>
+        <code value="HIV.B.DE61"/>
+        <display value="Injected drugs"/>
+      </concept>
+      <concept>
+        <code value="HIV.B.DE62"/>
+        <display value="Mother-to-child transmission"/>
+      </concept>
+      <concept>
+        <code value="HIV.B.DE63"/>
+        <display value="Received blood or blood product transfusion or transplant"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

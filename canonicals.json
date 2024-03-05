@@ -1,0 +1,1332 @@
+[
+  {
+    "id" : "CIEL",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/CIEL",
+    "version" : "0.3.0",
+    "name" : "CIEL"
+  },
+  {
+    "id" : "ICD-10",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/ICD-10",
+    "version" : "0.3.0",
+    "name" : "ICD-10"
+  },
+  {
+    "id" : "ICD-11",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/ICD-11",
+    "version" : "0.3.0",
+    "name" : "ICD-11"
+  },
+  {
+    "id" : "ICF",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/ICF",
+    "version" : "0.3.0",
+    "name" : "ICF"
+  },
+  {
+    "id" : "ICHI",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/ICHI",
+    "version" : "0.3.0",
+    "name" : "ICHI"
+  },
+  {
+    "id" : "LOINC",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/LOINC",
+    "version" : "0.3.0",
+    "name" : "LOINC"
+  },
+  {
+    "id" : "SNOMED-CT",
+    "type" : "ConceptMap",
+    "url" : "http://fhir.org/guides/itech-uw/ConceptMap/SNOMED-CT",
+    "version" : "0.3.0",
+    "name" : "SNOMED-CT"
+  },
+  {
+    "id" : "HIV.A.Registration",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.A.Registration",
+    "version" : "0.3.0",
+    "name" : "HIV.A.Registration"
+  },
+  {
+    "id" : "HIV.B.HTSVisit",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.B.HTSVisit",
+    "version" : "0.3.0",
+    "name" : "HIV.B.HTSVisit"
+  },
+  {
+    "id" : "HIV.C.PrEPVisit",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.C.PrEPVisit",
+    "version" : "0.3.0",
+    "name" : "HIV.C.PrEPVisit"
+  },
+  {
+    "id" : "HIV.Configuration",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.Configuration",
+    "version" : "0.3.0",
+    "name" : "HIV.Configuration"
+  },
+  {
+    "id" : "HIV.D.Care-TreatmentAdditional",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.D.Care-TreatmentAdditional",
+    "version" : "0.3.0",
+    "name" : "HIV.D.Care-TreatmentAdditional"
+  },
+  {
+    "id" : "HIV.D.Care-TreatmentCore",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.D.Care-TreatmentCore",
+    "version" : "0.3.0",
+    "name" : "HIV.D.Care-TreatmentCore"
+  },
+  {
+    "id" : "HIV.D.TB-HIV",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.D.TB-HIV",
+    "version" : "0.3.0",
+    "name" : "HIV.D.TB-HIV"
+  },
+  {
+    "id" : "HIV.E-F.PMTCT",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.E-F.PMTCT",
+    "version" : "0.3.0",
+    "name" : "HIV.E-F.PMTCT"
+  },
+  {
+    "id" : "HIV.G.Diagnostics",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.G.Diagnostics",
+    "version" : "0.3.0",
+    "name" : "HIV.G.Diagnostics"
+  },
+  {
+    "id" : "HIV.H.FollowUp",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.H.FollowUp",
+    "version" : "0.3.0",
+    "name" : "HIV.H.FollowUp"
+  },
+  {
+    "id" : "HIV.I.Referral",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.I.Referral",
+    "version" : "0.3.0",
+    "name" : "HIV.I.Referral"
+  },
+  {
+    "id" : "HIV.Surveillance",
+    "type" : "Questionnaire",
+    "url" : "http://fhir.org/guides/itech-uw/Questionnaire/HIV.Surveillance",
+    "version" : "0.3.0",
+    "name" : "HIV.Surveillance"
+  },
+  {
+    "id" : "counselling-provided-on-diagnoses-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/counselling-provided-on-diagnoses-codes",
+    "version" : "0.3.0",
+    "name" : "CounsellingprovidedondiagnosesCodes"
+  },
+  {
+    "id" : "demo-code-b",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/demo-code-b",
+    "version" : "0.3.0",
+    "name" : "HIVburdenofthesettingCodes"
+  },
+  {
+    "id" : "facility-or-service-type-reporting-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/facility-or-service-type-reporting-codes",
+    "version" : "0.3.0",
+    "name" : "FacilityorservicetypereportingCodes"
+  },
+  {
+    "id" : "heterosexual-route-of-transmission-risk-factors-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/heterosexual-route-of-transmission-risk-factors-codes",
+    "version" : "0.3.0",
+    "name" : "HeterosexualrouteoftransmissionriskfactorsCodes"
+  },
+  {
+    "id" : "hiv-a-de19",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de19",
+    "version" : "0.3.0",
+    "name" : "GenderCodes"
+  },
+  {
+    "id" : "hiv-a-de25",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de25",
+    "version" : "0.3.0",
+    "name" : "SexCodes"
+  },
+  {
+    "id" : "hiv-a-de34",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de34",
+    "version" : "0.3.0",
+    "name" : "CommunicationpreferencesCodes"
+  },
+  {
+    "id" : "hiv-a-de6",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de6",
+    "version" : "0.3.0",
+    "name" : "ReferredbyCodes"
+  },
+  {
+    "id" : "hiv-b-de100",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de100",
+    "version" : "0.3.0",
+    "name" : "TestresultofHIVassay3Codes"
+  },
+  {
+    "id" : "hiv-b-de103",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de103",
+    "version" : "0.3.0",
+    "name" : "TestresultofHIVassay1repeatedCodes"
+  },
+  {
+    "id" : "hiv-b-de107",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de107",
+    "version" : "0.3.0",
+    "name" : "HIVtestresultCodes"
+  },
+  {
+    "id" : "hiv-b-de111",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de111",
+    "version" : "0.3.0",
+    "name" : "HIVstatusCodes"
+  },
+  {
+    "id" : "hiv-b-de115",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de115",
+    "version" : "0.3.0",
+    "name" : "HIVprobablerouteoftransmission*Codes"
+  },
+  {
+    "id" : "hiv-b-de123",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de123",
+    "version" : "0.3.0",
+    "name" : "PartnerHIVtestresultCodes"
+  },
+  {
+    "id" : "hiv-b-de127",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de127",
+    "version" : "0.3.0",
+    "name" : "PartnerHIVstatusconfirmedCodes"
+  },
+  {
+    "id" : "hiv-b-de137",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de137",
+    "version" : "0.3.0",
+    "name" : "PreventionservicesofferedandreferralsCodes"
+  },
+  {
+    "id" : "hiv-b-de144",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de144",
+    "version" : "0.3.0",
+    "name" : "SexualandreproductivehealthintegratedservicesCodes"
+  },
+  {
+    "id" : "hiv-b-de15",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de15",
+    "version" : "0.3.0",
+    "name" : "TestingentrypointCodes"
+  },
+  {
+    "id" : "hiv-b-de153",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de153",
+    "version" : "0.3.0",
+    "name" : "OfferotherclinicalservicesCodes"
+  },
+  {
+    "id" : "hiv-b-de160",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de160",
+    "version" : "0.3.0",
+    "name" : "OthersupportservicesCodes"
+  },
+  {
+    "id" : "hiv-b-de167",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de167",
+    "version" : "0.3.0",
+    "name" : "IntimatepartnerviolenceenquiryresultsCodes"
+  },
+  {
+    "id" : "hiv-b-de178",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de178",
+    "version" : "0.3.0",
+    "name" : "TypeoffollowupappointmentCodes"
+  },
+  {
+    "id" : "hiv-b-de18",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de18",
+    "version" : "0.3.0",
+    "name" : "EntrypointforcommunityleveltestingCodes"
+  },
+  {
+    "id" : "hiv-b-de2",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de2",
+    "version" : "0.3.0",
+    "name" : "ReasonforHIVtestingservicesvisitCodes"
+  },
+  {
+    "id" : "hiv-b-de22",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de22",
+    "version" : "0.3.0",
+    "name" : "EntrypointforfacilityleveltestingCodes"
+  },
+  {
+    "id" : "hiv-b-de33",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de33",
+    "version" : "0.3.0",
+    "name" : "PartnerHIVstatusreportedCodes"
+  },
+  {
+    "id" : "hiv-b-de37",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de37",
+    "version" : "0.3.0",
+    "name" : "Partnerisfromakeypopulation*Codes"
+  },
+  {
+    "id" : "hiv-b-de49",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de49",
+    "version" : "0.3.0",
+    "name" : "Keypopulationmember*Codes"
+  },
+  {
+    "id" : "hiv-b-de5",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de5",
+    "version" : "0.3.0",
+    "name" : "ReferredthroughpartnerservicesCodes"
+  },
+  {
+    "id" : "hiv-b-de59",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de59",
+    "version" : "0.3.0",
+    "name" : "HIVexposuretypes*Codes"
+  },
+  {
+    "id" : "hiv-b-de68",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de68",
+    "version" : "0.3.0",
+    "name" : "HIVserotypeCodes"
+  },
+  {
+    "id" : "hiv-b-de74",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de74",
+    "version" : "0.3.0",
+    "name" : "TypeofcontactelicitedCodes"
+  },
+  {
+    "id" : "hiv-b-de8",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de8",
+    "version" : "0.3.0",
+    "name" : "TypeofcontactorpartnerforpartnerservicesCodes"
+  },
+  {
+    "id" : "hiv-b-de80",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de80",
+    "version" : "0.3.0",
+    "name" : "HIVtestconductedCodes"
+  },
+  {
+    "id" : "hiv-b-de94",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de94",
+    "version" : "0.3.0",
+    "name" : "TestresultofHIVassay1Codes"
+  },
+  {
+    "id" : "hiv-b-de97",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de97",
+    "version" : "0.3.0",
+    "name" : "TestresultofHIVassay2Codes"
+  },
+  {
+    "id" : "hiv-c-de102",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de102",
+    "version" : "0.3.0",
+    "name" : "ReasonforPrEPregimensubstitutionCodes"
+  },
+  {
+    "id" : "hiv-c-de12",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de12",
+    "version" : "0.3.0",
+    "name" : "PrEPdosingtypeCodes"
+  },
+  {
+    "id" : "hiv-c-de126",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de126",
+    "version" : "0.3.0",
+    "name" : "HIVselftestdistributedforusebyCodes"
+  },
+  {
+    "id" : "hiv-c-de15",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de15",
+    "version" : "0.3.0",
+    "name" : "OtherPrEPdosingtypespecifyCodes"
+  },
+  {
+    "id" : "hiv-c-de17",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de17",
+    "version" : "0.3.0",
+    "name" : "CurrentPrEPregimenCodes"
+  },
+  {
+    "id" : "hiv-c-de2",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de2",
+    "version" : "0.3.0",
+    "name" : "ReasonforPrEPvisitCodes"
+  },
+  {
+    "id" : "hiv-c-de22",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de22",
+    "version" : "0.3.0",
+    "name" : "PrEPhistoryCodes"
+  },
+  {
+    "id" : "hiv-c-de28",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de28",
+    "version" : "0.3.0",
+    "name" : "PEPhistoryCodes"
+  },
+  {
+    "id" : "hiv-c-de32",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de32",
+    "version" : "0.3.0",
+    "name" : "SignsofsubstantialriskofHIVinfectionCodes"
+  },
+  {
+    "id" : "hiv-c-de37",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de37",
+    "version" : "0.3.0",
+    "name" : "PregnancyintentionCodes"
+  },
+  {
+    "id" : "hiv-c-de42",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de42",
+    "version" : "0.3.0",
+    "name" : "AcuteHIVinfectionsymptomsCodes"
+  },
+  {
+    "id" : "hiv-c-de51",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de51",
+    "version" : "0.3.0",
+    "name" : "Sexpartner'sHIVtreatmentstatusCodes"
+  },
+  {
+    "id" : "hiv-c-de59",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de59",
+    "version" : "0.3.0",
+    "name" : "ScreeningsanddiagnosticsforPrEPusersCodes"
+  },
+  {
+    "id" : "hiv-c-de69",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de69",
+    "version" : "0.3.0",
+    "name" : "BackboneregimenforPEPforadultsandadolescentsCodes"
+  },
+  {
+    "id" : "hiv-c-de72",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de72",
+    "version" : "0.3.0",
+    "name" : "ThirddrugforPEPinadultsandadolescentsCodes"
+  },
+  {
+    "id" : "hiv-c-de78",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de78",
+    "version" : "0.3.0",
+    "name" : "BackboneregimenforPEPforchildrenCodes"
+  },
+  {
+    "id" : "hiv-c-de90",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de90",
+    "version" : "0.3.0",
+    "name" : "SexfactorforestimatingcreatinineclearanceCodes"
+  },
+  {
+    "id" : "hiv-c-de95",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de95",
+    "version" : "0.3.0",
+    "name" : "ContraindicationstoPrEPusageCodes"
+  },
+  {
+    "id" : "hiv-d-de101",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de101",
+    "version" : "0.3.0",
+    "name" : "FirstlineARTregimenforadultsandadolescentsCodes"
+  },
+  {
+    "id" : "hiv-d-de107",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de107",
+    "version" : "0.3.0",
+    "name" : "FirstlineARTregimenforchildrenCodes"
+  },
+  {
+    "id" : "hiv-d-de113",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de113",
+    "version" : "0.3.0",
+    "name" : "FirstlineARTregimenforneonatesCodes"
+  },
+  {
+    "id" : "hiv-d-de116",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de116",
+    "version" : "0.3.0",
+    "name" : "SecondlineARTregimenforadultsandadolescentsCodes"
+  },
+  {
+    "id" : "hiv-d-de131",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de131",
+    "version" : "0.3.0",
+    "name" : "SecondlineARTregimensforchildrenCodes"
+  },
+  {
+    "id" : "hiv-d-de145",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de145",
+    "version" : "0.3.0",
+    "name" : "ThirdlineARTregimenCodes"
+  },
+  {
+    "id" : "hiv-d-de157",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de157",
+    "version" : "0.3.0",
+    "name" : "HIVclinicalstageCodes"
+  },
+  {
+    "id" : "hiv-d-de16",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de16",
+    "version" : "0.3.0",
+    "name" : "SignsofseriousillnessCodes"
+  },
+  {
+    "id" : "hiv-d-de165",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de165",
+    "version" : "0.3.0",
+    "name" : "ReasonsforadherenceproblemCodes"
+  },
+  {
+    "id" : "hiv-d-de185",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de185",
+    "version" : "0.3.0",
+    "name" : "ReasonARTstoppedCodes"
+  },
+  {
+    "id" : "hiv-d-de192",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de192",
+    "version" : "0.3.0",
+    "name" : "TreatmentfailureCodes"
+  },
+  {
+    "id" : "hiv-d-de196",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de196",
+    "version" : "0.3.0",
+    "name" : "GeneralcareactivitiesrecommendedCodes"
+  },
+  {
+    "id" : "hiv-d-de2",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de2",
+    "version" : "0.3.0",
+    "name" : "ReasonforHIVcareandtreatmentvisitCodes"
+  },
+  {
+    "id" : "hiv-d-de214",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de214",
+    "version" : "0.3.0",
+    "name" : "PreventingandtreatingcoinfectionsCodes"
+  },
+  {
+    "id" : "hiv-d-de226",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de226",
+    "version" : "0.3.0",
+    "name" : "ComorbiditiesandcoinfectionssignsandsymptomsCodes"
+  },
+  {
+    "id" : "hiv-d-de253",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de253",
+    "version" : "0.3.0",
+    "name" : "WHOHIVclinicalstageconditionsandsymptomsCodes"
+  },
+  {
+    "id" : "hiv-d-de320",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de320",
+    "version" : "0.3.0",
+    "name" : "ClinicalstageatstartofARTCodes"
+  },
+  {
+    "id" : "hiv-d-de333",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de333",
+    "version" : "0.3.0",
+    "name" : "ReasonforHIVviralloadtestCodes"
+  },
+  {
+    "id" : "hiv-d-de341",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de341",
+    "version" : "0.3.0",
+    "name" : "InvestigationsorderedCodes"
+  },
+  {
+    "id" : "hiv-d-de353",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de353",
+    "version" : "0.3.0",
+    "name" : "HepatitisCtestresultCodes"
+  },
+  {
+    "id" : "hiv-d-de357",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de357",
+    "version" : "0.3.0",
+    "name" : "HepatitisCdiagnosisCodes"
+  },
+  {
+    "id" : "hiv-d-de360",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de360",
+    "version" : "0.3.0",
+    "name" : "SyphilisdiagnosisCodes"
+  },
+  {
+    "id" : "hiv-d-de363",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de363",
+    "version" : "0.3.0",
+    "name" : "ReasonforARVdrugregimensubstitutionCodes"
+  },
+  {
+    "id" : "hiv-d-de372",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de372",
+    "version" : "0.3.0",
+    "name" : "ReasonforregimenswitchCodes"
+  },
+  {
+    "id" : "hiv-d-de386",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de386",
+    "version" : "0.3.0",
+    "name" : "CoinfectionstatusatARTstartCodes"
+  },
+  {
+    "id" : "hiv-d-de389",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de389",
+    "version" : "0.3.0",
+    "name" : "PregnantandbreastfeedingstatusatARTstartCodes"
+  },
+  {
+    "id" : "hiv-d-de405",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de405",
+    "version" : "0.3.0",
+    "name" : "TypeoftreatmentlimitingtoxicityorseriousdrugreactionCodes"
+  },
+  {
+    "id" : "hiv-d-de41",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de41",
+    "version" : "0.3.0",
+    "name" : "ARTstarttypeCodes"
+  },
+  {
+    "id" : "hiv-d-de461",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de461",
+    "version" : "0.3.0",
+    "name" : "ReasonbloodpressurereadingnotdoneCodes"
+  },
+  {
+    "id" : "hiv-d-de465",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de465",
+    "version" : "0.3.0",
+    "name" : "CurrentmedicationsCodes"
+  },
+  {
+    "id" : "hiv-d-de487",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de487",
+    "version" : "0.3.0",
+    "name" : "AllergiesCodes"
+  },
+  {
+    "id" : "hiv-d-de495",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de495",
+    "version" : "0.3.0",
+    "name" : "FamilyplanningmethodusedCodes"
+  },
+  {
+    "id" : "hiv-d-de519",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de519",
+    "version" : "0.3.0",
+    "name" : "MedicationstatusCodes"
+  },
+  {
+    "id" : "hiv-d-de53",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de53",
+    "version" : "0.3.0",
+    "name" : "AntiretroviralARVdrugsreceivedpriortoenrolmentCodes"
+  },
+  {
+    "id" : "hiv-d-de537",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de537",
+    "version" : "0.3.0",
+    "name" : "ReasonhepatitisBvaccinationnotprovidedCodes"
+  },
+  {
+    "id" : "hiv-d-de554",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de554",
+    "version" : "0.3.0",
+    "name" : "ReasonTTvaccinationnotprovidedCodes"
+  },
+  {
+    "id" : "hiv-d-de563",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de563",
+    "version" : "0.3.0",
+    "name" : "ReasonfluvaccinenotprovidedCodes"
+  },
+  {
+    "id" : "hiv-d-de576",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de576",
+    "version" : "0.3.0",
+    "name" : "ReasonSARSCoV2vaccinenotprovidedCodes"
+  },
+  {
+    "id" : "hiv-d-de62",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de62",
+    "version" : "0.3.0",
+    "name" : "ExistingchronichealthconditionsCodes"
+  },
+  {
+    "id" : "hiv-d-de707",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de707",
+    "version" : "0.3.0",
+    "name" : "ReasonmalariaprophylaxisnotprovidedCodes"
+  },
+  {
+    "id" : "hiv-d-de713",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de713",
+    "version" : "0.3.0",
+    "name" : "TBstatusCodes"
+  },
+  {
+    "id" : "hiv-d-de717",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de717",
+    "version" : "0.3.0",
+    "name" : "TBhistoryCodes"
+  },
+  {
+    "id" : "hiv-d-de72",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de72",
+    "version" : "0.3.0",
+    "name" : "NucleosidereversetranscriptaseinhibitorsNRTIsCodes"
+  },
+  {
+    "id" : "hiv-d-de730",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de730",
+    "version" : "0.3.0",
+    "name" : "TBscreeningmethodCodes"
+  },
+  {
+    "id" : "hiv-d-de737",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de737",
+    "version" : "0.3.0",
+    "name" : "SymptomsofTBCodes"
+  },
+  {
+    "id" : "hiv-d-de751",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de751",
+    "version" : "0.3.0",
+    "name" : "TBscreeningresultCodes"
+  },
+  {
+    "id" : "hiv-d-de759",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de759",
+    "version" : "0.3.0",
+    "name" : "TBdiagnostictestCodes"
+  },
+  {
+    "id" : "hiv-d-de781",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de781",
+    "version" : "0.3.0",
+    "name" : "TBtreatmentregimenCodes"
+  },
+  {
+    "id" : "hiv-d-de79",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de79",
+    "version" : "0.3.0",
+    "name" : "NucleotidereversetranscriptaseinhibitorsNtRTIsCodes"
+  },
+  {
+    "id" : "hiv-d-de799",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de799",
+    "version" : "0.3.0",
+    "name" : "TBstatusatARTstartCodes"
+  },
+  {
+    "id" : "hiv-d-de81",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de81",
+    "version" : "0.3.0",
+    "name" : "NonnucleosidereversetranscriptaseinhibitorsNNRTIsCodes"
+  },
+  {
+    "id" : "hiv-d-de811",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de811",
+    "version" : "0.3.0",
+    "name" : "InfantTBstatusCodes"
+  },
+  {
+    "id" : "hiv-d-de86",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de86",
+    "version" : "0.3.0",
+    "name" : "ProteaseinhibitorsPIsCodes"
+  },
+  {
+    "id" : "hiv-d-de91",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de91",
+    "version" : "0.3.0",
+    "name" : "IntegrasestrandtransferinhibitorsINSTIsCodes"
+  },
+  {
+    "id" : "hiv-d-de94",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de94",
+    "version" : "0.3.0",
+    "name" : "CurrentARTregimenfirstsecondorthirdlineCodes"
+  },
+  {
+    "id" : "hiv-e-de11",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de11",
+    "version" : "0.3.0",
+    "name" : "PlaceofdeliveryfacilityorhomeCodes"
+  },
+  {
+    "id" : "hiv-e-de110",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de110",
+    "version" : "0.3.0",
+    "name" : "EarlyinfantdiagnosisHIVtestresultfornucleicacidinfantdiagnosisassaysCodes"
+  },
+  {
+    "id" : "hiv-e-de137",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de137",
+    "version" : "0.3.0",
+    "name" : "InfantHIVstatusCodes"
+  },
+  {
+    "id" : "hiv-e-de142",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de142",
+    "version" : "0.3.0",
+    "name" : "FinaldiagnosisofHIVexposedinfantCodes"
+  },
+  {
+    "id" : "hiv-e-de146",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de146",
+    "version" : "0.3.0",
+    "name" : "HIVexposedinfantreasonforunknownfinalstatusCodes"
+  },
+  {
+    "id" : "hiv-e-de153",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de153",
+    "version" : "0.3.0",
+    "name" : "MedicationsprescribedCodes"
+  },
+  {
+    "id" : "hiv-e-de155",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de155",
+    "version" : "0.3.0",
+    "name" : "RouteofadministrationCodes"
+  },
+  {
+    "id" : "hiv-e-de2",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de2",
+    "version" : "0.3.0",
+    "name" : "ARTinitiationtimingforpregnantorpostpartumwomenCodes"
+  },
+  {
+    "id" : "hiv-e-de35",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de35",
+    "version" : "0.3.0",
+    "name" : "GenderofinfantCodes"
+  },
+  {
+    "id" : "hiv-e-de46",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de46",
+    "version" : "0.3.0",
+    "name" : "MaternalHIVtestresultCodes"
+  },
+  {
+    "id" : "hiv-e-de50",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de50",
+    "version" : "0.3.0",
+    "name" : "InfantorchildexposuretoHIVCodes"
+  },
+  {
+    "id" : "hiv-e-de55",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de55",
+    "version" : "0.3.0",
+    "name" : "MotherisfromakeypopulationCodes"
+  },
+  {
+    "id" : "hiv-e-de62",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de62",
+    "version" : "0.3.0",
+    "name" : "ARVadherencecounsellingCodes"
+  },
+  {
+    "id" : "hiv-e-de68",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de68",
+    "version" : "0.3.0",
+    "name" : "InfantfeedingpracticeCodes"
+  },
+  {
+    "id" : "hiv-e-de77",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de77",
+    "version" : "0.3.0",
+    "name" : "MaternalHIVstatusCodes"
+  },
+  {
+    "id" : "hiv-e-de81",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de81",
+    "version" : "0.3.0",
+    "name" : "MaternalsyphilistestresultCodes"
+  },
+  {
+    "id" : "hiv-e-de92",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de92",
+    "version" : "0.3.0",
+    "name" : "InfantARVprophylaxisstartdateCodes"
+  },
+  {
+    "id" : "hiv-e-de98",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de98",
+    "version" : "0.3.0",
+    "name" : "MaternalandchildhealthservicevisitCodes"
+  },
+  {
+    "id" : "hiv-g-de13",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de13",
+    "version" : "0.3.0",
+    "name" : "HIVviralloadspecimentypeCodes"
+  },
+  {
+    "id" : "hiv-g-de18",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de18",
+    "version" : "0.3.0",
+    "name" : "HepatitisBtesttypeCodes"
+  },
+  {
+    "id" : "hiv-g-de22",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de22",
+    "version" : "0.3.0",
+    "name" : "ReasonHepatitisBtestnotconductedCodes"
+  },
+  {
+    "id" : "hiv-g-de29",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de29",
+    "version" : "0.3.0",
+    "name" : "HepatitisBtestresultCodes"
+  },
+  {
+    "id" : "hiv-g-de32",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de32",
+    "version" : "0.3.0",
+    "name" : "HepatitisBdiagnosisCodes"
+  },
+  {
+    "id" : "hiv-g-de38",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de38",
+    "version" : "0.3.0",
+    "name" : "HepatitisCtesttypeCodes"
+  },
+  {
+    "id" : "hiv-g-de44",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de44",
+    "version" : "0.3.0",
+    "name" : "ReasonHepatitisCtestnotdoneCodes"
+  },
+  {
+    "id" : "hiv-g-de59",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de59",
+    "version" : "0.3.0",
+    "name" : "SyphilistesttypeCodes"
+  },
+  {
+    "id" : "hiv-g-de63",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de63",
+    "version" : "0.3.0",
+    "name" : "ReasonsyphilistestnotdoneCodes"
+  },
+  {
+    "id" : "hiv-g-de70",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de70",
+    "version" : "0.3.0",
+    "name" : "SyphilistestresultCodes"
+  },
+  {
+    "id" : "hiv-h-de13",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de13",
+    "version" : "0.3.0",
+    "name" : "ContactmethodCodes"
+  },
+  {
+    "id" : "hiv-h-de17",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de17",
+    "version" : "0.3.0",
+    "name" : "SourceofinformationCodes"
+  },
+  {
+    "id" : "hiv-h-de2",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de2",
+    "version" : "0.3.0",
+    "name" : "ReasonforfollowupCodes"
+  },
+  {
+    "id" : "hiv-h-de22",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de22",
+    "version" : "0.3.0",
+    "name" : "OutcomefromoutreachattemptCodes"
+  },
+  {
+    "id" : "hiv-h-de33",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de33",
+    "version" : "0.3.0",
+    "name" : "HIVstatusofpartnerorcontactCodes"
+  },
+  {
+    "id" : "hiv-h-de40",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de40",
+    "version" : "0.3.0",
+    "name" : "HIVtreatmentoutcomeCodes"
+  },
+  {
+    "id" : "hiv-i-de3",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-i-de3",
+    "version" : "0.3.0",
+    "name" : "ReasonforreferralCodes"
+  },
+  {
+    "id" : "hiv-probable-route-of-transmission-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-probable-route-of-transmission-codes",
+    "version" : "0.3.0",
+    "name" : "HIVprobablerouteoftransmissionCodes"
+  },
+  {
+    "id" : "hiv-self-test-distribution-site-type-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-distribution-site-type-codes",
+    "version" : "0.3.0",
+    "name" : "HIVselftestdistributionsitetypeCodes"
+  },
+  {
+    "id" : "hiv-self-test-kit-distribution-approach-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-kit-distribution-approach-codes",
+    "version" : "0.3.0",
+    "name" : "HIVselftestkitdistributionapproachCodes"
+  },
+  {
+    "id" : "medications-dispensed-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/medications-dispensed-codes",
+    "version" : "0.3.0",
+    "name" : "MedicationsdispensedCodes"
+  },
+  {
+    "id" : "source-of-gestational-age-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/source-of-gestational-age-codes",
+    "version" : "0.3.0",
+    "name" : "SourceofgestationalageCodes"
+  },
+  {
+    "id" : "timing-of-adverse-event-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/timing-of-adverse-event-codes",
+    "version" : "0.3.0",
+    "name" : "TimingofadverseeventCodes"
+  },
+  {
+    "id" : "type-of-case-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.org/guides/itech-uw/ValueSet/type-of-case-codes",
+    "version" : "0.3.0",
+    "name" : "TypeofcaseCodes"
+  },
+  {
+    "id" : "concept-codes",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+    "version" : "0.3.0",
+    "name" : "itechuwConceptCodes"
+  },
+  {
+    "id" : "who.fhir.anc-cds",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.org/guides/who/anc-cds/ImplementationGuide/who.fhir.anc-cds",
+    "version" : "0.3.0",
+    "name" : "ANCCDS"
+  },
+  {
+    "id" : "HIVDT01",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT01",
+    "version" : "0.3.0",
+    "name" : "HIVDT01"
+  },
+  {
+    "id" : "HIVDT02",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT02",
+    "version" : "0.3.0",
+    "name" : "HIVDT02"
+  },
+  {
+    "id" : "HIVDT03",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT03",
+    "version" : "0.3.0",
+    "name" : "HIVDT03"
+  },
+  {
+    "id" : "HIVDT04",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT04",
+    "version" : "0.3.0",
+    "name" : "HIVDT04"
+  },
+  {
+    "id" : "HIVDT06",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT06",
+    "version" : "0.3.0",
+    "name" : "HIVDT06"
+  },
+  {
+    "id" : "HIVDT07",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT07",
+    "version" : "0.3.0",
+    "name" : "HIVDT07"
+  },
+  {
+    "id" : "HIVDT08",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT08",
+    "version" : "0.3.0",
+    "name" : "HIVDT08"
+  },
+  {
+    "id" : "HIVDT10",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT10",
+    "version" : "0.3.0",
+    "name" : "HIVDT10"
+  },
+  {
+    "id" : "HIVDT11",
+    "type" : "Library",
+    "url" : "http://fhir.org/guides/who/anc-cds/Library/HIVDT11",
+    "version" : "0.3.0",
+    "name" : "HIVDT11"
+  },
+  {
+    "id" : "HIVDT01",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT01",
+    "version" : "0.3.0",
+    "name" : "HIVDT01"
+  },
+  {
+    "id" : "HIVDT02",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT02",
+    "version" : "0.3.0",
+    "name" : "HIVDT02"
+  },
+  {
+    "id" : "HIVDT03",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT03",
+    "version" : "0.3.0",
+    "name" : "HIVDT03"
+  },
+  {
+    "id" : "HIVDT04",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT04",
+    "version" : "0.3.0",
+    "name" : "HIVDT04"
+  },
+  {
+    "id" : "HIVDT06",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT06",
+    "version" : "0.3.0",
+    "name" : "HIVDT06"
+  },
+  {
+    "id" : "HIVDT07",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT07",
+    "version" : "0.3.0",
+    "name" : "HIVDT07"
+  },
+  {
+    "id" : "HIVDT08",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT08",
+    "version" : "0.3.0",
+    "name" : "HIVDT08"
+  },
+  {
+    "id" : "HIVDT10",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT10",
+    "version" : "0.3.0",
+    "name" : "HIVDT10"
+  },
+  {
+    "id" : "HIVDT11",
+    "type" : "PlanDefinition",
+    "url" : "http://fhir.org/guides/who/anc-cds/PlanDefinition/HIVDT11",
+    "version" : "0.3.0",
+    "name" : "HIVDT11"
+  }
+]

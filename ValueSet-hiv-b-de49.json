@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-b-de49",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE49\">HIV.B.DE49</a></td><td>Sex worker</td><td>Key population member* - Sex worker</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE50\">HIV.B.DE50</a></td><td>Men who have sex with men</td><td>Key population member* - Men who have sex with men</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE51\">HIV.B.DE51</a></td><td>Transgender people</td><td>Key population member* - Transgender people</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE52\">HIV.B.DE52</a></td><td>People who inject drugs</td><td>Key population member* - People who inject drugs</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46B.46DE53\">HIV.B.DE53</a></td><td>People living in prisons and other closed settings</td><td>Key population member* - People living in prisons and other closed settings</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de49",
+  "version" : "0.3.0",
+  "name" : "Keypopulationmember*Codes",
+  "title" : "Key population member* Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Key population member* element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.B.DE49",
+        "display" : "Sex worker"
+      },
+      {
+        "code" : "HIV.B.DE50",
+        "display" : "Men who have sex with men"
+      },
+      {
+        "code" : "HIV.B.DE51",
+        "display" : "Transgender people"
+      },
+      {
+        "code" : "HIV.B.DE52",
+        "display" : "People who inject drugs"
+      },
+      {
+        "code" : "HIV.B.DE53",
+        "display" : "People living in prisons and other closed settings"
+      }]
+    }]
+  }
+}

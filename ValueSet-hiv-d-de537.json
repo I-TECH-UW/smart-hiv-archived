@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de537",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE537\">HIV.D.DE537</a></td><td>Stock-out</td><td>Reason hepatitis B vaccination not provided - Stock-out</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE538\">HIV.D.DE538</a></td><td>Client is ill</td><td>Reason hepatitis B vaccination not provided - Client is ill</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE539\">HIV.D.DE539</a></td><td>Client refused</td><td>Reason hepatitis B vaccination not provided - Client refused</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE540\">HIV.D.DE540</a></td><td>Allergy to vaccine</td><td>Reason hepatitis B vaccination not provided - Allergy to vaccine</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE541\">HIV.D.DE541</a></td><td>Other reason immunization not provided (specify)</td><td>Reason hepatitis B vaccination not provided - Other reason immunization not provided (specify)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de537",
+  "version" : "0.3.0",
+  "name" : "ReasonhepatitisBvaccinationnotprovidedCodes",
+  "title" : "Reason hepatitis B vaccination not provided Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Reason hepatitis B vaccination not provided element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE537",
+        "display" : "Stock-out"
+      },
+      {
+        "code" : "HIV.D.DE538",
+        "display" : "Client is ill"
+      },
+      {
+        "code" : "HIV.D.DE539",
+        "display" : "Client refused"
+      },
+      {
+        "code" : "HIV.D.DE540",
+        "display" : "Allergy to vaccine"
+      },
+      {
+        "code" : "HIV.D.DE541",
+        "display" : "Other reason immunization not provided (specify)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de554> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de554"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE554\">HIV.D.DE554</a></td><td>Stock-out</td><td>Reason TT vaccination not provided - Stock-out</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE555\">HIV.D.DE555</a></td><td>Client is ill</td><td>Reason TT vaccination not provided - Client is ill</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE556\">HIV.D.DE556</a></td><td>Client refused</td><td>Reason TT vaccination not provided - Client refused</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE557\">HIV.D.DE557</a></td><td>Allergy to vaccine</td><td>Reason TT vaccination not provided - Allergy to vaccine</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE558\">HIV.D.DE558</a></td><td>Other reason immunization not provided (specify)</td><td>Reason TT vaccination not provided - Other reason immunization not provided (specify)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de554"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ReasonTTvaccinationnotprovidedCodes"] ; # 
+  fhir:title [ fhir:v "Reason TT vaccination not provided Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Reason TT vaccination not provided element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE554" ] ;
+         fhir:display [ fhir:v "Stock-out" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE555" ] ;
+         fhir:display [ fhir:v "Client is ill" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE556" ] ;
+         fhir:display [ fhir:v "Client refused" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE557" ] ;
+         fhir:display [ fhir:v "Allergy to vaccine" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE558" ] ;
+         fhir:display [ fhir:v "Other reason immunization not provided (specify)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

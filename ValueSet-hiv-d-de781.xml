@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-d-de781"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE781">HIV.D.DE781</a></td><td>Isoniazid (H)</td><td>TB treatment regimen - Isoniazid (H)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE783">HIV.D.DE783</a></td><td>Ethambutol (E)</td><td>TB treatment regimen - Ethambutol (E)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE785">HIV.D.DE785</a></td><td>Levofloxacin (Lfx)</td><td>TB treatment regimen - Levofloxacin (Lfx)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE787">HIV.D.DE787</a></td><td>Pyrazinamide (Z)</td><td>TB treatment regimen - Pyrazinamide (Z)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE789">HIV.D.DE789</a></td><td>Rifampicin (R)</td><td>TB treatment regimen - Rifampicin (R)</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE791">HIV.D.DE791</a></td><td>Rifabutin</td><td>TB treatment regimen - Rifabutin</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de781"/>
+  <version value="0.3.0"/>
+  <name value="TBtreatmentregimenCodes"/>
+  <title value="TB treatment regimen Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T18:24:53+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the TB treatment regimen element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.D.DE781"/>
+        <display value="Isoniazid (H)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE783"/>
+        <display value="Ethambutol (E)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE785"/>
+        <display value="Levofloxacin (Lfx)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE787"/>
+        <display value="Pyrazinamide (Z)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE789"/>
+        <display value="Rifampicin (R)"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE791"/>
+        <display value="Rifabutin"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

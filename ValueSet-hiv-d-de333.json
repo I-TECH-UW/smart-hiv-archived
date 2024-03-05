@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de333",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE333\">HIV.D.DE333</a></td><td>Routine viral load test</td><td>Reason for HIV viral load test - Routine viral load test</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE334\">HIV.D.DE334</a></td><td>Targeted viral load monitoring</td><td>Reason for HIV viral load test - Targeted viral load monitoring</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE335\">HIV.D.DE335</a></td><td>Initial viral load test</td><td>Reason for HIV viral load test - Initial viral load test</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE336\">HIV.D.DE336</a></td><td>Follow-up viral load test after receiving enhanced adherence counselling</td><td>Reason for HIV viral load test - Follow-up viral load test after receiving enhanced adherence counselling</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de333",
+  "version" : "0.3.0",
+  "name" : "ReasonforHIVviralloadtestCodes",
+  "title" : "Reason for HIV viral load test Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Reason for HIV viral load test element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE333",
+        "display" : "Routine viral load test"
+      },
+      {
+        "code" : "HIV.D.DE334",
+        "display" : "Targeted viral load monitoring"
+      },
+      {
+        "code" : "HIV.D.DE335",
+        "display" : "Initial viral load test"
+      },
+      {
+        "code" : "HIV.D.DE336",
+        "display" : "Follow-up viral load test after receiving enhanced adherence counselling"
+      }]
+    }]
+  }
+}

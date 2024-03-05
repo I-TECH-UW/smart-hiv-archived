@@ -1,0 +1,998 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ConceptMap/ICF> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ICF"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2024-03-05 18:24:53+0000 by World Health Organization (WHO)  (<a href=\"https://www.who.int\">https://www.who.int</a>). </p><div><p>Concept mapping from content extended codes to ICF</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-concept-codes.html\">itech-uw Concept Codes</a> to <a href=\"http://terminology.hl7.org/5.4.0/CodeSystem-ICFDut.html\">International Classification of Functioning, Disability and Health, Dutch Translation</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>HIV.A.DE28 (Address)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Client address (observable entity)</td></tr><tr><td>HIV.B.DE5 (Partner or contact of an index case)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d770</td></tr><tr><td>HIV.B.DE6 (Partner or contact of an HIV testing client (non-index case))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d770 (Intimate relationships)</td></tr><tr><td>HIV.D.DE12 (Systolic blood pressure)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4209</td></tr><tr><td>HIV.D.DE13 (Diastolic blood pressure)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4209</td></tr><tr><td>HIV.D.DE16 (Fever of 39 °C or greater)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b2709</td></tr><tr><td>HIV.D.DE17 (Tachycardia)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b410</td></tr><tr><td>HIV.D.DE18 (Tachypnea)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4401</td></tr><tr><td>HIV.D.DE19 (Unable to walk unaided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d469</td></tr><tr><td>HIV.D.DE20 (Lethargy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4552</td></tr><tr><td>HIV.D.DE23 (Unable to drink)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550</td></tr><tr><td>HIV.D.DE25 (Repeated vomiting)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b5106</td></tr><tr><td>HIV.D.DE67 (Hypertension)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4200</td></tr><tr><td>HIV.D.DE208 (Provide psychosocial counselling and support)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b122</td></tr><tr><td>HIV.D.DE209 (Manage pain and symptoms)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b2800</td></tr><tr><td>HIV.D.DE210 (Conduct a nutritional assessment and counsel on nutrition)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d5701</td></tr><tr><td>HIV.D.DE212 (Provide support on infant and child feeding)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550</td></tr><tr><td>HIV.D.DE228 (Cough)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b450</td></tr><tr><td>HIV.D.DE231 (Weight loss)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE232 (Difficulty breathing)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460</td></tr><tr><td>HIV.D.DE240 (Vaginal discharge)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>s63033</td></tr><tr><td>HIV.D.DE243 (Hypertension)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4200</td></tr><tr><td>HIV.D.DE248 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460</td></tr><tr><td>HIV.D.DE282 (Unexplained anaemia (&lt;8 g/dl))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b430</td></tr><tr><td>HIV.D.DE287 (HIV wasting syndrome)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE288 (Unexplained severe wasting not responding to standard therapy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530</td></tr><tr><td>HIV.D.DE364 (Pregnancy)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b6601</td></tr><tr><td>HIV.D.DE410 (Haematological disorders)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b430</td></tr><tr><td>HIV.D.DE411 (Fatigue)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b4552</td></tr><tr><td>HIV.D.DE569 (SARS-CoV-2 first dose of vaccine provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE582 (BCG1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE585 (OPV0 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE587 (OPV1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE589 (OPV2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE591 (OPV3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE593 (OPV4 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE596 (IPV delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE598 (IPV booster delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE601 (DTP1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE603 (DTP2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE605 (DTP3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE608 (Penta 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE610 (Penta 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE612 (Penta 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE615 (Hib 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE617 (Hib 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE619 (Hib 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE622 (PCV 1 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE624 (PCV 2 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE626 (PCV 3 delivered)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE629 (Rota 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE631 (Rota 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE633 (Rota 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE636 (MCV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE638 (MCV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE640 (MCV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE643 (RCV vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE646 (MMR 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE648 (MMR 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE650 (MMR 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE653 (JapEnceph vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE656 (Yellow fever vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE659 (Tick-borne encephalitis vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE662 (TCV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE664 (TCV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE666 (TCV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE669 (Cholera 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE671 (Cholera 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE673 (Cholera 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE676 (MenA vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE678 (MenC vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE680 (Men4 vaccination provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE683 (HepA 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE685 (HepA 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE688 (HPV 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE690 (HPV 2 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE692 (HPV 3 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE695 (Rabies 1 provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Not classificable in ICF</td></tr><tr><td>HIV.D.DE713 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.D.DE737 (Current cough)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b450 (Additional functions of the respiratory system)</td></tr><tr><td>HIV.D.DE739 (Weight loss (reported))</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE740 (Calculated weight loss)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE742 (Poor weight gain)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b530 (Weight maintenance functions)</td></tr><tr><td>HIV.D.DE799 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.D.DE811 (Presumptive TB)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>b460 (Sensations associated with cardiovascular and respiratory functions)</td></tr><tr><td>HIV.E.DE62 (Infant-feeding counselling provided)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>d550 (Eating)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ConceptMap/ICF"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ICF"] ; # 
+  fhir:title [ fhir:v "ICF"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Concept mapping from content extended codes to ICF"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/sid/icf-nl"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "HIV.A.DE28" ] ;
+       fhir:display [ fhir:v "Address" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Client address (observable entity)" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.B.DE5" ] ;
+       fhir:display [ fhir:v "Partner or contact of an index case" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d770" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.B.DE6" ] ;
+       fhir:display [ fhir:v "Partner or contact of an HIV testing client (non-index case)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d770" ] ;
+         fhir:display [ fhir:v "Intimate relationships" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE12" ] ;
+       fhir:display [ fhir:v "Systolic blood pressure" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4209" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE13" ] ;
+       fhir:display [ fhir:v "Diastolic blood pressure" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4209" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE16" ] ;
+       fhir:display [ fhir:v "Fever of 39 °C or greater" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b2709" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE17" ] ;
+       fhir:display [ fhir:v "Tachycardia" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b410" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE18" ] ;
+       fhir:display [ fhir:v "Tachypnea" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4401" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE19" ] ;
+       fhir:display [ fhir:v "Unable to walk unaided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d469" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE20" ] ;
+       fhir:display [ fhir:v "Lethargy" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4552" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE23" ] ;
+       fhir:display [ fhir:v "Unable to drink" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d550" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE25" ] ;
+       fhir:display [ fhir:v "Repeated vomiting" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b5106" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE67" ] ;
+       fhir:display [ fhir:v "Hypertension" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4200" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE208" ] ;
+       fhir:display [ fhir:v "Provide psychosocial counselling and support" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b122" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE209" ] ;
+       fhir:display [ fhir:v "Manage pain and symptoms" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b2800" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE210" ] ;
+       fhir:display [ fhir:v "Conduct a nutritional assessment and counsel on nutrition" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d5701" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE212" ] ;
+       fhir:display [ fhir:v "Provide support on infant and child feeding" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d550" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE228" ] ;
+       fhir:display [ fhir:v "Cough" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b450" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE231" ] ;
+       fhir:display [ fhir:v "Weight loss" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE232" ] ;
+       fhir:display [ fhir:v "Difficulty breathing" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b460" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE240" ] ;
+       fhir:display [ fhir:v "Vaginal discharge" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "s63033" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE243" ] ;
+       fhir:display [ fhir:v "Hypertension" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4200" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE248" ] ;
+       fhir:display [ fhir:v "Presumptive TB" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b460" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE282" ] ;
+       fhir:display [ fhir:v "Unexplained anaemia (<8 g/dl)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b430" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE287" ] ;
+       fhir:display [ fhir:v "HIV wasting syndrome" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE288" ] ;
+       fhir:display [ fhir:v "Unexplained severe wasting not responding to standard therapy" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE364" ] ;
+       fhir:display [ fhir:v "Pregnancy" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b6601" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE410" ] ;
+       fhir:display [ fhir:v "Haematological disorders" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b430" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE411" ] ;
+       fhir:display [ fhir:v "Fatigue" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b4552" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE569" ] ;
+       fhir:display [ fhir:v "SARS-CoV-2 first dose of vaccine provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE582" ] ;
+       fhir:display [ fhir:v "BCG1 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE585" ] ;
+       fhir:display [ fhir:v "OPV0 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE587" ] ;
+       fhir:display [ fhir:v "OPV1 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE589" ] ;
+       fhir:display [ fhir:v "OPV2 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE591" ] ;
+       fhir:display [ fhir:v "OPV3 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE593" ] ;
+       fhir:display [ fhir:v "OPV4 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE596" ] ;
+       fhir:display [ fhir:v "IPV delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE598" ] ;
+       fhir:display [ fhir:v "IPV booster delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE601" ] ;
+       fhir:display [ fhir:v "DTP1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE603" ] ;
+       fhir:display [ fhir:v "DTP2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE605" ] ;
+       fhir:display [ fhir:v "DTP3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE608" ] ;
+       fhir:display [ fhir:v "Penta 1 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE610" ] ;
+       fhir:display [ fhir:v "Penta 2 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE612" ] ;
+       fhir:display [ fhir:v "Penta 3 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE615" ] ;
+       fhir:display [ fhir:v "Hib 1 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE617" ] ;
+       fhir:display [ fhir:v "Hib 2 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE619" ] ;
+       fhir:display [ fhir:v "Hib 3 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE622" ] ;
+       fhir:display [ fhir:v "PCV 1 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE624" ] ;
+       fhir:display [ fhir:v "PCV 2 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE626" ] ;
+       fhir:display [ fhir:v "PCV 3 delivered" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE629" ] ;
+       fhir:display [ fhir:v "Rota 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE631" ] ;
+       fhir:display [ fhir:v "Rota 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE633" ] ;
+       fhir:display [ fhir:v "Rota 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE636" ] ;
+       fhir:display [ fhir:v "MCV 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE638" ] ;
+       fhir:display [ fhir:v "MCV 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE640" ] ;
+       fhir:display [ fhir:v "MCV 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE643" ] ;
+       fhir:display [ fhir:v "RCV vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE646" ] ;
+       fhir:display [ fhir:v "MMR 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE648" ] ;
+       fhir:display [ fhir:v "MMR 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE650" ] ;
+       fhir:display [ fhir:v "MMR 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE653" ] ;
+       fhir:display [ fhir:v "JapEnceph vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE656" ] ;
+       fhir:display [ fhir:v "Yellow fever vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE659" ] ;
+       fhir:display [ fhir:v "Tick-borne encephalitis vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE662" ] ;
+       fhir:display [ fhir:v "TCV 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE664" ] ;
+       fhir:display [ fhir:v "TCV 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE666" ] ;
+       fhir:display [ fhir:v "TCV 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE669" ] ;
+       fhir:display [ fhir:v "Cholera 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE671" ] ;
+       fhir:display [ fhir:v "Cholera 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE673" ] ;
+       fhir:display [ fhir:v "Cholera 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE676" ] ;
+       fhir:display [ fhir:v "MenA vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE678" ] ;
+       fhir:display [ fhir:v "MenC vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE680" ] ;
+       fhir:display [ fhir:v "Men4 vaccination provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE683" ] ;
+       fhir:display [ fhir:v "HepA 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE685" ] ;
+       fhir:display [ fhir:v "HepA 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE688" ] ;
+       fhir:display [ fhir:v "HPV 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE690" ] ;
+       fhir:display [ fhir:v "HPV 2 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE692" ] ;
+       fhir:display [ fhir:v "HPV 3 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE695" ] ;
+       fhir:display [ fhir:v "Rabies 1 provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "Not classificable in ICF" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE713" ] ;
+       fhir:display [ fhir:v "Presumptive TB" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b460" ] ;
+         fhir:display [ fhir:v "Sensations associated with cardiovascular and respiratory functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE737" ] ;
+       fhir:display [ fhir:v "Current cough" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b450" ] ;
+         fhir:display [ fhir:v "Additional functions of the respiratory system" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE739" ] ;
+       fhir:display [ fhir:v "Weight loss (reported)" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:display [ fhir:v "Weight maintenance functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE740" ] ;
+       fhir:display [ fhir:v "Calculated weight loss" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:display [ fhir:v "Weight maintenance functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE742" ] ;
+       fhir:display [ fhir:v "Poor weight gain" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b530" ] ;
+         fhir:display [ fhir:v "Weight maintenance functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE799" ] ;
+       fhir:display [ fhir:v "Presumptive TB" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b460" ] ;
+         fhir:display [ fhir:v "Sensations associated with cardiovascular and respiratory functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.D.DE811" ] ;
+       fhir:display [ fhir:v "Presumptive TB" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "b460" ] ;
+         fhir:display [ fhir:v "Sensations associated with cardiovascular and respiratory functions" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HIV.E.DE62" ] ;
+       fhir:display [ fhir:v "Infant-feeding counselling provided" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "d550" ] ;
+         fhir:display [ fhir:v "Eating" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

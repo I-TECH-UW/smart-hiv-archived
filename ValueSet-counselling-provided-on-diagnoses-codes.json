@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "counselling-provided-on-diagnoses-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul/></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/counselling-provided-on-diagnoses-codes",
+  "version" : "0.3.0",
+  "name" : "CounsellingprovidedondiagnosesCodes",
+  "title" : "Counselling provided on diagnoses Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Counselling provided on diagnoses element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true
+}

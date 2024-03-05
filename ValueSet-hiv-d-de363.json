@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de363",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE363\">HIV.D.DE363</a></td><td>Toxicity/side effects</td><td>Reason for ARV drug regimen substitution - Toxicity/side effects</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE364\">HIV.D.DE364</a></td><td>Pregnancy</td><td>Reason for ARV drug regimen substitution - Pregnancy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE365\">HIV.D.DE365</a></td><td>New TB</td><td>Reason for ARV drug regimen substitution - New TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE366\">HIV.D.DE366</a></td><td>New drug available</td><td>Reason for ARV drug regimen substitution - New drug available</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE367\">HIV.D.DE367</a></td><td>Drug out of stock</td><td>Reason for ARV drug regimen substitution - Drug out of stock</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE368\">HIV.D.DE368</a></td><td>Treatment-limiting toxicity</td><td>Reason for ARV drug regimen substitution - Treatment-limiting toxicity</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE369\">HIV.D.DE369</a></td><td>Other reason for regimen substitution (specify)</td><td>Reason for ARV drug regimen substitution - Other reason for regimen substitution (specify)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de363",
+  "version" : "0.3.0",
+  "name" : "ReasonforARVdrugregimensubstitutionCodes",
+  "title" : "Reason for ARV drug regimen substitution Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Reason for ARV drug regimen substitution element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE363",
+        "display" : "Toxicity/side effects"
+      },
+      {
+        "code" : "HIV.D.DE364",
+        "display" : "Pregnancy"
+      },
+      {
+        "code" : "HIV.D.DE365",
+        "display" : "New TB"
+      },
+      {
+        "code" : "HIV.D.DE366",
+        "display" : "New drug available"
+      },
+      {
+        "code" : "HIV.D.DE367",
+        "display" : "Drug out of stock"
+      },
+      {
+        "code" : "HIV.D.DE368",
+        "display" : "Treatment-limiting toxicity"
+      },
+      {
+        "code" : "HIV.D.DE369",
+        "display" : "Other reason for regimen substitution (specify)"
+      }]
+    }]
+  }
+}

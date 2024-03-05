@@ -1,0 +1,299 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de253",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE253\">HIV.D.DE253</a></td><td>Asymptomatic</td><td>WHO HIV clinical stage conditions and symptoms - Asymptomatic</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE254\">HIV.D.DE254</a></td><td>Persistent generalized lymphadenopathy</td><td>WHO HIV clinical stage conditions and symptoms - Persistent generalized lymphadenopathy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE255\">HIV.D.DE255</a></td><td>Moderate unexplained weight loss</td><td>WHO HIV clinical stage conditions and symptoms - Moderate unexplained weight loss</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE256\">HIV.D.DE256</a></td><td>Recurrent respiratory tract infections</td><td>WHO HIV clinical stage conditions and symptoms - Recurrent respiratory tract infections</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE257\">HIV.D.DE257</a></td><td>Unexplained persistent hepatosplenomegaly</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained persistent hepatosplenomegaly</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE258\">HIV.D.DE258</a></td><td>Herpes zoster</td><td>WHO HIV clinical stage conditions and symptoms - Herpes zoster</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE259\">HIV.D.DE259</a></td><td>Angular cheilitis</td><td>WHO HIV clinical stage conditions and symptoms - Angular cheilitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE260\">HIV.D.DE260</a></td><td>Linear gingival erythema</td><td>WHO HIV clinical stage conditions and symptoms - Linear gingival erythema</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE261\">HIV.D.DE261</a></td><td>Recurrent oral ulceration</td><td>WHO HIV clinical stage conditions and symptoms - Recurrent oral ulceration</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE262\">HIV.D.DE262</a></td><td>Papular pruritic eruption</td><td>WHO HIV clinical stage conditions and symptoms - Papular pruritic eruption</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE263\">HIV.D.DE263</a></td><td>Fungal nail infections</td><td>WHO HIV clinical stage conditions and symptoms - Fungal nail infections</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE264\">HIV.D.DE264</a></td><td>Seborrhoeic dermatitis</td><td>WHO HIV clinical stage conditions and symptoms - Seborrhoeic dermatitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE265\">HIV.D.DE265</a></td><td>Extensive wart virus infection</td><td>WHO HIV clinical stage conditions and symptoms - Extensive wart virus infection</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE266\">HIV.D.DE266</a></td><td>Extensive molluscum contagiosum</td><td>WHO HIV clinical stage conditions and symptoms - Extensive molluscum contagiosum</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE267\">HIV.D.DE267</a></td><td>Unexplained persistent parotid enlargement</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained persistent parotid enlargement</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE268\">HIV.D.DE268</a></td><td>Unexplained severe weight loss in adults</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained severe weight loss in adults</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE269\">HIV.D.DE269</a></td><td>Unexplained moderate malnutrition not adequately responding to standard therapy</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained moderate malnutrition not adequately responding to standard therapy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE270\">HIV.D.DE270</a></td><td>Unexplained chronic diarrhoea for longer than 1 month</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained chronic diarrhoea for longer than 1 month</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE271\">HIV.D.DE271</a></td><td>Unexplained persistent diarrhoea (14 days or more)</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained persistent diarrhoea (14 days or more)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE272\">HIV.D.DE272</a></td><td>Unexplained persistent fever (above 37.5 °C, intermittent or constant, for longer than one 1 month)</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained persistent fever (above 37.5 °C, intermittent or constant, for longer than one 1 month)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE273\">HIV.D.DE273</a></td><td>Persistent oral candidiasis</td><td>WHO HIV clinical stage conditions and symptoms - Persistent oral candidiasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE274\">HIV.D.DE274</a></td><td>Oral hairy leukoplakia</td><td>WHO HIV clinical stage conditions and symptoms - Oral hairy leukoplakia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE275\">HIV.D.DE275</a></td><td>Pulmonary TB</td><td>WHO HIV clinical stage conditions and symptoms - Pulmonary TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE276\">HIV.D.DE276</a></td><td>Lymph node TB</td><td>WHO HIV clinical stage conditions and symptoms - Lymph node TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE277\">HIV.D.DE277</a></td><td>Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)</td><td>WHO HIV clinical stage conditions and symptoms - Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE278\">HIV.D.DE278</a></td><td>Severe recurrent bacterial pneumonia</td><td>WHO HIV clinical stage conditions and symptoms - Severe recurrent bacterial pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE279\">HIV.D.DE279</a></td><td>Acute necrotizing ulcerative stomatitis</td><td>WHO HIV clinical stage conditions and symptoms - Acute necrotizing ulcerative stomatitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE280\">HIV.D.DE280</a></td><td>Acute necrotizing ulcerative  gingivitis</td><td>WHO HIV clinical stage conditions and symptoms - Acute necrotizing ulcerative  gingivitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE281\">HIV.D.DE281</a></td><td>Acute necrotizing ulcerative periodontitis</td><td>WHO HIV clinical stage conditions and symptoms - Acute necrotizing ulcerative periodontitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE282\">HIV.D.DE282</a></td><td>Unexplained anaemia (&lt;8 g/dl)</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained anaemia (&lt;8 g/dl)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE283\">HIV.D.DE283</a></td><td>Neutropaenia (&lt;0.5 × 109/l)</td><td>WHO HIV clinical stage conditions and symptoms - Neutropaenia (&lt;0.5 × 109/l)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE284\">HIV.D.DE284</a></td><td>Chronic thrombocytopaenia (&lt;50 × 109/l)</td><td>WHO HIV clinical stage conditions and symptoms - Chronic thrombocytopaenia (&lt;50 × 109/l)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE285\">HIV.D.DE285</a></td><td>Symptomatic lymphoid interstitial pneumonitis</td><td>WHO HIV clinical stage conditions and symptoms - Symptomatic lymphoid interstitial pneumonitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE286\">HIV.D.DE286</a></td><td>Chronic HIV-associated lung disease, including bronchiectasis</td><td>WHO HIV clinical stage conditions and symptoms - Chronic HIV-associated lung disease, including bronchiectasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE287\">HIV.D.DE287</a></td><td>HIV wasting syndrome</td><td>WHO HIV clinical stage conditions and symptoms - HIV wasting syndrome</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE288\">HIV.D.DE288</a></td><td>Unexplained severe wasting not responding to standard therapy</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained severe wasting not responding to standard therapy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE289\">HIV.D.DE289</a></td><td>Unexplained stunting not responding to standard therapy</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained stunting not responding to standard therapy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE290\">HIV.D.DE290</a></td><td>Unexplained severe malnutrition not responding to standard therapy</td><td>WHO HIV clinical stage conditions and symptoms - Unexplained severe malnutrition not responding to standard therapy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE291\">HIV.D.DE291</a></td><td>Pneumocystis (jirovecii) pneumonia</td><td>WHO HIV clinical stage conditions and symptoms - Pneumocystis (jirovecii) pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE292\">HIV.D.DE292</a></td><td>Recurrent severe bacterial pneumonia</td><td>WHO HIV clinical stage conditions and symptoms - Recurrent severe bacterial pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE293\">HIV.D.DE293</a></td><td>Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)</td><td>WHO HIV clinical stage conditions and symptoms - Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE294\">HIV.D.DE294</a></td><td>Empyema</td><td>WHO HIV clinical stage conditions and symptoms - Empyema</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE295\">HIV.D.DE295</a></td><td>Pyomyositis</td><td>WHO HIV clinical stage conditions and symptoms - Pyomyositis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE296\">HIV.D.DE296</a></td><td>Bone or joint infection</td><td>WHO HIV clinical stage conditions and symptoms - Bone or joint infection</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE297\">HIV.D.DE297</a></td><td>Meningitis</td><td>WHO HIV clinical stage conditions and symptoms - Meningitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE298\">HIV.D.DE298</a></td><td>Chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)</td><td>WHO HIV clinical stage conditions and symptoms - Chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE299\">HIV.D.DE299</a></td><td>Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)</td><td>WHO HIV clinical stage conditions and symptoms - Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE300\">HIV.D.DE300</a></td><td>Extrapulmonary TB</td><td>WHO HIV clinical stage conditions and symptoms - Extrapulmonary TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE301\">HIV.D.DE301</a></td><td>Kaposi sarcoma</td><td>WHO HIV clinical stage conditions and symptoms - Kaposi sarcoma</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE302\">HIV.D.DE302</a></td><td>Cytomegalovirus infection (retinitis or infection of other organs)</td><td>WHO HIV clinical stage conditions and symptoms - Cytomegalovirus infection (retinitis or infection of other organs)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE303\">HIV.D.DE303</a></td><td>Central nervous system toxoplasmosis</td><td>WHO HIV clinical stage conditions and symptoms - Central nervous system toxoplasmosis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE304\">HIV.D.DE304</a></td><td>HIV encephalopathy</td><td>WHO HIV clinical stage conditions and symptoms - HIV encephalopathy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE305\">HIV.D.DE305</a></td><td>Extrapulmonary cryptococcosis, including meningitis</td><td>WHO HIV clinical stage conditions and symptoms - Extrapulmonary cryptococcosis, including meningitis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE306\">HIV.D.DE306</a></td><td>Disseminated nontuberculous mycobacterial infection</td><td>WHO HIV clinical stage conditions and symptoms - Disseminated nontuberculous mycobacterial infection</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE307\">HIV.D.DE307</a></td><td>Progressive multifocal leukoencephalopathy</td><td>WHO HIV clinical stage conditions and symptoms - Progressive multifocal leukoencephalopathy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE308\">HIV.D.DE308</a></td><td>Chronic cryptosporidiosis</td><td>WHO HIV clinical stage conditions and symptoms - Chronic cryptosporidiosis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE309\">HIV.D.DE309</a></td><td>Chronic cryptosporidiosis (with diarrhoea)</td><td>WHO HIV clinical stage conditions and symptoms - Chronic cryptosporidiosis (with diarrhoea)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE310\">HIV.D.DE310</a></td><td>Chronic isosporiasis</td><td>WHO HIV clinical stage conditions and symptoms - Chronic isosporiasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE311\">HIV.D.DE311</a></td><td>Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)</td><td>WHO HIV clinical stage conditions and symptoms - Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE312\">HIV.D.DE312</a></td><td>Cerebral lymphoma</td><td>WHO HIV clinical stage conditions and symptoms - Cerebral lymphoma</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE313\">HIV.D.DE313</a></td><td>B-cell non-Hodgkin lymphoma</td><td>WHO HIV clinical stage conditions and symptoms - B-cell non-Hodgkin lymphoma</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE314\">HIV.D.DE314</a></td><td>HIV- associated nephropathy or cardiomyopathy</td><td>WHO HIV clinical stage conditions and symptoms - HIV- associated nephropathy or cardiomyopathy</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE315\">HIV.D.DE315</a></td><td>Recurrent bacteraemia (including nontyphoidal salmonella)</td><td>WHO HIV clinical stage conditions and symptoms - Recurrent bacteraemia (including nontyphoidal salmonella)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE316\">HIV.D.DE316</a></td><td>Invasive cervical carcinoma</td><td>WHO HIV clinical stage conditions and symptoms - Invasive cervical carcinoma</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE317\">HIV.D.DE317</a></td><td>Atypical disseminated leishmaniasis</td><td>WHO HIV clinical stage conditions and symptoms - Atypical disseminated leishmaniasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE318\">HIV.D.DE318</a></td><td>Neutropenia</td><td>WHO HIV clinical stage conditions and symptoms - Neutropenia</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de253",
+  "version" : "0.3.0",
+  "name" : "WHOHIVclinicalstageconditionsandsymptomsCodes",
+  "title" : "WHO HIV clinical stage conditions and symptoms Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the WHO HIV clinical stage conditions and symptoms element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE253",
+        "display" : "Asymptomatic"
+      },
+      {
+        "code" : "HIV.D.DE254",
+        "display" : "Persistent generalized lymphadenopathy"
+      },
+      {
+        "code" : "HIV.D.DE255",
+        "display" : "Moderate unexplained weight loss"
+      },
+      {
+        "code" : "HIV.D.DE256",
+        "display" : "Recurrent respiratory tract infections"
+      },
+      {
+        "code" : "HIV.D.DE257",
+        "display" : "Unexplained persistent hepatosplenomegaly"
+      },
+      {
+        "code" : "HIV.D.DE258",
+        "display" : "Herpes zoster"
+      },
+      {
+        "code" : "HIV.D.DE259",
+        "display" : "Angular cheilitis"
+      },
+      {
+        "code" : "HIV.D.DE260",
+        "display" : "Linear gingival erythema"
+      },
+      {
+        "code" : "HIV.D.DE261",
+        "display" : "Recurrent oral ulceration"
+      },
+      {
+        "code" : "HIV.D.DE262",
+        "display" : "Papular pruritic eruption"
+      },
+      {
+        "code" : "HIV.D.DE263",
+        "display" : "Fungal nail infections"
+      },
+      {
+        "code" : "HIV.D.DE264",
+        "display" : "Seborrhoeic dermatitis"
+      },
+      {
+        "code" : "HIV.D.DE265",
+        "display" : "Extensive wart virus infection"
+      },
+      {
+        "code" : "HIV.D.DE266",
+        "display" : "Extensive molluscum contagiosum"
+      },
+      {
+        "code" : "HIV.D.DE267",
+        "display" : "Unexplained persistent parotid enlargement"
+      },
+      {
+        "code" : "HIV.D.DE268",
+        "display" : "Unexplained severe weight loss in adults"
+      },
+      {
+        "code" : "HIV.D.DE269",
+        "display" : "Unexplained moderate malnutrition not adequately responding to standard therapy"
+      },
+      {
+        "code" : "HIV.D.DE270",
+        "display" : "Unexplained chronic diarrhoea for longer than 1 month"
+      },
+      {
+        "code" : "HIV.D.DE271",
+        "display" : "Unexplained persistent diarrhoea (14 days or more)"
+      },
+      {
+        "code" : "HIV.D.DE272",
+        "display" : "Unexplained persistent fever (above 37.5 °C, intermittent or constant, for longer than one 1 month)"
+      },
+      {
+        "code" : "HIV.D.DE273",
+        "display" : "Persistent oral candidiasis"
+      },
+      {
+        "code" : "HIV.D.DE274",
+        "display" : "Oral hairy leukoplakia"
+      },
+      {
+        "code" : "HIV.D.DE275",
+        "display" : "Pulmonary TB"
+      },
+      {
+        "code" : "HIV.D.DE276",
+        "display" : "Lymph node TB"
+      },
+      {
+        "code" : "HIV.D.DE277",
+        "display" : "Severe bacterial infections (such as pneumonia, empyema, pyomyositis, bone or joint infection, meningitis, bacteraemia)"
+      },
+      {
+        "code" : "HIV.D.DE278",
+        "display" : "Severe recurrent bacterial pneumonia"
+      },
+      {
+        "code" : "HIV.D.DE279",
+        "display" : "Acute necrotizing ulcerative stomatitis"
+      },
+      {
+        "code" : "HIV.D.DE280",
+        "display" : "Acute necrotizing ulcerative  gingivitis"
+      },
+      {
+        "code" : "HIV.D.DE281",
+        "display" : "Acute necrotizing ulcerative periodontitis"
+      },
+      {
+        "code" : "HIV.D.DE282",
+        "display" : "Unexplained anaemia (<8 g/dl)"
+      },
+      {
+        "code" : "HIV.D.DE283",
+        "display" : "Neutropaenia (<0.5 × 109/l)"
+      },
+      {
+        "code" : "HIV.D.DE284",
+        "display" : "Chronic thrombocytopaenia (<50 × 109/l)"
+      },
+      {
+        "code" : "HIV.D.DE285",
+        "display" : "Symptomatic lymphoid interstitial pneumonitis"
+      },
+      {
+        "code" : "HIV.D.DE286",
+        "display" : "Chronic HIV-associated lung disease, including bronchiectasis"
+      },
+      {
+        "code" : "HIV.D.DE287",
+        "display" : "HIV wasting syndrome"
+      },
+      {
+        "code" : "HIV.D.DE288",
+        "display" : "Unexplained severe wasting not responding to standard therapy"
+      },
+      {
+        "code" : "HIV.D.DE289",
+        "display" : "Unexplained stunting not responding to standard therapy"
+      },
+      {
+        "code" : "HIV.D.DE290",
+        "display" : "Unexplained severe malnutrition not responding to standard therapy"
+      },
+      {
+        "code" : "HIV.D.DE291",
+        "display" : "Pneumocystis (jirovecii) pneumonia"
+      },
+      {
+        "code" : "HIV.D.DE292",
+        "display" : "Recurrent severe bacterial pneumonia"
+      },
+      {
+        "code" : "HIV.D.DE293",
+        "display" : "Recurrent severe bacterial infections (such as empyema, pyomyositis, bone or joint infection, meningitis, but excluding pneumonia)"
+      },
+      {
+        "code" : "HIV.D.DE294",
+        "display" : "Empyema"
+      },
+      {
+        "code" : "HIV.D.DE295",
+        "display" : "Pyomyositis"
+      },
+      {
+        "code" : "HIV.D.DE296",
+        "display" : "Bone or joint infection"
+      },
+      {
+        "code" : "HIV.D.DE297",
+        "display" : "Meningitis"
+      },
+      {
+        "code" : "HIV.D.DE298",
+        "display" : "Chronic herpes simplex infection (orolabial, genital or anorectal of more than one month in duration or visceral at any site)"
+      },
+      {
+        "code" : "HIV.D.DE299",
+        "display" : "Oesophageal candidiasis (or candidiasis of trachea, bronchi or lungs)"
+      },
+      {
+        "code" : "HIV.D.DE300",
+        "display" : "Extrapulmonary TB"
+      },
+      {
+        "code" : "HIV.D.DE301",
+        "display" : "Kaposi sarcoma"
+      },
+      {
+        "code" : "HIV.D.DE302",
+        "display" : "Cytomegalovirus infection (retinitis or infection of other organs)"
+      },
+      {
+        "code" : "HIV.D.DE303",
+        "display" : "Central nervous system toxoplasmosis"
+      },
+      {
+        "code" : "HIV.D.DE304",
+        "display" : "HIV encephalopathy"
+      },
+      {
+        "code" : "HIV.D.DE305",
+        "display" : "Extrapulmonary cryptococcosis, including meningitis"
+      },
+      {
+        "code" : "HIV.D.DE306",
+        "display" : "Disseminated nontuberculous mycobacterial infection"
+      },
+      {
+        "code" : "HIV.D.DE307",
+        "display" : "Progressive multifocal leukoencephalopathy"
+      },
+      {
+        "code" : "HIV.D.DE308",
+        "display" : "Chronic cryptosporidiosis"
+      },
+      {
+        "code" : "HIV.D.DE309",
+        "display" : "Chronic cryptosporidiosis (with diarrhoea)"
+      },
+      {
+        "code" : "HIV.D.DE310",
+        "display" : "Chronic isosporiasis"
+      },
+      {
+        "code" : "HIV.D.DE311",
+        "display" : "Disseminated mycosis (extrapulmonary histoplasmosis, coccidioidomycosis)"
+      },
+      {
+        "code" : "HIV.D.DE312",
+        "display" : "Cerebral lymphoma"
+      },
+      {
+        "code" : "HIV.D.DE313",
+        "display" : "B-cell non-Hodgkin lymphoma"
+      },
+      {
+        "code" : "HIV.D.DE314",
+        "display" : "HIV- associated nephropathy or cardiomyopathy"
+      },
+      {
+        "code" : "HIV.D.DE315",
+        "display" : "Recurrent bacteraemia (including nontyphoidal salmonella)"
+      },
+      {
+        "code" : "HIV.D.DE316",
+        "display" : "Invasive cervical carcinoma"
+      },
+      {
+        "code" : "HIV.D.DE317",
+        "display" : "Atypical disseminated leishmaniasis"
+      },
+      {
+        "code" : "HIV.D.DE318",
+        "display" : "Neutropenia"
+      }]
+    }]
+  }
+}

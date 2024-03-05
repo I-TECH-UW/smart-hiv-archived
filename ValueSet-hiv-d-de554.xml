@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-d-de554"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-concept-codes.html"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE554">HIV.D.DE554</a></td><td>Stock-out</td><td>Reason TT vaccination not provided - Stock-out</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE555">HIV.D.DE555</a></td><td>Client is ill</td><td>Reason TT vaccination not provided - Client is ill</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE556">HIV.D.DE556</a></td><td>Client refused</td><td>Reason TT vaccination not provided - Client refused</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE557">HIV.D.DE557</a></td><td>Allergy to vaccine</td><td>Reason TT vaccination not provided - Allergy to vaccine</td></tr><tr><td><a href="CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE558">HIV.D.DE558</a></td><td>Other reason immunization not provided (specify)</td><td>Reason TT vaccination not provided - Other reason immunization not provided (specify)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de554"/>
+  <version value="0.3.0"/>
+  <name value="ReasonTTvaccinationnotprovidedCodes"/>
+  <title value="Reason TT vaccination not provided Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-05T18:24:53+00:00"/>
+  <publisher value="World Health Organization (WHO) "/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Reason TT vaccination not provided element"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"/>
+      <concept>
+        <code value="HIV.D.DE554"/>
+        <display value="Stock-out"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE555"/>
+        <display value="Client is ill"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE556"/>
+        <display value="Client refused"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE557"/>
+        <display value="Allergy to vaccine"/>
+      </concept>
+      <concept>
+        <code value="HIV.D.DE558"/>
+        <display value="Other reason immunization not provided (specify)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

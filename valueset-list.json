@@ -1,0 +1,1636 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/counselling-provided-on-diagnoses-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CounsellingprovidedondiagnosesCodes",
+      "title" : "Counselling provided on diagnoses Codes",
+      "description" : "Codes representing possible values for the Counselling provided on diagnoses element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/demo-code-b",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVburdenofthesettingCodes",
+      "title" : "HIV burden of the setting Codes",
+      "description" : "Codes representing possible values for the HIV burden of the setting element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/facility-or-service-type-reporting-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FacilityorservicetypereportingCodes",
+      "title" : "Facility or service type reporting Codes",
+      "description" : "Codes representing possible values for the Facility or service type reporting element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/heterosexual-route-of-transmission-risk-factors-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HeterosexualrouteoftransmissionriskfactorsCodes",
+      "title" : "Heterosexual route of transmission risk factors Codes",
+      "description" : "Codes representing possible values for the Heterosexual route of transmission risk factors element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de19",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "GenderCodes",
+      "title" : "Gender Codes",
+      "description" : "Codes representing possible values for the Gender element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de25",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SexCodes",
+      "title" : "Sex Codes",
+      "description" : "Codes representing possible values for the Sex element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de34",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CommunicationpreferencesCodes",
+      "title" : "Communication preference(s) Codes",
+      "description" : "Codes representing possible values for the Communication preference(s) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de6",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReferredbyCodes",
+      "title" : "Referred by Codes",
+      "description" : "Codes representing possible values for the Referred by element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de100",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TestresultofHIVassay3Codes",
+      "title" : "Test result of HIV assay 3 Codes",
+      "description" : "Codes representing possible values for the Test result of HIV assay 3 element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de103",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TestresultofHIVassay1repeatedCodes",
+      "title" : "Test result of HIV assay 1 repeated Codes",
+      "description" : "Codes representing possible values for the Test result of HIV assay 1 repeated element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de107",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVtestresultCodes",
+      "title" : "HIV test result Codes",
+      "description" : "Codes representing possible values for the HIV test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de111",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVstatusCodes",
+      "title" : "HIV status Codes",
+      "description" : "Codes representing possible values for the HIV status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de115",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVprobablerouteoftransmission*Codes",
+      "title" : "HIV probable route of transmission* Codes",
+      "description" : "Codes representing possible values for the HIV probable route of transmission* element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de123",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PartnerHIVtestresultCodes",
+      "title" : "Partner HIV test result Codes",
+      "description" : "Codes representing possible values for the Partner HIV test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de127",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PartnerHIVstatusconfirmedCodes",
+      "title" : "Partner HIV status (confirmed) Codes",
+      "description" : "Codes representing possible values for the Partner HIV status (confirmed) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de137",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PreventionservicesofferedandreferralsCodes",
+      "title" : "Prevention services offered and referrals Codes",
+      "description" : "Codes representing possible values for the Prevention services offered and referrals element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de144",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SexualandreproductivehealthintegratedservicesCodes",
+      "title" : "Sexual and reproductive health integrated services Codes",
+      "description" : "Codes representing possible values for the Sexual and reproductive health integrated services element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de15",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TestingentrypointCodes",
+      "title" : "Testing entry point Codes",
+      "description" : "Codes representing possible values for the Testing entry point element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de153",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "OfferotherclinicalservicesCodes",
+      "title" : "Offer other clinical services Codes",
+      "description" : "Codes representing possible values for the Offer other clinical services element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de160",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "OthersupportservicesCodes",
+      "title" : "Other support services Codes",
+      "description" : "Codes representing possible values for the Other support services element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de167",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "IntimatepartnerviolenceenquiryresultsCodes",
+      "title" : "Intimate partner violence enquiry results Codes",
+      "description" : "Codes representing possible values for the Intimate partner violence enquiry results element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de178",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TypeoffollowupappointmentCodes",
+      "title" : "Type of follow-up appointment Codes",
+      "description" : "Codes representing possible values for the Type of follow-up appointment element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de18",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EntrypointforcommunityleveltestingCodes",
+      "title" : "Entry point for community-level testing Codes",
+      "description" : "Codes representing possible values for the Entry point for community-level testing element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de2",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforHIVtestingservicesvisitCodes",
+      "title" : "Reason for HIV testing services visit Codes",
+      "description" : "Codes representing possible values for the Reason for HIV testing services visit element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de22",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EntrypointforfacilityleveltestingCodes",
+      "title" : "Entry point for facility-level testing Codes",
+      "description" : "Codes representing possible values for the Entry point for facility-level testing element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de33",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PartnerHIVstatusreportedCodes",
+      "title" : "Partner HIV status (reported) Codes",
+      "description" : "Codes representing possible values for the Partner HIV status (reported) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de37",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "Partnerisfromakeypopulation*Codes",
+      "title" : "Partner is from a key population* Codes",
+      "description" : "Codes representing possible values for the Partner is from a key population* element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de49",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "Keypopulationmember*Codes",
+      "title" : "Key population member* Codes",
+      "description" : "Codes representing possible values for the Key population member* element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de5",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReferredthroughpartnerservicesCodes",
+      "title" : "Referred through partner services Codes",
+      "description" : "Codes representing possible values for the Referred through partner services element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de59",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVexposuretypes*Codes",
+      "title" : "HIV exposure types* Codes",
+      "description" : "Codes representing possible values for the HIV exposure types* element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de68",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVserotypeCodes",
+      "title" : "HIV serotype Codes",
+      "description" : "Codes representing possible values for the HIV serotype element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de74",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TypeofcontactelicitedCodes",
+      "title" : "Type of contact elicited Codes",
+      "description" : "Codes representing possible values for the Type of contact elicited element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de8",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TypeofcontactorpartnerforpartnerservicesCodes",
+      "title" : "Type of contact or partner for partner services Codes",
+      "description" : "Codes representing possible values for the Type of contact or partner for partner services element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de80",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVtestconductedCodes",
+      "title" : "HIV test conducted Codes",
+      "description" : "Codes representing possible values for the HIV test conducted element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de94",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TestresultofHIVassay1Codes",
+      "title" : "Test result of HIV assay 1 Codes",
+      "description" : "Codes representing possible values for the Test result of HIV assay 1 element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de97",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TestresultofHIVassay2Codes",
+      "title" : "Test result of HIV assay 2 Codes",
+      "description" : "Codes representing possible values for the Test result of HIV assay 2 element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de102",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforPrEPregimensubstitutionCodes",
+      "title" : "Reason for PrEP regimen substitution Codes",
+      "description" : "Codes representing possible values for the Reason for PrEP regimen substitution element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de12",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PrEPdosingtypeCodes",
+      "title" : "PrEP dosing type Codes",
+      "description" : "Codes representing possible values for the PrEP dosing type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de126",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVselftestdistributedforusebyCodes",
+      "title" : "HIV self-test distributed for use by Codes",
+      "description" : "Codes representing possible values for the HIV self-test distributed for use by element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de15",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "OtherPrEPdosingtypespecifyCodes",
+      "title" : "Other PrEP dosing type (specify) Codes",
+      "description" : "Codes representing possible values for the Other PrEP dosing type (specify) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de17",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CurrentPrEPregimenCodes",
+      "title" : "Current PrEP regimen Codes",
+      "description" : "Codes representing possible values for the Current PrEP regimen element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de2",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforPrEPvisitCodes",
+      "title" : "Reason for PrEP visit Codes",
+      "description" : "Codes representing possible values for the Reason for PrEP visit element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de22",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PrEPhistoryCodes",
+      "title" : "PrEP history Codes",
+      "description" : "Codes representing possible values for the PrEP history element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de28",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PEPhistoryCodes",
+      "title" : "PEP history Codes",
+      "description" : "Codes representing possible values for the PEP history element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de32",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SignsofsubstantialriskofHIVinfectionCodes",
+      "title" : "Signs of substantial risk of HIV infection Codes",
+      "description" : "Codes representing possible values for the Signs of substantial risk of HIV infection element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de37",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PregnancyintentionCodes",
+      "title" : "Pregnancy intention Codes",
+      "description" : "Codes representing possible values for the Pregnancy intention element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de42",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "AcuteHIVinfectionsymptomsCodes",
+      "title" : "Acute HIV infection symptoms Codes",
+      "description" : "Codes representing possible values for the Acute HIV infection symptoms element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de51",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "Sexpartner'sHIVtreatmentstatusCodes",
+      "title" : "Sex partner's HIV treatment status Codes",
+      "description" : "Codes representing possible values for the Sex partner's HIV treatment status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de59",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ScreeningsanddiagnosticsforPrEPusersCodes",
+      "title" : "Screenings and diagnostics for PrEP users Codes",
+      "description" : "Codes representing possible values for the Screenings and diagnostics for PrEP users element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de69",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "BackboneregimenforPEPforadultsandadolescentsCodes",
+      "title" : "Backbone regimen for PEP for adults and adolescents Codes",
+      "description" : "Codes representing possible values for the Backbone regimen for PEP for adults and adolescents element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de72",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ThirddrugforPEPinadultsandadolescentsCodes",
+      "title" : "Third-drug for PEP in adults and adolescents Codes",
+      "description" : "Codes representing possible values for the Third-drug for PEP in adults and adolescents element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de78",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "BackboneregimenforPEPforchildrenCodes",
+      "title" : "Backbone regimen for PEP for children Codes",
+      "description" : "Codes representing possible values for the Backbone regimen for PEP for children element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de90",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SexfactorforestimatingcreatinineclearanceCodes",
+      "title" : "Sex factor for estimating creatinine clearance Codes",
+      "description" : "Codes representing possible values for the Sex factor for estimating creatinine clearance element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de95",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ContraindicationstoPrEPusageCodes",
+      "title" : "Contraindications to PrEP usage Codes",
+      "description" : "Codes representing possible values for the Contraindications to PrEP usage element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de101",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FirstlineARTregimenforadultsandadolescentsCodes",
+      "title" : "First-line ART regimen for adults and adolescents Codes",
+      "description" : "Codes representing possible values for the First-line ART regimen for adults and adolescents element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de107",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FirstlineARTregimenforchildrenCodes",
+      "title" : "First-line ART regimen for children Codes",
+      "description" : "Codes representing possible values for the First-line ART regimen for children element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de113",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FirstlineARTregimenforneonatesCodes",
+      "title" : "First-line ART regimen for neonates Codes",
+      "description" : "Codes representing possible values for the First-line ART regimen for neonates element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de116",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SecondlineARTregimenforadultsandadolescentsCodes",
+      "title" : "Second-line ART regimen for adults and adolescents Codes",
+      "description" : "Codes representing possible values for the Second-line ART regimen for adults and adolescents element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de131",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SecondlineARTregimensforchildrenCodes",
+      "title" : "Second-line ART regimens for children Codes",
+      "description" : "Codes representing possible values for the Second-line ART regimens for children element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de145",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ThirdlineARTregimenCodes",
+      "title" : "Third-line ART regimen Codes",
+      "description" : "Codes representing possible values for the Third-line ART regimen element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de157",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVclinicalstageCodes",
+      "title" : "HIV clinical stage Codes",
+      "description" : "Codes representing possible values for the HIV clinical stage element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de16",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SignsofseriousillnessCodes",
+      "title" : "Signs of serious illness Codes",
+      "description" : "Codes representing possible values for the Signs of serious illness element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de165",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonsforadherenceproblemCodes",
+      "title" : "Reason(s) for adherence problem Codes",
+      "description" : "Codes representing possible values for the Reason(s) for adherence problem element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de185",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonARTstoppedCodes",
+      "title" : "Reason ART stopped Codes",
+      "description" : "Codes representing possible values for the Reason ART stopped element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de192",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TreatmentfailureCodes",
+      "title" : "Treatment failure Codes",
+      "description" : "Codes representing possible values for the Treatment failure element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de196",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "GeneralcareactivitiesrecommendedCodes",
+      "title" : "General care activities recommended Codes",
+      "description" : "Codes representing possible values for the General care activities recommended element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de2",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforHIVcareandtreatmentvisitCodes",
+      "title" : "Reason for HIV care and treatment visit Codes",
+      "description" : "Codes representing possible values for the Reason for HIV care and treatment visit element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de214",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PreventingandtreatingcoinfectionsCodes",
+      "title" : "Preventing and treating coinfections Codes",
+      "description" : "Codes representing possible values for the Preventing and treating coinfections element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de226",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ComorbiditiesandcoinfectionssignsandsymptomsCodes",
+      "title" : "Comorbidities and coinfections signs and symptoms Codes",
+      "description" : "Codes representing possible values for the Comorbidities and coinfections signs and symptoms element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de253",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "WHOHIVclinicalstageconditionsandsymptomsCodes",
+      "title" : "WHO HIV clinical stage conditions and symptoms Codes",
+      "description" : "Codes representing possible values for the WHO HIV clinical stage conditions and symptoms element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de320",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ClinicalstageatstartofARTCodes",
+      "title" : "Clinical stage at start of ART Codes",
+      "description" : "Codes representing possible values for the Clinical stage at start of ART element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de333",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforHIVviralloadtestCodes",
+      "title" : "Reason for HIV viral load test Codes",
+      "description" : "Codes representing possible values for the Reason for HIV viral load test element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de341",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InvestigationsorderedCodes",
+      "title" : "Investigations ordered Codes",
+      "description" : "Codes representing possible values for the Investigations ordered element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de353",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisCtestresultCodes",
+      "title" : "Hepatitis C test result Codes",
+      "description" : "Codes representing possible values for the Hepatitis C test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de357",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisCdiagnosisCodes",
+      "title" : "Hepatitis C diagnosis Codes",
+      "description" : "Codes representing possible values for the Hepatitis C diagnosis element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de360",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SyphilisdiagnosisCodes",
+      "title" : "Syphilis diagnosis Codes",
+      "description" : "Codes representing possible values for the Syphilis diagnosis element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de363",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforARVdrugregimensubstitutionCodes",
+      "title" : "Reason for ARV drug regimen substitution Codes",
+      "description" : "Codes representing possible values for the Reason for ARV drug regimen substitution element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de372",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforregimenswitchCodes",
+      "title" : "Reason for regimen switch Codes",
+      "description" : "Codes representing possible values for the Reason for regimen switch element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de386",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CoinfectionstatusatARTstartCodes",
+      "title" : "Coinfection status at ART start Codes",
+      "description" : "Codes representing possible values for the Coinfection status at ART start element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de389",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PregnantandbreastfeedingstatusatARTstartCodes",
+      "title" : "Pregnant and breastfeeding status at ART start Codes",
+      "description" : "Codes representing possible values for the Pregnant and breastfeeding status at ART start element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de405",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TypeoftreatmentlimitingtoxicityorseriousdrugreactionCodes",
+      "title" : "Type of treatment-limiting toxicity or serious drug reaction Codes",
+      "description" : "Codes representing possible values for the Type of treatment-limiting toxicity or serious drug reaction element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de41",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ARTstarttypeCodes",
+      "title" : "ART start type Codes",
+      "description" : "Codes representing possible values for the ART start type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de461",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonbloodpressurereadingnotdoneCodes",
+      "title" : "Reason blood pressure reading not done Codes",
+      "description" : "Codes representing possible values for the Reason blood pressure reading not done element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de465",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CurrentmedicationsCodes",
+      "title" : "Current medications Codes",
+      "description" : "Codes representing possible values for the Current medications element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de487",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "AllergiesCodes",
+      "title" : "Allergies Codes",
+      "description" : "Codes representing possible values for the Allergies element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de495",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FamilyplanningmethodusedCodes",
+      "title" : "Family planning method used Codes",
+      "description" : "Codes representing possible values for the Family planning method used element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de519",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MedicationstatusCodes",
+      "title" : "Medication status Codes",
+      "description" : "Codes representing possible values for the Medication status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de53",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "AntiretroviralARVdrugsreceivedpriortoenrolmentCodes",
+      "title" : "Antiretroviral (ARV) drugs received prior to enrolment Codes",
+      "description" : "Codes representing possible values for the Antiretroviral (ARV) drugs received prior to enrolment element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de537",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonhepatitisBvaccinationnotprovidedCodes",
+      "title" : "Reason hepatitis B vaccination not provided Codes",
+      "description" : "Codes representing possible values for the Reason hepatitis B vaccination not provided element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de554",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonTTvaccinationnotprovidedCodes",
+      "title" : "Reason TT vaccination not provided Codes",
+      "description" : "Codes representing possible values for the Reason TT vaccination not provided element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de563",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonfluvaccinenotprovidedCodes",
+      "title" : "Reason flu vaccine not provided Codes",
+      "description" : "Codes representing possible values for the Reason flu vaccine not provided element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de576",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonSARSCoV2vaccinenotprovidedCodes",
+      "title" : "Reason SARS-CoV-2  vaccine not provided Codes",
+      "description" : "Codes representing possible values for the Reason SARS-CoV-2  vaccine not provided element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de62",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ExistingchronichealthconditionsCodes",
+      "title" : "Existing chronic health conditions Codes",
+      "description" : "Codes representing possible values for the Existing chronic health conditions element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de707",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonmalariaprophylaxisnotprovidedCodes",
+      "title" : "Reason malaria prophylaxis not provided Codes",
+      "description" : "Codes representing possible values for the Reason malaria prophylaxis not provided element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de713",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBstatusCodes",
+      "title" : "TB status Codes",
+      "description" : "Codes representing possible values for the TB status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de717",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBhistoryCodes",
+      "title" : "TB history Codes",
+      "description" : "Codes representing possible values for the TB history element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de72",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "NucleosidereversetranscriptaseinhibitorsNRTIsCodes",
+      "title" : "Nucleoside reverse transcriptase inhibitors (NRTIs) Codes",
+      "description" : "Codes representing possible values for the Nucleoside reverse transcriptase inhibitors (NRTIs) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de730",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBscreeningmethodCodes",
+      "title" : "TB screening method Codes",
+      "description" : "Codes representing possible values for the TB screening method element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de737",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SymptomsofTBCodes",
+      "title" : "Symptoms of TB Codes",
+      "description" : "Codes representing possible values for the Symptoms of TB element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de751",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBscreeningresultCodes",
+      "title" : "TB screening result Codes",
+      "description" : "Codes representing possible values for the TB screening result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de759",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBdiagnostictestCodes",
+      "title" : "TB diagnostic test Codes",
+      "description" : "Codes representing possible values for the TB diagnostic test element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de781",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBtreatmentregimenCodes",
+      "title" : "TB treatment regimen Codes",
+      "description" : "Codes representing possible values for the TB treatment regimen element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de79",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "NucleotidereversetranscriptaseinhibitorsNtRTIsCodes",
+      "title" : "Nucleotide reverse-transcriptase inhibitors (NtRTIs) Codes",
+      "description" : "Codes representing possible values for the Nucleotide reverse-transcriptase inhibitors (NtRTIs) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de799",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TBstatusatARTstartCodes",
+      "title" : "TB status at ART start Codes",
+      "description" : "Codes representing possible values for the TB status at ART start element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de81",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "NonnucleosidereversetranscriptaseinhibitorsNNRTIsCodes",
+      "title" : "Non-nucleoside reverse transcriptase inhibitors (NNRTIs) Codes",
+      "description" : "Codes representing possible values for the Non-nucleoside reverse transcriptase inhibitors (NNRTIs) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de811",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InfantTBstatusCodes",
+      "title" : "Infant TB status Codes",
+      "description" : "Codes representing possible values for the Infant TB status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de86",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ProteaseinhibitorsPIsCodes",
+      "title" : "Protease inhibitors (PIs) Codes",
+      "description" : "Codes representing possible values for the Protease inhibitors (PIs) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de91",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "IntegrasestrandtransferinhibitorsINSTIsCodes",
+      "title" : "Integrase strand transfer inhibitors (INSTIs) Codes",
+      "description" : "Codes representing possible values for the Integrase strand transfer inhibitors (INSTIs) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de94",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "CurrentARTregimenfirstsecondorthirdlineCodes",
+      "title" : "Current ART regimen (first-, second-, or third-line) Codes",
+      "description" : "Codes representing possible values for the Current ART regimen (first-, second-, or third-line) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de11",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "PlaceofdeliveryfacilityorhomeCodes",
+      "title" : "Place of delivery (facility or home) Codes",
+      "description" : "Codes representing possible values for the Place of delivery (facility or home) element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de110",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "EarlyinfantdiagnosisHIVtestresultfornucleicacidinfantdiagnosisassaysCodes",
+      "title" : "Early infant diagnosis HIV test result for nucleic acid infant diagnosis assays Codes",
+      "description" : "Codes representing possible values for the Early infant diagnosis HIV test result for nucleic acid infant diagnosis assays element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de137",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InfantHIVstatusCodes",
+      "title" : "Infant HIV status Codes",
+      "description" : "Codes representing possible values for the Infant HIV status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de142",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "FinaldiagnosisofHIVexposedinfantCodes",
+      "title" : "Final diagnosis of HIV-exposed infant Codes",
+      "description" : "Codes representing possible values for the Final diagnosis of HIV-exposed infant element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de146",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVexposedinfantreasonforunknownfinalstatusCodes",
+      "title" : "HIV-exposed infant reason for unknown final status Codes",
+      "description" : "Codes representing possible values for the HIV-exposed infant reason for unknown final status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de153",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MedicationsprescribedCodes",
+      "title" : "Medications prescribed Codes",
+      "description" : "Codes representing possible values for the Medications prescribed element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de155",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "RouteofadministrationCodes",
+      "title" : "Route of administration Codes",
+      "description" : "Codes representing possible values for the Route of administration element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de2",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ARTinitiationtimingforpregnantorpostpartumwomenCodes",
+      "title" : "ART initiation timing for pregnant or postpartum women Codes",
+      "description" : "Codes representing possible values for the ART initiation timing for pregnant or postpartum women element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de35",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "GenderofinfantCodes",
+      "title" : "Gender of infant Codes",
+      "description" : "Codes representing possible values for the Gender of infant element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de46",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MaternalHIVtestresultCodes",
+      "title" : "Maternal HIV test result Codes",
+      "description" : "Codes representing possible values for the Maternal HIV test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de50",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InfantorchildexposuretoHIVCodes",
+      "title" : "Infant or child exposure to HIV Codes",
+      "description" : "Codes representing possible values for the Infant or child exposure to HIV element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de55",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MotherisfromakeypopulationCodes",
+      "title" : "Mother is from a key population Codes",
+      "description" : "Codes representing possible values for the Mother is from a key population element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de62",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ARVadherencecounsellingCodes",
+      "title" : "ARV adherence counselling Codes",
+      "description" : "Codes representing possible values for the ARV adherence counselling element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de68",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InfantfeedingpracticeCodes",
+      "title" : "Infant-feeding practice Codes",
+      "description" : "Codes representing possible values for the Infant-feeding practice element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de77",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MaternalHIVstatusCodes",
+      "title" : "Maternal HIV status Codes",
+      "description" : "Codes representing possible values for the Maternal HIV status element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de81",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MaternalsyphilistestresultCodes",
+      "title" : "Maternal syphilis test result Codes",
+      "description" : "Codes representing possible values for the Maternal syphilis test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de92",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "InfantARVprophylaxisstartdateCodes",
+      "title" : "Infant ARV prophylaxis start date Codes",
+      "description" : "Codes representing possible values for the Infant ARV prophylaxis start date element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de98",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MaternalandchildhealthservicevisitCodes",
+      "title" : "Maternal and child health service visit Codes",
+      "description" : "Codes representing possible values for the Maternal and child health service visit element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de13",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVviralloadspecimentypeCodes",
+      "title" : "HIV viral load specimen type Codes",
+      "description" : "Codes representing possible values for the HIV viral load specimen type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de18",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisBtesttypeCodes",
+      "title" : "Hepatitis B test type Codes",
+      "description" : "Codes representing possible values for the Hepatitis B test type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de22",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonHepatitisBtestnotconductedCodes",
+      "title" : "Reason Hepatitis B test not conducted Codes",
+      "description" : "Codes representing possible values for the Reason Hepatitis B test not conducted element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de29",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisBtestresultCodes",
+      "title" : "Hepatitis B test result Codes",
+      "description" : "Codes representing possible values for the Hepatitis B test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de32",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisBdiagnosisCodes",
+      "title" : "Hepatitis B diagnosis Codes",
+      "description" : "Codes representing possible values for the Hepatitis B diagnosis element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de38",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HepatitisCtesttypeCodes",
+      "title" : "Hepatitis C test type Codes",
+      "description" : "Codes representing possible values for the Hepatitis C test type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de44",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonHepatitisCtestnotdoneCodes",
+      "title" : "Reason Hepatitis C test not done Codes",
+      "description" : "Codes representing possible values for the Reason Hepatitis C test not done element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de59",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SyphilistesttypeCodes",
+      "title" : "Syphilis test type Codes",
+      "description" : "Codes representing possible values for the Syphilis test type element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de63",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonsyphilistestnotdoneCodes",
+      "title" : "Reason syphilis test not done Codes",
+      "description" : "Codes representing possible values for the Reason syphilis test not done element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-g-de70",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SyphilistestresultCodes",
+      "title" : "Syphilis test result Codes",
+      "description" : "Codes representing possible values for the Syphilis test result element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de13",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ContactmethodCodes",
+      "title" : "Contact method Codes",
+      "description" : "Codes representing possible values for the Contact method element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de17",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SourceofinformationCodes",
+      "title" : "Source of information Codes",
+      "description" : "Codes representing possible values for the Source of information element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de2",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforfollowupCodes",
+      "title" : "Reason for follow-up Codes",
+      "description" : "Codes representing possible values for the Reason for follow-up element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de22",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "OutcomefromoutreachattemptCodes",
+      "title" : "Outcome from outreach attempt Codes",
+      "description" : "Codes representing possible values for the Outcome from outreach attempt element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de33",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVstatusofpartnerorcontactCodes",
+      "title" : "HIV status of partner or contact Codes",
+      "description" : "Codes representing possible values for the HIV status of partner or contact element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de40",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVtreatmentoutcomeCodes",
+      "title" : "HIV treatment outcome Codes",
+      "description" : "Codes representing possible values for the HIV treatment outcome element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-i-de3",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "ReasonforreferralCodes",
+      "title" : "Reason for referral Codes",
+      "description" : "Codes representing possible values for the Reason for referral element",
+      "systems" : [
+        "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"
+      ]
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-probable-route-of-transmission-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVprobablerouteoftransmissionCodes",
+      "title" : "HIV probable route of transmission Codes",
+      "description" : "Codes representing possible values for the HIV probable route of transmission element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-distribution-site-type-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVselftestdistributionsitetypeCodes",
+      "title" : "HIV self-test distribution site type Codes",
+      "description" : "Codes representing possible values for the HIV self-test distribution site type element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-kit-distribution-approach-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "HIVselftestkitdistributionapproachCodes",
+      "title" : "HIV self-test kit distribution approach Codes",
+      "description" : "Codes representing possible values for the HIV self-test kit distribution approach element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/medications-dispensed-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "MedicationsdispensedCodes",
+      "title" : "Medications dispensed Codes",
+      "description" : "Codes representing possible values for the Medications dispensed element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/source-of-gestational-age-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "SourceofgestationalageCodes",
+      "title" : "Source of gestational age Codes",
+      "description" : "Codes representing possible values for the Source of gestational age element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/timing-of-adverse-event-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TimingofadverseeventCodes",
+      "title" : "Timing of adverse event Codes",
+      "description" : "Codes representing possible values for the Timing of adverse event element"
+    },
+    {
+      "url" : "http://fhir.org/guides/itech-uw/ValueSet/type-of-case-codes",
+      "version" : "0.3.0",
+      "status" : "draft",
+      "name" : "TypeofcaseCodes",
+      "title" : "Type of case Codes",
+      "description" : "Codes representing possible values for the Type of case element"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-e-de55",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE55\">HIV.E.DE55</a></td><td>Sex worker</td><td>Mother is from a key population - Sex worker</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE56\">HIV.E.DE56</a></td><td>People who injects drugs</td><td>Mother is from a key population - People who injects drugs</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE57\">HIV.E.DE57</a></td><td>Transgender people</td><td>Mother is from a key population - Transgender people</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46E.46DE58\">HIV.E.DE58</a></td><td>People living in prisons and other closed setting</td><td>Mother is from a key population - People living in prisons and other closed setting</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de55",
+  "version" : "0.3.0",
+  "name" : "MotherisfromakeypopulationCodes",
+  "title" : "Mother is from a key population Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Mother is from a key population element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.E.DE55",
+        "display" : "Sex worker"
+      },
+      {
+        "code" : "HIV.E.DE56",
+        "display" : "People who injects drugs"
+      },
+      {
+        "code" : "HIV.E.DE57",
+        "display" : "Transgender people"
+      },
+      {
+        "code" : "HIV.E.DE58",
+        "display" : "People living in prisons and other closed setting"
+      }]
+    }]
+  }
+}

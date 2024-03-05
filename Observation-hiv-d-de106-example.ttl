@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/Observation/hiv-d-de106-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de106-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de106"^^xsd:anyURI ;
+       fhir:link <http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de106>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"hiv-d-de106-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;hiv-d-de106-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <code>http://fhir.org/guides/itech-uw/StructureDefinition/hiv-d-de106</code></p></div><p><b>status</b>: final</p><p><b>code</b>: Could not resolve binding valueset null <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (example-codes#example)</span></p><p><b>subject</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/Patient/null-patient-example\">Patient/null-patient-example</a></p><p><b>encounter</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/Encounter/null-encounter-example\">Encounter/null-encounter-example</a></p><p><b>performer</b>: <a href=\"http://fhir.org/packages/us.nlm.vsac/PractitionerRole/null-practitionerrole-example\">PractitionerRole/null-practitionerrole-example</a></p><p><b>value</b>: Asdf</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/fhir/CodeSystem/example-codes"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "example" ] ;
+       fhir:display [ fhir:v "Could not resolve binding valueset null" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.org/guides/who/anc-cds/Patient/null-patient-example> ;
+     fhir:reference [ fhir:v "Patient/null-patient-example" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.org/guides/who/anc-cds/Encounter/null-encounter-example> ;
+     fhir:reference [ fhir:v "Encounter/null-encounter-example" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.org/guides/who/anc-cds/PractitionerRole/null-practitionerrole-example> ;
+     fhir:reference [ fhir:v "PractitionerRole/null-practitionerrole-example" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "Asdf"] . # 
+
+# -------------------------------------------------------------------------------------
+

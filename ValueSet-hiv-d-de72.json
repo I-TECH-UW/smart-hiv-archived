@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hiv-d-de72",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE72\">HIV.D.DE72</a></td><td>ABC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - ABC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE73\">HIV.D.DE73</a></td><td>FTC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - FTC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE74\">HIV.D.DE74</a></td><td>3TC</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - 3TC</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE75\">HIV.D.DE75</a></td><td>AZT</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - AZT</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE76\">HIV.D.DE76</a></td><td>DDI</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - DDI</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE77\">HIV.D.DE77</a></td><td>D4T</td><td>Nucleoside reverse transcriptase inhibitors (NRTIs) - D4T</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de72",
+  "version" : "0.3.0",
+  "name" : "NucleosidereversetranscriptaseinhibitorsNRTIsCodes",
+  "title" : "Nucleoside reverse transcriptase inhibitors (NRTIs) Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-03-05T18:24:53+00:00",
+  "publisher" : "World Health Organization (WHO) ",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.who.int"
+    }]
+  }],
+  "description" : "Codes representing possible values for the Nucleoside reverse transcriptase inhibitors (NRTIs) element",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "immutable" : true,
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept" : [{
+        "code" : "HIV.D.DE72",
+        "display" : "ABC"
+      },
+      {
+        "code" : "HIV.D.DE73",
+        "display" : "FTC"
+      },
+      {
+        "code" : "HIV.D.DE74",
+        "display" : "3TC"
+      },
+      {
+        "code" : "HIV.D.DE75",
+        "display" : "AZT"
+      },
+      {
+        "code" : "HIV.D.DE76",
+        "display" : "DDI"
+      },
+      {
+        "code" : "HIV.D.DE77",
+        "display" : "D4T"
+      }]
+    }]
+  }
+}

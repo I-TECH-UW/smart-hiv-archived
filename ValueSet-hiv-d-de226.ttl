@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de226> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de226"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE226\">HIV.D.DE226</a></td><td>Oral candidiasis</td><td>Comorbidities and coinfections signs and symptoms - Oral candidiasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE227\">HIV.D.DE227</a></td><td>Vaginal candidiasis</td><td>Comorbidities and coinfections signs and symptoms - Vaginal candidiasis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE228\">HIV.D.DE228</a></td><td>Cough</td><td>Comorbidities and coinfections signs and symptoms - Cough</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE229\">HIV.D.DE229</a></td><td>Prolonged fever</td><td>Comorbidities and coinfections signs and symptoms - Prolonged fever</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE230\">HIV.D.DE230</a></td><td>Night sweats</td><td>Comorbidities and coinfections signs and symptoms - Night sweats</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE231\">HIV.D.DE231</a></td><td>Weight loss</td><td>Comorbidities and coinfections signs and symptoms - Weight loss</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE232\">HIV.D.DE232</a></td><td>Difficulty breathing</td><td>Comorbidities and coinfections signs and symptoms - Difficulty breathing</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE233\">HIV.D.DE233</a></td><td>Pneumonia</td><td>Comorbidities and coinfections signs and symptoms - Pneumonia</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE234\">HIV.D.DE234</a></td><td>Urethral discharge</td><td>Comorbidities and coinfections signs and symptoms - Urethral discharge</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE235\">HIV.D.DE235</a></td><td>Syphilis</td><td>Comorbidities and coinfections signs and symptoms - Syphilis</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE236\">HIV.D.DE236</a></td><td>Pelvic inflammatory disease</td><td>Comorbidities and coinfections signs and symptoms - Pelvic inflammatory disease</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE237\">HIV.D.DE237</a></td><td>Ulcers - skin</td><td>Comorbidities and coinfections signs and symptoms - Ulcers - skin</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE238\">HIV.D.DE238</a></td><td>Ulcers - mouth or other</td><td>Comorbidities and coinfections signs and symptoms - Ulcers - mouth or other</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE239\">HIV.D.DE239</a></td><td>Ulcers - male genital</td><td>Comorbidities and coinfections signs and symptoms - Ulcers - male genital</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE240\">HIV.D.DE240</a></td><td>Vaginal discharge</td><td>Comorbidities and coinfections signs and symptoms - Vaginal discharge</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE241\">HIV.D.DE241</a></td><td>Malaria</td><td>Comorbidities and coinfections signs and symptoms - Malaria</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE242\">HIV.D.DE242</a></td><td>Chronic obstructive pulmonary disease</td><td>Comorbidities and coinfections signs and symptoms - Chronic obstructive pulmonary disease</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE243\">HIV.D.DE243</a></td><td>Hypertension</td><td>Comorbidities and coinfections signs and symptoms - Hypertension</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE244\">HIV.D.DE244</a></td><td>Diabetes</td><td>Comorbidities and coinfections signs and symptoms - Diabetes</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE245\">HIV.D.DE245</a></td><td>Gestational diabetes</td><td>Comorbidities and coinfections signs and symptoms - Gestational diabetes</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE246\">HIV.D.DE246</a></td><td>Mental health disorders</td><td>Comorbidities and coinfections signs and symptoms - Mental health disorders</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE247\">HIV.D.DE247</a></td><td>Diarrhoea or abdominal  pain</td><td>Comorbidities and coinfections signs and symptoms - Diarrhoea or abdominal  pain</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE248\">HIV.D.DE248</a></td><td>Presumptive TB</td><td>Comorbidities and coinfections signs and symptoms - Presumptive TB</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE249\">HIV.D.DE249</a></td><td>Severe or complicated malnutrition</td><td>Comorbidities and coinfections signs and symptoms - Severe or complicated malnutrition</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE250\">HIV.D.DE250</a></td><td>Poor growth or development</td><td>Comorbidities and coinfections signs and symptoms - Poor growth or development</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE251\">HIV.D.DE251</a></td><td>Other (specify)</td><td>Comorbidities and coinfections signs and symptoms - Other (specify)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de226"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "ComorbiditiesandcoinfectionssignsandsymptomsCodes"] ; # 
+  fhir:title [ fhir:v "Comorbidities and coinfections signs and symptoms Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Comorbidities and coinfections signs and symptoms element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE226" ] ;
+         fhir:display [ fhir:v "Oral candidiasis" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE227" ] ;
+         fhir:display [ fhir:v "Vaginal candidiasis" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE228" ] ;
+         fhir:display [ fhir:v "Cough" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE229" ] ;
+         fhir:display [ fhir:v "Prolonged fever" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE230" ] ;
+         fhir:display [ fhir:v "Night sweats" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE231" ] ;
+         fhir:display [ fhir:v "Weight loss" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE232" ] ;
+         fhir:display [ fhir:v "Difficulty breathing" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE233" ] ;
+         fhir:display [ fhir:v "Pneumonia" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE234" ] ;
+         fhir:display [ fhir:v "Urethral discharge" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE235" ] ;
+         fhir:display [ fhir:v "Syphilis" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE236" ] ;
+         fhir:display [ fhir:v "Pelvic inflammatory disease" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE237" ] ;
+         fhir:display [ fhir:v "Ulcers - skin" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE238" ] ;
+         fhir:display [ fhir:v "Ulcers - mouth or other" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE239" ] ;
+         fhir:display [ fhir:v "Ulcers - male genital" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE240" ] ;
+         fhir:display [ fhir:v "Vaginal discharge" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE241" ] ;
+         fhir:display [ fhir:v "Malaria" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE242" ] ;
+         fhir:display [ fhir:v "Chronic obstructive pulmonary disease" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE243" ] ;
+         fhir:display [ fhir:v "Hypertension" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE244" ] ;
+         fhir:display [ fhir:v "Diabetes" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE245" ] ;
+         fhir:display [ fhir:v "Gestational diabetes" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE246" ] ;
+         fhir:display [ fhir:v "Mental health disorders" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE247" ] ;
+         fhir:display [ fhir:v "Diarrhoea or abdominal  pain" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE248" ] ;
+         fhir:display [ fhir:v "Presumptive TB" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE249" ] ;
+         fhir:display [ fhir:v "Severe or complicated malnutrition" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE250" ] ;
+         fhir:display [ fhir:v "Poor growth or development" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE251" ] ;
+         fhir:display [ fhir:v "Other (specify)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

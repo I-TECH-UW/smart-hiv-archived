@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="hiv-b-de65-example"/>
+  <meta>
+    <profile value="http://fhir.org/guides/itech-uw/StructureDefinition/hiv-b-de65"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="hiv-b-de65-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;hiv-b-de65-example&quot; </p><p style="margin-bottom: 0px">Profile: <code>http://fhir.org/guides/itech-uw/StructureDefinition/hiv-b-de65</code></p></div></div>
+  </text>
+</Location>

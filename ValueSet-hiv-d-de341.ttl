@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/anc-cds/ValueSet/hiv-d-de341> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hiv-d-de341"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-concept-codes.html\"><code>http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE341\">HIV.D.DE341</a></td><td>Haemoglobin (Hb): number in g/dL</td><td>Investigations ordered - Haemoglobin (Hb): number in g/dL</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE342\">HIV.D.DE342</a></td><td>Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result</td><td>Investigations ordered - Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE343\">HIV.D.DE343</a></td><td>Chest X-ray (CXR): Free text</td><td>Investigations ordered - Chest X-ray (CXR): Free text</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE344\">HIV.D.DE344</a></td><td>Sputum or culture (general TB): see “TB status” Xpert: see “TB status”</td><td>Investigations ordered - Sputum or culture (general TB): see “TB status” Xpert: see “TB status”</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE345\">HIV.D.DE345</a></td><td>HBsAg test (HBV)</td><td>Investigations ordered - HBsAg test (HBV)</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE346\">HIV.D.DE346</a></td><td>HIV viral load test ordered</td><td>Investigations ordered - HIV viral load test ordered</td></tr><tr><td><a href=\"CodeSystem-concept-codes.html#concept-codes-HIV.46D.46DE347\">HIV.D.DE347</a></td><td>CD4 count ordered</td><td>Investigations ordered - CD4 count ordered</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de341"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "InvestigationsorderedCodes"] ; # 
+  fhir:title [ fhir:v "Investigations ordered Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-05T18:24:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO) "] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Investigations ordered element"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HIV.D.DE341" ] ;
+         fhir:display [ fhir:v "Haemoglobin (Hb): number in g/dL" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE342" ] ;
+         fhir:display [ fhir:v "Syphilis rapid plasma reagin (RPR/TPHA): see Syphilis test result" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE343" ] ;
+         fhir:display [ fhir:v "Chest X-ray (CXR): Free text" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE344" ] ;
+         fhir:display [ fhir:v "Sputum or culture (general TB): see “TB status” Xpert: see “TB status”" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE345" ] ;
+         fhir:display [ fhir:v "HBsAg test (HBV)" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE346" ] ;
+         fhir:display [ fhir:v "HIV viral load test ordered" ]
+       ] [
+         fhir:code [ fhir:v "HIV.D.DE347" ] ;
+         fhir:display [ fhir:v "CD4 count ordered" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
