@@ -3,7 +3,7 @@ Note that the terminologies included in this implementation guide will need to b
 The following terminology artifacts are included for this implementation guide:
 
 ### CodeSystems
-{% include list-simple-codesystems.xhtml %}
+<!-- {% include list-simple-codesystems.xhtml %} -->
 
 ### ValueSets
-{% include list-simple-valuesets.xhtml %}
+<!-- {% include list-simple-valuesets.xhtml %} -->
