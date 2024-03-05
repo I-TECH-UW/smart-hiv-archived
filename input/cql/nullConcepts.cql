@@ -163,7 +163,7 @@ valueset "Facility or service type reporting Codes": 'http://fhir.org/guides/ite
 valueset "HIV self-test kit distribution approach Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-kit-distribution-approach-codes'
 valueset "HIV self-test distribution site type Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-self-test-distribution-site-type-codes'
 valueset "HIV probable route of transmission Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-probable-route-of-transmission-codes'
-valueset "Heterosexual route of transmission risk factors** Codes": 'http://fhir.org/guides/itech-uw/ValueSet/heterosexual-route-of-transmission-risk-factors**-codes'
+valueset "Heterosexual route of transmission risk factors Codes": 'http://fhir.org/guides/itech-uw/ValueSet/heterosexual-route-of-transmission-risk-factors-codes'
 valueset "Type of case Codes": 'http://fhir.org/guides/itech-uw/ValueSet/type-of-case-codes'
 valueset "Timing of adverse event Codes": 'http://fhir.org/guides/itech-uw/ValueSet/timing-of-adverse-event-codes'
 valueset "HIV burden of the setting Codes": 'http://fhir.org/guides/itech-uw/ValueSet/demo-code-b'
