@@ -42,7 +42,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
          token: ${{ secrets.GITHUB_TOKEN }}
-         branch: gh-pages-cqf
+         branch: gh-pages
          folder: ./output
          clean-exclude: branches
   
