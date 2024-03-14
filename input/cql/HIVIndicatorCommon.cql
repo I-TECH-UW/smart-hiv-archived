@@ -155,6 +155,8 @@ define "By Administrative Gender Stratifier":
     case 
         when Patient.gender = 'male' then "Males"
         when Patient.gender = 'female' then "Females"
+        when Patient.gender = 'transgender female' then "Trans Females"
+        when Patient.gender = 'transgender male' then "Trans Males"
         else "Other"
     end
 
