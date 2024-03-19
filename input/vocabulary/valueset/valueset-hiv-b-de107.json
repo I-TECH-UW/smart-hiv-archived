@@ -2,24 +2,33 @@
   "resourceType": "ValueSet",
   "id": "hiv-b-de107",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de107",
-  "name": "HIVtestresultCodes",
-  "title": "HIV test result Codes",
+  "name": "TestresultofHIVassay1repeatedCodes",
+  "title": "Test result of HIV assay 1 repeated Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the HIV test result element",
+  "description": "Codes representing possible values for the Test result of HIV assay 1 repeated element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.B.DE107",
-        "display": "HIV-positive"
+        "display": "Reactive"
       }, {
         "code": "HIV.B.DE108",
-        "display": "HIV-negative"
+        "display": "Non-reactive"
       }, {
         "code": "HIV.B.DE109",
-        "display": "HIV-inconclusive"
+        "display": "Invalid"
+      }, {
+        "code": "HIV.E.DE213",
+        "display": "Reactive"
+      }, {
+        "code": "HIV.E.DE214",
+        "display": "Non-reactive"
+      }, {
+        "code": "HIV.E.DE215",
+        "display": "Invalid"
       } ]
     } ]
   }

@@ -2,36 +2,21 @@
   "resourceType": "ValueSet",
   "id": "hiv-c-de32",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de32",
-  "name": "SignsofsubstantialriskofHIVinfectionCodes",
-  "title": "Signs of substantial risk of HIV infection Codes",
+  "name": "PEPhistoryCodes",
+  "title": "PEP history Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Signs of substantial risk of HIV infection element",
+  "description": "Codes representing possible values for the PEP history element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.C.DE32",
-        "display": "No condom use during sex with more than one partner in the past 6 months"
+        "display": "First-time user"
       }, {
         "code": "HIV.C.DE33",
-        "display": "Sexually transmitted infection (STI) in the past 6 months"
-      }, {
-        "code": "HIV.C.DE34",
-        "display": "A sexual partner in the past 6 months had one or more HIV risk factors"
-      }, {
-        "code": "HIV.C.DE35",
-        "display": "PrEP requested by client"
-      }, {
-        "code": "HIV.E.DE84",
-        "display": "No condom use during sex with more than one partner in the past 6 months"
-      }, {
-        "code": "HIV.E.DE85",
-        "display": "STI in the past 6 months"
-      }, {
-        "code": "HIV.E.DE86",
-        "display": "A sexual partner in the past 6 months had one or more HIV risk factors"
+        "display": "Repeat user"
       } ]
     } ]
   }
