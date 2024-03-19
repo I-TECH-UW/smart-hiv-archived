@@ -2,54 +2,24 @@
   "resourceType": "ValueSet",
   "id": "hiv-b-de137",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de137",
-  "name": "PreventionservicesofferedandreferralsCodes",
-  "title": "Prevention services offered and referrals Codes",
+  "name": "PartnerHIVstatusconfirmedCodes",
+  "title": "Partner HIV status (confirmed) Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Prevention services offered and referrals element",
+  "description": "Codes representing possible values for the Partner HIV status (confirmed) element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.B.DE137",
-        "display": "Offer male and female condoms and condom-compatible lubricants"
+        "display": "HIV-positive"
       }, {
         "code": "HIV.B.DE138",
-        "display": "Offer pre-exposure prophylaxis (PrEP) for people at substantial ongoing risk of HIV infection"
+        "display": "HIV-negative"
       }, {
         "code": "HIV.B.DE139",
-        "display": "Offer post-exposure prophylaxis (PEP) following suspected exposure"
-      }, {
-        "code": "HIV.B.DE140",
-        "display": "Voluntary medical male circumcision (VMMC)"
-      }, {
-        "code": "HIV.B.DE141",
-        "display": "Harm reduction for people who inject drugs"
-      }, {
-        "code": "HIV.B.DE142",
-        "display": "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations"
-      }, {
-        "code": "HIV.C.DE118",
-        "display": "Male and female condoms and condom-compatible lubricants offered"
-      }, {
-        "code": "HIV.C.DE119",
-        "display": "Voluntary medical male circumcision (VMMC) referral"
-      }, {
-        "code": "HIV.C.DE120",
-        "display": "Harm reduction for people who inject drugs"
-      }, {
-        "code": "HIV.C.DE121",
-        "display": "Behavioural interventions to support risk reduction"
-      }, {
-        "code": "HIV.D.DE147",
-        "display": "Offer male and female condoms and condom-compatible lubricants"
-      }, {
-        "code": "HIV.D.DE148",
-        "display": "Harm reduction for people who inject drugs"
-      }, {
-        "code": "HIV.D.DE149",
-        "display": "Behavioural interventions to support risk reduction"
+        "display": "Unknown"
       } ]
     } ]
   }
