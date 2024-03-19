@@ -2,26 +2,21 @@
   "resourceType": "ValueSet",
   "id": "hiv-d-de707",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de707",
-  "name": "ReasonmalariaprophylaxisnotprovidedCodes",
-  "title": "Reason malaria prophylaxis not provided Codes",
+  "name": "CervicalcancerscreeningoutcomeCodes",
+  "title": "Cervical cancer screening outcome Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Reason malaria prophylaxis not provided element",
+  "description": "Codes representing possible values for the Cervical cancer screening outcome element",
   "immutable": true,
   "compose": {
     "include": [ {
-      "system": "http://snomed.info/sct",
-      "concept": [ {
-        "code": "3457005"
-      } ]
-    }, {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
-        "code": "QB14",
-        "display": "Stock out"
+        "code": "HIV.D.DE707",
+        "display": "Positive for cervical precancer lesions"
       }, {
-        "code": "not classifiable",
-        "display": "Other reason not prescribed (specify)"
+        "code": "HIV.D.DE708",
+        "display": "Negative for cervical precancer lesions"
       } ]
     } ]
   }

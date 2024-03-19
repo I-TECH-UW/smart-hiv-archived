@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "id": "hiv-a-de19",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de19",
-  "name": "GenderCodes",
-  "title": "Gender Codes",
+  "name": "Gender*Codes",
+  "title": "Gender* Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Gender element",
+  "description": "Codes representing possible values for the Gender* element",
   "immutable": true,
   "compose": {
     "include": [ {
@@ -15,7 +15,7 @@
         "code": "HIV.A.DE19",
         "display": "Female"
       }, {
-        "code": "male",
+        "code": "HIV.A.DE20",
         "display": "Male"
       }, {
         "code": "HIV.A.DE21",
@@ -24,7 +24,7 @@
         "code": "HIV.A.DE22",
         "display": "Transgender female"
       }, {
-        "code": "other",
+        "code": "HIV.A.DE23",
         "display": "Other"
       } ]
     } ]

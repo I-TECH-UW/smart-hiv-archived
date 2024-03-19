@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de168",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de168",
+  "name": "InfantARVprophylaxisstartdateCodes",
+  "title": "Infant ARV prophylaxis start date Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Infant ARV prophylaxis start date element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE168",
+        "display": "HIV test type"
+      }, {
+        "code": "HIV.E.DE169",
+        "display": "Rapid diagnostic test for HIV"
+      }, {
+        "code": "HIV.E.DE170",
+        "display": "Enzyme immunoassay for HIV"
+      }, {
+        "code": "HIV.E.DE171",
+        "display": "Nucleic acid test for HIV"
+      }, {
+        "code": "HIV.E.DE172",
+        "display": "Dual HIV/syphilis rapid diagnostic test"
+      } ]
+    } ]
+  }
+}

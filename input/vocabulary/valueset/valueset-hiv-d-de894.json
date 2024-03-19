@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-d-de894",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-d-de894",
+  "name": "StagingofliverdiseaseCodes",
+  "title": "Staging of liver disease Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Staging of liver disease element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.D.DE894",
+        "display": "F0-4, fibrosis staging"
+      }, {
+        "code": "HIV.D.DE895",
+        "display": "F4 or cirrhosis, presence of cirrhosis"
+      } ]
+    } ]
+  }
+}
