@@ -2,27 +2,24 @@
   "resourceType": "ValueSet",
   "id": "hiv-e-de68",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de68",
-  "name": "InfantfeedingpracticeCodes",
-  "title": "Infant-feeding practice Codes",
+  "name": "PlaceofdeliveryCodes",
+  "title": "Place of delivery Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Infant-feeding practice element",
+  "description": "Codes representing possible values for the Place of delivery element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.E.DE68",
-        "display": "Exclusively breastfeeding"
+        "display": "Health facility"
       }, {
         "code": "HIV.E.DE69",
-        "display": "Replacement feeding"
+        "display": "Home"
       }, {
         "code": "HIV.E.DE70",
-        "display": "Mixed feeding"
-      }, {
-        "code": "HIV.E.DE71",
-        "display": "Complementary feeding"
+        "display": "Other"
       } ]
     } ]
   }

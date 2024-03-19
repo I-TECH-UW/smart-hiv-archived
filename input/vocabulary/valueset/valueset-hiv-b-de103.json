@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "id": "hiv-b-de103",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de103",
-  "name": "TestresultofHIVassay1repeatedCodes",
-  "title": "Test result of HIV assay 1 repeated Codes",
+  "name": "TestresultofHIVassay3Codes",
+  "title": "Test result of HIV assay 3 Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Test result of HIV assay 1 repeated element",
+  "description": "Codes representing possible values for the Test result of HIV assay 3 element",
   "immutable": true,
   "compose": {
     "include": [ {
@@ -18,11 +18,17 @@
         "code": "HIV.B.DE104",
         "display": "Non-reactive"
       }, {
-        "code": "HIV.E.DE129",
+        "code": "HIV.B.DE105",
+        "display": "Invalid"
+      }, {
+        "code": "HIV.E.DE209",
         "display": "Reactive"
       }, {
-        "code": "HIV.E.DE130",
+        "code": "HIV.E.DE210",
         "display": "Non-reactive"
+      }, {
+        "code": "HIV.E.DE211",
+        "display": "Invalid"
       } ]
     } ]
   }

@@ -2,24 +2,21 @@
   "resourceType": "ValueSet",
   "id": "hiv-e-de137",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de137",
-  "name": "InfantHIVstatusCodes",
-  "title": "Infant HIV status Codes",
+  "name": "TypeofironsupplementdosageprovidedCodes",
+  "title": "Type of iron supplement dosage provided Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Infant HIV status element",
+  "description": "Codes representing possible values for the Type of iron supplement dosage provided element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.E.DE137",
-        "display": "HIV-positive"
+        "display": "Daily"
       }, {
         "code": "HIV.E.DE138",
-        "display": "HIV-negative"
-      }, {
-        "code": "HIV.E.DE139",
-        "display": "HIV-inconclusive"
+        "display": "Weekly"
       } ]
     } ]
   }

@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de105",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de105",
+  "name": "MaternalHIVtestresultCodes",
+  "title": "Maternal HIV test result Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Maternal HIV test result element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE105",
+        "display": "HIV-positive"
+      }, {
+        "code": "HIV.E.DE106",
+        "display": "HIV-negative"
+      }, {
+        "code": "HIV.E.DE107",
+        "display": "HIV-inconclusive"
+      } ]
+    } ]
+  }
+}

@@ -2,30 +2,27 @@
   "resourceType": "ValueSet",
   "id": "hiv-c-de102",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de102",
-  "name": "ReasonforPrEPregimensubstitutionCodes",
-  "title": "Reason for PrEP regimen substitution Codes",
+  "name": "AlternativethirdPEPdrugCodes",
+  "title": "Alternative third PEP drug Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Reason for PrEP regimen substitution element",
+  "description": "Codes representing possible values for the Alternative third PEP drug element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.C.DE102",
-        "display": "Treatment-limiting toxicity"
+        "display": "ATV/r"
       }, {
         "code": "HIV.C.DE103",
-        "display": "Pregnancy"
+        "display": "DRV/r"
       }, {
         "code": "HIV.C.DE104",
-        "display": "New drug available"
+        "display": "LPV/r"
       }, {
         "code": "HIV.C.DE105",
-        "display": "Drug out of stock"
-      }, {
-        "code": "HIV.C.DE106",
-        "display": "Other reason for regimen substitution (specify)"
+        "display": "RAL"
       } ]
     } ]
   }
