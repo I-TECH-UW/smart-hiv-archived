@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "id": "hiv-b-de2",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de2",
-  "name": "ReasonforHIVtestingservicesvisitCodes",
-  "title": "Reason for HIV testing services visit Codes",
+  "name": "ReasonforvisitCodes",
+  "title": "Reason for visit Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Reason for HIV testing services visit element",
+  "description": "Codes representing possible values for the Reason for visit element",
   "immutable": true,
   "compose": {
     "include": [ {
@@ -17,6 +17,27 @@
       }, {
         "code": "HIV.B.DE3",
         "display": "Retesting for HIV"
+      }, {
+        "code": "HIV.B.DE4",
+        "display": "HIV testing services visit"
+      }, {
+        "code": "HIV.D.DE2",
+        "display": "First clinical visit"
+      }, {
+        "code": "HIV.D.DE3",
+        "display": "Clinical visit"
+      }, {
+        "code": "HIV.D.DE4",
+        "display": "ART initiation"
+      }, {
+        "code": "HIV.D.DE5",
+        "display": "ART drug pick up"
+      }, {
+        "code": "HIV.D.DE6",
+        "display": "Issues and concerns"
+      }, {
+        "code": "HIV.D.DE7",
+        "display": "Post-treatment follow-up visit for cervical precancer lesions or invasive cervical cancer"
       } ]
     } ]
   }

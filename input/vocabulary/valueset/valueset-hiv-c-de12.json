@@ -16,7 +16,10 @@
         "display": "Daily oral PrEP"
       }, {
         "code": "HIV.C.DE13",
-        "display": "Event-driven PrEP (ED-PrEP)"
+        "display": "Event-driven PrEP (2+1+1)"
+      }, {
+        "code": "HIV.C.DE14",
+        "display": "Other PrEP dosing type"
       } ]
     } ]
   }

@@ -2,30 +2,24 @@
   "resourceType": "ValueSet",
   "id": "hiv-e-de92",
   "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de92",
-  "name": "InfantARVprophylaxisstartdateCodes",
-  "title": "Infant ARV prophylaxis start date Codes",
+  "name": "GenderofinfantCodes",
+  "title": "Gender of infant Codes",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Infant ARV prophylaxis start date element",
+  "description": "Codes representing possible values for the Gender of infant element",
   "immutable": true,
   "compose": {
     "include": [ {
       "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
       "concept": [ {
         "code": "HIV.E.DE92",
-        "display": "HIV test type"
+        "display": "Female"
       }, {
         "code": "HIV.E.DE93",
-        "display": "Rapid diagnostic test for HIV"
+        "display": "Male"
       }, {
         "code": "HIV.E.DE94",
-        "display": "Enzyme immunoassay for HIV"
-      }, {
-        "code": "HIV.E.DE95",
-        "display": "Nucleic acid test for HIV"
-      }, {
-        "code": "HIV.E.DE96",
-        "display": "Dual HIV/syphilis rapid diagnostic test"
+        "display": "Other"
       } ]
     } ]
   }
