@@ -18,66 +18,15 @@
 
  context Patient
 
-HIV.A.DE3	Visit date
-HIV.B.DE100	Non-reactive
-HIV.B.DE101	Invalid
-HIV.B.DE102	Test result of HIV assay 3
-HIV.B.DE103	Reactive
-HIV.B.DE104	Non-reactive
-HIV.B.DE105	Invalid
-HIV.B.DE106	Test result of HIV assay 1 repeated
-HIV.B.DE107	Reactive
-HIV.B.DE108	Non-reactive
-HIV.B.DE109	Invalid
-HIV.B.DE111	HIV test result
-HIV.B.DE112	HIV-positive
-HIV.B.DE113	HIV-negative
-HIV.B.DE114	HIV-inconclusive
-HIV.B.DE81	HIV test type
-HIV.B.DE82	Rapid diagnostic test for HIV
-HIV.B.DE83	Enzyme immunoassay for HIV
-HIV.B.DE84	Nucleic acid test for HIV
-HIV.B.DE85	Dual HIV/syphilis rapid diagnostic test
-HIV.B.DE86	HIV self-test
-HIV.B.DE88	Assay number in testing strategy
-HIV.B.DE89	Assay 0
-HIV.B.DE90	Assay 1
-HIV.B.DE91	Assay 2
-HIV.B.DE92	Assay 3
-HIV.B.DE93	Assay 1 repeated
-HIV.B.DE94	Test result of HIV assay 1
-HIV.B.DE95	Reactive
-HIV.B.DE96	Non-reactive
-HIV.B.DE97	Invalid
-HIV.B.DE98	Test result of HIV assay 2
-HIV.B.DE99	Reactive
-HIV.E.DE168	HIV test type
-HIV.E.DE169	Rapid diagnostic test for HIV
-HIV.E.DE170	Enzyme immunoassay for HIV
-HIV.E.DE171	Nucleic acid test for HIV
-HIV.E.DE172	Dual HIV/syphilis rapid diagnostic test
-HIV.E.DE194	Assay number in testing strategy
-HIV.E.DE195	Assay 0
-HIV.E.DE196	Assay 1
-HIV.E.DE197	Assay 2
-HIV.E.DE198	Assay 3
-HIV.E.DE199	Assay 1 repeated
-HIV.E.DE200	Test result of HIV assay 1
-HIV.E.DE201	Reactive
-HIV.E.DE202	Non-reactive
-HIV.E.DE203	Invalid
-HIV.E.DE204	Test result of HIV assay 2
-HIV.E.DE205	Reactive
-HIV.E.DE206	Non-reactive
-HIV.E.DE207	Invalid
-HIV.E.DE208	Test result of HIV assay 3
-HIV.E.DE209	Reactive
-HIV.E.DE210	Non-reactive
-HIV.E.DE211	Invalid
-HIV.E.DE212	Test result of HIV assay 1 repeated
-HIV.E.DE213	Reactive
-HIV.E.DE214	Non-reactive
-HIV.E.DE215	Invalid
+ code "Reactive": 'HIV.B.DE103' from "Custom_Codes" display 'Reactive'
+ code "Non-reactive": 'HIV.B.DE104' from "Custom_Codes" display 'Non-reactive'
+ code "Rapid diagnostic test for HIV": 'HIV.B.DE82' from "Custom_Codes" display 'Rapid diagnostic test for HIV'
+ code "Enzyme immunoassay for HIV": 'HIV.B.DE83' from "Custom_Codes" display 'Enzyme immunoassay for HIV'
+ code "Assay 1": 'HIV.B.DE90' from "Custom_Codes" display 'Assay 1'
+ code "Assay 2": 'HIV.B.DE91' from "Custom_Codes" display 'Assay 2'
+ code "Assay 3": 'HIV.B.DE92' from "Custom_Codes" display 'Assay 3'
+ code "Assay 1 repeated": 'HIV.B.DE93' from "Custom_Codes" display 'Assay 1 repeated'
+ 
 
 define "Age_greater_than_18_months":
   AgeInMonthsAt(Today()) >= 18
