@@ -2,7 +2,9 @@ library HIVIndicatorCommon
 
 using FHIR version '4.0.1'
 
-codesystem "SNOMEDCT": 'http://snomed.info/sct'
+
+codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observation-value'
+codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
@@ -12,98 +14,50 @@ parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @202
 
 context patient
 
-/* 
- * SNOMED codes
- * 449344001 - sex worker
- * 472986005 - MSM
- * 407375002 - Trans
- * 226034001 - PWID
- * 105568001 - Prisoner
- * 713742005 - positive
- * 416234007 - HAART
- * 715035002 - does take medication
- * 165816005 - HIV positive
- * 107724000 - Paitent Transfer
- */
+code "Sex Worker": 'HIV.B.DE51' from "Custom_Codes" display 'sex worker'
+code "Men who have sex with men": 'HIV.B.DE52' from "Custom_Codes" display 'MSM'
+code "Trans and gender-diverse people": 'HIV.B.DE53' from "Custom_Codes" display 'Trans'
+code "People who inject drugs": 'HIV.B.DE54' from "Custom_Codes" display 'PWID'
+code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Custom_Codes" display 'Prisoner'
 
-codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observation-value'
+code "HIV-positive": 'HIV.B.DE116' from "Custom_Codes" display 'HIV Positive'
+code "On ART": 'HIV.D.DE38' from "Custom_Codes" display 'On ART'
 
-code "Sex Worker": '472986005' from "SNOMEDCT" display 'sex worker'
-code "MSM": '472986005' from "SNOMEDCT" display 'MSM'
-code "Trans": '407375002' from "SNOMEDCT" display 'Trans'
-code "PWID": '226034001' from "SNOMEDCT" display 'PWID'
-code "Prisoner": '105568001' from "SNOMEDCT" display 'Prisoner'
-
-code "HIV Positive": '165816005' from "SNOMEDCT" display 'HIV Positive'
-code "Antiretroviral": '713540004' from "SNOMEDCT" display 'Substance with antiretroviral mechanism of action (substance)'
-
-code "HAART": '416234007' from "SNOMEDCT" display 'HAART'
-code "does take medication": '715035002' from "SNOMEDCT" display 'does take medication'
-
-code "Patient Transfer": '107724000' from "SNOMEDCT" display 'Paitent Transfer'
-code "Transfer Out": 'transfer-out' from "ObservationValue"
-
-/* 
-* DAK has codes for HAART misspecified 
-* ICD-10 Z92.2	Other prophylactic chemotherapy		
-* LOINC "54825-5	"	On scheduled pain medication regimen in last 7 days
-*
-* Should discuss 
-*/
-
+code "Lost to follow-up": 'HIV.H.DE42' from "Custom_Codes" display 'Lost to follow-up'
+code "Transferred out": 'HIV.H.DE43' from "Custom_Codes" display 'Transferred out'
+code "Death (documented)": 'HIV.H.DE44' from "Custom_Codes" display 'Death (documented)'
+code "Refused (stopped) treatment": 'HIV.H.DE45' from "Custom_Codes" display 'Refused (stopped) treatment'
 
 codesystem "Administrative Gender Codes": 'http://hl7.org/fhir/administrative-gender'
 code "Males" : 'male' from "Administrative Gender Codes" display 'Males'
 code "Females" : 'female' from "Administrative Gender Codes" display 'Females'
 code "Other" : 'other' from "Administrative Gender Codes" display 'Other/NA'
+/* EXPANDED */
+code "Trans Males" : 'transgender male' from "Administrative Gender Codes" display 'Males'
+code "Trans Females" : 'transgender female' from "Administrative Gender Codes" display 'Females'
 
+codesystem "Condition_Category": 'http://hl7.org/fhir/ValueSet/condition-category'
+code "encounter-diagnosis" : 'encounter-diagnosis' from "Condition_Category" display 'Encounter Diagnosis'
 
 /*
  * HIV Positive during the measurement period
  */
+
 define "HIV Positive during measurement period":
-  [Observation] O
-    where O.status in { 'final', 'amended', 'corrected' }
-    and O.category in { 'laboratory' }
-    and O.code ~ 'HIV Positive'
-    and O.effective during "Measurement Period"
+  [Condition] C
+    where C.clinicalStatus in { 'active' }
+    and C.category ~ 'encounter-diagnosis'
+    and C.code ~ 'HIV-positive'
+    and C.onsetDateTime during "Measurement Period"
 
-
-/*
-* Kenya EMR defined as HIV positive condition
-* Will need to discuss if produce flags through conditions for concepts to use in indicator calculation such as HIV positive and On ART
-* However, we have moved forward with a more prescriptive approach 
-* Inevitably our approach requires that certain data elements be available
-*/
-
-/*
- * HIV Treatment during the measurement period
- * uses dosage and dispensation amount to estimate last day of medication
- * medication should be dispensed before end of measurement period
- * medication should last until after 28 days after the end of the measurement period
- * This takes into account lost to follow up
- */
 
 define "HIV Treatment during the measurement period":
-   [MedicationDispense] MD
-    where MD.status in { 'final', 'amended', 'corrected' }
-    and MD.medication ~ 'Antiretroviral'
-    and MD.whenHandedOver before end of "Measurement Period"
-    and (MD.whenHandedOver + MD.dosageInstruction[0].timing.repeat.duration.value * MedicationDispense.quantity.value) after (measurementPeriod.end - 28 days)
-
-/*
-* Immunization defines HAART as
-*  exists([MedicationAdministration] A where ExtractMedicationCode(A.medication) in IMMZc."ARV Drugs" and A.status = 'in-progress')
-* I believe this is the incorrect resource unless they mean to say that medication is given during a medical encounter
-* would like to discuss 
-*/ 
-
-/** 
- * Patient Deceased During Measurement Period
- * Immunization defines this as true when is a boolean. This may have the effect of deleting a person from indicators in all calculations
- * Should intend to use when patient.deceased FHIR boolean was updated to TRUE if no other date is available
- * Kenya EMR example does not account for when deceased is just a boolean
- */
+   [MedicationStatement] MS
+    where MS.status in { 'recorded' }
+    and MS.reason ~ 'On ART'
+    and MS.effectivePeriod starts before end of "Measurement Period"
+    and (MS.effectivePeriod ends after start of "Measurement Period"
+    or MS.effectivePeriod end ~ null)
 
 define "Patient Deceased During Measurement Period":
   case 
@@ -112,11 +66,22 @@ define "Patient Deceased During Measurement Period":
     else false
   end
 
-define "Patient Transferred Out During Measurement Period":
-[Observation] O
-    where O.status in { 'final', 'amended', 'corrected' }
-    and O.valueCodeableConcept ~ 'Transfer Out'
-    and O.max(effective) before end of "Measurement Period"
+/* End of care because of transferring out, death, lost to follow up, or stopped treatment*/
+
+define "Stopped ART at Facility during the measurement period":
+    [EpisodeOfCare] EOS
+    where EOS.reason.value ~ 'On ART'
+    and (exists ({
+      EOS.statusHistory.status in { 'finished' }
+      and EOS.statusHistory.period ends after start of "Measurement Period"
+      and EOS.statusHistory.period ends before end of "Measurement Period"
+    })
+    OR exists ({
+      EOS.status in { 'finished' }
+      and EOS.period ends after start of "Measurement Period"
+      and EOS.period ends before end of "Measurement Period"
+    })
+    )
 
 
 /*
@@ -149,6 +114,7 @@ define "By Geographic Region Stratifier":
 
 /*
  * By Administrative Gender of Patient Stratifier
+ * Need to expand codes
  */
 
 define "By Administrative Gender Stratifier":
@@ -212,3 +178,95 @@ define "By Administrative Gender Stratifier":
     if PWID then 'PWID' else null,
     if Prisoner then 'Prisoner' else null
   }
+
+
+
+/* codesystem "SNOMEDCT": 'http://snomed.info/sct'
+ * SNOMED codes
+ * 449344001 - sex worker
+ * 472986005 - MSM
+ * 407375002 - Trans
+ * 226034001 - PWID
+ * 105568001 - Prisoner
+ * 713742005 - positive
+ * 416234007 - HAART
+ * 715035002 - does take medication
+ * 165816005 - HIV positive
+ * 107724000 - Paitent Transfer
+ */
+
+
+/* 
+*code "Sex Worker": '472986005' from "SNOMEDCT" display 'sex worker'
+*code "MSM": '472986005' from "SNOMEDCT" display 'MSM'
+*code "Trans": '407375002' from "SNOMEDCT" display 'Trans'
+*code "PWID": '226034001' from "SNOMEDCT" display 'PWID'
+*code "Prisoner": '105568001' from "SNOMEDCT" display 'Prisoner'
+*
+*code "HIV Positive": '165816005' from "SNOMEDCT" display 'HIV Positive'
+*code "Antiretroviral": '713540004' from "SNOMEDCT" display 'Substance with antiretroviral mechanism of action (substance)'
+*
+*code "HAART": '416234007' from "SNOMEDCT" display 'HAART'
+*code "does take medication": '715035002' from "SNOMEDCT" display 'does take medication'
+*
+*code "Patient Transfer": '107724000' from "SNOMEDCT" display 'Paitent Transfer'
+*code "Transfer Out": 'transfer-out' from "ObservationValue"
+ */
+
+
+
+
+
+/* 
+* DAK has codes for HAART misspecified 
+* ICD-10 Z92.2	Other prophylactic chemotherapy		
+* LOINC "54825-5	"	On scheduled pain medication regimen in last 7 days
+*
+* Should discuss 
+*/
+
+
+
+
+
+
+
+/*
+* Kenya EMR defined as HIV positive condition
+* Will need to discuss if produce flags through conditions for concepts to use in indicator calculation such as HIV positive and On ART
+* However, we have moved forward with a more prescriptive approach 
+* Inevitably our approach requires that certain data elements be available
+*/
+
+/*
+ * HIV Treatment during the measurement period
+ * uses dosage and dispensation amount to estimate last day of medication
+ * medication should be dispensed before end of measurement period
+ * medication should last until after 28 days after the end of the measurement period
+ * This takes into account lost to follow up
+ */
+
+/*
+*define "HIV Treatment during the measurement period":
+*   [MedicationDispense] MD
+*    where MD.status in { 'final', 'amended', 'corrected' }
+*    and MD.medication ~ 'Antiretroviral'
+*    and MD.whenHandedOver before end of "Measurement Period"
+*    and (MD.whenHandedOver + MD.dosageInstruction[0].timing.repeat.duration.value * MedicationDispense.quantity.value) after (measurementPeriod.end - 28 days)
+*/ 
+
+/*
+* Immunization defines HAART as
+*  exists([MedicationAdministration] A where ExtractMedicationCode(A.medication) in IMMZc."ARV Drugs" and A.status = 'in-progress')
+* I believe this is the incorrect resource unless they mean to say that medication is given during a medical encounter
+* would like to discuss 
+*/ 
+
+/** 
+ * Patient Deceased During Measurement Period
+ * Immunization defines this as true when is a boolean. This may have the effect of deleting a person from indicators in all calculations
+ * Should intend to use when patient.deceased FHIR boolean was updated to TRUE if no other date is available
+ * Kenya EMR example does not account for when deceased is just a boolean
+ */
+
+

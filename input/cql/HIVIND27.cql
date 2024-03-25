@@ -62,7 +62,7 @@
    HIC."HIV Positive during measurement period"
    and HIC."HIV Treatment during the measurement period"
    and not HIC."Patient Deceased During Measurement Period"
-   and not HIC."Patient Transferred Out During Measurement Period"
+   and not HIC."Stopped ART at Facility during the measurement period"
 
 /*
  * Disaggregators
