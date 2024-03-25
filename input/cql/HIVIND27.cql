@@ -59,9 +59,14 @@
 
 
  define "numerator":
-   HIC."HIV Positive during measurement period"
+   HIC."HIV Positive before end of measurement period"
    and HIC."HIV Treatment during the measurement period"
-   and not HIC."Patient Deceased During Measurement Period"
+   and not HIC."Patient Deceased before end of Measurement Period"
+   and not HIC."Stopped ART at Facility during the measurement period"
+
+define "denominator":
+   HIC."HIV Positive before end of measurement period"
+   and not HIC."Patient Deceased before end of Measurement Period"
    and not HIC."Stopped ART at Facility during the measurement period"
 
 /*

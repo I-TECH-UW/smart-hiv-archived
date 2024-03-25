@@ -33,8 +33,8 @@ code "Males" : 'male' from "Administrative Gender Codes" display 'Males'
 code "Females" : 'female' from "Administrative Gender Codes" display 'Females'
 code "Other" : 'other' from "Administrative Gender Codes" display 'Other/NA'
 /* EXPANDED */
-code "Trans Males" : 'transgender male' from "Administrative Gender Codes" display 'Males'
-code "Trans Females" : 'transgender female' from "Administrative Gender Codes" display 'Females'
+code "Trans Males" : 'transgender male' from "Administrative Gender Codes" display 'Trans Males'
+code "Trans Females" : 'transgender female' from "Administrative Gender Codes" display 'Trans Females'
 
 codesystem "Condition_Category": 'http://hl7.org/fhir/ValueSet/condition-category'
 code "encounter-diagnosis" : 'encounter-diagnosis' from "Condition_Category" display 'Encounter Diagnosis'
@@ -43,12 +43,12 @@ code "encounter-diagnosis" : 'encounter-diagnosis' from "Condition_Category" dis
  * HIV Positive during the measurement period
  */
 
-define "HIV Positive during measurement period":
+define "HIV Positive before end of measurement period":
   [Condition] C
     where C.clinicalStatus in { 'active' }
     and C.category ~ 'encounter-diagnosis'
     and C.code ~ 'HIV-positive'
-    and C.onsetDateTime during "Measurement Period"
+    and C.onsetDateTime before end of "Measurement Period"
 
 
 define "HIV Treatment during the measurement period":
@@ -59,7 +59,7 @@ define "HIV Treatment during the measurement period":
     and (MS.effectivePeriod ends after start of "Measurement Period"
     or MS.effectivePeriod end ~ null)
 
-define "Patient Deceased During Measurement Period":
+define "Patient Deceased before end of Measurement Period":
   case 
     when Patient.deceased is FHIR.boolean and Patient.deceased ~ TRUE then Patient.deceased.lastUpdated as FHIR.dateTime before end of "Measurement Period"
     when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime before end of "Measurement Period"
