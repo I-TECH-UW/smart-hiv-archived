@@ -4,7 +4,11 @@ using FHIR version '4.0.1'
 
 
 codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observation-value'
+codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
 codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
+codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
+codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
+
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
@@ -12,7 +16,7 @@ include FHIRCommon called FC
 
 parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-12-31]
 
-context patient
+
 
 code "Sex Worker": 'HIV.B.DE51' from "Custom_Codes" display 'sex worker'
 code "Men who have sex with men": 'HIV.B.DE52' from "Custom_Codes" display 'MSM'
@@ -36,8 +40,24 @@ code "Other" : 'other' from "Administrative Gender Codes" display 'Other/NA'
 code "Trans Males" : 'transgender male' from "Administrative Gender Codes" display 'Trans Males'
 code "Trans Females" : 'transgender female' from "Administrative Gender Codes" display 'Trans Females'
 
-codesystem "Condition_Category": 'http://hl7.org/fhir/ValueSet/condition-category'
-code "encounter-diagnosis" : 'encounter-diagnosis' from "Condition_Category" display 'Encounter Diagnosis'
+
+
+// Condition Clinical Status Codes - Consider value sets for these
+code "active": 'active' from "ConditionClinicalStatusCodes"
+code "recurrence": 'recurrence' from "ConditionClinicalStatusCodes"
+code "relapse": 'relapse' from "ConditionClinicalStatusCodes"
+code "inactive": 'inactive' from "ConditionClinicalStatusCodes"
+code "remission": 'remission' from "ConditionClinicalStatusCodes"
+code "resolved": 'resolved' from "ConditionClinicalStatusCodes"
+
+// Condition Category Codes
+code "problem-list-item": 'problem-list-item' from "ConditionCategoryCodes" display 'Problem List Item'
+code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
+
+// Episode of Care Status
+code "social-history": 'social-history' from "ObservationCategoryCodes" display 'Social History'
+
+context Patient
 
 /*
  * HIV Positive during the measurement period
@@ -45,23 +65,23 @@ code "encounter-diagnosis" : 'encounter-diagnosis' from "Condition_Category" dis
 
 define "HIV Positive before end of measurement period":
   [Condition] C
-    where C.clinicalStatus in { 'active' }
-    and C.category ~ 'encounter-diagnosis'
-    and C.code ~ 'HIV-positive'
-    and C.onsetDateTime before end of "Measurement Period"
+    where C.clinicalStatus ~ "active"
+    and C.category[0]  ~  "encounter-diagnosis" 
+    and C.code ~ "HIV-positive"
+    and C.onset before end of "Measurement Period"
 
 
 define "HIV Treatment during the measurement period":
    [MedicationStatement] MS
     where MS.status in { 'recorded' }
-    and MS.reason ~ 'On ART'
-    and MS.effectivePeriod starts before end of "Measurement Period"
-    and (MS.effectivePeriod ends after start of "Measurement Period"
-    or MS.effectivePeriod end ~ null)
+    and MS.reasonCode[0] ~ "On ART"
+    and MS.effective starts before end of "Measurement Period"
+    and (MS.effective ends after start of "Measurement Period"
+    or end of MS.effective  ~  null)
 
 define "Patient Deceased before end of Measurement Period":
   case 
-    when Patient.deceased is FHIR.boolean and Patient.deceased ~ TRUE then Patient.deceased.lastUpdated as FHIR.dateTime before end of "Measurement Period"
+    when Patient.deceased is FHIR.boolean and Patient.deceased ~ true then Patient.meta.lastUpdated  before end of "Measurement Period"
     when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime before end of "Measurement Period"
     else false
   end
@@ -70,13 +90,13 @@ define "Patient Deceased before end of Measurement Period":
 
 define "Stopped ART at Facility during the measurement period":
     [EpisodeOfCare] EOS
-    where EOS.reason.value ~ 'On ART'
+    where EOS.type[0] ~ "On ART"
     and (exists ({
-      EOS.statusHistory.status in { 'finished' }
-      and EOS.statusHistory.period ends after start of "Measurement Period"
-      and EOS.statusHistory.period ends before end of "Measurement Period"
-    })
-    OR exists ({
+      EOS.statusHistory[0].status ~ 'finished'
+      and EOS.statusHistory[0].period ends after start of "Measurement Period"
+      and EOS.statusHistory[0].period ends before end of "Measurement Period"
+    }) 
+    or  exists ({
       EOS.status in { 'finished' }
       and EOS.period ends after start of "Measurement Period"
       and EOS.period ends before end of "Measurement Period"
@@ -91,17 +111,17 @@ define "Stopped ART at Facility during the measurement period":
  */
 define "By Age Stratifier":
     case 
-        when AgeInYearsAt(start of "Measurement Period") <= 4 then "0-4"
-        when AgeInYearsAt(start of "Measurement Period") <= 9 then "5-9"
-        when AgeInYearsAt(start of "Measurement Period") <= 14 then "10–14"
-        when AgeInYearsAt(start of "Measurement Period") <= 19 then "15–19"
-        when AgeInYearsAt(start of "Measurement Period") <= 24 then "20–24"
-        when AgeInYearsAt(start of "Measurement Period") <= 29 then "25–29"
-        when AgeInYearsAt(start of "Measurement Period") <= 34 then "30–34"
-        when AgeInYearsAt(start of "Measurement Period") <= 39 then "35–39"
-        when AgeInYearsAt(start of "Measurement Period") <= 44 then "40–44"
-        when AgeInYearsAt(start of "Measurement Period") <= 49 then "45–49"
-        when AgeInYearsAt(start of "Measurement Period") >= 50 then "50+"
+        when AgeInYearsAt(start of "Measurement Period") <= 4 then '0-4'
+        when AgeInYearsAt(start of "Measurement Period") <= 9 then '5-9'
+        when AgeInYearsAt(start of "Measurement Period") <= 14 then '10–14'
+        when AgeInYearsAt(start of "Measurement Period") <= 19 then '15–19'
+        when AgeInYearsAt(start of "Measurement Period") <= 24 then '20–24'
+        when AgeInYearsAt(start of "Measurement Period") <= 29 then '25–29'
+        when AgeInYearsAt(start of "Measurement Period") <= 34 then '30–34'
+        when AgeInYearsAt(start of "Measurement Period") <= 39 then '35–39'
+        when AgeInYearsAt(start of "Measurement Period") <= 44 then '40–44'
+        when AgeInYearsAt(start of "Measurement Period") <= 49 then '45–49'
+        when AgeInYearsAt(start of "Measurement Period") >= 50 then '50+'
         else null
     end
 
@@ -134,40 +154,40 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category ~ 'social-history'
-    and O.code ~ 'Sex Worker'
+    and O.category[0] ~ "social-history"
+    and O.code ~ "Sex Worker"
   )
 
  define MSM:
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category ~ 'social-history'
-    and O.code ~ 'MSM'
+    and O.category[0] ~ "social-history"
+    and O.code ~ "Men who have sex with men"
   )
 
   define Trans:
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category ~ 'social-history'
-    and O.code ~ 'Trans'
+    and O.category[0]~ "social-history"
+    and O.code ~ "Trans and gender-diverse people"
   )
 
   define PWID:
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category ~ 'social-history'
-    and O.code ~ 'PWID'
+    and O.category[0] ~ "social-history"
+    and O.code ~ "People who inject drugs"
   )
 
   define Prisoner:
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category ~ 'social-history'
-    and O.code ~ 'Prisoner'
+    and O.category[0] ~ "social-history"
+    and O.code ~ "People living in prisons and other closed settings"
   )
 
   define patientGroups:
@@ -180,8 +200,8 @@ define "By Administrative Gender Stratifier":
   }
 
 
-
-/* codesystem "SNOMEDCT": 'http://snomed.info/sct'
+/*
+ * codesystem "SNOMEDCT": 'http://snomed.info/sct'
  * SNOMED codes
  * 449344001 - sex worker
  * 472986005 - MSM
