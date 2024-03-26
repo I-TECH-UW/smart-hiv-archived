@@ -1,0 +1,15 @@
+{
+  "resourceType": "Library",
+  "id": "HIVD15DT",
+  "url": "http://fhir.org/guides/who/anc-cds/Library/HIVD15DT",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.D15.DT"
+  } ],
+  "name": "HIVD15DT",
+  "title": "HIV.D15.DT",
+  "description": "Determine WHO clinical staging of HIV disease in adults, adolescents and children",
+  "content": [ {
+    "id": "ig-loader-HIVD15DT.cql"
+  } ]
+}
