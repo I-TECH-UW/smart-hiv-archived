@@ -1,0 +1,13 @@
+{
+  "resourceType": "Patient",
+  "id": "hiv-e-de19-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de19" ]
+  },
+  "name": [ {
+    "given": [ "Asdf" ]
+  } ],
+  "generalPractitioner": [ {
+    "reference": "PractitionerRole/null-practitionerrole-example"
+  } ]
+}

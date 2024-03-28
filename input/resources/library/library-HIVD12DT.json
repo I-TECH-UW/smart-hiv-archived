@@ -1,0 +1,15 @@
+{
+  "resourceType": "Library",
+  "id": "HIVD12DT",
+  "url": "http://fhir.org/guides/who/anc-cds/Library/HIVD12DT",
+  "identifier": [ {
+    "use": "official",
+    "value": "HIV.D12.DT"
+  } ],
+  "name": "HIVD12DT",
+  "title": "HIV.D12.DT",
+  "description": "Determine recommended screenings and tests",
+  "content": [ {
+    "id": "ig-loader-HIVD12DT.cql"
+  } ]
+}

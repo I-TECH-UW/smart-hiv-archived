@@ -1,0 +1,25 @@
+{
+  "resourceType": "Observation",
+  "id": "hiv-e-de105-example",
+  "meta": {
+    "profile": [ "http://fhir.org/guides/itech-uw/StructureDefinition/hiv-e-de105" ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [ {
+      "system": "http://example.org/fhir/CodeSystem/example-codes",
+      "code": "example",
+      "display": "Could not resolve binding valueset null"
+    } ]
+  },
+  "subject": {
+    "reference": "Patient/null-patient-example"
+  },
+  "encounter": {
+    "reference": "Encounter/null-encounter-example"
+  },
+  "performer": [ {
+    "reference": "PractitionerRole/null-practitionerrole-example"
+  } ],
+  "valueString": "Asdf"
+}
