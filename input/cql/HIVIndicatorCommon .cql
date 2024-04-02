@@ -5,7 +5,10 @@ using FHIR version '4.0.1'
 
 codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observation-value'
 codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
-codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
+codesystem "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
+codesystem "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
+codesystem "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
+codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
 
@@ -18,19 +21,19 @@ parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @202
 
 
 
-code "Sex Worker": 'HIV.B.DE51' from "Custom_Codes" display 'sex worker'
-code "Men who have sex with men": 'HIV.B.DE52' from "Custom_Codes" display 'MSM'
-code "Trans and gender-diverse people": 'HIV.B.DE53' from "Custom_Codes" display 'Trans'
-code "People who inject drugs": 'HIV.B.DE54' from "Custom_Codes" display 'PWID'
-code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Custom_Codes" display 'Prisoner'
+code "Sex Worker": 'HIV.B.DE51' from "Keypopulationmembertype*Codes" display 'sex worker'
+code "Men who have sex with men": 'HIV.B.DE52' from "Keypopulationmembertype*Codes" display 'MSM'
+code "Trans and gender-diverse people": 'HIV.B.DE53' from "Keypopulationmembertype*Codes" display 'Trans'
+code "People who inject drugs": 'HIV.B.DE54' from "Keypopulationmembertype*Codes" display 'PWID'
+code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Keypopulationmembertype*Codes" display 'Prisoner'
 
-code "HIV-positive": 'HIV.B.DE116' from "Custom_Codes" display 'HIV Positive'
-code "On ART": 'HIV.D.DE38' from "Custom_Codes" display 'On ART'
+code "HIV-positive": 'HIV.B.DE116' from "HIVstatusCodes" display 'HIV Positive'
+code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
 
-code "Lost to follow-up": 'HIV.H.DE42' from "Custom_Codes" display 'Lost to follow-up'
-code "Transferred out": 'HIV.H.DE43' from "Custom_Codes" display 'Transferred out'
-code "Death (documented)": 'HIV.H.DE44' from "Custom_Codes" display 'Death (documented)'
-code "Refused (stopped) treatment": 'HIV.H.DE45' from "Custom_Codes" display 'Refused (stopped) treatment'
+code "Lost to follow-up": 'HIV.H.DE42' from "HIVtreatmentoutcomeCodes" display 'Lost to follow-up'
+code "Transferred out": 'HIV.H.DE43' from "HIVtreatmentoutcomeCodes" display 'Transferred out'
+code "Death (documented)": 'HIV.H.DE44' from "HIVtreatmentoutcomeCodes" display 'Death (documented)'
+code "Refused (stopped) treatment": 'HIV.H.DE45' from "HIVtreatmentoutcomeCodes" display 'Refused (stopped) treatment'
 
 codesystem "Administrative Gender Codes": 'http://hl7.org/fhir/administrative-gender'
 code "Males" : 'male' from "Administrative Gender Codes" display 'Males'
