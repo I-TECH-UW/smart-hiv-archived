@@ -16,7 +16,6 @@
 
  codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
 
- context Patient
 
  code "Reactive": 'HIV.B.DE103' from "Custom_Codes" display 'Reactive'
  code "Non-reactive": 'HIV.B.DE104' from "Custom_Codes" display 'Non-reactive'
@@ -26,87 +25,118 @@
  code "Assay 2": 'HIV.B.DE91' from "Custom_Codes" display 'Assay 2'
  code "Assay 3": 'HIV.B.DE92' from "Custom_Codes" display 'Assay 3'
  code "Assay 1 repeated": 'HIV.B.DE93' from "Custom_Codes" display 'Assay 1 repeated'
- 
+ code "Assay 2 reactive": 'HIV.E.DE205' from "Custom_Codes" display 'Assay 2 reactive'
+ code "Assay 2 non-reactive": 'HIV.E.DE206' from "Custom_Codes" display 'Assay 2 non-reactive'
+ code "Assay 1 reactive": 'HIV.E.DE201' from "Custom_Codes" display 'Assay 1 reactive'
+ /*valueset "Assay 2 reactive": 'HIV.E.DE205'*/
+  
+context Patient
 
 define "Age_greater_than_18_months":
   AgeInMonthsAt(Today()) >= 18
 
+
 define "Report as HIV-negative":
-  [Observation: "Non-reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 1"
-  and "Age_greater_than_18_months"
+  [Observation] O
+  //triggeredBy ~ order for Assay 1
+  with [O.basedOn -> ServiceRequest] SR
+      such that (FHIRHelpers.ToConcept(SR.code) in {"Assay 1"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Non-reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output observation as HIV negative */
 
 define "Continue with performing HIV 'Assay 2'":
-  [Observation: "Reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 1"
-  and "Age_greater_than_18_months"
+  [Observation] O
+  //triggeredBy ~ order for Assay 1
+  with [O.basedOn -> ServiceRequest] SR
+      such that (FHIRHelpers.ToConcept(SR.code) in {"Assay 1"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output Service Request for Assay 2 */
 
 define "Continue with performing HIV 'Assay 1 repeated'":
-  [Observation: "Non-reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 2"
-  and "Age_greater_than_18_months"
-  /* and O.triggeredBy ~ "Continue with performing HIV 'Assay 2'" */
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 2'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 1 reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 2"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Non-reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output Service Request for Continue with performing HIV 'Assay 1 repeated' */
 
-define "Continue with performing HIV 'Assay 3'":
-  [Observation: "Reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 2"
-  and "Age_greater_than_18_months"
-  /* and O.triggeredBy ~ "Continue with performing HIV 'Assay 2'" */
+  define "Continue with performing HIV 'Assay 3'":
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 2'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 1 reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 2"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Reactive" }
+  and "Age_greater_than_18_months")
 
   /* Output Service Request for Continue with performing Assay 3 */
 
-define "Report as HIV-negative":
-  [Observation: "Non-reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 1 repeated"
-  and "Age_greater_than_18_months"
-/* and O.triggeredBy ~ "Continue with performing HIV 'Assay 1 repeated'" */
+define "Report as HIV-negative after assay 1 repeated":
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 1 repeated'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 2 non-reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 1 repeated"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Non-reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output observation as HIV negative */
 
-define "Report as HIV-inconclusive":
-  [Observation: "Reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 1 repeated"
-  and "Age_greater_than_18_months"
-/* and O.triggeredBy ~ "Continue with performing HIV 'Assay 1 repeated'" */
+define "Report as HIV-inconclusive after assay 1 repeated":
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 1 repeated'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 2 non-reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 1 repeated"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output observation as 'HIV-inconclusive' */
 /* Output PlanDefinition as Schedule retest date on "Visit date" + 14 days */
 
-define "Report as HIV-inconclusive":
-  [Observation: "Non-reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 3"
-  and "Age_greater_than_18_months"
-/* and O.triggeredBy ~ "Continue with performing HIV 'Assay 3'" */
+define "Report as HIV-inconclusive after assay 3":
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 3'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 2 reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 3"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Non-reactive" }
+  and "Age_greater_than_18_months")
 
 /* Output observation as 'HIV-inconclusive' */
 /* Output PlanDefinition as Schedule retest date on "Visit date" + 14 days */
 
 define "Report as HIV-positive":
-  [Observation: "Reactive"] O
-  where O.status in { 'final', 'amended' }
-  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and O.specimen.role ~ "Assay 3"
-  and "Age_greater_than_18_months"
-/* and O.triggeredBy ~ "Continue with performing HIV 'Assay 3'" */
+  [Observation] O
+  //triggeredBy ~ "Continue with performing HIV 'Assay 3'"
+  with [O.basedOn -> ServiceRequest] SR
+      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 2 reactive'}
+      and FHIRHelpers.ToConcept(SR.code) in {"Assay 3"})
+  where (O.status in { 'final', 'amended' }
+  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and FHIRHelpers.ToConcept(O.value) in { "Reactive" }
+  and "Age_greater_than_18_months")
+  
 
 /* Output observation as 'HIV-positive' */
