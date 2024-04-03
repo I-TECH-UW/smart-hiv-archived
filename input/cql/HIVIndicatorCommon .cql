@@ -69,7 +69,7 @@ context Patient
 define "HIV Positive before end of measurement period":
   [Condition] C
     where C.clinicalStatus ~ "active"
-    and C.category[0]  ~  "encounter-diagnosis" 
+    and C.category.coding.code.value ~ { 'encounter-diagnosis' }
     and C.code ~ "HIV-positive"
     and C.onset before end of "Measurement Period"
 
@@ -77,7 +77,7 @@ define "HIV Positive before end of measurement period":
 define "HIV Treatment during the measurement period":
    [MedicationStatement] MS
     where MS.status in { 'recorded' }
-    and MS.reasonCode[0] ~ "On ART"
+    and MS.reasonCode.coding.code.value ~ { 'On ART' }
     and MS.effective starts before end of "Measurement Period"
     and (MS.effective ends after start of "Measurement Period"
     or end of MS.effective  ~  null)
@@ -93,10 +93,10 @@ define "Patient Deceased before end of Measurement Period":
 
 define "Stopped ART at Facility during the measurement period":
     [EpisodeOfCare] EOS
-    where EOS.type[0] ~ "On ART"
+    where EOS.type.coding.code.value ~ { 'On ART' }
     and (exists ({
-      EOS.statusHistory[0].status ~ 'finished'
-      and EOS.statusHistory[0].period ends after start of "Measurement Period"
+      EOS.statusHistory.status contains 'finished'
+      and EOS.statusHistory.period ends after start of "Measurement Period"
       and EOS.statusHistory[0].period ends before end of "Measurement Period"
     }) 
     or  exists ({
