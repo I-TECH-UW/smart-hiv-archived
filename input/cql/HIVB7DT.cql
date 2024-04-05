@@ -4,30 +4,31 @@
  * HIV.B7 Test for HIV using testing algorithm, HIV.C4 Test for HIV using testing algorithm, HIV.D.11 Retest using HIV strategy
  */
 
- library HIVB7DT
+library HIVB7DT
 
- using FHIR version '4.0.1'
- 
+using FHIR version '4.0.1'
 
- include HIVIndicatorCommon called HIC
- include FHIRHelpers version '4.0.1'
- include WHOCommon called WCom
- include FHIRCommon called FC
+//codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
+codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
+valueset "TestresultofHIVassay1Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de95'
 
- codesystem "Custom_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
+include FHIRHelpers version '4.0.1'
+include WHOCommon called WCom
+include FHIRCommon called FC
 
+//code "Assay 1 Reactive": 'HIV.B.DE95' from "TestresultofHIVassay1Codes" display 'Assay 1 reactive'
+code "Reactive": 'HIV.B.DE103' from "HIV_DAK_Codes" display 'Reactive'
+code "Non-reactive": 'HIV.B.DE104' from "HIV_DAK_Codes" display 'Non-reactive'
+code "Rapid diagnostic test for HIV": 'HIV.B.DE82' from "HIV_DAK_Codes" display 'Rapid diagnostic test for HIV'
+code "Enzyme immunoassay for HIV": 'HIV.B.DE83' from "HIV_DAK_Codes" display 'Enzyme immunoassay for HIV'
+code "Assay 1": 'HIV.B.DE90' from "HIV_DAK_Codes" display 'Assay 1'
+code "Assay 2": 'HIV.B.DE91' from "HIV_DAK_Codes" display 'Assay 2'
+code "Assay 3": 'HIV.B.DE92' from "HIV_DAK_Codes" display 'Assay 3'
+code "Assay 1 repeated": 'HIV.B.DE93' from "HIV_DAK_Codes" display 'Assay 1 repeated'
+code "Assay 2 reactive": 'HIV.E.DE205' from "HIV_DAK_Codes" display 'Assay 2 reactive'
+code "Assay 2 non-reactive": 'HIV.E.DE206' from "HIV_DAK_Codes" display 'Assay 2 non-reactive'
+code "Assay 1 reactive": 'HIV.B.DE95' from "HIV_DAK_Codes" display 'Assay 2 non-reactive'
 
- code "Reactive": 'HIV.B.DE103' from "Custom_Codes" display 'Reactive'
- code "Non-reactive": 'HIV.B.DE104' from "Custom_Codes" display 'Non-reactive'
- code "Rapid diagnostic test for HIV": 'HIV.B.DE82' from "Custom_Codes" display 'Rapid diagnostic test for HIV'
- code "Enzyme immunoassay for HIV": 'HIV.B.DE83' from "Custom_Codes" display 'Enzyme immunoassay for HIV'
- code "Assay 1": 'HIV.B.DE90' from "Custom_Codes" display 'Assay 1'
- code "Assay 2": 'HIV.B.DE91' from "Custom_Codes" display 'Assay 2'
- code "Assay 3": 'HIV.B.DE92' from "Custom_Codes" display 'Assay 3'
- code "Assay 1 repeated": 'HIV.B.DE93' from "Custom_Codes" display 'Assay 1 repeated'
- code "Assay 2 reactive": 'HIV.E.DE205' from "Custom_Codes" display 'Assay 2 reactive'
- code "Assay 2 non-reactive": 'HIV.E.DE206' from "Custom_Codes" display 'Assay 2 non-reactive'
- code "Assay 1 reactive": 'HIV.E.DE201' from "Custom_Codes" display 'Assay 1 reactive'
  /*valueset "Assay 2 reactive": 'HIV.E.DE205'*/
   
 context Patient
@@ -52,10 +53,10 @@ define "Continue with performing HIV 'Assay 2'":
   [Observation] O
   //triggeredBy ~ order for Assay 1
   with [O.basedOn -> ServiceRequest] SR
-      such that (FHIRHelpers.ToConcept(SR.code) in {"Assay 1"})
+      such that (SR.code in {"Assay 1"})
   where (O.status in { 'final', 'amended' }
-  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and FHIRHelpers.ToConcept(O.value) in { "Reactive" }
+  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and O.value in { "Reactive" }
   and "Age_greater_than_18_months")
 
 /* Output Service Request for Assay 2 */
@@ -64,11 +65,11 @@ define "Continue with performing HIV 'Assay 1 repeated'":
   [Observation] O
   //triggeredBy ~ "Continue with performing HIV 'Assay 2'"
   with [O.basedOn -> ServiceRequest] SR
-      such that ((SR.reasonCode.coding.code.value) ~ {'Assay 1 reactive'}
-      and FHIRHelpers.ToConcept(SR.code) in {"Assay 2"})
+      such that (SR.reasonCode in "Assay 1 reactive" and
+       SR.code in {"Assay 2"})
   where (O.status in { 'final', 'amended' }
-  and FHIRHelpers.ToConcept(O.code) in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
-  and FHIRHelpers.ToConcept(O.value) in { "Non-reactive" }
+  and O.code in { "Rapid diagnostic test for HIV", "Enzyme immunoassay for HIV" } 
+  and O.value in { "Non-reactive" }
   and "Age_greater_than_18_months")
 
 /* Output Service Request for Continue with performing HIV 'Assay 1 repeated' */
