@@ -4,22 +4,20 @@ using FHIR version '4.0.1'
 
 
 codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observation-value'
-codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
-codesystem "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
-codesystem "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
-codesystem "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
 codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
 
+valueset "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
+valueset "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
+valueset "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
+valueset "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
 include FHIRCommon called FC
 
 parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-12-31]
-
-
 
 code "Sex Worker": 'HIV.B.DE51' from "Keypopulationmembertype*Codes" display 'sex worker'
 code "Men who have sex with men": 'HIV.B.DE52' from "Keypopulationmembertype*Codes" display 'MSM'
@@ -69,15 +67,15 @@ context Patient
 define "HIV Positive before end of measurement period":
   [Condition] C
     where C.clinicalStatus ~ "active"
-    and C.category.coding.code.value ~ { 'encounter-diagnosis' }
+    and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
     and C.onset before end of "Measurement Period"
 
 
 define "HIV Treatment during the measurement period":
    [MedicationStatement] MS
-    where MS.status in { 'recorded' }
-    and MS.reasonCode.coding.code.value ~ { 'On ART' }
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
     and MS.effective starts before end of "Measurement Period"
     and (MS.effective ends after start of "Measurement Period"
     or end of MS.effective  ~  null)
@@ -93,17 +91,16 @@ define "Patient Deceased before end of Measurement Period":
 
 define "Stopped ART at Facility during the measurement period":
     [EpisodeOfCare] EOS
-    where EOS.type.coding.code.value ~ { 'On ART' }
-    and (exists ({
-      EOS.statusHistory.status contains 'finished'
-      and EOS.statusHistory.period ends after start of "Measurement Period"
-      and EOS.statusHistory[0].period ends before end of "Measurement Period"
-    }) 
-    or  exists ({
-      EOS.status in { 'finished' }
-      and EOS.period ends after start of "Measurement Period"
-      and EOS.period ends before end of "Measurement Period"
-    })
+    where EOS.type in "On ART"
+    and (exists (
+      EOS.statusHistory H
+      where H.status = 'finished'
+      and H.period ends during "Measurement Period"
+    ) 
+    or  exists (
+      EOS.status = 'finished'
+      and EOS.period ends during "Measurement Period"
+    )
     )
 
 
@@ -157,7 +154,7 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category[0] ~ "social-history"
+    and O.category in "social-history"
     and O.code ~ "Sex Worker"
   )
 
@@ -165,7 +162,7 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category[0] ~ "social-history"
+    and O.category in "social-history"
     and O.code ~ "Men who have sex with men"
   )
 
@@ -173,7 +170,7 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category[0]~ "social-history"
+    and O.category in "social-history"
     and O.code ~ "Trans and gender-diverse people"
   )
 
@@ -181,7 +178,7 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category[0] ~ "social-history"
+    and O.category in "social-history"
     and O.code ~ "People who inject drugs"
   )
 
@@ -189,7 +186,7 @@ define "By Administrative Gender Stratifier":
   exists (
     [Observation] O
     where O.status in { 'final', 'amended', 'corrected' }
-    and O.category[0] ~ "social-history"
+    and O.category in "social-history"
     and O.code ~ "People living in prisons and other closed settings"
   )
 
