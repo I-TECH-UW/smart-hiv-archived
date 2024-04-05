@@ -37,19 +37,19 @@
 
 
 
- library HIVIND27
+library HIVIND27
 
- using FHIR version '4.0.1'
+using FHIR version '4.0.1'
  
 
- include HIVIndicatorCommon called HIC
- include FHIRHelpers version '4.0.1'
- include WHOCommon called WCom
- include FHIRCommon called FC
+include HIVIndicatorCommon version '0.01' called HIC
+include FHIRHelpers version '4.0.1'
+include WHOCommon called WCom
+include FHIRCommon called FC
 
- parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-01-31]
+parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-01-31]
  
- context Unfiltered
+context Unfiltered
 
 /*
 * Many indicator specifications in ANC and Immunization have context as patient. 
@@ -59,15 +59,15 @@
 
 
  define "numerator":
-   HIC."HIV Positive before end of measurement period"
-   and HIC."HIV Treatment during the measurement period"
-   and not HIC."Patient Deceased before end of Measurement Period"
-   and not HIC."Stopped ART at Facility during the measurement period"
+   AnyTrue(HIC."HIV Positive before end of measurement period") 
+   and AnyTrue(HIC."HIV Treatment during the measurement period")
+   and not AnyTrue(HIC."Patient Deceased before end of Measurement Period")
+   and not AnyTrue(HIC."Stopped ART at Facility during the measurement period")
 
 define "denominator":
-   HIC."HIV Positive before end of measurement period"
-   and not HIC."Patient Deceased before end of Measurement Period"
-   and not HIC."Stopped ART at Facility during the measurement period"
+   AnyTrue(HIC."HIV Positive before end of measurement period")
+   and not AnyTrue(HIC."Patient Deceased before end of Measurement Period")
+   and not AnyTrue(HIC."Stopped ART at Facility during the measurement period")
 
 /*
  * Disaggregators

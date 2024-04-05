@@ -1,4 +1,4 @@
-library HIVIndicatorCommon
+library HIVIndicatorCommon version '0.01' 
 
 using FHIR version '4.0.1'
 
@@ -8,10 +8,10 @@ codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/C
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
 
-valueset "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
-valueset "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
-valueset "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
-valueset "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
+codesystem "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
+codesystem "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
+codesystem "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
+codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
@@ -26,7 +26,12 @@ code "People who inject drugs": 'HIV.B.DE54' from "Keypopulationmembertype*Codes
 code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Keypopulationmembertype*Codes" display 'Prisoner'
 
 code "HIV-positive": 'HIV.B.DE116' from "HIVstatusCodes" display 'HIV Positive'
-code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
+//code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
+
+codesystem ARTCodes: 'http://example.org/fhir/CodeSystem/art-codes'
+valueset "On ART": 'http://example.org/fhir/ValueSet/on-art'
+valueset "encounter-diagnosis": 'http://example.org/fhir/ValueSet/encounter-diagnosis'
+valueset "social-history": 'http://example.org/fhir/ValueSet/social-history'
 
 code "Lost to follow-up": 'HIV.H.DE42' from "HIVtreatmentoutcomeCodes" display 'Lost to follow-up'
 code "Transferred out": 'HIV.H.DE43' from "HIVtreatmentoutcomeCodes" display 'Transferred out'
@@ -53,10 +58,10 @@ code "resolved": 'resolved' from "ConditionClinicalStatusCodes"
 
 // Condition Category Codes
 code "problem-list-item": 'problem-list-item' from "ConditionCategoryCodes" display 'Problem List Item'
-code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
+//code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
 
 // Episode of Care Status
-code "social-history": 'social-history' from "ObservationCategoryCodes" display 'Social History'
+//code "social-history": 'social-history' from "ObservationCategoryCodes" display 'Social History'
 
 context Patient
 
@@ -65,20 +70,24 @@ context Patient
  */
 
 define "HIV Positive before end of measurement period":
-  [Condition] C
+  exists(
+    [Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
     and C.onset before end of "Measurement Period"
+    )
 
 
 define "HIV Treatment during the measurement period":
-   [MedicationStatement] MS
+   exists(
+    [MedicationStatement] MS
     where MS.status = 'recorded'
     and MS.reasonCode in "On ART"
     and MS.effective starts before end of "Measurement Period"
     and (MS.effective ends after start of "Measurement Period"
     or end of MS.effective  ~  null)
+   )
 
 define "Patient Deceased before end of Measurement Period":
   case 
@@ -90,6 +99,7 @@ define "Patient Deceased before end of Measurement Period":
 /* End of care because of transferring out, death, lost to follow up, or stopped treatment*/
 
 define "Stopped ART at Facility during the measurement period":
+    exists(
     [EpisodeOfCare] EOS
     where EOS.type in "On ART"
     and (exists (
@@ -97,12 +107,12 @@ define "Stopped ART at Facility during the measurement period":
       where H.status = 'finished'
       and H.period ends during "Measurement Period"
     ) 
-    or  exists (
+    or (
       EOS.status = 'finished'
       and EOS.period ends during "Measurement Period"
     )
     )
-
+    )
 
 /*
  * By Age Stratifiers
@@ -198,40 +208,6 @@ define "By Administrative Gender Stratifier":
     if PWID then 'PWID' else null,
     if Prisoner then 'Prisoner' else null
   }
-
-
-/*
- * codesystem "SNOMEDCT": 'http://snomed.info/sct'
- * SNOMED codes
- * 449344001 - sex worker
- * 472986005 - MSM
- * 407375002 - Trans
- * 226034001 - PWID
- * 105568001 - Prisoner
- * 713742005 - positive
- * 416234007 - HAART
- * 715035002 - does take medication
- * 165816005 - HIV positive
- * 107724000 - Paitent Transfer
- */
-
-
-/* 
-*code "Sex Worker": '472986005' from "SNOMEDCT" display 'sex worker'
-*code "MSM": '472986005' from "SNOMEDCT" display 'MSM'
-*code "Trans": '407375002' from "SNOMEDCT" display 'Trans'
-*code "PWID": '226034001' from "SNOMEDCT" display 'PWID'
-*code "Prisoner": '105568001' from "SNOMEDCT" display 'Prisoner'
-*
-*code "HIV Positive": '165816005' from "SNOMEDCT" display 'HIV Positive'
-*code "Antiretroviral": '713540004' from "SNOMEDCT" display 'Substance with antiretroviral mechanism of action (substance)'
-*
-*code "HAART": '416234007' from "SNOMEDCT" display 'HAART'
-*code "does take medication": '715035002' from "SNOMEDCT" display 'does take medication'
-*
-*code "Patient Transfer": '107724000' from "SNOMEDCT" display 'Paitent Transfer'
-*code "Transfer Out": 'transfer-out' from "ObservationValue"
- */
 
 
 
