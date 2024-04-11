@@ -151,3 +151,9 @@ define "Report as HIV-positive":
   
 
 /* Output observation as 'HIV-positive' */
+
+/*
+[Observation] needs to have the following codes and elements
+    where O.status ~ {'final', 'amended'}
+    and O.value ~ HIC."HIV-positive"
+    */

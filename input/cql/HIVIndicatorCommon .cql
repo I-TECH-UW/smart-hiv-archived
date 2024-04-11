@@ -26,12 +26,21 @@ code "People who inject drugs": 'HIV.B.DE54' from "Keypopulationmembertype*Codes
 code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Keypopulationmembertype*Codes" display 'Prisoner'
 
 code "HIV-positive": 'HIV.B.DE116' from "HIVstatusCodes" display 'HIV Positive'
+code "Diagnosed TB": 'HIV.D.DE940' from "HIVstatusCodes" display 'Diagnosed TB'
+code "Presumptive TB": 'HIV.D.DE945' from "HIVstatusCodes" display 'Presumptive TB'
+
 //code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
 
 codesystem ARTCodes: 'http://example.org/fhir/CodeSystem/art-codes'
 valueset "On ART": 'http://example.org/fhir/ValueSet/on-art'
 valueset "encounter-diagnosis": 'http://example.org/fhir/ValueSet/encounter-diagnosis'
 valueset "social-history": 'http://example.org/fhir/ValueSet/social-history'
+valueset "HIVtesttypeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de82'
+valueset "Community-level testing" : 'http://example.org/fhir/ValueSet/HIV.B.DE16'
+valueset "Facility-level testing" : 'http://example.org/fhir/ValueSet/HIV.B.DE17'
+valueset "ANC contact during pregnancy" : 'http://example.org/fhir/ValueSet/HIV.E.DE39'
+
+//valueset "hiv positive": 'http://example.org/fhir/ValueSet/social-history'
 
 code "Lost to follow-up": 'HIV.H.DE42' from "HIVtreatmentoutcomeCodes" display 'Lost to follow-up'
 code "Transferred out": 'HIV.H.DE43' from "HIVtreatmentoutcomeCodes" display 'Transferred out'
@@ -67,17 +76,47 @@ context Patient
 
 /*
  * HIV Positive during the measurement period
+ * Does issued imply that results returned to tester
+ * or should use communication or encounter resource to specify?
  */
 
 define "HIV Positive before end of measurement period":
   exists(
-    [Condition] C
+    ([Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
-    and C.onset before end of "Measurement Period"
+    and C.onset before end of "Measurement Period")
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period")
     )
 
+define "HIV Positive during measurement period":
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset during "Measurement Period")
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued during "Measurement Period")
+    )
+
+  define "HIV test during measurement period":
+  exists(
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.issued before end of "Measurement Period")
+    )
 
 define "HIV Treatment during the measurement period":
    exists(
@@ -131,6 +170,23 @@ define "By Age Stratifier":
         when AgeInYearsAt(start of "Measurement Period") <= 39 then '35–39'
         when AgeInYearsAt(start of "Measurement Period") <= 44 then '40–44'
         when AgeInYearsAt(start of "Measurement Period") <= 49 then '45–49'
+        when AgeInYearsAt(start of "Measurement Period") >= 50 then '50+'
+        else null
+    end
+  
+  /*
+ * By Age Stratifiers
+ * Age (0–4, 5–9, 10–14, 15–19, 20–24, 25–49, 50+ years)
+ * 
+ */
+define "By Age Stratifier 2":
+    case 
+        when AgeInYearsAt(start of "Measurement Period") <= 4 then '0-4'
+        when AgeInYearsAt(start of "Measurement Period") <= 9 then '5-9'
+        when AgeInYearsAt(start of "Measurement Period") <= 14 then '10–14'
+        when AgeInYearsAt(start of "Measurement Period") <= 19 then '15–19'
+        when AgeInYearsAt(start of "Measurement Period") <= 24 then '20–24'
+        when AgeInYearsAt(start of "Measurement Period") <= 49 then '25–49'
         when AgeInYearsAt(start of "Measurement Period") >= 50 then '50+'
         else null
     end
@@ -200,6 +256,61 @@ define "By Administrative Gender Stratifier":
     and O.code ~ "People living in prisons and other closed settings"
   )
 
+  define TB_diagnosed:
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "Diagnosed TB"
+    and C.onset during "Measurement Period")
+  )
+  
+  define TB_presumptive:
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "Presumptive TB"
+    and C.onset during "Measurement Period")
+  )
+
+define "Community_testing":
+  exists([Observation] O
+  with [O.encounter -> Encounter] E
+      such that (E.location in "Community-level testing")
+  where (O.status in { 'final', 'amended' }
+  and O.code in "HIVtesttypeCodes"
+  and O.issued during "Measurement Period")
+  )
+
+define "Facility_testing":
+  exists([Observation] O
+  with [O.encounter -> Encounter] E
+      such that (E.location in "Facility-level testing")
+  where (O.status in { 'final', 'amended' }
+  and O.code in "HIVtesttypeCodes"
+  and O.issued during "Measurement Period")
+  )
+
+//lifted this from ANC DAK
+//ANC SMART doesn't take into account time period
+define "ANC_case":
+exists(
+    [EpisodeOfCare] EOS
+    where EOS.type in "ANC contact during pregnancy"
+    and (exists (
+      EOS.statusHistory H
+      where H.period overlaps "Measurement Period"
+    ) 
+    or (
+      EOS.period overlaps "Measurement Period"
+    )
+    )
+    )
+
+
+  //define ANC
+
   define patientGroups:
   List<String>{
     if SW then 'SW' else null,
@@ -207,6 +318,29 @@ define "By Administrative Gender Stratifier":
     if Trans then 'Trans' else null,
     if PWID then 'PWID' else null,
     if Prisoner then 'Prisoner' else null
+  }
+
+  define patientGroups_2:
+  List<String>{
+    if SW then 'SW' else null,
+    if MSM then 'MSM' else null,
+    if Trans then 'Trans' else null,
+    if PWID then 'PWID' else null,
+    if Prisoner then 'Prisoner' else null
+    if ANC_case then 'ANC' else null
+  }
+
+  define patientGroups_3:
+  List<String>{
+    if SW then 'SW' else null,
+    if MSM then 'MSM' else null,
+    if Trans then 'Trans' else null,
+    if PWID then 'PWID' else null,
+    if Prisoner then 'Prisoner' else null
+    if TB_diagnosed then 'Diagnosed TB' else null,
+    if TB_presumptive then 'Presumptive TB' else null,
+    if Community_testing then 'Community-level testing' else null,
+    if Facility_testing then 'Facility-level testing' else null
   }
 
 

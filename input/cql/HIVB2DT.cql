@@ -1,93 +1,80 @@
+/*
+ * Library: HIV.B2.DT
+ * Check for signs of serious illness
+ * Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.  
+ * Should this just be for anyone with HIV? 
+ * Wouldn't other  disease domains also code for general exam?
+ */
+
 library HIVB2DT
 
-using FHIR version '4.0.1'
+ using FHIR version '4.0.1'
+ 
 
-include FHIRHelpers version '4.0.1'
+ include HIVIndicatorCommon version '0.01' called HIC
+ include FHIRHelpers version '4.0.1'
+ include WHOCommon called WCom
+ include FHIRCommon called FC
 
-include ANCConfig called Config
-include ANCConcepts called Cx
-include ANCDataElements called PatientData
+ valueset "Tachycardia": ''
+ valueset "Tachypnea": ''
+ valueset "Unable to walk unaided": ''
+ valueset "Body temperature = ≥ 39 °C": '' 
+ valueset "Other sign of serious illness (specify)": ''
+ valueset "Lethargy": ''
+ valueset "Unconsciousness": ''
+ valueset "Convulsions": ''
+ valueset "Unable to breastfeed": ''
+ valueset "Unable to drink": ''
+ valueset "Repeated vomiting": ''
 
-context Patient
+ context Patient
 
-/*
-(HIV.B2.DT.01)
-  AND ( "Age" ≥ 10 years)
-  AND ("Signs of serious illness"='Tachycardia')
-  AND (-)
-*/
-define "Should Immediately take action or refer for care if a client is having this issue.":
-  false
+ /*
+  * Age = ≥ 10 years
+  */
 
-/*
-((HIV.B2.DT.02)
-  AND ( "Age" ≥ 10 years)
-  AND ("Signs of serious illness"='Tachypnea')
-  AND (-))
-  OR ((HIV.B2.DT.03)
-  AND ( "Age" ≥ 10 years)
-  AND ("Signs of serious illness"='Unable to walk unaided')
-  AND (-))
-*/
-define "Should Immediately take action or refer for care if client is showing this sign of a serious illness.":
-  false
+define "Age_10_or_more":
+  AgeInYearsAt(Today()) >= 10
 
-/*
-((HIV.B2.DT.04)
-  AND ( "Age" ≥ 10 years)
-  AND ("Signs of serious illness"='Fever of 39 °C or greater')
-  AND (-))
-  OR ((HIV.B2.DT.05)
-  AND ( "Age" ≥ 10 years)
-  AND ("Signs of serious illness"='Other sign of serious illness')
-  AND (-))
-*/
-define "Should Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill. ":
-  false
+ /*
+  * Age < 10 years
+  */
 
-/*
-((((((HIV.B2.DT.06)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Lethargy')
-  AND (-))
-  OR ((HIV.B2.DT.07)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Unconsciousness')
-  AND (-)))
-  OR ((HIV.B2.DT.08)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Convulsions')
-  AND (-)))
-  OR ((HIV.B2.DT.09)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Unable to breastfeed')
-  AND (-)))
-  OR ((HIV.B2.DT.10)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Unable to drink')
-  AND (-)))
-  OR ((HIV.B2.DT.11)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Repeated vomiting')
-  AND (-))
-*/
-define "Should Immediately take action or refer for care if client is showing this sign of a serious illness. 2":
-  false
+define "Age_less_than_10":
+  AgeInYearsAt(Today()) < 10
 
-/*
-(((HIV.B2.DT.12)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Tachycardia')
-  AND ( "Body temperature"≥ 39 °C))
-  OR ((HIV.B2.DT.13)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Tachypnea')
-  AND ("Body temperature" ≥ 39 °C)))
-  OR ((HIV.B2.DT.14)
-  AND ( "Age" < 10 years)
-  AND ("Signs of serious illness"='Other sign of serious illness')
-  AND (-))
-*/
-define "Should Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill.  2":
-  false
+define "Take action or refer client showing signs of a serious illness":
+  exists (([Observation: code in "Tachycardia"]
+  union [Observation: "Tachypnea"]
+  union [Observation: "Unable to walk unaided"]) O
+  where Age_10_or_more
+  AND O.status in { 'final', 'amended' })
+  OR exists(([Observation: "Lethargy"]
+  union [Observation: "Unconsciousness"]
+  union [Observation: "Convulsions"]
+  union [Observation: "Unable to breastfeed"]
+  union [Observation: "Unable to drink"]
+  union [Observation: "Unconsciousness"]
+  union [Observation: "Repeated vomiting"]) O
+  where Age_less_than_10
+  AND O.status in { 'final', 'amended' }
+  )
 
+//plan definition Immediately take action or refer for care if a client is having this issue.
+
+define "Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill":
+  exists (([Observation: "Body temperature = ≥ 39 °C"]
+  union [Observation: "Other sign of serious illness (specify)"]) O
+  where Age_10_or_more
+  AND O.status in { 'final', 'amended' })
+  OR exists((([Observation: "Body temperature = ≥ 39 °C"]
+  intersect [Observation: "Tachycardia"])
+  OR ([Observation: "Body temperature = ≥ 39 °C"]
+  intersect [Observation: "Tachypnea"])
+  OR [Observation: "Other sign of serious illness (specify)"]) O
+  where Age_less_than_10
+  AND O.status in { 'final', 'amended' })
+  )
+
+//plan definition  Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill. 
