@@ -1,0 +1,6314 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVB",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVB",
+  "name": "HIVB",
+  "title": "HIV.B HTS visit Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.B HTS visit data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVB",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVB",
+        "path": "HIVB",
+        "short": "HIV.B HTS visit Logical Model",
+        "definition": "Logical Model for HIV.B HTS visit data elements."
+      },
+      {
+        "id": "HIVB.reasonForVisit",
+        "path": "HIVB.reasonForVisit",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reason for visit",
+        "definition": "Reason for HIV testing services visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.firstTimeHivTest",
+        "path": "HIVB.firstTimeHivTest",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "First-time HIV test",
+        "definition": "First encounter for screening for human immunodeficiency virus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.retestingForHiv",
+        "path": "HIVB.retestingForHiv",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Retesting for HIV",
+        "definition": "Retesting for human immunodeficiency virus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestingServicesVisit",
+        "path": "HIVB.hivTestingServicesVisit",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV testing services visit",
+        "definition": "Client attending facility for HIV testing services visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.referredThroughPartnerServices",
+        "path": "HIVB.referredThroughPartnerServices",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Referred through partner services",
+        "definition": "Client reported coming to the facility after receiving a provider-assisted referral or patient referral from a contact or partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerOrContactOfAnIndexCase",
+        "path": "HIVB.partnerOrContactOfAnIndexCase",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner or contact of an index case",
+        "definition": "The client is a contact or partner of a person diagnosed with HIV (an index case)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerOrContactOfAnHivTestingClientNonIndexCase",
+        "path": "HIVB.partnerOrContactOfAnHivTestingClientNonIndexCase",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner or contact of an HIV testing client (non-index case)",
+        "definition": "The client is a contact or partner identified through partner or social network services, but is not known to be a partner of an index-case",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.typeOfContactOrPartnerForPartnerServices",
+        "path": "HIVB.typeOfContactOrPartnerForPartnerServices",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Type of contact or partner for partner services",
+        "definition": "Clients relationship to the person that referred the client for partner services or family services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.biologicalChild",
+        "path": "HIVB.biologicalChild",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Biological child",
+        "definition": "Client is the biological child of the person that referred the client for family services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.drugInjectingPartner",
+        "path": "HIVB.drugInjectingPartner",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Drug-injecting partner",
+        "definition": "Client is a drug-injecting partner of the person that referred the client for partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sexualPartner",
+        "path": "HIVB.sexualPartner",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sexual partner",
+        "definition": "Client is a sexual partner of the person that referred the client for partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.socialContact",
+        "path": "HIVB.socialContact",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Social contact",
+        "definition": "Client is a social contact of the person that referred the client for social-network services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.contactWithAndSuspectedExposureToHiv",
+        "path": "HIVB.contactWithAndSuspectedExposureToHiv",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Contact with and (suspected) exposure to HIV",
+        "definition": "When the client is reported to have had suspected exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.datetimeOfSuspectedExposureToHiv",
+        "path": "HIVB.datetimeOfSuspectedExposureToHiv",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date/time of suspected exposure to HIV",
+        "definition": "Date and time when the client had suspected exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testingEntryPoint",
+        "path": "HIVB.testingEntryPoint",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Testing entry point",
+        "definition": "Whether testing is happening in the community or at a facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.communityLevelTesting",
+        "path": "HIVB.communityLevelTesting",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Community-level testing",
+        "definition": "Testing is happening in the community, which includes mobile testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.facilityLevelTesting",
+        "path": "HIVB.facilityLevelTesting",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Facility-level testing",
+        "definition": "Where the testing is happening – at a facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.entryPointForCommunityLevelTesting",
+        "path": "HIVB.entryPointForCommunityLevelTesting",
+        "code": [
+          {
+            "code": "DE18",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Entry point for community-level testing",
+        "definition": "Specific point in the community where testing is happening",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mobileTesting",
+        "path": "HIVB.mobileTesting",
+        "code": [
+          {
+            "code": "DE19",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Mobile testing (e.g. through vans or temporary testing facilities)",
+        "definition": "The client tested through mobile testing, such as through vans or temporary testing facilities",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.voluntaryCounsellingAndTestingCentres",
+        "path": "HIVB.voluntaryCounsellingAndTestingCentres",
+        "code": [
+          {
+            "code": "DE20",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Voluntary counselling and testing centres (not within a health facility setting)",
+        "definition": "The client tested at a voluntary counselling and testing centre (not in a health facility setting)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherCommunityBasedTesting",
+        "path": "HIVB.otherCommunityBasedTesting",
+        "code": [
+          {
+            "code": "DE21",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other community-based testing",
+        "definition": "The client tested through another type of community-based testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.entryPointForFacilityLevelTesting",
+        "path": "HIVB.entryPointForFacilityLevelTesting",
+        "code": [
+          {
+            "code": "DE22",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Entry point for facility-level testing",
+        "definition": "Specific point where testing is happening at a facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.providerInitiatedTestedInAClinicOrEmergencyFacility",
+        "path": "HIVB.providerInitiatedTestedInAClinicOrEmergencyFacility",
+        "code": [
+          {
+            "code": "DE23",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Provider-initiated tested in a clinic or emergency facility",
+        "definition": "The client tested though provider-initiated HIV testing & counselling, which could be at an emergency facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.antenatalCareClinic",
+        "path": "HIVB.antenatalCareClinic",
+        "code": [
+          {
+            "code": "DE24",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Antenatal care clinic",
+        "definition": "The client tested at an antenatal care clinic, including labour and delivery",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.voluntaryCounsellingAndTestingWithinAHealthFacilitySetting",
+        "path": "HIVB.voluntaryCounsellingAndTestingWithinAHealthFacilitySetting",
+        "code": [
+          {
+            "code": "DE25",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Voluntary counselling and testing (within a health facility setting)",
+        "definition": "The client tested through voluntary counselling and testing (within a health facility setting)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.familyPlanningClinic",
+        "path": "HIVB.familyPlanningClinic",
+        "code": [
+          {
+            "code": "DE26",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Family planning clinic",
+        "definition": "The client tested at a family planning clinic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherFacilityLevelTesting",
+        "path": "HIVB.otherFacilityLevelTesting",
+        "code": [
+          {
+            "code": "DE27",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other facility-level testing",
+        "definition": "The client tested at another type of facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tuberculosisTbClinic",
+        "path": "HIVB.tuberculosisTbClinic",
+        "code": [
+          {
+            "code": "DE28",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Tuberculosis (TB) clinic",
+        "definition": "The client tested at a TB clinic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.currentlyPregnant",
+        "path": "HIVB.currentlyPregnant",
+        "code": [
+          {
+            "code": "DE29",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Currently pregnant",
+        "definition": "Client is currently pregnant",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gestationalAge",
+        "path": "HIVB.gestationalAge",
+        "code": [
+          {
+            "code": "DE30",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Gestational age",
+        "definition": "Gestational age in weeks and/or days depending on the source of gestational age",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.expectedDateOfDeliveryEdd",
+        "path": "HIVB.expectedDateOfDeliveryEdd",
+        "code": [
+          {
+            "code": "DE31",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Expected date of delivery (EDD)",
+        "definition": "Expected date of delivery based on gestational age",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.breastfeeding",
+        "path": "HIVB.breastfeeding",
+        "code": [
+          {
+            "code": "DE32",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Breastfeeding",
+        "definition": "Infant is being breastfed by mother",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivStatusReported",
+        "path": "HIVB.partnerHivStatusReported",
+        "code": [
+          {
+            "code": "DE33",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV status (reported)",
+        "definition": "The HIV status of the clients partner.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cpHivPositive",
+        "path": "HIVB.cpHivPositive",
+        "code": [
+          {
+            "code": "DE34",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Clients partner is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cpHivNegative",
+        "path": "HIVB.cpHivNegative",
+        "code": [
+          {
+            "code": "DE35",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-negative",
+        "definition": "Clients partner is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cpUnknown",
+        "path": "HIVB.cpUnknown",
+        "code": [
+          {
+            "code": "DE36",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Unknown",
+        "definition": "Dont know HIV status - client does not know partners HIV status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerIsFromAKeyPopulation",
+        "path": "HIVB.partnerIsFromAKeyPopulation",
+        "code": [
+          {
+            "code": "DE37",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner is from a key population*",
+        "definition": "Clients partner is a member of a key population, that has an increased risk of HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sexWorker",
+        "path": "HIVB.sexWorker",
+        "code": [
+          {
+            "code": "DE38",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sex worker",
+        "definition": "Clients partner is a sex worker",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.menWhoHaveSexWithMen",
+        "path": "HIVB.menWhoHaveSexWithMen",
+        "code": [
+          {
+            "code": "DE39",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Men who have sex with men",
+        "definition": "Clients partner is a man who has sex with men",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.transgenderPeople",
+        "path": "HIVB.transgenderPeople",
+        "code": [
+          {
+            "code": "DE40",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Transgender people",
+        "definition": "Clients partner is transgender",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.peopleWhoInjectDrugs",
+        "path": "HIVB.peopleWhoInjectDrugs",
+        "code": [
+          {
+            "code": "DE41",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "People who inject drugs",
+        "definition": "Clients partner is a person who injects drugs",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.peopleLivingInPrisonsAndOtherClosedSettings",
+        "path": "HIVB.peopleLivingInPrisonsAndOtherClosedSettings",
+        "code": [
+          {
+            "code": "DE42",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "People living in prisons and other closed settings",
+        "definition": "Clients partner lives in a prison or other closed setting",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hasUsedAnHivSelfTestBeforeReported",
+        "path": "HIVB.hasUsedAnHivSelfTestBeforeReported",
+        "code": [
+          {
+            "code": "DE43",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Has used an HIV self-test before (reported)",
+        "definition": "The client reported having used an HIV self-test before",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivSelfTestResult",
+        "path": "HIVB.hivSelfTestResult",
+        "code": [
+          {
+            "code": "DE44",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV self-test result",
+        "definition": "Results from the reported HIV self-test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hstReactive",
+        "path": "HIVB.hstReactive",
+        "code": [
+          {
+            "code": "DE45",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reactive",
+        "definition": "The HIV self-test was reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hstNonReactive",
+        "path": "HIVB.hstNonReactive",
+        "code": [
+          {
+            "code": "DE46",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-reactive",
+        "definition": "The HIV self-test was non-reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hstInvalid",
+        "path": "HIVB.hstInvalid",
+        "code": [
+          {
+            "code": "DE47",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Invalid",
+        "definition": "The HIV self-test was invalid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateOfHivSelfTest",
+        "path": "HIVB.dateOfHivSelfTest",
+        "code": [
+          {
+            "code": "DE48",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date of HIV self-test",
+        "definition": "Date when the HIV self-test was conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.keyPopulationMember",
+        "path": "HIVB.keyPopulationMember",
+        "code": [
+          {
+            "code": "DE49",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Key population member*",
+        "definition": "Client is a member of a key population that has an increased risk of HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.keyPopulationMemberType",
+        "path": "HIVB.keyPopulationMemberType",
+        "code": [
+          {
+            "code": "DE50",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Key population member type*",
+        "definition": "The type of key population that the client is included in",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpSexWorker",
+        "path": "HIVB.kpSexWorker",
+        "code": [
+          {
+            "code": "DE51",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sex worker",
+        "definition": "Client is a sex worker",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpMenWhoHaveSexWithMen",
+        "path": "HIVB.kpMenWhoHaveSexWithMen",
+        "code": [
+          {
+            "code": "DE52",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Men who have sex with men",
+        "definition": "Client is a man who has sex with men",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpTransgenderPeople",
+        "path": "HIVB.kpTransgenderPeople",
+        "code": [
+          {
+            "code": "DE53",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Transgender people",
+        "definition": "Client is transgender",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpTeopleWhoInjectDrugs",
+        "path": "HIVB.kpTeopleWhoInjectDrugs",
+        "code": [
+          {
+            "code": "DE54",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "People who inject drugs",
+        "definition": "Client is a person who injects drugs",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpPeopleLivingInPrisonsAndOtherClosedSettings",
+        "path": "HIVB.kpPeopleLivingInPrisonsAndOtherClosedSettings",
+        "code": [
+          {
+            "code": "DE55",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "People living in prisons and other closed settings",
+        "definition": "Client lives in a prison or another closed setting",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpAdolescentGirl",
+        "path": "HIVB.kpAdolescentGirl",
+        "code": [
+          {
+            "code": "DE56",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Adolescent girl",
+        "definition": "Calculated field based on age and gender, if client is 10 years or older and under 20 years old",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpYoungWoman",
+        "path": "HIVB.kpYoungWoman",
+        "code": [
+          {
+            "code": "DE57",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Young woman",
+        "definition": "Calculated field based on age and gender, if client is 20 years or older and under 25 years old",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.kpOrphanOrVulnerableChild",
+        "path": "HIVB.kpOrphanOrVulnerableChild",
+        "code": [
+          {
+            "code": "DE58",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Orphan or vulnerable child",
+        "definition": "Client considered an orphan or vulnerable child",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.informedOfHivTestResult",
+        "path": "HIVB.informedOfHivTestResult",
+        "code": [
+          {
+            "code": "DE59",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Informed of HIV test result",
+        "definition": "Client has been informed of their HIV test result",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateHivTestResultsReturned",
+        "path": "HIVB.dateHivTestResultsReturned",
+        "code": [
+          {
+            "code": "DE60",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date HIV test results returned",
+        "definition": "Date HIV test result returned to client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivExposureType",
+        "path": "HIVB.hivExposureType",
+        "code": [
+          {
+            "code": "DE61",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV exposure type*",
+        "definition": "Ways in which the client was exposed to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.occupational",
+        "path": "HIVB.occupational",
+        "code": [
+          {
+            "code": "DE62",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Occupational",
+        "definition": "Occupational exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.nonOccupationalViolent",
+        "path": "HIVB.nonOccupationalViolent",
+        "code": [
+          {
+            "code": "DE63",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-occupational violent",
+        "definition": "Non-occupational violent exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.nonOccupationalConsensualSex",
+        "path": "HIVB.nonOccupationalConsensualSex",
+        "code": [
+          {
+            "code": "DE64",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-occupational consensual sex",
+        "definition": "Exposure to HIV through non-occupational consensual sex",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateInformedOfHivPositiveDiagnosis",
+        "path": "HIVB.dateInformedOfHivPositiveDiagnosis",
+        "code": [
+          {
+            "code": "DE65",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date informed of HIV-positive diagnosis",
+        "definition": "The date on which the client was diagnosed with HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivDiagnosingFacility",
+        "path": "HIVB.hivDiagnosingFacility",
+        "code": [
+          {
+            "code": "DE66",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV diagnosing facility",
+        "definition": "The facility where the client received an HIV-positive diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateOfFirstPositiveTestIndicativeOfHivDiagnosis",
+        "path": "HIVB.dateOfFirstPositiveTestIndicativeOfHivDiagnosis",
+        "code": [
+          {
+            "code": "DE67",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date of first positive test indicative of HIV diagnosis",
+        "definition": "Earliest date of HIV diagnosis determined according to the national HIV testing algorithm",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivSerotype",
+        "path": "HIVB.hivSerotype",
+        "code": [
+          {
+            "code": "DE68",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV serotype",
+        "definition": "The clients HIV serotype",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hiv1",
+        "path": "HIVB.hiv1",
+        "code": [
+          {
+            "code": "DE69",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-1",
+        "definition": "The client has HIV-1",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hiv2",
+        "path": "HIVB.hiv2",
+        "code": [
+          {
+            "code": "DE70",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-2",
+        "definition": "The client has HIV-2",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivDiagnosisDate",
+        "path": "HIVB.hivDiagnosisDate",
+        "code": [
+          {
+            "code": "DE71",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV diagnosis date",
+        "definition": "Date diagnosis was returned to client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.artStartDate",
+        "path": "HIVB.artStartDate",
+        "code": [
+          {
+            "code": "DE72",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "ART start date",
+        "definition": "The date on which the client started or restarted antiretroviral therapy (ART)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ageAtDiagnosis",
+        "path": "HIVB.ageAtDiagnosis",
+        "code": [
+          {
+            "code": "DE73",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Age at diagnosis",
+        "definition": "The clients age (in years) when given an HIV diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.typeOfContactElicited",
+        "path": "HIVB.typeOfContactElicited",
+        "code": [
+          {
+            "code": "DE74",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Type of contact elicited",
+        "definition": "Clients relationship to the contact identified for voluntary partner services or family services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tceBiologicalChild",
+        "path": "HIVB.tceBiologicalChild",
+        "code": [
+          {
+            "code": "DE75",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Biological child",
+        "definition": "Contact identified for family services is the biological child of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tceDrugInjectingPartner",
+        "path": "HIVB.tceDrugInjectingPartner",
+        "code": [
+          {
+            "code": "DE76",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Drug-injecting partner",
+        "definition": "Contact identified for partner services is a drug-injecting partner of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tceSexualPartner",
+        "path": "HIVB.tceSexualPartner",
+        "code": [
+          {
+            "code": "DE77",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sexual partner",
+        "definition": "Contact identified for partner services is a sexual partner of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tceSocialContact",
+        "path": "HIVB.tceSocialContact",
+        "code": [
+          {
+            "code": "DE78",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Social contact",
+        "definition": "Contact identified for social-network services is a social contact of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestOrdered",
+        "path": "HIVB.hivTestOrdered",
+        "code": [
+          {
+            "code": "DE79",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV test ordered",
+        "definition": "An HIV test of the client was ordered by the provider",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestConducted",
+        "path": "HIVB.hivTestConducted",
+        "code": [
+          {
+            "code": "DE80",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV test conducted",
+        "definition": "An HIV test was performed on the client during the visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestType",
+        "path": "HIVB.hivTestType",
+        "code": [
+          {
+            "code": "DE81",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV test type",
+        "definition": "Type of HIV test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.rapidDiagnosticTestForHiv",
+        "path": "HIVB.rapidDiagnosticTestForHiv",
+        "code": [
+          {
+            "code": "DE82",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Rapid diagnostic test for HIV",
+        "definition": "Antibody test for HIV performed with a rapid diagnostic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.enzymeImmunoassayForHiv",
+        "path": "HIVB.enzymeImmunoassayForHiv",
+        "code": [
+          {
+            "code": "DE83",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Enzyme immunoassay for HIV",
+        "definition": "Antibody test for HIV performed with an enzyme immunoassay",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.nucleicAcidTestForHiv",
+        "path": "HIVB.nucleicAcidTestForHiv",
+        "code": [
+          {
+            "code": "DE84",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Nucleic acid test for HIV",
+        "definition": "Virological test, which includes testing for early infant diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dualHivSyphilisRapidDiagnosticTest",
+        "path": "HIVB.dualHivSyphilisRapidDiagnosticTest",
+        "code": [
+          {
+            "code": "DE85",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Dual HIV/syphilis rapid diagnostic test",
+        "definition": "Antibody test for HIV and syphilis performed with a rapid diagnostic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivSelfTest",
+        "path": "HIVB.hivSelfTest",
+        "code": [
+          {
+            "code": "DE86",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV self-test",
+        "definition": "Antibody test for HIV performed by self-tester using a rapid diagnostic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateHivTestSent",
+        "path": "HIVB.dateHivTestSent",
+        "code": [
+          {
+            "code": "DE87",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date HIV test sent",
+        "definition": "Date HIV specimen was sent to lab",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assayNumberInTestingStrategy",
+        "path": "HIVB.assayNumberInTestingStrategy",
+        "code": [
+          {
+            "code": "DE88",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay number in testing strategy",
+        "definition": "The number of the assay (test kit) in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assay0",
+        "path": "HIVB.assay0",
+        "code": [
+          {
+            "code": "DE89",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay 0",
+        "definition": "A community outreach test-for-triage or self-test which is not included in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assay1",
+        "path": "HIVB.assay1",
+        "code": [
+          {
+            "code": "DE90",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay 1",
+        "definition": "The first test in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assay2",
+        "path": "HIVB.assay2",
+        "code": [
+          {
+            "code": "DE91",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay 2",
+        "definition": "The second test in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assay3",
+        "path": "HIVB.assay3",
+        "code": [
+          {
+            "code": "DE92",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay 3",
+        "definition": "The third test in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assay1Repeated",
+        "path": "HIVB.assay1Repeated",
+        "code": [
+          {
+            "code": "DE93",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assay 1 repeated",
+        "definition": "The first test in the HIV testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testResultOfHivAssay1",
+        "path": "HIVB.testResultOfHivAssay1",
+        "code": [
+          {
+            "code": "DE94",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Test result of HIV assay 1",
+        "definition": "The result of the first HIV assay in the testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trhaReactive",
+        "path": "HIVB.trhaReactive",
+        "code": [
+          {
+            "code": "DE95",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reactive",
+        "definition": "The result of the HIV assay in the testing strategy was reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trhaNonReactive",
+        "path": "HIVB.trhaNonReactive",
+        "code": [
+          {
+            "code": "DE96",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-reactive",
+        "definition": "The result of the HIV assay in the testing strategy was non-reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trhaInvalid",
+        "path": "HIVB.trhaInvalid",
+        "code": [
+          {
+            "code": "DE97",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Invalid",
+        "definition": "The result of the HIV assay in the testing strategy was invalid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testResultOfHivAssay2",
+        "path": "HIVB.testResultOfHivAssay2",
+        "code": [
+          {
+            "code": "DE98",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Test result of HIV assay 2",
+        "definition": "The result of the second HIV assay in the testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha2Reactive",
+        "path": "HIVB.trha2Reactive",
+        "code": [
+          {
+            "code": "DE99",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reactive",
+        "definition": "The result of the HIV assay in the testing strategy was reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha2NonReactive",
+        "path": "HIVB.trha2NonReactive",
+        "code": [
+          {
+            "code": "DE100",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-reactive",
+        "definition": "The result of the HIV assay in the testing strategy was non-reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha2Invalid",
+        "path": "HIVB.trha2Invalid",
+        "code": [
+          {
+            "code": "DE101",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Invalid",
+        "definition": "The result of the HIV assay in the testing strategy was invalid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testResultOfHivAssay3",
+        "path": "HIVB.testResultOfHivAssay3",
+        "code": [
+          {
+            "code": "DE102",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Test result of HIV assay 3",
+        "definition": "The result of the third HIV assay in the testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha3Reactive",
+        "path": "HIVB.trha3Reactive",
+        "code": [
+          {
+            "code": "DE103",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reactive",
+        "definition": "The result of the HIV assay in the testing strategy was reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha3NonReactive",
+        "path": "HIVB.trha3NonReactive",
+        "code": [
+          {
+            "code": "DE104",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-reactive",
+        "definition": "The result of the HIV assay in the testing strategy was non-reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha3Invalid",
+        "path": "HIVB.trha3Invalid",
+        "code": [
+          {
+            "code": "DE105",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Invalid",
+        "definition": "The result of the HIV assay in the testing strategy was invalid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testResultOfHivAssay1Repeated",
+        "path": "HIVB.testResultOfHivAssay1Repeated",
+        "code": [
+          {
+            "code": "DE106",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Test result of HIV assay 1 repeated",
+        "definition": "The result of the repeated first HIV assay in the testing strategy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha1rReactive",
+        "path": "HIVB.trha1rReactive",
+        "code": [
+          {
+            "code": "DE107",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Reactive",
+        "definition": "The result of the HIV assay in the testing strategy was reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha1rNonReactive",
+        "path": "HIVB.trha1rNonReactive",
+        "code": [
+          {
+            "code": "DE108",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-reactive",
+        "definition": "The result of the HIV assay in the testing strategy was non-reactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trha1rInvalid",
+        "path": "HIVB.trha1rInvalid",
+        "code": [
+          {
+            "code": "DE109",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Invalid",
+        "definition": "The result of the HIV assay in the testing strategy was invalid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestDate",
+        "path": "HIVB.hivTestDate",
+        "code": [
+          {
+            "code": "DE110",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV test date",
+        "definition": "Date of the HIV test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestResult",
+        "path": "HIVB.hivTestResult",
+        "code": [
+          {
+            "code": "DE111",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV test result",
+        "definition": "The result from HIV testing after applying the testing algorithm",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trHivPositive",
+        "path": "HIVB.trHivPositive",
+        "code": [
+          {
+            "code": "DE112",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Test result is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trHivNegative",
+        "path": "HIVB.trHivNegative",
+        "code": [
+          {
+            "code": "DE113",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-negative",
+        "definition": "Test result is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trHivInconclusive",
+        "path": "HIVB.trHivInconclusive",
+        "code": [
+          {
+            "code": "DE114",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-inconclusive",
+        "definition": "Test result is HIV-inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivStatus",
+        "path": "HIVB.hivStatus",
+        "code": [
+          {
+            "code": "DE115",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV status",
+        "definition": "HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stHivPositive",
+        "path": "HIVB.stHivPositive",
+        "code": [
+          {
+            "code": "DE116",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Client is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stHivNegative",
+        "path": "HIVB.stHivNegative",
+        "code": [
+          {
+            "code": "DE117",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-negative",
+        "definition": "Client is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stUnknown",
+        "path": "HIVB.stUnknown",
+        "code": [
+          {
+            "code": "DE118",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Unknown",
+        "definition": "Client has unknown HIV status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.datePositiveHivTestConfirmed",
+        "path": "HIVB.datePositiveHivTestConfirmed",
+        "code": [
+          {
+            "code": "DE119",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date positive HIV test confirmed",
+        "definition": "Date patient received positive HIV test confirmation (with written documentation)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.siteWherePositiveHivTestConfirmed",
+        "path": "HIVB.siteWherePositiveHivTestConfirmed",
+        "code": [
+          {
+            "code": "DE120",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Site where positive HIV test confirmed",
+        "definition": "Name or identifier of health facility where HIV test was confirmed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.probableRouteOfTransmission",
+        "path": "HIVB.probableRouteOfTransmission",
+        "code": [
+          {
+            "code": "DE121",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Probable route of transmission*",
+        "definition": "Probable route(s) of transmission of HIV to client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.heterosexualSex",
+        "path": "HIVB.heterosexualSex",
+        "code": [
+          {
+            "code": "DE122",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Heterosexual sex",
+        "definition": "Probable route of HIV transmission was through heterosexual sex",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sexBetweenMen",
+        "path": "HIVB.sexBetweenMen",
+        "code": [
+          {
+            "code": "DE123",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sex between men",
+        "definition": "Probable route of HIV transmission was through sex between men",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.unprotectedIntercourseDuringSexWork",
+        "path": "HIVB.unprotectedIntercourseDuringSexWork",
+        "code": [
+          {
+            "code": "DE124",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Unprotected intercourse during sex work",
+        "definition": "Probable route of HIV transmission was through unprotected intercourse during sex work",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.injectingDrugUseWithUnsterileEquipment",
+        "path": "HIVB.injectingDrugUseWithUnsterileEquipment",
+        "code": [
+          {
+            "code": "DE125",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Injecting drug use with unsterile equipment",
+        "definition": "Probable route of HIV transmission was through injecting drug use with unsterile equipment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.nosocomial",
+        "path": "HIVB.nosocomial",
+        "code": [
+          {
+            "code": "DE126",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Nosocomial",
+        "definition": "Probable route of HIV transmission was nosocomial",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vertical",
+        "path": "HIVB.vertical",
+        "code": [
+          {
+            "code": "DE127",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Vertical",
+        "definition": "Probable route of HIV transmission to an infant was during pregnancy, labour, delivery and breastfeeding (vertical transmission)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.rtOther",
+        "path": "HIVB.rtOther",
+        "code": [
+          {
+            "code": "DE128",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Probable route of HIV transmission was other and may include needle accidents, blood transfusion, blood products or organ/tissue donations, tattoos, piercings, circumcision, or acupuncture.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivTestConducted",
+        "path": "HIVB.partnerHivTestConducted",
+        "code": [
+          {
+            "code": "DE129",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV test conducted",
+        "definition": "If the client does not know the HIV status of the clients partner(s), offer to test and add results here",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivTestOrdered",
+        "path": "HIVB.partnerHivTestOrdered",
+        "code": [
+          {
+            "code": "DE130",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV test ordered",
+        "definition": "An HIV test for the clients partner has been ordered",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivTestDate",
+        "path": "HIVB.partnerHivTestDate",
+        "code": [
+          {
+            "code": "DE131",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV test date",
+        "definition": "Date of clients partners HIV test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivTestResult",
+        "path": "HIVB.partnerHivTestResult",
+        "code": [
+          {
+            "code": "DE132",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV test result",
+        "definition": "The HIV test result of the clients partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ptrHivPositive",
+        "path": "HIVB.ptrHivPositive",
+        "code": [
+          {
+            "code": "DE133",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Test result is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ptrHivNegative",
+        "path": "HIVB.ptrHivNegative",
+        "code": [
+          {
+            "code": "DE134",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-negative",
+        "definition": "Test result is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ptrHivInconclusive",
+        "path": "HIVB.ptrHivInconclusive",
+        "code": [
+          {
+            "code": "DE135",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-inconclusive",
+        "definition": "Test result is HIV-inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerHivStatusConfirmed",
+        "path": "HIVB.partnerHivStatusConfirmed",
+        "code": [
+          {
+            "code": "DE136",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner HIV status (confirmed)",
+        "definition": "The HIV status of a sexual or drug-injecting partner of the client, based on a confirmed test result",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pscHivPositive",
+        "path": "HIVB.pscHivPositive",
+        "code": [
+          {
+            "code": "DE137",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Clients partner is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pscHivNegative",
+        "path": "HIVB.pscHivNegative",
+        "code": [
+          {
+            "code": "DE138",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-negative",
+        "definition": "Clients partner is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pscUnknown",
+        "path": "HIVB.pscUnknown",
+        "code": [
+          {
+            "code": "DE139",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Unknown",
+        "definition": "Clients partner HIV status is unknown",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerOnArt",
+        "path": "HIVB.partnerOnArt",
+        "code": [
+          {
+            "code": "DE140",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner on ART",
+        "definition": "Partner of the client is on ART",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.partnerVirallySuppressedOnArt",
+        "path": "HIVB.partnerVirallySuppressedOnArt",
+        "code": [
+          {
+            "code": "DE141",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Partner virally suppressed on ART",
+        "definition": "ART and virally suppression status of a partner of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.counsellingProvided",
+        "path": "HIVB.counsellingProvided",
+        "code": [
+          {
+            "code": "DE142",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Counselling provided",
+        "definition": "Whether counselling was provided to a client during the visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivPositiveCounsellingConducted",
+        "path": "HIVB.hivPositiveCounsellingConducted",
+        "code": [
+          {
+            "code": "DE143",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV-positive counselling conducted",
+        "definition": "Whether counselling was provided to a client who has been diagnosed with HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hepatitisBPositiveCounsellingConducted",
+        "path": "HIVB.hepatitisBPositiveCounsellingConducted",
+        "code": [
+          {
+            "code": "DE144",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Hepatitis B positive counselling conducted",
+        "definition": "Whether counselling was provided to a client who has been diagnosed with hepatitis B",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hepatitisCPositiveCounsellingConducted",
+        "path": "HIVB.hepatitisCPositiveCounsellingConducted",
+        "code": [
+          {
+            "code": "DE145",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Hepatitis C positive counselling conducted",
+        "definition": "Whether counselling was provided to a client who has been diagnosed with hepatitis C",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisCounsellingTreatmentAndFurtherTesting",
+        "path": "HIVB.syphilisCounsellingTreatmentAndFurtherTesting",
+        "code": [
+          {
+            "code": "DE146",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis counselling, treatment and further testing",
+        "definition": "Whether counselling and treatment was provided to a client who has been diagnosed with syphilis. Additional testing (RPR test) recommended.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.linkedToEnrolmentInCareAndArtInitiation",
+        "path": "HIVB.linkedToEnrolmentInCareAndArtInitiation",
+        "code": [
+          {
+            "code": "DE147",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Linked to enrolment in care and ART initiation",
+        "definition": "Linkage made from HIV testing to enrolment in care following an HIV diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vmmcCounsellingProvided",
+        "path": "HIVB.vmmcCounsellingProvided",
+        "code": [
+          {
+            "code": "DE148",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "VMMC counselling provided",
+        "definition": "Whether counselling for voluntary medical male circumcision (VMMC) was provided following an HIV-negative test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.preventionServicesOfferedAndReferrals",
+        "path": "HIVB.preventionServicesOfferedAndReferrals",
+        "code": [
+          {
+            "code": "DE149",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Prevention services offered and referrals",
+        "definition": "Offer or refer to prevention services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offerMaleAndFemaleCondoms",
+        "path": "HIVB.offerMaleAndFemaleCondoms",
+        "code": [
+          {
+            "code": "DE150",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offer male and female condoms and condom-compatible lubricants",
+        "definition": "Offer male and female condoms and condom-compatible lubricants",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offerPreExposureProphylaxisPrepElev",
+        "path": "HIVB.offerPreExposureProphylaxisPrepElev",
+        "code": [
+          {
+            "code": "DE151",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offer pre-exposure prophylaxis (PrEP) for people at elevated risk for HIV acquisition",
+        "definition": "Offer pre-exposure prophylaxis (PrEP) to people with substantial ongoing risk of HIV infection",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offerPostExposureProphylaxisPrepSus",
+        "path": "HIVB.offerPostExposureProphylaxisPrepSus",
+        "code": [
+          {
+            "code": "DE152",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offer post-exposure prophylaxis (PEP) following suspected exposure",
+        "definition": "Offer or refer client for PEP following suspected exposure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.voluntaryMedicalMaleCircumcisionVmmc",
+        "path": "HIVB.voluntaryMedicalMaleCircumcisionVmmc",
+        "code": [
+          {
+            "code": "DE153",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Voluntary medical male circumcision (VMMC)",
+        "definition": "Offer referral for VMMC services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.harmReductionForPeopleWhoInjectDrugs",
+        "path": "HIVB.harmReductionForPeopleWhoInjectDrugs",
+        "code": [
+          {
+            "code": "DE154",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Harm reduction for people who inject drugs",
+        "definition": "Offer or refer to harm reduction services for people who inject drugs (needle and syringe programmes, opioid substitution therapy, other drug-dependence treatment and opioid overdose prevention and management)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.behaviouralInterventionsToSupportRiskReduction",
+        "path": "HIVB.behaviouralInterventionsToSupportRiskReduction",
+        "code": [
+          {
+            "code": "DE155",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations",
+        "definition": "Offer or refer to behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestingForPartnersAndBiologicalChildren",
+        "path": "HIVB.hivTestingForPartnersAndBiologicalChildren",
+        "code": [
+          {
+            "code": "DE156",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV testing for partners and biological children",
+        "definition": "Offer voluntary testing for all partners and biological children of positive cases (includes partner services and index case testing), as welll as partners and social contacts of people from key populations, where appropriate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivTestingForPartnersAndSocialContactsKP",
+        "path": "HIVB.hivTestingForPartnersAndSocialContactsKP",
+        "code": [
+          {
+            "code": "DE157",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV testing for partners and social contacts of people from key populations, where appropriate",
+        "definition": "Offer voluntary testing for partners and social contacts of people from key populations, where appropriate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sexualAndReproductiveHealthIntegratedServices",
+        "path": "HIVB.sexualAndReproductiveHealthIntegratedServices",
+        "code": [
+          {
+            "code": "DE158",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sexual and reproductive health integrated services",
+        "definition": "Offer or refer to sexual and reproductive health services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.contraceptionAndFamilyPlanning",
+        "path": "HIVB.contraceptionAndFamilyPlanning",
+        "code": [
+          {
+            "code": "DE159",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Contraception and family planning",
+        "definition": "Offer contraception and family planning services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.checkPregnancyStatus",
+        "path": "HIVB.checkPregnancyStatus",
+        "code": [
+          {
+            "code": "DE160",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Check pregnancy status",
+        "definition": "Check womens pregnancy status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.preventionOfMotherToChildTransmissionCounselling",
+        "path": "HIVB.preventionOfMotherToChildTransmissionCounselling",
+        "code": [
+          {
+            "code": "DE161",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Prevention of mother-to-child transmission counselling",
+        "definition": "Offer services for prevention of mother-to-child transmission (counselling)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cervicalCancerScreeningAndTreatmentCounselling",
+        "path": "HIVB.cervicalCancerScreeningAndTreatmentCounselling",
+        "code": [
+          {
+            "code": "DE162",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Cervical cancer screening and treatment counselling",
+        "definition": "Offer cervical cancer screening and treatment counselling and services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.analCancerScreeningForMenWhoHaveSexWithMen",
+        "path": "HIVB.analCancerScreeningForMenWhoHaveSexWithMen",
+        "code": [
+          {
+            "code": "DE163",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Anal cancer screening (for men who have sex with men)",
+        "definition": "Offer services for anal cancer screening (for men who have sex with men)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiTestingAndTreatmentServices",
+        "path": "HIVB.stiTestingAndTreatmentServices",
+        "code": [
+          {
+            "code": "DE164",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "STI testing and treatment services",
+        "definition": "Offer sexually transmitted infection (STI) testing and treatment services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offerOtherClinicalServices",
+        "path": "HIVB.offerOtherClinicalServices",
+        "code": [
+          {
+            "code": "DE165",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offer other clinical services",
+        "definition": "Other clinical services offered or referrals given to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.assessmentAndProvisionOfVaccinations",
+        "path": "HIVB.assessmentAndProvisionOfVaccinations",
+        "code": [
+          {
+            "code": "DE166",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Assessment and provision of vaccinations",
+        "definition": "Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hepatitisTestingAndTreatmentProvided",
+        "path": "HIVB.hepatitisTestingAndTreatmentProvided",
+        "code": [
+          {
+            "code": "DE167",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Hepatitis B (HBV) and hepatitis C virus (HCV) testing and treatment provided",
+        "definition": "Offer or refer for HBV and/or HCV testing and treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.coTrimoxazoleChemoprophylaxisProvided",
+        "path": "HIVB.coTrimoxazoleChemoprophylaxisProvided",
+        "code": [
+          {
+            "code": "DE168",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Co-trimoxazole chemoprophylaxis to prevent Pneumocystis carinii pneumonia provided",
+        "definition": "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.intensifiedTbCaseFindingAndLinkageToTbTreatmentProvided",
+        "path": "HIVB.intensifiedTbCaseFindingAndLinkageToTbTreatmentProvided",
+        "code": [
+          {
+            "code": "DE169",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Intensified TB case finding and linkage to TB treatment provided",
+        "definition": "Offer or refer for intensified TB case finding and linkage to TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb",
+        "path": "HIVB.provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb",
+        "code": [
+          {
+            "code": "DE170",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Provision of isoniazid preventive therapy if person does not have TB",
+        "definition": "Offer or refer for provision of isoniazid preventive therapy if person does not have TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.malariaPreventionDependingOnEpidemiology",
+        "path": "HIVB.malariaPreventionDependingOnEpidemiology",
+        "code": [
+          {
+            "code": "DE171",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+        "definition": "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherSupportServices",
+        "path": "HIVB.otherSupportServices",
+        "code": [
+          {
+            "code": "DE172",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other support services",
+        "definition": "Offer or refer for other support services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mentalHealthServices",
+        "path": "HIVB.mentalHealthServices",
+        "code": [
+          {
+            "code": "DE173",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Mental health services",
+        "definition": "Offer or refer for mental health services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.psychosocialCounselling",
+        "path": "HIVB.psychosocialCounselling",
+        "code": [
+          {
+            "code": "DE174",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Psychosocial counselling, support and treatment adherence counselling",
+        "definition": "Offer or refer for psychosocial counselling, support and treatment adherence counselling",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.supportForDisclosureAndPartnerServices",
+        "path": "HIVB.supportForDisclosureAndPartnerServices",
+        "code": [
+          {
+            "code": "DE175",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Support for disclosure and partner services",
+        "definition": "Offer or refer for support for disclosure and partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.legalAndSocialServices",
+        "path": "HIVB.legalAndSocialServices",
+        "code": [
+          {
+            "code": "DE176",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Legal and social services",
+        "definition": "Offer or refer for legal and social services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.servicesForRespondingToViolenceAgainstWomen",
+        "path": "HIVB.servicesForRespondingToViolenceAgainstWomen",
+        "code": [
+          {
+            "code": "DE177",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Services for responding to violence against women",
+        "definition": "Offer or refer for services for responding to violence against women, including first-line support and psychosocial support, post-rape care and other support services including shelters, legal services and women and child protection services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.clinicalEnquiryForIntimatePartnerViolenceIpvDone",
+        "path": "HIVB.clinicalEnquiryForIntimatePartnerViolenceIpvDone",
+        "code": [
+          {
+            "code": "DE178",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Clinical enquiry for intimate partner violence (IPV) done",
+        "definition": "Whether a clinical enquiry for intimate partner violence was conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.intimatePartnerViolenceEnquiryResults",
+        "path": "HIVB.intimatePartnerViolenceEnquiryResults",
+        "code": [
+          {
+            "code": "DE179",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Intimate partner violence enquiry results",
+        "definition": "Result of medical inquiry for intimate partner violence",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.clientReceivedTreatmentAndOrCounsellingAsNeeded",
+        "path": "HIVB.clientReceivedTreatmentAndOrCounsellingAsNeeded",
+        "code": [
+          {
+            "code": "DE180",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Client received treatment and/or counselling as needed",
+        "definition": "Client received treatment and/or counselling as needed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.clientWasReferred",
+        "path": "HIVB.clientWasReferred",
+        "code": [
+          {
+            "code": "DE181",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Client was referred",
+        "definition": "Client was referred to another provider/facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.noActionNecessary",
+        "path": "HIVB.noActionNecessary",
+        "code": [
+          {
+            "code": "DE182",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "No action necessary",
+        "definition": "No additional action was deemed necessary",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherIpvResult",
+        "path": "HIVB.otherIpvResult",
+        "code": [
+          {
+            "code": "DE183",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other IPV result",
+        "definition": "Other intimate partner violence (IPV) result not described above",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherIpvResultSpecify",
+        "path": "HIVB.otherIpvResultSpecify",
+        "code": [
+          {
+            "code": "DE184",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other IPV result (specify)",
+        "definition": "Other intimate partner violence (IPV) result not described above (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offeredVoluntaryPartnerServices",
+        "path": "HIVB.offeredVoluntaryPartnerServices",
+        "code": [
+          {
+            "code": "DE185",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offered voluntary partner services",
+        "definition": "Whether the client was offered voluntary partner services or family services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.countOfContactsOrPartnersGiven",
+        "path": "HIVB.countOfContactsOrPartnersGiven",
+        "code": [
+          {
+            "code": "DE186",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Count of contacts or partners given for social network-based/partner services",
+        "definition": "The quantity of contacts or partners given by a client that accepts social network-based/partner services for follow-up",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.offeredSocialNetworkBasedPartnerServices",
+        "path": "HIVB.offeredSocialNetworkBasedPartnerServices",
+        "code": [
+          {
+            "code": "DE187",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Offered social network-based/partner services",
+        "definition": "Whether the client was offered social network-based partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.acceptedSocialNetworkBasedPartnerServices",
+        "path": "HIVB.acceptedSocialNetworkBasedPartnerServices",
+        "code": [
+          {
+            "code": "DE188",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Accepted social network-based/partner services",
+        "definition": "Whether the client accepted social network-based partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.contactFirstNameToOfferSocialNetworkBasedPartnerServices",
+        "path": "HIVB.contactFirstNameToOfferSocialNetworkBasedPartnerServices",
+        "code": [
+          {
+            "code": "DE189",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Contact first name to offer social network-based/partner services",
+        "definition": "First name of each contact given by the client to offer social network-based/partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.contactLastNameToOfferSocialNetworkBasedPartnerServices",
+        "path": "HIVB.contactLastNameToOfferSocialNetworkBasedPartnerServices",
+        "code": [
+          {
+            "code": "DE190",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Contact last name to offer social network-based/partner services",
+        "definition": "Last or family name of each contact given by the client to offer social network-based/partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.typeOfFollowUpAppointment",
+        "path": "HIVB.typeOfFollowUpAppointment",
+        "code": [
+          {
+            "code": "DE191",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Type of follow-up appointment",
+        "definition": "Type of follow-up appointment for testing services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.fuaRetestingForHiv",
+        "path": "HIVB.fuaRetestingForHiv",
+        "code": [
+          {
+            "code": "DE192",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Retesting for HIV",
+        "definition": "Retesting follow-up appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.fuaOther",
+        "path": "HIVB.fuaOther",
+        "code": [
+          {
+            "code": "DE193",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other reason for the follow-up appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherReasonForTheFollowUpAppointmentSpecify",
+        "path": "HIVB.otherReasonForTheFollowUpAppointmentSpecify",
+        "code": [
+          {
+            "code": "DE194",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other reason for the follow-up appointment (specify)",
+        "definition": "Other reason for the follow-up appointment (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.datetimeOfFollowUpAppointment",
+        "path": "HIVB.datetimeOfFollowUpAppointment",
+        "code": [
+          {
+            "code": "DE195",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date/time of follow-up appointment",
+        "definition": "Date the patient is to return for monitoring, re-supply or any other reason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.recommendedFollowUpDate",
+        "path": "HIVB.recommendedFollowUpDate",
+        "code": [
+          {
+            "code": "DE196",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Recommended follow-up date",
+        "definition": "Date when follow-up is recommended based on follow up requirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vmmcProcedure",
+        "path": "HIVB.vmmcProcedure",
+        "code": [
+          {
+            "code": "DE197",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "VMMC procedure",
+        "definition": "Whether a voluntary medical male circumcision procedure was performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vmmcProcedureDate",
+        "path": "HIVB.vmmcProcedureDate",
+        "code": [
+          {
+            "code": "DE198",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "VMMC procedure date",
+        "definition": "Date on which a voluntary medical male circumcision procedure was performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.adverseEventReportedFromAVmmc",
+        "path": "HIVB.adverseEventReportedFromAVmmc",
+        "code": [
+          {
+            "code": "DE199",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Adverse event reported from a VMMC",
+        "definition": "Whether an adverse event was reported associated with a voluntary medical male circumcision (VMMC) procedure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.seriousAdverseEvent",
+        "path": "HIVB.seriousAdverseEvent",
+        "code": [
+          {
+            "code": "DE200",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Serious adverse event",
+        "definition": "Complications from voluntary medical male circumcision (VMMC) procedure resulted in death or hospitalization within 30 days of the procedure or permanent disability",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.adverseEventSeverity",
+        "path": "HIVB.adverseEventSeverity",
+        "code": [
+          {
+            "code": "DE201",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Adverse event severity",
+        "definition": "Severity of the adverse event associated with voluntary medical male circumcision (VMMC) procedure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.moderate",
+        "path": "HIVB.moderate",
+        "code": [
+          {
+            "code": "DE202",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Moderate",
+        "definition": "Severity of the adverse event associated with VMMC procedure was moderate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.severe",
+        "path": "HIVB.severe",
+        "code": [
+          {
+            "code": "DE203",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Severe",
+        "definition": "Severity of the adverse event associated with VMMC procedure was severe",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.timingOfAdverseEvent",
+        "path": "HIVB.timingOfAdverseEvent",
+        "code": [
+          {
+            "code": "DE204",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Timing of adverse event",
+        "definition": "When the adverse event associated with VMMC procedure occurred",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.intraoperative",
+        "path": "HIVB.intraoperative",
+        "code": [
+          {
+            "code": "DE205",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Intraoperative",
+        "definition": "The adverse event associated with VMMC procedure occurred during the procedure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.postoperative",
+        "path": "HIVB.postoperative",
+        "code": [
+          {
+            "code": "DE206",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Postoperative",
+        "definition": "The adverse event associated with VMMC procedure occurred within the first 30 days after the procedure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.typeOfAdverseVmmcEvent",
+        "path": "HIVB.typeOfAdverseVmmcEvent",
+        "code": [
+          {
+            "code": "DE207",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Type of adverse VMMC event",
+        "definition": "Type of adverse event associated with voluntary medical male circumcision (VMMC) procedure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.abnormalPain",
+        "path": "HIVB.abnormalPain",
+        "code": [
+          {
+            "code": "DE208",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Abnormal pain",
+        "definition": "Client experienced abnormal pain",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.anaesthesiaRelatedEffects",
+        "path": "HIVB.anaesthesiaRelatedEffects",
+        "code": [
+          {
+            "code": "DE209",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Anaesthesia-related effects",
+        "definition": "Client had anaesthesia-related effects",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.bleeding",
+        "path": "HIVB.bleeding",
+        "code": [
+          {
+            "code": "DE210",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Bleeding",
+        "definition": "Client had bleeding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.damageToThePenis",
+        "path": "HIVB.damageToThePenis",
+        "code": [
+          {
+            "code": "DE211",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Damage to the penis",
+        "definition": "Client had damage to the penis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.difficultyUrinating",
+        "path": "HIVB.difficultyUrinating",
+        "code": [
+          {
+            "code": "DE212",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Difficulty urinating",
+        "definition": "Client had difficulty urinating",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.excessiveBleeding",
+        "path": "HIVB.excessiveBleeding",
+        "code": [
+          {
+            "code": "DE213",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Excessive bleeding",
+        "definition": "Client experienced excessive bleeding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.excessiveSkinRemoval",
+        "path": "HIVB.excessiveSkinRemoval",
+        "code": [
+          {
+            "code": "DE214",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Excessive skin removal",
+        "definition": "Client experienced excessive skin removal",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.excessiveSwelling",
+        "path": "HIVB.excessiveSwelling",
+        "code": [
+          {
+            "code": "DE215",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Excessive swelling",
+        "definition": "Client experienced excessive swelling",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.haematoma",
+        "path": "HIVB.haematoma",
+        "code": [
+          {
+            "code": "DE216",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Haematoma",
+        "definition": "Client experienced haematoma",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.infection",
+        "path": "HIVB.infection",
+        "code": [
+          {
+            "code": "DE217",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Infection",
+        "definition": "Client experienced infection",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.injuryToGlans",
+        "path": "HIVB.injuryToGlans",
+        "code": [
+          {
+            "code": "DE218",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Injury to glans",
+        "definition": "Client experienced injury to glans",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.scarOrDisfigurement",
+        "path": "HIVB.scarOrDisfigurement",
+        "code": [
+          {
+            "code": "DE219",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Scar or disfigurement",
+        "definition": "Client experienced scar or disfigurement",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sharpsInjuryToPersonnel",
+        "path": "HIVB.sharpsInjuryToPersonnel",
+        "code": [
+          {
+            "code": "DE220",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sharps injury to personnel",
+        "definition": "During VMMC procedure there was sharps injury to personnel",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.woundDisruption",
+        "path": "HIVB.woundDisruption",
+        "code": [
+          {
+            "code": "DE221",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Wound disruption",
+        "definition": "Client experienced wound disruption",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vmmcOther",
+        "path": "HIVB.vmmcOther",
+        "code": [
+          {
+            "code": "DE222",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client experienced other adverse VMMC event",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vmmcOtherSpecify",
+        "path": "HIVB.vmmcOtherSpecify",
+        "code": [
+          {
+            "code": "DE223",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Client experienced other adverse VMMC event (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hivRetestPriorToStartingArtConducted",
+        "path": "HIVB.hivRetestPriorToStartingArtConducted",
+        "code": [
+          {
+            "code": "DE224",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "HIV retest prior to starting ART conducted",
+        "definition": "HIV retest prior to starting ART conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.atElevatedRiskForHivAcquisition",
+        "path": "HIVB.atElevatedRiskForHivAcquisition",
+        "code": [
+          {
+            "code": "DE225",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "At elevated risk for HIV acquisition",
+        "definition": "Client is at elevated risk for HIV acquisition",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syndromestiDiagnosed",
+        "path": "HIVB.syndromestiDiagnosed",
+        "code": [
+          {
+            "code": "DE226",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syndrome/STI diagnosed",
+        "definition": "Syndrome or STI for which client is diagnosed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.urethralDischargeSyndrome",
+        "path": "HIVB.urethralDischargeSyndrome",
+        "code": [
+          {
+            "code": "DE227",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Urethral discharge syndrome",
+        "definition": "Client diagnosed with urethral discharge syndrome",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.vaginalDischargeSyndrome",
+        "path": "HIVB.vaginalDischargeSyndrome",
+        "code": [
+          {
+            "code": "DE228",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Vaginal discharge syndrome",
+        "definition": "Client diagnosed with vaginal discharge syndrome",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.lowerAbdominalPain",
+        "path": "HIVB.lowerAbdominalPain",
+        "code": [
+          {
+            "code": "DE229",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Lower Abdominal pain ",
+        "definition": "Client diagnosed with lower abdominal pain",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.genitalUlcerDiseaseSyndrome",
+        "path": "HIVB.genitalUlcerDiseaseSyndrome",
+        "code": [
+          {
+            "code": "DE230",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Genital ulcer disease syndrome",
+        "definition": "Client diagnosed with genital ulcer disease syndrome",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.anorectalDischarge",
+        "path": "HIVB.anorectalDischarge",
+        "code": [
+          {
+            "code": "DE231",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Anorectal discharge",
+        "definition": "Client diagnosed with anorectal discharge",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sentForTesting",
+        "path": "HIVB.sentForTesting",
+        "code": [
+          {
+            "code": "DE232",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Sent for testing",
+        "definition": "Specimen sent for testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stidOther",
+        "path": "HIVB.stidOther",
+        "code": [
+          {
+            "code": "DE233",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other syndrome/STI diagnosed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stidOtherSpecify",
+        "path": "HIVB.stidOtherSpecify",
+        "code": [
+          {
+            "code": "DE234",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other syndrome/STI diagnosed (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.anyStiSyndromeDiagnosed",
+        "path": "HIVB.anyStiSyndromeDiagnosed",
+        "code": [
+          {
+            "code": "DE235",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Any STI syndrome diagnosed",
+        "definition": "Was the client diagnosed with any of the five STI syndromes during this visit?",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateOfStiTest",
+        "path": "HIVB.dateOfStiTest",
+        "code": [
+          {
+            "code": "DE236",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date of STI test",
+        "definition": "Date on which the STI test was conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiTestedFor",
+        "path": "HIVB.stiTestedFor",
+        "code": [
+          {
+            "code": "DE237",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "STI tested for",
+        "definition": "STI for which the client was tested",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.neisseriaGonorrhoeae",
+        "path": "HIVB.neisseriaGonorrhoeae",
+        "code": [
+          {
+            "code": "DE238",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Neisseria gonorrhoeae",
+        "definition": "Client tested for Neisseria gonorrhoeae",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlamydiaTrachomatis",
+        "path": "HIVB.chlamydiaTrachomatis",
+        "code": [
+          {
+            "code": "DE239",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Chlamydia trachomatis",
+        "definition": "Client tested for Chlamydia trachomatis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trichomonasVaginalis",
+        "path": "HIVB.trichomonasVaginalis",
+        "code": [
+          {
+            "code": "DE240",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Trichomonas vaginalis",
+        "definition": "Client tested for Trichomonas vaginalis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisTreponemaPallidum",
+        "path": "HIVB.syphilisTreponemaPallidum",
+        "code": [
+          {
+            "code": "DE241",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis (Treponema pallidum)",
+        "definition": "Client tested for Syphilis (treponema pallidum)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.herpesSimplexVirusHsv1Hsv2",
+        "path": "HIVB.herpesSimplexVirusHsv1Hsv2",
+        "code": [
+          {
+            "code": "DE242",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Herpes simplex virus (HSV1, HSV2)",
+        "definition": "Client tested for herpes simplex virus (HSV1, HSV2)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mycoplasmaGenitalium",
+        "path": "HIVB.mycoplasmaGenitalium",
+        "code": [
+          {
+            "code": "DE243",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Mycoplasma genitalium",
+        "definition": "Client tested for Mycoplasma genitalium",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mpox",
+        "path": "HIVB.mpox",
+        "code": [
+          {
+            "code": "DE244",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Mpox",
+        "definition": "Client tested for Mpox",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hepatitisB",
+        "path": "HIVB.hepatitisB",
+        "code": [
+          {
+            "code": "DE245",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Hepatitis B",
+        "definition": "Client tested for Hepatitis B",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hepatitisC",
+        "path": "HIVB.hepatitisC",
+        "code": [
+          {
+            "code": "DE246",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Hepatitis C",
+        "definition": "Client tested for Hepatitis C",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiOther",
+        "path": "HIVB.stiOther",
+        "code": [
+          {
+            "code": "DE247",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client tested for other STI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiOtherSpecify",
+        "path": "HIVB.stiOtherSpecify",
+        "code": [
+          {
+            "code": "DE248",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Client tested for other STI (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisTestDate",
+        "path": "HIVB.syphilisTestDate",
+        "code": [
+          {
+            "code": "DE249",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis test date",
+        "definition": "Date of syphilis test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisTestResult",
+        "path": "HIVB.syphilisTestResult",
+        "code": [
+          {
+            "code": "DE250",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis test result",
+        "definition": "Result from syphilis test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypPositive",
+        "path": "HIVB.sypPositive",
+        "code": [
+          {
+            "code": "DE251",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Positive",
+        "definition": "Test result is positive for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypNegative",
+        "path": "HIVB.sypNegative",
+        "code": [
+          {
+            "code": "DE252",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Negative",
+        "definition": "Test result is negative for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypInconclusive",
+        "path": "HIVB.sypInconclusive",
+        "code": [
+          {
+            "code": "DE253",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Test result is inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisTreatmentStartDate",
+        "path": "HIVB.syphilisTreatmentStartDate",
+        "code": [
+          {
+            "code": "DE254",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis treatment start date",
+        "definition": "Date of initiation of syphilis treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonorrhoeaTestDate",
+        "path": "HIVB.gonorrhoeaTestDate",
+        "code": [
+          {
+            "code": "DE255",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Gonorrhoea test date",
+        "definition": "Date of Gonorrhoea test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonorrhoeaTestResult",
+        "path": "HIVB.gonorrhoeaTestResult",
+        "code": [
+          {
+            "code": "DE256",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Gonorrhoea test result",
+        "definition": "Result from Gonorrhoea test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonPositive",
+        "path": "HIVB.gonPositive",
+        "code": [
+          {
+            "code": "DE257",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Positive",
+        "definition": "Test result is positive for Neisseria gonorrhoeae",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonNegative",
+        "path": "HIVB.gonNegative",
+        "code": [
+          {
+            "code": "DE258",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Negative",
+        "definition": "Test result is negative for Neisseria gonorrhoeae",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonInconclusive",
+        "path": "HIVB.gonInconclusive",
+        "code": [
+          {
+            "code": "DE259",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Test result is inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.gonorrhoeaTreatmentStartDate",
+        "path": "HIVB.gonorrhoeaTreatmentStartDate",
+        "code": [
+          {
+            "code": "DE260",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Gonorrhoea treatment start date",
+        "definition": "Date of initiation of Gonorrhoea treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.typeOfSpecimen",
+        "path": "HIVB.typeOfSpecimen",
+        "code": [
+          {
+            "code": "DE261",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Type of specimen",
+        "definition": "Type of specimen to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.blood",
+        "path": "HIVB.blood",
+        "code": [
+          {
+            "code": "DE262",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Blood",
+        "definition": "Blood specimen to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.urine",
+        "path": "HIVB.urine",
+        "code": [
+          {
+            "code": "DE263",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Urine",
+        "definition": "Urine specimen to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cervicalOrVaginalSwab",
+        "path": "HIVB.cervicalOrVaginalSwab",
+        "code": [
+          {
+            "code": "DE264",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Cervical or vaginal swab",
+        "definition": "Cervical or vaginal swab to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.urethralOrPenileSwab",
+        "path": "HIVB.urethralOrPenileSwab",
+        "code": [
+          {
+            "code": "DE265",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Urethral or penile swab",
+        "definition": "Urethral or penile swab to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.rectalSwab",
+        "path": "HIVB.rectalSwab",
+        "code": [
+          {
+            "code": "DE266",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Rectal swab",
+        "definition": "Rectal swab to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.spOther",
+        "path": "HIVB.spOther",
+        "code": [
+          {
+            "code": "DE267",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other specimen type to be collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherTypeOfSpecimenSpecify",
+        "path": "HIVB.otherTypeOfSpecimenSpecify",
+        "code": [
+          {
+            "code": "DE268",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other type of specimen (specify)",
+        "definition": "Other specimen type to be collected (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.syphilisTestType",
+        "path": "HIVB.syphilisTestType",
+        "code": [
+          {
+            "code": "DE269",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Syphilis test type",
+        "definition": "Type of diagnostic test used for syphilis (treponema pallidum)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.treponemal",
+        "path": "HIVB.treponemal",
+        "code": [
+          {
+            "code": "DE270",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Treponemal",
+        "definition": "Treponemal test used ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.nonTreponemal",
+        "path": "HIVB.nonTreponemal",
+        "code": [
+          {
+            "code": "DE271",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-treponemal",
+        "definition": "Non-treponemal test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypPocTest",
+        "path": "HIVB.sypPocTest",
+        "code": [
+          {
+            "code": "DE272",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypNaat",
+        "path": "HIVB.sypNaat",
+        "code": [
+          {
+            "code": "DE273",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.sypOther",
+        "path": "HIVB.sypOther",
+        "code": [
+          {
+            "code": "DE274",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherSyphilisTestTypeSpecify",
+        "path": "HIVB.otherSyphilisTestTypeSpecify",
+        "code": [
+          {
+            "code": "DE275",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other syphilis test type (specify)",
+        "definition": "Other test used (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.neisseriaGonorrhoeaeTestType",
+        "path": "HIVB.neisseriaGonorrhoeaeTestType",
+        "code": [
+          {
+            "code": "DE276",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Neisseria gonorrhoeae test type",
+        "definition": "Type of diagnostic test used for Neisseria gonorrhoeae",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngNaat",
+        "path": "HIVB.ngNaat",
+        "code": [
+          {
+            "code": "DE277",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngPocTest",
+        "path": "HIVB.ngPocTest",
+        "code": [
+          {
+            "code": "DE278",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngCulture",
+        "path": "HIVB.ngCulture",
+        "code": [
+          {
+            "code": "DE279",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Culture",
+        "definition": "Culture test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngMicroscopy",
+        "path": "HIVB.ngMicroscopy",
+        "code": [
+          {
+            "code": "DE280",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Microscopy",
+        "definition": "Microscopy test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngOther",
+        "path": "HIVB.ngOther",
+        "code": [
+          {
+            "code": "DE281",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other type of test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.ngOtherSpecify",
+        "path": "HIVB.ngOtherSpecify",
+        "code": [
+          {
+            "code": "DE282",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other type of test used (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pocTestForNeisseriaGonorrhoeaeSpecify",
+        "path": "HIVB.pocTestForNeisseriaGonorrhoeaeSpecify",
+        "code": [
+          {
+            "code": "DE283",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test for Neisseria gonorrhoeae (specify)",
+        "definition": "Point-of-care (POC) test used for Neisseria gonorrhoeae (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlamydiaTrachomatisTestType",
+        "path": "HIVB.chlamydiaTrachomatisTestType",
+        "code": [
+          {
+            "code": "DE284",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Chlamydia trachomatis test type",
+        "definition": "Type of diagnostic test used for Chlamydia trachomatis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlNaat",
+        "path": "HIVB.chlNaat",
+        "code": [
+          {
+            "code": "DE285",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlPocTest",
+        "path": "HIVB.chlPocTest",
+        "code": [
+          {
+            "code": "DE286",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlCulture",
+        "path": "HIVB.chlCulture",
+        "code": [
+          {
+            "code": "DE287",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Culture",
+        "definition": "Culture test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.elisa",
+        "path": "HIVB.elisa",
+        "code": [
+          {
+            "code": "DE288",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "ELISA",
+        "definition": "ELISA test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlMicroscopy",
+        "path": "HIVB.chlMicroscopy",
+        "code": [
+          {
+            "code": "DE289",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Microscopy",
+        "definition": "Microscopy test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.chlOther",
+        "path": "HIVB.chlOther",
+        "code": [
+          {
+            "code": "DE290",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other type of test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.otherTestForChlamydiaSpecify",
+        "path": "HIVB.otherTestForChlamydiaSpecify",
+        "code": [
+          {
+            "code": "DE291",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other test for Chlamydia (specify)",
+        "definition": "Other type of test used for Chlaymdia (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pocTestTypeForChlamydiaTestSpecify",
+        "path": "HIVB.pocTestTypeForChlamydiaTestSpecify",
+        "code": [
+          {
+            "code": "DE292",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test type for Chlamydia test (specify)",
+        "definition": "Point-of-care (POC) test used for Chlamydia (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.trichomonasVaginalisTestType",
+        "path": "HIVB.trichomonasVaginalisTestType",
+        "code": [
+          {
+            "code": "DE293",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Trichomonas vaginalis test type",
+        "definition": "Type of diagnostic test used for Trichomonas vaginalis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvNaat",
+        "path": "HIVB.tvNaat",
+        "code": [
+          {
+            "code": "DE294",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvPocTest",
+        "path": "HIVB.tvPocTest",
+        "code": [
+          {
+            "code": "DE295",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvCulture",
+        "path": "HIVB.tvCulture",
+        "code": [
+          {
+            "code": "DE296",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Culture",
+        "definition": "Culture test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvMicroscopy",
+        "path": "HIVB.tvMicroscopy",
+        "code": [
+          {
+            "code": "DE297",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Microscopy",
+        "definition": "Microscopy test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvOther",
+        "path": "HIVB.tvOther",
+        "code": [
+          {
+            "code": "DE298",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other type of test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.tvOtherSpecify",
+        "path": "HIVB.tvOtherSpecify",
+        "code": [
+          {
+            "code": "DE299",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other type of test used (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.pocTestTypeForTrichomonasVaginalisTestSpecify",
+        "path": "HIVB.pocTestTypeForTrichomonasVaginalisTestSpecify",
+        "code": [
+          {
+            "code": "DE300",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test type for Trichomonas vaginalis test (specify)",
+        "definition": "Point-of-care (POC) test used (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.herpesSimplexVirusHsvTestType",
+        "path": "HIVB.herpesSimplexVirusHsvTestType",
+        "code": [
+          {
+            "code": "DE301",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Herpes simplex virus (HSV) test type",
+        "definition": "Type of diagnostic test used for herpes simplex virus (HSV)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hsNaat",
+        "path": "HIVB.hsNaat",
+        "code": [
+          {
+            "code": "DE302",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.antibodyTest",
+        "path": "HIVB.antibodyTest",
+        "code": [
+          {
+            "code": "DE303",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Antibody test ",
+        "definition": "Antibody test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hsOther",
+        "path": "HIVB.hsOther",
+        "code": [
+          {
+            "code": "DE304",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other type of test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.hsOtherSpecify",
+        "path": "HIVB.hsOtherSpecify",
+        "code": [
+          {
+            "code": "DE305",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other type of test used for Herpes simplex virus (HSV) test (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mycoplasmaGenitaliumTestType",
+        "path": "HIVB.mycoplasmaGenitaliumTestType",
+        "code": [
+          {
+            "code": "DE306",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Mycoplasma genitalium test type",
+        "definition": "Type of diagnostic test used for Mycoplasma genitalium",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mgNaat",
+        "path": "HIVB.mgNaat",
+        "code": [
+          {
+            "code": "DE307",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mgMicroscopy",
+        "path": "HIVB.mgMicroscopy",
+        "code": [
+          {
+            "code": "DE308",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Microscopy ",
+        "definition": "Microscopy test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mgOther",
+        "path": "HIVB.mgOther",
+        "code": [
+          {
+            "code": "DE309",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other type of test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.mgOtherSpecify",
+        "path": "HIVB.mgOtherSpecify",
+        "code": [
+          {
+            "code": "DE310",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other type of test used for Mycoplasma genitalium test (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.testTypeForOtherStiTestedForSpecify",
+        "path": "HIVB.testTypeForOtherStiTestedForSpecify",
+        "code": [
+          {
+            "code": "DE311",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Test type for other STI tested for (specify)",
+        "definition": "Test type used for the other specified STI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiTestResult",
+        "path": "HIVB.stiTestResult",
+        "code": [
+          {
+            "code": "DE312",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "STI test result",
+        "definition": "Result from STI test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiPositive",
+        "path": "HIVB.stiPositive",
+        "code": [
+          {
+            "code": "DE313",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Positive",
+        "definition": "Test result is positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiNegative",
+        "path": "HIVB.stiNegative",
+        "code": [
+          {
+            "code": "DE314",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Negative",
+        "definition": "Test result is negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiInconclusive",
+        "path": "HIVB.stiInconclusive",
+        "code": [
+          {
+            "code": "DE315",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Test result is inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateOfStiConfirmatoryTest",
+        "path": "HIVB.dateOfStiConfirmatoryTest",
+        "code": [
+          {
+            "code": "DE316",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date of STI confirmatory test",
+        "definition": "Date of STI confirmatory test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.confirmatorySyphilisTestType",
+        "path": "HIVB.confirmatorySyphilisTestType",
+        "code": [
+          {
+            "code": "DE317",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Confirmatory syphilis test type",
+        "definition": "Type of test ued for confirmatory syphilis test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csTreponemal",
+        "path": "HIVB.csTreponemal",
+        "code": [
+          {
+            "code": "DE318",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Treponemal",
+        "definition": "Treponemal test used ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csNonTreponemal",
+        "path": "HIVB.csNonTreponemal",
+        "code": [
+          {
+            "code": "DE319",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Non-treponemal",
+        "definition": "Non-treponemal test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csPocTest",
+        "path": "HIVB.csPocTest",
+        "code": [
+          {
+            "code": "DE320",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csNaat",
+        "path": "HIVB.csNaat",
+        "code": [
+          {
+            "code": "DE321",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csOther",
+        "path": "HIVB.csOther",
+        "code": [
+          {
+            "code": "DE322",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.csOtherSpecify",
+        "path": "HIVB.csOtherSpecify",
+        "code": [
+          {
+            "code": "DE323",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other test used for confirmatory syphilis test (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.confirmatoryTestTypeForOtherStiSpecify",
+        "path": "HIVB.confirmatoryTestTypeForOtherStiSpecify",
+        "code": [
+          {
+            "code": "DE324",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Confirmatory test type for other STI (specify)",
+        "definition": "Confirmatory test type for other STI",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.confirmatoryStiTestResult",
+        "path": "HIVB.confirmatoryStiTestResult",
+        "code": [
+          {
+            "code": "DE325",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Confirmatory STI test result",
+        "definition": "Result from confirmatory STI test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cstiPositive",
+        "path": "HIVB.cstiPositive",
+        "code": [
+          {
+            "code": "DE326",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Positive",
+        "definition": "Test result is positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cstiNegative",
+        "path": "HIVB.cstiNegative",
+        "code": [
+          {
+            "code": "DE327",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Negative",
+        "definition": "Test result is negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.cstiInconclusive",
+        "path": "HIVB.cstiInconclusive",
+        "code": [
+          {
+            "code": "DE328",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Test result is inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateStiTreatmentPrescribed",
+        "path": "HIVB.dateStiTreatmentPrescribed",
+        "code": [
+          {
+            "code": "DE329",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date STI treatment prescribed ",
+        "definition": "Date STI treatment was prescribed to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.dateStiTreatmentDispensed",
+        "path": "HIVB.dateStiTreatmentDispensed",
+        "code": [
+          {
+            "code": "DE330",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "Date STI treatment dispensed",
+        "definition": "Date STI treatment dispensed to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVB.stiTreatmentDispensedSpecify",
+        "path": "HIVB.stiTreatmentDispensedSpecify",
+        "code": [
+          {
+            "code": "DE331",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.B"
+          }
+        ],
+        "short": "STI treatment dispensed (specify)",
+        "definition": "STI treatment dispensed to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

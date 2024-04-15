@@ -1,0 +1,1545 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVG",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVG",
+  "name": "HIVG",
+  "title": "HIV.G Diagnostics Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.G Diagnostics data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVG",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVG",
+        "path": "HIVG",
+        "short": "HIV.G Diagnostics Logical Model",
+        "definition": "Logical Model for HIV.G Diagnostics data elements."
+      },
+      {
+        "id": "HIVG.cd4Count",
+        "path": "HIVG.cd4Count",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "CD4 count",
+        "definition": "CD4 cell count in cells/mm^3",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.cd4CellPercentage",
+        "path": "HIVG.cd4CellPercentage",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "CD4 cell percentage",
+        "definition": "CD4 cell percentage",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.baselineCd4Count",
+        "path": "HIVG.baselineCd4Count",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Baseline CD4 count",
+        "definition": "CD4 result from first CD4 test performed (such as at treatment initiation), also may be called CD4 at ART initiation or at ART start",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.dateOfBaselineCd4CountSampleCollection",
+        "path": "HIVG.dateOfBaselineCd4CountSampleCollection",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Date of baseline CD4 count sample collection",
+        "definition": "Date and time when baseline CD4 count test sample was collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.lateArtInitiation",
+        "path": "HIVG.lateArtInitiation",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Late ART initiation",
+        "definition": "The clients first CD4 count from baseline CD4 test performed (such as at treatment initiation) was a count of <200 cells/mm3",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.dateOfCd4SampleCollection",
+        "path": "HIVG.dateOfCd4SampleCollection",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Date of CD4 sample collection",
+        "definition": "Date sample to be used for CD4 count was collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.viralLoadTestConducted",
+        "path": "HIVG.viralLoadTestConducted",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Viral load test conducted",
+        "definition": "A viral load test was performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.dateOfViralLoadSampleCollection",
+        "path": "HIVG.dateOfViralLoadSampleCollection",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Date of viral load sample collection",
+        "definition": "Date and time when the sample was collected to test the clients HIV viral load",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.dateOfFirstViralLoadSampleCollection",
+        "path": "HIVG.dateOfFirstViralLoadSampleCollection",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Date of first viral load sample collection",
+        "definition": "Date and time when the sample was collected to test the clients HIV viral load for the first time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.dateViralLoadSampleSent",
+        "path": "HIVG.dateViralLoadSampleSent",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Date viral load sample sent",
+        "definition": "Date viral load sample sent to the lab",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.firstViralLoadTestResult",
+        "path": "HIVG.firstViralLoadTestResult",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "First viral load test result",
+        "definition": "Result from the initial viral load test in number of copies/mL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.viralLoadTestResult",
+        "path": "HIVG.viralLoadTestResult",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Viral load test result",
+        "definition": "Result from the viral load test in number of copies/mL",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hivViralLoadSpecimenType",
+        "path": "HIVG.hivViralLoadSpecimenType",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HIV viral load specimen type",
+        "definition": "The type of specimen to be used to test viral load",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.liquidPlasmaSpecimenForViralLoadTesting",
+        "path": "HIVG.liquidPlasmaSpecimenForViralLoadTesting",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Liquid plasma specimen for viral load testing",
+        "definition": "Liquid plasma and using ethylenediaminetetraacetic acid (EDTA) or plasma preparation tubes for viral load test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.driedBloodSpotSpecimen",
+        "path": "HIVG.driedBloodSpotSpecimen",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Dried blood spot specimen",
+        "definition": "Dried blood spot specimen (DBS) for viral load test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.driedPlasmaSpotFromAPlasmaSeparationCard",
+        "path": "HIVG.driedPlasmaSpotFromAPlasmaSeparationCard",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Dried plasma spot from a plasma separation card",
+        "definition": "Dried plasma spot from a plasma separation card for viral load test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbsagTestDate",
+        "path": "HIVG.hbsagTestDate",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HBsAg test date",
+        "definition": "Date client was tested for hepatitis B virus (HBV)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbsagTestResult",
+        "path": "HIVG.hbsagTestResult",
+        "code": [
+          {
+            "code": "DE18",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HBsAg test result",
+        "definition": "Hepatitis B virus test result (HBsAg)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbsagPositive",
+        "path": "HIVG.hbsagPositive",
+        "code": [
+          {
+            "code": "DE19",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Positive",
+        "definition": "HBsAg test result was positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbsagNegative",
+        "path": "HIVG.hbsagNegative",
+        "code": [
+          {
+            "code": "DE20",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Negative",
+        "definition": "HBsAg test result was negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbsagIndeterminate",
+        "path": "HIVG.hbsagIndeterminate",
+        "code": [
+          {
+            "code": "DE21",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Indeterminate",
+        "definition": "HBsAg test result was indeterminate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.reasonHepatitisBTestNotConducted",
+        "path": "HIVG.reasonHepatitisBTestNotConducted",
+        "code": [
+          {
+            "code": "DE22",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Reason Hepatitis B test not conducted",
+        "definition": "Reason why a hepatitis B test was not done",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbTestDelayedToNextContactOrReferred",
+        "path": "HIVG.hbTestDelayedToNextContactOrReferred",
+        "code": [
+          {
+            "code": "DE23",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Test delayed to next contact or referred",
+        "definition": "Test has been delayed to the next contact or client was referred to another provider/facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbStockOutOrExpired",
+        "path": "HIVG.hbStockOutOrExpired",
+        "code": [
+          {
+            "code": "DE24",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Stock-out or expired",
+        "definition": "Test out of stock or stock present but expired",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbMachineOrTechnicianNAOrNotFunctioning",
+        "path": "HIVG.hbMachineOrTechnicianNAOrNotFunctioning",
+        "code": [
+          {
+            "code": "DE25",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Machine or technician not available or machine not functioning",
+        "definition": "Test machine or technician is unavailable, or machine is not functioning",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbClientDeclinedRefusedTest",
+        "path": "HIVG.hbClientDeclinedRefusedTest",
+        "code": [
+          {
+            "code": "DE26",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Client declined / refused test",
+        "definition": "Client declined or refused test being undertaken",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbOther",
+        "path": "HIVG.hbOther",
+        "code": [
+          {
+            "code": "DE27",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other reason test not performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hbOtherSpecify",
+        "path": "HIVG.hbOtherSpecify",
+        "code": [
+          {
+            "code": "DE28",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other reason test not performed (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisBDiagnosis",
+        "path": "HIVG.hepatitisBDiagnosis",
+        "code": [
+          {
+            "code": "DE29",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis B diagnosis",
+        "definition": "Clients hepatitis B diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisBPositive",
+        "path": "HIVG.hepatitisBPositive",
+        "code": [
+          {
+            "code": "DE30",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis B positive",
+        "definition": "Client is positive for Hepatitis B",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisBNegative",
+        "path": "HIVG.hepatitisBNegative",
+        "code": [
+          {
+            "code": "DE31",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis B negative",
+        "definition": "Client is negative for Hepatitis B",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCScreeningDate",
+        "path": "HIVG.hepatitisCScreeningDate",
+        "code": [
+          {
+            "code": "DE32",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C screening date",
+        "definition": "Date when client was screened for HCV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCTestOrdered",
+        "path": "HIVG.hepatitisCTestOrdered",
+        "code": [
+          {
+            "code": "DE33",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C test ordered",
+        "definition": "Hepatitis C test has been ordered",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCTestConducted",
+        "path": "HIVG.hepatitisCTestConducted",
+        "code": [
+          {
+            "code": "DE34",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C test conducted",
+        "definition": "Whether a hepatitis C test was conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.reasonHepatitisCTestNotDone",
+        "path": "HIVG.reasonHepatitisCTestNotDone",
+        "code": [
+          {
+            "code": "DE35",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Reason Hepatitis C test not done",
+        "definition": "Reason why a hepatitis C test was not done",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.testDelayedToNextContactOrReferred",
+        "path": "HIVG.testDelayedToNextContactOrReferred",
+        "code": [
+          {
+            "code": "DE36",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Test delayed to next contact or referred",
+        "definition": "Test has been delayed to the next contact or client was referred to another provider/facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.stockOutOrExpired",
+        "path": "HIVG.stockOutOrExpired",
+        "code": [
+          {
+            "code": "DE37",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Stock-out or expired",
+        "definition": "Test out of stock or stock present but expired",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.machineOrTechnicianNotAvailableOrMachineNotFunctioning",
+        "path": "HIVG.machineOrTechnicianNotAvailableOrMachineNotFunctioning",
+        "code": [
+          {
+            "code": "DE38",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Machine or technician not available or machine not functioning",
+        "definition": "Test machine or technician is unavailable, or machine is not functioning",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.clientDeclinedRefusedTest",
+        "path": "HIVG.clientDeclinedRefusedTest",
+        "code": [
+          {
+            "code": "DE39",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Client declined / refused test",
+        "definition": "Client declined or refused test being undertaken",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.rnpOther",
+        "path": "HIVG.rnpOther",
+        "code": [
+          {
+            "code": "DE40",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other reason test not performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.rnpOtherSpecify",
+        "path": "HIVG.rnpOtherSpecify",
+        "code": [
+          {
+            "code": "DE41",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other reason test not performed (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hcvTestDate",
+        "path": "HIVG.hcvTestDate",
+        "code": [
+          {
+            "code": "DE42",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HCV test date",
+        "definition": "Date client was tested for hepatitis C virus (HCV antibody, HCV RNA or HCV core antigen)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hcvTestResult",
+        "path": "HIVG.hcvTestResult",
+        "code": [
+          {
+            "code": "DE43",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HCV test result",
+        "definition": "Hepatitis C virus test result (HCV antibody, HCV RNA or HCV core antigen)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hcvPositive",
+        "path": "HIVG.hcvPositive",
+        "code": [
+          {
+            "code": "DE44",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Positive",
+        "definition": "HCV test result was positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hvcNegative",
+        "path": "HIVG.hvcNegative",
+        "code": [
+          {
+            "code": "DE45",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Negative",
+        "definition": "HCV test result was negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hvcIndeterminate",
+        "path": "HIVG.hvcIndeterminate",
+        "code": [
+          {
+            "code": "DE46",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Indeterminate",
+        "definition": "HCV test result was indeterminate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hcvViralLoadTestDate",
+        "path": "HIVG.hcvViralLoadTestDate",
+        "code": [
+          {
+            "code": "DE47",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HCV viral load test date",
+        "definition": "Hepatitis C viral load test date",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hcvViralLoadTestResult",
+        "path": "HIVG.hcvViralLoadTestResult",
+        "code": [
+          {
+            "code": "DE48",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "HCV viral load test result",
+        "definition": "Hepatitis C viral load test result (qualitative)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.detected",
+        "path": "HIVG.detected",
+        "code": [
+          {
+            "code": "DE49",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Detected",
+        "definition": "HCV was detected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.notDetected",
+        "path": "HIVG.notDetected",
+        "code": [
+          {
+            "code": "DE50",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Not detected",
+        "definition": "HCV was not detected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCDiagnosis",
+        "path": "HIVG.hepatitisCDiagnosis",
+        "code": [
+          {
+            "code": "DE51",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C diagnosis",
+        "definition": "Clients hepatitis C diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCPositive",
+        "path": "HIVG.hepatitisCPositive",
+        "code": [
+          {
+            "code": "DE52",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C positive",
+        "definition": "Client is positive for hepatitis C",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.hepatitisCNegative",
+        "path": "HIVG.hepatitisCNegative",
+        "code": [
+          {
+            "code": "DE53",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Hepatitis C negative",
+        "definition": "Client is negative for hepatitis C",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisTestRequired",
+        "path": "HIVG.syphilisTestRequired",
+        "code": [
+          {
+            "code": "DE54",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis test required",
+        "definition": "Syphilis test is required",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisTestType",
+        "path": "HIVG.syphilisTestType",
+        "code": [
+          {
+            "code": "DE55",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis test type",
+        "definition": "Type of diagnostic test used for syphilis (treponema pallidum)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.treponemal",
+        "path": "HIVG.treponemal",
+        "code": [
+          {
+            "code": "DE56",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Treponemal",
+        "definition": "Treponemal test used ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.nonTreponemal",
+        "path": "HIVG.nonTreponemal",
+        "code": [
+          {
+            "code": "DE57",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Non-treponemal",
+        "definition": "Non-treponemal test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.pocTest",
+        "path": "HIVG.pocTest",
+        "code": [
+          {
+            "code": "DE58",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "POC Test",
+        "definition": "Point-of-care (POC) test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.sypttNaat",
+        "path": "HIVG.sypttNaat",
+        "code": [
+          {
+            "code": "DE59",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "NAAT",
+        "definition": "Nucleic Acid Amplification Test (NAAT) used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.sypttOther",
+        "path": "HIVG.sypttOther",
+        "code": [
+          {
+            "code": "DE60",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other test used",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.otherSyphilisTestTypeSpecify",
+        "path": "HIVG.otherSyphilisTestTypeSpecify",
+        "code": [
+          {
+            "code": "DE61",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other syphilis test type (specify)",
+        "definition": "Other test used (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.reasonSyphilisTestNotDone",
+        "path": "HIVG.reasonSyphilisTestNotDone",
+        "code": [
+          {
+            "code": "DE62",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Reason syphilis test not done",
+        "definition": "Reason why a syphilis test was not done",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.testDelayedToNextContactOrReferred2",
+        "path": "HIVG.testDelayedToNextContactOrReferred2",
+        "code": [
+          {
+            "code": "DE63",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Test delayed to next contact or referred",
+        "definition": "Test has been delayed to the next contact or client was referred to another provider/facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.stockOutOrExpired2",
+        "path": "HIVG.stockOutOrExpired2",
+        "code": [
+          {
+            "code": "DE64",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Stock-out or expired",
+        "definition": "Test out of stock or stock present but expired",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.machineOrTechnicianNotAvailableOrMachineNotFunctioning2",
+        "path": "HIVG.machineOrTechnicianNotAvailableOrMachineNotFunctioning2",
+        "code": [
+          {
+            "code": "DE65",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Machine or technician not available or machine not functioning",
+        "definition": "Test machine or technician is unavailable, or machine is not functioning",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.clientDeclinedRefusedTest2",
+        "path": "HIVG.clientDeclinedRefusedTest2",
+        "code": [
+          {
+            "code": "DE66",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Client declined / refused test",
+        "definition": "Client declined or refused test being undertaken",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.nptOther",
+        "path": "HIVG.nptOther",
+        "code": [
+          {
+            "code": "DE67",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other reason test not performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.nptOtherSpecify",
+        "path": "HIVG.nptOtherSpecify",
+        "code": [
+          {
+            "code": "DE68",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other reason test not performed (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisTestDate",
+        "path": "HIVG.syphilisTestDate",
+        "code": [
+          {
+            "code": "DE69",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis test date",
+        "definition": "Date of syphilis test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisTestResult",
+        "path": "HIVG.syphilisTestResult",
+        "code": [
+          {
+            "code": "DE70",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis test result",
+        "definition": "Result from syphilis test",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syptPositive",
+        "path": "HIVG.syptPositive",
+        "code": [
+          {
+            "code": "DE71",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Positive",
+        "definition": "Test result is positive for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syptNegative",
+        "path": "HIVG.syptNegative",
+        "code": [
+          {
+            "code": "DE72",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Negative",
+        "definition": "Test result is negative for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syptInconclusive",
+        "path": "HIVG.syptInconclusive",
+        "code": [
+          {
+            "code": "DE73",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Test result is inconclusive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisDiagnosis",
+        "path": "HIVG.syphilisDiagnosis",
+        "code": [
+          {
+            "code": "DE74",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis diagnosis",
+        "definition": "Clients syphilis diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisPositive",
+        "path": "HIVG.syphilisPositive",
+        "code": [
+          {
+            "code": "DE75",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis positive",
+        "definition": "Client is positive for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.syphilisNegative",
+        "path": "HIVG.syphilisNegative",
+        "code": [
+          {
+            "code": "DE76",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Syphilis negative",
+        "definition": "Client is negative for syphilis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.otherTestsConducted",
+        "path": "HIVG.otherTestsConducted",
+        "code": [
+          {
+            "code": "DE77",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other tests conducted",
+        "definition": "If the health worker performed other tests on the woman that are not explicitly listed in the application, select \"yes\" here and fill in the details below.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.otherTestSName",
+        "path": "HIVG.otherTestSName",
+        "code": [
+          {
+            "code": "DE78",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other test(s) name",
+        "definition": "Input the name of other test(s) that were done.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.otherTestSDate",
+        "path": "HIVG.otherTestSDate",
+        "code": [
+          {
+            "code": "DE79",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other test(s) date",
+        "definition": "Input the date of other test(s) that were done.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVG.otherTestSResultS",
+        "path": "HIVG.otherTestSResultS",
+        "code": [
+          {
+            "code": "DE80",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.G"
+          }
+        ],
+        "short": "Other test(s) result(s)",
+        "definition": "Input the result from the test(s).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "HIV.Prevention",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/ConceptMap/HIV.Prevention",
+  "description": "Mapping to and from HIV.Prevention Data Dictionary to other codesystems.",
+  "name": "HIV_Prevention",
+  "title": "ConceptMap to and from HIV.Prevention DataElements",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-12-09",
+  "group": [
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.Prevention",
+      "target": "http://id.who.int/icd/release/11/mms",
+      "element": [
+        {
+          "code": "DE1",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "QA02.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.Prevention",
+      "target": "http://hl7.org/fhir/sid/icd-10",
+      "element": [
+        {
+          "code": "DE1",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "Z03.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.Prevention",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "DE1",
+          "target": [
+            {
+              "code": "97953-4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "97953-4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE15",
+          "target": [
+            {
+              "code": "67723-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE17",
+          "target": [
+            {
+              "code": "67723-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "67723-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "67723-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE24",
+          "target": [
+            {
+              "code": "91381-4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE25",
+          "target": [
+            {
+              "code": "91382-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE26",
+          "target": [
+            {
+              "code": "82765-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE27",
+          "target": [
+            {
+              "code": "82765-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE28",
+          "target": [
+            {
+              "code": "82776-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.Prevention",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "DE1",
+          "target": [
+            {
+              "code": "266974005.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "278032008.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE4",
+          "target": [
+            {
+              "code": "23951000087100.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "373655009.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE6",
+          "target": [
+            {
+              "code": "788001008.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE7",
+          "target": [
+            {
+              "code": "830039004.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "165816005.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "165815009.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE14",
+          "target": [
+            {
+              "code": "261665006.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE15",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE16",
+          "target": [
+            {
+              "code": "260965001.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE17",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE20",
+          "target": [
+            {
+              "code": "23961000087102.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE21",
+          "target": [
+            {
+              "code": "23961000087102.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE22",
+          "target": [
+            {
+              "code": "23961000087102.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE23",
+          "target": [
+            {
+              "code": "23961000087102.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE24",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE25",
+          "target": [
+            {
+              "code": "399307001.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE26",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE27",
+          "target": [
+            {
+              "code": "439272007.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE28",
+          "target": [
+            {
+              "code": "307144000.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

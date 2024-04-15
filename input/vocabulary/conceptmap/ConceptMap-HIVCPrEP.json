@@ -1,0 +1,4234 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "HIVCPrEP",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/ConceptMap/HIVCPrEP",
+  "description": "Mapping to and from HIV.C PrEP visit Data Dictionary to other codesystems.",
+  "name": "HIV_C_PrEP",
+  "title": "ConceptMap to and from HIV.C PrEP visit DataElements",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-12-09",
+  "group": [
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://id.who.int/icd/release/11/mms",
+      "element": [
+        {
+          "code": "DE2",
+          "target": [
+            {
+              "code": "QA14",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "QB92",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE4",
+          "target": [
+            {
+              "code": "QB92",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "QA14",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE6",
+          "target": [
+            {
+              "code": "NE60",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE7",
+          "target": [
+            {
+              "code": "QB92",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE8",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE10",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "XM75H2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "XM67N3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE20",
+          "target": [
+            {
+              "code": "XM50Z0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE21",
+          "target": [
+            {
+              "code": "XM67N3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE22",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE23",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE26",
+          "target": [
+            {
+              "code": "QC48.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE27",
+          "target": [
+            {
+              "code": "QB92",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE33",
+          "target": [
+            {
+              "code": "QB92",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE38",
+          "target": [
+            {
+              "code": "QC42",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE39",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE40",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE47",
+          "target": [
+            {
+              "code": "MG26",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE48",
+          "target": [
+            {
+              "code": "MD36.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE49",
+          "target": [
+            {
+              "code": "FB56.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE50",
+          "target": [
+            {
+              "code": "MG3Z",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE51",
+          "target": [
+            {
+              "code": "MA01.Z",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE52",
+          "target": [
+            {
+              "code": "DA01.15",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE53",
+          "target": [
+            {
+              "code": "MG31.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE54",
+          "target": [
+            {
+              "code": "ME66.6Z",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE56",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE57",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE58",
+          "target": [
+            {
+              "code": "QC49",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE59",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE60",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE64",
+          "target": [
+            {
+              "code": "QA0A.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE65",
+          "target": [
+            {
+              "code": "QA08.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE66",
+          "target": [
+            {
+              "code": "QA08.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE67",
+          "target": [
+            {
+              "code": "QA08.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE68",
+          "target": [
+            {
+              "code": "QA08.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE69",
+          "target": [
+            {
+              "code": "QA40",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE70",
+          "target": [
+            {
+              "code": "QC48.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE72",
+          "target": [
+            {
+              "code": "QA0A.Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE76",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE77",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE81",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE82",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE83",
+          "target": [
+            {
+              "code": "XM3U67",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE92",
+          "target": [
+            {
+              "code": "XM50Z0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE93",
+          "target": [
+            {
+              "code": "XM75H2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE94",
+          "target": [
+            {
+              "code": "XM5UM7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE96",
+          "target": [
+            {
+              "code": "XM41D4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE97",
+          "target": [
+            {
+              "code": "XM50Z0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE98",
+          "target": [
+            {
+              "code": "XM75H2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE100",
+          "target": [
+            {
+              "code": "XM6K45",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE102",
+          "target": [
+            {
+              "code": "XM4TF3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE103",
+          "target": [
+            {
+              "code": "XM8ZN1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE104",
+          "target": [
+            {
+              "code": "XM3EH7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE105",
+          "target": [
+            {
+              "code": "XM82D3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE113",
+          "target": [
+            {
+              "code": "XM67N3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE114",
+          "target": [
+            {
+              "code": "MA14.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE116",
+          "target": [
+            {
+              "code": "1C62.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE117",
+          "target": [
+            {
+              "code": "QC90.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE120",
+          "target": [
+            {
+              "code": "QB9Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE123",
+          "target": [
+            {
+              "code": "QA12",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE126",
+          "target": [
+            {
+              "code": "QA08.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE127",
+          "target": [
+            {
+              "code": "QA08.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE132",
+          "target": [
+            {
+              "code": "QA21.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE133",
+          "target": [
+            {
+              "code": "QB82",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE134",
+          "target": [
+            {
+              "code": "QA12",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE135",
+          "target": [
+            {
+              "code": "QA15.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE137",
+          "target": [
+            {
+              "code": "QA21.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE139",
+          "target": [
+            {
+              "code": "XE7S6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE140",
+          "target": [
+            {
+              "code": "XE7S6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE150",
+          "target": [
+            {
+              "code": "QA21.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE151",
+          "target": [
+            {
+              "code": "QA40",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE152",
+          "target": [
+            {
+              "code": "QA1Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE153",
+          "target": [
+            {
+              "code": "QA09.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE154",
+          "target": [
+            {
+              "code": "QA09.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE155",
+          "target": [
+            {
+              "code": "QA08.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE156",
+          "target": [
+            {
+              "code": "QA08.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE158",
+          "target": [
+            {
+              "code": "XM5L44",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE159",
+          "target": [
+            {
+              "code": "XM6LL6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE160",
+          "target": [
+            {
+              "code": "XM22Y8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE161",
+          "target": [
+            {
+              "code": "XM8142",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE162",
+          "target": [
+            {
+              "code": "XM5FH2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE163",
+          "target": [
+            {
+              "code": "XM5WN6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE165",
+          "target": [
+            {
+              "code": "QA16",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE166",
+          "target": [
+            {
+              "code": "QA1Y",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE167",
+          "target": [
+            {
+              "code": "QA17",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE168",
+          "target": [
+            {
+              "code": "QE4Z",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE169",
+          "target": [
+            {
+              "code": "QE51.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://hl7.org/fhir/sid/icd-10",
+      "element": [
+        {
+          "code": "DE2",
+          "target": [
+            {
+              "code": "Z71.7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "Z09.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE4",
+          "target": [
+            {
+              "code": "Z71.7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "Z71.7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE6",
+          "target": [
+            {
+              "code": "T88.7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE7",
+          "target": [
+            {
+              "code": "Z09.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE8",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE10",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE16",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE20",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE21",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE22",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE23",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE26",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE27",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE33",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE37",
+          "target": [
+            {
+              "code": "Z30.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE38",
+          "target": [
+            {
+              "code": "Z86.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE39",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE40",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE47",
+          "target": [
+            {
+              "code": "R50.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE48",
+          "target": [
+            {
+              "code": "R07.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE49",
+          "target": [
+            {
+              "code": "M79.10",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE50",
+          "target": [
+            {
+              "code": "R52.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE51",
+          "target": [
+            {
+              "code": "R59.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE52",
+          "target": [
+            {
+              "code": "K13.7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE53",
+          "target": [
+            {
+              "code": "R51",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE54",
+          "target": [
+            {
+              "code": "R21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE56",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE57",
+          "target": [
+            {
+              "code": "Z92.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE58",
+          "target": [
+            {
+              "code": "Z91.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE59",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE60",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE64",
+          "target": [
+            {
+              "code": "Z13.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE65",
+          "target": [
+            {
+              "code": "Z11.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE66",
+          "target": [
+            {
+              "code": "Z11.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE67",
+          "target": [
+            {
+              "code": "Z11.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE68",
+          "target": [
+            {
+              "code": "Z11.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE69",
+          "target": [
+            {
+              "code": "Z32.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE70",
+          "target": [
+            {
+              "code": "Z92.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE72",
+          "target": [
+            {
+              "code": "Z13.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE76",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE77",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE81",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE82",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE83",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE92",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE93",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE94",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE96",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE97",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE98",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE100",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE102",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE103",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE104",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE105",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE113",
+          "target": [
+            {
+              "code": "T37.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE114",
+          "target": [
+            {
+              "code": "Z21",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE116",
+          "target": [
+            {
+              "code": "B23.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE117",
+          "target": [
+            {
+              "code": "Z20.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE123",
+          "target": [
+            {
+              "code": "Z71.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE126",
+          "target": [
+            {
+              "code": "Z11.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE127",
+          "target": [
+            {
+              "code": "Z11.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE132",
+          "target": [
+            {
+              "code": "Z30.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE133",
+          "target": [
+            {
+              "code": "Z41.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE134",
+          "target": [
+            {
+              "code": "Z71.5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE135",
+          "target": [
+            {
+              "code": "Z70.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE137",
+          "target": [
+            {
+              "code": "Z30.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE150",
+          "target": [
+            {
+              "code": "Z30.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE151",
+          "target": [
+            {
+              "code": "Z32.0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE152",
+          "target": [
+            {
+              "code": "Z71.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE153",
+          "target": [
+            {
+              "code": "Z12.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE154",
+          "target": [
+            {
+              "code": "Z12.1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE155",
+          "target": [
+            {
+              "code": "Z11.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE156",
+          "target": [
+            {
+              "code": "Z11.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE158",
+          "target": [
+            {
+              "code": "Z26.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE159",
+          "target": [
+            {
+              "code": "Z24.6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE160",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE161",
+          "target": [
+            {
+              "code": "T50.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE162",
+          "target": [
+            {
+              "code": "Z29.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE163",
+          "target": [
+            {
+              "code": "T37.2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE165",
+          "target": [
+            {
+              "code": "Z71.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE166",
+          "target": [
+            {
+              "code": "Z71.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE167",
+          "target": [
+            {
+              "code": "Z71.8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE168",
+          "target": [
+            {
+              "code": "Z65.3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE169",
+          "target": [
+            {
+              "code": "Z65.4",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://loinc.org",
+      "element": [
+        {
+          "code": "DE2",
+          "target": [
+            {
+              "code": "34869-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "34869-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "34869-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE6",
+          "target": [
+            {
+              "code": "44939-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE7",
+          "target": [
+            {
+              "code": "34869-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE8",
+          "target": [
+            {
+              "code": "88636-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE9",
+          "target": [
+            {
+              "code": "55218-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE28",
+          "target": [
+            {
+              "code": "63936-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE30",
+          "target": [
+            {
+              "code": "91382-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE34",
+          "target": [
+            {
+              "code": "29742-4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE35",
+          "target": [
+            {
+              "code": "63939-3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE37",
+          "target": [
+            {
+              "code": "86650-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE39",
+          "target": [
+            {
+              "code": "28123-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE47",
+          "target": [
+            {
+              "code": "45701-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE48",
+          "target": [
+            {
+              "code": "70430-4",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE49",
+          "target": [
+            {
+              "code": "28390-3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE50",
+          "target": [
+            {
+              "code": "28236-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE53",
+          "target": [
+            {
+              "code": "45715-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE54",
+          "target": [
+            {
+              "code": "32467-3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE57",
+          "target": [
+            {
+              "code": "45260-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE58",
+          "target": [
+            {
+              "code": "28524-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE60",
+          "target": [
+            {
+              "code": "45260-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE61",
+          "target": [
+            {
+              "code": "47240-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE64",
+          "target": [
+            {
+              "code": "30004-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE70",
+          "target": [
+            {
+              "code": "41291-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE71",
+          "target": [
+            {
+              "code": "80989-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE72",
+          "target": [
+            {
+              "code": "80989-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE73",
+          "target": [
+            {
+              "code": "82765-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE74",
+          "target": [
+            {
+              "code": "94459-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE76",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE77",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE81",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE86",
+          "target": [
+            {
+              "code": "94459-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE87",
+          "target": [
+            {
+              "code": "94459-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE88",
+          "target": [
+            {
+              "code": "18607-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE89",
+          "target": [
+            {
+              "code": "94459-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE90",
+          "target": [
+            {
+              "code": "91382-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE108",
+          "target": [
+            {
+              "code": "11433-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE109",
+          "target": [
+            {
+              "code": "11432-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE110",
+          "target": [
+            {
+              "code": "35591-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE111",
+          "target": [
+            {
+              "code": "33882-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE113",
+          "target": [
+            {
+              "code": "11382-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE114",
+          "target": [
+            {
+              "code": "45683-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE117",
+          "target": [
+            {
+              "code": "88636-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE120",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE121",
+          "target": [
+            {
+              "code": "82776-6",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE123",
+          "target": [
+            {
+              "code": "34869-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE124",
+          "target": [
+            {
+              "code": "57070-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE127",
+          "target": [
+            {
+              "code": "57070-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE130",
+          "target": [
+            {
+              "code": "39273-8",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE136",
+          "target": [
+            {
+              "code": "67723-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE144",
+          "target": [
+            {
+              "code": "44943-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE145",
+          "target": [
+            {
+              "code": "45470-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE148",
+          "target": [
+            {
+              "code": "28346-5",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE151",
+          "target": [
+            {
+              "code": "82810-3",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE153",
+          "target": [
+            {
+              "code": "63921-1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE154",
+          "target": [
+            {
+              "code": "63921-1",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE158",
+          "target": [
+            {
+              "code": "87273-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE159",
+          "target": [
+            {
+              "code": "87273-9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE160",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE162",
+          "target": [
+            {
+              "code": "29305-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE165",
+          "target": [
+            {
+              "code": "57143-0",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE166",
+          "target": [
+            {
+              "code": "46002-2",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE167",
+          "target": [
+            {
+              "code": "47042-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE168",
+          "target": [
+            {
+              "code": "47042-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE169",
+          "target": [
+            {
+              "code": "47042-7",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://hl7.org/fhir/sid/icf",
+      "element": [
+        {
+          "code": "DE2",
+          "target": [
+            {
+              "code": "VAD.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE4",
+          "target": [
+            {
+              "code": "VAD.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "VAD.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE10",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE14",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE15",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE20",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE21",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE22",
+          "target": [
+            {
+              "code": "NMH.DL.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE23",
+          "target": [
+            {
+              "code": "PZA.DB.AE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE64",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE65",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE66",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE67",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE68",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE69",
+          "target": [
+            {
+              "code": "PZX.AH.XB",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE70",
+          "target": [
+            {
+              "code": "VDA.AA.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE72",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE76",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE77",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE78",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE79",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE81",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE82",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE83",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE84",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE85",
+          "target": [
+            {
+              "code": "PZX.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE92",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE93",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE94",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE96",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE97",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE98",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE100",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE102",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE103",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE104",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE105",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE123",
+          "target": [
+            {
+              "code": "VAD.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE126",
+          "target": [
+            {
+              "code": "DIA.AH.XA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE127",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE130",
+          "target": [
+            {
+              "code": "UEP.TI.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE132",
+          "target": [
+            {
+              "code": "VEF.RD.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE133",
+          "target": [
+            {
+              "code": "NGM.JJ.AA",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE134",
+          "target": [
+            {
+              "code": "VAC.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE135",
+          "target": [
+            {
+              "code": "VE1.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE137",
+          "target": [
+            {
+              "code": "VEF.RD.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE150",
+          "target": [
+            {
+              "code": "VEF.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE151",
+          "target": [
+            {
+              "code": "PZX.AH.XB",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE152",
+          "target": [
+            {
+              "code": "VE1.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE153",
+          "target": [
+            {
+              "code": "NMF.AH.XH",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE154",
+          "target": [
+            {
+              "code": "KBX.AE.AD",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE158",
+          "target": [
+            {
+              "code": "DTB.VD.AE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE159",
+          "target": [
+            {
+              "code": "DTB.VD.AE",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE160",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE161",
+          "target": [
+            {
+              "code": "PZA.DB.AZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE162",
+          "target": [
+            {
+              "code": "PZX.DB.AC",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE163",
+          "target": [
+            {
+              "code": "UBQ.VE.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE165",
+          "target": [
+            {
+              "code": "AS1.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE166",
+          "target": [
+            {
+              "code": "ATF.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE167",
+          "target": [
+            {
+              "code": "PZB.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE168",
+          "target": [
+            {
+              "code": "PZB.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE169",
+          "target": [
+            {
+              "code": "VBB.PP.ZZ",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://hl7.org/fhir/sid/icf",
+      "element": [
+        {
+          "code": "DE47",
+          "target": [
+            {
+              "code": "b5500.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE48",
+          "target": [
+            {
+              "code": "b28010.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE49",
+          "target": [
+            {
+              "code": "b2800.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE50",
+          "target": [
+            {
+              "code": "b2800.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE51",
+          "target": [
+            {
+              "code": "b4353.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE53",
+          "target": [
+            {
+              "code": "b28010.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE113",
+          "target": [
+            {
+              "code": "b43500.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE115",
+          "target": [
+            {
+              "code": "b6108.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE118",
+          "target": [
+            {
+              "code": "b43500.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE119",
+          "target": [
+            {
+              "code": "b43500.9",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "DE2",
+          "target": [
+            {
+              "code": "260916006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE3",
+          "target": [
+            {
+              "code": "185389009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE4",
+          "target": [
+            {
+              "code": "686976671000119000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE5",
+          "target": [
+            {
+              "code": "423076000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE6",
+          "target": [
+            {
+              "code": "1255996001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE7",
+          "target": [
+            {
+              "code": "183624006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE8",
+          "target": [
+            {
+              "code": "444356002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE9",
+          "target": [
+            {
+              "code": "439771001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE10",
+          "target": [
+            {
+              "code": "513881000000106",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE12",
+          "target": [
+            {
+              "code": "69620002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE13",
+          "target": [
+            {
+              "code": "272379006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE14",
+          "target": [
+            {
+              "code": "394841004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE15",
+          "target": [
+            {
+              "code": "394841004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE16",
+          "target": [
+            {
+              "code": "686976671000119000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "414090006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE19",
+          "target": [
+            {
+              "code": "777706000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE20",
+          "target": [
+            {
+              "code": "1268679002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE21",
+          "target": [
+            {
+              "code": "385556006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE22",
+          "target": [
+            {
+              "code": "764772008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE23",
+          "target": [
+            {
+              "code": "1145347005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE25",
+          "target": [
+            {
+              "code": "255216001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE26",
+          "target": [
+            {
+              "code": "266714009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE27",
+          "target": [
+            {
+              "code": "182837001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE28",
+          "target": [
+            {
+              "code": "413946009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE29",
+          "target": [
+            {
+              "code": "394908001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE30",
+          "target": [
+            {
+              "code": "413947000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE32",
+          "target": [
+            {
+              "code": "255216001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE33",
+          "target": [
+            {
+              "code": "266714009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE34",
+          "target": [
+            {
+              "code": "413946009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE35",
+          "target": [
+            {
+              "code": "413947000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE37",
+          "target": [
+            {
+              "code": "445375000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE38",
+          "target": [
+            {
+              "code": "275881005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE39",
+          "target": [
+            {
+              "code": "266974005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE40",
+          "target": [
+            {
+              "code": "182888003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE42",
+          "target": [
+            {
+              "code": "276367008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE43",
+          "target": [
+            {
+              "code": "363556002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE44",
+          "target": [
+            {
+              "code": "58532003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE45",
+          "target": [
+            {
+              "code": "363556002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE47",
+          "target": [
+            {
+              "code": "386661006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE48",
+          "target": [
+            {
+              "code": "267102003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE49",
+          "target": [
+            {
+              "code": "102480002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE50",
+          "target": [
+            {
+              "code": "102480002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE51",
+          "target": [
+            {
+              "code": "30746006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE52",
+          "target": [
+            {
+              "code": "26284000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE53",
+          "target": [
+            {
+              "code": "25064002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE54",
+          "target": [
+            {
+              "code": "271807003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE56",
+          "target": [
+            {
+              "code": "242571000000102",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE58",
+          "target": [
+            {
+              "code": "258143003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE60",
+          "target": [
+            {
+              "code": "80633008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE62",
+          "target": [
+            {
+              "code": "410527000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE64",
+          "target": [
+            {
+              "code": "113075003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE65",
+          "target": [
+            {
+              "code": "313476009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE66",
+          "target": [
+            {
+              "code": "104375008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE67",
+          "target": [
+            {
+              "code": "40675008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE68",
+          "target": [
+            {
+              "code": "243790003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE69",
+          "target": [
+            {
+              "code": "74036000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE70",
+          "target": [
+            {
+              "code": "425457005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE71",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE72",
+          "target": [
+            {
+              "code": "365756002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE73",
+          "target": [
+            {
+              "code": "373784005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE74",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE76",
+          "target": [
+            {
+              "code": "1137457009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE77",
+          "target": [
+            {
+              "code": "409516001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE78",
+          "target": [
+            {
+              "code": "1217105006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE79",
+          "target": [
+            {
+              "code": "1217105006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE81",
+          "target": [
+            {
+              "code": "1137457009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE82",
+          "target": [
+            {
+              "code": "764772008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE83",
+          "target": [
+            {
+              "code": "1145347005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE84",
+          "target": [
+            {
+              "code": "1217105006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE85",
+          "target": [
+            {
+              "code": "1217105006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE86",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE87",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE88",
+          "target": [
+            {
+              "code": "260911001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE89",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE90",
+          "target": [
+            {
+              "code": "413947000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE92",
+          "target": [
+            {
+              "code": "1268679002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE93",
+          "target": [
+            {
+              "code": "414090006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE94",
+          "target": [
+            {
+              "code": "324859007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE96",
+          "target": [
+            {
+              "code": "413381000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE97",
+          "target": [
+            {
+              "code": "1268679002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE98",
+          "target": [
+            {
+              "code": "414090006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE100",
+          "target": [
+            {
+              "code": "714767001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE102",
+          "target": [
+            {
+              "code": "878900000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE103",
+          "target": [
+            {
+              "code": "1172997002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE104",
+          "target": [
+            {
+              "code": "134573001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE105",
+          "target": [
+            {
+              "code": "429368003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE106",
+          "target": [
+            {
+              "code": "784580008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE108",
+          "target": [
+            {
+              "code": "248153007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE109",
+          "target": [
+            {
+              "code": "248152002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE110",
+          "target": [
+            {
+              "code": "442407001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE111",
+          "target": [
+            {
+              "code": "399445004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE113",
+          "target": [
+            {
+              "code": "416098002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE114",
+          "target": [
+            {
+              "code": "165816005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE115",
+          "target": [
+            {
+              "code": "365756002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE116",
+          "target": [
+            {
+              "code": "111880001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE117",
+          "target": [
+            {
+              "code": "444356002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE118",
+          "target": [
+            {
+              "code": "416098002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE119",
+          "target": [
+            {
+              "code": "416098002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE120",
+          "target": [
+            {
+              "code": "1217105006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE121",
+          "target": [
+            {
+              "code": "261774000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE123",
+          "target": [
+            {
+              "code": "171014001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE124",
+          "target": [
+            {
+              "code": "406543005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE126",
+          "target": [
+            {
+              "code": "185389009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE127",
+          "target": [
+            {
+              "code": "185389009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE128",
+          "target": [
+            {
+              "code": "185389009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE129",
+          "target": [
+            {
+              "code": "185389009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE130",
+          "target": [
+            {
+              "code": "266709005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE132",
+          "target": [
+            {
+              "code": "706506000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE133",
+          "target": [
+            {
+              "code": "72310004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE134",
+          "target": [
+            {
+              "code": "720174008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE135",
+          "target": [
+            {
+              "code": "710737001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE136",
+          "target": [
+            {
+              "code": "439272007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE137",
+          "target": [
+            {
+              "code": "410680006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE139",
+          "target": [
+            {
+              "code": "442450006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE140",
+          "target": [
+            {
+              "code": "442288006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE141",
+          "target": [
+            {
+              "code": "43222004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE142",
+          "target": [
+            {
+              "code": "410680006",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE144",
+          "target": [
+            {
+              "code": "310858007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE145",
+          "target": [
+            {
+              "code": "303071001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE146",
+          "target": [
+            {
+              "code": "226034001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE147",
+          "target": [
+            {
+              "code": "228461000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE148",
+          "target": [
+            {
+              "code": "160481000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE150",
+          "target": [
+            {
+              "code": "72531000052105",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE151",
+          "target": [
+            {
+              "code": "74036000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE152",
+          "target": [
+            {
+              "code": "424183000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE153",
+          "target": [
+            {
+              "code": "1230046007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE154",
+          "target": [
+            {
+              "code": "15886004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE155",
+          "target": [
+            {
+              "code": "439057000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE156",
+          "target": [
+            {
+              "code": "313077009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE158",
+          "target": [
+            {
+              "code": "425457005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE159",
+          "target": [
+            {
+              "code": "16584000",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE160",
+          "target": [
+            {
+              "code": "182929008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE161",
+          "target": [
+            {
+              "code": "782169003",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE162",
+          "target": [
+            {
+              "code": "182929008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE163",
+          "target": [
+            {
+              "code": "698469002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE165",
+          "target": [
+            {
+              "code": "310027007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE166",
+          "target": [
+            {
+              "code": "408919008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE167",
+          "target": [
+            {
+              "code": "709506004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE168",
+          "target": [
+            {
+              "code": "710910007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE169",
+          "target": [
+            {
+              "code": "1172623006",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
