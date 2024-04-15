@@ -45,7 +45,7 @@ define "Age_less_than_10":
   AgeInYearsAt(Today()) < 10
 
 define "Take action or refer client showing signs of a serious illness":
-  exists (([Observation: code in "Tachycardia"]
+  exists(([Observation: "Tachycardia"]
   union [Observation: "Tachypnea"]
   union [Observation: "Unable to walk unaided"]) O
   where Age_10_or_more

@@ -36,7 +36,7 @@ parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @202
 context Unfiltered
 
 define "numerator":
-    AnyTrue(HIC."HIV Positive before end of measurement period") 
+    AnyTrue(HIC."People tested positive for HIV before end of measurement period") 
 
 //define denominator?
 //How to bring in data from external sources

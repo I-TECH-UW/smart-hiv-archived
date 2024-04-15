@@ -1,18 +1,16 @@
 /*
-HIV.IND.19
-HTS test volume and positivity
-Number of HIV tests performed (volume) and the % of HIV-positive results returned to people (positivity)
+HIV.IND.20
+Individuals testing positive for HIV
+% testing positive among people who received an HIV test in the reporting period
 
 NUMERATOR
-COUNT of tests with "HIV test result"='HIV-positive' AND (("Date HIV test results returned" in the reporting period) OR ("HIV diagnosis date" in the reporting period))
-Exclude Self-testing
+COUNT of clients with "HIV test result"='HIV-positive' AND "HIV test date" in the reporting period AND (("Date HIV test results returned" in the reporting period) OR ("HIV diagnosis date" in the reporting period))
 
 DENOMINATOR
-COUNT of tests with "HIV test date" AND "Date HIV test results returned" in the reporting period
-Exclude Self-testing
+COUNT of clients with "HIV test date" in the reporting period AND "Date HIV test results returned" in the reporting period
 
 • Gender (female, male, other**)
-• Age (0–4, 5–9, 10–14, 15–19, 20–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50+ years)**
+• Age (0–4, 5–9, 10–14, 15–19, 20–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50+ years)***
 • Key populations (men who have sex with men, people living in prisons and other closed settings, people who inject drugs, sex workers, trans and gender diverse people)***
 • TB status (presumptive TB, diagnosed TB, none)
 • Testing entry point:
@@ -22,7 +20,7 @@ Exclude Self-testing
 
 */
 
-library HIVIND19
+library HIVIND20
 
 using FHIR version '4.0.1'
  
@@ -36,12 +34,11 @@ parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @202
  
 context Unfiltered
 
-//Exclusion happens automatically through test type valueset = excludes self test
 define "numerator":
-    AnyTrue(HIC."HIV Positive during measurement period") 
+    AnyTrue(HIC."People tested positive for HIV during measurement period") 
 
 define "denominator":
-    AnyTrue(HIC."HIV test during measurement period")
+    AnyTrue(HIC."People tested for HIV during measurement period")
 
 /*
  * Disaggregators
