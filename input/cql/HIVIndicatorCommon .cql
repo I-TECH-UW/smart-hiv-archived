@@ -115,7 +115,12 @@ define "HIV Positive during measurement period":
     ([Observation] O
     where O.status ~ {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
-    and O.issued before end of "Measurement Period")
+    and O.issued during "Measurement Period")
+    )
+//Define people tested for HIV
+  define "People tested for HIV":
+  exists(
+    "HIV test during measurement period".subject.distinct()
     )
 
 define "HIV Treatment during the measurement period":
