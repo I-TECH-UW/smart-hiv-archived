@@ -95,6 +95,24 @@ define "HIV Positive before end of measurement period":
     and O.issued before end of "Measurement Period")
     )
 
+//last measurement period is defined as same length as current measurement period  
+define "HIV Positive before end of last measurement period":
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period"))
+    )
+
+
+
 define "HIV Positive during measurement period":
   exists(
     ([Condition] C
@@ -117,13 +135,9 @@ define "HIV Positive during measurement period":
     and O.code in "HIVtesttypeCodes"
     and O.issued during "Measurement Period")
     )
-//Define people tested for HIV
-  define "People tested for HIV":
-  exists(
-    "HIV test during measurement period".subject.distinct()
-    )
 
-define "HIV Treatment during the measurement period":
+
+define "HIV Treatment Active during the measurement period":
    exists(
     [MedicationStatement] MS
     where MS.status = 'recorded'
@@ -131,6 +145,25 @@ define "HIV Treatment during the measurement period":
     and MS.effective starts before end of "Measurement Period"
     and (MS.effective ends after start of "Measurement Period"
     or end of MS.effective  ~  null)
+   )
+
+//last measurement period is defined as same length as current measurement period  
+define "HIV Treatment Active during last measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and (MS.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    or end of MS.effective  ~  null)
+   )
+
+ define "HIV Treatment Started during the measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts during "Measurement Period"
    )
 
 define "Patient Deceased before end of Measurement Period":
