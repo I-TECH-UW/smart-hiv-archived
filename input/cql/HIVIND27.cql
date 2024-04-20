@@ -60,7 +60,7 @@ context Unfiltered
 
  define "numerator":
    AnyTrue(HIC."HIV Positive before end of measurement period") 
-   and AnyTrue(HIC."HIV Treatment during the measurement period")
+   and AnyTrue(HIC."HIV Treatment Active during the measurement period")
    and not AnyTrue(HIC."Patient Deceased before end of Measurement Period")
    and not AnyTrue(HIC."Stopped ART at Facility during the measurement period")
 
