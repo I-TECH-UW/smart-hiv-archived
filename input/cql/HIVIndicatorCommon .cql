@@ -1,4 +1,4 @@
-library HIVIndicatorCommon
+library HIVIndicatorCommon version '0.01' 
 
 using FHIR version '4.0.1'
 
@@ -8,10 +8,10 @@ codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/C
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
 
-valueset "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
-valueset "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
-valueset "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
-valueset "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
+codesystem "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
+codesystem "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
+codesystem "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
+codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
@@ -26,7 +26,21 @@ code "People who inject drugs": 'HIV.B.DE54' from "Keypopulationmembertype*Codes
 code "People living in prisons and other closed settings": 'HIV.B.DE55' from "Keypopulationmembertype*Codes" display 'Prisoner'
 
 code "HIV-positive": 'HIV.B.DE116' from "HIVstatusCodes" display 'HIV Positive'
-code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
+code "Diagnosed TB": 'HIV.D.DE940' from "HIVstatusCodes" display 'Diagnosed TB'
+code "Presumptive TB": 'HIV.D.DE945' from "HIVstatusCodes" display 'Presumptive TB'
+
+//code "On ART": 'HIV.D.DE38' from "HIV_DAK_Codes" display 'On ART'
+
+codesystem ARTCodes: 'http://example.org/fhir/CodeSystem/art-codes'
+valueset "On ART": 'http://example.org/fhir/ValueSet/on-art'
+valueset "encounter-diagnosis": 'http://example.org/fhir/ValueSet/encounter-diagnosis'
+valueset "social-history": 'http://example.org/fhir/ValueSet/social-history'
+valueset "HIVtesttypeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de82'
+valueset "Community-level testing" : 'http://example.org/fhir/ValueSet/HIV.B.DE16'
+valueset "Facility-level testing" : 'http://example.org/fhir/ValueSet/HIV.B.DE17'
+valueset "ANC contact during pregnancy" : 'http://example.org/fhir/ValueSet/HIV.E.DE39'
+
+//valueset "hiv positive": 'http://example.org/fhir/ValueSet/social-history'
 
 code "Lost to follow-up": 'HIV.H.DE42' from "HIVtreatmentoutcomeCodes" display 'Lost to follow-up'
 code "Transferred out": 'HIV.H.DE43' from "HIVtreatmentoutcomeCodes" display 'Transferred out'
@@ -53,32 +67,104 @@ code "resolved": 'resolved' from "ConditionClinicalStatusCodes"
 
 // Condition Category Codes
 code "problem-list-item": 'problem-list-item' from "ConditionCategoryCodes" display 'Problem List Item'
-code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
+//code "encounter-diagnosis": 'encounter-diagnosis' from "ConditionCategoryCodes" display 'Encounter Diagnosis'
 
 // Episode of Care Status
-code "social-history": 'social-history' from "ObservationCategoryCodes" display 'Social History'
+//code "social-history": 'social-history' from "ObservationCategoryCodes" display 'Social History'
 
 context Patient
 
 /*
  * HIV Positive during the measurement period
+ * Does issued imply that results returned to tester
+ * or should use communication or encounter resource to specify?
  */
 
 define "HIV Positive before end of measurement period":
-  [Condition] C
+  exists(
+    ([Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
-    and C.onset before end of "Measurement Period"
+    and C.onset before end of "Measurement Period")
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period")
+    )
+
+//last measurement period is defined as same length as current measurement period  
+define "HIV Positive before end of last measurement period":
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period"))
+    )
 
 
-define "HIV Treatment during the measurement period":
-   [MedicationStatement] MS
+
+define "HIV Positive during measurement period":
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset during "Measurement Period")
+    OR 
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued during "Measurement Period")
+    )
+
+  define "HIV test during measurement period":
+  exists(
+    ([Observation] O
+    where O.status ~ {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.issued during "Measurement Period")
+    )
+
+
+define "HIV Treatment Active during the measurement period":
+   exists(
+    [MedicationStatement] MS
     where MS.status = 'recorded'
     and MS.reasonCode in "On ART"
     and MS.effective starts before end of "Measurement Period"
     and (MS.effective ends after start of "Measurement Period"
     or end of MS.effective  ~  null)
+   )
+
+//last measurement period is defined as same length as current measurement period  
+define "HIV Treatment Active during last measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and (MS.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    or end of MS.effective  ~  null)
+   )
+
+ define "HIV Treatment Started during the measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts during "Measurement Period"
+   )
 
 define "Patient Deceased before end of Measurement Period":
   case 
@@ -90,6 +176,7 @@ define "Patient Deceased before end of Measurement Period":
 /* End of care because of transferring out, death, lost to follow up, or stopped treatment*/
 
 define "Stopped ART at Facility during the measurement period":
+    exists(
     [EpisodeOfCare] EOS
     where EOS.type in "On ART"
     and (exists (
@@ -97,12 +184,12 @@ define "Stopped ART at Facility during the measurement period":
       where H.status = 'finished'
       and H.period ends during "Measurement Period"
     ) 
-    or  exists (
+    or (
       EOS.status = 'finished'
       and EOS.period ends during "Measurement Period"
     )
     )
-
+    )
 
 /*
  * By Age Stratifiers
@@ -121,6 +208,23 @@ define "By Age Stratifier":
         when AgeInYearsAt(start of "Measurement Period") <= 39 then '35–39'
         when AgeInYearsAt(start of "Measurement Period") <= 44 then '40–44'
         when AgeInYearsAt(start of "Measurement Period") <= 49 then '45–49'
+        when AgeInYearsAt(start of "Measurement Period") >= 50 then '50+'
+        else null
+    end
+  
+  /*
+ * By Age Stratifiers
+ * Age (0–4, 5–9, 10–14, 15–19, 20–24, 25–49, 50+ years)
+ * 
+ */
+define "By Age Stratifier 2":
+    case 
+        when AgeInYearsAt(start of "Measurement Period") <= 4 then '0-4'
+        when AgeInYearsAt(start of "Measurement Period") <= 9 then '5-9'
+        when AgeInYearsAt(start of "Measurement Period") <= 14 then '10–14'
+        when AgeInYearsAt(start of "Measurement Period") <= 19 then '15–19'
+        when AgeInYearsAt(start of "Measurement Period") <= 24 then '20–24'
+        when AgeInYearsAt(start of "Measurement Period") <= 49 then '25–49'
         when AgeInYearsAt(start of "Measurement Period") >= 50 then '50+'
         else null
     end
@@ -190,6 +294,61 @@ define "By Administrative Gender Stratifier":
     and O.code ~ "People living in prisons and other closed settings"
   )
 
+  define TB_diagnosed:
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "Diagnosed TB"
+    and C.onset during "Measurement Period")
+  )
+  
+  define TB_presumptive:
+  exists(
+    ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "Presumptive TB"
+    and C.onset during "Measurement Period")
+  )
+
+define "Community_testing":
+  exists([Observation] O
+  with [O.encounter -> Encounter] E
+      such that (E.location in "Community-level testing")
+  where (O.status in { 'final', 'amended' }
+  and O.code in "HIVtesttypeCodes"
+  and O.issued during "Measurement Period")
+  )
+
+define "Facility_testing":
+  exists([Observation] O
+  with [O.encounter -> Encounter] E
+      such that (E.location in "Facility-level testing")
+  where (O.status in { 'final', 'amended' }
+  and O.code in "HIVtesttypeCodes"
+  and O.issued during "Measurement Period")
+  )
+
+//lifted this from ANC DAK
+//ANC SMART doesn't take into account time period
+define "ANC_case":
+exists(
+    [EpisodeOfCare] EOS
+    where EOS.type in "ANC contact during pregnancy"
+    and (exists (
+      EOS.statusHistory H
+      where H.period overlaps "Measurement Period"
+    ) 
+    or (
+      EOS.period overlaps "Measurement Period"
+    )
+    )
+    )
+
+
+  //define ANC
+
   define patientGroups:
   List<String>{
     if SW then 'SW' else null,
@@ -199,39 +358,28 @@ define "By Administrative Gender Stratifier":
     if Prisoner then 'Prisoner' else null
   }
 
+  define patientGroups_2:
+  List<String>{
+    if SW then 'SW' else null,
+    if MSM then 'MSM' else null,
+    if Trans then 'Trans' else null,
+    if PWID then 'PWID' else null,
+    if Prisoner then 'Prisoner' else null
+    if ANC_case then 'ANC' else null
+  }
 
-/*
- * codesystem "SNOMEDCT": 'http://snomed.info/sct'
- * SNOMED codes
- * 449344001 - sex worker
- * 472986005 - MSM
- * 407375002 - Trans
- * 226034001 - PWID
- * 105568001 - Prisoner
- * 713742005 - positive
- * 416234007 - HAART
- * 715035002 - does take medication
- * 165816005 - HIV positive
- * 107724000 - Paitent Transfer
- */
-
-
-/* 
-*code "Sex Worker": '472986005' from "SNOMEDCT" display 'sex worker'
-*code "MSM": '472986005' from "SNOMEDCT" display 'MSM'
-*code "Trans": '407375002' from "SNOMEDCT" display 'Trans'
-*code "PWID": '226034001' from "SNOMEDCT" display 'PWID'
-*code "Prisoner": '105568001' from "SNOMEDCT" display 'Prisoner'
-*
-*code "HIV Positive": '165816005' from "SNOMEDCT" display 'HIV Positive'
-*code "Antiretroviral": '713540004' from "SNOMEDCT" display 'Substance with antiretroviral mechanism of action (substance)'
-*
-*code "HAART": '416234007' from "SNOMEDCT" display 'HAART'
-*code "does take medication": '715035002' from "SNOMEDCT" display 'does take medication'
-*
-*code "Patient Transfer": '107724000' from "SNOMEDCT" display 'Paitent Transfer'
-*code "Transfer Out": 'transfer-out' from "ObservationValue"
- */
+  define patientGroups_3:
+  List<String>{
+    if SW then 'SW' else null,
+    if MSM then 'MSM' else null,
+    if Trans then 'Trans' else null,
+    if PWID then 'PWID' else null,
+    if Prisoner then 'Prisoner' else null
+    if TB_diagnosed then 'Diagnosed TB' else null,
+    if TB_presumptive then 'Presumptive TB' else null,
+    if Community_testing then 'Community-level testing' else null,
+    if Facility_testing then 'Facility-level testing' else null
+  }
 
 
 

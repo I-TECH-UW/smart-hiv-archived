@@ -1,17 +1,17 @@
 /*
- * Library: HIV.DT.01
+ * Library: HIV.B2.DT
  * Check for signs of serious illness
  * Consolidated guidelines on HIV prevention, testing, treatment, service delivery and monitoring: recommendations for a public health approach (2021) Chapter 5: Advanced HIV Disease. Figure 5.1: Algorithm for providing a package of care for people with advanced HIV disease.  
  * Should this just be for anyone with HIV? 
  * Wouldn't other  disease domains also code for general exam?
  */
 
-library HIVDT01
+library HIVB2DT
 
  using FHIR version '4.0.1'
  
 
- include HIVIndicatorCommon called HIC
+ include HIVIndicatorCommon version '0.01' called HIC
  include FHIRHelpers version '4.0.1'
  include WHOCommon called WCom
  include FHIRCommon called FC
@@ -28,8 +28,6 @@ library HIVDT01
  valueset "Unable to drink": ''
  valueset "Repeated vomiting": ''
 
- parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-01-31]
- 
  context Patient
 
  /*
@@ -47,7 +45,7 @@ define "Age_less_than_10":
   AgeInYearsAt(Today()) < 10
 
 define "Take action or refer client showing signs of a serious illness":
-  exists (([Observation: "Tachycardia"]
+  exists(([Observation: "Tachycardia"]
   union [Observation: "Tachypnea"]
   union [Observation: "Unable to walk unaided"]) O
   where Age_10_or_more
@@ -63,6 +61,8 @@ define "Take action or refer client showing signs of a serious illness":
   AND O.status in { 'final', 'amended' }
   )
 
+//plan definition Immediately take action or refer for care if a client is having this issue.
+
 define "Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill":
   exists (([Observation: "Body temperature = ≥ 39 °C"]
   union [Observation: "Other sign of serious illness (specify)"]) O
@@ -77,19 +77,4 @@ define "Use clinical judgement and consider local epidemiology to determine if s
   AND O.status in { 'final', 'amended' })
   )
 
-//need to define action
-//or use plandefinition
-
-define "refer_client": ProcedureRequest {
-  type: Code '442487003' from "SNOMED-CT"
-  display 'Screening for Chlamydia trachomatis (procedure)',
-  status: 'proposed'
-  // values for other elements of the request...
-}
-
-define "take_action": ProcedureRequest {
-  type: Code '442487003' from "SNOMED-CT"
-  display 'Screening for Chlamydia trachomatis (procedure)',
-  status: 'proposed'
-  // values for other elements of the request...
-}
+//plan definition  Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill. 
