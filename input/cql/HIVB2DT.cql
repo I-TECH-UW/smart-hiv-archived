@@ -49,8 +49,8 @@ define "Take action or refer client showing signs of a serious illness":
   union [Observation: "Tachypnea"]
   union [Observation: "Unable to walk unaided"]) O
   where Age_10_or_more
-  AND O.status in { 'final', 'amended' })
-  OR exists(([Observation: "Lethargy"]
+  and O.status in { 'final', 'amended' })
+  or exists(([Observation: "Lethargy"]
   union [Observation: "Unconsciousness"]
   union [Observation: "Convulsions"]
   union [Observation: "Unable to breastfeed"]
@@ -58,7 +58,7 @@ define "Take action or refer client showing signs of a serious illness":
   union [Observation: "Unconsciousness"]
   union [Observation: "Repeated vomiting"]) O
   where Age_less_than_10
-  AND O.status in { 'final', 'amended' }
+  and O.status in { 'final', 'amended' }
   )
 
 //plan definition Immediately take action or refer for care if a client is having this issue.
@@ -67,14 +67,16 @@ define "Use clinical judgement and consider local epidemiology to determine if s
   exists (([Observation: "Body temperature = ≥ 39 °C"]
   union [Observation: "Other sign of serious illness (specify)"]) O
   where Age_10_or_more
-  AND O.status in { 'final', 'amended' })
-  OR exists((([Observation: "Body temperature = ≥ 39 °C"]
-  intersect [Observation: "Tachycardia"])
-  OR ([Observation: "Body temperature = ≥ 39 °C"]
-  intersect [Observation: "Tachypnea"])
-  OR [Observation: "Other sign of serious illness (specify)"]) O
-  where Age_less_than_10
-  AND O.status in { 'final', 'amended' })
-  )
+  and O.status in { 'final', 'amended' })
+  // Please this condition needs to be fixed
+  // or exists((([Observation: "Body temperature = ≥ 39 °C"]
+  // intersect [Observation: "Tachycardia"])
+  // or ([Observation: "Body temperature = ≥ 39 °C"]
+  // intersect [Observation: "Tachypnea"])
+  // or [Observation: "Other sign of serious illness (specify)"]) O
+  // where Age_less_than_10
+  // and O.status in { 'final', 'amended' })
+  // )
+
 
 //plan definition  Use clinical judgement and consider local epidemiology to determine if symptoms suggest client is seriously ill. 
