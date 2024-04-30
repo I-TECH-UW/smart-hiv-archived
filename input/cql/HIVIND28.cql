@@ -63,7 +63,7 @@ define "numerator":
    (AnyTrue(HIC."HIV Positive before end of measurement period") 
    and AnyTrue(HIC."HIV Treatment Started during the measurement period")
    )
-   or (AnyTrue("HIV Positive before end of last measurement period")
+   or (AnyTrue(HIC."HIV Positive before end of last measurement period")
    and AnyTrue(HIC."HIV Treatment Active during last measurement period")
    )
    )
@@ -72,7 +72,7 @@ define "numerator":
    (AnyTrue(HIC."HIV Positive before end of measurement period") 
    and AnyTrue(HIC."HIV Treatment Started during the measurement period")
    )
-   or (AnyTrue("HIV Positive before end of last measurement period")
+   or (AnyTrue(HIC."HIV Positive before end of last measurement period")
    and AnyTrue(HIC."HIV Treatment Active during last measurement period")
    )
 
