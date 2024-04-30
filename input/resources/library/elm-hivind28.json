@@ -1,0 +1,2376 @@
+{
+  "library" : {
+    "type" : "Library",
+    "identifier" : {
+      "type" : "VersionedIdentifier",
+      "id" : "HIVIND28"
+    },
+    "schemaIdentifier" : {
+      "type" : "VersionedIdentifier",
+      "id" : "urn:hl7-org:elm",
+      "version" : "r1"
+    },
+    "usings" : {
+      "type" : "Library$Usings",
+      "def" : [ {
+        "type" : "UsingDef",
+        "localId" : "1",
+        "localIdentifier" : "System",
+        "uri" : "urn:hl7-org:elm-types:r1"
+      }, {
+        "type" : "UsingDef",
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "using " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "FHIR" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " version '4.0.1'" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "206"
+          }
+        } ],
+        "localId" : "206",
+        "locator" : "44:1-44:26",
+        "localIdentifier" : "FHIR",
+        "uri" : "http://hl7.org/fhir",
+        "version" : "4.0.1"
+      } ]
+    },
+    "includes" : {
+      "type" : "Library$Includes",
+      "def" : [ {
+        "type" : "IncludeDef",
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "include " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "HIVIndicatorCommon" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " version ", "'0.01'", " called ", "HIC" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "207"
+          }
+        } ],
+        "localId" : "207",
+        "locator" : "47:1-47:52",
+        "localIdentifier" : "HIC",
+        "path" : "HIVIndicatorCommon",
+        "version" : "0.01"
+      }, {
+        "type" : "IncludeDef",
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "include " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "FHIRHelpers" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " version ", "'4.0.1'" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "208"
+          }
+        } ],
+        "localId" : "208",
+        "locator" : "48:1-48:35",
+        "localIdentifier" : "FHIRHelpers",
+        "path" : "FHIRHelpers",
+        "version" : "4.0.1"
+      }, {
+        "type" : "IncludeDef",
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "include " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "WHOCommon" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " called ", "WCom" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "209"
+          }
+        } ],
+        "localId" : "209",
+        "locator" : "49:1-49:29",
+        "localIdentifier" : "WCom",
+        "path" : "WHOCommon"
+      }, {
+        "type" : "IncludeDef",
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "include " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "FHIRCommon" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " called ", "FC" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "210"
+          }
+        } ],
+        "localId" : "210",
+        "locator" : "50:1-50:28",
+        "localIdentifier" : "FC",
+        "path" : "FHIRCommon"
+      } ]
+    },
+    "parameters" : {
+      "type" : "Library$Parameters",
+      "def" : [ {
+        "type" : "ParameterDef",
+        "default" : {
+          "type" : "Interval",
+          "low" : {
+            "type" : "Date",
+            "year" : {
+              "type" : "Literal",
+              "localId" : "213",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "2020"
+            },
+            "month" : {
+              "type" : "Literal",
+              "localId" : "214",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "1"
+            },
+            "day" : {
+              "type" : "Literal",
+              "localId" : "215",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "1"
+            },
+            "localId" : "216",
+            "locator" : "52:64-52:74"
+          },
+          "high" : {
+            "type" : "Date",
+            "year" : {
+              "type" : "Literal",
+              "localId" : "218",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "2020"
+            },
+            "month" : {
+              "type" : "Literal",
+              "localId" : "219",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "1"
+            },
+            "day" : {
+              "type" : "Literal",
+              "localId" : "220",
+              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+              "value" : "31"
+            },
+            "localId" : "221",
+            "locator" : "52:77-52:87"
+          },
+          "localId" : "222",
+          "locator" : "52:55-52:88",
+          "lowClosed" : true,
+          "highClosed" : true
+        },
+        "parameterTypeSpecifier" : {
+          "type" : "IntervalTypeSpecifier",
+          "pointType" : {
+            "type" : "NamedTypeSpecifier",
+            "localId" : "224",
+            "locator" : "52:41-52:44",
+            "name" : "{urn:hl7-org:elm-types:r1}Date"
+          },
+          "localId" : "223",
+          "locator" : "52:32-52:45"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "parameter ", "\"Measurement Period\"", " " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "Interval<" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "Date" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "224"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ ">" ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "223"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ " default " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "Interval[", "@2020-01-01", ", ", "@2020-01-31", "]" ],
+                    "r" : "216"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "222"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "211"
+          }
+        } ],
+        "localId" : "211",
+        "locator" : "52:1-52:88",
+        "name" : "Measurement Period",
+        "accessLevel" : "Public"
+      } ]
+    },
+    "contexts" : {
+      "type" : "Library$Contexts",
+      "def" : [ {
+        "type" : "ContextDef",
+        "localId" : "225",
+        "locator" : "54:1-54:18",
+        "name" : "Unfiltered"
+      } ]
+    },
+    "statements" : {
+      "type" : "Library$Statements",
+      "def" : [ {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "And",
+          "operand" : [ {
+            "type" : "Or",
+            "operand" : [ {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "230",
+                "locator" : "58:13-58:67",
+                "name" : "Patient Deceased before end of Measurement Period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "2",
+              "locator" : "58:5-58:68"
+            }, {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "233",
+                "locator" : "59:15-59:73",
+                "name" : "Stopped ART at Facility during the measurement period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "4",
+              "locator" : "59:7-59:74"
+            } ],
+            "localId" : "229",
+            "locator" : "57:4-60:4"
+          }, {
+            "type" : "Or",
+            "operand" : [ {
+              "type" : "And",
+              "operand" : [ {
+                "type" : "AnyTrue",
+                "source" : {
+                  "type" : "ExpressionRef",
+                  "localId" : "238",
+                  "locator" : "63:13-63:63",
+                  "name" : "HIV Positive before end of measurement period",
+                  "libraryName" : "HIC"
+                },
+                "localId" : "6",
+                "locator" : "63:5-63:64"
+              }, {
+                "type" : "AnyTrue",
+                "source" : {
+                  "type" : "ExpressionRef",
+                  "localId" : "241",
+                  "locator" : "64:16-64:72",
+                  "name" : "HIV Treatment Started during the measurement period",
+                  "libraryName" : "HIC"
+                },
+                "localId" : "8",
+                "locator" : "64:8-64:73"
+              } ],
+              "localId" : "237",
+              "locator" : "63:4-65:4"
+            }, {
+              "type" : "And",
+              "operand" : [ {
+                "type" : "AnyTrue",
+                "source" : {
+                  "type" : "ExpressionRef",
+                  "localId" : "245",
+                  "locator" : "66:16-66:71",
+                  "name" : "HIV Positive before end of last measurement period",
+                  "libraryName" : "HIC"
+                },
+                "localId" : "10",
+                "locator" : "66:8-66:72"
+              }, {
+                "type" : "AnyTrue",
+                "source" : {
+                  "type" : "ExpressionRef",
+                  "localId" : "248",
+                  "locator" : "67:16-67:72",
+                  "name" : "HIV Treatment Active during last measurement period",
+                  "libraryName" : "HIC"
+                },
+                "localId" : "12",
+                "locator" : "67:8-67:73"
+              } ],
+              "localId" : "244",
+              "locator" : "66:7-68:4"
+            } ],
+            "localId" : "236",
+            "locator" : "62:4-69:4"
+          } ],
+          "localId" : "228",
+          "locator" : "57:4-69:4"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "define ", "\"numerator\"", ":\n   " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "(\n    " ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "1"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"Patient Deceased before end of Measurement Period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "230"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "230"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "2"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ "\n   or " ]
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "3"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"Stopped ART at Facility during the measurement period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "233"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "233"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "4"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        } ],
+                        "r" : "229"
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\n   )" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "229"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "\n   and\n   " ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "(\n   " ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "AnyTrue", "(" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "HIC" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "5"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ "." ]
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "\"HIV Positive before end of measurement period\"" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "238"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        } ],
+                                        "r" : "238"
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ ")" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "6"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ " \n   and " ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "AnyTrue", "(" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "HIC" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "7"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ "." ]
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "\"HIV Treatment Started during the measurement period\"" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "241"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        } ],
+                                        "r" : "241"
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ ")" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "8"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "237"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "\n   )" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "237"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ "\n   or " ]
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "AnyTrue", "(" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "HIC" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "9"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ "." ]
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "\"HIV Positive before end of last measurement period\"" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "245"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        } ],
+                                        "r" : "245"
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ ")" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "10"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "\n   and " ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "AnyTrue", "(" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "HIC" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "11"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ "." ]
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        }, {
+                                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                          "value" : {
+                                            "s" : [ {
+                                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                              "value" : {
+                                                "s" : [ "\"HIV Treatment Active during last measurement period\"" ]
+                                              },
+                                              "nil" : false,
+                                              "globalScope" : true,
+                                              "typeSubstituted" : false
+                                            } ],
+                                            "r" : "248"
+                                          },
+                                          "nil" : false,
+                                          "globalScope" : true,
+                                          "typeSubstituted" : false
+                                        } ],
+                                        "r" : "248"
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    }, {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ ")" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "12"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "244"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "\n   )" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "244"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        } ],
+                        "r" : "236"
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\n   )" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "236"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "228"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "227"
+          }
+        } ],
+        "localId" : "227",
+        "locator" : "56:1-69:4",
+        "name" : "numerator",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      }, {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "Or",
+          "operand" : [ {
+            "type" : "And",
+            "operand" : [ {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "255",
+                "locator" : "72:13-72:63",
+                "name" : "HIV Positive before end of measurement period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "14",
+              "locator" : "72:5-72:64"
+            }, {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "258",
+                "locator" : "73:16-73:72",
+                "name" : "HIV Treatment Started during the measurement period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "16",
+              "locator" : "73:8-73:73"
+            } ],
+            "localId" : "254",
+            "locator" : "72:4-74:4"
+          }, {
+            "type" : "And",
+            "operand" : [ {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "262",
+                "locator" : "75:16-75:71",
+                "name" : "HIV Positive before end of last measurement period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "18",
+              "locator" : "75:8-75:72"
+            }, {
+              "type" : "AnyTrue",
+              "source" : {
+                "type" : "ExpressionRef",
+                "localId" : "265",
+                "locator" : "76:16-76:72",
+                "name" : "HIV Treatment Active during last measurement period",
+                "libraryName" : "HIC"
+              },
+              "localId" : "20",
+              "locator" : "76:8-76:73"
+            } ],
+            "localId" : "261",
+            "locator" : "75:7-77:4"
+          } ],
+          "localId" : "253",
+          "locator" : "72:4-77:4"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "define ", "\"denominator\"", ":\n   " ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "(" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "13"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"HIV Positive before end of measurement period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "255"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "255"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "14"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ " \n   and " ]
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "15"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"HIV Treatment Started during the measurement period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "258"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "258"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "16"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        } ],
+                        "r" : "254"
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\n   )" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "254"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "\n   or " ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "(" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "17"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"HIV Positive before end of last measurement period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "262"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "262"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "18"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ "\n   and " ]
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        }, {
+                          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                          "value" : {
+                            "s" : [ {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ "AnyTrue", "(" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "HIC" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "19"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ "." ]
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                }, {
+                                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                  "value" : {
+                                    "s" : [ {
+                                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                                      "value" : {
+                                        "s" : [ "\"HIV Treatment Active during last measurement period\"" ]
+                                      },
+                                      "nil" : false,
+                                      "globalScope" : true,
+                                      "typeSubstituted" : false
+                                    } ],
+                                    "r" : "265"
+                                  },
+                                  "nil" : false,
+                                  "globalScope" : true,
+                                  "typeSubstituted" : false
+                                } ],
+                                "r" : "265"
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            }, {
+                              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                              "value" : {
+                                "s" : [ ")" ]
+                              },
+                              "nil" : false,
+                              "globalScope" : true,
+                              "typeSubstituted" : false
+                            } ],
+                            "r" : "20"
+                          },
+                          "nil" : false,
+                          "globalScope" : true,
+                          "typeSubstituted" : false
+                        } ],
+                        "r" : "261"
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    }, {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\n   )" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "261"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "253"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "252"
+          }
+        } ],
+        "localId" : "252",
+        "locator" : "71:2-77:4",
+        "name" : "denominator",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      }, {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "ExpressionRef",
+          "localId" : "270",
+          "locator" : "86:2-86:42",
+          "name" : "By Administrative Gender Stratifier",
+          "libraryName" : "HIC"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "/*\n * Disaggregators\n */\n\n", "define ", "\"Administrative Gender Stratifier\"", ":\n\t" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "HIC" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "21"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "." ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\"By Administrative Gender Stratifier\"" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "270"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "270"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "269"
+          }
+        } ],
+        "localId" : "269",
+        "locator" : "85:1-86:42",
+        "name" : "Administrative Gender Stratifier",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      }, {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "ExpressionRef",
+          "localId" : "273",
+          "locator" : "89:2-89:24",
+          "name" : "By Age Stratifier",
+          "libraryName" : "HIC"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "define ", "\"Age Stratifier\"", ":\n\t" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "HIC" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "22"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "." ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\"By Age Stratifier\"" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "273"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "273"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "272"
+          }
+        } ],
+        "localId" : "272",
+        "locator" : "88:1-89:24",
+        "name" : "Age Stratifier",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      }, {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "ExpressionRef",
+          "localId" : "276",
+          "locator" : "92:2-92:38",
+          "name" : "By Geographic Region Stratifier",
+          "libraryName" : "HIC"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "define ", "\"Geographic Region Stratifier\"", ":\n\t" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "HIC" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "23"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "." ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\"By Geographic Region Stratifier\"" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "276"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "276"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "275"
+          }
+        } ],
+        "localId" : "275",
+        "locator" : "91:1-92:38",
+        "name" : "Geographic Region Stratifier",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      }, {
+        "type" : "ExpressionDef",
+        "expression" : {
+          "type" : "ExpressionRef",
+          "localId" : "279",
+          "locator" : "95:2-95:20",
+          "name" : "patientGroups",
+          "libraryName" : "HIC"
+        },
+        "annotation" : [ {
+          "type" : "Annotation",
+          "s" : {
+            "s" : [ {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ "", "define ", "\"patientGroups Stratifier\"", ":\n\t" ]
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            }, {
+              "name" : "{urn:hl7-org:cql-annotations:r1}s",
+              "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+              "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+              "value" : {
+                "s" : [ {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "HIC" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "24"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ "." ]
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                }, {
+                  "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                  "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                  "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                  "value" : {
+                    "s" : [ {
+                      "name" : "{urn:hl7-org:cql-annotations:r1}s",
+                      "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+                      "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+                      "value" : {
+                        "s" : [ "\"patientGroups\"" ]
+                      },
+                      "nil" : false,
+                      "globalScope" : true,
+                      "typeSubstituted" : false
+                    } ],
+                    "r" : "279"
+                  },
+                  "nil" : false,
+                  "globalScope" : true,
+                  "typeSubstituted" : false
+                } ],
+                "r" : "279"
+              },
+              "nil" : false,
+              "globalScope" : true,
+              "typeSubstituted" : false
+            } ],
+            "r" : "278"
+          }
+        } ],
+        "localId" : "278",
+        "locator" : "94:1-95:20",
+        "name" : "patientGroups Stratifier",
+        "context" : "Unfiltered",
+        "accessLevel" : "Public"
+      } ]
+    },
+    "annotation" : [ {
+      "type" : "CqlToElmInfo",
+      "translatorVersion" : "3.6.0",
+      "translatorOptions" : "EnableAnnotations,EnableLocators,DisableListDemotion,DisableListPromotion",
+      "signatureLevel" : "None"
+    }, {
+      "type" : "Annotation",
+      "s" : {
+        "s" : [ {
+          "name" : "{urn:hl7-org:cql-annotations:r1}s",
+          "declaredType" : "org.hl7.cql_annotations.r1.Narrative",
+          "scope" : "jakarta.xml.bind.JAXBElement$GlobalScope",
+          "value" : {
+            "s" : [ "/*\n * Library: HIV.IND.28\n * Total attrition from ART\n * Number and % of people living with HIV on ART at the end of the last reporting period and those newly initiating ART during the current reporting period who were not on ART at the end of the current reporting period\n * \n * Numerator: COUNT of clients with \"HIV status\"='HIV-positive' AND \"On ART\"=True at the end of previous reporting period\n * PLUS\n * COUNT of clients with \"HIV status\"='HIV-positive' AND \"ART start date\" within reporting period\n * MINUS\n * COUNT of clients with \"HIV status\"='HIV-positive' AND \"On ART\"=True on the reporting period end date\n * Numerator Exclusions: NONE\n * \n * Denominator: COUNT of clients with \"HIV status\"='HIV-positive' and \"On ART\"=True on previous reporting period end date\n *  PLUS\n *  COUNT of clients with \"HIV status\"='HIV-positive' AND \"ART start date\" within the reporting period\n *\n * \n * \n * Disaggregation:\n *   - Gender\n *   - Age\n *   - Key population member type\n *   - Other PRIORITY POPULATION??? NOT DEFINED\n * Description:\n *   - Gender (female, male, other*)\n *   - Age (0–4, 5–9, 10–14, 15–19, 20–24, 25–29, 30–34, 35–39, 40–44, 45–49, 50+ years)**\n *   - Key populations (men who have sex with men, people living in prisons and other closed settings, people who inject drugs, sex workers, trans and gender diverse people)***\n *   - Cities and other administrative regions of epidemiologic importance\n\n *   - Treatment outcome category (died, stopped treatment, lost to follow-up)\n\n * \n *      * The category of other includes trans and gender diverse people who choose an identity other than male or female.\n *      ** Recommended in settings with robust electronic health information systems.\n *      *** Where feasible and data security and confidentiality can be ensured (see monitoring considerations in section 3.8 of WHO's 2022 HIV SI Guidelines on key\n *          populations for further guidance and section 6.4 on maintaining data privacy, security and confidential).\n * \n * \n * Consolidated guidelines on person-centred HIV strategic information: strengthening routine data for impact. Geneva: World Health Organization; 2022\n */\n\n", "library HIVIND28" ]
+          },
+          "nil" : false,
+          "globalScope" : true,
+          "typeSubstituted" : false
+        } ],
+        "r" : "278"
+      }
+    } ],
+    "localId" : "0"
+  }
+}

@@ -7,11 +7,12 @@ codesystem "ObservationValue": 'http://terminology.hl7.org/CodeSystem/observatio
 codesystem "HIV_DAK_Codes": 'http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes'
 codesystem "ConditionClinicalStatusCodes": 'http://terminology.hl7.org/CodeSystem/condition-clinical'
 codesystem "ConditionCategoryCodes": 'http://terminology.hl7.org/CodeSystem/condition-category'
+codesystem "ObservationStatusCodes": 'http://hl7.org/fhir/observation-status'
 
 codesystem "Keypopulationmembertype*Codes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de51'
 codesystem "HIVstatusCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-b-de116'
 codesystem "HIVtreatmentoutcomeCodes": 'http://fhir.org/guides/itech-uw/ValueSet/hiv-h-de42'
-codesystem "ObservationCategoryCodes": 'http://hl7.org/fhir/ValueSet/observation-category'
+codesystem "ObservationCategoryCodes": 'http://terminology.hl7.org/CodeSystem/observation-category'
 
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
@@ -81,59 +82,55 @@ context Patient
  */
 
 define "HIV Positive before end of measurement period":
-  exists(
-    ([Condition] C
+   exists ([Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
     and C.onset before end of "Measurement Period")
-    OR 
-    ([Observation] O
-    where O.status ~ {'final', 'amended'}
+    or 
+   exists ([Observation] O
+    where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
     and O.value ~ "HIV-positive"
     and O.issued before end of "Measurement Period")
-    )
 
 //last measurement period is defined as same length as current measurement period  
 define "HIV Positive before end of last measurement period":
-  exists(
-    ([Condition] C
+    exists ([Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
     and C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
-    OR 
-    ([Observation] O
-    where O.status ~ {'final', 'amended'}
+    or 
+    exists ([Observation] O
+    where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
     and O.value ~ "HIV-positive"
-    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period"))
-    )
+    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
+
 
 
 
 define "HIV Positive during measurement period":
-  exists(
-    ([Condition] C
+     exists([Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
     and C.onset during "Measurement Period")
-    OR 
-    ([Observation] O
-    where O.status ~ {'final', 'amended'}
+    or 
+    exists ([Observation] O
+    where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
     and O.value ~ "HIV-positive"
-    and O.issued during "Measurement Period")
-    )
+    and O.issued before end of "Measurement Period")
+
 
   define "HIV test during measurement period":
   exists(
     ([Observation] O
-    where O.status ~ {'final', 'amended'}
+    where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
-    and O.issued during "Measurement Period")
+    and O.issued before end of "Measurement Period")
     )
 
 
@@ -314,8 +311,8 @@ define "By Administrative Gender Stratifier":
 
 define "Community_testing":
   exists([Observation] O
-  with [O.encounter -> Encounter] E
-      such that (E.location in "Community-level testing")
+  //with [O.encounter -> Encounter] E
+     // such that (E.location in "Community-level testing")
   where (O.status in { 'final', 'amended' }
   and O.code in "HIVtesttypeCodes"
   and O.issued during "Measurement Period")
@@ -323,8 +320,8 @@ define "Community_testing":
 
 define "Facility_testing":
   exists([Observation] O
-  with [O.encounter -> Encounter] E
-      such that (E.location in "Facility-level testing")
+  //with [O.encounter -> Encounter] E
+      //such that (E.location in "Facility-level testing")
   where (O.status in { 'final', 'amended' }
   and O.code in "HIVtesttypeCodes"
   and O.issued during "Measurement Period")
@@ -364,7 +361,7 @@ exists(
     if MSM then 'MSM' else null,
     if Trans then 'Trans' else null,
     if PWID then 'PWID' else null,
-    if Prisoner then 'Prisoner' else null
+    if Prisoner then 'Prisoner' else null,
     if ANC_case then 'ANC' else null
   }
 
@@ -374,7 +371,7 @@ exists(
     if MSM then 'MSM' else null,
     if Trans then 'Trans' else null,
     if PWID then 'PWID' else null,
-    if Prisoner then 'Prisoner' else null
+    if Prisoner then 'Prisoner' else null,
     if TB_diagnosed then 'Diagnosed TB' else null,
     if TB_presumptive then 'Presumptive TB' else null,
     if Community_testing then 'Community-level testing' else null,
