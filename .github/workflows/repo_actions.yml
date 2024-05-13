@@ -12,6 +12,10 @@ on:
 
   workflow_dispatch:
 
+# contents: write is required as the deploy action will write to a branch
+permissions:
+  contents: write
+
 jobs:
   call-update-readme:
     uses: WorldHealthOrganization/smart-base/.github/workflows/update_readme.yml@main
