@@ -44,10 +44,17 @@ context Unfiltered
 //Does this also filter out self HIV tests 
 //right now using HIVIND19 definition which does
 define "numerator":
-    AnyTrue(HIC."HIV Positive during measurement period") 
+    exists(HIC."HIV Positive Condition" C
+	where C.onset during "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period"
+	and O.issued after start of "Measurement Period")
+	) 
 
 define "denominator":
-    AnyTrue(HIC."HIV test during measurement period")
+    exists(HIC."HIV test resulted" T
+	where T.issued before end of "Measurement Period")
 
 
 /*

@@ -38,10 +38,17 @@ context Unfiltered
 
 //Exclusion happens automatically through test type valueset = excludes self test
 define "numerator":
-    AnyTrue(HIC."HIV Positive during measurement period") 
+    exists(HIC."HIV Positive Condition" C
+	where C.onset during "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period"
+	and O.issued after start of "Measurement Period")
+	) 
 
 define "denominator":
-    AnyTrue(HIC."HIV test during measurement period")
+    exists(HIC."HIV test resulted" T
+	where T.issued before end of "Measurement Period")
 
 /*
  * Disaggregators
