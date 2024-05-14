@@ -81,92 +81,43 @@ context Patient
  * or should use communication or encounter resource to specify?
  */
 
-define "HIV Positive before end of measurement period":
-   exists ([Condition] C
+
+
+define "HIV Positive Condition":
+[Condition] C
     where C.clinicalStatus ~ "active"
     and C.category in "encounter-diagnosis"
     and C.code ~ "HIV-positive"
-    and C.onset before end of "Measurement Period")
-    or 
-   exists ([Observation] O
+
+define "HIV Positive Observation":
+[Observation] O
     where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
     and O.value ~ "HIV-positive"
-    and O.issued before end of "Measurement Period")
 
-//last measurement period is defined as same length as current measurement period  
-define "HIV Positive before end of last measurement period":
-    exists ([Condition] C
-    where C.clinicalStatus ~ "active"
-    and C.category in "encounter-diagnosis"
-    and C.code ~ "HIV-positive"
-    and C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
-    or 
-    exists ([Observation] O
+
+define "HIV test resulted":
+  [Observation] O
     where O.status in {'final', 'amended'}
     and O.code in "HIVtesttypeCodes"
-    and O.value ~ "HIV-positive"
-    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
 
-
-
-
-define "HIV Positive during measurement period":
-     exists([Condition] C
-    where C.clinicalStatus ~ "active"
-    and C.category in "encounter-diagnosis"
-    and C.code ~ "HIV-positive"
-    and C.onset during "Measurement Period")
-    or 
-    exists ([Observation] O
-    where O.status in {'final', 'amended'}
-    and O.code in "HIVtesttypeCodes"
-    and O.value ~ "HIV-positive"
-    and O.issued before end of "Measurement Period")
-
-
-  define "HIV test during measurement period":
-  exists(
-    ([Observation] O
-    where O.status in {'final', 'amended'}
-    and O.code in "HIVtesttypeCodes"
-    and O.issued before end of "Measurement Period")
-    )
-
-
-define "HIV Treatment Active during the measurement period":
-   exists(
-    [MedicationStatement] MS
+define "HIV Treatment Active":
+[MedicationStatement] MS
     where MS.status = 'recorded'
     and MS.reasonCode in "On ART"
-    and MS.effective starts before end of "Measurement Period"
-    and (MS.effective ends after start of "Measurement Period"
-    or end of MS.effective  ~  null)
-   )
 
-//last measurement period is defined as same length as current measurement period  
-define "HIV Treatment Active during last measurement period":
-   exists(
-    [MedicationStatement] MS
-    where MS.status = 'recorded'
-    and MS.reasonCode in "On ART"
-    and MS.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
-    and (MS.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
-    or end of MS.effective  ~  null)
-   )
-
- define "HIV Treatment Started during the measurement period":
-   exists(
-    [MedicationStatement] MS
-    where MS.status = 'recorded'
-    and MS.reasonCode in "On ART"
-    and MS.effective starts during "Measurement Period"
-   )
 
 define "Patient Deceased before end of Measurement Period":
   case 
     when Patient.deceased is FHIR.boolean and Patient.deceased ~ true then Patient.meta.lastUpdated  before end of "Measurement Period"
     when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime before end of "Measurement Period"
+    else false
+  end
+
+define "Patient Deceased during Measurement Period":
+  case 
+    when Patient.deceased is FHIR.boolean and Patient.deceased ~ true then Patient.meta.lastUpdated  during "Measurement Period"
+    when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime during "Measurement Period"
     else false
   end
 
@@ -435,3 +386,61 @@ exists(
  */
 
 
+/* to delete*/
+
+define "HIV Positive before end of measurement period":
+   exists ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset before end of "Measurement Period")
+    or 
+   exists ([Observation] O
+    where O.status in {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period")
+
+//last measurement period is defined as same length as current measurement period  
+define "HIV Positive before end of last measurement period":
+    exists ([Condition] C
+    where C.clinicalStatus ~ "active"
+    and C.category in "encounter-diagnosis"
+    and C.code ~ "HIV-positive"
+    and C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
+    or 
+    exists ([Observation] O
+    where O.status in {'final', 'amended'}
+    and O.code in "HIVtesttypeCodes"
+    and O.value ~ "HIV-positive"
+    and O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
+
+define "HIV Treatment Active during the measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts before end of "Measurement Period"
+    and (MS.effective ends after start of "Measurement Period"
+    or end of MS.effective  ~  null)
+   )
+
+   //last measurement period is defined as same length as current measurement period  
+define "HIV Treatment Active during last measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and (MS.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    or end of MS.effective  ~  null)
+   )
+
+
+ define "HIV Treatment Started during the measurement period":
+   exists(
+    [MedicationStatement] MS
+    where MS.status = 'recorded'
+    and MS.reasonCode in "On ART"
+    and MS.effective starts during "Measurement Period"
+   )

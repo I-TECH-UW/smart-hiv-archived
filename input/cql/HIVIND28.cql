@@ -55,25 +55,70 @@ context Unfiltered
 
 define "numerator":
    (
-    AnyTrue(HIC."Patient Deceased before end of Measurement Period")
-   or AnyTrue(HIC."Stopped ART at Facility during the measurement period")
+    exists(HIC."Patient Deceased during Measurement Period")
+   or exists(HIC."Stopped ART at Facility during the measurement period")
    )
-   and
+   and ((
+    //saying needs to not be counted this measurement period but should have counted this period or last period
+    (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before end of "Measurement Period"
+    and (H.effective ends after start of "Measurement Period"
+    or end of H.effective  ~  null)
+   )
+   ) or
    (
-   (AnyTrue(HIC."HIV Positive before end of measurement period") 
-   and AnyTrue(HIC."HIV Treatment Started during the measurement period")
+    //Accounts for end of last period
+    (exists(HIC."HIV Positive Condition" C
+	where C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and (H.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    or end of H.effective  ~  null)
    )
-   or (AnyTrue(HIC."HIV Positive before end of last measurement period")
-   and AnyTrue(HIC."HIV Treatment Active during last measurement period")
    )
    )
 
+
+
  define "denominator":
-   (AnyTrue(HIC."HIV Positive before end of measurement period") 
-   and AnyTrue(HIC."HIV Treatment Started during the measurement period")
+   ((
+    //saying needs to not be counted this measurement period but should have counted this period or last period
+    (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before end of "Measurement Period"
+    and (H.effective ends after start of "Measurement Period"
+    or end of H.effective  ~  null)
    )
-   or (AnyTrue(HIC."HIV Positive before end of last measurement period")
-   and AnyTrue(HIC."HIV Treatment Active during last measurement period")
+   ) or
+   (
+    //Accounts for end of last period
+    (exists(HIC."HIV Positive Condition" C
+	where C.onset before (end of "Measurement Period" - duration in days of "Measurement Period"))
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period" - duration in days of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
+    and (H.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
+    or end of H.effective  ~  null)
+   )
+   )
    )
 
 

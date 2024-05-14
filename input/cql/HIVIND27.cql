@@ -57,17 +57,31 @@ context Unfiltered
 * Should discuss.
 */
 
+define "numerator":
+   (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before end of "Measurement Period"
+    and (H.effective ends after start of "Measurement Period"
+    or end of H.effective  ~  null)
+   )
+   and not exists (HIC."Patient Deceased before end of Measurement Period")
+   and not exists (HIC."Stopped ART at Facility during the measurement period")
 
- define "numerator":
-   AnyTrue(HIC."HIV Positive before end of measurement period") 
-   and AnyTrue(HIC."HIV Treatment Active during the measurement period")
-   and not AnyTrue(HIC."Patient Deceased before end of Measurement Period")
-   and not AnyTrue(HIC."Stopped ART at Facility during the measurement period")
 
 define "denominator":
-   AnyTrue(HIC."HIV Positive before end of measurement period")
-   and not AnyTrue(HIC."Patient Deceased before end of Measurement Period")
-   and not AnyTrue(HIC."Stopped ART at Facility during the measurement period")
+   (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and not exists (HIC."Patient Deceased before end of Measurement Period")
+   and not exists (HIC."Stopped ART at Facility during the measurement period")
 
 /*
  * Disaggregators

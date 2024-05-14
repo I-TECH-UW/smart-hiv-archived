@@ -45,8 +45,15 @@ parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @202
 context Unfiltered
 
  define "numerator":
-   AnyTrue(HIC."HIV Positive before end of measurement period") 
-   and AnyTrue(HIC."HIV Treatment Started during the measurement period")
+   (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	)) and 
+	exists(HIC."HIV Treatment Active" H
+   where H.effective starts during "Measurement Period")
+
 
 
 /*
