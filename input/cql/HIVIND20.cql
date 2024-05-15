@@ -54,7 +54,8 @@ define "numerator":
 
 define "denominator":
     exists(HIC."HIV test resulted" T
-	where T.issued before end of "Measurement Period")
+	where T.issued before end of "Measurement Period"
+	and T.issued after start of "Measurement Period")
 
 
 /*
