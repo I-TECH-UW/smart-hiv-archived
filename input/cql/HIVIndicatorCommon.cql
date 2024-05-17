@@ -116,8 +116,8 @@ define "Patient Deceased before end of Measurement Period":
 
 define "Patient Deceased during Measurement Period":
   case 
-    when Patient.deceased is FHIR.boolean and Patient.deceased ~ true then Patient.meta.lastUpdated  during "Measurement Period"
-    when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime during "Measurement Period"
+    when Patient.deceased is FHIR.boolean and Patient.deceased ~ true then Patient.meta.lastUpdated before end of  "Measurement Period" and  Patient.meta.lastUpdated after start of "Measurement Period"
+    when Patient.deceased is FHIR.dateTime then Patient.deceased as FHIR.dateTime before end of  "Measurement Period" and Patient.deceased as FHIR.dateTime after start of "Measurement Period"
     else false
   end
 
