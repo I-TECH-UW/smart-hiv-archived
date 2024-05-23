@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-a-de47",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-a-de47",
+  "name": "CommunicationpreferencesCodes",
+  "title": "Communication preference(s) Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Communication preference(s) element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.A.DE47",
+        "display": "Text message/SMS"
+      }, {
+        "code": "HIV.A.DE48",
+        "display": "Voice call"
+      } ]
+    } ]
+  }
+}
