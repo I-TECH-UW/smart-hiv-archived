@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de142",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de142",
+  "name": "MaternalHIVstatusCodes",
+  "title": "Maternal HIV status Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Maternal HIV status element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE142",
+        "display": "HIV-positive"
+      }, {
+        "code": "HIV.E.DE143",
+        "display": "HIV-negative"
+      }, {
+        "code": "HIV.E.DE144",
+        "display": "Unknown"
+      } ]
+    } ]
+  }
+}
