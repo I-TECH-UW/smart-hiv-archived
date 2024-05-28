@@ -1,227 +1,36 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/input/anc-cds.xml	14857	-	0	0	0	0	0	0	10	60	0	0	0	0	0	0	0	1	0	0	338	405	0	0	0	1	10	0	4
-input/resources/library/library-fhircommon.json	1803134	17	0	0	0	0	0	0	0	219	0	0	0	0	0	0	0	0	0	0	8433	187	0	0	0	0	102	0	0
-input/resources/library/library-fhirhelpers.json	3350392	55	0	0	0	0	0	0	0	219	0	0	0	0	0	0	0	0	0	0	15800	329	0	0	0	0	155	0	0
-input/resources/library/library-hivb2dt.json	364415	8	0	0	0	0	0	0	0	212	0	0	0	0	0	0	0	0	0	0	1714	65	0	0	0	0	20	0	0
-input/resources/library/library-hivb7dt.json	1069178	10	0	0	0	0	0	0	0	123	0	0	0	0	0	0	0	0	0	0	4970	136	0	0	0	0	63	0	0
-input/resources/library/library-hivind18.json	63373	6	0	0	0	0	0	0	0	90	0	0	0	0	0	0	0	1	0	0	371	22	0	0	0	0	4	0	0
-input/resources/library/library-hivind19.json	207286	5	0	0	0	0	0	0	0	102	0	0	0	0	0	0	0	0	0	0	1012	39	0	0	0	0	11	0	0
-input/resources/library/library-hivind20.json	208646	6	0	0	0	0	0	0	1	113	0	0	0	0	0	0	0	0	0	0	1020	79	0	0	0	0	12	0	0
-input/resources/library/library-hivind27.json	459154	7	0	0	0	0	0	0	0	109	0	0	0	0	0	0	0	0	0	0	2135	100	0	0	0	0	25	0	0
-input/resources/library/library-hivind28.json	1219366	11	0	0	0	0	0	0	0	131	0	0	0	0	0	0	0	0	0	0	5618	155	0	0	0	0	74	0	0
-input/resources/library/library-hivind30.json	199758	6	0	0	0	0	0	0	0	97	0	0	0	0	0	0	0	0	0	0	951	39	0	0	0	0	11	0	0
-input/resources/library/library-hivindicatorcommon.json	3226857	21	0	0	0	0	0	0	0	189	0	0	0	0	0	0	0	0	0	0	14990	447	0	0	0	0	185	0	0
-input/resources/library/library-whocommon.json	411160	7	0	0	0	0	0	0	0	34	0	0	0	0	0	0	0	0	0	0	1935	52	0	0	0	0	23	0	0
-input/resources/plandefinition/plandefinition-HIVB2DT.json	9126	6	1	0	0	0	0	0	0	170	0	0	0	0	0	0	0	0	0	0	52	21	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVB7DT.json	12852	5	0	0	0	0	0	0	1	162	0	0	0	0	0	0	0	0	0	0	63	21	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVB9DT.json	17328	5	0	0	0	0	0	0	0	158	0	0	0	0	0	0	0	0	0	0	75	21	0	0	0	0	0	0	0
-input/resources/plandefinition/plandefinition-HIVC23DT.json	1183	5	0	0	0	0	0	0	0	74	0	0	0	0	0	0	0	0	0	0	26	17	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVC7DT.json	38132	5	1	0	0	0	0	0	1	268	0	0	0	0	0	0	0	0	0	0	134	24	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVD12DT.json	63942	6	0	0	0	0	0	0	0	231	0	0	0	0	0	0	0	0	0	0	242	28	0	0	0	0	2	0	1
-input/resources/plandefinition/plandefinition-HIVD15DT.json	1227	5	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	26	17	0	0	0	0	0	0	0
-input/resources/plandefinition/plandefinition-HIVD17DT.json	9870	5	0	0	0	0	0	0	1	100	0	0	0	0	0	0	0	1	0	0	53	19	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVD211DT.json	1193	4	0	0	0	0	0	0	0	53	0	0	0	0	0	0	0	0	0	0	26	22	0	0	0	0	0	0	0
-input/resources/plandefinition/plandefinition-HIVD212DT.json	55230	8	0	0	0	0	0	0	1	501	0	0	0	0	0	0	0	0	0	0	212	53	0	0	0	0	2	0	7
-input/resources/plandefinition/plandefinition-HIVD4DT.json	5046	5	1	0	0	0	0	0	0	70	0	0	0	0	0	0	0	0	0	0	38	36	0	0	0	0	1	0	0
-input/resources/plandefinition/plandefinition-HIVE12DT.json	12043	5	0	0	0	0	0	0	1	106	0	0	0	0	0	0	0	0	0	0	62	38	0	0	0	0	1	0	1
-input/resources/plandefinition/plandefinition-HIVE4DT.json	38487	6	0	0	0	0	0	0	0	237	0	0	0	0	0	0	0	0	0	0	149	49	0	0	0	0	2	0	2
-input/resources/questionnaire/questionnaire-HIV.ARegistration.json	8384	7	0	0	0	0	0	0	1	26	0	0	0	0	0	0	0	0	0	0	167	66	0	0	0	0	3	0	0
-input/resources/questionnaire/questionnaire-HIV.BHTSvisit.json	29384	9	1	0	0	0	0	0	1	42	0	0	0	0	0	0	0	0	0	0	567	96	0	0	0	0	9	0	0
-input/resources/questionnaire/questionnaire-HIV.CPrEPvisit.json	14337	6	0	0	0	0	0	0	0	30	0	0	0	0	0	0	0	0	0	0	272	45	0	0	0	0	4	0	1
-input/resources/questionnaire/questionnaire-HIV.Configuration.json	6558	5	0	0	0	0	0	0	1	21	0	0	0	0	0	0	0	0	0	0	126	41	0	0	0	0	2	0	0
-input/resources/questionnaire/questionnaire-HIV.DCare-Treatment.json	61728	10	0	0	0	0	0	0	3	71	0	0	0	0	0	0	0	1	0	0	1146	113	0	0	0	0	16	0	1
-input/resources/questionnaire/questionnaire-HIV.DHIV-TB.json	9708	6	1	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	194	42	0	0	0	0	2	0	0
-input/resources/questionnaire/questionnaire-HIV.E-FPMTCT.json	28266	6	0	0	0	0	0	0	1	46	0	0	0	0	0	0	0	0	0	0	542	87	0	0	0	0	8	0	6
-input/resources/questionnaire/questionnaire-HIV.GDiagnostics.json	5375	5	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	115	28	0	0	0	0	1	0	0
-input/resources/questionnaire/questionnaire-HIV.HFollow-up.json	6440	5	0	0	0	0	0	0	1	18	0	0	0	0	0	0	0	0	0	0	134	36	0	0	0	0	2	0	0
-input/resources/questionnaire/questionnaire-HIV.IReferral.json	4251	5	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	87	75	0	0	0	0	1	0	0
-input/resources/questionnaire/questionnaire-HIV.Prevention.json	4770	4	1	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	97	39	0	0	0	0	1	0	0
-input/resources/questionnaire/questionnaire-HIV.Surveillance.json	1199	5	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	35	30	0	0	0	0	0	0	0
-input/vocabulary/codesystem/codesystem-concept-codes.json	275835	19	1	0	0	0	0	0	13	183	0	0	1	0	0	0	0	2	0	0	1547	14412	0	0	0	0	56	0	2
-input/vocabulary/conceptmap/conceptmap-ICD-10.json	178327	14	0	0	0	0	0	0	12	660	0	0	0	0	0	0	0	1	0	0	1175	377	0	0	0	0	33	0	4
-input/vocabulary/conceptmap/conceptmap-ICD-11.json	190781	15	0	0	0	0	0	0	12	151	0	0	0	0	0	0	0	2	0	0	1257	336	0	0	0	0	34	0	5
-input/vocabulary/conceptmap/conceptmap-ICF.json	17344	5	0	0	0	0	0	0	1	11	0	0	0	0	0	0	0	0	0	0	130	64	0	0	0	0	3	0	1
-input/vocabulary/conceptmap/conceptmap-ICHI.json	79820	8	0	0	0	0	0	0	5	81	0	0	0	0	0	0	0	1	0	0	522	146	0	0	0	0	13	0	2
-input/vocabulary/conceptmap/conceptmap-LOINC.json	140152	12	0	0	0	0	0	0	9	64	0	0	0	0	0	0	0	1	0	0	914	327	0	0	0	0	22	0	3
-input/vocabulary/valueset/valueset-hiv-a-de19.json	843	4	1	0	0	0	0	0	0	118	0	0	0	0	0	0	0	0	0	0	22	5715	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-a-de26.json	671	5	0	0	0	0	0	0	0	54	0	0	0	0	0	0	0	0	0	0	20	528	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-a-de31.json	1307	5	0	0	0	0	0	0	0	46	0	0	0	0	0	0	0	0	0	0	25	366	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-a-de47.json	688	4	0	0	0	0	0	0	1	50	0	0	0	0	0	0	0	0	0	0	22	471	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-a-de6.json	629	5	0	0	0	0	0	0	0	35	0	0	0	0	0	0	0	0	0	0	20	420	0	0	0	0	0	0	1
-input/vocabulary/valueset/valueset-hiv-b-de103.json	971	4	0	0	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	22	486	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de107.json	997	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	277	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de112.json	735	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	247	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de116.json	712	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	21	281	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de122.json	1134	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	26	314	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de133.json	758	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	244	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de137.json	768	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	307	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de143.json	1143	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	260	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de150.json	2457	6	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	34	262	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de159.json	2206	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	33	260	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de16.json	684	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	21	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de166.json	2878	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	37	262	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de173.json	2001	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	33	257	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de180.json	943	4	0	0	0	0	0	0	1	9	0	0	0	0	0	0	0	0	0	0	22	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de19.json	934	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	240	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de192.json	1328	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	25	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de2.json	1294	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	29	247	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de205.json	681	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de208.json	1740	4	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	27	281	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de227.json	1706	5	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	28	265	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de23.json	1773	4	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	29	252	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de238.json	2134	5	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	30	263	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de251.json	1175	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	24	253	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de257.json	964	4	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	22	245	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de262.json	1420	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	26	250	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de270.json	1590	4	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	27	254	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de277.json	1258	5	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	24	250	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de285.json	1396	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	26	249	0	0	1	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de294.json	1258	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	443	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de302.json	989	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de307.json	972	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	241	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de313.json	943	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	1	0	0	22	251	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de318.json	1272	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	25	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de326.json	981	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de34.json	760	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	236	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de38.json	1006	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de51.json	1359	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	26	245	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de6.json	771	5	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	22	235	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de62.json	766	5	1	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	20	236	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de69.json	629	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	20	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de75.json	845	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de82.json	942	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de9.json	907	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	21	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-b-de95.json	966	4	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	22	241	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-b-de99.json	968	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	22	250	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de100.json	596	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	234	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de102.json	809	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de108.json	731	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	19	238	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-c-de113.json	1169	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de12.json	755	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	20	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de139.json	644	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de144.json	949	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de18.json	973	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	249	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-c-de2.json	960	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de25.json	783	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	253	0	0	0	1	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de32.json	642	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de37.json	1466	5	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	26	248	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-c-de42.json	944	4	1	0	0	0	0	0	0	8	1	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de47.json	1107	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	249	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de56.json	1051	4	0	1	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de64.json	1150	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	24	246	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-c-de76.json	762	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de81.json	826	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	245	0	0	0	0	0	0	1
-input/vocabulary/valueset/valueset-hiv-c-de92.json	761	5	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	21	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-c-de96.json	767	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-config-de13.json	720	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	245	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de1003.json	984	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de1011.json	1007	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	244	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de1020.json	753	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de1029.json	916	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	250	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de1035.json	947	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	255	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de129.json	1672	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	31	269	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de147.json	864	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	275	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de163.json	948	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	243	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de171.json	942	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de18.json	1472	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	26	253	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de180.json	828	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de183.json	671	4	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	20	244	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de187.json	864	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de198.json	3328	6	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	41	318	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de218.json	1578	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	26	250	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de226.json	758	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de230.json	2283	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	32	259	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de248.json	1668	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	28	256	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de260.json	2911	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	39	272	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de290.json	7976	4	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	78	322	0	0	0	0	2	0	0
-input/vocabulary/valueset/valueset-hiv-d-de359.json	881	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de371.json	1528	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	26	250	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de384.json	792	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	236	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de392.json	949	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de400.json	1644	5	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	28	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de419.json	1152	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de431.json	859	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	239	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de44.json	660	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	235	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de447.json	699	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	20	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de450.json	950	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	22	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de467.json	1625	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	27	257	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de533.json	773	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de538.json	2226	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	31	263	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de561.json	1097	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	24	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de57.json	1106	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	1	0	0	23	244	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de570.json	2636	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	35	274	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de594.json	1104	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de611.json	2446	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	34	267	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de637.json	976	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de647.json	889	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	26	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de659.json	872	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de66.json	1146	5	1	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	24	256	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de665.json	804	7	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de669.json	873	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de674.json	998	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de682.json	915	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	247	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de689.json	661	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	242	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de692.json	1003	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	244	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de698.json	925	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	22	256	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de707.json	762	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de710.json	711	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de713.json	917	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	243	0	0	0	0	1	0	1
-input/vocabulary/valueset/valueset-hiv-d-de720.json	1120	5	1	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	24	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de732.json	1207	4	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	25	247	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de765.json	1054	5	0	0	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	23	270	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de84.json	1206	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	251	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de894.json	717	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de898.json	885	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	240	0	0	1	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de904.json	2714	4	1	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	37	277	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de91.json	3367	5	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	42	277	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de940.json	666	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de943.json	698	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de948.json	806	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	23	249	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de957.json	1946	5	1	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	30	254	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de974.json	1367	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	26	249	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-d-de987.json	763	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	237	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-d-de993.json	869	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de105.json	761	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de109.json	782	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de128.json	776	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	243	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de137.json	711	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	238	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-e-de142.json	738	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de146.json	791	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de150.json	764	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de168.json	1007	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	24	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de174.json	834	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-e-de18.json	1973	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	31	255	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de187.json	763	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de191.json	763	5	1	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de217.json	767	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	26	236	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-e-de221.json	793	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de226.json	732	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de231.json	828	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de235.json	936	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de247.json	1061	4	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	23	243	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-e-de256.json	795	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de260.json	795	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de265.json	1307	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	253	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de42.json	828	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de48.json	824	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	248	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de53.json	781	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	236	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-e-de63.json	779	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	21	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de68.json	720	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	236	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de7.json	803	5	0	0	0	0	0	0	1	8	0	0	0	0	0	0	0	0	0	0	21	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-e-de92.json	708	4	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	41	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de14.json	844	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	22	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de23.json	1036	6	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	242	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de30.json	685	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-g-de36.json	1021	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de52.json	685	5	1	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de63.json	1013	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-g-de75.json	671	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	253	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-h-de14.json	715	4	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	20	237	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-h-de18.json	863	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	22	241	0	0	0	0	1	0	0
-input/vocabulary/valueset/valueset-hiv-h-de2.json	1090	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	246	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-h-de24.json	1014	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	23	241	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-h-de35.json	782	5	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	21	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-h-de42.json	848	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	238	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-i-de3.json	958	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	23	239	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-prv-de12.json	748	5	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	240	0	0	0	0	0	0	0
-input/vocabulary/valueset/valueset-hiv-prv-de3.json	963	5	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	22	273	0	0	0	0	1	0	0
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-who.fhir.hiv.json	15437	-	0	0	0	0	0	0	10	72	0	0	0	0	0	0	0	0	0	0	141	114	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-HIV.A.json	8417	8	1	0	0	1	0	0	1	31	0	0	0	0	0	0	0	0	0	0	74	2844	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-HIV.B.json	52823	10	1	0	0	0	0	0	5	61	0	0	0	0	0	0	0	2	0	0	339	310	0	0	0	10	0	1
+fsh-generated/resources/CodeSystem-HIV.C.json	29926	6	0	0	0	0	0	0	2	34	0	0	0	0	0	0	0	0	0	0	179	154	0	0	0	5	0	0
+fsh-generated/resources/CodeSystem-HIV.Configuration.json	5157	5	1	0	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	52	110	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-HIV.D.json	176035	12	1	0	0	0	0	0	12	354	0	0	1	0	0	0	0	1	0	0	954	628	0	0	0	40	0	2
+fsh-generated/resources/CodeSystem-HIV.EF.json	45437	8	1	0	0	0	0	0	3	35	0	0	1	0	0	0	0	1	0	0	250	171	0	0	0	9	0	0
+fsh-generated/resources/CodeSystem-HIV.G.json	12271	10	0	0	0	0	0	0	1	22	0	0	0	0	0	0	0	0	0	0	85	111	0	0	0	2	0	0
+fsh-generated/resources/CodeSystem-HIV.H.json	13239	7	1	0	0	0	0	0	1	22	0	0	0	0	0	0	0	0	0	0	89	109	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-HIV.I.json	3717	5	0	0	0	0	0	0	1	19	0	0	0	0	0	0	0	0	0	0	42	96	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-HIV.Prevention.json	5112	5	0	0	0	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	50	78	0	0	0	1	0	0
+fsh-generated/resources/ConceptMap-HIV.BHTSVisit.json	96521	12	0	0	0	0	0	0	15	26367	0	0	0	0	0	0	0	0	0	0	669	201	0	1	0	15	0	1
+fsh-generated/resources/ConceptMap-HIV.D.HIVTB.json	47218	7	0	0	0	0	0	0	6	12781	0	0	0	0	0	0	0	1	0	0	329	120	0	0	0	8	0	1
+fsh-generated/resources/ConceptMap-HIV.EF.PMTCT.json	97239	10	1	0	0	0	0	0	14	23789	0	0	0	0	0	0	0	1	0	0	658	198	0	0	0	15	0	1
+fsh-generated/resources/ConceptMap-HIV.Prevention.json	8607	6	0	0	0	0	0	0	1	1535	0	0	0	0	0	0	0	0	0	0	79	53	0	0	0	2	0	0
+fsh-generated/resources/ConceptMap-HIVARegistration.json	19211	5	0	0	0	0	0	0	2	4823	0	0	0	0	0	0	0	0	0	0	140	64	0	0	0	2	0	1
+fsh-generated/resources/ConceptMap-HIVCPrEP.json	87304	13	0	0	0	0	0	0	12	22623	0	0	0	0	0	0	0	1	0	0	598	175	0	0	0	9	0	1
+fsh-generated/resources/ConceptMap-HIVConfiguration.json	989	8	0	0	0	0	0	0	0	96	0	0	0	0	0	0	0	0	0	0	29	39	0	0	0	1	0	0
+fsh-generated/resources/ConceptMap-HIVDCareTreatment.json	363997	24	0	0	0	0	0	0	51	95724	0	0	0	0	0	0	0	2	0	0	2418	655	0	0	0	44	0	5
+fsh-generated/resources/ConceptMap-HIVGDiagnostics.json	27798	11	0	0	0	0	0	0	4	4053	0	0	0	0	0	0	0	1	0	0	207	79	0	0	0	3	0	0
+fsh-generated/resources/ConceptMap-HIVHFollowUp.json	24826	9	1	0	0	0	0	0	4	4617	0	0	0	0	0	0	0	0	0	0	185	76	0	0	0	3	0	0
+fsh-generated/resources/ConceptMap-HIVIReferral.json	8300	6	0	0	0	0	0	0	1	1754	0	0	0	0	0	0	0	0	0	0	78	40	0	0	0	1	0	0
+fsh-generated/resources/Library-f185bb76-c298-4671-9be3-ccc94c0a9868.json	4145	5	0	0	0	0	0	0	0	34	0	0	0	0	0	0	0	0	0	0	40	19	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-HIVA.json	27422	6	0	0	0	0	0	30	0	66	0	0	0	0	0	0	0	0	0	0	350	1121	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-HIVB.json	174448	13	0	0	0	0	0	185	0	160	0	0	1	0	0	0	0	3	0	0	1994	1889	0	0	0	34	0	2
+fsh-generated/resources/StructureDefinition-HIVC.json	92771	10	0	0	0	0	0	89	0	68	0	0	1	0	0	0	0	2	0	0	1106	666	0	1	0	18	0	1
+fsh-generated/resources/StructureDefinition-HIVConfiguration.json	14802	5	1	0	0	0	0	62	0	18	0	0	0	0	0	0	0	0	0	0	190	159	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-HIVD.json	501469	28	0	0	0	0	0	324	0	274	0	0	2	0	0	0	0	8	0	0	5747	3430	0	1	0	104	1	6
+fsh-generated/resources/StructureDefinition-HIVDTB.json	58649	8	0	0	0	0	0	105	0	54	0	0	0	0	0	0	0	0	0	0	676	514	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-HIVEF.json	146222	11	0	0	0	0	0	97	0	124	0	0	0	0	0	0	0	3	0	0	1653	840	0	0	0	27	1	1
+fsh-generated/resources/StructureDefinition-HIVG.json	41890	7	0	0	0	0	0	23	0	29	0	0	0	0	0	0	0	0	0	0	497	276	0	1	0	7	0	1
+fsh-generated/resources/StructureDefinition-HIVH.json	42728	7	0	0	0	0	0	37	0	26	0	0	0	0	0	0	0	1	0	0	504	259	0	0	0	8	0	0
+fsh-generated/resources/StructureDefinition-HIVI.json	10466	5	0	0	0	0	0	16	0	14	0	0	0	0	0	0	0	0	0	0	145	107	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-HIVIND27-library.json	623	5	1	0	0	0	0	44	0	18	0	0	0	0	0	0	0	0	0	0	176	294	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-HIVPrevention.json	16487	6	0	0	0	0	0	15	0	16	0	0	1	0	0	0	0	1	0	0	215	187	0	0	0	3	0	0

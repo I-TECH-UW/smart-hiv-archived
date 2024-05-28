@@ -1,7 +1,6 @@
 {
-  "version" : "0.3.0",
-  "fhirVersion" : ["4.0.1"],
-  "date" : "20240528185453",
-  "name" : "who.fhir.anc-cds",
-  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+  "version" : "0.1.0",
+  "fhirVersion" : ["4.3.0"],
+  "date" : "20240528185850",
+  "name" : "who.fhir.hiv"
 }

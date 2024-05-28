@@ -1,20 +1,37 @@
 {
-  "package": "who.fhir.anc-cds",
-  "version": "0.3.0",
-  "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
+  "package": "who.fhir.hiv",
+  "version": "0.1.0",
+  "fhirVersion": "4.3.0",
   "extensions": [],
-  "profiles": {},
+  "profiles": {
+    "Library": [
+      {
+        "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVIND27-library",
+        "title": "HIVIND27 Library"
+      }
+    ]
+  },
   "usage": {
     "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
       "ConceptMap.group.element.target"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
-      "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -24,12 +41,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability": [
-      "Questionnaire"
-    ],
-    "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel": [
-      "Questionnaire"
     ]
   }
 }
