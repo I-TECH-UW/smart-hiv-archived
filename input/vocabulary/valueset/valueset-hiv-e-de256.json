@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-e-de256",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-e-de256",
+  "name": "AsymptomaticbacteriuriaASBtestresultCodes",
+  "title": "Asymptomatic bacteriuria (ASB) test result Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Asymptomatic bacteriuria (ASB) test result element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.E.DE256",
+        "display": "Positive"
+      }, {
+        "code": "HIV.E.DE257",
+        "display": "Negative"
+      }, {
+        "code": "HIV.E.DE258",
+        "display": "Unknown"
+      } ]
+    } ]
+  }
+}

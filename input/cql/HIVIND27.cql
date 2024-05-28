@@ -1,5 +1,5 @@
 /*
- * Library: HIV.IND.27
+ * Library: HIV.B2.DT
  * People living with HIV on ART
  * Number and % of people on ART among all people living with HIV at the end of the reporting period
  * 
@@ -35,14 +35,66 @@
  * Reference: Consolidated guidelines on person-centred HIV strategic information: strengthening routine data for impact. Geneva: World Health Organization; 2022 
  */
 
- library HIVIND27
 
- using FHIR version '4.0.1'
 
- include /* include concepts and referenced librares*/
+library HIVIND27
 
- parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-01-31]
- context Unfiltered
+using FHIR version '4.0.1'
+ 
 
- define "numerator":
-   PatientData."PLHIV" and PatientData."On ART"
+include HIVIndicatorCommon version '0.01' called HIC
+include FHIRHelpers version '4.0.1'
+include WHOCommon called WCom
+include FHIRCommon called FC
+
+parameter "Measurement Period" Interval<Date> default Interval[@2020-01-01, @2020-01-31]
+ 
+context Unfiltered
+
+/*
+* Many indicator specifications in ANC and Immunization have context as patient. 
+* I believe these should be unfiltered to get all observations not just those related to a current patient
+* Should discuss.
+*/
+
+define "numerator":
+   (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and exists(HIC."HIV Treatment Active" H
+   where H.effective starts before end of "Measurement Period"
+    and (H.effective ends after start of "Measurement Period"
+    or end of H.effective  ~  null)
+   )
+   and not exists (HIC."Patient Deceased before end of Measurement Period")
+   and not exists (HIC."Stopped ART at Facility during the measurement period")
+
+
+define "denominator":
+   (exists(HIC."HIV Positive Condition" C
+	where C.onset before end of "Measurement Period")
+	or 
+	exists(HIC."HIV Positive Observation" O
+	where (O.issued before end of "Measurement Period")
+	))
+   and not exists (HIC."Patient Deceased before end of Measurement Period")
+   and not exists (HIC."Stopped ART at Facility during the measurement period")
+
+/*
+ * Disaggregators
+ */
+
+define "Administrative Gender Stratifier":
+	HIC."By Administrative Gender Stratifier"
+
+define "Age Stratifier":
+	HIC."By Age Stratifier"
+
+define "Geographic Region Stratifier":
+	HIC."By Geographic Region Stratifier"
+
+define "patientGroups Stratifier":
+	HIC."patientGroups"

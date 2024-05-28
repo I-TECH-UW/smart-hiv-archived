@@ -1,0 +1,20 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-c-de100",
+  "url": "http://fhir.org/guides/itech-uw/ValueSet/hiv-c-de100",
+  "name": "PreferredthirdPEPdrugCodes",
+  "title": "Preferred third PEP drug Codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Preferred third PEP drug element",
+  "immutable": true,
+  "compose": {
+    "include": [ {
+      "system": "http://fhir.org/guides/itech-uw/who-smart-hiv-dak/CodeSystem/concept-codes",
+      "concept": [ {
+        "code": "HIV.C.DE100",
+        "display": "DTG"
+      } ]
+    } ]
+  }
+}
