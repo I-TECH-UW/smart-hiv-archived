@@ -1,0 +1,2039 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVDTB",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVDTB",
+  "name": "HIVDTB",
+  "title": "HIVD HIV-TB Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.D HIV-TB data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVDTB",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVDTB",
+        "path": "HIVDTB",
+        "short": "HIVD HIV-TB Logical Model",
+        "definition": "Logical Model for HIV.D HIV-TB data elements."
+      },
+      {
+        "id": "HIVDTB.whoHivClinicalStageConditionOrSymptom",
+        "path": "HIVDTB.whoHivClinicalStageConditionOrSymptom",
+        "code": [
+          {
+            "code": "DE934",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "WHO HIV clinical stage condition or symptom",
+        "definition": "New or recurrent clinical events used to categorize HIV disease severity based at baseline and follow up",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.pulmonaryTb",
+        "path": "HIVDTB.pulmonaryTb",
+        "code": [
+          {
+            "code": "DE935",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Pulmonary TB",
+        "definition": "Clients symptoms include pulmonary TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lymphNodeTb",
+        "path": "HIVDTB.lymphNodeTb",
+        "code": [
+          {
+            "code": "DE936",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Lymph node TB",
+        "definition": "Clients symptoms include lymph node TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.extrapulmonaryTb",
+        "path": "HIVDTB.extrapulmonaryTb",
+        "code": [
+          {
+            "code": "DE937",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Extrapulmonary TB",
+        "definition": "Clients symptoms include extrapulmonary tuberculosis (TB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbDisease",
+        "path": "HIVDTB.tbDisease",
+        "code": [
+          {
+            "code": "DE938",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB disease",
+        "definition": "Whether the client has tuberculosis (TB) disease. Sometimes known as active TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbDiagnosisResult",
+        "path": "HIVDTB.tbDiagnosisResult",
+        "code": [
+          {
+            "code": "DE939",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB diagnosis result",
+        "definition": "Final result of the TB investigation (bacteriological and/or clinical)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.diagnosedTb",
+        "path": "HIVDTB.diagnosedTb",
+        "code": [
+          {
+            "code": "DE940",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Diagnosed TB",
+        "definition": "Client is diagnosed with TB disease",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbExcluded",
+        "path": "HIVDTB.tbExcluded",
+        "code": [
+          {
+            "code": "DE941",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB excluded",
+        "definition": "Client is not diagnosed with TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.methodOfTbDiagnosis",
+        "path": "HIVDTB.methodOfTbDiagnosis",
+        "code": [
+          {
+            "code": "DE942",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Method of TB diagnosis",
+        "definition": "Method used to set the TB diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.bacteriologicallyConfirmed",
+        "path": "HIVDTB.bacteriologicallyConfirmed",
+        "code": [
+          {
+            "code": "DE943",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Bacteriologically confirmed",
+        "definition": "A person from whom a biological specimen is positive by smear microscopy, culture or a WHO-recommended rapid diagnostic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.clinicallyDiagnosed",
+        "path": "HIVDTB.clinicallyDiagnosed",
+        "code": [
+          {
+            "code": "DE944",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Clinically diagnosed",
+        "definition": "A person who does not fulfil the criteria for bacteriological confirmation but has been diagnosed with TB disease by a medical practitioner who has decided to give the person a full course of TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.presumptiveTb",
+        "path": "HIVDTB.presumptiveTb",
+        "code": [
+          {
+            "code": "DE945",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Presumptive TB",
+        "definition": "Client has signs or symptoms of tuberculosis (TB) without laboratory confirmation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.presumptiveTbRegistrationDate",
+        "path": "HIVDTB.presumptiveTbRegistrationDate",
+        "code": [
+          {
+            "code": "DE946",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Presumptive TB registration date",
+        "definition": "Date client is registered as having signs or symptoms of tuberculosis (TB) without laboratory confirmation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentHistory",
+        "path": "HIVDTB.tbTreatmentHistory",
+        "code": [
+          {
+            "code": "DE947",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment history",
+        "definition": "History of previous TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.new",
+        "path": "HIVDTB.new",
+        "code": [
+          {
+            "code": "DE948",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "New",
+        "definition": "A person with TB disease who has never been treated for TB before or has only previously ever taken TB drugs for less than 1 month",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.recurrent",
+        "path": "HIVDTB.recurrent",
+        "code": [
+          {
+            "code": "DE949",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Recurrent",
+        "definition": "A person with TB disease who was previously treated for TB, was declared cured or treatment completed at the end of their most recent course of TB treatment and is now diagnosed with a new episode of TB.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.reRegistered",
+        "path": "HIVDTB.reRegistered",
+        "code": [
+          {
+            "code": "DE950",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Re-registered",
+        "definition": "A person with TB disease who had been notified previously as a TB case, but was not declared cured or treatment completed, and is now being registered for a new course of TB treatment. ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.unknown",
+        "path": "HIVDTB.unknown",
+        "code": [
+          {
+            "code": "DE951",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Unknown",
+        "definition": "A person with TB disease who has undocumented history of TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.dateOfTbDiagnosis",
+        "path": "HIVDTB.dateOfTbDiagnosis",
+        "code": [
+          {
+            "code": "DE952",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Date of TB diagnosis",
+        "definition": "The date when the diagnosis was established",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.currentlyOnTbPreventiveTreatmentTpt",
+        "path": "HIVDTB.currentlyOnTbPreventiveTreatmentTpt",
+        "code": [
+          {
+            "code": "DE953",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Currently on TB preventive treatment (TPT)",
+        "definition": "Client is currently taking TPT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbPreventiveTreatmentTptStartDate",
+        "path": "HIVDTB.tbPreventiveTreatmentTptStartDate",
+        "code": [
+          {
+            "code": "DE954",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB preventive treatment (TPT) start date",
+        "definition": "The date on which the client began taking TPT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbPreventiveTreatmentTptCompletionDate",
+        "path": "HIVDTB.tbPreventiveTreatmentTptCompletionDate",
+        "code": [
+          {
+            "code": "DE955",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB preventive treatment (TPT) completion date",
+        "definition": "The date on which the client completed TPT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbScreeningAlgorithm",
+        "path": "HIVDTB.tbScreeningAlgorithm",
+        "code": [
+          {
+            "code": "DE956",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB screening algorithm",
+        "definition": "Screening algorithm selected for screening activities",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.screeningWithCough",
+        "path": "HIVDTB.screeningWithCough",
+        "code": [
+          {
+            "code": "DE957",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Screening with cough",
+        "definition": "Client screened for TB based on cough symptom",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.screeningWithAnyTbSymptom",
+        "path": "HIVDTB.screeningWithAnyTbSymptom",
+        "code": [
+          {
+            "code": "DE958",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Screening with any TB symptom",
+        "definition": "Client screened for TB based on any TB symptom",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.w4ssSingleScreeningAlgorithm",
+        "path": "HIVDTB.w4ssSingleScreeningAlgorithm",
+        "code": [
+          {
+            "code": "DE959",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "W4SS single screening algorithm",
+        "definition": "Client screened for TB based on the WHO-recommended four-symptom screen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.crpSingleScreeningAlgorithm",
+        "path": "HIVDTB.crpSingleScreeningAlgorithm",
+        "code": [
+          {
+            "code": "DE960",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "CRP single screening algorithm",
+        "definition": "Client screened for TB based on C-reactive protein (CRP) testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.cxrSingleScreeningAlgorithm",
+        "path": "HIVDTB.cxrSingleScreeningAlgorithm",
+        "code": [
+          {
+            "code": "DE961",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "CXR single screening algorithm",
+        "definition": "Client screened for TB with a chest radiography (CXR)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.parallelScreeningAlgorithmWithW4SsAndCrp",
+        "path": "HIVDTB.parallelScreeningAlgorithmWithW4SsAndCrp",
+        "code": [
+          {
+            "code": "DE962",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Parallel screening algorithm with W4SS and CRP",
+        "definition": "Client screened for TB using parallel screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sequentialPositiveScreeningAlgorithmWithW4SsAndCrp",
+        "path": "HIVDTB.sequentialPositiveScreeningAlgorithmWithW4SsAndCrp",
+        "code": [
+          {
+            "code": "DE963",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Sequential positive screening algorithm with W4SS and CRP",
+        "definition": "Client screened for TB using sequential positive screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sequentialNegativeScreeningAlgorithmWithW4SsAndCrp",
+        "path": "HIVDTB.sequentialNegativeScreeningAlgorithmWithW4SsAndCrp",
+        "code": [
+          {
+            "code": "DE964",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Sequential negative screening algorithm with W4SS and CRP",
+        "definition": "Client screened for TB using sequential negative screening with WHO-recommended four-symptom screen and C-reactive protein (CRP) testing",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.parallelScreeningAlgorithmWithW4SsAndCxr",
+        "path": "HIVDTB.parallelScreeningAlgorithmWithW4SsAndCxr",
+        "code": [
+          {
+            "code": "DE965",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Parallel screening algorithm with W4SS and CXR",
+        "definition": "Client screened for TB using the parallel screening algorithm with W4SS and CXR",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sequentialPositiveScreeningAlgorithmWithW4SsAndCxr",
+        "path": "HIVDTB.sequentialPositiveScreeningAlgorithmWithW4SsAndCxr",
+        "code": [
+          {
+            "code": "DE966",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Sequential positive screening algorithm with W4SS and CXR",
+        "definition": "Client screened for TB using sequential positive screening with WHO-recommended four-symptom screen and chest radiography",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sequentialNegativeScreeningAlgorithmWithW4SsAndCxr",
+        "path": "HIVDTB.sequentialNegativeScreeningAlgorithmWithW4SsAndCxr",
+        "code": [
+          {
+            "code": "DE967",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Sequential negative screening algorithm with W4SS and CXR",
+        "definition": "Client screened for TB using sequential negative screening with WHO-recommended four-symptom screen and chest radiography",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.screeningWithMwrd",
+        "path": "HIVDTB.screeningWithMwrd",
+        "code": [
+          {
+            "code": "DE968",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Screening with mWRD",
+        "definition": "Client screened for TB with a molecular WHO-recommended rapid diagnostic test (mWRD), such as an Xpert MTB/RIF test to detect Mycobacterium tuberculosis (MTB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.clinicalAssessment",
+        "path": "HIVDTB.clinicalAssessment",
+        "code": [
+          {
+            "code": "DE969",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Clinical assessment",
+        "definition": "Client screened for with a clinical evaluation for tuberculosis (TB) based on national guidelines. Clinical assessment may be used as an eligibility evaluation for testing with LF-LAM or for empiric TB treatment.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.otherTbScreeningAlgorithm",
+        "path": "HIVDTB.otherTbScreeningAlgorithm",
+        "code": [
+          {
+            "code": "DE970",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Other TB screening algorithm",
+        "definition": "Client screened for tuberculosis (TB) with a different screening method not listed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.otherTbScreeningAlgorithmSpecify",
+        "path": "HIVDTB.otherTbScreeningAlgorithmSpecify",
+        "code": [
+          {
+            "code": "DE971",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Other TB screening algorithm (specify)",
+        "definition": "Client screened for tuberculosis (TB) with a different screening method not listed (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbScreeningConducted",
+        "path": "HIVDTB.tbScreeningConducted",
+        "code": [
+          {
+            "code": "DE972",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB screening conducted",
+        "definition": "A screening for tuberculosis (TB) was performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.symptomsOfTb",
+        "path": "HIVDTB.symptomsOfTb",
+        "code": [
+          {
+            "code": "DE973",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Symptoms of TB",
+        "definition": "Symptoms that may indicate TB disease in clients living with HIV, based on a clinical algorithm",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.currentCough",
+        "path": "HIVDTB.currentCough",
+        "code": [
+          {
+            "code": "DE974",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Current cough",
+        "definition": "Client has a cough regardless of duration",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.prolongedCoughGte2W",
+        "path": "HIVDTB.prolongedCoughGte2W",
+        "code": [
+          {
+            "code": "DE975",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Prolonged cough (>=2w)",
+        "definition": "Client has a prolonged cough of 2 weeks or more",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.feverOf39COrGreater",
+        "path": "HIVDTB.feverOf39COrGreater",
+        "code": [
+          {
+            "code": "DE976",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Fever of 39 °C or greater",
+        "definition": "Client has a fever with a measured temperature of 102.2 °F/39 °C or greater",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.weightLossReported",
+        "path": "HIVDTB.weightLossReported",
+        "code": [
+          {
+            "code": "DE977",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Weight loss (reported)",
+        "definition": "Unexplained weight loss",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.nightSweats",
+        "path": "HIVDTB.nightSweats",
+        "code": [
+          {
+            "code": "DE978",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Night sweats",
+        "definition": "Client reports experiencing night sweats",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.poorWeightGain",
+        "path": "HIVDTB.poorWeightGain",
+        "code": [
+          {
+            "code": "DE979",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Poor weight gain",
+        "definition": "Client reports poor weight gain of child or infant or growth curve flattening or weight for age <-2 Z-scores.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.reducedPlayfulness",
+        "path": "HIVDTB.reducedPlayfulness",
+        "code": [
+          {
+            "code": "DE980",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Reduced playfulness",
+        "definition": "Client reports reduced playfulness of child",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.chestPain",
+        "path": "HIVDTB.chestPain",
+        "code": [
+          {
+            "code": "DE981",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Chest pain",
+        "definition": "Client reports chest pain",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.haemoptysis",
+        "path": "HIVDTB.haemoptysis",
+        "code": [
+          {
+            "code": "DE982",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Haemoptysis",
+        "definition": "Client reports experiencing haemoptysis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lethargy",
+        "path": "HIVDTB.lethargy",
+        "code": [
+          {
+            "code": "DE983",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Lethargy",
+        "definition": "Client reports lethargy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.none",
+        "path": "HIVDTB.none",
+        "code": [
+          {
+            "code": "DE984",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "None",
+        "definition": "No symptoms of TB identified",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.historyOfContactWithAPersonWithTb",
+        "path": "HIVDTB.historyOfContactWithAPersonWithTb",
+        "code": [
+          {
+            "code": "DE985",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "History of contact with a person with TB",
+        "definition": "Client had a history of a contact with a person with TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbScreeningResult",
+        "path": "HIVDTB.tbScreeningResult",
+        "code": [
+          {
+            "code": "DE986",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB screening result",
+        "definition": "Record the result of the tuberculosis (TB) screening",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.screenPositiveForTb",
+        "path": "HIVDTB.screenPositiveForTb",
+        "code": [
+          {
+            "code": "DE987",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Screen positive for TB",
+        "definition": "Screening result was positive for tuberculosis (TB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.screenNegativeForTb",
+        "path": "HIVDTB.screenNegativeForTb",
+        "code": [
+          {
+            "code": "DE988",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Screen negative for TB",
+        "definition": "Screening result was negative for tuberculosis (TB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.inconclusive",
+        "path": "HIVDTB.inconclusive",
+        "code": [
+          {
+            "code": "DE989",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Inconclusive",
+        "definition": "Screening result was inconclusive for tuberculosis (TB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbScreeningDate",
+        "path": "HIVDTB.tbScreeningDate",
+        "code": [
+          {
+            "code": "DE990",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB screening date",
+        "definition": "Date the TB screening was conducted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbScreeningResultDate",
+        "path": "HIVDTB.tbScreeningResultDate",
+        "code": [
+          {
+            "code": "DE991",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB screening result date",
+        "definition": "The date when the result of TB screening is available",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbDiagnosticTestCategory",
+        "path": "HIVDTB.tbDiagnosticTestCategory",
+        "code": [
+          {
+            "code": "DE992",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB diagnostic test category",
+        "definition": "The type of diagnostic test performed to detect tuberculosis (TB) disease",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lfLam",
+        "path": "HIVDTB.lfLam",
+        "code": [
+          {
+            "code": "DE993",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "LF-LAM",
+        "definition": "Client tested for tuberculosis with a lateral flow urine lipoarabinomannan assay",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.mwrdTestForTb",
+        "path": "HIVDTB.mwrdTestForTb",
+        "code": [
+          {
+            "code": "DE994",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "mWRD test for TB",
+        "definition": "Client tested with a WHO-recommended molecular diagnostic test to detect Mycobacterium tuberculosis (MTB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.microscopySputumAcidFastBacilliAfb",
+        "path": "HIVDTB.microscopySputumAcidFastBacilliAfb",
+        "code": [
+          {
+            "code": "DE995",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Microscopy - Sputum acid-fast bacilli (AFB)",
+        "definition": "Client tested for tuberculosis with a sputum acid-fast bacilli (AFB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbCulture",
+        "path": "HIVDTB.tbCulture",
+        "code": [
+          {
+            "code": "DE996",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB Culture",
+        "definition": "Client tested for tuberculosis (TB) with a culture",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbDiagnosticTestDate",
+        "path": "HIVDTB.tbDiagnosticTestDate",
+        "code": [
+          {
+            "code": "DE997",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB diagnostic test date",
+        "definition": "The date when TB diagnostic test was performed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.testSampleCollectionDate",
+        "path": "HIVDTB.testSampleCollectionDate",
+        "code": [
+          {
+            "code": "DE998",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Test sample collection date",
+        "definition": "The date when the test sample was collected from the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbDiagnosticTestResultDate",
+        "path": "HIVDTB.tbDiagnosticTestResultDate",
+        "code": [
+          {
+            "code": "DE999",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB diagnostic test result date",
+        "definition": "The date when the result of the TB diagnostic test is available",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentStarted",
+        "path": "HIVDTB.tbTreatmentStarted",
+        "code": [
+          {
+            "code": "DE1000",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment started",
+        "definition": "Indicates if TB treatment was started",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentStartDate",
+        "path": "HIVDTB.tbTreatmentStartDate",
+        "code": [
+          {
+            "code": "DE1001",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment start date",
+        "definition": "The date on which the client start or restarted tuberculosis (TB) treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentOutcome",
+        "path": "HIVDTB.tbTreatmentOutcome",
+        "code": [
+          {
+            "code": "DE1002",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment outcome",
+        "definition": "Indicates patients TB treatment outcome",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.treatmentFailed",
+        "path": "HIVDTB.treatmentFailed",
+        "code": [
+          {
+            "code": "DE1003",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Treatment failed",
+        "definition": "The treatment regimen terminated or permanently changed to a new regimen or treatment strategy. Reasons for the change include:\n- no clinical response or no bacteriological response, or both (see note;\n- adverse drug reaction; or\n- evidence of additional drug-resistance to medicines in the regimen.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.cured",
+        "path": "HIVDTB.cured",
+        "code": [
+          {
+            "code": "DE1004",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Cured",
+        "definition": "Client with pulmonary TB with bacteriologically confirmed TB at the beginning of treatment who completed treatment as recommended by the national policy, with evidence of bacteriological response and no evidence of failure.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.treatmentCompleted",
+        "path": "HIVDTB.treatmentCompleted",
+        "code": [
+          {
+            "code": "DE1005",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Treatment completed",
+        "definition": "Patient completed treatment as recommended by the national policy but the outcome does not meet the definition for cure or treatment failure",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.died",
+        "path": "HIVDTB.died",
+        "code": [
+          {
+            "code": "DE1006",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Died",
+        "definition": "Client died before starting treatment or during the course of treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lostToFollowUp",
+        "path": "HIVDTB.lostToFollowUp",
+        "code": [
+          {
+            "code": "DE1007",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Lost to follow-up",
+        "definition": "Client was lost to follow-up",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.notEvaluated",
+        "path": "HIVDTB.notEvaluated",
+        "code": [
+          {
+            "code": "DE1008",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Not evaluated",
+        "definition": "No treatment outcome was assigned. This includes cases transferred out' to another treatment unit and whose treatment outcome is unknown; however, it excludes those lost to follow-up.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentCompletionDate",
+        "path": "HIVDTB.tbTreatmentCompletionDate",
+        "code": [
+          {
+            "code": "DE1009",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment completion date",
+        "definition": "Date client completes TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbTreatmentRegimenComposition",
+        "path": "HIVDTB.tbTreatmentRegimenComposition",
+        "code": [
+          {
+            "code": "DE1010",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB treatment regimen composition",
+        "definition": "TB drugs currently being taken by the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.isoniazid",
+        "path": "HIVDTB.isoniazid",
+        "code": [
+          {
+            "code": "DE1011",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Isoniazid",
+        "definition": "Client is currently taking isoniazid",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.rifampicin",
+        "path": "HIVDTB.rifampicin",
+        "code": [
+          {
+            "code": "DE1012",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Rifampicin",
+        "definition": "Client is currently taking rifampicin",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.rifabutin",
+        "path": "HIVDTB.rifabutin",
+        "code": [
+          {
+            "code": "DE1013",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Rifabutin",
+        "definition": "Client is currently taking rifabutin",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.ethambutol",
+        "path": "HIVDTB.ethambutol",
+        "code": [
+          {
+            "code": "DE1014",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Ethambutol",
+        "definition": "Client is currently taking ethambutol",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.levofloxacin",
+        "path": "HIVDTB.levofloxacin",
+        "code": [
+          {
+            "code": "DE1015",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Levofloxacin",
+        "definition": "Client is currently taking levofloxacin",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.pyrazinamide",
+        "path": "HIVDTB.pyrazinamide",
+        "code": [
+          {
+            "code": "DE1016",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Pyrazinamide",
+        "definition": "Client is currently taking pyrazinamide, a first-line anti-tuberculosis drug",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.eligibleForTbPreventiveTreatment",
+        "path": "HIVDTB.eligibleForTbPreventiveTreatment",
+        "code": [
+          {
+            "code": "DE1017",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Eligible for TB preventive treatment",
+        "definition": "Client is eligible for tuberculosis preventive treatment (TPT)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.dateWhenEligibilityForTbPreventiveTreatmentTptWasDetermined",
+        "path": "HIVDTB.dateWhenEligibilityForTbPreventiveTreatmentTptWasDetermined",
+        "code": [
+          {
+            "code": "DE1018",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Date when eligibility for TB preventive treatment (TPT) was determined",
+        "definition": "Date when a determination of the clients eligibility for TPT was made",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbStatusAtArtStart",
+        "path": "HIVDTB.tbStatusAtArtStart",
+        "code": [
+          {
+            "code": "DE1019",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB status at ART start",
+        "definition": "Clients tuberculosis (TB) status when antiretroviral therapy (ART) is started",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.symptomaticForTb",
+        "path": "HIVDTB.symptomaticForTb",
+        "code": [
+          {
+            "code": "DE1020",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Symptomatic for TB",
+        "definition": "Signs or symptoms of tuberculosis (TB) without laboratory confirmation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lcDiagnosedTb",
+        "path": "HIVDTB.lcDiagnosedTb",
+        "code": [
+          {
+            "code": "DE1021",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Diagnosed TB",
+        "definition": "Laboratory confirmed tuberculosis (TB) diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.lcNone",
+        "path": "HIVDTB.lcNone",
+        "code": [
+          {
+            "code": "DE1022",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "None",
+        "definition": "Client has no signs or symptoms of tuberculosis (TB) and is not diagnosed with tuberculosis (TB)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbPreventionServicesAccepted",
+        "path": "HIVDTB.tbPreventionServicesAccepted",
+        "code": [
+          {
+            "code": "DE1023",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB prevention services accepted",
+        "definition": "Indicates if the client accepts to be evaluated for TB infection and to take the treatment in case he/she is eligible",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbMeningitis",
+        "path": "HIVDTB.tbMeningitis",
+        "code": [
+          {
+            "code": "DE1024",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB meningitis",
+        "definition": "Type of extrapulmonary TB identified for the client is TB meningitis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.cReactiveProteinTestDate",
+        "path": "HIVDTB.cReactiveProteinTestDate",
+        "code": [
+          {
+            "code": "DE1025",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "C reactive protein test date",
+        "definition": "The date on which the client has a test for C reactive protein",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.cReactiveProteinTestResult",
+        "path": "HIVDTB.cReactiveProteinTestResult",
+        "code": [
+          {
+            "code": "DE1026",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "C reactive protein test result",
+        "definition": "Test result of the clients C reactive protein test result in mg/L",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.cReactiveProteinTestResultDate",
+        "path": "HIVDTB.cReactiveProteinTestResultDate",
+        "code": [
+          {
+            "code": "DE1027",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "C reactive protein test result date",
+        "definition": "The date when the clients test result for C reactive protein is available",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tptRegimenType",
+        "path": "HIVDTB.tptRegimenType",
+        "code": [
+          {
+            "code": "DE1028",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TPT regimen type",
+        "definition": "Type of TPT regimen the client is currently on",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.threeHp",
+        "path": "HIVDTB.threeHp",
+        "code": [
+          {
+            "code": "DE1029",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "3HP",
+        "definition": "The clients current TPT regimen is 3HP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.oneHp",
+        "path": "HIVDTB.oneHp",
+        "code": [
+          {
+            "code": "DE1030",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "1HP",
+        "definition": "The clients current TPT regimen is 1HP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sixH",
+        "path": "HIVDTB.sixH",
+        "code": [
+          {
+            "code": "DE1031",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "6H",
+        "definition": "The clients current TPT regimen is 6H",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.sixMonthsOfLevofloxacinDaily",
+        "path": "HIVDTB.sixMonthsOfLevofloxacinDaily",
+        "code": [
+          {
+            "code": "DE1032",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Six months of levofloxacin daily",
+        "definition": "The clients current TPT regimen is six months of levofloxacin daily",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.otherTbPreventiveTreatmentTptRegimen",
+        "path": "HIVDTB.otherTbPreventiveTreatmentTptRegimen",
+        "code": [
+          {
+            "code": "DE1033",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Other TB preventive treatment (TPT) regimen",
+        "definition": "The clients current TPT regimen is another regimen than those listed above",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.tbPreventiveTreatmentTptStatus",
+        "path": "HIVDTB.tbPreventiveTreatmentTptStatus",
+        "code": [
+          {
+            "code": "DE1034",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "TB preventive treatment (TPT) status",
+        "definition": "Indicates the current status of TB preventive treatment (TPT)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.notStarted",
+        "path": "HIVDTB.notStarted",
+        "code": [
+          {
+            "code": "DE1035",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Not started",
+        "definition": "The client did not start the TB preventive treatment (TPT)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.onTpt",
+        "path": "HIVDTB.onTpt",
+        "code": [
+          {
+            "code": "DE1036",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "On TPT",
+        "definition": "The client started the TB preventive treatment (TPT) and is currently taking the medication, without treatment interruptions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.onTptWithInterruptions",
+        "path": "HIVDTB.onTptWithInterruptions",
+        "code": [
+          {
+            "code": "DE1037",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "On TPT with interruptions",
+        "definition": "The client started the TB preventive treatment (TPT) and is currently taking the medication, with treatment interruptions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.onHold",
+        "path": "HIVDTB.onHold",
+        "code": [
+          {
+            "code": "DE1038",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "On hold",
+        "definition": "The health care worker has temporarily stopped the TB preventive treatment (TPT), but TPT is expected to continue again later. May also be called \"suspended\".",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVDTB.completed",
+        "path": "HIVDTB.completed",
+        "code": [
+          {
+            "code": "DE1039",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.D"
+          }
+        ],
+        "short": "Completed",
+        "definition": "TB preventive treatment (TPT) was completed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

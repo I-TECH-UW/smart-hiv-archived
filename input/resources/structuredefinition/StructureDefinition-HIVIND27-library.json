@@ -1,0 +1,24 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVIND27-library",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVIND27-library",
+  "name": "HIVIND27Library",
+  "title": "HIVIND27 Library",
+  "status": "draft",
+  "description": "Library: HIV.IND.27",
+  "fhirVersion": "4.3.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Library",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Library",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Library.id",
+        "path": "Library.id",
+        "min": 1
+      }
+    ]
+  }
+}

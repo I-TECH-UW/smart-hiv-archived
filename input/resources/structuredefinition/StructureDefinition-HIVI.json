@@ -1,0 +1,348 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVI",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVI",
+  "name": "HIVI",
+  "title": "HIV.I Referral Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.I Referral data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVI",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVI",
+        "path": "HIVI",
+        "short": "HIV.I Referral Logical Model",
+        "definition": "Logical Model for HIV.I Referral data elements."
+      },
+      {
+        "id": "HIVI.emergencyReferral",
+        "path": "HIVI.emergencyReferral",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Emergency referral",
+        "definition": "Referral for urgent care",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.reasonForReferral",
+        "path": "HIVI.reasonForReferral",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Reason for referral",
+        "definition": "Reason why the client is being referred. If diagnosed, this may include the reason for the diagnosis.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.hospital",
+        "path": "HIVI.hospital",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Hospital",
+        "definition": "Clients clinical status warrants hospitalization",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.referralForScreeningIncludingDiagnosticsAndLabTesting",
+        "path": "HIVI.referralForScreeningIncludingDiagnosticsAndLabTesting",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Referral for screening including diagnostics and lab testing",
+        "definition": "The client is referred because they need a lab test done and/or diagnostics done, but those services are unavailable at the current health facility or providers. This includes referral for TB screening (is symptomatic of TB, has had close contact with confirmed TB case, etc.) and other comorbidities or coinfections. ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.tbReferral",
+        "path": "HIVI.tbReferral",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "TB referral",
+        "definition": "Referral for TB care",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.antenatalCareReferral",
+        "path": "HIVI.antenatalCareReferral",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Antenatal care referral",
+        "definition": "Client was referred because the client is pregnant",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.referralForOtherGeneralServices",
+        "path": "HIVI.referralForOtherGeneralServices",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Referral for other general services",
+        "definition": "If none of the reasons above apply, this should be selected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.referralForOtherGeneralServicesSpecify",
+        "path": "HIVI.referralForOtherGeneralServicesSpecify",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Referral for other general services (specify)",
+        "definition": "If none of the reasons above apply, specify the reason(s)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.anyTreatmentGivenBeforeReferral",
+        "path": "HIVI.anyTreatmentGivenBeforeReferral",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Any treatment given before referral?",
+        "definition": "If client was referred, was any treatment provided before referral?",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.dateOfScheduledReferralAppointment",
+        "path": "HIVI.dateOfScheduledReferralAppointment",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Date of scheduled referral appointment",
+        "definition": "When the referral is scheduled",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.locationOfScheduledReferralAppointment",
+        "path": "HIVI.locationOfScheduledReferralAppointment",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Location of scheduled referral appointment",
+        "definition": "Where the client is being referred to",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.dateReferralWasMade",
+        "path": "HIVI.dateReferralWasMade",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Date referral was made",
+        "definition": "The date the referral was made",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.providerWhoMadeReferral",
+        "path": "HIVI.providerWhoMadeReferral",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Provider who made referral",
+        "definition": "The name of the provider who made the referral",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.providersFacility",
+        "path": "HIVI.providersFacility",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Providers facility",
+        "definition": "Facility client is being referred from",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.providersTelephoneNumber",
+        "path": "HIVI.providersTelephoneNumber",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Providers telephone number",
+        "definition": "The contact details of the provider making the referral",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.referralNotes",
+        "path": "HIVI.referralNotes",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Referral notes",
+        "definition": "Any additional relevant details of clinical significance for the referral facility to provide quality care",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVI.clientHistorySummary",
+        "path": "HIVI.clientHistorySummary",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.I"
+          }
+        ],
+        "short": "Client history summary",
+        "definition": "With interoperable systems, the provider receiving the referral should be able to access the clients health record digitally. However, in the absence of this, the referral provider should receive a summary of the clients health records that includes the clients history, medications, medications prescribed or dispensed, reported issues and concerns, and any other relevant clinical information the health care provider had already obtained.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

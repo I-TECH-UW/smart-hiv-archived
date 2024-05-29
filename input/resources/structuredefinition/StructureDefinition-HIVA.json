@@ -1,0 +1,1032 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVA",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVA",
+  "name": "HIVA",
+  "title": "HIV.A Registration Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.A Registration data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVA",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVA",
+        "path": "HIVA",
+        "short": "HIV.A Registration Logical Model",
+        "definition": "Logical Model for HIV.A Registration data elements."
+      },
+      {
+        "id": "HIVA.firstName",
+        "path": "HIVA.firstName",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "First name",
+        "definition": "Clients first or given name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.familyName",
+        "path": "HIVA.familyName",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Family name",
+        "definition": "Clients family name or last name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.visitDate",
+        "path": "HIVA.visitDate",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Visit date",
+        "definition": "The date and time of the clients visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.referral",
+        "path": "HIVA.referral",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Referral",
+        "definition": "If client was referred for care",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.referredBy",
+        "path": "HIVA.referredBy",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Referred by",
+        "definition": "How the client was referred",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.community",
+        "path": "HIVA.community",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Community",
+        "definition": "Referred by the community level services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.facility",
+        "path": "HIVA.facility",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Facility",
+        "definition": "Referred by the health facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.uniqueIdentifier",
+        "path": "HIVA.uniqueIdentifier",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Unique identifier",
+        "definition": "Unique identifier generated for new clients or a universal ID, if used in the country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.nationalId",
+        "path": "HIVA.nationalId",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "National ID",
+        "definition": "National unique identifier assigned to the client, if used in the country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.nationalHealthId",
+        "path": "HIVA.nationalHealthId",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "National health ID",
+        "definition": "National health unique identifier assigned to the client, if used in the country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.nationalProgrammeId",
+        "path": "HIVA.nationalProgrammeId",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "National programme ID",
+        "definition": "National programme unique identifier assigned to the client, if used in the country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.nationalHealthInsuranceId",
+        "path": "HIVA.nationalHealthInsuranceId",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "National health insurance ID",
+        "definition": "National health insurance unique identifier assigned to the client, if used in the country",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.countryOfBirth",
+        "path": "HIVA.countryOfBirth",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Country of birth",
+        "definition": "Country where the client was born",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.dateOfBirth",
+        "path": "HIVA.dateOfBirth",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Date of birth",
+        "definition": "The clients date of birth (DOB) if known",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.dateOfBirthUnknown",
+        "path": "HIVA.dateOfBirthUnknown",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Date of birth unknown",
+        "definition": "Is the clients DOB is unknown?",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.estimatedAge",
+        "path": "HIVA.estimatedAge",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Estimated age",
+        "definition": "If DOB is unknown, enter the clients estimated age. Display clients age in number of years.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.age",
+        "path": "HIVA.age",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Age",
+        "definition": "Calculated age (number of years) of the client based on date of birth",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.gender",
+        "path": "HIVA.gender",
+        "code": [
+          {
+            "code": "DE18",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Gender*",
+        "definition": "Gender of the client*",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderFemale",
+        "path": "HIVA.genderFemale",
+        "code": [
+          {
+            "code": "DE19",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Female",
+        "definition": "Client identifies as female",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderMale",
+        "path": "HIVA.genderMale",
+        "code": [
+          {
+            "code": "DE20",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Male",
+        "definition": "Client identifies as male",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderTransgenderMale",
+        "path": "HIVA.genderTransgenderMale",
+        "code": [
+          {
+            "code": "DE21",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Transgender male",
+        "definition": "Client identifies as transgender male",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderTransgenderFemale",
+        "path": "HIVA.genderTransgenderFemale",
+        "code": [
+          {
+            "code": "DE22",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Transgender female",
+        "definition": "Client identifies as transgender female",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderOther",
+        "path": "HIVA.genderOther",
+        "code": [
+          {
+            "code": "DE23",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Other",
+        "definition": "Additional category",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.genderOtherSpecify",
+        "path": "HIVA.genderOtherSpecify",
+        "code": [
+          {
+            "code": "DE24",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Additional category (please specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.sex",
+        "path": "HIVA.sex",
+        "code": [
+          {
+            "code": "DE25",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Sex",
+        "definition": "Sex of the client assigned at birth",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.sexFemale",
+        "path": "HIVA.sexFemale",
+        "code": [
+          {
+            "code": "DE26",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Female",
+        "definition": "Client identifies as female",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.sexMale",
+        "path": "HIVA.sexMale",
+        "code": [
+          {
+            "code": "DE27",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Male",
+        "definition": "Client identifies as male",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.sexOther",
+        "path": "HIVA.sexOther",
+        "code": [
+          {
+            "code": "DE28",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client identifies in non-binary way or as a sexual and gender minority (or minorities)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.address",
+        "path": "HIVA.address",
+        "code": [
+          {
+            "code": "DE29",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Address",
+        "definition": "Clients home address or address which the client is consenting to disclose",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.maritalStatus",
+        "path": "HIVA.maritalStatus",
+        "code": [
+          {
+            "code": "DE30",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Marital Status",
+        "definition": "Clients current marital status ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.unmarried",
+        "path": "HIVA.unmarried",
+        "code": [
+          {
+            "code": "DE31",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Unmarried",
+        "definition": "Client does not have an active marriage contract",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.neverMarried",
+        "path": "HIVA.neverMarried",
+        "code": [
+          {
+            "code": "DE32",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Never married",
+        "definition": "Client has never entered into a marriage contract",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.married",
+        "path": "HIVA.married",
+        "code": [
+          {
+            "code": "DE33",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Married",
+        "definition": "A current marriage contract is active",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.polygamous",
+        "path": "HIVA.polygamous",
+        "code": [
+          {
+            "code": "DE34",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Polygamous",
+        "definition": "Client is in a polygamous union",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.divorced",
+        "path": "HIVA.divorced",
+        "code": [
+          {
+            "code": "DE35",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Divorced ",
+        "definition": "Client is divorced, whereby marriage contract has been declared dissolved and inactive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.widowed",
+        "path": "HIVA.widowed",
+        "code": [
+          {
+            "code": "DE36",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Widowed",
+        "definition": "Clients spouse has died",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.unknown",
+        "path": "HIVA.unknown",
+        "code": [
+          {
+            "code": "DE37",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Unknown",
+        "definition": "Client does not wish to disclose marital status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.domesticPartner",
+        "path": "HIVA.domesticPartner",
+        "code": [
+          {
+            "code": "DE38",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Domestic partner",
+        "definition": "Client reports that they are in a domestic partnership",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.annulled",
+        "path": "HIVA.annulled",
+        "code": [
+          {
+            "code": "DE39",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Annulled",
+        "definition": "Clients marriage contract has been declared null and to have not existed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.legallySeparated",
+        "path": "HIVA.legallySeparated",
+        "code": [
+          {
+            "code": "DE40",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Legally separated",
+        "definition": "Client is legally separated from their spouse",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.interlocutory",
+        "path": "HIVA.interlocutory",
+        "code": [
+          {
+            "code": "DE41",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Interlocutory",
+        "definition": "Client is subject to an interlocutory decree",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.telephoneNumber",
+        "path": "HIVA.telephoneNumber",
+        "code": [
+          {
+            "code": "DE42",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Telephone number",
+        "definition": "Clients telephone number (a landline or a mobile phone number)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.administrativeArea",
+        "path": "HIVA.administrativeArea",
+        "code": [
+          {
+            "code": "DE43",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "[Administrative Area]",
+        "definition": "This should be a context-specific list of administrative areas, such as villages, districts, etc. The purpose of this data element is to allow for grouping and flagging of client data to a particular facilitys catchment area. This can be input into the system by the end user OR it can be automated in the database based on the end users attributes.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.communicationConsent",
+        "path": "HIVA.communicationConsent",
+        "code": [
+          {
+            "code": "DE44",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Communication consent",
+        "definition": "Indication that client gave consent to be contacted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.reminderMessages",
+        "path": "HIVA.reminderMessages",
+        "code": [
+          {
+            "code": "DE45",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Reminder messages",
+        "definition": "Whether client wants to receive text or other messages as follow-up for HIV services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.communicationPreferenceS",
+        "path": "HIVA.communicationPreferenceS",
+        "code": [
+          {
+            "code": "DE46",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Communication preference(s)",
+        "definition": "How the client would like to receive family planning communications",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.textMessageSms",
+        "path": "HIVA.textMessageSms",
+        "code": [
+          {
+            "code": "DE47",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Text message/SMS",
+        "definition": "The client would like to receive communications via Text message/SMS",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.voiceCall",
+        "path": "HIVA.voiceCall",
+        "code": [
+          {
+            "code": "DE48",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Voice call",
+        "definition": "Client would like to receive communications via voice call",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.clientsEmail",
+        "path": "HIVA.clientsEmail",
+        "code": [
+          {
+            "code": "DE49",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Clients email",
+        "definition": "Clients primary email account where the client can be contacted",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.alternateContactsName",
+        "path": "HIVA.alternateContactsName",
+        "code": [
+          {
+            "code": "DE50",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Alternate contacts name",
+        "definition": "Name of an alternate contact, which could be next of kin (e.g. partner, husband, mother, sibling, etc.). The alternate contact would be used in the case of an emergency situation.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.alternateContactsPhoneNumber",
+        "path": "HIVA.alternateContactsPhoneNumber",
+        "code": [
+          {
+            "code": "DE51",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Alternate contacts phone number",
+        "definition": "Phone number of the alternate contact",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.alternateContactsAddress",
+        "path": "HIVA.alternateContactsAddress",
+        "code": [
+          {
+            "code": "DE52",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Alternate contacts address",
+        "definition": "Alternate contacts home address or address which the client is consenting to disclose",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVA.alternateContactRelationship",
+        "path": "HIVA.alternateContactRelationship",
+        "code": [
+          {
+            "code": "DE53",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.A"
+          }
+        ],
+        "short": "Alternate contact relationship",
+        "definition": "The alternate contacts relationship to the client (e.g. partner, husband, mother, sibling, etc.)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

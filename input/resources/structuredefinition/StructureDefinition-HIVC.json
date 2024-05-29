@@ -1,0 +1,3236 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVC",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVC",
+  "name": "HIVC",
+  "title": "HIV.C PrEP visit Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.C PrEP visit data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVC",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVC",
+        "path": "HIVC",
+        "short": "HIV.C PrEP visit Logical Model",
+        "definition": "Logical Model for HIV.C PrEP visit data elements."
+      },
+      {
+        "id": "HIVC.reasonForPrepVisit",
+        "path": "HIVC.reasonForPrepVisit",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Reason for PrEP visit",
+        "definition": "Clients reason for the prevention visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.firstTimeCounsellingOnPrep",
+        "path": "HIVC.firstTimeCounsellingOnPrep",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "First time counselling on PrEP",
+        "definition": "The client is interested in discussing pre-exposure prophylaxis (PrEP) for the first time",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pFollowUpAppointmentForPrep",
+        "path": "HIVC.pFollowUpAppointmentForPrep",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Follow-up appointment for PrEP",
+        "definition": "Client is at a follow-up or refill pre-exposure prophylaxis (PrEP) appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pRestartingPrep",
+        "path": "HIVC.pRestartingPrep",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Restarting PrEP",
+        "definition": "Client has previously taken pre-exposure prophylaxis (PrEP) and may like to restart taking it",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.counsellingOnPep",
+        "path": "HIVC.counsellingOnPep",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Counselling on PEP",
+        "definition": "Counselling on post-exposure prophylaxis (PEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.unscheduledVisitForSideEffects",
+        "path": "HIVC.unscheduledVisitForSideEffects",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Unscheduled visit for side effects",
+        "definition": "Patient visit for management of side effects related to PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.ThreeMonthPrepVisit",
+        "path": "HIVC.ThreeMonthPrepVisit",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "3-month PrEP visit",
+        "definition": "Client is visiting for the recommended 3-month pre-exposure prophylaxis (PrEP) visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.contactWithAndSuspectedExposureToHiv",
+        "path": "HIVC.contactWithAndSuspectedExposureToHiv",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Contact with and (suspected) exposure to HIV",
+        "definition": "The client had suspected or known exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datetimeOfSuspectedExposureToHiv",
+        "path": "HIVC.datetimeOfSuspectedExposureToHiv",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date/time of suspected exposure to HIV",
+        "definition": "When the suspect exposure to HIV took place",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.currentlyOnPrep",
+        "path": "HIVC.currentlyOnPrep",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Currently on PrEP",
+        "definition": "The client is currently taking PrEP. Oral pre-exposure prophylaxis (PrEP) of HIV is the use of ARV drugs by people who are not infected with HIV to block the acquisition of HIV.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepDosingType",
+        "path": "HIVC.prepDosingType",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP dosing type",
+        "definition": "Way in which pre-exposure prophylaxis (PrEP) is taken (daily or event-driven)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dailyOralPrep",
+        "path": "HIVC.dailyOralPrep",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Daily oral PrEP",
+        "definition": "Pre-exposure prophylaxis (PrEP) is taken every day",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.eventDrivenPrep211",
+        "path": "HIVC.eventDrivenPrep211",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Event-driven PrEP (2+1+1)",
+        "definition": "Event-driven pre-exposure prophylaxis (PrEP) is taken on an even-driven basis (2+1+1)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherPrepDosingType",
+        "path": "HIVC.otherPrepDosingType",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other PrEP dosing type",
+        "definition": "Other PrEP dosing type",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherPrepDosingTypeSpecify",
+        "path": "HIVC.otherPrepDosingTypeSpecify",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other PrEP dosing type (specify)",
+        "definition": "Other PrEP dosing type (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.usedEventDrivenPrepForAtRiskExposuresOverThePast3Months",
+        "path": "HIVC.usedEventDrivenPrepForAtRiskExposuresOverThePast3Months",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Used event-driven PrEP for at risk exposures over the past 3 months",
+        "definition": "Client reports taking ED-PrEP for at risk exposures over a 3-month period",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.currentPrepRegimen",
+        "path": "HIVC.currentPrepRegimen",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Current PrEP regimen",
+        "definition": "HIV pre-exposure prophylaxis (PrEP) regimen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.tdfFtc",
+        "path": "HIVC.tdfFtc",
+        "code": [
+          {
+            "code": "DE18",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + FTC",
+        "definition": "Treated with tenofovir disoproxil fumarate (TDF) and emtricitabine (FTC) pre-exposure prophylaxis (PrEP) regimen (oral PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.tdf",
+        "path": "HIVC.tdf",
+        "code": [
+          {
+            "code": "DE19",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF",
+        "definition": "Treated with single-agent tenofovir disoproxil fumarate (TDF) pre-exposure prophylaxis (PrEP) regimen (oral PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.tdf3Tc",
+        "path": "HIVC.tdf3Tc",
+        "code": [
+          {
+            "code": "DE20",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + 3TC",
+        "definition": "Treated with tenofovir disoproxil fumarate (TDF) and lamivudine (3TC) pre-exposure prophylaxis (PrEP) regimen (oral PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherTdfBasedRegimen",
+        "path": "HIVC.otherTdfBasedRegimen",
+        "code": [
+          {
+            "code": "DE21",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other TDF-based regimen",
+        "definition": "Treated with other tenofovir disoproxil fumarate (TDF)-based regimen (oral PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dapivirineVaginalRingDvr",
+        "path": "HIVC.dapivirineVaginalRingDvr",
+        "code": [
+          {
+            "code": "DE22",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Dapivirine vaginal ring (DVR)",
+        "definition": "Dapivirine vaginal ring (DVR) for HIV prevention",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.cabLa",
+        "path": "HIVC.cabLa",
+        "code": [
+          {
+            "code": "DE23",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "CAB-LA",
+        "definition": "Long-acting injectable cabotegravir",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.experienceWithPrep",
+        "path": "HIVC.experienceWithPrep",
+        "code": [
+          {
+            "code": "DE24",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Experience with PrEP",
+        "definition": "The clients experience in taking PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepFirstTimeUser",
+        "path": "HIVC.prepFirstTimeUser",
+        "code": [
+          {
+            "code": "DE25",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "First-time user",
+        "definition": "The client has never used pre-exposure prophylaxis (PrEP) before (naive)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepContinuingUser",
+        "path": "HIVC.prepContinuingUser",
+        "code": [
+          {
+            "code": "DE26",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Continuing user",
+        "definition": "The client has used PrEP before and is continuing to use PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.restartingFollowingAPeriodOfNotTakingPrep",
+        "path": "HIVC.restartingFollowingAPeriodOfNotTakingPrep",
+        "code": [
+          {
+            "code": "DE27",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Restarting following a period of not taking PrEP",
+        "definition": "The client is restarting PrEP following a period of not taking PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepStartDate",
+        "path": "HIVC.prepStartDate",
+        "code": [
+          {
+            "code": "DE28",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP start date",
+        "definition": "The date on which the client started or restarted pre-exposure prophylaxis (PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.stoppedPrep",
+        "path": "HIVC.stoppedPrep",
+        "code": [
+          {
+            "code": "DE29",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Stopped PrEP",
+        "definition": "Client stopped taking pre-exposure prophylaxis (PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datePrepStopped",
+        "path": "HIVC.datePrepStopped",
+        "code": [
+          {
+            "code": "DE30",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date PrEP stopped",
+        "definition": "Date client stopped taking pre-exposure prophylaxis (PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pepHistory",
+        "path": "HIVC.pepHistory",
+        "code": [
+          {
+            "code": "DE31",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PEP history",
+        "definition": "The clients history in taking post-exposure prophylaxis (PEP) for HIV prevention",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pepFirstTimeUser",
+        "path": "HIVC.pepFirstTimeUser",
+        "code": [
+          {
+            "code": "DE32",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "First-time user",
+        "definition": "The client has never used post-exposure prophylaxis (PEP) before",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pepRepeatUser",
+        "path": "HIVC.pepRepeatUser",
+        "code": [
+          {
+            "code": "DE33",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Repeat user",
+        "definition": "The client has used post-exposure prophylaxis (PEP) before",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datesOfPastPepUse",
+        "path": "HIVC.datesOfPastPepUse",
+        "code": [
+          {
+            "code": "DE34",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date(s) of past PEP use",
+        "definition": "Dates when the client previously used post-exposure prophylaxis (PEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dateClientCompletesPepCourse",
+        "path": "HIVC.dateClientCompletesPepCourse",
+        "code": [
+          {
+            "code": "DE35",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date client completes PEP course",
+        "definition": "Date client completes PEP course",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.signsOfSubstantialRiskOfHivInfection",
+        "path": "HIVC.signsOfSubstantialRiskOfHivInfection",
+        "code": [
+          {
+            "code": "DE36",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Signs of substantial risk of HIV infection",
+        "definition": "Signs the client is at a substantial risk of HIV infection",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.noCondomUseDuringSexWithMoreThanOnePartnerInThePast6Months",
+        "path": "HIVC.noCondomUseDuringSexWithMoreThanOnePartnerInThePast6Months",
+        "code": [
+          {
+            "code": "DE37",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "No condom use during sex with more than one partner in the past 6 months",
+        "definition": "Recent vaginal or anal sexual intercourse without a condom with more than one partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.stiInThePast6Months",
+        "path": "HIVC.stiInThePast6Months",
+        "code": [
+          {
+            "code": "DE38",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "STI in the past 6 months",
+        "definition": "A recent history (in the last 6 months) of a sexually transmitted infection (STI ) by laboratory testing, self-report or syndromic STI treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.aSexualPartnerInThePast6MonthsHadHivRF",
+        "path": "HIVC.aSexualPartnerInThePast6MonthsHadHivRF",
+        "code": [
+          {
+            "code": "DE39",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "A sexual partner in the past 6 months had one or more HIV risk factors",
+        "definition": "A recent sex partner of the client had HIV risk factors",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepRequestedByClient",
+        "path": "HIVC.prepRequestedByClient",
+        "code": [
+          {
+            "code": "DE40",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP requested by client",
+        "definition": "Client is requesting PrEP, reflecting a decision-making process has already taken place and suggesting of substantial risk of HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pregnancyIntentionInSerodiscordantPartnerships",
+        "path": "HIVC.pregnancyIntentionInSerodiscordantPartnerships",
+        "code": [
+          {
+            "code": "DE41",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Pregnancy intention in serodiscordant partnerships",
+        "definition": "Clients intention or desire in the next year to either become pregnant or prevent a future pregnancy (in serodiscordant partnerships)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.yesIWantToBecomePregnant",
+        "path": "HIVC.yesIWantToBecomePregnant",
+        "code": [
+          {
+            "code": "DE42",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Yes, I want to become pregnant",
+        "definition": "Client intends to become pregnant",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.imOkEitherWay",
+        "path": "HIVC.imOkEitherWay",
+        "code": [
+          {
+            "code": "DE43",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Im OK either way",
+        "definition": "Client is not intending to become pregnant, but would not be adverse to becoming pregnant",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.noIDontWantToBecomePregnant",
+        "path": "HIVC.noIDontWantToBecomePregnant",
+        "code": [
+          {
+            "code": "DE44",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "No, I dont want to become pregnant",
+        "definition": "Client does not intend to become pregnant",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.unsure",
+        "path": "HIVC.unsure",
+        "code": [
+          {
+            "code": "DE45",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Unsure",
+        "definition": "Client is unsure or undecided about her pregnancy intentions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.acuteHivInfectionSymptoms",
+        "path": "HIVC.acuteHivInfectionSymptoms",
+        "code": [
+          {
+            "code": "DE46",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Acute HIV infection symptoms",
+        "definition": "Symptoms that could suggest an acute HIV infection",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.fever",
+        "path": "HIVC.fever",
+        "code": [
+          {
+            "code": "DE47",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Fever",
+        "definition": "Clients symptoms include a fever",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.soreThroat",
+        "path": "HIVC.soreThroat",
+        "code": [
+          {
+            "code": "DE48",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Sore throat",
+        "definition": "Clients symptoms include a sore throat",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.aches",
+        "path": "HIVC.aches",
+        "code": [
+          {
+            "code": "DE49",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Aches",
+        "definition": "Clients symptoms include aches",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pains",
+        "path": "HIVC.pains",
+        "code": [
+          {
+            "code": "DE50",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Pains",
+        "definition": "Clients symptoms include pains",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.swollenGlands",
+        "path": "HIVC.swollenGlands",
+        "code": [
+          {
+            "code": "DE51",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Swollen glands",
+        "definition": "Clients symptoms include swollen glands",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.mouthSores",
+        "path": "HIVC.mouthSores",
+        "code": [
+          {
+            "code": "DE52",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Mouth sores",
+        "definition": "Clients symptoms include a mouth sores",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.headaches",
+        "path": "HIVC.headaches",
+        "code": [
+          {
+            "code": "DE53",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Headaches",
+        "definition": "Clients symptoms include a headaches",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.rash",
+        "path": "HIVC.rash",
+        "code": [
+          {
+            "code": "DE54",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Rash",
+        "definition": "Clients symptoms include a rash",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.sexPartnersHivTreatmentStatus",
+        "path": "HIVC.sexPartnersHivTreatmentStatus",
+        "code": [
+          {
+            "code": "DE55",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Sex partners HIV treatment status",
+        "definition": "Treatment adherence of clients sex partner for partners that are HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.notOnArt",
+        "path": "HIVC.notOnArt",
+        "code": [
+          {
+            "code": "DE56",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Not on ART",
+        "definition": "Sex partner is HIV-positive and not on ART",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.onArtLessThan6Months",
+        "path": "HIVC.onArtLessThan6Months",
+        "code": [
+          {
+            "code": "DE57",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "On ART less than 6 months",
+        "definition": "Sex partner is HIV-positive and is on ART less than 6 months. ART may take up to 6 months to suppress viral load. In studies of serodiscordant couples, pre-exposure prophylaxis (PrEP) has provided a useful bridge to full viral suppression by the partner during that time.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.partnerHasSuspectedLowAdherenceToArt",
+        "path": "HIVC.partnerHasSuspectedLowAdherenceToArt",
+        "code": [
+          {
+            "code": "DE58",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Partner has suspected low adherence to ART",
+        "definition": "Sex partner is HIV-positive and is suspected to have low adherence to ART. There have been gaps in the partners treatment adherence or the couple is not communicating openly about treatment adherence and viral load test results.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.partnerIsNotVirallySuppressed",
+        "path": "HIVC.partnerIsNotVirallySuppressed",
+        "code": [
+          {
+            "code": "DE59",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Partner is not virally suppressed",
+        "definition": "Sex partner is HIV-positive and not virally suppressed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.partnerIsVirallyS6plus",
+        "path": "HIVC.partnerIsVirallyS6plus",
+        "code": [
+          {
+            "code": "DE60",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Partner is virally suppressed and has been on ART for 6 months or more",
+        "definition": "Sex partner is HIV-positive and virally suppressed with 6 months or more on ART",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.suitableForPrep",
+        "path": "HIVC.suitableForPrep",
+        "code": [
+          {
+            "code": "DE61",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Suitable for PrEP",
+        "definition": "The client is suitable for PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.offeredPrep",
+        "path": "HIVC.offeredPrep",
+        "code": [
+          {
+            "code": "DE62",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Offered PrEP",
+        "definition": "After being evaluated as suitable for PrEP, the client was offered PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.screeningsAndDiagnosticsForPrepUsers",
+        "path": "HIVC.screeningsAndDiagnosticsForPrepUsers",
+        "code": [
+          {
+            "code": "DE63",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Screenings and diagnostics for PrEP users",
+        "definition": "Listing of tests for clients on or starting pre-exposure prophylaxis (PrEP) that may be recommended or should be considered",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.serumCreatinineTest",
+        "path": "HIVC.serumCreatinineTest",
+        "code": [
+          {
+            "code": "DE64",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Serum creatinine test",
+        "definition": "Test serum creatinine to identify pre-existing renal disease (estimated creatinine clearance less than 60 ml/min)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hepatitisBTest",
+        "path": "HIVC.hepatitisBTest",
+        "code": [
+          {
+            "code": "DE65",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Hepatitis B test",
+        "definition": "Hepatitis B test recommended for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hepatitisCTest",
+        "path": "HIVC.hepatitisCTest",
+        "code": [
+          {
+            "code": "DE66",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Hepatitis C test",
+        "definition": "Hepatitis C test recommended for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.syphilisTest",
+        "path": "HIVC.syphilisTest",
+        "code": [
+          {
+            "code": "DE67",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Syphilis test",
+        "definition": "Syphilis test recommended for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherScreeningForStis",
+        "path": "HIVC.otherScreeningForStis",
+        "code": [
+          {
+            "code": "DE68",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other screening for STIs",
+        "definition": "Other STI screening recommended for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pregnancyTesting",
+        "path": "HIVC.pregnancyTesting",
+        "code": [
+          {
+            "code": "DE69",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Pregnancy testing",
+        "definition": "Pregnancy testing for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.reviewVaccinationHistory",
+        "path": "HIVC.reviewVaccinationHistory",
+        "code": [
+          {
+            "code": "DE70",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Review vaccination history",
+        "definition": "Review vaccination history recommended for client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.serumCreatinineTestDate",
+        "path": "HIVC.serumCreatinineTestDate",
+        "code": [
+          {
+            "code": "DE71",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Serum creatinine test date",
+        "definition": "Test serum creatinine to identify pre-existing renal disease (estimated creatinine clearance less than 60 ml/min)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.serumCreatinineTestResult",
+        "path": "HIVC.serumCreatinineTestResult",
+        "code": [
+          {
+            "code": "DE72",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Serum creatinine test result",
+        "definition": "Test serum creatinine to identify pre-existing renal disease (estimated creatinine clearance less than 60 ml/min).",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dateMedicationsDispensed",
+        "path": "HIVC.dateMedicationsDispensed",
+        "code": [
+          {
+            "code": "DE73",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date medications dispensed",
+        "definition": "Date the client was dispensed medications",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dateMedicationsPrescribed",
+        "path": "HIVC.dateMedicationsPrescribed",
+        "code": [
+          {
+            "code": "DE74",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date medications prescribed",
+        "definition": "Date the client was prescribed medications",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.medicationsPrescribed",
+        "path": "HIVC.medicationsPrescribed",
+        "code": [
+          {
+            "code": "DE75",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Medications prescribed",
+        "definition": "Medications the client was prescribed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepForHivPrevention",
+        "path": "HIVC.prepForHivPrevention",
+        "code": [
+          {
+            "code": "DE76",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP for HIV prevention",
+        "definition": "Client was prescribed pre-exposure prophylaxis (PrEP) for HIV prevention",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.pepForHivPrevention",
+        "path": "HIVC.pepForHivPrevention",
+        "code": [
+          {
+            "code": "DE77",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PEP for HIV prevention",
+        "definition": "Client was prescribed post-exposure prophylaxis (PEP) for HIV prevention",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.medOther",
+        "path": "HIVC.medOther",
+        "code": [
+          {
+            "code": "DE78",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client was prescribed other medications",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.medOtherSpecify",
+        "path": "HIVC.medOtherSpecify",
+        "code": [
+          {
+            "code": "DE79",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Client was prescribed other medications (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepProductPrescribed",
+        "path": "HIVC.prepProductPrescribed",
+        "code": [
+          {
+            "code": "DE80",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP product prescribed",
+        "definition": "PrEP product that the client was prescribed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.oralPrep",
+        "path": "HIVC.oralPrep",
+        "code": [
+          {
+            "code": "DE81",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Oral PrEP",
+        "definition": "Client was prescribed oral PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.presDapivirineVaginalRingDvr",
+        "path": "HIVC.presDapivirineVaginalRingDvr",
+        "code": [
+          {
+            "code": "DE82",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Dapivirine vaginal ring (DVR)",
+        "definition": "Client was prescribed dapivirine vaginal ring (DVR)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.presCabLa",
+        "path": "HIVC.presCabLa",
+        "code": [
+          {
+            "code": "DE83",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "CAB-LA",
+        "definition": "Client was prescribed long-acting cabotegravir (CAB-LA)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.presOther",
+        "path": "HIVC.presOther",
+        "code": [
+          {
+            "code": "DE84",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client was prescribed other PrEP product",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.presOtherSpecify",
+        "path": "HIVC.presOtherSpecify",
+        "code": [
+          {
+            "code": "DE85",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Client was prescribed other PrEP product (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datePrepPrescribed",
+        "path": "HIVC.datePrepPrescribed",
+        "code": [
+          {
+            "code": "DE86",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date PrEP prescribed",
+        "definition": "Date client was prescribed PrEP, including initial prescription and repeats",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datePrepDispensed",
+        "path": "HIVC.datePrepDispensed",
+        "code": [
+          {
+            "code": "DE87",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date PrEP dispensed",
+        "definition": "Date client was dispensed PrEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.volumeOfPrepProductPrescribedDispensed",
+        "path": "HIVC.volumeOfPrepProductPrescribedDispensed",
+        "code": [
+          {
+            "code": "DE88",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Volume of PrEP product prescribed/dispensed",
+        "definition": "Volume of PrEP product the client was prescribed or dispensed (for example, number of pills, number of devices)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datePepPrescribed",
+        "path": "HIVC.datePepPrescribed",
+        "code": [
+          {
+            "code": "DE89",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date PEP prescribed",
+        "definition": "Date the client was prescribed PEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datePepCourseCompletion",
+        "path": "HIVC.datePepCourseCompletion",
+        "code": [
+          {
+            "code": "DE90",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date PEP course completion",
+        "definition": "Date client completes PEP course",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.preferredPepBackboneRegimen",
+        "path": "HIVC.preferredPepBackboneRegimen",
+        "code": [
+          {
+            "code": "DE91",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Preferred PEP backbone regimen",
+        "definition": "Preferred backbone regimen for PEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prefTdf3Tc",
+        "path": "HIVC.prefTdf3Tc",
+        "code": [
+          {
+            "code": "DE92",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + 3TC",
+        "definition": "Preferred backbone containing tenofovir disoproxil fumarate and lamivudine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prefTdfFtc",
+        "path": "HIVC.prefTdfFtc",
+        "code": [
+          {
+            "code": "DE93",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + FTC",
+        "definition": "Preferred backbone containing tenofovir disoproxil fumarate and emtricitabine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prefAzt3Tc",
+        "path": "HIVC.prefAzt3Tc",
+        "code": [
+          {
+            "code": "DE94",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "AZT + 3TC",
+        "definition": "Preferred backbone containing zidovudine and lamivudine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.alternativePepBackboneRegimen",
+        "path": "HIVC.alternativePepBackboneRegimen",
+        "code": [
+          {
+            "code": "DE95",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Alternative PEP backbone regimen",
+        "definition": "Alternative backbone regimen for PEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.altAbc3Tc",
+        "path": "HIVC.altAbc3Tc",
+        "code": [
+          {
+            "code": "DE96",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "ABC + 3TC",
+        "definition": "Alternative backbone containing abacavir and lamivudine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.altTdf3Tc",
+        "path": "HIVC.altTdf3Tc",
+        "code": [
+          {
+            "code": "DE97",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + 3TC",
+        "definition": "Alternative backbone containing tenofovir disoproxil fumarate and lamivudine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.altTdfFtc",
+        "path": "HIVC.altTdfFtc",
+        "code": [
+          {
+            "code": "DE98",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "TDF + FTC",
+        "definition": "Alternative backbone containing tenofovir disoproxil fumarate and emtricitabine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.preferredThirdPepDrug",
+        "path": "HIVC.preferredThirdPepDrug",
+        "code": [
+          {
+            "code": "DE99",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Preferred third PEP drug",
+        "definition": "Preferred third drug for PEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dtg",
+        "path": "HIVC.dtg",
+        "code": [
+          {
+            "code": "DE100",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "DTG",
+        "definition": "Preferred third drug of dolutegravir",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.alternativeThirdPepDrug",
+        "path": "HIVC.alternativeThirdPepDrug",
+        "code": [
+          {
+            "code": "DE101",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Alternative third PEP drug",
+        "definition": "Alternative third drug for PEP",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.atvr",
+        "path": "HIVC.atvr",
+        "code": [
+          {
+            "code": "DE102",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "ATV/r",
+        "definition": "Alternative third drug of atazanavir/ritonavir (ATV/r)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.drvr",
+        "path": "HIVC.drvr",
+        "code": [
+          {
+            "code": "DE103",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "DRV/r",
+        "definition": "Alternative third drug of darunavir/ritonavir (DRV/r)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.lpvr",
+        "path": "HIVC.lpvr",
+        "code": [
+          {
+            "code": "DE104",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "LPV/r",
+        "definition": "Alternative third drug of lopinavir/ritonavir (LPV/r)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.ral",
+        "path": "HIVC.ral",
+        "code": [
+          {
+            "code": "DE105",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "RAL",
+        "definition": "Alternative third drug of raltegravir (RAL)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.estimatedCreatinineClearance",
+        "path": "HIVC.estimatedCreatinineClearance",
+        "code": [
+          {
+            "code": "DE106",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Estimated creatinine clearance",
+        "definition": "Estimated creatinine clearance of the client returned from lab in mL/min",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.sexFactorForEstimatingCreatinineClearance",
+        "path": "HIVC.sexFactorForEstimatingCreatinineClearance",
+        "code": [
+          {
+            "code": "DE107",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Sex factor for estimating creatinine clearance",
+        "definition": "Value used for gender for calculating creatinine clearance if required. For transgender populations, the sex at birth is used in the Cockcroft-Gault equation if the person is not using hormone therapy; among transgender populations using hormone therapy for more than three months, the current gender can be used.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.male",
+        "path": "HIVC.male",
+        "code": [
+          {
+            "code": "DE108",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Male",
+        "definition": "Male client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.female",
+        "path": "HIVC.female",
+        "code": [
+          {
+            "code": "DE109",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Female",
+        "definition": "Female client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.estimatedCreatinineClearanceCQE",
+        "path": "HIVC.estimatedCreatinineClearanceCQE",
+        "code": [
+          {
+            "code": "DE110",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Estimated creatinine clearance (Cockcroft–Gault equation)",
+        "definition": "If the laboratory does not have the capacity to estimate creatinine clearance, the provider can use the Cockcroft–Gault equation to calculate estimated creatinine clearance based on measured serum creatinine, the client’s sex at birth, age and estimated lean body weight.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dateOfSampleCollection",
+        "path": "HIVC.dateOfSampleCollection",
+        "code": [
+          {
+            "code": "DE111",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date of sample collection",
+        "definition": "Date when the specimen was collected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.contraindicationsToPrepUsage",
+        "path": "HIVC.contraindicationsToPrepUsage",
+        "code": [
+          {
+            "code": "DE112",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Contraindications to PrEP usage",
+        "definition": "Listing of contraindications to pre-exposure prophylaxis (PrEP)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.tenofovirDisoproxilFumarateTdfAllergyOrContraindication",
+        "path": "HIVC.tenofovirDisoproxilFumarateTdfAllergyOrContraindication",
+        "code": [
+          {
+            "code": "DE113",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Tenofovir disoproxil fumarate (TDF) allergy or contraindication",
+        "definition": "Allergy to pre-exposure prophylaxis (PrEP) tenofovir disoproxil fumarate (TDF)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hivPositive",
+        "path": "HIVC.hivPositive",
+        "code": [
+          {
+            "code": "DE114",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "HIV-positive",
+        "definition": "Client is HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.lowEstimatedCreatinineClearance",
+        "path": "HIVC.lowEstimatedCreatinineClearance",
+        "code": [
+          {
+            "code": "DE115",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Low estimated creatinine clearance",
+        "definition": "Estimated creatinine clearance of less than 60 ml/min (if known)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.sAcuteHivInfectionSymptoms",
+        "path": "HIVC.sAcuteHivInfectionSymptoms",
+        "code": [
+          {
+            "code": "DE116",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Acute HIV infection symptoms",
+        "definition": "Symptoms that could suggest an acute HIV infection",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.probableRecentExposureToHiv",
+        "path": "HIVC.probableRecentExposureToHiv",
+        "code": [
+          {
+            "code": "DE117",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Probable recent exposure to HIV",
+        "definition": "When the client is reported to have had probable recent exposure to HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherAllergyOrContraindicationPrepR",
+        "path": "HIVC.otherAllergyOrContraindicationPrepR",
+        "code": [
+          {
+            "code": "DE118",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other allergy or contraindication to a medicine in the PrEP regimen",
+        "definition": "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherAllergyOrContraindicationPrepRSpecify",
+        "path": "HIVC.otherAllergyOrContraindicationPrepRSpecify",
+        "code": [
+          {
+            "code": "DE119",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other allergy or contraindication to a medicine in the PrEP regimen (specify)",
+        "definition": "Client has another allergy or contraindication to a medicine in the pre-exposure prophylaxis (PrEP) regimen (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prescribedPrepAtInitialVisit",
+        "path": "HIVC.prescribedPrepAtInitialVisit",
+        "code": [
+          {
+            "code": "DE120",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Prescribed PrEP at initial visit",
+        "definition": "Client was prescribed pre-exposure prophylaxis (PrEP) on a first visit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.numberOfDaysPrescribed",
+        "path": "HIVC.numberOfDaysPrescribed",
+        "code": [
+          {
+            "code": "DE121",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Number of days prescribed",
+        "definition": "Days of medication client has been prescribed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.prepRegimenPrescribed",
+        "path": "HIVC.prepRegimenPrescribed",
+        "code": [
+          {
+            "code": "DE122",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "PrEP regimen prescribed",
+        "definition": "HIV pre-exposure prophylaxis (PrEP) regimen prescribed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.adherenceCounsellingProvided",
+        "path": "HIVC.adherenceCounsellingProvided",
+        "code": [
+          {
+            "code": "DE123",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Adherence counselling provided",
+        "definition": "Whether adherence counselling was provided",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.datetimeOfFollowUpAppointment",
+        "path": "HIVC.datetimeOfFollowUpAppointment",
+        "code": [
+          {
+            "code": "DE124",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date/time of follow-up appointment",
+        "definition": "Date the client is to return for monitoring, re-supply, or any other reason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.typeOfFollowUpAppointment",
+        "path": "HIVC.typeOfFollowUpAppointment",
+        "code": [
+          {
+            "code": "DE125",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Type of follow-up appointment",
+        "definition": "Type of follow-up appointment for testing services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.retestingForHiv",
+        "path": "HIVC.retestingForHiv",
+        "code": [
+          {
+            "code": "DE126",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Retesting for HIV",
+        "definition": "Retesting follow-up appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.followUpAppointmentForPrep",
+        "path": "HIVC.followUpAppointmentForPrep",
+        "code": [
+          {
+            "code": "DE127",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Follow-up appointment for PrEP",
+        "definition": "Retesting follow-up appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.fupOther",
+        "path": "HIVC.fupOther",
+        "code": [
+          {
+            "code": "DE128",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other",
+        "definition": "Other reason for the follow-up appointment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.fupOtherSpecify",
+        "path": "HIVC.fupOtherSpecify",
+        "code": [
+          {
+            "code": "DE129",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Other reason for the follow-up appointment (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.linkedToEnrolmentInCareAndArtInitiation",
+        "path": "HIVC.linkedToEnrolmentInCareAndArtInitiation",
+        "code": [
+          {
+            "code": "DE130",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Linked to enrolment in care and ART initiation",
+        "definition": "Linkage made from HIV testing to enrolment in care following an HIV diagnosis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.preventionServicesOfferedAndReferrals",
+        "path": "HIVC.preventionServicesOfferedAndReferrals",
+        "code": [
+          {
+            "code": "DE131",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Prevention services offered and referrals",
+        "definition": "Offer or refer to prevention services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.maleAndFemaleCondomsAndCondomCompatibleLubricantsOffered",
+        "path": "HIVC.maleAndFemaleCondomsAndCondomCompatibleLubricantsOffered",
+        "code": [
+          {
+            "code": "DE132",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Male and female condoms and condom-compatible lubricants offered",
+        "definition": "Offer male and female condoms and condom-compatible lubricants",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.voluntaryMedicalMaleCircumcisionVmmcReferral",
+        "path": "HIVC.voluntaryMedicalMaleCircumcisionVmmcReferral",
+        "code": [
+          {
+            "code": "DE133",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Voluntary medical male circumcision (VMMC) referral",
+        "definition": "Offer referral for VMMC services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.harmReductionForPeopleWhoInjectDrugs",
+        "path": "HIVC.harmReductionForPeopleWhoInjectDrugs",
+        "code": [
+          {
+            "code": "DE134",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Harm reduction for people who inject drugs",
+        "definition": "Offer or refer to harm reduction for people who inject drugs (needle and syringe programmes, opioid substitution therapy, other drug-dependence treatment and opioid overdose prevention and management) services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.behaviouralInterventionsToSupportRiskReduction",
+        "path": "HIVC.behaviouralInterventionsToSupportRiskReduction",
+        "code": [
+          {
+            "code": "DE135",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Behavioural interventions to support risk reduction",
+        "definition": "Offer or refer to services for behavioural interventions to support risk reduction, particularly for people with HIV and members of key populations",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.dateProvidedCondoms",
+        "path": "HIVC.dateProvidedCondoms",
+        "code": [
+          {
+            "code": "DE136",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Date provided condoms",
+        "definition": "Date client was provided with condoms",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.condomsDistributed",
+        "path": "HIVC.condomsDistributed",
+        "code": [
+          {
+            "code": "DE137",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Condoms distributed",
+        "definition": "Number of condoms given to the client, if any were distributed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.condomType",
+        "path": "HIVC.condomType",
+        "code": [
+          {
+            "code": "DE138",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Condom type",
+        "definition": "Type of condom provided to client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.maleCondom",
+        "path": "HIVC.maleCondom",
+        "code": [
+          {
+            "code": "DE139",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Male condom",
+        "definition": "Male condoms were provided to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.femaleCondom",
+        "path": "HIVC.femaleCondom",
+        "code": [
+          {
+            "code": "DE140",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Female condom",
+        "definition": "Female condoms were provided to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hivSelfTestKitsAccepted",
+        "path": "HIVC.hivSelfTestKitsAccepted",
+        "code": [
+          {
+            "code": "DE141",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "HIV self-test kits accepted",
+        "definition": "Whether any HIV self-test kits were given to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.numberOfHivSelfTestKitsDistributed",
+        "path": "HIVC.numberOfHivSelfTestKitsDistributed",
+        "code": [
+          {
+            "code": "DE142",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Number of HIV self-test kits distributed",
+        "definition": "Number of HIV self-test kits distributed to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hivSelfTestDistributedForUseBy",
+        "path": "HIVC.hivSelfTestDistributedForUseBy",
+        "code": [
+          {
+            "code": "DE143",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "HIV self-test distributed for use by",
+        "definition": "Whom the client plans to give the HIV self-test kit (self, sexual partner, social contact, etc.)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.self",
+        "path": "HIVC.self",
+        "code": [
+          {
+            "code": "DE144",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Self",
+        "definition": "Client plans to use the self-test kit",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.familyMember",
+        "path": "HIVC.familyMember",
+        "code": [
+          {
+            "code": "DE145",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Family member",
+        "definition": "Client plans to give the self-test kit to a family member to use",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.drugInjectingPartner",
+        "path": "HIVC.drugInjectingPartner",
+        "code": [
+          {
+            "code": "DE146",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Drug-injecting partner",
+        "definition": "Client plans to give the self-test kit to a drug-injecting partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.sexualPartner",
+        "path": "HIVC.sexualPartner",
+        "code": [
+          {
+            "code": "DE147",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Sexual partner",
+        "definition": "Client plans to give the self-test kit to a sexual partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.socialContact",
+        "path": "HIVC.socialContact",
+        "code": [
+          {
+            "code": "DE148",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Social contact",
+        "definition": "Client plans to give the self-test kit to a social contact",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.sexualAndReproductiveHealthIntegratedServices",
+        "path": "HIVC.sexualAndReproductiveHealthIntegratedServices",
+        "code": [
+          {
+            "code": "DE149",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Sexual and reproductive health integrated services",
+        "definition": "Offer or refer to sexual and reproductive health services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.contraceptionAndFamilyPlanning",
+        "path": "HIVC.contraceptionAndFamilyPlanning",
+        "code": [
+          {
+            "code": "DE150",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Contraception and family planning",
+        "definition": "Offer contraception and family planning services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.checkPregnancyStatus",
+        "path": "HIVC.checkPregnancyStatus",
+        "code": [
+          {
+            "code": "DE151",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Check pregnancy status",
+        "definition": "Check womans pregnancy status",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.preventMotherToChildTransmission",
+        "path": "HIVC.preventMotherToChildTransmission",
+        "code": [
+          {
+            "code": "DE152",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Prevent mother-to-child transmission",
+        "definition": "Offer services (counselling) to help prevent of mother-to-child transmission",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.cervicalCancerScreeningAndTreatment",
+        "path": "HIVC.cervicalCancerScreeningAndTreatment",
+        "code": [
+          {
+            "code": "DE153",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Cervical cancer screening and treatment",
+        "definition": "Offer cervical cancer screening and treatment services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.analCancerScreeningForMenWhoHaveSexWithMen",
+        "path": "HIVC.analCancerScreeningForMenWhoHaveSexWithMen",
+        "code": [
+          {
+            "code": "DE154",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Anal cancer screening (for men who have sex with men)",
+        "definition": "Offer anal cancer screening (for men who have sex with men) services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.stiTestingAndTreatment",
+        "path": "HIVC.stiTestingAndTreatment",
+        "code": [
+          {
+            "code": "DE155",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "STI testing and treatment",
+        "definition": "Offer STI testing and treatment services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hivTestingForPartnersAndBiologicalChildren",
+        "path": "HIVC.hivTestingForPartnersAndBiologicalChildren",
+        "code": [
+          {
+            "code": "DE156",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "HIV testing for partners and biological children",
+        "definition": "Offer testing for all partners and biological children of positive cases (includes partner services and index case testing), as well as partners and social contacts of people from key populations, where appropriate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.offerOtherClinicalServices",
+        "path": "HIVC.offerOtherClinicalServices",
+        "code": [
+          {
+            "code": "DE157",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Offer other clinical services",
+        "definition": "Other clinical services offered or referrals given to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.assessmentAndProvisionOfVaccinations",
+        "path": "HIVC.assessmentAndProvisionOfVaccinations",
+        "code": [
+          {
+            "code": "DE158",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Assessment and provision of vaccinations",
+        "definition": "Assessment and provision of vaccinations, such as for people from key populations, pregnant women and infants; and, where appropriate, tetanus vaccination for adolescent boys and men receiving VMMC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.hepatitisBVirusHbvAndHepatitisCVirusHcvTT",
+        "path": "HIVC.hepatitisBVirusHbvAndHepatitisCVirusHcvTT",
+        "code": [
+          {
+            "code": "DE159",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Hepatitis B virus (HBV) and hepatitis C virus (HCV) testing and treatment",
+        "definition": "Offer or refer for HBV testing and vaccination and HCV testing and treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.coTrimoxazoleChemoprophylaxis",
+        "path": "HIVC.coTrimoxazoleChemoprophylaxis",
+        "code": [
+          {
+            "code": "DE160",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+        "definition": "Offer or refer for co-trimoxazole chemoprophylaxis to prevent pneumocystis carinii pneumonia",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.intensifiedTbCaseFindingAndLinkageToTbTreatment",
+        "path": "HIVC.intensifiedTbCaseFindingAndLinkageToTbTreatment",
+        "code": [
+          {
+            "code": "DE161",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Intensified TB case finding and linkage to TB treatment",
+        "definition": "Offer or refer for TB case finding and linkage to TB treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb",
+        "path": "HIVC.provisionOfIsoniazidPreventiveTherapyIfPersonDoesNotHaveTb",
+        "code": [
+          {
+            "code": "DE162",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Provision of isoniazid preventive therapy if person does not have TB",
+        "definition": "Offer or refer for provision of isoniazid preventive therapy if person does not have TB",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.malariaPreventionDependingOnEpidemiology",
+        "path": "HIVC.malariaPreventionDependingOnEpidemiology",
+        "code": [
+          {
+            "code": "DE163",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+        "definition": "Offer or refer for malaria prevention (such as bed nets and prophylaxis), depending on epidemiology",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.otherSupportServices",
+        "path": "HIVC.otherSupportServices",
+        "code": [
+          {
+            "code": "DE164",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Other support services",
+        "definition": "Offer or refer for other support services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.mentalHealthServices",
+        "path": "HIVC.mentalHealthServices",
+        "code": [
+          {
+            "code": "DE165",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Mental health services",
+        "definition": "Offer or refer for mental health services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.psychosocialCounsellingSupportAndTreatmentAdherenceCounselling",
+        "path": "HIVC.psychosocialCounsellingSupportAndTreatmentAdherenceCounselling",
+        "code": [
+          {
+            "code": "DE166",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Psychosocial counselling, support and treatment adherence counselling",
+        "definition": "Offer or refer for psychosocial counselling, support and treatment adherence counselling",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.supportForDisclosureAndPartnerServices",
+        "path": "HIVC.supportForDisclosureAndPartnerServices",
+        "code": [
+          {
+            "code": "DE167",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Support for disclosure and partner services",
+        "definition": "Offer or refer for support for disclosure and partner services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.legalAndSocialServices",
+        "path": "HIVC.legalAndSocialServices",
+        "code": [
+          {
+            "code": "DE168",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Legal and social services",
+        "definition": "Offer or refer for legal and social services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVC.servicesForRespondingToViolenceAgainstWomen",
+        "path": "HIVC.servicesForRespondingToViolenceAgainstWomen",
+        "code": [
+          {
+            "code": "DE169",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.C"
+          }
+        ],
+        "short": "Services for responding to violence against women",
+        "definition": "Offer or refer for services for responding to violence against women, including first-line support and psychosocial support, post-rape care and other support services including shelters, legal services and women and child protection services",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

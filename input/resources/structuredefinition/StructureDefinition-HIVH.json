@@ -1,0 +1,1564 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HIVH",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVH",
+  "name": "HIVH",
+  "title": "HIV.H Follow-up Logical Model",
+  "status": "active",
+  "description": "Logical Model for HIV.H Follow-up data elements.",
+  "fhirVersion": "4.3.0",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://worldhealthorganization.github.io/smart-hiv/StructureDefinition/HIVH",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "HIVH",
+        "path": "HIVH",
+        "short": "HIV.H Follow-up Logical Model",
+        "definition": "Logical Model for HIV.H Follow-up data elements."
+      },
+      {
+        "id": "HIVH.reasonForFollowUp",
+        "path": "HIVH.reasonForFollowUp",
+        "code": [
+          {
+            "code": "DE1",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Reason for follow-up",
+        "definition": "The reason why the client is being followed up",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.missedCareVisit",
+        "path": "HIVH.missedCareVisit",
+        "code": [
+          {
+            "code": "DE2",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Missed care visit",
+        "definition": "Client did not present for a care appointment as scheduled / as expected",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.missedMedicationPickup",
+        "path": "HIVH.missedMedicationPickup",
+        "code": [
+          {
+            "code": "DE3",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Missed medication pickup",
+        "definition": "Client did not pick up medication as scheduled from pharmacy or other drug distribution point",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.didNotInitiateArt",
+        "path": "HIVH.didNotInitiateArt",
+        "code": [
+          {
+            "code": "DE4",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Did not initiate ART",
+        "definition": "Client did not initiate ART at the same time as diagnosis (e.g., because they required additional counselling) and required follow-up for ART initiation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.incompleteVisit",
+        "path": "HIVH.incompleteVisit",
+        "code": [
+          {
+            "code": "DE5",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Incomplete visit",
+        "definition": "Client presented for care, but left before services were completed, e.g., due to long wait times or not staying to have labs taken",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.inconclusiveHivStatus",
+        "path": "HIVH.inconclusiveHivStatus",
+        "code": [
+          {
+            "code": "DE6",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Inconclusive HIV status",
+        "definition": "Client has not returned for a follow-up test after an inconclusive test result",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.testResultsReceived",
+        "path": "HIVH.testResultsReceived",
+        "code": [
+          {
+            "code": "DE7",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Test results received",
+        "definition": "Client needs to be informed of test results (e.g., viral load)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherFollowUpReason",
+        "path": "HIVH.otherFollowUpReason",
+        "code": [
+          {
+            "code": "DE8",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other follow-up reason",
+        "definition": "Client was followed up for another reason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherFollowUpReasonSpecify",
+        "path": "HIVH.otherFollowUpReasonSpecify",
+        "code": [
+          {
+            "code": "DE9",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other follow-up reason (specify)",
+        "definition": "Client was followed up for another reason (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.clientContactAttempted",
+        "path": "HIVH.clientContactAttempted",
+        "code": [
+          {
+            "code": "DE10",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Client contact attempted",
+        "definition": "An attempt to locate the client was made",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateOfContactAttempt",
+        "path": "HIVH.dateOfContactAttempt",
+        "code": [
+          {
+            "code": "DE11",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date of contact attempt",
+        "definition": "Date of attempt to contact client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.contactAttemptedBy",
+        "path": "HIVH.contactAttemptedBy",
+        "code": [
+          {
+            "code": "DE12",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Contact attempted by",
+        "definition": "Who attempted to reach out to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.contactMethod",
+        "path": "HIVH.contactMethod",
+        "code": [
+          {
+            "code": "DE13",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Contact method",
+        "definition": "Method used to try to reach out to the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.homeVisit",
+        "path": "HIVH.homeVisit",
+        "code": [
+          {
+            "code": "DE14",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Home visit",
+        "definition": "Contacted client at home",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.textMessage",
+        "path": "HIVH.textMessage",
+        "code": [
+          {
+            "code": "DE15",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Text message",
+        "definition": "Contacted client by short message service (SMS) text",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.phone",
+        "path": "HIVH.phone",
+        "code": [
+          {
+            "code": "DE16",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Phone",
+        "definition": "Contacted client by phone call",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.sourceOfInformation",
+        "path": "HIVH.sourceOfInformation",
+        "code": [
+          {
+            "code": "DE17",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Source of information",
+        "definition": "Source of information about the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.client",
+        "path": "HIVH.client",
+        "code": [
+          {
+            "code": "DE18",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Client",
+        "definition": "The client was the source of information",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.informedByTreatmentProvider",
+        "path": "HIVH.informedByTreatmentProvider",
+        "code": [
+          {
+            "code": "DE19",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Informed by treatment provider",
+        "definition": "Source of information was a treatment provider of the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.informedByFamilyOrPartner",
+        "path": "HIVH.informedByFamilyOrPartner",
+        "code": [
+          {
+            "code": "DE20",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Informed by family or partner",
+        "definition": "Source of information was a family member of partner",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherSourceOfInformation",
+        "path": "HIVH.otherSourceOfInformation",
+        "code": [
+          {
+            "code": "DE21",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other source of information",
+        "definition": "Information about the clients status was provided by someone else",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherSourceOfInformationSpecify",
+        "path": "HIVH.otherSourceOfInformationSpecify",
+        "code": [
+          {
+            "code": "DE22",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other source of information (specify)",
+        "definition": "Information about the clients status was provided by someone else (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.outcomeFromOutreachAttempt",
+        "path": "HIVH.outcomeFromOutreachAttempt",
+        "code": [
+          {
+            "code": "DE23",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Outcome from outreach attempt",
+        "definition": "Detailed outcome from the attempt to locate the client",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.returningToClinic",
+        "path": "HIVH.returningToClinic",
+        "code": [
+          {
+            "code": "DE24",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Returning to clinic",
+        "definition": "Client was located and agreed to return to clinic",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.selfTransferredOut",
+        "path": "HIVH.selfTransferredOut",
+        "code": [
+          {
+            "code": "DE25",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Self-transferred out",
+        "definition": "Client transferred to another facility for care (client-initiated transfer, not provider-initiated transfer)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.hospitalized",
+        "path": "HIVH.hospitalized",
+        "code": [
+          {
+            "code": "DE26",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Hospitalized",
+        "definition": "Client was hospitalized",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.refusedToReturn",
+        "path": "HIVH.refusedToReturn",
+        "code": [
+          {
+            "code": "DE27",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Refused to return",
+        "definition": "Client was found but declined to return to treatment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.notLocated",
+        "path": "HIVH.notLocated",
+        "code": [
+          {
+            "code": "DE28",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Not located ",
+        "definition": "Attempt was made to locate client, but client was not found",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.diedReported",
+        "path": "HIVH.diedReported",
+        "code": [
+          {
+            "code": "DE29",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Died (reported)",
+        "definition": "The client was reported as having died",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.movedFromCatchmentArea",
+        "path": "HIVH.movedFromCatchmentArea",
+        "code": [
+          {
+            "code": "DE30",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Moved from catchment area",
+        "definition": "The client moved from the catchment area (may be reported from the community level)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateClientMovedFromCatchmentArea",
+        "path": "HIVH.dateClientMovedFromCatchmentArea",
+        "code": [
+          {
+            "code": "DE31",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date client moved from catchment area",
+        "definition": "The date on which the client moved from the catchment area, if known",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.newCatchmentArea",
+        "path": "HIVH.newCatchmentArea",
+        "code": [
+          {
+            "code": "DE32",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "New catchment area",
+        "definition": "New catchment area where the client resides",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.partnerOrContactOfIndexCase",
+        "path": "HIVH.partnerOrContactOfIndexCase",
+        "code": [
+          {
+            "code": "DE33",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Partner or contact of index case",
+        "definition": "The client was identified by an index case as a partner or contact",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.hivStatusOfPartnerOrContact",
+        "path": "HIVH.hivStatusOfPartnerOrContact",
+        "code": [
+          {
+            "code": "DE34",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "HIV status of partner or contact",
+        "definition": "HIV status of the partner or contact given by the index case",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.alreadyKnewPositive",
+        "path": "HIVH.alreadyKnewPositive",
+        "code": [
+          {
+            "code": "DE35",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Already knew positive",
+        "definition": "The partner or contact of the index case already knew they are HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.newlyDiagnosed",
+        "path": "HIVH.newlyDiagnosed",
+        "code": [
+          {
+            "code": "DE36",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Newly diagnosed",
+        "definition": "The partner or contact of the index case is newly diagnosed as HIV-positive",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.negative",
+        "path": "HIVH.negative",
+        "code": [
+          {
+            "code": "DE37",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Negative",
+        "definition": "The partner or contact of the index case is newly diagnosed is HIV-negative",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateOfDeath",
+        "path": "HIVH.dateOfDeath",
+        "code": [
+          {
+            "code": "DE38",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date of death ",
+        "definition": "If deceased, the date that the client died",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.causeOfDeath",
+        "path": "HIVH.causeOfDeath",
+        "code": [
+          {
+            "code": "DE39",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Cause of death",
+        "definition": "Cause of death, if known",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.placeOfDeath",
+        "path": "HIVH.placeOfDeath",
+        "code": [
+          {
+            "code": "DE40",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Place of death",
+        "definition": "Where the client died, if known",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.hivTreatmentOutcome",
+        "path": "HIVH.hivTreatmentOutcome",
+        "code": [
+          {
+            "code": "DE41",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "HIV treatment outcome",
+        "definition": "The outcome for the client which is used for reporting retention/attrition.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.lostToFollowUp",
+        "path": "HIVH.lostToFollowUp",
+        "code": [
+          {
+            "code": "DE42",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Lost to follow-up",
+        "definition": "Twenty-eight days or more since last missed appointment ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.transferredOut",
+        "path": "HIVH.transferredOut",
+        "code": [
+          {
+            "code": "DE43",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Transferred out",
+        "definition": "The client transferred to another facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.deathDocumented",
+        "path": "HIVH.deathDocumented",
+        "code": [
+          {
+            "code": "DE44",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Death (documented)",
+        "definition": "People living with HIV previously on ART who are confirmed to have died from any cause",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.refusedStoppedTreatment",
+        "path": "HIVH.refusedStoppedTreatment",
+        "code": [
+          {
+            "code": "DE45",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Refused (stopped) treatment",
+        "definition": "Client was contacted and confirmed to have stopped ART (reasons may include stigma and discrimination, faith healing, etc.)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.datePatientLostToFollowUp",
+        "path": "HIVH.datePatientLostToFollowUp",
+        "code": [
+          {
+            "code": "DE46",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date patient lost to follow-up",
+        "definition": "Date patient was lost to follow-up (LTFU)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.onArt",
+        "path": "HIVH.onArt",
+        "code": [
+          {
+            "code": "DE47",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "On ART",
+        "definition": "Client is currently taking ART ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateHivTreatmentOutcomeChanged",
+        "path": "HIVH.dateHivTreatmentOutcomeChanged",
+        "code": [
+          {
+            "code": "DE48",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date HIV treatment outcome changed",
+        "definition": "The date on which the clients outcome (lost to follow-up, transferred out, death (documented), or refused (stopped) treatment) changed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.transferConfirmed",
+        "path": "HIVH.transferConfirmed",
+        "code": [
+          {
+            "code": "DE49",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Transfer confirmed",
+        "definition": "Select if transfer to another facility is confirmed",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.transferToFacility",
+        "path": "HIVH.transferToFacility",
+        "code": [
+          {
+            "code": "DE50",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Transfer to facility",
+        "definition": "Name of health facility client was transferred to",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateOfTransferOut",
+        "path": "HIVH.dateOfTransferOut",
+        "code": [
+          {
+            "code": "DE51",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date of transfer out",
+        "definition": "The date the client transferred out of the facility to be provided with care at another facility",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.adherenceAssessment",
+        "path": "HIVH.adherenceAssessment",
+        "code": [
+          {
+            "code": "DE52",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Adherence assessment",
+        "definition": "Whether client is adherent or not to ART regimen per national guidelines (immunological or virological monitoring)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.reasonsForAdherenceProblem",
+        "path": "HIVH.reasonsForAdherenceProblem",
+        "code": [
+          {
+            "code": "DE53",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Reason(s) for adherence problem",
+        "definition": "Reason why client is not adherent",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.forgot",
+        "path": "HIVH.forgot",
+        "code": [
+          {
+            "code": "DE54",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Forgot",
+        "definition": "Client reported not being adherent because they forgot",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.toxicitysideEffects2",
+        "path": "HIVH.toxicitysideEffects2",
+        "code": [
+          {
+            "code": "DE55",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Toxicity/side effects",
+        "definition": "Client reported not being adherent because of toxicity/side effects",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.busy",
+        "path": "HIVH.busy",
+        "code": [
+          {
+            "code": "DE56",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Busy",
+        "definition": "Client reported not being adherent because they were busy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.changeOfRoutine",
+        "path": "HIVH.changeOfRoutine",
+        "code": [
+          {
+            "code": "DE57",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Change of routine",
+        "definition": "Client reported not being adherent because of a change of routine",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.travelCost",
+        "path": "HIVH.travelCost",
+        "code": [
+          {
+            "code": "DE58",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Travel cost",
+        "definition": "Client reported not being adherent because of travel cost",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.distanceToClinic",
+        "path": "HIVH.distanceToClinic",
+        "code": [
+          {
+            "code": "DE59",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Distance to clinic",
+        "definition": "Client reported not being adherent because of distance to clinic ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.clientLostRanOutOfPills",
+        "path": "HIVH.clientLostRanOutOfPills",
+        "code": [
+          {
+            "code": "DE60",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Client lost/ran out of pills",
+        "definition": "Client reported not being adherent because of client lost/ran out of pills",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.stockOut",
+        "path": "HIVH.stockOut",
+        "code": [
+          {
+            "code": "DE61",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Stock-out",
+        "definition": "Client reported not being adherent because of a stock-out",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.tooIll",
+        "path": "HIVH.tooIll",
+        "code": [
+          {
+            "code": "DE62",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Too ill",
+        "definition": "Client reported not being adherent because of being too ill",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.pillBurden",
+        "path": "HIVH.pillBurden",
+        "code": [
+          {
+            "code": "DE63",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Pill burden",
+        "definition": "Client reported not being adherent because of the pill burden",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.feltWell",
+        "path": "HIVH.feltWell",
+        "code": [
+          {
+            "code": "DE64",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Felt well",
+        "definition": "Client reported not being adherent because they felt well",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.depression",
+        "path": "HIVH.depression",
+        "code": [
+          {
+            "code": "DE65",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Depression",
+        "definition": "Client reported not being adherent because of depression",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.alcoholUse",
+        "path": "HIVH.alcoholUse",
+        "code": [
+          {
+            "code": "DE66",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Alcohol use",
+        "definition": "Client reported not being adherent because of alcohol use",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.substanceUse",
+        "path": "HIVH.substanceUse",
+        "code": [
+          {
+            "code": "DE67",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Substance use",
+        "definition": "Client reported not being adherent because of substance use (i.e., drugs)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.stigmadisclosureConcerns",
+        "path": "HIVH.stigmadisclosureConcerns",
+        "code": [
+          {
+            "code": "DE68",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Stigma/disclosure concerns",
+        "definition": "Client reported not being adherent because of stigma/disclosure concerns",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.lackOfFood",
+        "path": "HIVH.lackOfFood",
+        "code": [
+          {
+            "code": "DE69",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Lack of food",
+        "definition": "Client reported not being adherent because of a lack of food",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.poorPalatability",
+        "path": "HIVH.poorPalatability",
+        "code": [
+          {
+            "code": "DE70",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Poor palatability",
+        "definition": "Client reported not being adherent because of poor palatability",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.adhrOther",
+        "path": "HIVH.adhrOther",
+        "code": [
+          {
+            "code": "DE71",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other",
+        "definition": "Client reported not being adherent because of other reason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.adhrOtherSpecify",
+        "path": "HIVH.adhrOtherSpecify",
+        "code": [
+          {
+            "code": "DE72",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other (specify)",
+        "definition": "Client reported not being adherent because of other reason (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.dateArtStopped",
+        "path": "HIVH.dateArtStopped",
+        "code": [
+          {
+            "code": "DE73",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Date ART stopped",
+        "definition": "Date on which client stopped ART",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.reasonArtStopped",
+        "path": "HIVH.reasonArtStopped",
+        "code": [
+          {
+            "code": "DE74",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Reason ART stopped",
+        "definition": "Reason why client intentionally stopped ART",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.toxicitysideEffects",
+        "path": "HIVH.toxicitysideEffects",
+        "code": [
+          {
+            "code": "DE75",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Toxicity/side effects",
+        "definition": "Client stopped ART because of toxicity/side effects",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.severeIllnessHospitalization",
+        "path": "HIVH.severeIllnessHospitalization",
+        "code": [
+          {
+            "code": "DE76",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Severe illness, hospitalization",
+        "definition": "Client stopped ART because of severe illness, hospitalization",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.drugsOutOfStock",
+        "path": "HIVH.drugsOutOfStock",
+        "code": [
+          {
+            "code": "DE77",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Drugs out of stock ",
+        "definition": "Client stopped ART because of drugs being out of stock ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.clientLacksFinances",
+        "path": "HIVH.clientLacksFinances",
+        "code": [
+          {
+            "code": "DE78",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Client lacks finances ",
+        "definition": "Client stopped ART because client lacked finances ",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.excludedHivInfectionInInfant",
+        "path": "HIVH.excludedHivInfectionInInfant",
+        "code": [
+          {
+            "code": "DE79",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Excluded HIV infection in infant",
+        "definition": "Client stopped ART because the infant was determined to not have HIV",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherReasonForStoppingArt",
+        "path": "HIVH.otherReasonForStoppingArt",
+        "code": [
+          {
+            "code": "DE80",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other reason for stopping ART",
+        "definition": "Client stopped ART for other reason",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "HIVH.otherReasonForStoppingArtSpecify",
+        "path": "HIVH.otherReasonForStoppingArtSpecify",
+        "code": [
+          {
+            "code": "DE81",
+            "system": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.H"
+          }
+        ],
+        "short": "Other reason for stopping ART (specify)",
+        "definition": "Client stopped ART for other reason (specify)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

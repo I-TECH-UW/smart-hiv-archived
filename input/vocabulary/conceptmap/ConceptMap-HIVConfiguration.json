@@ -1,0 +1,37 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "HIVConfiguration",
+  "url": "http://worldhealthorganization.github.io/smart-hiv/ConceptMap/HIVConfiguration",
+  "description": "Mapping to and from HIV.Configuration Data Dictionary to other codesystems.",
+  "name": "HIV_Configuration",
+  "title": "ConceptMap to and from HIV.Configuration DataElements",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-12-09",
+  "group": [
+    {
+      "source": "http://worldhealthorganization.github.io/smart-hiv/CodeSystem/HIV.Configuration",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "DE17",
+          "target": [
+            {
+              "code": "118522005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "DE18",
+          "target": [
+            {
+              "code": "118522005",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
