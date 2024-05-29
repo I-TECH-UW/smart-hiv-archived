@@ -7,8 +7,8 @@
   "status" : "draft",
   "package-id" : "who.fhir.anc-cds",
   "ig-ver" : "0.3.0",
-  "date" : "Wed, 29 May, 2024 19:37:49 +0000",
-  "dateISO8601" : "2024-05-29T19:37:49+00:00",
+  "date" : "Wed, 29 May, 2024 20:05:57 +0000",
+  "dateISO8601" : "2024-05-29T20:05:57+00:00",
   "errs" : 468,
   "warnings" : 2877,
   "hints" : 74,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 5935105248
+  "maxMemory" : 5954374200
 }
